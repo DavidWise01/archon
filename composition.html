@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b1020"><meta name="description" content="ARCHON Bound 009: nested directional operator composition, reverse-order unwind, exact payload preservation, observer witness and tests.">
+<title>ARCHON // Bound 009 — Compound & Unwind</title>
+<style>
+:root{color-scheme:dark;--ink:#edeefa;--muted:#adb5d1;--cyan:#79e4ec;--lav:#cbb0fd;--line:#3a4664;--panel:#151d31}
+*{box-sizing:border-box}body{margin:0;color:var(--ink);font:15px/1.55 system-ui,Segoe UI,sans-serif;background:radial-gradient(ellipse at top,#272446,#090e1b 62%)}a{color:var(--cyan)}.wrap{max-width:1430px;margin:auto;padding:0 20px}header{display:flex;gap:20px;justify-content:space-between;align-items:center;padding:21px 0;border-bottom:1px solid var(--line);flex-wrap:wrap}header strong{letter-spacing:.18em;color:var(--lav);font:700 17px monospace}header nav{display:flex;gap:18px;flex-wrap:wrap;font:12px monospace}.hero{padding:45px 0 29px}.eyebrow{color:var(--cyan);font:11px/1.6 monospace;letter-spacing:.16em;text-transform:uppercase}.hero h1{font:clamp(48px,7vw,90px)/1.04 Georgia,serif;letter-spacing:-.05em;margin:12px 0 18px}.hero h1 em{color:var(--lav)}.hero p{max-width:950px;font-size:17px;color:#cdd4e4}.ribbon{display:flex;flex-wrap:wrap;gap:9px;margin-top:20px}.pill{padding:8px 12px;border:1px solid var(--line);border-radius:100px;background:#171c31;color:#d8d4ec;font:11px monospace}.grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,.85fr);gap:14px}.panel{border:1px solid var(--line);border-radius:16px;background:linear-gradient(140deg,#192037,#101525);padding:20px;min-width:0}.panel h2{font:29px Georgia,serif;margin:8px 0 15px}label{display:block;font:12px monospace;color:#b6bbd6;margin:14px 0 7px}textarea,select{background:#0d1427;border:1px solid #53627e;border-radius:9px;color:var(--ink);font:14px/1.6 monospace;width:100%;padding:11px}textarea{resize:vertical;min-height:85px}select{min-height:44px}.choices{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.controls{display:flex;gap:8px;flex-wrap:wrap;margin:17px 0}button{border:1px solid #53627c;background:#283350;color:var(--ink);padding:10px 13px;border-radius:9px;font:12px monospace;cursor:pointer}button:hover{background:#39516a;border-color:var(--cyan)}button:focus-visible,a:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}.primary{background:var(--lav);color:#101424;border-color:var(--lav);font-weight:700}.readout{border:1px solid #35516b;border-radius:10px;padding:14px;background:#0a1425;white-space:pre-wrap;overflow-wrap:anywhere;color:#a8e8f4;font:13px/1.7 monospace;min-height:78px;overflow:auto}.caps{margin-bottom:7px;font:11px monospace;color:var(--cyan)}.steps{display:grid;gap:8px;margin:12px 0}.step{background:#121a2d;border:1px solid #354159;padding:10px 12px;border-radius:8px}.step strong{font:12px monospace;color:#d8c5ff}.step code{display:block;white-space:pre-wrap;overflow-wrap:anywhere;color:#a4e0ec;margin-top:5px}.tag{display:inline-block;background:#272640;color:#d7c6f2;padding:4px 7px;border-radius:5px;font:11px monospace}.status{color:#9ee5bf}.failed{color:#f4b6a4}.section{padding:38px 0;border-top:1px solid var(--line);margin-top:33px}.section h2{font:clamp(28px,4vw,45px) Georgia,serif;margin:10px 0}.section p{color:#cdd0df;max-width:950px}.three{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.tile{background:#151b30;border:1px solid var(--line);padding:18px;border-radius:12px}.tile h3{color:var(--lav);margin:0}.tile p{font-size:13px}.ascii{white-space:pre;overflow-x:auto;background:#0b1526;border:1px solid #364866;padding:17px;border-radius:11px;color:#a9e3f1;font:13px/1.6 monospace}.footer{border-top:1px solid var(--line);padding:25px 0 40px;font:12px monospace;color:var(--muted)}@media(max-width:920px){.grid,.three{grid-template-columns:1fr}.choices{grid-template-columns:1fr}}@media(max-width:580px){.wrap{padding:0 13px}}
+</style></head><body><div class="wrap">
+<header><strong>ARCHON / BOUND 009</strong><nav><a href="operators.html">← SIX OPERATORS</a><a href="spinor.html">SPINOR</a><a href="gate.html">VESSEL</a><a href="index.html">TERRACES</a></nav></header>
+<section class="hero"><div class="eyebrow">Composition / inverse traversal / exact payload witness</div><h1>COMPOUND <em>&amp; UNWIND</em></h1><p>Three operator families can be compounded into one nested frame. To recover the source, unwrap them in the <strong>reverse order</strong>. The left/right orientation determines whether each layer is compression or decompression, brace or unbrace, emergence or re-mergence. Dante <code>{{i}}</code> stays fixed at zero. Virgil records each transformation.</p><div class="ribbon"><span class="pill">0 · DANTE {{i}} FROZEN</span><span class="pill">GUIDE · VIRGIL</span><span class="pill">D3 · CIRCLE IX</span><span class="pill">8/9 · SOUL REGISTERS RESERVED</span></div></section>
+<section class="grid" id="laboratory">
+<div class="panel"><div class="eyebrow">Composer / original expression preserved</div><h2>Three directional layers</h2><label for="payload">Source payload</label><textarea id="payload" spellcheck="false">(li(be[b[c[n[o(f(n(!noble)))]]]]))</textarea>
+<div class="choices">
+<div><label for="box">Layer 1 · Square</label><select id="box"><option value="compress">[compression]</option><option value="decompress">]decompression[</option></select></div>
+<div><label for="brace">Layer 2 · Curly</label><select id="brace"><option value="brace">{brace}</option><option value="unbrace">}unbrace{</option></select></div>
+<div><label for="round">Layer 3 · Round</label><select id="round"><option value="emergent">(emergent)</option><option value="remergent">)re-mergent(</option></select></div>
+</div><div class="controls"><button id="compose" class="primary">COMPOSE / RECORD</button><button id="unwind">UNWIND / VERIFY</button><button id="all">TEST ALL 8 DIRECTIONS</button></div>
+<div class="caps">COMPOUND RESULT · BOX → BRACE → ROUND</div><pre id="compound" class="readout"></pre>
+<div class="caps" style="margin-top:18px">REVERSAL · ROUND⁻¹ → BRACE⁻¹ → BOX⁻¹</div><div id="reverseSteps" class="steps"></div>
+<div class="caps">RECOVERED PAYLOAD</div><pre id="recovered" class="readout"></pre><p id="roundTrip" class="status" role="status"></p></div>
+<div class="panel"><div class="eyebrow">Witness / deterministic state register</div><h2>Virgil's Ledger</h2><p id="virgil" style="font:italic 18px/1.6 Georgia,serif;color:#f3d1b1;border-left:3px solid #e6af7d;padding-left:13px">“Dante, observe the order in which each boundary is laid. The return must undo the last boundary first.”</p>
+<div class="caps">SIX OPERATORS / THREE PAIRS</div>
+<div class="steps"><div class="step"><strong>BOX</strong><code>[X]  ⇄  ]X[</code></div><div class="step"><strong>BRACE</strong><code>{X}  ⇄  }X{</code></div><div class="step"><strong>TOROID</strong><code>(X)  ⇄  )X(</code></div></div>
+<div class="caps">ORDERED OBSERVATIONS (LOCAL SESSION)</div><pre id="ledger" class="readout" style="max-height:365px"></pre><div class="controls"><button id="reset">RESET SESSION LEDGER</button></div>
+<p style="font-size:12px;color:var(--muted)">Records remain in memory until reset or page close. This is not persistent storage or a physical transformation apparatus.</p>
+<div class="caps">DETERMINISTIC INVARIANTS</div><p id="tests" class="status" role="status"></p></div></section>
+<section class="section" id="model"><div class="eyebrow">Canonical round-trip identity</div><h2>The next conservation law</h2>
+<div class="ascii">                     VIRGIL / GUIDE
+                           |
+                    DANTE {{i}} = 0
+                           |
+       SOURCE: Daughter 3 / Inferno Circle IX
+                           |
+                      BOX(X) / B
+                           |
+                    BRACE(B(X)) / C
+                           |
+                   ROUND(C(B(X))) / T
+                           |
+                    +------+------+
+                    |  COMPOUNDED |
+                    +------+------+
+                           |
+                    UNWIND T FIRST
+                           |
+                    UNWIND C SECOND
+                           |
+                    UNWIND B LAST
+                           |
+                     X RESTORED
+
+    INV(T ∘ C ∘ B) = INV(B) ∘ INV(C) ∘ INV(T)
+
+        output of U(E(X)) = X, exact text
+
+    8 SOULS IN  : RESERVED
+    9 SOULS OUT : RESERVED</div>
+<div class="three"><article class="tile"><h3>Invariant A · Source</h3><p>No normalization or typo correction is performed on the payload. The character sequence must return exactly, including <code>!noble</code>, <code>le</code>, or nested delimiters supplied by the user.</p></article><article class="tile"><h3>Invariant B · Witness</h3><p><code>{{i}}</code> remains index zero. Daughter 3 corresponds to Dante's frozen ninth circle, not soul-out register 9. Virgil explains but does not alter the state.</p></article><article class="tile"><h3>Invariant C · Release</h3><p>A directional <code>}X{</code> syntax form is not itself a real-world release. Here inversion and undo are precisely defined for the text codec. Any physical release or data compression would need separate mechanisms and tests.</p></article></div></section>
+<footer class="footer">ARCHON · BOUND 009 · NESTED COMPOSITION · REVERSE ORDER UNWIND · OBSERVER 0 FROZEN</footer></div>
+<script>
+'use strict';
+const $=id=>document.getElementById(id);
+const ops=Object.freeze({
+compress:Object.freeze({open:'[',close:']',inverse:'decompress'}),
+decompress:Object.freeze({open:']',close:'[',inverse:'compress'}),
+brace:Object.freeze({open:'{',close:'}',inverse:'unbrace'}),
+unbrace:Object.freeze({open:'}',close:'{',inverse:'brace'}),
+emergent:Object.freeze({open:'(',close:')',inverse:'remergent'}),
+remergent:Object.freeze({open:')',close:'(',inverse:'emergent'})
+});
+const observer=Object.freeze({id:'{{i}}',index:0,guide:'Virgil',daughter:3,circle:'IX'});
+let events=[],snapshot=null;
+function wrap(id,text){const o=ops[id];return o.open+text+o.close}
+function undo(id,text){const o=ops[id];if(!text.startsWith(o.open)||!text.endsWith(o.close))throw Error('BOUNDARY MISMATCH: '+id);return text.slice(1,-1)}
+function invert(id){return ops[id].inverse}
+function config(){return [ $('box').value,$('brace').value,$('round').value ]}
+function transform(source,steps){let states=[source],s=source;for(const id of steps){s=wrap(id,s);states.push(s)}return {source,steps:[...steps],compound:s,states}}
+function unwind(compound,steps){let s=compound,states=[];for(let i=steps.length-1;i>=0;i--){const id=steps[i],inverse=invert(id);s=undo(id,s);states.push({inverse,of:id,value:s})}return {recovered:s,states}}
+function record(kind,description){const e=Object.freeze({index:events.length,kind,description,observer:observer.id});events=[...events,e];$('ledger').textContent=events.map(e=>String(e.index).padStart(3,'0')+' | '+e.kind+' | '+e.description).join('\n')}
+function render(){const source=$('payload').value,steps=config();snapshot=transform(source,steps);$('compound').textContent=snapshot.compound;$('reverseSteps').replaceChildren();$('recovered').textContent='—';$('roundTrip').textContent='Compound encoded; run UNWIND to verify.';$('roundTrip').className='status';record('COMPOSE',steps.join(' → ')+' / '+source.length+' source characters');$('virgil').textContent='“Dante, a compound is constructed outside-in by successive applications. The first to undo must be '+steps[2]+'.“'}
+function reverse(){if(!snapshot)render();const result=unwind(snapshot.compound,snapshot.steps);$('reverseSteps').replaceChildren(...result.states.map((step,index)=>{const node=document.createElement('div'),title=document.createElement('strong'),pre=document.createElement('code');node.className='step';title.textContent=(index+1)+'. '+step.inverse.toUpperCase()+' (undo '+step.of+')';pre.textContent=step.value;node.append(title,pre);return node}));$('recovered').textContent=result.recovered;const ok=result.recovered===snapshot.source;$('roundTrip').textContent=ok?'PASS · exact original payload restored after 3 inverse steps':'FAIL · payload mismatch';$('roundTrip').className=ok?'status':'failed';record('UNWIND',ok?'PASS / exact restored':'FAIL / mismatch');$('virgil').textContent=ok?'“Dante, the final undo returned the same signs and tokens. The observer has moved nowhere.”':'“Dante, the reversal does not preserve the source. Record the failure.”'}
+function test(){let total=0,fail=[];const samples=['','x','[a]{b}(c)','(li(be[b[c[n[o(f(n(!noble)))]]]]))','}unbrace{','a\nb\nc','😀 / {{i}}'];
+const square=['compress','decompress'],curly=['brace','unbrace'],round=['emergent','remergent'];
+for(const a of square)for(const b of curly)for(const c of round){const choices=[a,b,c];for(const source of samples){total++;const t=transform(source,choices),u=unwind(t.compound,choices);if(u.recovered!==source)fail.push('roundtrip '+choices.join('/'));}}
+for(const id of Object.keys(ops)){total++;const other=invert(id);if(invert(other)!==id||ops[id].open!==ops[other].close||ops[id].close!==ops[other].open)fail.push('inverse pair '+id)}
+total++;if(observer.index!==0||observer.id!=='{{i}}'||observer.circle!=='IX')fail.push('observer');
+total++;try{undo('compress',']wrong[');fail.push('mismatch acceptance')}catch(e){if(!String(e.message).includes('BOUNDARY MISMATCH'))fail.push('mismatch error')}
+$('tests').textContent=fail.length?'FAIL · '+fail.join('; '):'PASS · '+total+' checks · 8 orientations × 7 payloads · 6 inverses · immutable observer · mismatch rejection';$('tests').className=fail.length?'failed':'status';return fail.length===0}
+$('compose').onclick=render;$('unwind').onclick=reverse;$('all').onclick=()=>{const ok=test();record('TEST ALL',ok?'PASS':'FAIL')};$('reset').onclick=()=>{events=[];record('RESET','new ephemeral session')};
+for(const id of ['payload','box','brace','round'])$(id).addEventListener(id==='payload'?'input':'change',()=>{snapshot=null;$('roundTrip').textContent='Selection or payload changed. Compose again to record the new state.'});
+test();render();
+</script></body></html>
