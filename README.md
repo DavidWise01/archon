@@ -95,6 +95,20 @@ The syntax codec uses exact delimiter wrapper/unwrapper pairs. It does **not** i
 
 Automated tests cover all eight direction choices across seven sample payloads (56 round trips), inverse-map properties, mismatch rejection, and the fixed `{{i}}` witness. Daughter 3 maps to literary Circle IX while registers 8/9 remain reserved.
 
+## Bound 010 — path independence versus commutation
+
+[Open the commutation test matrix](commutation.html).
+
+Given two directional text wrappers A and B, test exact equality of `A(B(X))` and `B(A(X))`, and separately decode both in reverse order. The six selected wrappers form a 6×6 comparison matrix:
+
+- Each of the six diagonal pairings commutes trivially.
+- All 30 off-diagonal pairs differ in their encoded form for this specific codec, even when the original X can be recovered from both.
+- A correct unwind of either ordering returns X exactly. **Reversibility is not commutativity.**
+- Tests span five payloads, 36 ordered pairs, both recovery routes, and a mismatch rejection check.
+- All judgments are about literal text encoding, not physical operators, Gnostic doctrine, or a quantum spinor experiment.
+
+Dante `{{i}}` stays fixed at zero, Virgil guides, Daughter 3 remains at literary Circle IX, and soul IN/OUT registers 8/9 remain reserved.
+
 ## Use
 
 Open `index.html` in a modern browser. Click any level or use 0–7, left/right, Space for motion pause. Zero stays centered while terraces animate. Canvas 2D, no dependencies, build, cookies, or network APIs.
