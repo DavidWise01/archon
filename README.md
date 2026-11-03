@@ -241,6 +241,18 @@ The page verifies its Git genesis anchor and the supplied Bound 012 continuity, 
 
 **Important:** a hash-linked receipt proves at most that this software consistently encoded a claim under a retained anchor; it does not authenticate the receiver's real identity, prove legal authorship, transfer rights, establish trusted time, or independently establish evidence truth. No quorum, voting or inferred certainty is introduced. Dante `{{i}}` remains fixed at zero and Virgil guides; Daughter 3 remains literary Circle IX.
 
+## Bound 020 — independent successor observations without rewriting inherited history
+
+[Open the Independent Witness chamber](independence.html).
+
+A successor inherits a verified Bound 019 generational receipt and the exact knowledge prefix to which that receipt refers. The chamber then appends new, **separately attributed observations** referencing the receipt and a source statement within the received prefix. It compares source and successor by **literal equality only**: `LITERAL MATCH`, `LITERAL DIFFERENCE`, or `INCOMPLETE`. It neither votes on which report is true nor silently reconciles an apparent conflict.
+
+Each report includes its receiving receipt hash, source statement hash, immutable source text, observer channel (A/B/C), receiver label, new literal observation, optional evidence basis, browser timestamp, global prior-observation hash, and prior hash for the same A/B/C channel. All SHA-256 hashes are checked against the committed root and embedded Bound 012–019 histories. An import is rejected if it would truncate or replace any currently retained source, receipt, or observer history.
+
+The responsive animated toroidal vessel displays the independent record chain and can generate a clearly fictional pair of matching and differing reports **after** a real Bound 019 receipt is present. It supports audit, JSON import/export and replay checks. The successor cannot claim inherited authorship or authority merely by receiving a record, and no automatic Git push or public checkpointing is performed.
+
+**Scope limitation:** software A/B/C channels and typed receiver labels do not prove the existence of separate real-world witnesses or independently acquired evidence. The genesis remains `UNATTRIBUTED_IN_GENESIS` until separate verified attribution evidence exists. SHA-256 establishes internal consistency relative to trusted retained anchors, not legal ownership, true observations, or trusted chronology. Dante `{{i}}` remains frozen at zero; Virgil guides; Daughter 3 is literary Circle IX and soul registers 8/9 remain reserved.
+
 ## Use
 
 Open `index.html` in a modern browser. Click any level or use 0–7, left/right, Space for motion pause. Zero stays centered while terraces animate. Canvas 2D, no dependencies, build, cookies, or network APIs.
