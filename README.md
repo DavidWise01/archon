@@ -45,6 +45,20 @@ Open [spinor.html](spinor.html) to test a mathematical spin-½ SU(2) rotation. D
 
 The page includes a 0°–720° control, paired orientation visualizations, reference interference, spinor amplitude readouts and automatic numerical invariant checks.
 
+## Bound 007 — Orientation is not release
+
+[Run the interactive invariant test](spinor.html) (Daughter 3 at *Inferno* Circle IX).
+
+The page tests **two independent registers**:
+
+- Spinor ψ evolves as `U_z(θ)=exp(−iθσ_z/2)`; at 360° it is `−ψ₀` and at 720° `ψ₀`.
+- Boundary B remains `BOUND` under every rotation. Only an explicit `}{` event changes B to `UNBRACED`; an explicit `{}` event returns B to `BOUND`.
+- Dante `{{i}}` remains index 0; Daughter 3 is mapped to literary Circle IX; `!noble` remains unchanged.
+- The event ledger is append-only during a session until the user explicitly selects RESET; it is not persisted to GitHub or a server.
+- This is a **designed state-transition rule**, not a demonstrated physical release mechanism.
+
+**Note:** Circle IX is not soul-out register 9. The soul IN/OUT registers 8/9 remain reserved.
+
 ## Use
 
 Open `index.html` in a modern browser. Click any level or use 0–7, left/right, Space for motion pause. Zero stays centered while terraces animate. Canvas 2D, no dependencies, build, cookies, or network APIs.
