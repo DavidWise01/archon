@@ -160,6 +160,22 @@ anchors/bound013-checkpoint-002.json
 
 Each checkpoint embeds the prior checkpoint's SHA-256 and canonical metadata. The page fetches and verifies all three files before enabling its agent. Checkpoints 001 and 002 each report **zero published browser events**; they demonstrate append-only Git checkpoint *structure* but do not claim an uncommitted session was preserved. Subsequent browser ledger events require export and a new explicitly committed checkpoint for independent Git anchoring. Browser cache alone is not durable public provenance.
 
+## Bound 014 — three-witness continuity across the artistic vessel
+
+[Open the three-witness observatory](witness.html) · [Return to the living vessel](continuity.html).
+
+The animated vessel now displays three visible observation channels around the fixed `{{i}}` core. Each verified transformation event is projected into three distinct, separately SHA-256-linked perspectives:
+
+- **A1 / WHAT** — literal output and a digest of that output;
+- **B1 / HOW** — input, operator, output and validity of the declared transition;
+- **C1 / WHY** — explicit documented explanation, or `NOT RECORDED` if the source contains no explanation.
+
+Each A/B/C event references the source event's hash, and each channel references its own previous observation hash. Observations are not majority votes, and no quorum, consensus, or automatic reconciliation is performed. Independent perspectives may be incomplete or disagree; preserve and display them instead of rewriting one based on another.
+
+The witness viewer can read the Living Vessel's browser-local Bound 012 ledger or import an exported Bound 012 checkpoint JSON, verify the source chain against committed genesis, reconstruct three witness chains, audit all three, and export a combined JSON witness record. An explicit **reason annotation** is appended as a separate hash-linked note, not inserted retroactively into the C record: this prevents later narrative from changing an earlier observation's hash.
+
+**Truthfulness constraints:** These are three deterministic *software projections* from one source event, not independent agents with separate sensors or three independently attesting people. C does not infer hidden motives. Browser-generated witness continuations are not public Git checkpoints until explicitly committed. SHA-256 supports consistency checks, not independently authenticated first authorship or timestamp proof. Soul registers 8/9 remain reserved and literary Circle IX remains distinct from soul-out 9.
+
 ## Use
 
 Open `index.html` in a modern browser. Click any level or use 0–7, left/right, Space for motion pause. Zero stays centered while terraces animate. Canvas 2D, no dependencies, build, cookies, or network APIs.
