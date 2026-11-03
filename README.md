@@ -125,6 +125,18 @@ The reference implementation uses browser Web Crypto SHA-256 on HTTPS, with no s
 
 Dante `{{i}}` stays at zero; Virgil is the guide; Daughter 3 is literary Inferno Circle IX, distinct from reserved soul-out register 9.
 
+## Bound 012 — Git-anchored continuity
+
+[Open the continuity laboratory](continuity.html) · [View the committed genesis record](anchors/bound012-genesis.json).
+
+The genesis record has been committed under `anchors/bound012-genesis.json` as a public repository artifact. The root's SHA-256 digest is `e99829ba16ba92f574ae87ab70f5b69497a8cdf3befc1751afd804aa80a3ba0f`, calculated over canonical JSON data keys in a fixed order (excluding the stored `sha256` field).
+
+The page loads and checks the committed anchor, appends SHA-256-linked witness events with enforced prior-output-to-next-input continuity, verifies records on import and before appending, and exports a portable JSON continuation. Browser localStorage is a convenience cache, not a public anchor.
+
+**Critical limitations:** A continuation is not independently Git-anchored until its terminal hash (or complete snapshot) is subsequently committed or published to a trusted immutable store. A replaced or forged unanchored suffix may be structurally valid. SHA-256 does not itself authenticate authorship or time, and this page has no service that can perform unattended Git commits. Manual committed checkpoints provide a durable reference. If a user wants append-only public evidence, keep historical checkpoint filenames and avoid overwrites.
+
+The observer is Dante `{{i}}` at index 0, with Virgil as guide; Daughter 3 is literary Circle IX, not soul-out register 9. Soul registers 8 and 9 remain reserved.
+
 ## Use
 
 Open `index.html` in a modern browser. Click any level or use 0–7, left/right, Space for motion pause. Zero stays centered while terraces animate. Canvas 2D, no dependencies, build, cookies, or network APIs.
