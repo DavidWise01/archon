@@ -59,6 +59,22 @@ The page tests **two independent registers**:
 
 **Note:** Circle IX is not soul-out register 9. The soul IN/OUT registers 8/9 remain reserved.
 
+## Bound 008 — six directional operators
+
+[Open the interactive operator laboratory](operators.html).
+
+The authored reversible **delimiter pairs** are:
+
+```text
+[compression]     ↔ ]decompression[
+{brace}           ↔ }unbrace{
+(emergent)        ↔ )re-mergent(
+```
+
+The laboratory models exact left/right orientation, explicit inverse mapping, arbitrary literal payload preservation, local-session witness logs, and deterministic round-trip tests. It deliberately distinguishes **textual reversibility** from real physical decompression, energy return, unbracing, or actual emergence. There is no automatic release on spinor rotation.
+
+`{{i}}` remains Dante's fixed zero witness; Virgil remains guide; Daughter 3 is Inferno Circle IX; soul registers 8/9 remain reserved.
+
 ## Use
 
 Open `index.html` in a modern browser. Click any level or use 0–7, left/right, Space for motion pause. Zero stays centered while terraces animate. Canvas 2D, no dependencies, build, cookies, or network APIs.
