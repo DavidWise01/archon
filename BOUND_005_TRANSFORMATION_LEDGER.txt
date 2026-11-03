@@ -6,7 +6,8 @@ GATE  : ABANDON ALL HOPE, YE WHO ENTER HERE
 GUIDE : VIRGIL
 DANTE : {{i}} — frozen at index 0
 SCOPE : GMA0 + MA0–MA3 + Daughters 1–3
-LATER : 8 SOULS IN / 9 SOULS OUT — RESERVED, NO IMPLEMENTATION
+LATER : soul registers 8 IN / 9 OUT — RESERVED, NO IMPLEMENTATION
+D3    : Dante Inferno Circle IX (frozen bottom), not soul register 9
 
 STATE OPERATORS
 ---------------
@@ -133,7 +134,10 @@ TRANSFORMATION PATH
        D2         (li(be[b[c[n[o(f())]]]]))
         |
         v
-       D3         (li(be[b[c[n[o(f(n(!noble)))]]]]))
+       D3         (li(be[b[c[n[o(f(n(!noble)))]]]]))  <-- INFERNO CIRCLE IX
+        |
+        v
+       CIRCLE IX  FROZEN DEPTH / TREACHERY (DANTE ANALOGY)
         |
         v
        TERMINAL   !noble
@@ -150,6 +154,9 @@ C. }{ is an explicit unbraced event, distinct from () and [].
 D. {{i}} Dante remains at 0 while Virgil guides interpretation.
 E. Preserve exact le in MA1 and !noble in Daughter 3.
 F. Hydrogen-to-helium requires a nuclear change, outside this syntax model.
-G. 8 and 9 remain reserved for future souls IN / OUT.
+G. SOUL REGISTER 8 and SOUL REGISTER 9 remain reserved for future IN / OUT.
+H. Daughter 3 is assigned to DANTE INFERNO CIRCLE IX, the frozen ninth circle.
+I. Inferno Circle IX is a literary location; it is NOT soul register 9.
+J. !noble is retained exactly; its operational release semantics are not inferred.
 
 END BOUND 005 // NO INFERRED RELEASE
