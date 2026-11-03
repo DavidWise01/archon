@@ -1,32 +1,37 @@
-# ARCHON — 7 + 1 + 1
+# ARCHON // 0–7 — Frozen Core & Seven Terraces
 
-An interactive, single-file GitHub Pages atlas of the seven archons, the Demiurge, and a ninth **Gnosis Gate**, mapped *analogically* onto Dante's nine circles of the Inferno.
+An interactive GitHub Pages comparative atlas, built as a standalone `index.html`.
 
-## Launch
+## Active architecture (v2.0)
 
-Open `index.html` in a modern browser. No install, bundler, libraries, or API credentials required.
+- **0**: `{{i}}` frozen observer core, never rotates or changes position.
+- **1–7**: seven ascending terraces of Dante's *Purgatorio*, with seven deadly sins and an explicitly interpretive archon mapping.
+- **8**: SOULS IN — reserved for future design; **not implemented**.
+- **9**: SOULS OUT — reserved for future design; **not implemented**.
 
-For GitHub Pages, visit **Settings → Pages → Build and deployment**. Select **Deploy from a branch**, branch **main**, folder **/(root)**, then save. Intended URL after deployment: https://davidwise01.github.io/archon/ . This is not confirmation of a live deployment.
+| Index | Purgatorio | Counter-virtue | Archon overlay |
+|---|---|---|---|
+| 0 | Fixed observer (not Dantean) | — | None |
+| 1 | Pride | Humility | Sabbataios |
+| 2 | Envy | Charity | Adonin |
+| 3 | Wrath | Gentleness | Sabaoth |
+| 4 | Sloth | Zeal | Athoth |
+| 5 | Avarice | Generosity | Yao |
+| 6 | Gluttony | Abstinence | Astaphaios |
+| 7 | Lust | Chastity | Eloaios |
 
-## Features
+The previous v1.x project assigned one capital vice to each archon in the original Gnostic listing order. **Version 2.0 re-indexes the pairings to follow Dante's historical terrace order, without claiming the two traditions historically identified one another.** Index 0 and the reserved soul positions are our original design.
 
-- Nine-position explorer with Canvas 2D orbital visualization.
-- Archon dossiers and historical versus interpretive labels.
-- Descent/ascent switch, pause/play, and direct navigation.
-- Keyboard: left/right, 1–9, A for ascent, Space for pause.
-- Responsive layout and reduced-motion preference.
-- Linked Gnostic and Dante sources.
+## Use
 
-## Evidence boundary
+Open `index.html` in a modern browser. Click any level or use 0–7, left/right, Space for motion pause. Zero stays centered while terraces animate. Canvas 2D, no dependencies, build, cookies, or network APIs.
 
-**7** powers are named in the *Apocryphon of John*; spellings and schemes vary. **+1** Yaldabaoth is the Demiurge. **+1** Gnosis Gate is a designed interpretation, **not** an additional historical archon. Dante's nine circles are a different, medieval Christian literary cosmology. Vice-to-archon pairs in the site are creative comparisons, not ancient correspondences.
+GitHub Pages: Settings → Pages → Deploy from branch → `main` → `/(root)`. Intended public URL: https://davidwise01.github.io/archon/ . Deployment must be confirmed in GitHub separately.
 
-## Sources
+## References
 
-- [Secret Book of John — Frederik Wisse](https://www.gnosis.org/naghamm/apocjn.html)
-- [Secret Book of John — Marvin Meyer](https://www.gnosis.org/naghamm/apocjn-meyer.html)
-- [University of Melbourne: Inferno](https://library.unimelb.edu.au/asc/whats-on/exhibitions/epic-and-divine/where-in-the-hell/inferno)
+- [Princeton Dante Project, *Purgatorio* entry](https://dante.princeton.edu/cgi-bin/dante/DispToynbeeByTitOrId.pl?INP_ID=242374&SMALL=1)
+- [University of Leeds, Dante's Purgatory](https://ahc.leeds.ac.uk/discover-dante/doc/purgatorio/page/2)
+- [*Apocryphon of John*, Wisse translation](https://www.gnosis.org/naghamm/apocjn.html)
 
-## Stack
-
-Static HTML, CSS, vanilla JavaScript, Canvas 2D. No backend, external JS dependency, cookies, or personal data storage.
+These sources support the respective historical traditions, **not** the project's invented cross-tradition one-to-one pairing.
