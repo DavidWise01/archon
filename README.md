@@ -75,6 +75,26 @@ The laboratory models exact left/right orientation, explicit inverse mapping, ar
 
 `{{i}}` remains Dante's fixed zero witness; Virgil remains guide; Daughter 3 is Inferno Circle IX; soul registers 8/9 remain reserved.
 
+## Bound 009 — compound operators and reverse unwind
+
+[Open the nested composition laboratory](composition.html).
+
+Build the pipeline from three directional operators in the order **square → curly → round**. Each operator can face forward or reversed, yielding eight orientation combinations. The experiment wraps each output with the next selected delimiter and then **unwinds round → curly → square**, validating the matching opening/closing characters before stripping each exact outer layer.
+
+```text
+X → B(X) → C(B(X)) → T(C(B(X)))
+                          |
+                   undo T first
+                   undo C second
+                   undo B last
+                          |
+                          X
+```
+
+The syntax codec uses exact delimiter wrapper/unwrapper pairs. It does **not** implement actual compression, data decompression, or physical release. The inverse orientation is displayed as the inverse operator name; the undo action is a validated unwrapping of the layer that was actually encoded. This matters: applying the opposite delimiter as another wrapper is not mathematically identical to undoing the original wrapper.
+
+Automated tests cover all eight direction choices across seven sample payloads (56 round trips), inverse-map properties, mismatch rejection, and the fixed `{{i}}` witness. Daughter 3 maps to literary Circle IX while registers 8/9 remain reserved.
+
 ## Use
 
 Open `index.html` in a modern browser. Click any level or use 0–7, left/right, Space for motion pause. Zero stays centered while terraces animate. Canvas 2D, no dependencies, build, cookies, or network APIs.
