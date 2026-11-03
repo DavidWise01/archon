@@ -204,6 +204,21 @@ The chamber marks late-arriving evidence and observations with inconsistent time
 
 A client clock is not a trusted timestamping authority, and the observation and event timestamps are **claims**, not verified historical instants. Browser records are not automatically published to Git; an exported checkpoint and subsequent public commit are necessary for external anchoring. No votes, no quorums, no retroactive replacement. Dante `{{i}}` remains frozen at zero, Daughter 3 maps to literary Circle IX, and soul registers 8/9 remain reserved.
 
+## Bound 017 — interpretation changes without source erasure
+
+[Open the Second Reading chamber](interpretation.html).
+
+The system distinguishes **new late evidence** about an earlier event from a **new interpretation of existing evidence**. Neither alters the previously verified event, the original witness claim, or the original event/observation/recording timestamps.
+
+- Each new reading is an append-only SHA-256-linked record with a verified temporal source hash, its fixed original `eventTime`, station (A/B/C), kind (`INTERPRETATION` or `LATE_EVIDENCE`), recorded time, literal reading, evidence basis, global predecessor, and `supersedes` pointer to the previous reading **of the same source**.
+- `supersedes` is a display lineage, not deletion or proof that the old reading was wrong. Both remain available and auditable.
+- The page verifies the public genesis, any included Bound 012 continuity source chain, temporal reports, interpretation sequence and every SHA-256 link before accepting appended readings.
+- Users can compare append order, original event-time order, and interpretation recording-time order. Sorting never alters the stored ledger.
+- A two-reading fictional demonstration, explicit audit, JSON import/export, and guard against truncating or replacing prior local interpretations are included.
+- New browser interpretations are not automatically Git-anchored. Browser timestamps are not trusted external timestamps; no evidence of physical transmutation or historical Gnostic knowledge of spinors is claimed.
+
+Dante `{{i}}` remains fixed at zero; Virgil guides; Daughter 3 is mapped to literary Circle IX; soul IN/OUT registers 8/9 stay reserved. No voting, quorums, or silent rewrites.
+
 ## Use
 
 Open `index.html` in a modern browser. Click any level or use 0–7, left/right, Space for motion pause. Zero stays centered while terraces animate. Canvas 2D, no dependencies, build, cookies, or network APIs.
