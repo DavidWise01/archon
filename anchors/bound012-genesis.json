@@ -1,0 +1,17 @@
+{
+  "protocol": "archon/bound012/v1",
+  "type": "GENESIS",
+  "witness": "{{i}}",
+  "observer_index": 0,
+  "guide": "Virgil",
+  "circle": "IX",
+  "daughter": 3,
+  "reserved_soul_registers": [
+    8,
+    9
+  ],
+  "parent": null,
+  "payload": "gma0(h,he)",
+  "note": "Public repository genesis checkpoint; later sessions must cite this anchor and preserve ordered records.",
+  "sha256": "e99829ba16ba92f574ae87ab70f5b69497a8cdf3befc1751afd804aa80a3ba0f"
+}
