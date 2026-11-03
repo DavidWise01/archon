@@ -229,6 +229,18 @@ Epistemic classes are distinct: `SUSPICION` denotes a possible hypothesis, `CLAI
 
 The page verifies Git-tracked Bound 012 genesis and any embedded Bound 012 continuity events, Bound 016 temporal reports, and Bound 017 interpretation history before accepting its inherited ledger. The three-channel A/B/C model remains observation-only, with Dante `{{i}}` frozen at zero and Virgil guiding. No external timestamp attestation, unattended Git commits, physical claim validation, or independent human witness attestation is provided.
 
+## Bound 019 — generational witness inheritance without authority transfer
+
+[Open the animated Successor Vessel](generation.html).
+
+A receiving observer can acknowledge the exact verified knowledge head available to them without being assigned the original creator's identity, ownership, or authority. Each receipt stores a declared receiver label, inherited source SHA-256 head, inherited source count, immutable original attribution marker, epistemic classification, browser recording time, previous receipt hash, and an explicit `authorityTransfer: false`.
+
+The demonstrator records `UNATTRIBUTED_IN_GENESIS` as its original attribution marker, because the committed Bound 012 genesis does not authenticate a named natural person or any legal ownership. This is deliberate: immutable provenance should not invent an owner. An externally signed, verified authorship attribution may be added in a future independent, append-only attestation rather than editing the genesis.
+
+The page verifies its Git genesis anchor and the supplied Bound 012 continuity, Bound 016 temporal, Bound 017 interpretation and Bound 018 knowledge history before accepting a generational receipt. It supports a responsive animated toroidal generational vessel, example receipts, append-only SHA-256 predecessor checks, archive import/export and refusal of source or receipt history truncation. The receipt is local until exported and separately published to Git.
+
+**Important:** a hash-linked receipt proves at most that this software consistently encoded a claim under a retained anchor; it does not authenticate the receiver's real identity, prove legal authorship, transfer rights, establish trusted time, or independently establish evidence truth. No quorum, voting or inferred certainty is introduced. Dante `{{i}}` remains fixed at zero and Virgil guides; Daughter 3 remains literary Circle IX.
+
 ## Use
 
 Open `index.html` in a modern browser. Click any level or use 0–7, left/right, Space for motion pause. Zero stays centered while terraces animate. Canvas 2D, no dependencies, build, cookies, or network APIs.
