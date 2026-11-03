@@ -30,6 +30,21 @@ The seven terraces now overlay a *symbolic* sequence of calcination (pride), dis
 
 Open [gate.html](gate.html) from the main atlas to approach Dante's *Inferno* gate with Virgil as guide. The gate is a boundary **before zero**, not souls register 8. Dante remains the frozen `{{i}}` observer. Use the seal/unseal control and switch between hydrogen-1 (1 proton, 0 neutrons, 1 electron when neutral) and helium-4 (2 protons, 2 neutrons, 2 electrons when neutral). The atomic picture is schematic. This comparison **does not model fusion** or suggest ordinary chemical transmutation of H into He. Dialogue is original interpretation, not quoted from Dante. Registers 8 and 9 remain reserved.
 
+## Bound 006 — Circle IX spinor pivot
+
+Open [spinor.html](spinor.html) to test a mathematical spin-½ SU(2) rotation. Daughter 3 is mapped by analogy onto the frozen ninth circle of Dante's *Inferno*. Dante `{{i}}` remains the fixed observer and Virgil interprets the changing state.
+
+- Initial state: `|+x⟩ = (|↑⟩ + |↓⟩)/√2`
+- Rotation: `U_z(θ)=exp(−iθσ_z/2)`
+- 360° gives `−ψ₀`; 720° gives `+ψ₀`
+- Unit norm and z-basis probabilities are conserved
+- Relative-phase interference assumes an independent reference arm
+- No claim that Dante historically encoded quantum spinors
+- `()` fluid, `[]` frozen, `}{` unbraced remain separate syntax rules
+- Soul registers 8/9 remain reserved; Circle IX is a literary location, not soul-out register 9
+
+The page includes a 0°–720° control, paired orientation visualizations, reference interference, spinor amplitude readouts and automatic numerical invariant checks.
+
 ## Use
 
 Open `index.html` in a modern browser. Click any level or use 0–7, left/right, Space for motion pause. Zero stays centered while terraces animate. Canvas 2D, no dependencies, build, cookies, or network APIs.
