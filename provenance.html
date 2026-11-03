@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090e1d"><meta name="description" content="ARCHON Bound 011: immutable ordered witness records, SHA-256 hash-linked transformation history and path-dependent provenance for six directional operators.">
+<title>ARCHON / Bound 011 — Path Provenance</title>
+<style>
+:root{color-scheme:dark;--bg:#090d1c;--panel:#171d32;--line:#3c4865;--ink:#f2ecfb;--muted:#aeb5ca;--cyan:#8deaf0;--lav:#c6b0f6}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 50% 0,#2e294f,#090d1b 65%);color:var(--ink);font:15px/1.55 system-ui,Segoe UI,Arial,sans-serif}a{color:var(--cyan)}button,select,textarea{font:inherit}button{background:#2b3855;color:var(--ink);border:1px solid #5b6585;padding:10px 14px;border-radius:9px;cursor:pointer}button:hover{background:#3a5270}button:disabled{opacity:.45;cursor:not-allowed}button:focus-visible,textarea:focus-visible,select:focus-visible,a:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}.wrap{max-width:1430px;margin:auto;padding:0 20px}header{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;padding:20px 0;border-bottom:1px solid var(--line)}header b{color:var(--lav);font:700 17px monospace;letter-spacing:.13em}header nav{display:flex;gap:16px;flex-wrap:wrap;font:12px monospace}.hero{padding:40px 0 22px}.eyebrow{font:11px monospace;color:var(--cyan);letter-spacing:.16em}.hero h1{font:clamp(46px,7vw,91px)/1.04 Georgia,serif;letter-spacing:-.05em;margin:10px 0 20px}.hero h1 em{color:var(--lav)}.hero p{font-size:17px;max-width:980px;color:#d1d0e3}.pills{display:flex;flex-wrap:wrap;gap:8px;margin:15px 0}.pills span{font:11px monospace;border:1px solid var(--line);padding:7px 11px;border-radius:100px;background:#171e33;color:#d3d7ec}.grid{display:grid;grid-template-columns:minmax(0,.78fr) minmax(0,1.22fr);gap:15px}.panel{background:linear-gradient(140deg,#1c213a,#101727);border:1px solid var(--line);padding:20px;border-radius:16px;min-width:0}.panel h2{font:clamp(25px,3vw,37px) Georgia,serif;margin:9px 0 16px}label{display:block;font:12px monospace;color:var(--muted);margin:14px 0 7px}textarea,select{background:#0c1426;border:1px solid #54617e;border-radius:9px;color:var(--ink);padding:12px;width:100%;font:13px/1.5 monospace}textarea{min-height:90px;resize:vertical}.selectors{display:grid;grid-template-columns:1fr 1fr;gap:9px}.controls{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}.primary{background:#bba5ef;color:#141427;border-color:#d1befb;font-weight:700}.mono{font:12px/1.65 monospace;overflow-wrap:anywhere}.readout{background:#0b1426;border:1px solid #36536b;border-radius:9px;padding:13px;white-space:pre-wrap;overflow-wrap:anywhere;color:#b9eaf5;font:12px/1.7 monospace;min-height:72px}.rungrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.run{min-width:0;border:1px solid #40506a;background:#111a2d;border-radius:11px;padding:12px}.run h3{font:16px monospace;color:var(--lav);margin:3px 0 9px}.run .readout{font-size:11px}.ok{color:#95eabd}.warn{color:#efbd9b}.events{display:grid;gap:9px;margin-top:15px}.event{border:1px solid #37435a;border-radius:10px;background:#12182a;padding:12px}.event strong{display:block;color:#d9cbff;font:12px monospace}.event p{margin:5px 0;color:#bcd4e6;font:12px/1.55 monospace;overflow-wrap:anywhere}.event code{color:#a1e4ee;font:11px monospace;overflow-wrap:anywhere}.section{border-top:1px solid var(--line);padding:33px 0;margin-top:30px}.section h2{font:clamp(30px,4vw,44px) Georgia,serif;margin:8px 0 16px}.section p{max-width:980px;color:#cdd1e1}.ascii{padding:17px;border:1px solid #40516a;background:#0b1426;color:#a9e5f1;overflow:auto;border-radius:12px;font:13px/1.6 monospace}.footer{border-top:1px solid var(--line);padding:24px 0 35px;color:var(--muted);font:12px monospace}@media(max-width:900px){.grid{grid-template-columns:1fr}}@media(max-width:550px){.wrap{padding:0 13px}.selectors,.rungrid{grid-template-columns:1fr}}
+</style></head><body><div class="wrap">
+<header><b>ARCHON / BOUND 011</b><nav><a href="commutation.html">← COMMUTATION</a><a href="composition.html">COMPOSITION</a><a href="operators.html">DIALECT</a><a href="gate.html">GATE</a></nav></header>
+<section class="hero"><div class="eyebrow">Path provenance / ordered witness / SHA-256 hash chain</div><h1>PRESERVE <em>THE PATH</em></h1><p>Two routes can recover the same source while producing different intermediate representations. Bound 011 binds each operator, its order, its input and output, and Dante’s fixed <code>{{i}}</code> witness into an ordered SHA-256 ledger. The source remains unchanged; the history distinguishes the routes.</p><div class="pills"><span>WITNESS {{i}} / 0 FIXED</span><span>VIRGIL / GUIDE</span><span>DAUGHTER 3 / CIRCLE IX</span><span>8 IN / 9 OUT RESERVED</span></div></section>
+<section class="grid"><div class="panel"><div class="eyebrow">Compare two operations / two routes</div><h2>Witness the path</h2><label for="payload">Source / literal text</label><textarea id="payload" spellcheck="false">(li(be[b[c[n[o(f(n(!noble)))]]]]))</textarea>
+<div class="selectors"><div><label for="opA">Operator A</label><select id="opA"></select></div><div><label for="opB">Operator B</label><select id="opB"></select></div></div>
+<div class="controls"><button id="compare" class="primary">RUN BOTH PATHS</button><button id="verify">VERIFY LEDGER</button><button id="export">EXPORT JSON</button><button id="reset">NEW SESSION</button></div>
+<div id="summary" class="readout" aria-live="polite">Awaiting SHA-256 initialization.</div><p id="tests" class="ok" role="status">Testing invariants…</p><div class="section" style="padding-bottom:0"><div class="eyebrow">Invariant / explicit protocol</div><h2>History survives unwind</h2><pre class="ascii">          SOURCE X
+            /   \
+         A(B(X)) B(A(X))
+           |       |
+       decode    decode
+           \       /
+             X = X
+               |
+        PATH HASHES DIFFER
+        when order differs
+
+WITNESS {{i}} = 0 / FIXED
+CIRCLE IX = D3 / LITERARY
+SOUL REGISTER 9 = RESERVED</pre><p style="font-size:12px">Hash-linked records make alterations detectable on re-verification while this ledger and its trusted hash are retained. They do not prove authorship, establish timestamps, prevent someone replacing the entire ledger, or store anything persistently.</p></div></div>
+<div class="panel"><div class="eyebrow">Separate path histories</div><h2>Ordered transformation records</h2><div class="rungrid"><div class="run"><h3>PATH A ∘ B</h3><div id="pathAB" class="readout"></div><div id="hashAB" class="mono"></div><div id="recordsAB" class="events"></div></div><div class="run"><h3>PATH B ∘ A</h3><div id="pathBA" class="readout"></div><div id="hashBA" class="mono"></div><div id="recordsBA" class="events"></div></div></div><div class="eyebrow" style="margin-top:20px">Session attestations / newest last</div><pre id="session" class="readout" style="max-height:200px;overflow:auto"></pre><p style="font-size:12px;color:var(--muted)">Export includes both paths and previous session entries. New sessions clear only this browser’s in-memory ledger. The original file and Git history are unaffected.</p><p id="virgil" style="font:italic 18px Georgia,serif;color:#f0c7aa;border-left:3px solid #d9a075;padding-left:12px">“Dante, the same beginning and ending do not erase the road between them.”</p></div></section>
+<section class="section"><div class="eyebrow">Bound 011 / conservation and provenance</div><h2>Invariant statement</h2><pre class="ascii"> STATE X (literal source, untouched)
+   |
+   +-- PATH 1  B → A  → UNWIND → X
+   |       event 0 : parent = GENESIS
+   |       event 1 : parent = hash(event 0)
+   |       event 2 : parent = hash(event 1)
+   |
+   +-- PATH 2  A → B  → UNWIND → X
+           event 0 : parent = GENESIS
+           event 1 : parent = hash(event 0)
+           event 2 : parent = hash(event 1)
+
+  H(event) = SHA256(canonical(event data + parent hash))
+  Exact recovery: X' = X    [for each path]
+  Identity:       {{i}} = 0 [unchanged]
+  Distinction:    history 1 != history 2 [if A != B]
+  Conservation:   do not collapse differently ordered paths</pre><p>The check uses SHA-256 provided by the browser’s Web Crypto API, normally available on HTTPS GitHub Pages. Hashes are deterministic for this page’s canonical JSON field ordering. The same path and payload reproduce the same hash. This is **integrity bookkeeping**, not a proof that real physics, information loss, time, or an actor’s identity is being cryptographically secured.</p></section>
+<footer class="footer">ARCHON / BOUND 011 · HASH-LINKED PATH PROVENANCE · NO IMPLICIT RELEASE · OBSERVER {{i}} FROZEN</footer></div>
+<script>
+'use strict';
+const $=id=>document.getElementById(id);
+const operators=Object.freeze([
+Object.freeze({id:'compress',label:'[compression]',l:'[',r:']'}),
+Object.freeze({id:'decompress',label:']decompression[',l:']',r:'['}),
+Object.freeze({id:'brace',label:'{brace}',l:'{',r:'}'}),
+Object.freeze({id:'unbrace',label:'}unbrace{',l:'}',r:'{'}),
+Object.freeze({id:'emerge',label:'(emergent)',l:'(',r:')'}),
+Object.freeze({id:'remerge',label:')re-mergent(',l:')',r:'('})
+]);
+const map=Object.fromEntries(operators.map(o=>[o.id,o]));
+const witness=Object.freeze({id:'{{i}}',index:0,guide:'Virgil',daughter:3,circle:'IX'});
+const genesis='ARCHON-011/GENESIS';
+const wrap=(o,x)=>map[o].l+x+map[o].r;
+function unwrap(o,x){const d=map[o];if(!x.startsWith(d.l)||!x.endsWith(d.r))throw new Error('BOUNDARY MISMATCH '+o);return x.slice(1,-1)}
+function eventData(route,stage,action,operator,input,output,parent){return Object.freeze({protocol:'archon/bound011/v1',witness:witness.id,index:witness.index,circle:witness.circle,route,stage,action,operator,input,output,parent})}
+async function sha256(value){const data=new TextEncoder().encode(value);const bytes=await crypto.subtle.digest('SHA-256',data);return Array.from(new Uint8Array(bytes),n=>n.toString(16).padStart(2,'0')).join('')}
+async function sign(data){return Object.freeze({...data,hash:await sha256(JSON.stringify(data))})}
+function cloneRecord(e){return {protocol:e.protocol,witness:e.witness,index:e.index,circle:e.circle,route:e.route,stage:e.stage,action:e.action,operator:e.operator,input:e.input,output:e.output,parent:e.parent}}
+async function build(route,source,order){
+let value=source,parent=genesis,entries=[];
+for(let i=0;i<2;i++){const o=order[i],next=wrap(o,value);const e=await sign(eventData(route,i,'encode',o,value,next,parent));entries.push(e);value=next;parent=e.hash}
+const encoded=value;
+for(let i=1;i>=0;i--){const o=order[i],next=unwrap(o,value);const e=await sign(eventData(route,entries.length,'decode',o,value,next,parent));entries.push(e);value=next;parent=e.hash}
+return Object.freeze({route,source,order:Object.freeze([...order]),encoded,recovered:value,records:Object.freeze(entries),terminalHash:parent})
+}
+async function verifyRun(run){let value=run.source,parent=genesis;
+if(run.records.length!==4||run.order.length!==2)return false;
+for(let i=0;i<4;i++){const e=run.records[i],operation=i<2?'encode':'decode',operator=i<2?run.order[i]:run.order[3-i];if(e.stage!==i||e.action!==operation||e.operator!==operator||e.input!==value||e.parent!==parent||e.route!==run.route||e.witness!==witness.id||e.index!==0||e.circle!=='IX'||e.protocol!=='archon/bound011/v1')return false;
+const output=operation==='encode'?wrap(operator,value):unwrap(operator,value);if(e.output!==output)return false;
+if(e.hash!==await sha256(JSON.stringify(cloneRecord(e))))return false;
+value=output;parent=e.hash}
+return value===run.source&&parent===run.terminalHash}
+const state={runs:[],busy:false};let session=[];
+const short=h=>h.slice(0,18)+'…';
+function node(tag,cls,text){const n=document.createElement(tag);n.className=cls||'';n.textContent=text;return n}
+function renderRun(run,id){$(id==='AB'?'pathAB':'pathBA').textContent='ENCODED:\n'+run.encoded+'\n\nRECOVERED:\n'+run.recovered;$(id==='AB'?'hashAB':'hashBA').textContent='TERMINAL SHA-256\n'+run.terminalHash;const list=$(id==='AB'?'recordsAB':'recordsBA');list.replaceChildren(...run.records.map(e=>{const card=node('div','event',''),title=node('strong','',String(e.stage).padStart(2,'0')+' / '+e.action.toUpperCase()+' / '+e.operator),details=node('p','','parent '+short(e.parent)+'\n'+e.input+' → '+e.output),code=node('code','','SHA '+e.hash);card.append(title,details,code);return card}))}
+function renderSession(){$('session').textContent=session.map(e=>String(e.i).padStart(3,'0')+' | '+e.summary+' | '+e.ab.slice(0,14)+' / '+e.ba.slice(0,14)).join('\n')}
+function setBusy(b){state.busy=b;for(const id of ['compare','verify','export','reset'])$(id).disabled=b}
+async function compare(){if(!crypto||!crypto.subtle){$('summary').textContent='Web Crypto SHA-256 unavailable. Open over HTTPS.';$('summary').className='readout warn';return}setBusy(true);try{
+const source=$('payload').value,a=$('opA').value,b=$('opB').value;const ab=await build('AB',source,[b,a]),ba=await build('BA',source,[a,b]);
+const okA=await verifyRun(ab),okB=await verifyRun(ba);if(!okA||!okB)throw Error('Ledger verification failed');
+state.runs=[ab,ba];renderRun(ab,'AB');renderRun(ba,'BA');
+const distinct=ab.terminalHash!==ba.terminalHash;
+$('summary').textContent='RECOVERY AB = '+(ab.recovered===source?'PASS':'FAIL')+'\nRECOVERY BA = '+(ba.recovered===source?'PASS':'FAIL')+'\nENCODED TEXT EQUAL = '+(ab.encoded===ba.encoded)+'\nTERMINAL HISTORIES EQUAL = '+(!distinct)+'\nWITNESS = '+witness.id+' / frozen 0';
+$('summary').className='readout';
+session=[...session,Object.freeze({i:session.length,summary:a+' vs '+b+' / '+source.length+' chars',ab:ab.terminalHash,ba:ba.terminalHash})];renderSession();
+$('virgil').textContent=a===b?'“Dante, identical instructions produce identical encoded text, though separately named records retain their route labels.”':'“Dante, both roads return to the same source. Their order remains written into the witness record.”';
+}catch(e){$('summary').textContent='FAIL · '+e.message;$('summary').className='readout warn'}finally{setBusy(false)}}
+async function verify(){setBusy(true);try{if(state.runs.length!==2)throw Error('Run both paths first');const results=await Promise.all(state.runs.map(verifyRun));$('summary').textContent=results.every(Boolean)?'PASS · both hash chains and transformations verified':'FAIL · chain mismatch detected';$('summary').className='readout '+(results.every(Boolean)?'':'warn')}catch(e){$('summary').textContent='FAIL · '+e.message}finally{setBusy(false)}}
+function exportJSON(){if(!state.runs.length){$('summary').textContent='Run both paths before exporting.';return}const data=JSON.stringify({protocol:'archon/bound011/v1',witness,runs:state.runs,session},null,2);const url=URL.createObjectURL(new Blob([data],{type:'application/json'}));const a=document.createElement('a');a.href=url;a.download='archon-bound011-provenance.json';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000)}
+function reset(){state.runs=[];session=[];$('summary').textContent='New ephemeral session / source unchanged';for(const id of ['pathAB','pathBA','hashAB','hashBA','recordsAB','recordsBA','session'])$(id).replaceChildren()}
+async function tests(){let checks=0,errors=[];function check(v,label){checks++;if(!v)errors.push(label)}
+try{const samples=['','x','(li(be[b[c[n[o(f(n(!noble)))]]]]))','😀\n{{i}}'];const choices=[['compress','brace'],['brace','compress'],['unbrace','remerge'],['emerge','decompress']];for(const source of samples)for(const order of choices){const x=await build('TEST',source,order);check(x.recovered===source,'restore');check(await verifyRun(x),'verify');const y=await build('TEST',source,order);check(x.terminalHash===y.terminalHash,'determinism');if(order[0]!==order[1]){const z=await build('TEST',source,[order[1],order[0]]);check(x.encoded!==z.encoded,'order-sensitive encoding');check(x.terminalHash!==z.terminalHash,'order-sensitive witness')}}
+const original=await build('TEST','A',['compress','brace']);const tampered={...original,records:[...original.records]};tampered.records[0]={...tampered.records[0],output:'FAKE'};check(!(await verifyRun(tampered)),'tamper detect');
+check(witness.id==='{{i}}'&&witness.index===0&&witness.circle==='IX','immutable witness');
+$('tests').textContent=errors.length?'FAIL · '+errors.join(', '):'PASS · '+checks+' tests · restored · deterministic · path-sensitive · tamper detected';$('tests').className=errors.length?'warn':'ok';
+}catch(e){$('tests').textContent='FAIL · '+e.message;$('tests').className='warn'}}
+for(const id of ['opA','opB'])for(const o of operators){const option=document.createElement('option');option.value=o.id;option.textContent=o.label;$(id).append(option)}
+$('opA').value='compress';$('opB').value='brace';$('compare').onclick=compare;$('verify').onclick=verify;$('export').onclick=exportJSON;$('reset').onclick=reset;
+if(globalThis.crypto?.subtle){tests().then(compare)}else{$('tests').textContent='SHA-256 needs HTTPS secure context';$('tests').className='warn';$('summary').textContent='Open this page over HTTPS to use SHA-256 hashing.'}
+</script></body></html>
