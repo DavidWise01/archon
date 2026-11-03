@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#090d1b">
+<meta name="description" content="ARCHON Bound 008: Six reversible directional delimiter operators, live tokenizer, transform ledger and round-trip tests.">
+<title>ARCHON // Bound 008 · Directional Operator Dialect</title><style>
+:root{color-scheme:dark;--bg:#0a0d19;--panel:#141a30;--edge:#3b405f;--ink:#f0eefa;--muted:#abb0c9;--cyan:#86e8ed;--lav:#c6a7f8;--gold:#f0ba86}
+*{box-sizing:border-box}body{margin:0;color:var(--ink);font:15px/1.55 system-ui,sans-serif;background:radial-gradient(ellipse at 50% -10%,#242143,#090d19 64%)}a{color:var(--cyan)}button,input,textarea{font:inherit}button{color:var(--ink);background:#28314a;border:1px solid #56637e;padding:10px 13px;border-radius:9px;cursor:pointer}button:hover,button[aria-pressed=true]{border-color:var(--cyan);background:#304662}button:focus-visible,textarea:focus-visible,a:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}.wrap{max-width:1350px;margin:auto;padding:0 20px}header{display:flex;justify-content:space-between;gap:16px;align-items:center;padding:22px 0;border-bottom:1px solid var(--edge);flex-wrap:wrap}header b{font:700 17px monospace;letter-spacing:.18em;color:var(--lav)}header nav{display:flex;flex-wrap:wrap;gap:16px;font:12px monospace}.hero{padding:42px 0 23px}.eyebrow{font:11px monospace;letter-spacing:.17em;text-transform:uppercase;color:var(--cyan)}h1{font:clamp(44px,7vw,83px)/1.02 Georgia,serif;letter-spacing:-.04em;margin:11px 0}h1 em{color:var(--lav)}h2{font:clamp(26px,4vw,43px)/1.1 Georgia,serif;margin:9px 0 17px}.intro{max-width:940px;color:#d4cde0;font-size:17px}.legend{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:20px 0 30px}.op{padding:18px;border:1px solid var(--edge);background:#161b30;border-radius:14px}.op code{display:block;font:23px/1.3 monospace;color:var(--cyan);white-space:pre-wrap;overflow-wrap:anywhere}.op strong{display:block;margin:8px 0 5px}.op p{color:var(--muted);font-size:12px;margin:0}.box{border:1px solid var(--edge);border-radius:16px;background:linear-gradient(145deg,#191c31,#111627);padding:20px}.work{display:grid;grid-template-columns:1fr 1fr;gap:15px}.controlset{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 18px}.field{width:100%;background:#0b1324;border:1px solid #45526e;border-radius:11px;padding:15px;color:#e9f5ff;font:15px/1.5 monospace;resize:vertical}.readout{white-space:pre-wrap;overflow-wrap:anywhere;color:#9fe6f2;background:#0a1525;border:1px solid #36546b;border-radius:9px;padding:14px;min-height:120px;font:13px/1.8 monospace}.output{margin:16px 0;display:grid;gap:9px}.pill{font:12px monospace;border:1px solid var(--edge);padding:7px 10px;border-radius:6px;color:#ded2ff;background:#28273d}.flow{display:flex;gap:7px;align-items:center;flex-wrap:wrap}.status{color:#9be8ba}.warn{color:#f4c18a}.section{padding:36px 0;border-top:1px solid var(--edge);margin-top:30px}.section p{color:#c9c6d9;max-width:940px}.code{background:#0a1323;border:1px solid #3b4762;border-radius:12px;padding:16px;color:#b5e9f2;overflow:auto;font:13px/1.75 monospace}.footer{padding:26px 0 40px;border-top:1px solid var(--edge);font:12px monospace;color:var(--muted)}@media(max-width:850px){.legend{grid-template-columns:repeat(2,1fr)}.work{grid-template-columns:1fr}}@media(max-width:540px){.legend{grid-template-columns:1fr}.wrap{padding:0 13px}}
+</style></head><body><div class="wrap"><header><b>ARCHON / BOUND 008</b><nav><a href="spinor.html">← SPINOR</a><a href="gate.html">GATE / GMA</a><a href="index.html">TERRACES</a></nav></header>
+<section class="hero"><div class="eyebrow">Six directional delimiters · fixed witness {{i}}</div><h1>THE <em>REVERSAL</em> DIALECT</h1><p class="intro">The orientation of a delimiter is part of its meaning. Forward forms and their directional inverses are separate operations; reversing one does not silently execute the other. The six forms below are the authored ARCHON dialect. Here we verify their exact textual encoding and inversion, not physical compression or quantum state change.</p></section>
+<section class="legend" id="operators"><div class="op"><code>[compression]</code><strong>COMPRESSION</strong><p>Forward square gate; represents compressing into a held representation.</p></div><div class="op"><code>]decompression[</code><strong>DECOMPRESSION</strong><p>Inverse square gate; represents decompression or expansion.</p></div><div class="op"><code>{brace}</code><strong>BRACE</strong><p>Forward curly boundary; represents binding or holding.</p></div><div class="op"><code>}unbrace{</code><strong>UNBRACE</strong><p>Inverse curly boundary; represents explicit opening or release.</p></div><div class="op"><code>(emergent)</code><strong>EMERGENT</strong><p>Forward round boundary; represents emergence into active state.</p></div><div class="op"><code>)re-mergent(</code><strong>RE-MERGENT</strong><p>Inverse round boundary; represents return or re-mergence.</p></div></section>
+<section class="work" id="laboratory"><div class="box"><div class="eyebrow">Operation composer</div><h2>Encode a state</h2><label for="payload">Payload / literal content</label><textarea class="field" id="payload" rows="3">Daughter3 / Circle IX / !noble</textarea><div class="controlset" id="operatorsButtons"></div><div class="output"><div class="eyebrow">Selected encoded frame</div><div id="frame" class="readout"></div><div class="eyebrow">Inverse operator</div><div id="inverse" class="readout"></div></div><div class="controlset"><button id="invert">INVERT DIRECTION</button><button id="roundTrip">CHECK ROUND TRIP</button></div><p id="result" class="status" role="status"></p></div>
+<div class="box"><div class="eyebrow">Witness / state transition</div><h2>Preserve what changes</h2><div class="flow"><span class="pill">VIRGIL / GUIDE</span><span class="pill">DANTE {{i}} / ZERO</span><span class="pill">D3 / CIRCLE IX</span></div><p style="color:#cdd1e2">This display records which operator is applied; it does not infer release simply because a spinor turns 360° or because the syntax is nested.</p><div class="eyebrow">Append-only, local-session observations</div><pre id="ledger" class="readout"></pre><div class="controlset"><button id="reset">RESET SESSION LEDGER</button></div><p style="color:var(--muted);font-size:12px">Only explicit clicking of an operator or inversion changes the selected operation. The observer remains fixed. Reset clears the ephemeral page ledger; nothing is saved to GitHub or a server.</p><div class="eyebrow">Deterministic checks</div><p id="tests" class="status"></p></div></section>
+<section class="section"><div class="eyebrow">Formal syntax · textual codec</div><h2>Six operations, three reversible pairs</h2><pre class="code">SQUARE: [ X ]   ⇄   ] X [
+CURLY : { X }   ⇄   } X {
+ROUND : ( X )   ⇄   ) X (
+
+Original model semantics:
+  compression   ⇄ decompression
+  brace         ⇄ unbrace
+  emergent      ⇄ re-mergent
+
+Witness: {{i}}  [Dante, fixed at 0]
+Guide: Virgil
+Circle IX: Daughter 3, frozen descent
+Reserved: soul register 8 IN / 9 OUT
+
+Important: inverse orientation is distinct from performing
+actual data decompression, chemical transformation or physical release.</pre><p>Reversibility proven here is <strong>syntactic</strong>: exact paired delimiters can be removed to recover their payload, including nested notation. It does not establish that all real-world operations are thermodynamically reversible. Physical compression needs a separately specified codec; nuclear transformations require conservation equations and evidence.</p></section>
+<footer class="footer">ARCHON · BOUND 008 · SIX DIRECTIONAL OPERATORS · NO IMPLICIT UNBRACE · {{i}} FROZEN</footer></div>
+<script>
+'use strict';
+const ops=Object.freeze([
+Object.freeze({id:'compress',name:'COMPRESSION',left:'[',right:']',inverse:'decompress'}),
+Object.freeze({id:'decompress',name:'DECOMPRESSION',left:']',right:'[',inverse:'compress'}),
+Object.freeze({id:'brace',name:'BRACE',left:'{',right:'}',inverse:'unbrace'}),
+Object.freeze({id:'unbrace',name:'UNBRACE',left:'}',right:'{',inverse:'brace'}),
+Object.freeze({id:'emergent',name:'EMERGENT',left:'(',right:')',inverse:'remergent'}),
+Object.freeze({id:'remergent',name:'RE-MERGENT',left:')',right:'(',inverse:'emergent'})
+]);
+const byId=Object.fromEntries(ops.map(o=>[o.id,o])), $=id=>document.getElementById(id);
+const witness=Object.freeze({id:'{{i}}',index:0,guide:'Virgil',daughter:3,circle:'IX'});
+let selection='compress',ledger=[];
+const encode=(o,p)=>o.left+p+o.right;
+const decode=(o,frame)=>frame.startsWith(o.left)&&frame.endsWith(o.right)?frame.slice(1,-1):null;
+function append(reason){ledger=[...ledger,Object.freeze({index:ledger.length,reason,operator:selection,encoded:encode(byId[selection],$('payload').value),witness:witness.id})];$('ledger').textContent=ledger.map(e=>String(e.index).padStart(3,'0')+' | '+e.reason+' | '+e.operator+' | '+e.encoded).join('\n')}
+function update(){const payload=$('payload').value,o=byId[selection],inv=byId[o.inverse];$('frame').textContent=encode(o,payload);$('inverse').textContent=encode(inv,payload);document.querySelectorAll('[data-op]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.op===selection)))}
+function choose(id){selection=id;update();append('OPERATOR SELECTED')}
+ops.forEach(o=>{const b=document.createElement('button');b.type='button';b.dataset.op=o.id;b.textContent=o.left+o.name.toLowerCase()+o.right;b.onclick=()=>choose(o.id);$('operatorsButtons').append(b)});
+$('payload').addEventListener('input',()=>{update();append('PAYLOAD EDITED')});
+$('invert').onclick=()=>{selection=byId[selection].inverse;update();append('DIRECTION INVERTED')};
+$('roundTrip').onclick=()=>{const o=byId[selection],p=$('payload').value,encoded=encode(o,p),decoded=decode(o,encoded);$('result').textContent=decoded===p?'PASS: payload preserved byte-for-byte as JavaScript text':'FAIL: payload changed';$('result').className=decoded===p?'status':'warn';append('ROUND TRIP CHECK')};
+$('reset').onclick=()=>{ledger=[];append('RESET / NEW SESSION')};
+function runTests(){let count=0,failed=[];function check(ok,label){count++;if(!ok)failed.push(label)}const samples=['','x','Daughter3 / Circle IX / !noble','(li(be[b[c[n[o(f(n(!noble)))]]]]))','][}{)('];
+for(const o of ops){const inv=byId[o.inverse];check(inv.inverse===o.id,'inverse map '+o.id);check(o.left===inv.right&&o.right===inv.left,'delimiter inversion '+o.id);for(const payload of samples)check(decode(o,encode(o,payload))===payload,'round trip '+o.id)}
+check(witness.id==='{{i}}'&&witness.index===0&&witness.circle==='IX','fixed observer');check(!encode(byId.compress,'x').includes('}{'),'no implicit unbrace');
+$('tests').textContent=(failed.length?'FAIL: '+failed.join(', '):'PASS: '+count+' checks / delimiter inversion, round-trip, fixed witness');$('tests').className=failed.length?'warn':'status'}
+update();append('INITIAL / OBSERVATION');runTests();
+</script></body></html>
