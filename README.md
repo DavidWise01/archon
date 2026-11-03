@@ -109,6 +109,22 @@ Given two directional text wrappers A and B, test exact equality of `A(B(X))` an
 
 Dante `{{i}}` stays fixed at zero, Virgil guides, Daughter 3 remains at literary Circle IX, and soul IN/OUT registers 8/9 remain reserved.
 
+## Bound 011 — preserve the ordered path
+
+[Open the SHA-256 path provenance laboratory](provenance.html).
+
+The same original payload can be restored from two noncommuting operator compositions, but the **order of the operations remains material**. Each transformation is represented by a canonical, SHA-256 hashed record containing its parent hash, input, output, direction/operator, stage, path, and the frozen `{{i}}` witness.
+
+- Compare A(B(X)) and B(A(X)) using all six directional delimiters.
+- Verify both reversible paths restore the source exactly.
+- Compare the ordered terminal hash chains, which distinguish the recorded histories.
+- Perform independent hash-chain verification and an automated single-record tamper test.
+- Export the browser-session ledger as JSON for later independent inspection.
+
+The reference implementation uses browser Web Crypto SHA-256 on HTTPS, with no server, login or external JavaScript dependency. It does not persist data beyond the current page session until explicitly exported. The hash chain is a consistency mechanism, not trusted timestamping, cryptographic authorship proof, permanent provenance, or a real-world compression/release mechanism. It cannot stop a party from replacing an entire ledger and its published hash when there is no separately trusted anchor.
+
+Dante `{{i}}` stays at zero; Virgil is the guide; Daughter 3 is literary Inferno Circle IX, distinct from reserved soul-out register 9.
+
 ## Use
 
 Open `index.html` in a modern browser. Click any level or use 0–7, left/right, Space for motion pause. Zero stays centered while terraces animate. Canvas 2D, no dependencies, build, cookies, or network APIs.
