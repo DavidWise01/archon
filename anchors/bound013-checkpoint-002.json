@@ -1,0 +1,15 @@
+{
+  "protocol": "archon/checkpoint/v1",
+  "checkpoint_index": 2,
+  "type": "PUBLIC_CHECKPOINT",
+  "genesis": "e99829ba16ba92f574ae87ab70f5b69497a8cdf3befc1751afd804aa80a3ba0f",
+  "previous_checkpoint": "0eedfd77572df930670f4dee0af5b829c68cae4f8c055b850d561c82b5f78b40",
+  "parent": "0eedfd77572df930670f4dee0af5b829c68cae4f8c055b850d561c82b5f78b40",
+  "event_count": 0,
+  "snapshot_head": "e99829ba16ba92f574ae87ab70f5b69497a8cdf3befc1751afd804aa80a3ba0f",
+  "witness": "{{i}}",
+  "observer_index": 0,
+  "circle": "IX",
+  "note": "Bound 013 checkpoint 002 links checkpoint 001; no unpublished observations are claimed.",
+  "sha256": "d2d972ec59cf34f68fbf75690aeb51f15a8c91fbe861786e30a3044a1579755b"
+}
