@@ -219,6 +219,16 @@ The system distinguishes **new late evidence** about an earlier event from a **n
 
 Dante `{{i}}` remains fixed at zero; Virgil guides; Daughter 3 is mapped to literary Circle IX; soul IN/OUT registers 8/9 stay reserved. No voting, quorums, or silent rewrites.
 
+## Bound 018 — inherited understanding, no retroactive certainty
+
+[Open the Inherited Understanding observatory](inheritance.html).
+
+A later interpretation inherits the verified *record prefix* that existed at the moment of its append. Every new entry captures its global predecessor SHA-256, the number of inherited knowledge entries, the previous reading for the same source, and the linked Bound 017 interpretation head and its prefix count. Historical prefix snapshots are replayable without backfilling subsequent information.
+
+Epistemic classes are distinct: `SUSPICION` denotes a possible hypothesis, `CLAIM` a reported assertion, and `RECORD_VERIFIED` only the cryptographic integrity of a record—not independent proof of the real-world assertion's truth. No vote or majority promotes a claim to fact. The browser-local engine includes append-only SHA-256 records, visual knowledge boundaries, audit/replay tests, a fictional example, and JSON import/export. Archive imports reject truncation or replacement of existing local history and its inherited source prefixes.
+
+The page verifies Git-tracked Bound 012 genesis and any embedded Bound 012 continuity events, Bound 016 temporal reports, and Bound 017 interpretation history before accepting its inherited ledger. The three-channel A/B/C model remains observation-only, with Dante `{{i}}` frozen at zero and Virgil guiding. No external timestamp attestation, unattended Git commits, physical claim validation, or independent human witness attestation is provided.
+
 ## Use
 
 Open `index.html` in a modern browser. Click any level or use 0–7, left/right, Space for motion pause. Zero stays centered while terraces animate. Canvas 2D, no dependencies, build, cookies, or network APIs.
