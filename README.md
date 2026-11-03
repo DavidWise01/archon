@@ -176,6 +176,18 @@ The witness viewer can read the Living Vessel's browser-local Bound 012 ledger o
 
 **Truthfulness constraints:** These are three deterministic *software projections* from one source event, not independent agents with separate sensors or three independently attesting people. C does not infer hidden motives. Browser-generated witness continuations are not public Git checkpoints until explicitly committed. SHA-256 supports consistency checks, not independently authenticated first authorship or timestamp proof. Soul registers 8/9 remain reserved and literary Circle IX remains distinct from soul-out 9.
 
+## Bound 015 — disagreement preservation, no quorum
+
+[Open the artistic disagreement chamber](disagreement.html).
+
+- A, B and C submit **separate literal reports about the same named question and verified event reference**.
+- Each report is appended to a global SHA-256 hash chain and a separate station-specific predecessor chain. Recorded earlier claims are never edited by subsequent claims.
+- The chamber shows **INCOMPLETE**, **CONVERGENT**, or **DIVERGENT** comparisons. No majority result overrides a dissenting report; missing evidence is not a negative vote.
+- Source events come from a verified Bound 012/013 browser continuation or imported report archive; the committed genesis may also be selected as a reference.
+- Includes a deliberately fictional two-versus-one disagreement example, integrity audits, export/import, and an import guard rejecting silent replacement or truncation of local report history.
+- A and B and C are manually entered channels; they are not three independent sensors or independently authenticated persons. Hash chains protect record consistency relative to the committed root or a separately retained head, not the truth of what a claimant says.
+- New user observations are local until exported and separately committed. Soul registers 8 and 9 remain reserved; Dante's Circle IX is not soul-out 9.
+
 ## Use
 
 Open `index.html` in a modern browser. Click any level or use 0–7, left/right, Space for motion pause. Zero stays centered while terraces animate. Canvas 2D, no dependencies, build, cookies, or network APIs.
