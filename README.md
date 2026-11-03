@@ -188,6 +188,22 @@ The witness viewer can read the Living Vessel's browser-local Bound 012 ledger o
 - A and B and C are manually entered channels; they are not three independent sensors or independently authenticated persons. Hash chains protect record consistency relative to the committed root or a separately retained head, not the truth of what a claimant says.
 - New user observations are local until exported and separately committed. Soul registers 8 and 9 remain reserved; Dante's Circle IX is not soul-out 9.
 
+## Bound 016 — temporal witness continuity
+
+[Open the temporal witness chamber](temporal.html).
+
+Bound 016 separates three explicitly labeled timestamps for each report:
+
+- **Event time:** when a witness claims the referenced event happened.
+- **Observation time:** when a witness claims to have observed it.
+- **Recording time:** the local browser clock at the moment of append (not trusted external time).
+
+Source references are verified against the committed Bound 012 genesis and any validated Bound 012/013 browser-continuity events. Each A/B/C temporal report carries a global SHA-256 predecessor, a station-specific predecessor, an event reference, and all three timestamps. The append sequence cannot be replaced by the chronological ordering: views may sort by event time or observation time without changing stored history.
+
+The chamber marks late-arriving evidence and observations with inconsistent time claims without auto-correcting or rejecting historical reports. Timestamps require a full ISO 8601 value with an explicit timezone. Demo records are clearly fictional. Users can import, export, audit, and append while preserving existing prior reports.
+
+A client clock is not a trusted timestamping authority, and the observation and event timestamps are **claims**, not verified historical instants. Browser records are not automatically published to Git; an exported checkpoint and subsequent public commit are necessary for external anchoring. No votes, no quorums, no retroactive replacement. Dante `{{i}}` remains frozen at zero, Daughter 3 maps to literary Circle IX, and soul registers 8/9 remain reserved.
+
 ## Use
 
 Open `index.html` in a modern browser. Click any level or use 0–7, left/right, Space for motion pause. Zero stays centered while terraces animate. Canvas 2D, no dependencies, build, cookies, or network APIs.
