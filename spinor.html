@@ -26,15 +26,16 @@ const immutableWitness=Object.freeze({observer:'{{i}}',index:0,daughter:3,circle
 let boundary='BOUND',events=[];
 function snapshot(reason){const e=Object.freeze({sequence:events.length,angle:theta,overlap:spin(theta).overlap,boundary,reason});events=[...events,e];renderBoundary()}
 function renderBoundary(){$('boundaryStatus').textContent='B = '+boundary+'\nexplicit events: '+events.filter(e=>e.reason==='}{ UNBRACE'||e.reason==='{} REBRACE').length;$('eventLedger').textContent=events.map(e=>String(e.sequence).padStart(3,'0')+' | θ='+String(e.angle).padStart(3,' ')+'° | overlap='+e.overlap.toFixed(3)+' | '+e.boundary+' | '+e.reason).join('\n');$('unbrace').disabled=boundary==='UNBRACED';$('rebrace').disabled=boundary==='BOUND'}
-function unbrace(){if(boundary==='UNBRACED')return;boundary='UNBRACED';snapshot('}{ UNBRACE')}
-function rebrace(){if(boundary==='BOUND')return;boundary='BOUND';snapshot('{} REBRACE')}
+function transitionBoundary(state,event){if(event==='}{')return 'UNBRACED';if(event==='{}')return 'BOUND';return state}
+function unbrace(){if(boundary==='UNBRACED')return;boundary=transitionBoundary(boundary,'}{');snapshot('}{ UNBRACE')}
+function rebrace(){if(boundary==='BOUND')return;boundary=transitionBoundary(boundary,'{}');snapshot('{} REBRACE')}
 function resetBoundary(){boundary='BOUND';events=[];snapshot('RESET / new observation ledger')}
 function testBoundary(){const m=spin(360),n=spin(720);let checks=0;const failures=[];function check(ok,label){checks++;if(!ok)failures.push(label)}
 check(immutableWitness.index===0&&immutableWitness.circle==='IX'&&immutableWitness.terminal==='!noble','witness');
 check(Math.abs(m.overlap+1)<tol,'360 sign flip');
 check(Math.abs(n.overlap-1)<tol,'720 restoration');
-for(let d=0;d<=720;d+=10){const before='BOUND';const after=before;check(after===before&&Math.abs(spin(d).norm-1)<tol,'rotation leaves B unchanged '+d)}
-let testState='BOUND';testState='UNBRACED';check(testState==='UNBRACED','explicit unbrace');testState='BOUND';check(testState==='BOUND','explicit rebrace');
+for(let d=0;d<=720;d+=10){const before='BOUND';const after=transitionBoundary(before,'ROTATE:'+d);check(after===before&&Math.abs(spin(d).norm-1)<tol,'rotation leaves B unchanged '+d)}
+let testState='BOUND';testState=transitionBoundary(testState,'}{');check(testState==='UNBRACED','explicit unbrace');testState=transitionBoundary(testState,'ROTATE:360');check(testState==='UNBRACED','rotation preserves already opened boundary');testState=transitionBoundary(testState,'{}');check(testState==='BOUND','explicit rebrace');
 $('releaseTests').textContent=failures.length?'FAIL · '+failures.join(', '):'PASS · '+checks+' boundary checks · rotations never release · only explicit }{ unbraces';$('releaseTests').className=failures.length?'warn':'ok'}
 
 function spin(deg){const a=deg*rad/2,c=Math.cos(a)/Math.SQRT2,s=Math.sin(a)/Math.SQRT2;return {up:[c,-s],down:[c,s],overlap:Math.cos(a),interference:(1+Math.cos(a))/2,norm:2*(c*c+s*s),pup:c*c+s*s,pdown:c*c+s*s,bloch:((deg%360)+360)%360}}
