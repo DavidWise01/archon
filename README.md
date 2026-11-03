@@ -137,6 +137,29 @@ The page loads and checks the committed anchor, appends SHA-256-linked witness e
 
 The observer is Dante `{{i}}` at index 0, with Virgil as guide; Daughter 3 is literary Circle IX, not soul-out register 9. Soul registers 8 and 9 remain reserved.
 
+## Bound 013 — artistic agentic observatory + linked public checkpoints
+
+[Open the living continuity observatory](continuity.html).
+
+The Bound 012 continuity page has been upgraded to Bound 013 with a responsive, animated Canvas2D toroidal/jellyfish-style vessel. Dante `{{i}}` is fixed at zero, Virgil remains the guide, and Daughter 3 is mapped to Dante's frozen Circle IX. Pause motion is available and reduced-motion preferences are honored.
+
+A deterministic browser-local **proposal engine** audits the current chain, inspects the current output, proposes the next directional operator on a bounded six-operator cycle, and presents the result for approval. It **cannot append automatically**, invoke external AI, or commit to Git. `APPROVE & APPEND` validates that the prior hash, sequence, and input are still current, then appends one record. The user may also manually append an operation.
+
+**Public checkpoint chain:**
+
+```text
+anchors/bound012-genesis.json
+  sha256 e99829ba16ba92f574ae87ab70f5b69497a8cdf3befc1751afd804aa80a3ba0f
+      |
+anchors/bound013-checkpoint-001.json
+  sha256 0eedfd77572df930670f4dee0af5b829c68cae4f8c055b850d561c82b5f78b40
+      |
+anchors/bound013-checkpoint-002.json
+  sha256 d2d972ec59cf34f68fbf75690aeb51f15a8c91fbe861786e30a3044a1579755b
+```
+
+Each checkpoint embeds the prior checkpoint's SHA-256 and canonical metadata. The page fetches and verifies all three files before enabling its agent. Checkpoints 001 and 002 each report **zero published browser events**; they demonstrate append-only Git checkpoint *structure* but do not claim an uncommitted session was preserved. Subsequent browser ledger events require export and a new explicitly committed checkpoint for independent Git anchoring. Browser cache alone is not durable public provenance.
+
 ## Use
 
 Open `index.html` in a modern browser. Click any level or use 0–7, left/right, Space for motion pause. Zero stays centered while terraces animate. Canvas 2D, no dependencies, build, cookies, or network APIs.
