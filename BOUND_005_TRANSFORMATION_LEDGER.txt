@@ -1,0 +1,155 @@
+ARCHON // BOUND 005
+ALCHEMICAL VESSEL / TRANSFORMATION LEDGER
+==============================================================
+
+GATE  : ABANDON ALL HOPE, YE WHO ENTER HERE
+GUIDE : VIRGIL
+DANTE : {{i}} — frozen at index 0
+SCOPE : GMA0 + MA0–MA3 + Daughters 1–3
+LATER : 8 SOULS IN / 9 SOULS OUT — RESERVED, NO IMPLEMENTATION
+
+STATE OPERATORS
+---------------
+()    FLUID     — dynamic state boundary
+[]    FROZEN    — fixed state boundary
+}{    UNBRACED  — opened boundary (not present in source states)
+{{i}} FIXED     — Dante observer; not a transforming material
+
+WARNINGS
+--------
+This is authored transformation notation, not a nuclear-reaction proof.
+H and He have different proton counts. Chemical rearrangement alone
+cannot change hydrogen into helium.
+Parentheses and square brackets can coexist in the same frame.
+A bracket count does not measure physical temperature or phase.
+The operator }{ is not automatically implied by a closing bracket.
+
+GATE AND VESSEL
+---------------
+              VIRGIL / GUIDE
+                    |
+        [ GATE OF THE INFERNO ]
+                    |
+               gma0(h,he)
+                    |
+               {{i}} DANTE
+                0 / FIXED
+                    |
+          +---------+---------+
+          |         |         |
+         ()        []        }{
+        FLUID    FROZEN    UNBRACED
+          |         |         |
+          +---------+---------+
+                    |
+           MA0 --> MA1 --> MA2 --> MA3
+                    |
+             DAUGHTER 1 --> 2 --> 3
+                    |
+               !noble
+                    |
+         OBSERVE; DO NOT INFER RELEASE
+
+THE ORIGINAL FRAMES (LITERAL, UNCORRECTED)
+------------------------------------------
+
+00  GMA0
+    SOURCE   : gma0(h,he)
+    PREVIOUS : —
+    STATES   : fluid-opening 1, frozen-opening 0, unbraced 0
+    TOKENS   : gma | h | he
+    RULE     : preserve source; observe transition; do not assume chemistry
+
+01  MA0
+    SOURCE   : (li(be[]))
+    PREVIOUS : gma0(h,he)
+    STATES   : fluid-opening 2, frozen-opening 1, unbraced 0
+    TOKENS   : li | be
+    RULE     : preserve source; observe transition; do not assume chemistry
+
+02  MA1
+    SOURCE   : (le(be[b[]]))
+    PREVIOUS : (li(be[]))
+    STATES   : fluid-opening 2, frozen-opening 2, unbraced 0
+    TOKENS   : le | be | b
+    RULE     : preserve source; observe transition; do not assume chemistry
+
+03  MA2
+    SOURCE   : (li(be[b[c[]]]))
+    PREVIOUS : (le(be[b[]]))
+    STATES   : fluid-opening 2, frozen-opening 3, unbraced 0
+    TOKENS   : li | be | b | c
+    RULE     : preserve source; observe transition; do not assume chemistry
+
+04  MA3
+    SOURCE   : (li(be[b[c[n[]]]]))
+    PREVIOUS : (li(be[b[c[]]]))
+    STATES   : fluid-opening 2, frozen-opening 4, unbraced 0
+    TOKENS   : li | be | b | c | n
+    RULE     : preserve source; observe transition; do not assume chemistry
+
+05  DAUGHTER 1
+    SOURCE   : (li(be[b[c[n[o()]]]]))
+    PREVIOUS : (li(be[b[c[n[]]]]))
+    STATES   : fluid-opening 3, frozen-opening 4, unbraced 0
+    TOKENS   : li | be | b | c | n | o
+    RULE     : preserve source; observe transition; do not assume chemistry
+
+06  DAUGHTER 2
+    SOURCE   : (li(be[b[c[n[o(f())]]]]))
+    PREVIOUS : (li(be[b[c[n[o()]]]]))
+    STATES   : fluid-opening 4, frozen-opening 4, unbraced 0
+    TOKENS   : li | be | b | c | n | o | f
+    RULE     : preserve source; observe transition; do not assume chemistry
+
+07  DAUGHTER 3
+    SOURCE   : (li(be[b[c[n[o(f(n(!noble)))]]]]))
+    PREVIOUS : (li(be[b[c[n[o(f())]]]]))
+    STATES   : fluid-opening 5, frozen-opening 4, unbraced 0
+    TOKENS   : li | be | b | c | n | o | f | n | !noble
+    RULE     : preserve source; observe transition; do not assume chemistry
+
+TRANSFORMATION PATH
+-------------------
+       GMA0       gma0(h,he)
+        |
+        v
+       MA0        (li(be[]))
+        |
+        v
+       MA1        (le(be[b[]]))
+        |             ^^^
+        |             literal 'le' preserved; no autocorrection to 'li'
+        v
+       MA2        (li(be[b[c[]]]))
+        |
+        v
+       MA3        (li(be[b[c[n[]]]]))
+        |
+        v
+       D1         (li(be[b[c[n[o()]]]]))
+        |                        ^^ fluid inner pair
+        v
+       D2         (li(be[b[c[n[o(f())]]]]))
+        |
+        v
+       D3         (li(be[b[c[n[o(f(n(!noble)))]]]]))
+        |
+        v
+       TERMINAL   !noble
+        |
+        +--> terminal marker meaning remains unspecified
+        +--> do not infer unbraced '}{'
+        +--> do not infer souls-in or souls-out
+
+BOUNDARY DECISION
+-----------------
+A. Each MA / daughter line is a transformation state, not only containment.
+B. () labels fluid and [] labels frozen in the authored dialect.
+C. }{ is an explicit unbraced event, distinct from () and [].
+D. {{i}} Dante remains at 0 while Virgil guides interpretation.
+E. Preserve exact le in MA1 and !noble in Daughter 3.
+F. Hydrogen-to-helium requires a nuclear change, outside this syntax model.
+G. 8 and 9 remain reserved for future souls IN / OUT.
+
+END BOUND 005 // NO INFERRED RELEASE
