@@ -1,0 +1,11 @@
+{
+  "protocol": "archon/story-ticks/v1",
+  "index": 1,
+  "identity": "{{i}}",
+  "scene": "The Mountain Denied",
+  "realm": "INFERNO",
+  "choice": 1,
+  "line": "Watch the she-wolf",
+  "parent": "9ba0d2e659795990905ac0a6fc22cfa77b4587fecfea3f5574f3eb8f4b73a623",
+  "sha256": "730faea7d246af4bf77515de225b24ce11c98e50205ae6a41ba8a380cb241fc6"
+}
