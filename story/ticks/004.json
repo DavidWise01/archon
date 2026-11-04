@@ -1,0 +1,11 @@
+{
+  "protocol": "archon/story-ticks/v1",
+  "index": 3,
+  "identity": "{{i}}",
+  "scene": "The Inscription",
+  "realm": "INFERNO",
+  "choice": 0,
+  "line": "Read the whole warning",
+  "parent": "6e196aa06c562745fbe871f6ecdcc52f920977ee68a6770ac6125633afcbeb38",
+  "sha256": "7da191a8c564546aa33d46d2f800e751eedbab701eb453511b5f5c82545093fc"
+}
