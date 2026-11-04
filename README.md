@@ -303,6 +303,16 @@ The app's deterministic replay validates the full inherited carry register, reje
 
 The animated route and 21 literary gates remain, with browser-local export/import, fictional examples, and invariant checks. Symbolic reports are not objective proof of moral attainment, independent observation, legal identity, or trusted timestamps. No voting, quorum, automatic Git persistence or implied authority transfer.
 
+## Bound 027 — homeostatic ascent and independent witness channels
+
+[Open the Homeostatic Ascent chamber](homeostasis.html).
+
+Bound 027 compares the current observation of each previously earned symbolic transformation to a **declared baseline and tolerance**, rather than automatically labeling every change a failure. The comparison uses a user-declared illustrative scale of 0–100, and records the criterion explaining what the numbers mean. If the absolute difference is within tolerance (inclusive), the inherited transformation can be marked `OBSERVED_RETAINED` and Dante advances without forced repair. If outside the declared band, the state is marked `OBSERVED_CHANGED` and requires an adaptation action and distinct follow-up description before the new ascent record can be appended. `NOT_ASSESSED` carries no invented conclusion.
+
+Each assessed transformation also records literal A/B/C observation reports, with at least one substantive channel report required. All reports are retained independently; **no quorum, averaging, or voting** can certify a result. Contradictory reports remain visible. The gate rejects a reported status that contradicts the declared numeric band, missing witness evidence, missing adaptation after a declared out-of-band change, and altered inherited source references. Bound 025/026 immutable history, the 21-stage forward literary progression, and SHA-256 append-only lineage are preserved.
+
+These numerical values are illustrative and self-declared; they do not measure moral or spiritual merit, imply verified sensor independence, or validate a universal failure threshold. The browser retains local state until JSON export and deliberate external anchoring. The literary model remains Dante's upward journey, not a frozen place at Circle IX.
+
 ## Use
 
 Open `index.html` in a modern browser. Click any level or use 0–7, left/right, Space for motion pause. Zero stays centered while terraces animate. Canvas 2D, no dependencies, build, cookies, or network APIs.
