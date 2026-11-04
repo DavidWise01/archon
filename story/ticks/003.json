@@ -1,0 +1,11 @@
+{
+  "protocol": "archon/story-ticks/v1",
+  "index": 2,
+  "identity": "{{i}}",
+  "scene": "The Guide",
+  "realm": "INFERNO",
+  "choice": 1,
+  "line": "Ask why he came",
+  "parent": "730faea7d246af4bf77515de225b24ce11c98e50205ae6a41ba8a380cb241fc6",
+  "sha256": "6e196aa06c562745fbe871f6ecdcc52f920977ee68a6770ac6125633afcbeb38"
+}
