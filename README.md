@@ -378,6 +378,12 @@ A separate user-reported finding describes `SUPPORT_REPORTED`, `CONTRADICTION_RE
 
 The chapter preserves continuous `{{i}}` identity, forward literary ascent, independent A/B/C historical witness reports, no quorum, and append-only browser-local JSON export/import. Context tags and reports are user-authored descriptions rather than authenticated measurements; transfer similarity is not verified equivalence, demonstrated causation, or an authorization for an intervention.
 
+## Canonical adventure ticks
+
+**Tick 001 — Follow the small light** has been published as an immutable first story choice: [event record](story/ticks/001.json) · [literary chapter](story/chapters/001.md). Its SHA-256 head is `9ba0d2e659795990905ac0a6fc22cfa77b4587fecfea3f5574f3eb8f4b73a623`. New visitors without a previous browser-local save begin at **Tick 001 / The Mountain Denied** with the light-led arrival vignette. Existing local save histories and alternate first choices remain their own branches.
+
+Each succeeding canonical turn should append its own `story/ticks/NNN.json` and `story/chapters/NNN.md`, then update the default published-tick prefix in `story.html` without altering earlier events. The original story's 40 scene-choice ticks remain deterministic; browser-local playthroughs can still diverge after the published prefix.
+
 ## Playable story — Dante & the Living Gate
 
 [Play the pixel-art Dante adventure on GitHub Pages](story.html) · [View the source](story.html).
