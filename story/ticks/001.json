@@ -1,0 +1,11 @@
+{
+  "protocol": "archon/story-ticks/v1",
+  "index": 0,
+  "identity": "{{i}}",
+  "scene": "The Dark Wood",
+  "realm": "INFERNO",
+  "choice": 0,
+  "line": "Follow the small light",
+  "parent": "ARCHON_DANTE_LIVING_GATE_V1",
+  "sha256": "9ba0d2e659795990905ac0a6fc22cfa77b4587fecfea3f5574f3eb8f4b73a623"
+}
