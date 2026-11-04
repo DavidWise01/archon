@@ -1,0 +1,11 @@
+{
+  "protocol": "archon/story-ticks/v1",
+  "index": 8,
+  "identity": "{{i}}",
+  "scene": "Circle IV · The Weights",
+  "realm": "INFERNO",
+  "choice": 1,
+  "line": "Observe the endless push",
+  "parent": "68f8546e264e85af3fdc55533a6048a1add3d868d0c0453b0ff575b344763b31",
+  "sha256": "8c593b7e6b65ae1195ebdb3d98f6fce215a9a2d390041358ce47113c4d9b2ba4"
+}
