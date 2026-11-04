@@ -328,6 +328,16 @@ Recommendations are **nonbinding**; they do not prevent ascent or claim that Dan
 
 Each checkpoint includes the exact source gate, available event-prefix head/count, three-sample window, derived assessment, recommendation, supplied explanation, recording time, prior checkpoint hash and continuous `{{i}}` identity. Replay verification recomputes the observation window from the inherited ascent prefix and rejects altered hashes, data or earlier checkpoints. The browser supports trend inspection, JSON export/import, audit and targeted tests; it does **not** automatically anchor records to GitHub. Dante continues ascending without returning to the frozen Circle IX.
 
+## Bound 029 — proportional replenishment and later observation follow-up
+
+[Open Bound 029: Proportion Engine](proportion.html).
+
+Bound 029 extends the validated three-observation trend checkpoints from Bound 028 into a new append-only **nonbinding proposal and later-observation ledger**. A proposal freezes a verified trend checkpoint hash, its source gate, the current ascent prefix, and a declared fixed-policy symbolic intensity. The current policy maps `GENTLE_REPLENISHMENT` to `SMALL_25` (25% symbolic tier), `ADAPT_REVIEW` to `REVIEW_ONLY` (zero automatic action), and `OBSERVE_FURTHER` or `CONTINUE_OBSERVING` to `NONE`. Numerical tiers are design labels, **not real dosages, treatments or physically calibrated measurements**.
+
+An unresolved proposal can later be linked to a **newer validated observation of the same inherited transformation**, if such an event exists. A separate hash-linked follow-up records whether the absolute deviation from the declared baseline increased, decreased, or remained unchanged. The app does **not** assert that a proposal was executed or caused any difference. Follow-ups are blocked if there is no later qualifying observation and cannot rewrite the proposal, prior trend checkpoint, original observation, or earlier ascent record.
+
+Verification recursively audits the ascent, Bound 028 trend history, and Bound 029 proposal/follow-up hash chain, checks source-event ancestry, enforces a forward observation boundary and rejects duplicate follow-ups, altered outcome labels and changed record hashes. JSON import/export keeps complete upstream history. A/B/C observations remain embedded in their original independent source records, without voting or quorum. The page runs locally until export and separate Git anchoring; the live site is not an authenticated measurement instrument.
+
 ## Use
 
 Open `index.html` in a modern browser. Click any level or use 0–7, left/right, Space for motion pause. Zero stays centered while terraces animate. Canvas 2D, no dependencies, build, cookies, or network APIs.
