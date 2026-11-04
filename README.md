@@ -293,6 +293,16 @@ The new record contains the exact previous chain head (`inheritedHead`), a compl
 
 The chamber supports browser-local JSON import/export, a fictional before-and-after gate example that does not auto-advance, and source-specific tamper tests. Browser-local persistence is not an externally timestamped or Git-published record until exported and explicitly anchored. These are symbolic self-reported changes, not independently measured spiritual attainment.
 
+## Bound 026 — adaptive ascension without rewind
+
+[Open Bound 026: Adaptive Ascent](adaptation.html).
+
+Dante's journey does **not** return to frozen Circle IX when a previously acquired symbolic state is reported to have changed. Instead, each inherited transformation continues to reference the exact original SHA-256 gate and gains an explicit adaptation record within the next forward passage. For `OBSERVED_CHANGED`, the system requires a description of the changed state, an adaptation action or reinterpretation, and a **distinct follow-up observation** (at least 12 characters each). The outcome must be declared as `REVISED_UNDERSTANDING` or `RESTORED_REPORTED`, not automatically promoted to a verified restoration.
+
+The app's deterministic replay validates the full inherited carry register, rejects missing adaptation evidence, forged source hashes, identical action/follow-up strings, altered predecessor heads, skipped stages, and tampered transition hashes. Previous transitions remain unchanged, `NOT_ASSESSED` stays unclaimed, and `OBSERVED_RETAINED` still requires its separate witness note. The new correction is included in the next stage's append-only SHA-256 record, while Dante `{{i}}` moves **forward**.
+
+The animated route and 21 literary gates remain, with browser-local export/import, fictional examples, and invariant checks. Symbolic reports are not objective proof of moral attainment, independent observation, legal identity, or trusted timestamps. No voting, quorum, automatic Git persistence or implied authority transfer.
+
 ## Use
 
 Open `index.html` in a modern browser. Click any level or use 0–7, left/right, Space for motion pause. Zero stays centered while terraces animate. Canvas 2D, no dependencies, build, cookies, or network APIs.
