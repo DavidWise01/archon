@@ -283,6 +283,16 @@ Each accepted transition is appended to a browser-local SHA-256 history anchored
 
 Supports JSON export/import, non-rewriting local history, and integrity tests. No votes, quorums, or automatic Git commit. Circle IX remains a turning passage; ascension is the artistic objective.
 
+## Bound 025 — retained transformation across ascending stages
+
+[Open Bound 025: Retained Ascent](retention.html).
+
+Each completed Bound 024 transformation is inherited as a **source-linked prior gate**, rather than silently converting its declared after-state into a permanent trait. At the next passage, each earlier transformation receives one of three independent, explicit reports: `NOT_ASSESSED`, `OBSERVED_RETAINED`, or `OBSERVED_CHANGED`. Retained and changed observations require their own nonempty witness explanation. An unassessed state must not be presented as evidence of persistence.
+
+The new record contains the exact previous chain head (`inheritedHead`), a complete inherited snapshot with every prior gate's SHA-256 hash, acquired after-state, current reported status, and supporting note. Deterministic replay verifies each gate, the entire carry list, its referents and head, and rejects altered claims or observations. All 21 literary gate transitions remain in order. The moving Dante `{{i}}` identity is continuous, but Dante's position and the currently reported state can change. No majority, quorum, automatic spiritual certainty, or silently inherited authority.
+
+The chamber supports browser-local JSON import/export, a fictional before-and-after gate example that does not auto-advance, and source-specific tamper tests. Browser-local persistence is not an externally timestamped or Git-published record until exported and explicitly anchored. These are symbolic self-reported changes, not independently measured spiritual attainment.
+
 ## Use
 
 Open `index.html` in a modern browser. Click any level or use 0–7, left/right, Space for motion pause. Zero stays centered while terraces animate. Canvas 2D, no dependencies, build, cookies, or network APIs.
