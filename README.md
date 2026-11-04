@@ -253,6 +253,18 @@ The responsive animated toroidal vessel displays the independent record chain an
 
 **Scope limitation:** software A/B/C channels and typed receiver labels do not prove the existence of separate real-world witnesses or independently acquired evidence. The genesis remains `UNATTRIBUTED_IN_GENESIS` until separate verified attribution evidence exists. SHA-256 establishes internal consistency relative to trusted retained anchors, not legal ownership, true observations, or trusted chronology. Dante `{{i}}` remains frozen at zero; Virgil guides; Daughter 3 is literary Circle IX and soul registers 8/9 remain reserved.
 
+## Bound 021 — corroboration requires independent evidence paths
+
+[Open the Corroboration Lattice](corroboration.html).
+
+The Bound 021 page extends the verified Bound 020 successor observer with a separate append-only **evidence genealogy** ledger. Each path references a verified Bound 020 observation and records its question, channel A/B/C, acquisition declaration (`INHERITED_COPY`, `DIRECT`, `EXTERNAL`, `UNKNOWN`), evidence root ID, literal claim, method, browser recording time, previous global evidence hash, and previous channel-specific evidence hash.
+
+Literal agreement from a **shared evidence root** is shown as dependent repetition, not independent corroboration. Two or more **distinct declared roots** with declared direct/external acquisition may be shown as *potential corroboration, not authenticated*. Unknown provenance remains insufficient. Reports are compared by identical question and literal claim. There is no quorum, majority resolution or fact promotion.
+
+The page reuses Bound 020's complete upstream verification path (Bound 012 genesis through Bound 019 receipts and Bound 020 observations), hashes each added record with SHA-256, rejects archive imports that replace prior local source or path history, exports JSON, and includes an illustrative shared-root vs separate-root example. The demo cannot run without upstream Bound 020 observations and never invents an authenticated sensor. All entries remain browser-local until exported and separately Git-anchored.
+
+**Limit:** evidence roots are user-entered labels, not independently authenticated signatures or proof of causal independence. Source consistency does not prove factual correctness or legal authorship. Dante `{{i}}` stays fixed at zero; Virgil guides; no quorum or silent rewriting is introduced.
+
 ## Use
 
 Open `index.html` in a modern browser. Click any level or use 0–7, left/right, Space for motion pause. Zero stays centered while terraces animate. Canvas 2D, no dependencies, build, cookies, or network APIs.
