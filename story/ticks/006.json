@@ -1,0 +1,11 @@
+{
+  "protocol": "archon/story-ticks/v1",
+  "index": 5,
+  "identity": "{{i}}",
+  "scene": "Limbo",
+  "realm": "INFERNO",
+  "choice": 1,
+  "line": "Notice the limits",
+  "parent": "080ba5054a371c99ebf71cb807d07de43eef9e3b0e690e21076beea921e35326",
+  "sha256": "38846948165edaff8487a6d5e37c6749f8a3c5dd45448d57095a5ada11cd7b3e"
+}
