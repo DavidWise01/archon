@@ -338,6 +338,16 @@ An unresolved proposal can later be linked to a **newer validated observation of
 
 Verification recursively audits the ascent, Bound 028 trend history, and Bound 029 proposal/follow-up hash chain, checks source-event ancestry, enforces a forward observation boundary and rejects duplicate follow-ups, altered outcome labels and changed record hashes. JSON import/export keeps complete upstream history. A/B/C observations remain embedded in their original independent source records, without voting or quorum. The page runs locally until export and separate Git anchoring; the live site is not an authenticated measurement instrument.
 
+## Bound 030 — closed-loop learning without a causal leap
+
+[Open the Closed-Loop Learning Chamber](closed-loop.html).
+
+This chamber extends the verified Bound 029 proposals with a third, separately SHA-256-chained ledger of **self-reported decision**, **newer observation**, and **cautious interpretation**. Decisions may be `ATTEMPTED`, `DECLINED`, `DEFERRED`, or `UNKNOWN`; all require an explicit explanatory basis. No action is executed by the application.
+
+A decision links to one exact earlier proposal. A follow-up can be appended only when a valid observation of the same inherited transformation appears in an ascent event **after the decision's recorded source prefix**. The follow-up compares absolute deviations from the declared baseline, reporting increased, reduced, or unchanged deviation—never an inferred treatment effect or proof that the proposal was implemented. A third optional learning record links that observation to its specific decision and proposal; interpretation is restricted to `DESCRIPTIVE_ONLY`, `MORE_OBSERVATION_REQUIRED`, or `INCONCLUSIVE`, with a distinct explanatory note.
+
+Replay verifies all source Bound 012–029 records, hash heads and prefixes, parent chronology, exact proposal/decision/observation references, nonduplication, and all derived outcome labels. Earlier events and distinct A/B/C witness reports remain intact, with no quorum, voting, causal claim, external measurement, or automatically executed action. The page provides an animated Dante ascent, JSON import/export, an integrity audit and synthetic boundary tests. Browser-local histories are not independently time-attested or Git-anchored until separately exported and committed.
+
 ## Use
 
 Open `index.html` in a modern browser. Click any level or use 0–7, left/right, Space for motion pause. Zero stays centered while terraces animate. Canvas 2D, no dependencies, build, cookies, or network APIs.
