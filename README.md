@@ -265,6 +265,14 @@ The page reuses Bound 020's complete upstream verification path (Bound 012 genes
 
 **Limit:** evidence roots are user-entered labels, not independently authenticated signatures or proof of causal independence. Source consistency does not prove factual correctness or legal authorship. Dante `{{i}}` stays fixed at zero; Virgil guides; no quorum or silent rewriting is introduced.
 
+## Bound 023 — Dante ascends; identity does not mean immobility
+
+[Open the Ascent Engine](ascension.html). This corrects the symbolic orientation of ARCHON: Dante's `{{i}}` is a continuous identity, not a permanent coordinate fixed beside frozen Lucifer. Circle IX is the passage and inversion point. The upward journey includes emergence, Antepurgatory, the seven terraces, Earthly Paradise, celestial spheres, and the Empyrean.
+
+The page provides a moving animated Dante marker, explicit guide changes (Virgil to Beatrice and St. Bernard), ordered stages, a browser-local append-only SHA-256 lineage rooted in the public Bound 012 genesis, import/export, tamper checks, and an optional full-route traversal. No stage may be skipped or rewritten within an existing chain. The page models literary symbolism, not physical geography. Local records are not automatically committed to Git.
+
+**Invariant:** identity persists; position, orientation, guide and understanding change. The center is a turn, not a throne.
+
 ## Use
 
 Open `index.html` in a modern browser. Click any level or use 0–7, left/right, Space for motion pause. Zero stays centered while terraces animate. Canvas 2D, no dependencies, build, cookies, or network APIs.
