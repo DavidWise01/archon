@@ -1,0 +1,11 @@
+{
+  "protocol": "archon/story-ticks/v1",
+  "index": 6,
+  "identity": "{{i}}",
+  "scene": "Circle II · The Wind",
+  "realm": "INFERNO",
+  "choice": 0,
+  "line": "Hear Francesca",
+  "parent": "38846948165edaff8487a6d5e37c6749f8a3c5dd45448d57095a5ada11cd7b3e",
+  "sha256": "1d7e605f654d5857e5e6c274df84ca205d7b6f9c2e9e299da06f88bd78c9f31c"
+}
