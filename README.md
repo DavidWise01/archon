@@ -378,6 +378,16 @@ A separate user-reported finding describes `SUPPORT_REPORTED`, `CONTRADICTION_RE
 
 The chapter preserves continuous `{{i}}` identity, forward literary ascent, independent A/B/C historical witness reports, no quorum, and append-only browser-local JSON export/import. Context tags and reports are user-authored descriptions rather than authenticated measurements; transfer similarity is not verified equivalence, demonstrated causation, or an authorization for an intervention.
 
+## Playable story — Dante & the Living Gate
+
+[Play the pixel-art Dante adventure on GitHub Pages](story.html) · [View the source](story.html).
+
+A standalone, original **40-room choose-your-own-adventure** retelling of the *Divine Comedy*, from the dark wood through Inferno, the central inversion below Lucifer, the terraces of Purgatory, and the heavens of Paradiso. It evokes the exploratory feel of classic pixel platformers with an original procedural temple, Dante and guide sprites, torches, moving/jumping, room entrances, collectible in-room lights and two scene-specific narrative choices. It does not copy gameplay assets or characters from commercial games.
+
+**One choice = one story tick.** Each choice advances exactly one room and appends a SHA-256-linked event containing the canonical scene, original choice text, traveler identity `{{i}}`, and previous event hash. Walking, jumping, collecting lights, or reentering a room never increments the story tick. A deliberately new local story can be started after confirmation; exported prior histories remain unchanged. Browser-local automatic save/resume, full export/import, deterministic tamper verification, and a visible tick-by-tick ledger are included.
+
+The two responses influence Dante's narrative voice and symbolic registers, not his ability to reach the end. There is no permanent death or trap and no stuck ending at Circle IX. Literary scene text is a creative adaptation of Dante's public-domain work, not a claim of newly established theology or physics. The GitHub Pages URL is `https://davidwise01.github.io/archon/story.html`.
+
 ## Use
 
 Open `index.html` in a modern browser. Click any level or use 0–7, left/right, Space for motion pause. Zero stays centered while terraces animate. Canvas 2D, no dependencies, build, cookies, or network APIs.
