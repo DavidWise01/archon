@@ -273,6 +273,16 @@ The page provides a moving animated Dante marker, explicit guide changes (Virgil
 
 **Invariant:** identity persists; position, orientation, guide and understanding change. The center is a turn, not a throne.
 
+## Bound 024 — earned symbolic ascension
+
+[Open the Transformation Gates](transformation.html).
+
+Dante's journey remains an upward progression, but no longer advances merely by pressing Next. The 21 transitions of the Bound 023 route now each have a deterministic **before-condition → transformation operator → after-condition**, plus an explicit before observation, after observation, and witness basis. The next stage only opens after the corresponding gate is satisfied. The gate's checks validate recorded symbolic exercise evidence, **not** spiritual achievement, independently authenticated witnessing, or historical truth.
+
+Each accepted transition is appended to a browser-local SHA-256 history anchored to the committed Bound 012 genesis. The record fixes Dante's continuous identity `{{i}}`, changing position, guide, direction and stage meaning. Validation rejects mismatched symbolic states, identical before/after descriptions, missing witness basis, altered hashes, and skipped stages. The fictional example button fills a sample gate; it does **not** bypass the transition checks or silently complete the entire ascent.
+
+Supports JSON export/import, non-rewriting local history, and integrity tests. No votes, quorums, or automatic Git commit. Circle IX remains a turning passage; ascension is the artistic objective.
+
 ## Use
 
 Open `index.html` in a modern browser. Click any level or use 0–7, left/right, Space for motion pause. Zero stays centered while terraces animate. Canvas 2D, no dependencies, build, cookies, or network APIs.
