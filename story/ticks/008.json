@@ -1,0 +1,11 @@
+{
+  "protocol": "archon/story-ticks/v1",
+  "index": 7,
+  "identity": "{{i}}",
+  "scene": "Circle III · The Rain",
+  "realm": "INFERNO",
+  "choice": 0,
+  "line": "Offer a name",
+  "parent": "1d7e605f654d5857e5e6c274df84ca205d7b6f9c2e9e299da06f88bd78c9f31c",
+  "sha256": "68f8546e264e85af3fdc55533a6048a1add3d868d0c0453b0ff575b344763b31"
+}
