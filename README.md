@@ -358,6 +358,16 @@ Replay guards require that challenges occur after the hypothesis's recorded obse
 
 These are user-reported symbolic inferences and comparisons, not independently verified spiritual, historical or scientific conclusions. A/B/C reports stay in their original independent source records; no votes, quorums, automatic promotion to universal law, automatic intervention or rewinding to Circle IX. Dante continues ascending while changing his mind as evidence warrants.
 
+## Bound 032 — contextual wisdom and scoped application
+
+[Open Bound 032: Contextual Wisdom](context.html).
+
+Bound 032 extends the Bound 031 provisional-hypothesis ledger with a **three-stage context genealogy**. A `RULE` attaches to one exact provisional hypothesis and declares a required label, an exclusion label, and a rationale for limiting applicability. A `CHECK` attaches to the original rule and a *later verified ascent event*, recording sorted user-reported context labels and a concrete evidence note. The rule deterministically derives `WITHHOLD` if the exclusion label appears, `CONSIDER_CAUTIOUSLY` if the required label appears without exclusion, or `UNKNOWN` otherwise. A `REVISION` links to the exact context check and appends `RETAIN_LIMITS`, `NARROW_SCOPE`, or `SUSPEND` with a separate explanation.
+
+Labels are user-supplied descriptions, **not authenticated environmental observations**; a matched label is not proof of actual applicability, causation, virtue, or a command to intervene. The underlying original hypothesis, reported contradictions, challenge histories, and A/B/C witness statements are never replaced or voted upon. The ledger refuses checks sourced from before the rule, duplicate reuse of the same event under one rule, altered outcome labels, forged references, and revisions with edited contexts. History is SHA-256-linked to the full Bound 012–031 ascent genealogy, browser-local until explicitly exported and anchored.
+
+The interactive Dante vessel continues ascending. Context changes what is cautiously considered, not Dante's identity or the direction of his journey.
+
 ## Use
 
 Open `index.html` in a modern browser. Click any level or use 0–7, left/right, Space for motion pause. Zero stays centered while terraces animate. Canvas 2D, no dependencies, build, cookies, or network APIs.
