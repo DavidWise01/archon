@@ -313,6 +313,21 @@ Each assessed transformation also records literal A/B/C observation reports, wit
 
 These numerical values are illustrative and self-declared; they do not measure moral or spiritual merit, imply verified sensor independence, or validate a universal failure threshold. The browser retains local state until JSON export and deliberate external anchoring. The literary model remains Dante's upward journey, not a frozen place at Circle IX.
 
+## Bound 028 — self-regulating ascent and trend-based replenishment
+
+[Open Bound 028: Replenishment Loom](replenishment.html).
+
+Bound 028 extends the homeostatic ascending vessel with an **append-only trend-checkpoint ledger**. For each earlier transformation it derives a reproducible window of up to the three most recent validated, assessed observations of that same source gate, preserving the upstream SHA-256 event hashes, declared baseline/current/tolerance values, and independent A/B/C text reports.
+
+- With fewer than three available observations the recommendation is `OBSERVE_FURTHER`.
+- When the latest reading is outside its declared band, it becomes `ADAPT_REVIEW`.
+- Three strictly increasing normalized deviations ending at 75% or more of the allowed tolerance, while still in-band, lead to `GENTLE_REPLENISHMENT`.
+- Otherwise the output is `CONTINUE_OBSERVING`.
+
+Recommendations are **nonbinding**; they do not prevent ascent or claim that Dante has failed. The tolerance and all numerical values are user-declared illustrative comparisons, not physical or spiritual measurements. A/B/C reports remain independent text channels and are never voted on or averaged. Unknown evidence is not converted into proof.
+
+Each checkpoint includes the exact source gate, available event-prefix head/count, three-sample window, derived assessment, recommendation, supplied explanation, recording time, prior checkpoint hash and continuous `{{i}}` identity. Replay verification recomputes the observation window from the inherited ascent prefix and rejects altered hashes, data or earlier checkpoints. The browser supports trend inspection, JSON export/import, audit and targeted tests; it does **not** automatically anchor records to GitHub. Dante continues ascending without returning to the frozen Circle IX.
+
 ## Use
 
 Open `index.html` in a modern browser. Click any level or use 0–7, left/right, Space for motion pause. Zero stays centered while terraces animate. Canvas 2D, no dependencies, build, cookies, or network APIs.
