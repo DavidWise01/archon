@@ -48,8 +48,8 @@ const bytes=s=>new TextEncoder().encode(s);
 async function digest(s){const raw=await crypto.subtle.digest('SHA-256',bytes(s));return [...new Uint8Array(raw)].map(x=>x.toString(16).padStart(2,'0')).join('')}
 function current(){return SCENES[Math.min(events.length,SCENES.length-1)]}
 function realm(){return current()[1]}
-function guide(){return events.length>=27?'Beatrice':events.length===SCENES.length-1?'Bernard':'Virgil'}
-function stats(){const result={mercy:0,courage:0,wonder:0};for(const e of events)result[e.choice===0?'mercy':'wonder']++,result.courage+=Number(e.choice===1&&e.index%3===0);return result}
+function guide(){return events.length>=38?'Bernard':events.length>=27?'Beatrice':'Virgil'}
+function stats(){const result={mercy:0,courage:0,wonder:0};for(const e of events){result[e.choice===0?'mercy':'wonder']++;result.courage+=Number(e.choice===1&&e.index%3===0)}return result}
 function head(){return events.length?events[events.length-1].sha256:GENESIS}
 async function verify(list){if(!Array.isArray(list)||list.length>SCENES.length)throw Error('Tick count invalid');let parent=GENESIS;for(let i=0;i<list.length;i++){const e=list[i];const base={protocol:PROTO,index:i,identity:IDENTITY,scene:SCENES[i][0],realm:SCENES[i][1],choice:e?.choice,line:SCENES[i][3+e?.choice],parent};if(!e||!(e.choice===0||e.choice===1)||Object.keys(e).sort().join('|')!=='choice|identity|index|line|parent|protocol|realm|scene|sha256'||Object.keys(base).some(k=>e[k]!==base[k])||e.sha256!==await digest(JSON.stringify(base)))throw Error('Story tick '+(i+1)+' failed verification');parent=e.sha256}return parent}
 function save(){try{localStorage.setItem(KEY,JSON.stringify({protocol:PROTO,identity:IDENTITY,events,head:head()}))}catch(e){signal('Browser storage unavailable; export the story.',false)}}
