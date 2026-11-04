@@ -368,6 +368,16 @@ Labels are user-supplied descriptions, **not authenticated environmental observa
 
 The interactive Dante vessel continues ascending. Context changes what is cautiously considered, not Dante's identity or the direction of his journey.
 
+## Bound 033 — transferable wisdom without assumed equivalence
+
+[Open Bound 033: Transfer Vessel](transfer.html).
+
+Bound 033 extends Bound 032's verified context checks with a separately SHA-256-linked **transfer comparison and interpretation** ledger. A `TRANSFER` references an exact original `CHECK` (and its hypothesis, rule and original ascent event) and must refer to a different later verified ascent event. The new context labels are supplied independently and compared with the original: `shared`, `removed`, and `added` arrays are deterministically derived and hash-protected. A transfer is rejected when the contexts are identical, the target event is not genuinely later, or the comparison has been altered. The original context rule continues to determine the conservative disposition: exclusion means `WITHHOLD`, required-without-exclusion means `CONSIDER_CAUTIOUSLY`, and otherwise `UNKNOWN`.
+
+A separate user-reported finding describes `SUPPORT_REPORTED`, `CONTRADICTION_REPORTED` or `INSUFFICIENT_EVIDENCE`. These reports **never** upgrade a tag match to proof. A subsequent `INTERPRETATION` may leave the claim provisional, narrow it, or suspend transfer, while preserving both the original and later contexts. Every record links back to its exact source hash and predecessor; replay verifies the entire Bound 012–032 ancestry and the transfer chain, including duplicate-context checks, early-event rejection, forged source references, computed differences and revision integrity.
+
+The chapter preserves continuous `{{i}}` identity, forward literary ascent, independent A/B/C historical witness reports, no quorum, and append-only browser-local JSON export/import. Context tags and reports are user-authored descriptions rather than authenticated measurements; transfer similarity is not verified equivalence, demonstrated causation, or an authorization for an intervention.
+
 ## Use
 
 Open `index.html` in a modern browser. Click any level or use 0–7, left/right, Space for motion pause. Zero stays centered while terraces animate. Canvas 2D, no dependencies, build, cookies, or network APIs.
