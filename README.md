@@ -348,6 +348,16 @@ A decision links to one exact earlier proposal. A follow-up can be appended only
 
 Replay verifies all source Bound 012–029 records, hash heads and prefixes, parent chronology, exact proposal/decision/observation references, nonduplication, and all derived outcome labels. Earlier events and distinct A/B/C witness reports remain intact, with no quorum, voting, causal claim, external measurement, or automatically executed action. The page provides an animated Dante ascent, JSON import/export, an integrity audit and synthetic boundary tests. Browser-local histories are not independently time-attested or Git-anchored until separately exported and committed.
 
+## Bound 031 — provisional knowledge without overfitting
+
+[Open Bound 031: Provisional Knowledge](generalization.html).
+
+Bound 031 adds a separately SHA-256-linked, append-only knowledge genealogy to Bound 030's verified learning chain. A **HYPOTHESIS** points to one exact prior learning record and stores an explicitly provisional claim and limited context. A **CHALLENGE** points back to that exact hypothesis and to a *later* verified ascent event from another stage; its literal report is `SUPPORT_REPORTED`, `CONTRADICTION_REPORTED` or `INSUFFICIENT_EVIDENCE`. A **REVISION** points to an earlier challenge and preserves the original lesson, adding a new interpretation: `PROVISIONAL`, `NARROWED` or `SUSPENDED`. A reported contradiction is retained rather than erased or silently reconciled.
+
+Replay guards require that challenges occur after the hypothesis's recorded observation boundary; the same subsequent event cannot be reused to create multiple challenges of one hypothesis. Import cannot replace an already established local knowledge prefix. Parent hashes, source-learning and hypothesis references, source ascent heads, event sequence/hash and revision genealogy are verified across the upstream Bound 012–030 history. The app provides the animated Dante ascent, browser-local JSON export/import, history verification and focused tamper tests.
+
+These are user-reported symbolic inferences and comparisons, not independently verified spiritual, historical or scientific conclusions. A/B/C reports stay in their original independent source records; no votes, quorums, automatic promotion to universal law, automatic intervention or rewinding to Circle IX. Dante continues ascending while changing his mind as evidence warrants.
+
 ## Use
 
 Open `index.html` in a modern browser. Click any level or use 0–7, left/right, Space for motion pause. Zero stays centered while terraces animate. Canvas 2D, no dependencies, build, cookies, or network APIs.
