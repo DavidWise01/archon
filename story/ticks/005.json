@@ -1,0 +1,11 @@
+{
+  "protocol": "archon/story-ticks/v1",
+  "index": 4,
+  "identity": "{{i}}",
+  "scene": "The River Acheron",
+  "realm": "INFERNO",
+  "choice": 0,
+  "line": "Listen to the crossing",
+  "parent": "7da191a8c564546aa33d46d2f800e751eedbab701eb453511b5f5c82545093fc",
+  "sha256": "080ba5054a371c99ebf71cb807d07de43eef9e3b0e690e21076beea921e35326"
+}
