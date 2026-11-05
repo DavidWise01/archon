@@ -1,0 +1,11 @@
+{
+  "protocol": "archon/story-ticks/v1",
+  "index": 19,
+  "identity": "{{i}}",
+  "scene": "The Other Shore",
+  "realm": "PURGATORIO",
+  "choice": 0,
+  "line": "Wash away the soot",
+  "parent": "2c57bc4c100a20bfe63851c704cdb2645232426a27972809719652f648a6db06",
+  "sha256": "b4a8148c8472e30cb1f3f5f42afb96934a9696afee86c60b992dc9f9dc6b929e"
+}
