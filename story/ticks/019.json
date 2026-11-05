@@ -1,0 +1,11 @@
+{
+  "protocol": "archon/story-ticks/v1",
+  "index": 18,
+  "identity": "{{i}}",
+  "scene": "Again the Stars",
+  "realm": "ASCENT",
+  "choice": 1,
+  "line": "Count the stars",
+  "parent": "ee7a8043023b7abb7db107b3423b9d7225daad0061608f1cb8b9ebf895d3a5af",
+  "sha256": "2c57bc4c100a20bfe63851c704cdb2645232426a27972809719652f648a6db06"
+}
