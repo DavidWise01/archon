@@ -1,0 +1,11 @@
+{
+  "protocol": "archon/story-ticks/v1",
+  "index": 14,
+  "identity": "{{i}}",
+  "scene": "Circle VIII · The Bridges",
+  "realm": "INFERNO",
+  "choice": 1,
+  "line": "Name the false glitter",
+  "parent": "8cbb26795be10d0ca60b529d7efdc655d358ca00c035a2d146fe6e14a1c49639",
+  "sha256": "d24f7f6ee4931cb0fbdc2f948c0dfc24c1a480ce5cd240721a9157da672e286b"
+}
