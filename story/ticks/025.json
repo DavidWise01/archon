@@ -1,0 +1,11 @@
+{
+  "protocol": "archon/story-ticks/v1",
+  "index": 24,
+  "identity": "{{i}}",
+  "scene": "Terrace IV · Sloth",
+  "realm": "PURGATORIO",
+  "choice": 1,
+  "line": "Name a worthy task",
+  "parent": "861281741f25419a7e2a159053a1c723cc5ea4ff2348ccbd8eb3fd613876f96b",
+  "sha256": "3132e98aca255d8f8bdc7e7395f33033053015cbc08e66ce84f465bfda42978d"
+}
