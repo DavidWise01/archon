@@ -1,0 +1,11 @@
+{
+  "protocol": "archon/story-ticks/v1",
+  "index": 17,
+  "identity": "{{i}}",
+  "scene": "The Turning Point",
+  "realm": "TURN",
+  "choice": 1,
+  "line": "Mark the axis",
+  "parent": "8c05dd30a190029f54a8d2634654b2748021da4e793c5084859081c981689f5d",
+  "sha256": "ee7a8043023b7abb7db107b3423b9d7225daad0061608f1cb8b9ebf895d3a5af"
+}
