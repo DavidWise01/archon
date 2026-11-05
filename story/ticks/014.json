@@ -1,0 +1,11 @@
+{
+  "protocol": "archon/story-ticks/v1",
+  "index": 13,
+  "identity": "{{i}}",
+  "scene": "Circle VII · The Burning Sand",
+  "realm": "INFERNO",
+  "choice": 1,
+  "line": "Hear the blasphemer",
+  "parent": "a55c944a021275354dc79778d3a96cf119dccfc441a046cc041f2ed90f1150c6",
+  "sha256": "8cbb26795be10d0ca60b529d7efdc655d358ca00c035a2d146fe6e14a1c49639"
+}
