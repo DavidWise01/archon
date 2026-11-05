@@ -1,0 +1,11 @@
+{
+  "protocol": "archon/story-ticks/v1",
+  "index": 30,
+  "identity": "{{i}}",
+  "scene": "The Moon",
+  "realm": "PARADISO",
+  "choice": 0,
+  "line": "Listen to Piccarda",
+  "parent": "e5d1fc49b6d3ab32fb7a6f346a4e73c7af30404278adec0742905b4028c4d1f4",
+  "sha256": "d299a5cff1bbb2dadb822075b7a89e5d593bc9031bb312513649dd7f1ff8beb1"
+}
