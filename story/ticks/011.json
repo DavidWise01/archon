@@ -1,0 +1,11 @@
+{
+  "protocol": "archon/story-ticks/v1",
+  "index": 10,
+  "identity": "{{i}}",
+  "scene": "The City of Dis",
+  "realm": "INFERNO",
+  "choice": 1,
+  "line": "Look for another door",
+  "parent": "b455767f7a5c87d717139fb0fc1e80376436e19aea452c2158160fe8bea72c8c",
+  "sha256": "76dffe0487a636981144f12b1884da942e68ba3425ca1c16e4bc097eca7023d3"
+}
