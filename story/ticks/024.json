@@ -1,0 +1,11 @@
+{
+  "protocol": "archon/story-ticks/v1",
+  "index": 23,
+  "identity": "{{i}}",
+  "scene": "Terrace III · Wrath",
+  "realm": "PURGATORIO",
+  "choice": 0,
+  "line": "Answer softly",
+  "parent": "4deb34c2fe05a6e3f72e1039435272ec45b32ed867695fc1e5119338b65242a1",
+  "sha256": "861281741f25419a7e2a159053a1c723cc5ea4ff2348ccbd8eb3fd613876f96b"
+}
