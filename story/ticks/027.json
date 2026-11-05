@@ -1,0 +1,11 @@
+{
+  "protocol": "archon/story-ticks/v1",
+  "index": 26,
+  "identity": "{{i}}",
+  "scene": "Terrace VI · Gluttony",
+  "realm": "PURGATORIO",
+  "choice": 1,
+  "line": "Drink with gratitude",
+  "parent": "8d5174c741f94abdfe36677a371cb0bbce760afa334bbe4acc0bb324aa31edca",
+  "sha256": "6705b5a12fa6c850426d8958336adecb4f91ca11d7ab2e817b6826171935aab4"
+}
