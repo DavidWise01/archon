@@ -1,0 +1,11 @@
+{
+  "protocol": "archon/story-ticks/v1",
+  "index": 29,
+  "identity": "{{i}}",
+  "scene": "The River Lethe",
+  "realm": "SUMMIT",
+  "choice": 1,
+  "line": "Carry the lesson",
+  "parent": "11e7a60de174080c65f0179e4037cb6866d2a3cc53c23343c6de532e4870b04e",
+  "sha256": "e5d1fc49b6d3ab32fb7a6f346a4e73c7af30404278adec0742905b4028c4d1f4"
+}
