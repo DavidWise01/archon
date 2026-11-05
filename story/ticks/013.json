@@ -1,0 +1,11 @@
+{
+  "protocol": "archon/story-ticks/v1",
+  "index": 12,
+  "identity": "{{i}}",
+  "scene": "Circle VII · The Broken Wood",
+  "realm": "INFERNO",
+  "choice": 1,
+  "line": "Listen to its grief",
+  "parent": "63fbbdd2216147444c0555259bf6470cbdb94ae192dca38c14fdb8df6cbd12f7",
+  "sha256": "a55c944a021275354dc79778d3a96cf119dccfc441a046cc041f2ed90f1150c6"
+}
