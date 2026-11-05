@@ -1,0 +1,11 @@
+{
+  "protocol": "archon/story-ticks/v1",
+  "index": 28,
+  "identity": "{{i}}",
+  "scene": "Earthly Paradise",
+  "realm": "SUMMIT",
+  "choice": 0,
+  "line": "Meet Beatrice's gaze",
+  "parent": "0034b279689d537d3036c58bbe4fa745c2d09704bef0f3fbaff46bb95e97cf02",
+  "sha256": "11e7a60de174080c65f0179e4037cb6866d2a3cc53c23343c6de532e4870b04e"
+}
