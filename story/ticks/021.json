@@ -1,0 +1,11 @@
+{
+  "protocol": "archon/story-ticks/v1",
+  "index": 20,
+  "identity": "{{i}}",
+  "scene": "The Mountain Gate",
+  "realm": "PURGATORIO",
+  "choice": 1,
+  "line": "Remember the marks",
+  "parent": "b4a8148c8472e30cb1f3f5f42afb96934a9696afee86c60b992dc9f9dc6b929e",
+  "sha256": "734d7dc63046685f012a82fd3c973e0aa078a8e2413c9e0bc757aab41d1e6b6b"
+}
