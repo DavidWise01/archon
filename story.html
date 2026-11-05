@@ -347,6 +347,17 @@ rect(324,147,20,6,'#dbc39b');rect(330,146,9,2,'#f4ead4');rect(332,157,2,2,'#6b61
 for(let k=0;k<12;k++){const x=(k*71+30)%480,y=37+(k*29)%119;rect(x,y,2,3,k%3===0?'#f9f1d0':'#d8e2b4')}
 ctx.globalAlpha=.14;for(let y=87;y<212;y+=31)rect(0,y,480,6,'#e0f2da');ctx.globalAlpha=1;
 }
+if(n===30){ // Paradiso: Heaven of the Moon, original pixel-art stage
+rect(0,0,480,240,'#101b39');
+for(let k=0;k<66;k++){const x=(k*97+23)%480,y=(k*53+11)%192;rect(x,y,k%7===0?3:1,k%7===0?3:1,k%5===0?'#f2e8bd':'#94c9d5')}
+for(let ring=8;ring>=1;ring--){ctx.strokeStyle=ring%2?'#9bc6e0':'#c0d7e9';ctx.globalAlpha=.06+ring*.008;ctx.beginPath();ctx.ellipse(312,99,63+ring*13,58+ring*12,0,0,Math.PI*2);ctx.stroke()}ctx.globalAlpha=1;
+for(let yy=-54;yy<=54;yy+=3){const span=Math.sqrt(Math.max(0,54*54-yy*yy));rect(312-span,99+yy,span*2,3,yy%9===0?'#e9e8da':'#c2d1d9')}
+for(let k=0;k<15;k++){let x=277+(k*31)%73,y=65+(k*17)%73;const dx=x-312,dy=y-99;if(dx*dx+dy*dy<2200)rect(x,y,6+(k%3)*3,3+(k%2)*3,'#9faebd')}
+rect(0,216,480,24,'#384d75');rect(0,226,480,14,'#7fa6b6');
+for(let k=0;k<24;k++){const x=(k*33+Math.floor(t/65))%485;rect(x,221+k%3*4,20,2,k%2?'#dce9e6':'#a3d8e5')}
+rect(362,174,10,12,'#f1cbae');rect(357,185,20,27,'#a9d8e8');rect(360,212,5,11,'#5b759c');rect(371,212,5,11,'#5b759c');rect(357,170,19,5,'#d8c5a2');
+for(let k=0;k<10;k++){const x=(k*48+Math.floor(t/20))%480;rect(x,161+k%4*9,3,4,'#f5edc6')}
+}
 if(realm()==='EMPYREAN'){for(let a=0;a<6;a++){ctx.strokeStyle=a%2?bright:light;ctx.globalAlpha=.15;ctx.beginPath();ctx.arc(244,118,23+a*19,0,Math.PI*2);ctx.stroke();ctx.globalAlpha=1}}
 }
 function sprite(x,y,guideSprite=false,t=0){const p=palette(),light=p[2],robe=guideSprite?'#91bfd4':'#db6355',skin='#f5c49b',dark='#172338',gx=Math.round(x),gy=Math.round(y),step=Math.round(Math.sin(t*.012)*2);rect(gx+2,gy,6,3,dark);rect(gx+2,gy+3,6,4,skin);rect(gx+1,gy+7,8,8,robe);rect(gx-1,gy+8,2,5,skin);rect(gx+9,gy+8,2,5,skin);rect(gx+2,gy+15,2,4+step,dark);rect(gx+6,gy+15,2,4-step,dark);rect(gx+7,gy+3,1,1,dark);if(guideSprite){rect(gx+3,gy-4,4,5,'#d6dce7');rect(gx-2,gy+9,1,13,light)}else rect(gx,gy+9,2,7,light)}
