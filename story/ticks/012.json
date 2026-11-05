@@ -1,0 +1,11 @@
+{
+  "protocol": "archon/story-ticks/v1",
+  "index": 11,
+  "identity": "{{i}}",
+  "scene": "Circle VI · The Tombs",
+  "realm": "INFERNO",
+  "choice": 1,
+  "line": "Ask about the living",
+  "parent": "76dffe0487a636981144f12b1884da942e68ba3425ca1c16e4bc097eca7023d3",
+  "sha256": "63fbbdd2216147444c0555259bf6470cbdb94ae192dca38c14fdb8df6cbd12f7"
+}
