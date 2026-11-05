@@ -1,0 +1,11 @@
+{
+  "protocol": "archon/story-ticks/v1",
+  "index": 25,
+  "identity": "{{i}}",
+  "scene": "Terrace V · Avarice",
+  "realm": "PURGATORIO",
+  "choice": 1,
+  "line": "Offer the last coin",
+  "parent": "3132e98aca255d8f8bdc7e7395f33033053015cbc08e66ce84f465bfda42978d",
+  "sha256": "8d5174c741f94abdfe36677a371cb0bbce760afa334bbe4acc0bb324aa31edca"
+}
