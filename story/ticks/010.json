@@ -1,0 +1,11 @@
+{
+  "protocol": "archon/story-ticks/v1",
+  "index": 9,
+  "identity": "{{i}}",
+  "scene": "Circle V · The Styx",
+  "realm": "INFERNO",
+  "choice": 1,
+  "line": "Listen beneath",
+  "parent": "8c593b7e6b65ae1195ebdb3d98f6fce215a9a2d390041358ce47113c4d9b2ba4",
+  "sha256": "b455767f7a5c87d717139fb0fc1e80376436e19aea452c2158160fe8bea72c8c"
+}
