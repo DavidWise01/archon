@@ -1,0 +1,11 @@
+{
+  "protocol": "archon/story-ticks/v1",
+  "index": 15,
+  "identity": "{{i}}",
+  "scene": "The Giant Well",
+  "realm": "INFERNO",
+  "choice": 1,
+  "line": "Measure the distance",
+  "parent": "d24f7f6ee4931cb0fbdc2f948c0dfc24c1a480ce5cd240721a9157da672e286b",
+  "sha256": "8b5ddf11215207e91143ca18b9db1fc92740ca0b0946282604a9d7093a8e59b2"
+}
