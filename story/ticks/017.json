@@ -1,0 +1,11 @@
+{
+  "protocol": "archon/story-ticks/v1",
+  "index": 16,
+  "identity": "{{i}}",
+  "scene": "Circle IX · The Ice",
+  "realm": "INFERNO",
+  "choice": 0,
+  "line": "See the prisoners",
+  "parent": "8b5ddf11215207e91143ca18b9db1fc92740ca0b0946282604a9d7093a8e59b2",
+  "sha256": "8c05dd30a190029f54a8d2634654b2748021da4e793c5084859081c981689f5d"
+}
