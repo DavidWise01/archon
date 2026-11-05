@@ -1,0 +1,11 @@
+{
+  "protocol": "archon/story-ticks/v1",
+  "index": 21,
+  "identity": "{{i}}",
+  "scene": "Terrace I · Pride",
+  "realm": "PURGATORIO",
+  "choice": 0,
+  "line": "Help bear a stone",
+  "parent": "734d7dc63046685f012a82fd3c973e0aa078a8e2413c9e0bc757aab41d1e6b6b",
+  "sha256": "f63248368c6f9390dd57bfcb687213ccfc81cc107808b65ea90d9dcddcce3075"
+}
