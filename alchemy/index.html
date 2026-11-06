@@ -91,21 +91,16 @@ label('}{',237,224,'#f5d5a6',9);label('SPEAKING WOOD',202,183,'#eec88b',8);
 
 
 
- // Seventh circle: rocks, enraged Minotaur, Chiron and escort across Phlegethon.
-rect(0,138,480,95,'#492b35');
-for(let k=0;k<17;k++){const x=k*19,y=150+k*3;rect(x,y,29,11,k%2?'#8b6c72':'#675462')}
-rect(0,207,480,26,'#a4433f');
-for(let k=0;k<24;k++){const x=(k*41+frame*.36)%480;rect(x,211+(k%3)*6,16,3,k%2?'#db7951':'#ed9b66')}
-rect(90,132,22,22,'#be9f8b');rect(84,154,34,33,'#795c65');
-rect(89,128,6,9,'#d6bd88');rect(108,128,6,9,'#d6bd88');
-rect(100+Math.sin(frame*.14)*8,170,8,6,'#cf9c89');label('MINOTAUR',72,117,'#f5d0a1',8);
-rect(266,148,25,22,'#8c7377');rect(262,163,32,26,'#967e86');
-rect(267,138,14,12,'#d2b29f');rect(280,156,3,32,'#d9b686');
-label('CHIRON',260,129,'#f6daac',9);
-const nx=348+Math.sin(frame*.014)*25;
-rect(nx,178,28,17,'#9c817c');rect(nx+4,163,12,16,'#d5b6a1');
-for(let k=0;k<4;k++)rect(nx+2+k*7,192,4,13,'#90767a');
-label('NESSUS',nx-5,152,'#e9c8a5',9);
+
+ // Wood of suicides: twisted trees, Harpies and the wounded speaking branch.
+rect(0,137,480,96,'#293439');
+for(let k=0;k<9;k++){const x=22+k*51;rect(x,116+(k%3)*10,10,106,'#594653');rect(x-17,104+(k%3)*10,46,8,'#594653');rect(x-12,92+(k%3)*10,7,29,'#594653');rect(x+22,88+(k%3)*11,7,35,'#594653')}
+for(let k=0;k<6;k++){const x=21+k*77,y=110+(k%3)*9;rect(x,y,13,7,'#756177');rect(x+2,y-6,8,7,'#b9a0a2');rect(x-5,y+2,6,4,'#9b899c')}
+rect(239,125,14,99,'#6e4b59');rect(218,141,59,10,'#6e4b59');rect(245,111,8,22,'#6e4b59');
+const dropY=151+(frame*.42)%39;
+rect(270,dropY,4,6,'#b34855');rect(264,162,5,6,'#b34855');
+rect(253,147,20,3,'#c5a88b');
+label('PIER / VOICE',212,106,'#ecc7b0',9);label('HARPies',345,113,'#dabaa5',8);
 
 rect(203,76,80,95,'#5d4b76');rect(209,82,68,89,'#1d172e');
 rect(206,74,73,7,'#ebc77e');rect(206,74,5,98,'#c79a72');rect(275,74,5,98,'#c79a72');
