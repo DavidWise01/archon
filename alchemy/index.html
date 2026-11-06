@@ -96,20 +96,20 @@ label('}{',237,224,'#f5d5a6',9);label('BANK / DIALOGUE',201,183,'#eec88b',8);
 
 
 
- // Old Man of Crete: allegorical statue layers and connected tears.
-rect(0,137,480,96,'#302e42');
-rect(87,94,38,24,'#d7b466');
-rect(81,118,50,27,'#b8b8bf');
-rect(87,145,39,20,'#ae9364');
-rect(91,165,15,44,'#797883');rect(110,165,16,44,'#797883');
-rect(111,201,25,10,'#ac795b');
-for(let k=0;k<8;k++){const yy=121+k*10;rect(117+(k%2)*3,yy,2,7,'#252431')}
-for(let k=0;k<12;k++){const xx=123+(k*17)%162,yy=151+(frame*.31+k*23)%67;rect(xx,yy,3,6,'#8eb8c7')}
-rect(155,213,265,8,'#4f8798');
-for(let k=0;k<4;k++){const xx=176+k*68;rect(xx,211,5,21,'#8cb0b7')}
-label('GOLD',87,85,'#ffe3ad',9);label('TEARS',139,138,'#c6d7eb',9);
-label('ACHERON',152,202,'#d6d9d4',8);label('STYX',236,202,'#d6d9d4',8);
-label('PHLEGETHON',284,202,'#d6d9d4',8);label('COCYTUS',399,202,'#d6d9d4',8);
+
+ // Inferno XV: raised bank, sheltered stream and moving Brunetto Latini.
+rect(0,137,480,96,'#8a594a');
+for(let k=0;k<42;k++){const x=(k*53+frame*(1+k%2))%480,y=(k*37)%193;rect(x,y,2,5,k%3?'#e18e5b':'#f2bc79')}
+rect(0,178,480,16,'#a28b7c');rect(0,173,480,6,'#d4bea2');
+rect(0,194,480,39,'#4b7d89');
+for(let k=0;k<20;k++){const x=(k*41+frame*.4)%480;rect(x,205+(k%3)*7,20,3,'#80b3be')}
+rect(144,143,11,12,'#d8b59f');rect(140,155,18,20,'#bf6f72');
+rect(174,143,11,12,'#d4bba0');rect(169,155,21,20,'#7e9baf');
+const brx=245+(frame*.45)%167;
+rect(brx,181,12,12,'#c7a590');rect(brx-3,193,18,20,'#846579');
+rect(brx+1,213,4,12,'#ac8e92');rect(brx+11,213,4,12,'#ac8e92');
+label('DANTE / VIRGIL',122,131,'#f5dfbe',8);
+label('BRUNETTO',brx-9,169,'#efd2b5',8);
 
 rect(203,76,80,95,'#5d4b76');rect(209,82,68,89,'#1d172e');
 rect(206,74,73,7,'#ebc77e');rect(206,74,5,98,'#c79a72');rect(275,74,5,98,'#c79a72');
