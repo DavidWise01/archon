@@ -1,0 +1,79 @@
+{
+  "protocol": "archon/alchemical-living-thread/v2",
+  "stage": 13,
+  "identity": "{{i}}",
+  "parent": "alchemy/012.json",
+  "parentBlobSha": "3f8a482589e1e3f8d28398535936cdf05fc6e356",
+  "scene": "Inferno VIII — Filippo Argenti and the closed gates of Dis",
+  "source": "Dante Inferno VIII, after the ferry boarding through the barred gates",
+  "story": [
+    "From the ferry on the Styx, a mud-covered spirit challenges Dante and is recognized as Filippo Argenti",
+    "The hostility escalates; Argenti reaches for the boat, and Virgil repels him",
+    "Dante says he wishes to see Argenti suffer; Virgil praises Dante's reaction, raising a moral interpretive tension rather than certifying a chemical result",
+    "Other wrathful souls attack Argenti while the travelers proceed",
+    "Dante sees the glowing red towers and walls of the City of Dis",
+    "Fallen angels at Dis refuse entrance, and the gates are shut against Virgil; passage is not achieved in this stage"
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Filippo Argenti",
+      "semantic": "recognition plus hostile intrusion",
+      "somatic": {
+        "verb": "REACH",
+        "gesture": "rises from the mud and tries to grasp the boat",
+        "observed": "Virgil repels the reaching spirit"
+      }
+    },
+    {
+      "actor": "Virgil [2]",
+      "semantic": "protect the traveler and maintain the boundary of the ferry",
+      "somatic": {
+        "verb": "REPEL",
+        "gesture": "pushes Argenti away from the boat",
+        "observed": "Argenti stays in the Styx; boat continues"
+      }
+    },
+    {
+      "actor": "Dante (1)",
+      "semantic": "witness and react to a recognized enemy; compassion and condemnation become contested",
+      "somatic": {
+        "verb": "SPEAK",
+        "gesture": "expresses a wish to see Argenti suffer",
+        "observed": "Virgil responds approvingly; interpretive judgment remains separate from physical action"
+      }
+    },
+    {
+      "actor": "fallen angels at Dis",
+      "semantic": "entry denied by a guarded boundary",
+      "somatic": {
+        "verb": "SHUT",
+        "gesture": "close the city gate against the travelers",
+        "observed": "Dante and Virgil remain outside"
+      }
+    }
+  ],
+  "cipher": {
+    "alphaOmega": "[ (1), [2] ]",
+    "operator": "RECOGNIZE -> REACH -> REPEL -> OBSERVE -> DENY",
+    "boundary": "Dis gate = closed, not traversed",
+    "continuity": "The ferry continues after Argenti is repelled, but the city gate does not yield",
+    "meaning": "A response can either preserve the vessel's boundary or close a new boundary; do not confuse action with its moral evaluation",
+    "newAtomicAssignments": [],
+    "chemicalProduct": "NONE",
+    "preserved": [
+      "(1) H Dante",
+      "[2] He Virgil",
+      "[6] C life fellowship",
+      "[ (7)[8]\\\\(9)[10] ] noble castle / Neon endpoint",
+      "(11) Na symbolic reset at Minos"
+    ]
+  },
+  "witnesses": [
+    "Argenti reaches toward the boat; Virgil repels him",
+    "Dante speaks and observes Argenti seized by others in the mud",
+    "At Dis, fallen angels close the gate and travelers remain outside"
+  ],
+  "next": "Inferno IX: the Furies and Medusa threaten Dante; Virgil covers his eyes, and a heavenly messenger opens Dis",
+  "appendOnly": true,
+  "epistemicBoundary": "Narrative interpretation only: no physical element is being produced"
+}
