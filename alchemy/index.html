@@ -61,8 +61,8 @@ New element / product: NONE</pre>
 let p={x:47,y:208,vy:0,ground:false},keys=new Set(),frame=0,seen=new Set(),crossed=false;
 const rect=(x,y,w,h,color)=>{g.fillStyle=color;g.fillRect(Math.round(x),Math.round(y),Math.round(w),Math.round(h))};
 const label=(s,x,y,color='#f8e7b6',size=10)=>{g.fillStyle=color;g.font='bold '+size+'px monospace';g.fillText(s,x,y)};
-function observe(){const x=p.x;if(x<175){seen.add('open');status.textContent='WITNESS A: tomb is OPEN but holds its occupant.'}else if(x<320){seen.add('rise');status.textContent='WITNESS B: Farinata RISES and SPEAKS to Dante.'}else{seen.add('ask');status.textContent='WITNESS C: Cavalcante ASKS about Guido and SINKS after mistaken inference.'}if(seen.size===3)status.textContent+=' THREE WITNESSES PRESERVED. NEXT: CANTO XI.'}
-function reset(){p={x:47,y:208,vy:0,ground:false};seen.clear();crossed=false;status.textContent='STAGE 015 reset: open does not mean free. Farinata RISES, Cavalcante ASKS.'}
+function observe(){const x=p.x;if(x<175){seen.add('odor');status.textContent='WITNESS A / HAZARD: foul air rises from the abyss. Dante and Virgil DETECT the stench and SHELTER behind the tomb.'}else if(x<320){seen.add('map');status.textContent='WITNESS B / LEARNING: Virgil EXPLAINS violence in circle 7, fraud in 8 and betrayal in 9. A pause yields understanding.'}else{seen.add('ready');status.textContent='WITNESS C / ADAPTATION: the pilgrims ACCLIMATE and PREPARE to descend. The descent itself has not been witnessed.'}if(seen.size===3)status.textContent+=' THREE WITNESSES PRESERVED. NEXT: MINOTAUR / INFERNO XII.'}
+function reset(){p={x:47,y:208,vy:0,ground:false};seen.clear();crossed=false;status.textContent='STAGE 016 reset: DETECT, SHELTER, EXPLAIN and PREPARE. No descent yet.'}
 function draw(){
 frame++;rect(0,0,480,270,'#0d0f2b');
 for(let i=0;i<90;i++){let x=(i*73+17)%480,y=(i*59+11)%195;rect(x,y,i%13===0?3:1,i%13===0?3:1,i%4?'#7466a2':'#f3d696')}
@@ -98,15 +98,15 @@ label('CAVALCANTE',282,163,'#d6c9c6',8);
 
 rect(203,76,80,95,'#5d4b76');rect(209,82,68,89,'#1d172e');
 rect(206,74,73,7,'#ebc77e');rect(206,74,5,98,'#c79a72');rect(275,74,5,98,'#c79a72');
-label('OPEN TOMB',205,91,'#f9dfb2',8);label('BOUND',220,107,'#d8b9f0',8);
+label('HAZARD',218,91,'#f9dfb2',8);label('SHELTER',215,107,'#d8b9f0',8);
 for(let m=0;m<6;m++){rect(217+m*9,114+(m%2)*8,4,3,'#896ea9')}
 
 rect(27,65,68,50,'#322b4b');rect(32,71,58,4,'#d1ac77');rect(32,106,58,4,'#d1ac77');label('016',48,95,'#ffe4a1',15);
 // Paired Li / Be glyph: bound in cipher only; the identity of 3 is held open.
 rect(190,30,105,31,'#3a294e');rect(194,34,97,23,'#20192f');
-label('FARINATA / TOMB',190,48,'#f6d3a2',10);label('RISE / SPEAK',209,59,'#f2dbad',8);
-label('OPEN != FREE',208,72,'#e1c5ee',9);
-label('PAST / FUTURE',202,122,'#d6bedc',8);
+label('ANASTASIUS / XI',190,48,'#f6d3a2',10);label('PAUSE / EXPLAIN',202,59,'#f2dbad',8);
+label('WAIT -> LEARN',204,72,'#e1c5ee',9);
+label('7 / 8 / 9',219,122,'#d6bedc',8);
 for(let k=0;k<12;k++){const y=80+k*7;rect(242+Math.sin(k*.7+frame*.021)*8,y,2,3,'#d8bfe9')}
 
 const dx=(keys.has('ArrowRight')||keys.has('KeyD')?1:0)-(keys.has('ArrowLeft')||keys.has('KeyA')?1:0);
