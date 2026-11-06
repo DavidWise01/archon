@@ -1,0 +1,11 @@
+{
+  "protocol": "archon/story-ticks/v1",
+  "index": 39,
+  "identity": "{{i}}",
+  "scene": "The Empyrean",
+  "realm": "EMPYREAN",
+  "choice": 1,
+  "line": "Carry every witness",
+  "parent": "601feb55b820217dd938f9695cb163ac35946ea9d3bcf6db866c4172989d712f",
+  "sha256": "2c89a2f63ae2d30ff84df1649f322223a79b0d84bbe5b7326dbf9eef6acf20ae"
+}
