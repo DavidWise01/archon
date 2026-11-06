@@ -1,0 +1,11 @@
+{
+  "protocol": "archon/story-ticks/v1",
+  "index": 37,
+  "identity": "{{i}}",
+  "scene": "Fixed Stars",
+  "realm": "PARADISO",
+  "choice": 0,
+  "line": "Look back with mercy",
+  "parent": "3bc12507251c448a5188b38a446e380a8c3f7be0eae903a052845df7a26a1de2",
+  "sha256": "d01086b3e913e95f1e10ccb66775a81023d6c4ad7ff05bc07272cdd4c9bba5ae"
+}
