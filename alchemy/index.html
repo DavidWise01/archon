@@ -19,46 +19,47 @@ a{color:#f6d28a}.foot{margin:22px 0;color:var(--mute);font-size:12px}.ledger{dis
 @media(max-width:850px){.grid{grid-template-columns:1fr}main{padding:12px}}
 </style></head>
 <body><main>
-<header class="top"><div><div class="eyebrow">The Living Thread / Second Traversal</div><h1>DANTE <span style="color:var(--gold)">·</span> THE ALCHEMICAL VESSEL</h1><p>Stage 008 of 041 · Inferno V: Paolo and Francesca in the whirlwind.</p></div><span class="chip">STAGE 008 / {{i}}</span></header>
+<header class="top"><div><div class="eyebrow">The Living Thread / Second Traversal</div><h1>DANTE <span style="color:var(--gold)">·</span> THE ALCHEMICAL VESSEL</h1><p>Stage 009 of 041 · Inferno VI: Cerberus, cold rain and Ciacco.</p></div><span class="chip">STAGE 009 / {{i}}</span></header>
 <div class="grid"><section class="panel"><canvas id="game" width="480" height="270" tabindex="0" aria-label="Playable pixel-art alchemical vessel"></canvas><div class="pad">
-<div class="eyebrow">The whirlwind and the shared journey</div>
+<div class="eyebrow">Cerberus · rain, three mouths and Ciacco</div>
 <div class="controls"><button id="left">◀ MOVE</button><button id="right">MOVE ▶</button><button id="jump">↑ JUMP</button><button id="observe">E · OBSERVE</button><button id="reset">↺ RESET</button></div>
-<div class="status" id="status" aria-live="polite">Inferno V: Paolo and Francesca are carried together in a relentless wind. Francesca tells their story; Paolo grieves; Dante faints. Their identities remain distinct.</div>
-<p style="font-size:12px;margin:12px 0 0">Keyboard: ← → or A / D · Space to jump · E to observe. Next: Inferno VI, Cerberus and the rain.</p>
+<div class="status" id="status" aria-live="polite">Inferno VI: Dante wakes in cold rain. Virgil diverts three-headed Cerberus with earth, and Ciacco speaks about Florence. Observe rain, Cerberus and Ciacco.</div>
+<p style="font-size:12px;margin:12px 0 0">Keyboard: ← → or A / D · Space to jump · E to observe. Next: Inferno VII, Plutus and the fourth circle.</p>
 </div></section>
 <aside class="panel"><div class="pad"><div class="eyebrow">Vessel inventory</div><h2>Minos routes souls; the [6] carbon-life fellowship remains preserved.</h2>
 <div class="tokens"><div class="token"><strong>H</strong><span>(1) Dante · traveler</span></div><div class="token"><strong>He</strong><span>[2] Virgil · guide</span></div><div class="token"><strong>Li</strong><span>(3) Li · identity unresolved</span></div><div class="token"><strong>Be</strong><span>[4] Beatrice · intercessor</span></div></div>
-<div class="tokens" style="margin-top:10px"><div class="token"><strong>B</strong><span>(5) Lucia · toroid</span></div><div class="token"><strong>C</strong><span>[6] Mary · box</span></div></div><div class="ledger"><span class="pip"></span> <strong>Stage 008: The Whirlwind</strong></div>
-<pre>ALPHA = OMEGA = [ (1), [2] ]
+<div class="tokens" style="margin-top:10px"><div class="token"><strong>B</strong><span>(5) Lucia · toroid</span></div><div class="token"><strong>C</strong><span>[6] Mary · box</span></div></div><div class="ledger"><span class="pip"></span> <strong>Stage 009: Cerberus and Ciacco</strong></div>
+<pre>α = ω = [ (1), [2] ]
 
-  W / WHIRLWIND
-        |
-  PAOLO || FRANCESCA
-  two identities, one field
-        |
-  shared reading recalled
-        |
-  Paolo grieves
-  Dante (1) faints
+THIRD CIRCLE / RAIN
+ cold rain / hail / mud
+         |
+ CERBERUS / 3 MOUTHS
+         |
+ [2] Virgil throws earth
+         |
+     DIVERT / PASS
+         |
+ CIACCO -> FLORENCE
+ knowledge is transmitted
 
-  (11) Na / sodium preserved
-  [6] C / carbon-life preserved
-  [ (7)[8]\(9)[10] ] castle
-
-  product: NONE</pre>
+(1) H and [2] He preserved
+(11) Na / [6] C preserved
+Noble Castle 7–10 preserved
+product: NONE</pre>
 <p><b>Notation:</b> <code>[]</code> containment · <code>()</code> fluidity · <code>}{</code> opening the transformation boundary. These are narrative operators, not evidence of physical transmutation.</p>
-<p><b>Rule:</b> Odd = toroid <code>()</code>, even = box <code>[]</code>. Minos <b>classifies and routes</b> by tail coils rather than changing anyone's substance. The Noble Castle and carbon-life interpretation remain preserved.</p>
+<p><b>Rule:</b> Odd positions are toroids <code>()</code>, even positions boxes <code>[]</code>. Cerberus's three mouths are a narrative structure. Virgil redirects his attention using earth; Ciacco communicates information. Neither event synthesizes an element.</p>
 <p><a href="../story.html">Read the sealed first journey</a></p>
 </div></aside></div>
-<footer class="foot">ARCHON / Alchemical Living Thread · 000–008 recorded, 009–041 reserved · story-first symbolic elemental cipher.</footer>
+<footer class="foot">ARCHON / Alchemical Living Thread · 000–009 recorded, 010–041 reserved · story-first symbolic elemental cipher.</footer>
 </main>
 <script>
 (()=>{const c=document.getElementById('game'),g=c.getContext('2d'),status=document.getElementById('status');
 let p={x:47,y:208,vy:0,ground:false},keys=new Set(),frame=0,seen=new Set(),crossed=false;
 const rect=(x,y,w,h,color)=>{g.fillStyle=color;g.fillRect(Math.round(x),Math.round(y),Math.round(w),Math.round(h))};
 const label=(s,x,y,color='#f8e7b6',size=10)=>{g.fillStyle=color;g.font='bold '+size+'px monospace';g.fillText(s,x,y)};
-function observe(){const x=p.x;if(x<175){seen.add('wind');status.textContent='WITNESS A: the whirlwind carries souls continually.'}else if(x<320){seen.add('pair');status.textContent='WITNESS B: Paolo and Francesca move together; Francesca recounts their story.'}else{seen.add('response');status.textContent='WITNESS C: Paolo grieves; Dante faints.'}if(seen.size===3)status.textContent+=' ALL THREE WITNESSES COMPLETE.'}
-function reset(){p={x:47,y:208,vy:0,ground:false};seen.clear();crossed=false;status.textContent='STAGE 007 reset: Minos judges and routes; no elemental identity changes.'}
+function observe(){const x=p.x;if(x<175){seen.add('rain');status.textContent='WITNESS A: cold rain, hail and foul mud define the third circle.'}else if(x<320){seen.add('cerberus');status.textContent='WITNESS B: Virgil throws earth into the three mouths of Cerberus, diverting him.'}else{seen.add('ciacco');status.textContent='WITNESS C: Ciacco tells Dante of Florence and its troubles.'}if(seen.size===3)status.textContent+=' THREE WITNESSES PRESERVED. NEXT: PLUTUS.'}
+function reset(){p={x:47,y:208,vy:0,ground:false};seen.clear();crossed=false;status.textContent='STAGE 009 reset: Cerberus, Ciacco and three observations; no elemental synthesis.'}
 function draw(){
 frame++;rect(0,0,480,270,'#0d0f2b');
 for(let i=0;i<90;i++){let x=(i*73+17)%480,y=(i*59+11)%195;rect(x,y,i%13===0?3:1,i%13===0?3:1,i%4?'#7466a2':'#f3d696')}
@@ -73,36 +74,38 @@ for(let k=0;k<8;k++){let a=k*Math.PI/4+frame*.009;rect(x+Math.cos(a)*22,162+Math
 label(chem,x-(chem==='He'?11:5),167,'#fff4d3',15);label(chem==='H'?'DANTE':'VIRGIL',x-22,200,'#ffe6bf',9);
 }
 rect(221,190,44,8,'#d2ae78');rect(217,198,52,32,'#564363');rect(226,202,35,18,'#1c1a35');rect(239,207,8,8,'#d3b7ee');
-label('}{',237,224,'#f5d5a6',9);label('WHIRLWIND',205,183,'#eec88b',9);
+label('}{',237,224,'#f5d5a6',9);label('THIRD CIRCLE',208,183,'#eec88b',8);
 
 
 
- // Minos receives souls and indicates descent by a coiling tail.
-rect(0,137,480,100,'#241d39');
-for(let k=0;k<8;k++){let xx=46+k*25,yy=182+Math.sin(frame*.017+k)*3;rect(xx,yy,9,9,'#b7acac');rect(xx-3,yy+9,15,19,'#5f5277');rect(xx,yy+29,3,7,'#887993');rect(xx+8,yy+29,3,7,'#887993')}
-label('CONFESSIONS',50,158,'#d4bdab',8);
-rect(250,126,18,21,'#c8a999');rect(245,148,30,31,'#a55f76');rect(248,180,8,17,'#745978');rect(265,180,8,17,'#745978');
-for(let k=0;k<40;k++){const theta=k*.38+frame*.016,rad=6+k*.34;rect(259+Math.cos(theta)*rad,184+Math.sin(theta)*rad*.6,3,3,k%3?'#d9a479':'#f4d18e')}
-label('MINOS',249,114,'#f5c9a3',9);
+
+ // Third-circle rain, Cerberus and Ciacco: original pixel scene.
+rect(0,137,480,96,'#33394b');
+for(let k=0;k<90;k++){const xx=(k*61+frame*(1+k%3))%480,yy=(k*43+frame*(2+k%4))%225;rect(xx,yy,2,8,k%5===0?'#c7dbeb':'#7195bc')}
+for(let k=0;k<25;k++){const xx=(k*57)%480,yy=209+(k%3)*6;rect(xx,yy,24,5,k%2?'#62666a':'#565b63')}
+rect(228,156,42,32,'#584c75');rect(223,184,52,24,'#695576');
+for(let k=0;k<3;k++){const xx=222+k*18,yy=142+(k%2)*5;rect(xx,yy,18,18,'#847393');rect(xx+4,yy+6,3,3,'#f1a48b');rect(xx+12,yy+6,3,3,'#f1a48b')}
+label('CERBERUS',217,130,'#e6d1b9',9);
+rect(376,184,12,12,'#c3aa9d');rect(373,196,18,21,'#866e91');label('CIACCO',367,178,'#e3c1b9',8);
 
 rect(203,76,80,95,'#5d4b76');rect(209,82,68,89,'#1d172e');
 rect(206,74,73,7,'#ebc77e');rect(206,74,5,98,'#c79a72');rect(275,74,5,98,'#c79a72');
-label('TAIL / k',215,91,'#f9dfb2',8);label('JUDGMENT',213,107,'#d8b9f0',8);
+label('THREE MOUTHS',205,91,'#f9dfb2',8);label('EARTH',224,107,'#d8b9f0',8);
 for(let m=0;m<6;m++){rect(217+m*9,114+(m%2)*8,4,3,'#896ea9')}
 
-rect(27,65,68,50,'#322b4b');rect(32,71,58,4,'#d1ac77');rect(32,106,58,4,'#d1ac77');label('008',48,95,'#ffe4a1',15);
+rect(27,65,68,50,'#322b4b');rect(32,71,58,4,'#d1ac77');rect(32,106,58,4,'#d1ac77');label('009',48,95,'#ffe4a1',15);
 // Paired Li / Be glyph: bound in cipher only; the identity of 3 is held open.
 rect(190,30,105,31,'#3a294e');rect(194,34,97,23,'#20192f');
-label('MINOS / COILS',200,48,'#f6d3a2',10);label('ROUTE(k)',214,59,'#f2dbad',8);
+label('CERBERUS / RAIN',194,48,'#f6d3a2',10);label('CIACCO',218,59,'#f2dbad',8);
 label('(7)[8](9)[10]',201,72,'#e1c5ee',9);
-label('LIVING / DEAD',199,122,'#d6bedc',8);
+label('DIVERT / PASS',199,122,'#d6bedc',8);
 for(let k=0;k<12;k++){const y=80+k*7;rect(242+Math.sin(k*.7+frame*.021)*8,y,2,3,'#d8bfe9')}
 
 const dx=(keys.has('ArrowRight')||keys.has('KeyD')?1:0)-(keys.has('ArrowLeft')||keys.has('KeyA')?1:0);
 p.x=Math.max(4,Math.min(469,p.x+dx*2.2));if((keys.has('Space')||keys.has('ArrowUp'))&&p.ground){p.vy=-7.5;p.ground=false}
 p.vy+=.42;p.y+=p.vy;if(p.y>=210){p.y=210;p.vy=0;p.ground=true}
 rect(p.x+2,p.y,8,4,'#3a253f');rect(p.x+2,p.y+4,8,5,'#eec5a6');rect(p.x,p.y+9,12,10,'#c96067');rect(p.x+2,p.y+19,3,4,'#3b3455');rect(p.x+8,p.y+19,3,4,'#3b3455');
-rect(0,0,480,24,'#0b1024');label('ARCHON / ALCHEMY 008',8,15,'#ebcd8f',10);label('WITNESSES '+seen.size+'/3',350,15,'#b7dfd7',9);
+rect(0,0,480,24,'#0b1024');label('ARCHON / ALCHEMY 009',8,15,'#ebcd8f',10);label('WITNESSES '+seen.size+'/3',350,15,'#b7dfd7',9);
 requestAnimationFrame(draw)}
 window.addEventListener('keydown',e=>{if(['ArrowLeft','ArrowRight','ArrowUp','Space','KeyA','KeyD','KeyE'].includes(e.code)){keys.add(e.code);if(document.activeElement===c)e.preventDefault();if(e.code==='KeyE'&&!e.repeat)observe()}});
 window.addEventListener('keyup',e=>keys.delete(e.code));window.addEventListener('blur',()=>keys.clear());
