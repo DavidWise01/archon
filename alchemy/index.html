@@ -92,15 +92,16 @@ label('}{',237,224,'#f5d5a6',9);label('PURSUIT / WOOD',203,183,'#eec88b',8);
 
 
 
- // Wood of suicides: twisted trees, Harpies and the wounded speaking branch.
+
+ // Canto XIII: the fleeing squanderers and hounds damage an innocent bush.
 rect(0,137,480,96,'#293439');
-for(let k=0;k<9;k++){const x=22+k*51;rect(x,116+(k%3)*10,10,106,'#594653');rect(x-17,104+(k%3)*10,46,8,'#594653');rect(x-12,92+(k%3)*10,7,29,'#594653');rect(x+22,88+(k%3)*11,7,35,'#594653')}
-for(let k=0;k<6;k++){const x=21+k*77,y=110+(k%3)*9;rect(x,y,13,7,'#756177');rect(x+2,y-6,8,7,'#b9a0a2');rect(x-5,y+2,6,4,'#9b899c')}
-rect(239,125,14,99,'#6e4b59');rect(218,141,59,10,'#6e4b59');rect(245,111,8,22,'#6e4b59');
-const dropY=151+(frame*.42)%39;
-rect(270,dropY,4,6,'#b34855');rect(264,162,5,6,'#b34855');
-rect(253,147,20,3,'#c5a88b');
-label('PIER / VOICE',212,106,'#ecc7b0',9);label('HARPies',345,113,'#dabaa5',8);
+for(let k=0;k<9;k++){const x=22+k*52;rect(x,105+(k%3)*8,11,116,'#594653');rect(x-13,106+(k%3)*8,35,7,'#594653');rect(x+13,93+(k%3)*9,6,30,'#594653')}
+const runner=38+(frame*1.5)%165;
+for(let k=0;k<2;k++){const xx=runner+k*54,yy=185+Math.sin(frame*.15+k)*2;rect(xx,yy,12,11,'#bb9c92');rect(xx-2,yy+11,17,19,'#826279');rect(xx+2,yy+28,4,9,'#99858f');rect(xx+11,yy+27,4,9,'#99858f')}
+for(let k=0;k<4;k++){const xx=155+((frame*2.7+k*23)%170),yy=198+(k%2)*9;rect(xx,yy,21,10,'#37313f');rect(xx+15,yy-4,8,6,'#57485d');rect(xx+4,yy+10,4,5,'#3d3449')}
+rect(369,176,12,45,'#70535f');rect(355,169,42,9,'#70535f');
+for(let k=0;k<8;k++){const x=340+(k*9)%72,y=214+(k%3)*5;rect(x,y,7,3,'#bd8c70')}
+label('HOUNDS',246,175,'#e6c1a1',8);label('GATHER LEAVES',337,154,'#edd0b4',8);
 
 rect(203,76,80,95,'#5d4b76');rect(209,82,68,89,'#1d172e');
 rect(206,74,73,7,'#ebc77e');rect(206,74,5,98,'#c79a72');rect(275,74,5,98,'#c79a72');
