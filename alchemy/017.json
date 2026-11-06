@@ -1,0 +1,105 @@
+{
+  "protocol": "archon/alchemical-living-thread/v2",
+  "stage": 17,
+  "identity": "{{i}}",
+  "parent": "alchemy/016.json",
+  "parentBlobSha": "429ae9dd3e0bc9b8c1cd61f48885d90a035e3020",
+  "scene": "Inferno XII — shattered descent, Minotaur and guarded boiling river",
+  "source": "Dante Inferno XII",
+  "story": [
+    "Dante and Virgil enter a landslide-like steep slope of broken rock leading down into the seventh circle.",
+    "The Minotaur rages at the travelers; Virgil invokes Theseus and the creature attacks itself in fury, allowing the pilgrims to descend.",
+    "Virgil comments on the ruined rock and its connection, within the poem, to the earthquake at Christ's descent into Hell.",
+    "A river of boiling blood, Phlegethon, contains violent souls submerged according to their offenses.",
+    "Armed centaurs patrol its banks and shoot at souls attempting to rise above their appointed depth.",
+    "Chiron recognizes that Dante is living because his movements disturb what he touches; Virgil requests safe passage.",
+    "Chiron assigns Nessus to guide them, and Nessus carries Dante across the blood at a shallower place.",
+    "The travelers arrive at the other bank; entry into the wood of suicides awaits the next intersection."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Minotaur",
+      "semantic": "Rage interrupts its own pursuit and creates a passage",
+      "somatic": {
+        "verb": "RAGE_AND_BITE",
+        "gesture": "strikes or bites itself after Virgil's provocation",
+        "result": "Dante and Virgil advance while it is distracted"
+      }
+    },
+    {
+      "actor": "Virgil [2]",
+      "semantic": "Redirect a threatening opponent's attention without changing its identity",
+      "somatic": {
+        "verb": "PROVOKE_AND_GUIDE",
+        "gesture": "mentions Theseus and leads Dante down broken rocks",
+        "result": "the descent becomes traversable"
+      }
+    },
+    {
+      "actor": "Centaurs",
+      "semantic": "Guard a boundary and enforce the river's punishment",
+      "somatic": {
+        "verb": "PATROL_AND_AIM",
+        "gesture": "carry bows along the river and threaten rising souls",
+        "result": "river depths remain guarded"
+      }
+    },
+    {
+      "actor": "Chiron",
+      "semantic": "Distinguish a living traveler from souls and authorize assistance",
+      "somatic": {
+        "verb": "NOTICE_AND_ASSIGN",
+        "gesture": "observes Dante's physical motion and sends Nessus",
+        "result": "a guide is appointed"
+      }
+    },
+    {
+      "actor": "Nessus",
+      "semantic": "Provide an actual passage across the hazardous boundary",
+      "somatic": {
+        "verb": "CARRY",
+        "gesture": "takes Dante across the boiling stream",
+        "result": "the traveler reaches the opposite bank"
+      }
+    }
+  ],
+  "cipher": {
+    "alphaOmega": "[ (1), [2] ]",
+    "parity": "odd atomic indices use (); even indices use []",
+    "operator": "DESCEND -> PROVOKE -> EVADE -> CLASSIFY -> ASSIGN -> CARRY",
+    "notation": "Minotaur:RAGE -> passage ; Chiron:NOTICE((1).motion) -> Nessus:CARRY((1)) -> bank",
+    "meaning": "A hostile guardian can be circumvented, while another guardian can discern a living visitor and appoint safe guidance; role and physical action must be tracked distinctly.",
+    "witnessBoundary": "The river is explicitly crossed with Nessus as guide, unlike the earlier Acheron transit obscured by Dante's faint.",
+    "newAtomicAssignments": [],
+    "chemicalReaction": "none",
+    "product": "none",
+    "carryForward": [
+      "Dante (1) / H, Virgil [2] / He",
+      "Six-poet [6] C life correspondence",
+      "Noble Castle [ (7)[8]\\\\(9)[10] ]",
+      "(11) Na/reset analogy"
+    ]
+  },
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "obstacle redirected",
+      "somatic": "Minotaur RAGES; Virgil leads the descent",
+      "observable": "they pass on the shattered rocks"
+    },
+    {
+      "id": "B",
+      "semantic": "boundary recognized",
+      "somatic": "Chiron NOTICES living Dante and ASSIGNS Nessus",
+      "observable": "escort authorized"
+    },
+    {
+      "id": "C",
+      "semantic": "transport confirmed",
+      "somatic": "Nessus CARRIES Dante across Phlegethon",
+      "observable": "far bank reached"
+    }
+  ],
+  "next": "Inferno XIII — wood of suicides and Pier della Vigna; broken branch speaks, injury reveals an imprisoned voice",
+  "appendOnly": true
+}
