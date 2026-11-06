@@ -1,0 +1,85 @@
+{
+  "protocol": "archon/alchemical-living-thread/v2",
+  "stage": 12,
+  "identity": "{{i}}",
+  "scene": "Inferno VIII — tower signals and Phlegyas answers",
+  "parent": "alchemy/011.json",
+  "parentBlobSha": "2fbd10f2cdc25aa1b25508e66e1cf36ce44c1924",
+  "source": "Inferno VIII lines 1–33",
+  "story": [
+    "At a tower near Styx, two little flames appear",
+    "A distant third flame answers",
+    "Dante asks what the signs mean; Virgil points to an approaching boat",
+    "Phlegyas pilots the boat swiftly toward the travelers",
+    "Phlegyas shouts an accusation; Virgil corrects his expectation",
+    "Virgil boards first, Dante follows, and the vessel sits more deeply in the water because Dante is alive",
+    "The boat heads across Styx toward Filippo Argenti and the walls of Dis"
+  ],
+  "pairedOperations": [
+    {
+      "name": "BEACON",
+      "semantic": "visible coded call from a tower",
+      "somatic": {
+        "actor": "tower watch",
+        "verb": "DISPLAY",
+        "target": "two flame signals",
+        "effect": "distant reply is seen"
+      }
+    },
+    {
+      "name": "RESPONSE",
+      "semantic": "acknowledgment of a distant signal",
+      "somatic": {
+        "actor": "distant signaler",
+        "verb": "ANSWER",
+        "target": "tower's flames",
+        "effect": "the returning flame can be observed"
+      }
+    },
+    {
+      "name": "FERRY",
+      "semantic": "response converted into transport",
+      "somatic": {
+        "actor": "Phlegyas",
+        "verb": "ROW",
+        "target": "boat across Styx",
+        "effect": "boat approaches the travelers"
+      }
+    },
+    {
+      "name": "BOARDING",
+      "semantic": "the living traveler changes the boat's load",
+      "somatic": {
+        "actor": "Dante",
+        "verb": "BOARD",
+        "target": "ferry after Virgil",
+        "effect": "boat sits deeper in water"
+      }
+    }
+  ],
+  "cipher": {
+    "alphaOmega": "[ (1), [2] ]",
+    "parity": "odd indices toroid (); even indices box []",
+    "operator": "SIGNAL_RESPOND_APPROACH_BOARD",
+    "notation": "2 flames -> 1 answering flame -> Phlegyas ROWS -> [2] Virgil BOARDS -> (1) Dante BOARDS -> boat sits deeper",
+    "elements": "no new atomic positions assigned",
+    "meaning": "A signal can be observed and acted upon; message, response and transport are distinct stages",
+    "materialObservation": "Boat's extra loading is narrative evidence that Dante is living; no quantitative displacement measured.",
+    "chemicalReaction": "none",
+    "product": "none"
+  },
+  "witnesses": [
+    "Dante sees two signals and a distant answer",
+    "Virgil identifies the response and Phlegyas rows toward them",
+    "Dante boards after Virgil; boat rides lower"
+  ],
+  "carryForward": [
+    "(1) Dante hydrogen and [2] Virgil helium",
+    "[6] carbon/life interpretation",
+    "Noble Castle [ (7)[8]\\\\(9)[10] ]",
+    "(11) Na symbolic reset",
+    "Stage 011 semantic and somatic action rule"
+  ],
+  "next": "Inferno VIII: Filippo Argenti rises from the Styx and the boat approaches Dis",
+  "appendOnly": true
+}
