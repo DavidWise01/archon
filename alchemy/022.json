@@ -1,0 +1,95 @@
+{
+  "protocol": "archon/alchemical-living-thread/v2",
+  "stage": 22,
+  "identity": "{{i}}",
+  "parent": "alchemy/021.json",
+  "parentBlobSha": "ec2c1c51448297f2fbbeeb9e0dbceebb5a442cb8",
+  "scene": "Inferno XV — Brunetto Latini and the moving conversation on the raised bank",
+  "source": "Dante, Inferno XV",
+  "story": [
+    "Dante and Virgil continue on the raised stone bank beside the stream through the burning sand, where the banks shield them from falling fire.",
+    "A band of spirits under the fiery rain approaches; Brunetto Latini recognizes Dante and takes hold of his garment.",
+    "Dante recognizes his former teacher, respectfully lowers his head and speaks with him while walking along the embankment.",
+    "Brunetto explains that he must not halt: stopping would subject him to a different punishment, so he continues moving below while Dante walks above.",
+    "Brunetto foretells that Dante will suffer hostility and exile; Dante acknowledges the guidance he received from his teacher.",
+    "Dante asks about others among the band and promises to preserve Brunetto's account.",
+    "Brunetto departs running to rejoin the moving souls, compared by Dante to a victorious runner at Verona; Dante and Virgil continue their journey."
+  ],
+  "semanticSomatic": [
+    {
+      "role": "Raised bank and stream",
+      "semantic": "A local shelter from the hostile rain of fire",
+      "somatic": {
+        "verb": "SHIELD_AND_CHANNEL",
+        "gesture": "stone embankment borders flowing stream",
+        "result": "the travelers can move above the exposed sand"
+      }
+    },
+    {
+      "role": "Brunetto Latini",
+      "semantic": "Personal recognition, instruction and testimony can accompany compulsory motion",
+      "somatic": {
+        "verb": "RECOGNIZE_GRASP_WALK_SPEAK_RUN",
+        "gesture": "grasps Dante's garment, keeps walking, speaks, then runs back to his companions",
+        "result": "dialogue occurs without Brunetto stopping"
+      }
+    },
+    {
+      "role": "Dante (1)",
+      "semantic": "Honor a familiar teacher while preserving the traveler's own route and witness",
+      "somatic": {
+        "verb": "BOW_WALK_LISTEN_ANSWER",
+        "gesture": "lowers his head, moves along the raised bank and answers Brunetto",
+        "result": "teacher's prophecy and memories are heard"
+      }
+    },
+    {
+      "role": "Virgil [2]",
+      "semantic": "Continuity of companionship and the forward journey",
+      "somatic": {
+        "verb": "ACCOMPANY",
+        "gesture": "continues along the bank with Dante",
+        "result": "the pair remains together"
+      }
+    }
+  ],
+  "cipher": {
+    "alphaOmega": "[ (1), [2] ]",
+    "parity": "odd atomic positions () even []",
+    "operator": "APPROACH -> RECOGNIZE -> GRASP -> WALK_AND_SPEAK -> REMEMBER -> DEPART",
+    "notation": "BANK:SHIELD((1),[2]); BRUNETTO:MOVE+SPEAK; (1):BOW+LISTEN; BRUNETTO:RUN",
+    "invariant": "A conversation can preserve continuity between travelers following distinct routes and constraints; listening does not require every participant to stop.",
+    "boundary": "Brunetto's future predictions are reported testimony in the poem, not a verified historical forecast made by a real-world model.",
+    "newAtomicAssignments": [],
+    "chemicalReaction": "none",
+    "product": "none",
+    "previous": [
+      "(1) H Dante and [2] He Virgil",
+      "[6] C life / six poets",
+      "Noble Castle [ (7)[8]\\\\(9)[10] ]",
+      "(11) sodium/reset analogy"
+    ]
+  },
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "protected route",
+      "somatic": "BANK SHIELDS; travelers WALK",
+      "evidence": "separate raised walkway through burning sand"
+    },
+    {
+      "id": "B",
+      "semantic": "recognition in constrained motion",
+      "somatic": "BRUNETTO GRASPS garment and WALKS while SPEAKING",
+      "evidence": "teacher-student conversation without stopping"
+    },
+    {
+      "id": "C",
+      "semantic": "testimony and continuation",
+      "somatic": "DANTE LISTENS; BRUNETTO RUNS away",
+      "evidence": "prophecy heard and parting observed"
+    }
+  ],
+  "next": "Inferno XVI — three Florentine souls run in a circle while questioning Dante, then the travelers reach the waterfall and signal Geryon",
+  "appendOnly": true
+}
