@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ARCHON // ALCHEMICAL DANTE — STAGE 000</title>
+<meta name="description" content="An independent, human-directed alchemical Living Thread. Stage 000: the uncommitted vessel.">
+<style>
+:root{color-scheme:dark;--bg:#0c0b1a;--ink:#f2e8d0;--mute:#b4a7c3;--gold:#eecb82;--edge:#635379;--purple:#b89be6}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 50% -20%,#352448 0%,#0c0b1a 68%);color:var(--ink);font:15px/1.55 system-ui,Segoe UI,sans-serif}
+main{max-width:1300px;margin:auto;padding:22px}.eyebrow{font:700 11px ui-monospace,monospace;letter-spacing:.22em;color:var(--gold);text-transform:uppercase}
+h1{font:700 clamp(27px,4.6vw,54px)/1.08 Georgia,serif;margin:12px 0}h2{font:600 22px Georgia,serif;margin:0 0 13px}p{color:var(--mute)}.top{display:flex;gap:24px;justify-content:space-between;align-items:end;flex-wrap:wrap}
+.chip{display:inline-block;border:1px solid var(--edge);border-radius:9px;padding:6px 11px;color:var(--gold);font:12px ui-monospace,monospace}
+.grid{display:grid;grid-template-columns:minmax(0,1.75fr) minmax(280px,1fr);gap:16px;margin-top:20px}
+.panel{border:1px solid #544662;border-radius:15px;background:#151126e0;overflow:hidden;box-shadow:0 14px 35px #0004}.pad{padding:20px}
+canvas{display:block;width:100%;aspect-ratio:16/9;image-rendering:pixelated;background:#0a1024}
+.controls{display:flex;flex-wrap:wrap;gap:9px;margin-top:13px}button{background:#302442;border:1px solid #806a91;color:#f7eaca;border-radius:8px;font:700 12px ui-monospace,monospace;padding:12px 16px;cursor:pointer}button:hover,button:focus-visible{background:#48335b;outline:1px solid var(--gold)}
+.status{font:12px/1.65 ui-monospace,monospace;color:#e2d0ad;border-top:1px solid #514363;margin-top:14px;padding-top:13px;min-height:59px}
+.tokens{display:grid;grid-template-columns:1fr 1fr;gap:10px}.token{border:1px solid #5e4f72;border-radius:10px;padding:17px;background:#211a32}.token strong{font:600 34px Georgia,serif;color:var(--gold);display:block}.token span{font-size:12px;color:var(--mute)}
+pre{white-space:pre-wrap;font:12px/1.7 ui-monospace,monospace;background:#0d1020;border:1px solid #483856;padding:12px;border-radius:10px;color:#d7c4e9}
+a{color:#f6d28a}.foot{margin:22px 0;color:var(--mute);font-size:12px}.ledger{display:flex;align-items:center;gap:9px;margin:15px 0}.pip{width:8px;height:8px;background:#e1c181;border-radius:50%}
+@media(max-width:850px){.grid{grid-template-columns:1fr}main{padding:12px}}
+</style></head>
+<body><main>
+<header class="top"><div><div class="eyebrow">The Living Thread / Second Traversal</div><h1>DANTE <span style="color:var(--gold)">·</span> THE ALCHEMICAL VESSEL</h1><p>Stage 000 of 041 · Open genesis · a different journey, with the original 41 ticks sealed.</p></div><span class="chip">GENESIS 000 / {{i}}</span></header>
+<div class="grid"><section class="panel"><canvas id="game" width="480" height="270" tabindex="0" aria-label="Playable pixel-art alchemical vessel"></canvas><div class="pad">
+<div class="eyebrow">Explore the unopened vessel</div>
+<div class="controls"><button id="left">◀ MOVE</button><button id="right">MOVE ▶</button><button id="jump">↑ JUMP</button><button id="observe">E · OBSERVE</button><button id="reset">↺ RESET</button></div>
+<div class="status" id="status" aria-live="polite">Move through the chamber. Observe the hydrogen and helium seed stations. The central vessel is deliberately unopened; no element has been synthesized.</div>
+<p style="font-size:12px;margin:12px 0 0">Keyboard: ← → or A / D · Space to jump · E to observe. Human direction is required before Stage 001.</p>
+</div></section>
+<aside class="panel"><div class="pad"><div class="eyebrow">Vessel inventory</div><h2>Zero is a beginning, not a product.</h2>
+<div class="tokens"><div class="token"><strong>H</strong><span>Hydrogen · symbolic seed</span></div><div class="token"><strong>He</strong><span>Helium · symbolic seed</span></div></div>
+<div class="ledger"><span class="pip"></span> <strong>Stage 000: Initialized</strong></div>
+<pre>              {{i}}
+               |
+       [ THE VESSEL ]
+          /      \
+       ( H )    ( He )
+          \      /
+            }{  ?
+               |
+         output: UNSET</pre>
+<p><b>Notation:</b> <code>[]</code> containment · <code>()</code> fluidity · <code>}{</code> opening the transformation boundary. These are narrative operators, not evidence of physical transmutation.</p>
+<p><b>Rule:</b> Observe first. Only the next user-directed operation can define Stage 001.</p>
+<p><a href="../story.html">Read the sealed first journey</a></p>
+</div></aside></div>
+<footer class="foot">ARCHON / Alchemical Living Thread · 42 indexed stages (000–041) planned · genesis only committed · no automatic alchemical recipes or invented reactions.</footer>
+</main>
+<script>
+(()=>{const c=document.getElementById('game'),g=c.getContext('2d'),status=document.getElementById('status');
+let p={x:47,y:208,vy:0,ground:false},keys=new Set(),frame=0,seen=new Set();
+const rect=(x,y,w,h,color)=>{g.fillStyle=color;g.fillRect(Math.round(x),Math.round(y),Math.round(w),Math.round(h))};
+const label=(s,x,y,color='#f8e7b6',size=10)=>{g.fillStyle=color;g.font='bold '+size+'px monospace';g.fillText(s,x,y)};
+function observe(){const x=p.x;if(x<175){seen.add('H');status.textContent='WITNESS A / HYDROGEN. Symbolic seed H is observed; no reaction follows from observation alone.'}
+else if(x>310){seen.add('He');status.textContent='WITNESS B / HELIUM. Symbolic seed He is observed. Distinct from H; no conversion has occurred.'}
+else{seen.add('V');status.textContent='WITNESS C / VESSEL. The vessel is sealed and empty of product. The transformation operator }{ remains unassigned until human direction.'}}
+function reset(){p={x:47,y:208,vy:0,ground:false};seen.clear();status.textContent='GENESIS 000 restored. Two symbolic seeds, one unopened vessel, no synthesized element.'}
+function draw(){
+frame++;rect(0,0,480,270,'#0d0f2b');
+for(let i=0;i<90;i++){let x=(i*73+17)%480,y=(i*59+11)%195;rect(x,y,i%13===0?3:1,i%13===0?3:1,i%4?'#7466a2':'#f3d696')}
+for(let i=0;i<9;i++){g.strokeStyle=['#ad7bcb','#dcb283','#8cb6da'][i%3];g.globalAlpha=.17;g.beginPath();g.ellipse(243,109,16+i*12,13+i*10,0,0,Math.PI*2);g.stroke()}g.globalAlpha=1;
+for(let i=0;i<12;i++){let a=i*Math.PI/6+frame*.003;rect(243+Math.cos(a)*62,110+Math.sin(a)*48,3,3,'#cbb3fa')}
+rect(0,235,480,35,'#34304c');rect(0,232,480,5,'#d6b578');
+for(let i=0;i<13;i++){rect(i*40,237,20,4,'#6f5f81');rect(i*40+12,250,20,3,'#5a4a78')}
+for(const [x,col,chem] of [[115,'#f5b681','H'],[373,'#91d5df','He']]){
+rect(x-36,213,72,20,'#625175');rect(x-29,205,58,8,'#d8b87f');
+g.strokeStyle=col;g.lineWidth=2;g.beginPath();g.arc(x,162,25,0,Math.PI*2);g.stroke();
+for(let k=0;k<8;k++){let a=k*Math.PI/4+frame*.009;rect(x+Math.cos(a)*22,y=162+Math.sin(a)*22,3,3,col)}
+label(chem,x-(chem==='He'?11:5),167,'#fff4d3',15);
+}
+rect(221,190,44,8,'#d2ae78');rect(217,198,52,32,'#564363');rect(226,202,35,18,'#1c1a35');rect(239,207,8,8,'#d3b7ee');
+label('}{',237,224,'#f5d5a6',9);label('UNBOUND',215,183,'#eec88b',8);
+rect(27,65,68,50,'#322b4b');rect(32,71,58,4,'#d1ac77');rect(32,106,58,4,'#d1ac77');label('000',48,95,'#ffe4a1',15);
+const dx=(keys.has('ArrowRight')||keys.has('KeyD')?1:0)-(keys.has('ArrowLeft')||keys.has('KeyA')?1:0);
+p.x=Math.max(4,Math.min(469,p.x+dx*2.2));if((keys.has('Space')||keys.has('ArrowUp'))&&p.ground){p.vy=-7.5;p.ground=false}
+p.vy+=.42;p.y+=p.vy;if(p.y>=210){p.y=210;p.vy=0;p.ground=true}
+rect(p.x+2,p.y,8,4,'#3a253f');rect(p.x+2,p.y+4,8,5,'#eec5a6');rect(p.x,p.y+9,12,10,'#c96067');rect(p.x+2,p.y+19,3,4,'#3b3455');rect(p.x+8,p.y+19,3,4,'#3b3455');
+rect(0,0,480,24,'#0b1024');label('ARCHON / ALCHEMY 000',8,15,'#ebcd8f',10);label('OBSERVED '+seen.size+'/3',350,15,'#b7dfd7',9);
+requestAnimationFrame(draw)}
+window.addEventListener('keydown',e=>{if(['ArrowLeft','ArrowRight','ArrowUp','Space','KeyA','KeyD','KeyE'].includes(e.code)){keys.add(e.code);if(document.activeElement===c)e.preventDefault();if(e.code==='KeyE'&&!e.repeat)observe()}});
+window.addEventListener('keyup',e=>keys.delete(e.code));window.addEventListener('blur',()=>keys.clear());
+for(const [id,key] of [['left','ArrowLeft'],['right','ArrowRight'],['jump','Space']]){const b=document.getElementById(id);b.addEventListener('pointerdown',e=>{e.preventDefault();keys.add(key);b.setPointerCapture(e.pointerId)});for(const name of ['pointerup','pointercancel','lostpointercapture'])b.addEventListener(name,()=>keys.delete(key))}
+document.getElementById('observe').onclick=observe;document.getElementById('reset').onclick=reset;requestAnimationFrame(draw);
+})();
+</script></body></html>
