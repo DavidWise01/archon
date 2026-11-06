@@ -19,42 +19,44 @@ a{color:#f6d28a}.foot{margin:22px 0;color:var(--mute);font-size:12px}.ledger{dis
 @media(max-width:850px){.grid{grid-template-columns:1fr}main{padding:12px}}
 </style></head>
 <body><main>
-<header class="top"><div><div class="eyebrow">The Living Thread / Second Traversal</div><h1>DANTE <span style="color:var(--gold)">·</span> THE ALCHEMICAL VESSEL</h1><p>Stage 021 of 041 · Inferno XIV: the Old Man of Crete and the infernal rivers.</p></div><span class="chip">STAGE 021 / {{i}}</span></header>
+<header class="top"><div><div class="eyebrow">The Living Thread / Second Traversal</div><h1>DANTE <span style="color:var(--gold)">·</span> THE ALCHEMICAL VESSEL</h1><p>Stage 022 of 041 · Inferno XV: Brunetto Latini and the moving dialogue.</p></div><span class="chip">STAGE 022 / {{i}}</span></header>
 <div class="grid"><section class="panel"><canvas id="game" width="480" height="270" tabindex="0" aria-label="Playable pixel-art alchemical vessel"></canvas><div class="pad">
-<div class="eyebrow">Old Man of Crete · fractured statue, tears and rivers</div>
+<div class="eyebrow">Brunetto Latini · listen while moving</div>
 <div class="controls"><button id="left">◀ MOVE</button><button id="right">MOVE ▶</button><button id="jump">↑ JUMP</button><button id="observe">E · OBSERVE</button><button id="reset">↺ RESET</button></div>
-<div class="status" id="status" aria-live="polite">Inferno XIV: Virgil describes the Old Man of Crete. Cracks below his golden head release tears that form infernal rivers. Dante asks about their source. Observe FRACTURE, FLOW and DISTINGUISH.</div>
-<p style="font-size:12px;margin:12px 0 0">Keyboard: ← → or A / D · Space to jump · E to observe. Next: Inferno XV, the stream bank and Brunetto Latini.</p>
+<div class="status" id="status" aria-live="polite">Inferno XV: Dante and Virgil walk on a raised bank. Brunetto Latini recognizes Dante, keeps moving under the fiery rain and speaks with his former pupil. Observe SHIELD, WALK and LISTEN.</div>
+<p style="font-size:12px;margin:12px 0 0">Keyboard: ← → or A / D · Space to jump · E to observe. Next: Inferno XVI, three Florentines running in a circle and the signal for Geryon.</p>
 </div></section>
 <aside class="panel"><div class="pad"><div class="eyebrow">Vessel inventory</div><h2>Minos routes souls; the [6] carbon-life fellowship remains preserved.</h2>
 <div class="tokens"><div class="token"><strong>H</strong><span>(1) Dante · traveler</span></div><div class="token"><strong>He</strong><span>[2] Virgil · guide</span></div><div class="token"><strong>Li</strong><span>(3) Li · identity unresolved</span></div><div class="token"><strong>Be</strong><span>[4] Beatrice · intercessor</span></div></div>
-<div class="tokens" style="margin-top:10px"><div class="token"><strong>B</strong><span>(5) Lucia · toroid</span></div><div class="token"><strong>C</strong><span>[6] Mary · box</span></div></div><div class="ledger"><span class="pip"></span> <strong>Stage 021: The Old Man of Crete</strong></div>
+<div class="tokens" style="margin-top:10px"><div class="token"><strong>B</strong><span>(5) Lucia · toroid</span></div><div class="token"><strong>C</strong><span>[6] Mary · box</span></div></div><div class="ledger"><span class="pip"></span> <strong>Stage 022: Brunetto Latini and Moving Testimony</strong></div>
 <pre>alpha = omega = [ (1), [2] ]
 
-OLD MAN OF CRETE
-  HEAD: GOLD (UNCRACKED)
-  BODY: SILVER / BRASS
-  LEGS: IRON / CLAY FOOT
-         |
-     FRACTURES
-         |
-       TEARS
-         |
-   DRIP -> COLLECT
-         |
-       FLOW
-   /     |      \      \
-ACHERON STYX PHLEGETHON COCYTUS
+INFERNO XV / BRUNETTO
 
-LETHE: SEPARATE
-SOURCE: VIRGIL'S REPORT
-NOT DIRECTLY OBSERVED
-new element: NONE</pre>
+STONE BANK: SHIELD
+       |
+DANTE (1): WALK + LOOK
+       |
+BRUNETTO: RECOGNIZE
+       |
+GRASP GARMENT
+       |
+WALK + SPEAK
+       |
+DANTE: BOW + LISTEN
+       |
+BRUNETTO: RUN / DEPART
+
+MOVING != SILENT
+LISTENING != STOPPING
+Testimony preserved, no element
+[6] C / (11) Na retained
+Noble Castle 7-10 retained</pre>
 <p><b>Notation:</b> <code>[]</code> containment · <code>()</code> fluidity · <code>}{</code> opening the transformation boundary. These are narrative operators, not evidence of physical transmutation.</p>
-<p><b>Rule:</b> Meaning and action stay paired: the allegorical statue <b>FRACTURES and WEEPS</b>, tears <b>COLLECT and FLOW</b>, and Virgil <b>EXPLAINS</b> their river connections. Dante is receiving testimony, not directly viewing the statue. Lethe remains separate. No new elemental identities are assigned.</p>
+<p><b>Rule:</b> Every description has an action: the bank <b>SHIELDS</b>, Brunetto <b>RECOGNIZES, WALKS and SPEAKS</b>, Dante <b>BOWS and LISTENS</b>, and Brunetto eventually <b>RUNS</b> onward. The dialogue continues while the participants move on different paths; no new atomic identity is implied.</p>
 <p><a href="../story.html">Read the sealed first journey</a></p>
 </div></aside></div>
-<footer class="foot">ARCHON / Alchemical Living Thread · 000–021 recorded, 022–041 reserved · story-first symbolic elemental cipher.</footer>
+<footer class="foot">ARCHON / Alchemical Living Thread · 000–022 recorded, 023–041 reserved · story-first symbolic elemental cipher.</footer>
 </main>
 <script>
 (()=>{const c=document.getElementById('game'),g=c.getContext('2d'),status=document.getElementById('status');
@@ -77,7 +79,7 @@ for(let k=0;k<8;k++){let a=k*Math.PI/4+frame*.009;rect(x+Math.cos(a)*22,162+Math
 label(chem,x-(chem==='He'?11:5),167,'#fff4d3',15);label(chem==='H'?'DANTE':'VIRGIL',x-22,200,'#ffe6bf',9);
 }
 rect(221,190,44,8,'#d2ae78');rect(217,198,52,32,'#564363');rect(226,202,35,18,'#1c1a35');rect(239,207,8,8,'#d3b7ee');
-label('}{',237,224,'#f5d5a6',9);label('FOUR RIVERS',204,183,'#eec88b',8);
+label('}{',237,224,'#f5d5a6',9);label('BANK / DIALOGUE',201,183,'#eec88b',8);
 
 
 
@@ -114,7 +116,7 @@ rect(206,74,73,7,'#ebc77e');rect(206,74,5,98,'#c79a72');rect(275,74,5,98,'#c79a7
 label('TEARS',218,91,'#f9dfb2',8);label('RIVERS',215,107,'#d8b9f0',8);
 for(let m=0;m<6;m++){rect(217+m*9,114+(m%2)*8,4,3,'#896ea9')}
 
-rect(27,65,68,50,'#322b4b');rect(32,71,58,4,'#d1ac77');rect(32,106,58,4,'#d1ac77');label('021',48,95,'#ffe4a1',15);
+rect(27,65,68,50,'#322b4b');rect(32,71,58,4,'#d1ac77');rect(32,106,58,4,'#d1ac77');label('022',48,95,'#ffe4a1',15);
 // Paired Li / Be glyph: bound in cipher only; the identity of 3 is held open.
 rect(190,30,105,31,'#3a294e');rect(194,34,97,23,'#20192f');
 label('CRETE / XIV',209,48,'#f6d3a2',10);label('CRACK / FLOW',202,59,'#f2dbad',8);
@@ -126,7 +128,7 @@ const dx=(keys.has('ArrowRight')||keys.has('KeyD')?1:0)-(keys.has('ArrowLeft')||
 p.x=Math.max(4,Math.min(469,p.x+dx*2.2));if((keys.has('Space')||keys.has('ArrowUp'))&&p.ground){p.vy=-7.5;p.ground=false}
 p.vy+=.42;p.y+=p.vy;if(p.y>=210){p.y=210;p.vy=0;p.ground=true}
 rect(p.x+2,p.y,8,4,'#3a253f');rect(p.x+2,p.y+4,8,5,'#eec5a6');rect(p.x,p.y+9,12,10,'#c96067');rect(p.x+2,p.y+19,3,4,'#3b3455');rect(p.x+8,p.y+19,3,4,'#3b3455');
-rect(0,0,480,24,'#0b1024');label('ARCHON / ALCHEMY 021',8,15,'#ebcd8f',10);label('WITNESSES '+seen.size+'/3',350,15,'#b7dfd7',9);
+rect(0,0,480,24,'#0b1024');label('ARCHON / ALCHEMY 022',8,15,'#ebcd8f',10);label('WITNESSES '+seen.size+'/3',350,15,'#b7dfd7',9);
 requestAnimationFrame(draw)}
 window.addEventListener('keydown',e=>{if(['ArrowLeft','ArrowRight','ArrowUp','Space','KeyA','KeyD','KeyE'].includes(e.code)){keys.add(e.code);if(document.activeElement===c)e.preventDefault();if(e.code==='KeyE'&&!e.repeat)observe()}});
 window.addEventListener('keyup',e=>keys.delete(e.code));window.addEventListener('blur',()=>keys.clear());
