@@ -1,0 +1,106 @@
+{
+  "protocol": "archon/alchemical-living-thread/v2",
+  "stage": 14,
+  "identity": "{{i}}",
+  "scene": "Inferno IX — Furies, Medusa threat, protected sight and the opening of Dis",
+  "parent": "alchemy/013.json",
+  "parentBlobSha": "86551c75c3ffddbfe3429ab501509b2e62fc8a65",
+  "source": "Dante, Inferno Canto IX: Furies upon the walls, threatened Medusa, heavenly messenger opens Dis",
+  "story": [
+    "Virgil and Dante wait before the sealed city of Dis; Virgil's earlier attempt to gain admittance failed.",
+    "Three Furies appear atop the fiery walls and call for Medusa to petrify Dante.",
+    "Virgil turns Dante around and covers Dante's eyes with his own hands, protecting the living traveler from looking.",
+    "A powerful heavenly messenger arrives across the Styx, clears his way and rebukes the resisting guardians.",
+    "The messenger touches the gates of Dis with a wand and opens them without opposition.",
+    "Virgil and Dante enter the city and see open fiery tombs of the heretics; their individual encounters remain the next stage."
+  ],
+  "semanticSomatic": [
+    {
+      "role": "Three Furies",
+      "semantic": "Threat to the traveler's capacity to continue observing",
+      "somatic": {
+        "verb": "SUMMON",
+        "gesture": "call for Medusa from the battlements",
+        "effect": "imminent danger of a fatal gaze; Medusa's arrival is not narrated"
+      }
+    },
+    {
+      "role": "Virgil [2]",
+      "semantic": "protect the observer by deliberately limiting exposure",
+      "somatic": {
+        "verb": "COVER",
+        "gesture": "turn Dante around and place his hands over Dante's eyes",
+        "effect": "Dante does not see the threatened Medusa"
+      }
+    },
+    {
+      "role": "Heavenly messenger",
+      "semantic": "outside assistance resolves an otherwise closed threshold",
+      "somatic": {
+        "verb": "TOUCH_OPEN",
+        "gesture": "approach Dis, rebuke the guardians and touch the gate with a wand",
+        "effect": "gate opens and passage becomes possible"
+      }
+    },
+    {
+      "role": "Dante (1)",
+      "semantic": "retain witness continuity with constrained direct sight",
+      "somatic": {
+        "verb": "FOLLOW",
+        "gesture": "remain protected, then accompany Virgil through the opened gate",
+        "effect": "traveler continues without claimed petrification"
+      }
+    }
+  ],
+  "cipher": {
+    "alphaOmega": "[ (1), [2] ]",
+    "parity": "odd atomic numbers toroids (); even numbers boxes []",
+    "notation": "FURIES -> SUMMON(Medusa) -> [2] COVER((1).eyes) ; MESSENGER -> OPEN(Dis.gate) -> [(1),[2]] ENTER",
+    "operations": [
+      "THREAT",
+      "SHIELD",
+      "ARRIVE",
+      "OPEN",
+      "ENTER"
+    ],
+    "criticalDistinctions": [
+      "A threat is not proof Medusa appeared or Dante saw her",
+      "Covering eyes preserves the possibility of later observation; it does not erase earlier observations",
+      "The messenger opens the gate, not Virgil alone",
+      "Dis remains shut until the messenger opens it",
+      "The three Furies are three characters, not newly assigned atomic positions"
+    ],
+    "newElementalAssignments": [],
+    "chemicalReaction": "NONE",
+    "product": "NONE",
+    "preserved": [
+      "(1) Dante / hydrogen",
+      "[2] Virgil / helium",
+      "[6] carbon-life six-poet fellowship",
+      "[ (7)[8]\\\\(9)[10] ] Noble Castle / Neon",
+      "(11) sodium reset analogy"
+    ]
+  },
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "hostile threat",
+      "somatic": "Furies SUMMON Medusa, who is not shown arriving",
+      "result": "threat established"
+    },
+    {
+      "id": "B",
+      "semantic": "preservation of sight",
+      "somatic": "Virgil COVERS Dante's eyes",
+      "result": "hazardous sight avoided"
+    },
+    {
+      "id": "C",
+      "semantic": "threshold opening",
+      "somatic": "messenger TOUCHES and OPENS the gate",
+      "result": "Dante and Virgil ENTER Dis"
+    }
+  ],
+  "next": "Inferno IX–X: the open fiery tombs and Farinata's rising from a sepulcher; consider the sensory encounter before assigning any element",
+  "appendOnly": true
+}
