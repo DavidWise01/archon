@@ -1,0 +1,103 @@
+{
+  "protocol": "archon/alchemical-living-thread/v2",
+  "stage": 20,
+  "identity": "{{i}}",
+  "parent": "alchemy/019.json",
+  "parentBlobSha": "0a1742f0fc0e4e2f9d7d9fb14948d36053ae6218",
+  "scene": "Inferno XIV — fiery rain on burning sand; Capaneus defies",
+  "source": "Dante, Inferno Canto XIV",
+  "story": [
+    "After the wood, Dante and Virgil reach a desert of hot, sterile sand, with flakes of fire raining continuously from above.",
+    "Different groups of punished souls lie, sit, or run upon the burning ground; Dante sees one gigantic figure lying unyielding beneath the flames.",
+    "Dante asks about the figure. Capaneus names himself and continues his defiance of Jupiter even while suffering.",
+    "Virgil rebukes Capaneus, saying that his unquenched pride compounds his punishment.",
+    "The travelers continue beside a small red stream that crosses the sand; the water and banks resist the flames and provide a path.",
+    "Virgil begins to explain the origins of the rivers of Hell through the Old Man of Crete; the detailed river genealogy is held for the next stage."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Rain of fire",
+      "semantic": "A continual environmental condition strikes the exposed plain",
+      "somatic": {
+        "verb": "FALL_AND_BURN",
+        "gesture": "flames descend over hot sand",
+        "observable": "exposed souls react to continuing fiery precipitation"
+      }
+    },
+    {
+      "actor": "Capaneus",
+      "semantic": "Defiance persists despite the pain of the environment",
+      "somatic": {
+        "verb": "LIE_AND_DEFY",
+        "gesture": "lies on burning sand and declares his opposition to Jupiter",
+        "observable": "his posture and utterance remain defiant; the fire continues"
+      }
+    },
+    {
+      "actor": "Virgil [2]",
+      "semantic": "Interpret the persistence of pride without altering the speaker's identity",
+      "somatic": {
+        "verb": "REBUKE_AND_GUIDE",
+        "gesture": "answers Capaneus sharply and guides Dante onward",
+        "observable": "the travelers leave the confrontation behind"
+      }
+    },
+    {
+      "actor": "River and banks",
+      "semantic": "A locally different condition within a dangerous environment offers a viable path",
+      "somatic": {
+        "verb": "FLOW_AND_SHIELD",
+        "gesture": "water runs through sand, keeping adjacent banks from ignition in the poem",
+        "observable": "Dante and Virgil can proceed beside the stream"
+      }
+    },
+    {
+      "actor": "Dante (1)",
+      "semantic": "Observe differences between exposed and sheltered paths",
+      "somatic": {
+        "verb": "ASK_AND_FOLLOW",
+        "gesture": "asks who Capaneus is and walks by the stream with Virgil",
+        "observable": "a new route is witnessed"
+      }
+    }
+  ],
+  "cipher": {
+    "alphaOmega": "[ (1), [2] ]",
+    "parity": "odd elements () even elements []",
+    "operator": "EXPOSE -> ENDURE -> DEFY -> REBUKE -> FIND_FLOW -> WALK",
+    "notation": "FIRE:FALL -> SAND:BURN ; CAPANEUS:LIE+DEFY ; [2]:REBUKE ; STREAM:FLOW -> BANK:SAFE_ROUTE ; (1):FOLLOW",
+    "invariant": "Stable defiance under repeated punishment does not prove resistance to the fire; a spatially distinct water channel can create a path without changing the overall hostile environment.",
+    "boundary": "Different dispositions are not chemical elements; fire is a poetic punishment, not a demonstrated physical experiment",
+    "newAtomicAssignments": [],
+    "chemicalReaction": "none",
+    "product": "none",
+    "preserved": [
+      "(1) Dante/H and [2] Virgil/He",
+      "[6] C six-poet fellowship",
+      "Noble Castle [ (7)[8]\\\\(9)[10] ] / Neon",
+      "(11) sodium reset analogy"
+    ]
+  },
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "environmental exposure",
+      "somatic": "FIRE FALLS, sand BURNS",
+      "observable": "the fiery desert is directly witnessed"
+    },
+    {
+      "id": "B",
+      "semantic": "persistent defiance",
+      "somatic": "CAPANEUS LIES and DEFIES; Virgil REBUKES",
+      "observable": "his declaration and Virgil's answer are heard"
+    },
+    {
+      "id": "C",
+      "semantic": "local safe passage",
+      "somatic": "STREAM FLOWS; travelers FOLLOW its banks",
+      "observable": "a path is found amid the falling fire"
+    }
+  ],
+  "next": "Inferno XIV continuation: the Old Man of Crete and the sources of the infernal rivers",
+  "appendOnly": true
+}
