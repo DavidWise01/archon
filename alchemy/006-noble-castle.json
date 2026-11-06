@@ -1,0 +1,46 @@
+{
+  "protocol": "archon/alchemical-living-thread/v2/addendum",
+  "stage": 6,
+  "kind": "HUMAN_DIRECTED_NOBLE_CASTLE_BIND",
+  "baseFile": "alchemy/006.json",
+  "baseBlobSha": "2c3910baa7bc96d283d462d93b6d9a5918952ee1",
+  "story": "Inferno Canto IV: Homer, Horace, Ovid and Lucan form a company recognizing Virgil; they welcome Dante as their sixth poet.",
+  "literalCipher": "[ (7)[8]\\(9)[10] ]",
+  "parity": "odd n = toroid (n); even n = box [n]",
+  "poets": [
+    {
+      "poet": "Homer",
+      "position": 7,
+      "element": "N",
+      "geometry": "(7)"
+    },
+    {
+      "poet": "Horace",
+      "position": 8,
+      "element": "O",
+      "geometry": "[8]"
+    },
+    {
+      "poet": "Ovid",
+      "position": 9,
+      "element": "F",
+      "geometry": "(9)"
+    },
+    {
+      "poet": "Lucan",
+      "position": 10,
+      "element": "Ne",
+      "geometry": "[10]"
+    }
+  ],
+  "container": "Noble Castle / Neon endpoint 10; the outer square brackets signify collective enclosure, not the chemical composition of Ne",
+  "separator": "Backslash is preserved verbatim from user input; no additional operator meaning assumed",
+  "relations": [
+    "These four recognize Virgil",
+    "Dante joins the company as sixth poet",
+    "Number 10 denotes the fourth poet's atomic-position cipher and Neon; not number of poets"
+  ],
+  "effect": "Interpretive binding only; no actual chemical synthesis",
+  "historicalPolicy": "Do not rewrite alchemy/006.json; append an independent interpretation referencing its exact blob",
+  "next": "Continue Inferno V after user confirmation, with Minos first."
+}
