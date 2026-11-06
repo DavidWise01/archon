@@ -1,0 +1,31 @@
+{
+  "protocol": "archon/alchemical-living-thread/v2",
+  "stage": 8,
+  "identity": "{{i}}",
+  "scene": "Inferno V: Paolo and Francesca in the whirlwind",
+  "parent": "alchemy/007-sodium.json",
+  "parentBlobSha": "ec898c9b2ed82fc93451e49907dc6b8f5d982df0",
+  "story": [
+    "The second circle is swept by an incessant wind",
+    "Dante observes two figures carried together, Paolo and Francesca",
+    "Francesca describes their reading of the romance of Lancelot",
+    "Paolo grieves; Dante is overcome and loses consciousness"
+  ],
+  "cipher": {
+    "alphaOmega": "[ (1), [2] ]",
+    "rule": "odd toroids; even boxes",
+    "symbol": "W(Paolo || Francesca)",
+    "W": "external whirlwind",
+    "pair": "shared motion; identities remain distinct",
+    "newElements": "none",
+    "sodium": "(11) Na, previous symbolic reset correspondence retained",
+    "poetCastle": "[ (7)[8]\\\\(9)[10] ]",
+    "carbon": "[6] C / life preserved"
+  },
+  "witnesses": [
+    "shared forced motion in whirlwind",
+    "Francesca tells her story",
+    "Paolo grieves; Dante collapses"
+  ],
+  "next": "Inferno VI: rain and Cerberus; Paolo and Francesca await user direction for elemental assignments"
+}
