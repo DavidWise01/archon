@@ -26,7 +26,7 @@ a{color:#f6d28a}.foot{margin:22px 0;color:var(--mute);font-size:12px}.ledger{dis
 <div class="status" id="status" aria-live="polite">Inferno IV: Homer (7/N), Horace [8/O], Ovid (9/F), Lucan [10/Ne] form one cipher inside the noble castle. Virgil is recognized; Dante joins as sixth poet. Explore three witness stations.</div>
 <p style="font-size:12px;margin:12px 0 0">Keyboard: ← → or A / D · Space to jump · E to observe. Next: Minos, the judge in the second circle, and Paolo and Francesca.</p>
 </div></section>
-<aside class="panel"><div class="pad"><div class="eyebrow">Vessel inventory</div><h2>Four poets, one enclosed cipher ending in neon (10).</h2>
+<aside class="panel"><div class="pad"><div class="eyebrow">Vessel inventory</div><h2>Six poets form a fellowship: [6] carbon, the element of life.</h2>
 <div class="tokens"><div class="token"><strong>H</strong><span>(1) Dante · traveler</span></div><div class="token"><strong>He</strong><span>[2] Virgil · guide</span></div><div class="token"><strong>Li</strong><span>(3) Li · identity unresolved</span></div><div class="token"><strong>Be</strong><span>[4] Beatrice · intercessor</span></div></div>
 <div class="tokens" style="margin-top:10px"><div class="token"><strong>B</strong><span>(5) Lucia · toroid</span></div><div class="token"><strong>C</strong><span>[6] Mary · box</span></div></div><div class="ledger"><span class="pip"></span> <strong>Stage 006: The Noble Castle / Neon</strong></div>
 <pre>ALPHA = OMEGA = [ (1), [2] ]
@@ -41,11 +41,13 @@ NOBLE CASTLE
 
 Virgil [2] recognized.
 Dante (1) joins as sixth poet.
+SIX POETS => [6] C / CARBON
+LIFE / KNOWLEDGE / FELLOWSHIP
 Outer [] = one company.
 Neon 10 = endpoint of cipher,
 NOT a literal chemical product.</pre>
 <p><b>Notation:</b> <code>[]</code> containment · <code>()</code> fluidity · <code>}{</code> opening the transformation boundary. These are narrative operators, not evidence of physical transmutation.</p>
-<p><b>Rule:</b> Odd atomic numbers use toroids <code>()</code>, even numbers boxes <code>[]</code>. The user-defined <b>Noble Castle cipher</b> groups four poets at 7–10, ending with neon [10]. The castle's literal seven walls and gates remain separate story architecture; no chemical reaction is asserted.</p>
+<p><b>Rule:</b> Odd atomic numbers use toroids <code>()</code>, even numbers boxes <code>[]</code>. The <b>Noble Castle</b> groups four poets at 7–10, ending at neon [10]. The full <b>six-poet fellowship</b> has a carbon [6] correspondence: carbon supports terrestrial life through stable bonding. Dante remains hydrogen (1), and Mary remains the earlier [6] character assignment; this is a structural metaphor, not chemical synthesis.</p>
 <p><a href="../story.html">Read the sealed first journey</a></p>
 </div></aside></div>
 <footer class="foot">ARCHON / Alchemical Living Thread · 000–006 recorded, 007–041 reserved · story-first symbolic elemental cipher.</footer>
@@ -57,9 +59,9 @@ const rect=(x,y,w,h,color)=>{g.fillStyle=color;g.fillRect(Math.round(x),Math.rou
 const label=(s,x,y,color='#f8e7b6',size=10)=>{g.fillStyle=color;g.font='bold '+size+'px monospace';g.fillText(s,x,y)};
 function observe(){const x=p.x;if(x<175){seen.add('poets');status.textContent='WITNESS A / FOUR POETS: Homer (7/N), Horace [8/O], Ovid (9/F), Lucan [10/Ne] are assigned in story order.'}
 else if(x<320){seen.add('castle');status.textContent='WITNESS B / NOBLE CASTLE: [ (7)[8]\\(9)[10] ] encloses the poet quartet; Neon at 10 is a cipher endpoint, not a chemical synthesis.'}
-else{seen.add('departure');status.textContent='WITNESS C / FELLOWSHIP: Virgil [2] is recognized, Dante (1) welcomed as sixth poet, while elemental identities remain unchanged.'}
+else{seen.add('departure');status.textContent='WITNESS C / CARBON LIFE: the six poets make one living fellowship, corresponding to [6] C. Dante remains (1) H; carbon is not newly synthesized.'}
 if(seen.size===3)status.textContent+=' THREE OBSERVATIONS COMPLETE. NEXT: MINOS / INFERNO V.'}
-function reset(){p={x:47,y:208,vy:0,ground:false};seen.clear();crossed=false;status.textContent='STAGE 006 reset: noble castle quartet (7) N, [8] O, (9) F, [10] Ne. No chemical reaction.'}
+function reset(){p={x:47,y:208,vy:0,ground:false};seen.clear();crossed=false;status.textContent='STAGE 006 reset: Noble Castle 7-10, six-poet fellowship [6] C / carbon life. No chemical reaction.'}
 function draw(){
 frame++;rect(0,0,480,270,'#0d0f2b');
 for(let i=0;i<90;i++){let x=(i*73+17)%480,y=(i*59+11)%195;rect(x,y,i%13===0?3:1,i%13===0?3:1,i%4?'#7466a2':'#f3d696')}
@@ -94,7 +96,7 @@ for(let m=0;m<6;m++){rect(217+m*9,114+(m%2)*8,4,3,'#896ea9')}
 rect(27,65,68,50,'#322b4b');rect(32,71,58,4,'#d1ac77');rect(32,106,58,4,'#d1ac77');label('006',48,95,'#ffe4a1',15);
 // Paired Li / Be glyph: bound in cipher only; the identity of 3 is held open.
 rect(190,30,105,31,'#3a294e');rect(194,34,97,23,'#20192f');
-label('CASTLE / Ne',203,48,'#f6d3a2',10);
+label('CASTLE / Ne',203,48,'#f6d3a2',10);label('[6] C = LIFE',203,59,'#f2dbad',8);
 label('(7)[8](9)[10]',201,72,'#e1c5ee',9);
 label('LIVING / DEAD',199,122,'#d6bedc',8);
 for(let k=0;k<12;k++){const y=80+k*7;rect(242+Math.sin(k*.7+frame*.021)*8,y,2,3,'#d8bfe9')}
