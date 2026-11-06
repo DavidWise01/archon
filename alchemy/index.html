@@ -100,14 +100,19 @@ label('}{',237,224,'#f5d5a6',9);label('FOURTH BOLGIA',198,183,'#eec88b',8);
 
 
 
- // Inferno XIX: rounded stone apertures, upturned legs and flickering feet.
-rect(0,137,480,96,'#493f50');
-for(let k=0;k<7;k++){const x=28+k*67;rect(x,180,47,45,'#736479');rect(x+8,184,31,30,'#242537');rect(x+18,160,6,30,'#d6b3a2');rect(x+28,163,6,28,'#d6b3a2');for(let q=0;q<2;q++){const fx=x+17+q*11;rect(fx,150+Math.sin(frame*.12+k+q)*5,8,11,'#ed9a56');rect(fx+2,145+Math.sin(frame*.12+k+q)*5,4,7,'#ffcf81')}}
-rect(208,205,71,8,'#c1a28d');
-rect(244,137,13,13,'#d9baa5');rect(240,150,21,26,'#8ca4b1');
-rect(271,142,12,13,'#d5af9b');rect(268,155,20,21,'#b06c7e');
-label('BURNING FEET',33,127,'#f0cba7',8);
-label('NICHOLAS III',311,156,'#edd4af',9);
+
+ // Inferno XX: forward-walking figures with heads facing behind.
+rect(0,137,480,96,'#353143');
+rect(0,219,480,14,'#665b6d');
+for(let k=0;k<6;k++){const x=41+((frame*.24+k*79)%460),y=164+(k%2)*13;
+rect(x,y+19,18,30,k%2?'#7f6e8f':'#a17783');
+rect(x+1,y+48,5,11,'#99839b');rect(x+13,y+48,5,11,'#99839b');
+rect(x-2,y+2,15,17,'#cba994');
+rect(x-4,y+8,5,3,'#edd4b7');
+rect(x-3,y+20+Math.sin(frame*.04+k)*5,3,7,'#86b8cb');
+}
+label('HEADS FACE BACK',37,131,'#e9cdb6',8);
+label('FEET MOVE AHEAD',309,145,'#d9c4da',8);
 
 rect(203,76,80,95,'#5d4b76');rect(209,82,68,89,'#1d172e');
 rect(206,74,73,7,'#ebc77e');rect(206,74,5,98,'#c79a72');rect(275,74,5,98,'#c79a72');
