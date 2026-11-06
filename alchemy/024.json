@@ -1,0 +1,97 @@
+{
+  "protocol": "archon/alchemical-living-thread/v2",
+  "stage": 24,
+  "identity": "{{i}}",
+  "parent": "alchemy/023.json",
+  "parentBlobSha": "b66ef2d924e2f5446755952489ca8a900227a712",
+  "scene": "Inferno XVII — Geryon inspected, usurers seen, descent into Malebolge",
+  "source": "Dante, Inferno XVII",
+  "story": [
+    "Geryon comes to the edge of the abyss, displaying the face of an honest man while concealing a serpentine, intricately patterned body and a poisonous scorpion tail.",
+    "Virgil identifies Geryon as the monstrous image of fraud and asks Dante to inspect the usurers nearby while he arranges passage.",
+    "Dante sees seated usurers on the burning sand bearing purses marked with emblems and returns to Virgil.",
+    "Virgil instructs Dante to climb onto Geryon's back in front of him; Dante boards in fear while Virgil positions himself to guard against the tail.",
+    "Geryon backs away from the edge and circles through the air, descending into the eighth circle, Malebolge.",
+    "They land at the bottom. Virgil and Dante dismount; Geryon departs."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Geryon",
+      "semantic": "Appealing exterior conceals dangerous structure; a bearer can still provide transport",
+      "somatic": {
+        "verb": "DISPLAY_CONCEAL_FLY_LAND",
+        "gesture": "shows an honest-looking face, bears a serpentine body and scorpion tail, then circles downward",
+        "observable": "the travelers reach Malebolge while the venomous tail remains dangerous"
+      }
+    },
+    {
+      "actor": "Dante (1)",
+      "semantic": "Examine appearance and risk; distinguish observation from trust",
+      "somatic": {
+        "verb": "INSPECT_BOARD_RIDE_DISMOUNT",
+        "gesture": "observes Geryon, visits the usurers, boards in fear and rides down",
+        "observable": "the hazardous passage is experienced and completed"
+      }
+    },
+    {
+      "actor": "Virgil [2]",
+      "semantic": "Guide makes a bounded arrangement and shields the traveler from a known hazard",
+      "somatic": {
+        "verb": "NEGOTIATE_POSITION_GUIDE",
+        "gesture": "speaks to Geryon, sits behind Dante near the dangerous tail and directs the landing",
+        "observable": "Dante is transported to the next circle"
+      }
+    },
+    {
+      "actor": "Usurers",
+      "semantic": "Display financial identity through visible signs during the punishment",
+      "somatic": {
+        "verb": "SIT_DISPLAY",
+        "gesture": "sit on burning sand with purses bearing family emblems",
+        "observable": "Dante sees the purses and returns"
+      }
+    }
+  ],
+  "cipher": {
+    "alphaOmega": "[ (1), [2] ]",
+    "operator": "APPEAR -> INSPECT -> DISCERN -> BOARD -> CIRCLE_DESCEND -> LAND",
+    "notation": "GERYON{face:honest-looking,body:serpentine,tail:venomous}; [2]:GUIDE ; (1):BOARD ; GERYON:DESCEND ; LAND(MALEBOLGE)",
+    "invariants": [
+      "Surface appearance is not sufficient evidence of safety",
+      "Transport performed by a dangerous carrier is not proof that the danger did not exist",
+      "Boarding and completed descent are distinct events, both narrated in Canto XVII",
+      "Usurers are encountered before the flight; the next Malebolge encounter belongs to Canto XVIII"
+    ],
+    "newAtomicAssignments": [],
+    "chemicalReaction": "none",
+    "product": "none",
+    "previous": [
+      "(1) H Dante and [2] He Virgil",
+      "[6] C life / six poets",
+      "Noble Castle [ (7)[8]\\\\(9)[10] ]",
+      "(11) Na reset analogy"
+    ]
+  },
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "deceptive exterior",
+      "somatic": "Geryon DISPLAYS an innocent face while its tail remains venomous",
+      "evidence": "appearance and anatomy are visibly distinct"
+    },
+    {
+      "id": "B",
+      "semantic": "risk assessment and boarding",
+      "somatic": "Dante INSPECTS the usurers and BOARDS; Virgil GUARDS",
+      "evidence": "purses observed, protective seating chosen"
+    },
+    {
+      "id": "C",
+      "semantic": "actual passage",
+      "somatic": "Geryon CIRCLES, DESCENDS and LANDS",
+      "evidence": "the travelers dismount in Malebolge"
+    }
+  ],
+  "next": "Inferno XVIII: Malebolge first and second bolgias, panderers and seducers, then flatterers",
+  "appendOnly": true
+}
