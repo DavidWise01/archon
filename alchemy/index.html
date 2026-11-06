@@ -59,8 +59,8 @@ product: NONE</pre>
 let p={x:47,y:208,vy:0,ground:false},keys=new Set(),frame=0,seen=new Set(),crossed=false;
 const rect=(x,y,w,h,color)=>{g.fillStyle=color;g.fillRect(Math.round(x),Math.round(y),Math.round(w),Math.round(h))};
 const label=(s,x,y,color='#f8e7b6',size=10)=>{g.fillStyle=color;g.font='bold '+size+'px monospace';g.fillText(s,x,y)};
-function observe(){const x=p.x;if(x<175){seen.add('furies');status.textContent='SEMANTIC: threatened observer. SOMATIC: three Furies SUMMON Medusa. RESULT: danger stated, not witnessed arrival.'}else if(x<320){seen.add('shield');status.textContent='SEMANTIC: protect continuity of sight. SOMATIC: Virgil COVERS Dante eyes. RESULT: threatened gaze avoided.'}else{seen.add('open');status.textContent='SEMANTIC: restore passage. SOMATIC: heavenly messenger touches and OPENS Dis gate. RESULT: Dante and Virgil ENTER.'}if(seen.size===3)status.textContent+=' THREE WITNESSES PRESERVED. NEXT: THE TOMBS.'}
-function reset(){p={x:47,y:208,vy:0,ground:false};seen.clear();crossed=false;status.textContent='STAGE 014 reset: Furies SUMMON, Virgil COVERS, messenger OPENS. No new element.'}
+function observe(){const x=p.x;if(x<175){seen.add('open');status.textContent='WITNESS A: tomb is OPEN but holds its occupant.'}else if(x<320){seen.add('rise');status.textContent='WITNESS B: Farinata RISES and SPEAKS to Dante.'}else{seen.add('ask');status.textContent='WITNESS C: Cavalcante ASKS about Guido and SINKS after mistaken inference.'}if(seen.size===3)status.textContent+=' THREE WITNESSES PRESERVED. NEXT: CANTO XI.'}
+function reset(){p={x:47,y:208,vy:0,ground:false};seen.clear();crossed=false;status.textContent='STAGE 015 reset: open does not mean free. Farinata RISES, Cavalcante ASKS.'}
 function draw(){
 frame++;rect(0,0,480,270,'#0d0f2b');
 for(let i=0;i<90;i++){let x=(i*73+17)%480,y=(i*59+11)%195;rect(x,y,i%13===0?3:1,i%13===0?3:1,i%4?'#7466a2':'#f3d696')}
