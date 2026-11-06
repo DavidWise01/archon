@@ -1,0 +1,98 @@
+{
+  "protocol": "archon/alchemical-living-thread/v2",
+  "stage": 23,
+  "identity": "{{i}}",
+  "parent": "alchemy/022.json",
+  "parentBlobSha": "431203337a473f08ac77a21340c4178fdb23cda1",
+  "scene": "Inferno XVI — three Florentines circle and Virgil signals at the waterfall",
+  "source": "Dante, Inferno XVI",
+  "story": [
+    "Dante and Virgil hear the great waterfall near the brink of the seventh circle.",
+    "Three Florentine souls—Guido Guerra, Tegghiaio Aldobrandi and Jacopo Rusticucci—approach Dante and begin circling together so that they can talk without stopping.",
+    "Their feet move around a shared circle while their heads turn toward Dante; the three ask about Florence and Dante answers.",
+    "They leave and Dante and Virgil approach the abyss where the stream plunges into thunderous water.",
+    "At Virgil's request Dante removes a cord from around his waist and gives it to the guide.",
+    "Virgil throws the knotted cord into the abyss as a signal.",
+    "A strange figure begins rising through the air from below, but its identity and descent as Geryon belong to the next stage."
+  ],
+  "semanticSomatic": [
+    {
+      "role": "Guido Guerra, Tegghiaio Aldobrandi, Jacopo Rusticucci",
+      "semantic": "Three separate witnesses maintain shared conversation under a constraint against stopping",
+      "somatic": {
+        "verb": "CIRCLE_AND_SPEAK",
+        "gesture": "run around a common center, turning their faces toward Dante",
+        "result": "a conversation is sustained without any of the three halting"
+      }
+    },
+    {
+      "role": "Dante (1)",
+      "semantic": "Respond respectfully and supply testimony about Florence",
+      "somatic": {
+        "verb": "LISTEN_ANSWER_UNBIND",
+        "gesture": "answers the circling souls and later removes his waist cord",
+        "result": "Florentine testimony is exchanged and a physical object becomes available for the next signal"
+      }
+    },
+    {
+      "role": "Virgil [2]",
+      "semantic": "Translate an existing object into an intentional summons",
+      "somatic": {
+        "verb": "TAKE_KNOT_CAST",
+        "gesture": "receives Dante's cord, knots or coils it, and casts it into the chasm",
+        "result": "a signal is delivered toward an unseen recipient"
+      }
+    },
+    {
+      "role": "Waterfall and abyss",
+      "semantic": "Threshold that separates observers from the source of a response",
+      "somatic": {
+        "verb": "ROAR_AND_CONCEAL",
+        "gesture": "stream plunges with a great roar over the edge",
+        "result": "the response emerges from below without the sender observing its origin"
+      }
+    }
+  ],
+  "cipher": {
+    "alphaOmega": "[ (1), [2] ]",
+    "operator": "RECOGNIZE -> CIRCLE -> SPEAK -> DEPART -> UNBIND -> SIGNAL -> EMERGE",
+    "notation": "THREE{GUIDO,TEGGHIAIO,JACOPO}:CIRCLE+SPEAK -> DANTE:ANSWER -> [2]:CAST(CORD) -> ABYSS:RESPONSE",
+    "invariants": [
+      "A circle can sustain continuous exchange among people who cannot stop moving",
+      "A physical object can be repurposed as a signal without changing its material identity",
+      "A signal being cast is witnessed; the distant mechanism responding is not directly observed",
+      "The figure rising is noticed near the end of XVI; fuller identification is next stage"
+    ],
+    "newAtomicAssignments": [],
+    "chemicalReaction": "none",
+    "product": "none",
+    "previous": [
+      "(1) H Dante and [2] He Virgil",
+      "[6] C life / six poets",
+      "Noble Castle [ (7)[8]\\\\(9)[10] ]",
+      "(11) sodium/reset analogy"
+    ]
+  },
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "circling testimony",
+      "somatic": "THREE FLORENTINES CIRCLE and SPEAK",
+      "observable": "each keeps moving while addressing Dante"
+    },
+    {
+      "id": "B",
+      "semantic": "threshold approach",
+      "somatic": "WATERFALL ROARS, travelers APPROACH the edge",
+      "observable": "ledge and fall are observed"
+    },
+    {
+      "id": "C",
+      "semantic": "intentional signal",
+      "somatic": "DANTE REMOVES cord; VIRGIL CASTS it into the abyss",
+      "observable": "signal sent; responding figure begins to rise"
+    }
+  ],
+  "next": "Inferno XVII — Geryon identified: trustworthy face, serpent's body, scorpion tail and flight into Malebolge",
+  "appendOnly": true
+}
