@@ -85,32 +85,26 @@ label('}{',237,224,'#f5d5a6',9);label('BURNING TOMBS',201,183,'#eec88b',8);
 
 
 
- // Inferno IX: Furies threaten, Virgil shields sight, messenger opens the gate.
-rect(0,137,480,96,'#30293d');
-rect(355,75,27,115,'#863d51');rect(397,75,27,115,'#863d51');
-rect(368,111,43,79,'#5e3347');
-for(let k=0;k<3;k++){let xx=356+k*24;rect(xx,68,11,12,'#b68e93');rect(xx-3,80,17,13,'#813d63');rect(xx-1,60,4,8,'#cdb38a')}
-const gateGap=24*(.5+.5*Math.sin(frame*.01));
-rect(375,130,(32-gateGap)/2,58,'#211e2e');rect(407-(32-gateGap)/2,130,(32-gateGap)/2,58,'#211e2e');
-rect(185,171,11,11,'#d1b3a3');rect(181,182,18,24,'#b35f6b');
-rect(215,169,11,12,'#cbb09e');rect(211,181,19,26,'#8aa2ad');
-rect(197,177,17,5,'#d9bb98');
-for(let k=0;k<7;k++){const x=290+k*4;rect(x,159-(k%2)*3,3,3,'#e9c991')}
-rect(310,169,10,12,'#ddc5af');rect(306,181,18,24,'#ebd1ab');
-label('FURIES',355,52,'#efbca6',9);label('MESSENGER',278,151,'#eee3b9',8);
-label('EYES COVERED',154,152,'#d6d0eb',8);
+
+ // Inferno X: exposed, burning sepulchers and the two speakers.
+rect(0,137,480,96,'#382c3f');
+for(let k=0;k<5;k++){let x=34+k*90;rect(x,178,58,38,'#6e596d');rect(x-3,172,64,8,'#b98d79');rect(x+8,183,42,24,'#252031');for(let m=0;m<5;m++){rect(x+m*10,169+Math.sin(frame*.11+m+k)*3,5,6,'#e78758')}}
+rect(214,139,15,16,'#cfaa9d');rect(208,155,28,40,'#8a6880');rect(209,146,7,3,'#e8b794');
+rect(301,169,12,12,'#d5b5a4');rect(296,181,20,15,'#79677e');
+label('FARINATA',197,126,'#f4d1af',9);
+label('CAVALCANTE',282,163,'#d6c9c6',8);
 
 rect(203,76,80,95,'#5d4b76');rect(209,82,68,89,'#1d172e');
 rect(206,74,73,7,'#ebc77e');rect(206,74,5,98,'#c79a72');rect(275,74,5,98,'#c79a72');
-label('SHIELD',216,91,'#f9dfb2',8);label('OPEN',219,107,'#d8b9f0',8);
+label('OPEN TOMB',205,91,'#f9dfb2',8);label('BOUND',220,107,'#d8b9f0',8);
 for(let m=0;m<6;m++){rect(217+m*9,114+(m%2)*8,4,3,'#896ea9')}
 
 rect(27,65,68,50,'#322b4b');rect(32,71,58,4,'#d1ac77');rect(32,106,58,4,'#d1ac77');label('015',48,95,'#ffe4a1',15);
 // Paired Li / Be glyph: bound in cipher only; the identity of 3 is held open.
 rect(190,30,105,31,'#3a294e');rect(194,34,97,23,'#20192f');
-label('FURIES / DIS',205,48,'#f6d3a2',10);label('COVER / OPEN',204,59,'#f2dbad',8);
-label('DIS GATE OPENS',201,72,'#e1c5ee',9);
-label('ENTRY GRANTED',198,122,'#d6bedc',8);
+label('FARINATA / TOMB',190,48,'#f6d3a2',10);label('RISE / SPEAK',209,59,'#f2dbad',8);
+label('OPEN != FREE',208,72,'#e1c5ee',9);
+label('PAST / FUTURE',202,122,'#d6bedc',8);
 for(let k=0;k<12;k++){const y=80+k*7;rect(242+Math.sin(k*.7+frame*.021)*8,y,2,3,'#d8bfe9')}
 
 const dx=(keys.has('ArrowRight')||keys.has('KeyD')?1:0)-(keys.has('ArrowLeft')||keys.has('KeyA')?1:0);
