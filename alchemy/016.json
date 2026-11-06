@@ -1,0 +1,113 @@
+{
+  "protocol": "archon/alchemical-living-thread/v2",
+  "stage": 16,
+  "identity": "{{i}}",
+  "parent": "alchemy/015.json",
+  "parentBlobSha": "4d0617f8043de52abae3c72566f3b6dc286bdfac",
+  "scene": "Inferno XI — stench, the tomb of Anastasius and Virgil's account of lower Hell",
+  "source": "Dante, Inferno XI, verses 1–115",
+  "story": [
+    "Dante and Virgil reach a precipitous rocky descent and recoil from an overpowering odor rising from below.",
+    "They stand behind the tomb whose inscription identifies Pope Anastasius, as the poem presents it; this attribution is part of Dante's narrative, not an independently settled historical verdict.",
+    "Virgil advises a pause to acclimate to the stench.",
+    "Dante asks that time not be wasted; Virgil describes the remaining three circles and how violence and fraud are punished.",
+    "Virgil distinguishes violence directed against neighbor, self or God (and their things), then separates fraud against those who trust and those who do not.",
+    "He explains incontinence, violence and fraud, and answers Dante's question about usury by discussing nature and art.",
+    "Once sufficiently acclimated, they prepare to descend, but no journey into the next circle is recorded in this stage."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Stench from the abyss",
+      "semantic": "Environmental hazard detected before entry",
+      "somatic": {
+        "verb": "EMIT",
+        "gesture": "foul air rises from the deeper pit",
+        "observable": "Dante and Virgil retreat behind a tomb"
+      }
+    },
+    {
+      "actor": "Dante (1)",
+      "semantic": "A witness pauses to avoid sensory overload while seeking understanding",
+      "somatic": {
+        "verb": "DETECT_AND_ASK",
+        "gesture": "smells foul air, shelters and asks Virgil to explain the route",
+        "observable": "a protected pause becomes active inquiry"
+      }
+    },
+    {
+      "actor": "Virgil [2]",
+      "semantic": "Guide uses a forced wait to construct a map of risks and categories",
+      "somatic": {
+        "verb": "PAUSE_AND_EXPLAIN",
+        "gesture": "stands sheltered, describes violence and fraud and their subdivisions",
+        "observable": "Dante can distinguish the lower regions before entering"
+      }
+    },
+    {
+      "actor": "Traveling pair",
+      "semantic": "Adaptation permits the next step without destroying previous witness records",
+      "somatic": {
+        "verb": "ACCLIMATE_AND_PREPARE",
+        "gesture": "remain long enough for the smell to become tolerable, then turn toward the descent",
+        "observable": "readiness to descend; descent not yet witnessed"
+      }
+    }
+  ],
+  "cipher": {
+    "alphaOmega": "[ (1), [2] ]",
+    "parity": "odd atomic positions () and even []",
+    "operator": "DETECT -> SHELTER -> PAUSE -> EXPLAIN -> PREPARE",
+    "notation": "ODOR↑ -> (1) DETECT -> [(1),[2]] SHELTER ; [2] EXPLAIN(C7,C8,C9) ; ACCLIMATE -> READY",
+    "interpretation": "The pause is an active period of acclimation and knowledge transfer, not an erasure or a physical transmutation.",
+    "threeLowerCircles": [
+      {
+        "circle": 7,
+        "category": "violence",
+        "parts": [
+          "against neighbor",
+          "against self",
+          "against God/nature/art"
+        ]
+      },
+      {
+        "circle": 8,
+        "category": "fraud against those lacking special trust"
+      },
+      {
+        "circle": 9,
+        "category": "treachery, fraud against those who trust"
+      }
+    ],
+    "atomicPositionsNew": [],
+    "chemicalReaction": "none",
+    "product": "none",
+    "previousCanon": [
+      "(1) H Dante and [2] He Virgil",
+      "[6] C life/six poets",
+      "Noble Castle [ (7)[8]\\\\(9)[10] ]",
+      "(11) Na reset/routing metaphor"
+    ]
+  },
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "hazard",
+      "somatic": "SMELL_AND_SHELTER",
+      "evidence": "stench causes the pilgrims to take cover"
+    },
+    {
+      "id": "B",
+      "semantic": "classification",
+      "somatic": "EXPLAIN",
+      "evidence": "Virgil describes violence, fraud, and subdivisions"
+    },
+    {
+      "id": "C",
+      "semantic": "adaptation",
+      "somatic": "ACCLIMATE",
+      "evidence": "they prepare to continue once the odor is tolerable"
+    }
+  ],
+  "next": "Inferno XII: descent over the shattered rocks, the Minotaur, the river of boiling blood and centaurs",
+  "appendOnly": true
+}
