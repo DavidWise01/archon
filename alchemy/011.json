@@ -1,0 +1,83 @@
+{
+  "protocol": "archon/alchemical-living-thread/v2",
+  "stage": 11,
+  "identity": "{{i}}",
+  "parent": "alchemy/010.json",
+  "parentBlobSha": "033ae56bffbd2d0c960cb31109d4f1db31d49cf2",
+  "scene": "Inferno VII, fifth circle — Styx: the wrathful above, the sullen below",
+  "source": "Dante Inferno VII near the closing verses; Styx, bubbles, submerged voices and the distant tower",
+  "story": [
+    "Dante and Virgil follow the dark water down to the marsh called Styx",
+    "Wrathful souls above the water strike, kick and bite each other",
+    "Virgil points out that sullen souls are submerged beneath the mud",
+    "The submerged spirits sigh; bubbles reveal their presence but their words cannot be clearly spoken",
+    "Dante and Virgil continue around the marsh toward a tower"
+  ],
+  "designRule": {
+    "format": "Each observed role must have a semantic description AND somatic action; action must be operationally specified, not just a label.",
+    "parity": "odd element indices have toroids (); even indices have boxes []",
+    "identityPolicy": "A behavior or location is not automatically a chemical element; keep number assignments separate from action descriptions."
+  },
+  "states": [
+    {
+      "key": "WRATH",
+      "place": "above surface",
+      "semantic": "Outward anger that turns upon other souls; visible conflict",
+      "somatic": {
+        "verb": "STRIKE",
+        "agent": "wrathful souls",
+        "target": "one another",
+        "gesture": "hands, heads, feet, and teeth impact nearby bodies",
+        "result": "visible splashes and continuing mutual attacks",
+        "witness": "Dante sees fighting at the waterline"
+      }
+    },
+    {
+      "key": "SULLEN",
+      "place": "submerged",
+      "semantic": "Inwardly held gloom that cannot become clearly expressed speech",
+      "somatic": {
+        "verb": "EXHALE",
+        "agent": "submerged spirits",
+        "target": "water and mud above them",
+        "gesture": "sigh through clogged throats",
+        "result": "bubbles rise and speech remains indistinct",
+        "witness": "Virgil interprets hidden presence from bubbles"
+      }
+    },
+    {
+      "key": "OBSERVE",
+      "place": "bank",
+      "semantic": "Distinguish surface evidence from inferred hidden causes",
+      "somatic": {
+        "verb": "LOOK",
+        "agent": "Dante (1) and Virgil [2]",
+        "target": "waterline then bubbles",
+        "gesture": "walk around bank while looking across and into the marsh",
+        "result": "two distinct conditions are recorded; no material change",
+        "witness": "Virgil points below the surface"
+      }
+    }
+  ],
+  "cipher": {
+    "alphaOmega": "[ (1), [2] ]",
+    "notation": "STYX { ABOVE: STRIKE -> SPLASH ; BELOW: EXHALE -> BUBBLE } ; (1) OBSERVE ; [2] INTERPRET",
+    "operator": "SURFACE_VS_SUBMERGED",
+    "contrast": "Similar marsh but different behaviors and visible evidence",
+    "physicalReaction": "NONE",
+    "product": "NONE",
+    "preserved": [
+      "[6] Carbon = life / six poets (literary correspondence)",
+      "[ (7)[8]\\\\(9)[10] ] Noble Castle quartet",
+      "(11) Na sodium routing/reset correspondence"
+    ],
+    "newElementalAssignments": []
+  },
+  "witnesses": [
+    "Above: wrathful visibly strike each other",
+    "Below: sullen sigh, observable only via rising bubbles",
+    "Guide explains the relation between the observable surfaces and hidden voices"
+  ],
+  "next": "Inferno VIII: tower signals, Phlegyas approaches by boat, and Filippo Argenti confronts Dante",
+  "appendPolicy": "Older records never rewritten; descriptions and executable observations paired for each new entity."
+}
