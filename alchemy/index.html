@@ -63,7 +63,7 @@ for(let i=0;i<13;i++){rect(i*40,237,20,4,'#6f5f81');rect(i*40+12,250,20,3,'#5a4a
 for(const [x,col,chem] of [[115,'#f5b681','H'],[373,'#91d5df','He']]){
 rect(x-36,213,72,20,'#625175');rect(x-29,205,58,8,'#d8b87f');
 g.strokeStyle=col;g.lineWidth=2;g.beginPath();g.arc(x,162,25,0,Math.PI*2);g.stroke();
-for(let k=0;k<8;k++){let a=k*Math.PI/4+frame*.009;rect(x+Math.cos(a)*22,y=162+Math.sin(a)*22,3,3,col)}
+for(let k=0;k<8;k++){let a=k*Math.PI/4+frame*.009;rect(x+Math.cos(a)*22,162+Math.sin(a)*22,3,3,col)}
 label(chem,x-(chem==='He'?11:5),167,'#fff4d3',15);
 }
 rect(221,190,44,8,'#d2ae78');rect(217,198,52,32,'#564363');rect(226,202,35,18,'#1c1a35');rect(239,207,8,8,'#d3b7ee');
