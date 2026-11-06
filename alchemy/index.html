@@ -98,20 +98,19 @@ label('}{',237,224,'#f5d5a6',9);label('BOLGIAS 1 + 2',205,183,'#eec88b',8);
 
 
 
- // Inferno XVII: Geryon has a human-looking face, serpentine body and venomous tail.
-rect(0,137,480,96,'#29273d');
-for(let k=0;k<10;k++){let x=k*53;rect(x,178+(k%2)*18,32,9,'#706077')}
-rect(0,223,480,10,'#5b526d');
-const gy=154+Math.sin(frame*.024)*25;
-rect(186,gy,107,23,'#90758c');rect(274,gy+4,33,14,'#847392');
-for(let k=0;k<8;k++){const xx=195+k*12;rect(xx,gy+(k%2)*5,8,5,k%2?'#e0a985':'#b8a4aa')}
-rect(173,gy-7,18,18,'#d6b49b');rect(169,gy+4,8,4,'#d2b39f');
-for(let k=0;k<6;k++){const x=304+k*10,y=gy+10+k*6;rect(x,y,13,7,'#a17d8a')}
-rect(360,gy+44,7,17,'#c06c75');rect(353,gy+57,15,5,'#e7b17f');
-rect(219,gy-22,10,11,'#d8b49e');rect(216,gy-11,16,12,'#b46d7c');
-rect(248,gy-24,10,11,'#d9bea6');rect(245,gy-13,16,14,'#829eaf');
-label('GERYON',159,100,'#eed4b3',10);
-label('SCORPION TAIL',347,112,'#efc4ac',8);
+
+ // Inferno XVIII: distinct Malebolge ditches bridged but not merged.
+rect(0,137,480,96,'#342c3b');
+rect(16,170,210,58,'#6e5869');rect(23,177,196,42,'#252537');
+rect(255,170,211,58,'#665364');rect(263,177,196,42,'#58424c');
+rect(20,160,445,11,'#af9386');
+rect(222,159,33,14,'#d6b99e');
+for(let k=0;k<6;k++){let x=38+((k*28+frame*.75)%160),y=186+(k%2)*15;rect(x,y,8,9,'#cfb09f');rect(x-2,y+9,12,11,'#8c6a7b')}
+for(let k=0;k<5;k++){let x=280+(k*31)%158,y=192+(k%2)*9;rect(x,y,13,9,'#c4a39b');rect(x-2,y+8,17,12,'#665566')}
+for(let k=0;k<18;k++){let x=267+k*11;rect(x,213+(k%2)*4,8,3,'#99866e')}
+label('BOLGIA 1 / OPPOSING',32,147,'#f0d1ad',8);
+label('BOLGIA 2 / FILTH',296,147,'#f0d1ad',8);
+label('BRIDGE',214,151,'#e8d3b2',8);
 
 rect(203,76,80,95,'#5d4b76');rect(209,82,68,89,'#1d172e');
 rect(206,74,73,7,'#ebc77e');rect(206,74,5,98,'#c79a72');rect(275,74,5,98,'#c79a72');
