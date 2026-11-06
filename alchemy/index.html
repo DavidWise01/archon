@@ -21,37 +21,31 @@ a{color:#f6d28a}.foot{margin:22px 0;color:var(--mute);font-size:12px}.ledger{dis
 <body><main>
 <header class="top"><div><div class="eyebrow">The Living Thread / Second Traversal</div><h1>DANTE <span style="color:var(--gold)">·</span> THE ALCHEMICAL VESSEL</h1><p>Stage 006 of 041 · Inferno IV: Virgil returns to Limbo, Dante joins the poets.</p></div><span class="chip">STAGE 006 / {{i}}</span></header>
 <div class="grid"><section class="panel"><canvas id="game" width="480" height="270" tabindex="0" aria-label="Playable pixel-art alchemical vessel"></canvas><div class="pad">
-<div class="eyebrow">Limbo · the guide's home, the traveler's welcome</div>
+<div class="eyebrow">Noble Castle · the four poets form N / O / F / Ne</div>
 <div class="controls"><button id="left">◀ MOVE</button><button id="right">MOVE ▶</button><button id="jump">↑ JUMP</button><button id="observe">E · OBSERVE</button><button id="reset">↺ RESET</button></div>
-<div class="status" id="status" aria-live="polite">Inferno IV: Dante awakens in Limbo. Virgil is at home; the poets recognize him and welcome Dante. Observe the poets, the castle and the departure.</div>
+<div class="status" id="status" aria-live="polite">Inferno IV: Homer (7/N), Horace [8/O], Ovid (9/F), Lucan [10/Ne] form one cipher inside the noble castle. Virgil is recognized; Dante joins as sixth poet. Explore three witness stations.</div>
 <p style="font-size:12px;margin:12px 0 0">Keyboard: ← → or A / D · Space to jump · E to observe. Next: Minos, the judge in the second circle, and Paolo and Francesca.</p>
 </div></section>
-<aside class="panel"><div class="pad"><div class="eyebrow">Vessel inventory</div><h2>Virgil belongs here; Dante is welcomed as sixth among the poets.</h2>
+<aside class="panel"><div class="pad"><div class="eyebrow">Vessel inventory</div><h2>Four poets, one enclosed cipher ending in neon (10).</h2>
 <div class="tokens"><div class="token"><strong>H</strong><span>(1) Dante · traveler</span></div><div class="token"><strong>He</strong><span>[2] Virgil · guide</span></div><div class="token"><strong>Li</strong><span>(3) Li · identity unresolved</span></div><div class="token"><strong>Be</strong><span>[4] Beatrice · intercessor</span></div></div>
-<div class="tokens" style="margin-top:10px"><div class="token"><strong>B</strong><span>(5) Lucia · toroid</span></div><div class="token"><strong>C</strong><span>[6] Mary · box</span></div></div><div class="ledger"><span class="pip"></span> <strong>Stage 006: Limbo and the Noble Castle</strong></div>
-<pre>α = ω = [ (1), [2] ]
+<div class="tokens" style="margin-top:10px"><div class="token"><strong>B</strong><span>(5) Lucia · toroid</span></div><div class="token"><strong>C</strong><span>[6] Mary · box</span></div></div><div class="ledger"><span class="pip"></span> <strong>Stage 006: The Noble Castle / Neon</strong></div>
+<pre>ALPHA = OMEGA = [ (1), [2] ]
 
-  LIMBO / FIRST CIRCLE
-  [2] Virgil / He : NATIVE
-            |
-       RECOGNITION
-            |
-  Homer / Horace / Ovid / Lucan
-            |
-  (1) Dante / H : VISITOR
-            |
-     WELCOMED AS SIXTH
-            |
-   7 WALLS / 7 GATES
-            |
-      CASTLE / MEADOW
-            |
-     (1) + [2] continue
+NOBLE CASTLE
+[ (7)[8]\(9)[10] ]
 
- (7) N / [8] O unassigned
- chemical product: NONE</pre>
+(7)  N  = HOMER
+[8]  O  = HORACE
+(9)  F  = OVID
+[10] Ne = LUCAN
+
+Virgil [2] recognized.
+Dante (1) joins as sixth poet.
+Outer [] = one company.
+Neon 10 = endpoint of cipher,
+NOT a literal chemical product.</pre>
 <p><b>Notation:</b> <code>[]</code> containment · <code>()</code> fluidity · <code>}{</code> opening the transformation boundary. These are narrative operators, not evidence of physical transmutation.</p>
-<p><b>Rule:</b> Odd positions are toroids <code>()</code>; even positions boxes <code>[]</code>. Seven walls and gates are <b>story architecture</b>, not elemental assignments. Virgil's homecoming and Dante's welcome change social standing, not matter.</p>
+<p><b>Rule:</b> Odd atomic numbers use toroids <code>()</code>, even numbers boxes <code>[]</code>. The user-defined <b>Noble Castle cipher</b> groups four poets at 7–10, ending with neon [10]. The castle's literal seven walls and gates remain separate story architecture; no chemical reaction is asserted.</p>
 <p><a href="../story.html">Read the sealed first journey</a></p>
 </div></aside></div>
 <footer class="foot">ARCHON / Alchemical Living Thread · 000–006 recorded, 007–041 reserved · story-first symbolic elemental cipher.</footer>
@@ -61,11 +55,11 @@ a{color:#f6d28a}.foot{margin:22px 0;color:var(--mute);font-size:12px}.ledger{dis
 let p={x:47,y:208,vy:0,ground:false},keys=new Set(),frame=0,seen=new Set(),crossed=false;
 const rect=(x,y,w,h,color)=>{g.fillStyle=color;g.fillRect(Math.round(x),Math.round(y),Math.round(w),Math.round(h))};
 const label=(s,x,y,color='#f8e7b6',size=10)=>{g.fillStyle=color;g.font='bold '+size+'px monospace';g.fillText(s,x,y)};
-function observe(){const x=p.x;if(x<175){seen.add('poets');status.textContent='WITNESS A / POETS: Homer, Horace, Ovid and Lucan greet Virgil and welcome Dante as sixth.'}
-else if(x<320){seen.add('castle');status.textContent='WITNESS B / CASTLE: seven walls and seven gates shelter a meadow. No assignment to element 7 or 8.'}
-else{seen.add('departure');status.textContent='WITNESS C / DEPARTURE: Virgil and Dante leave Limbo together, their identities preserved.'}
+function observe(){const x=p.x;if(x<175){seen.add('poets');status.textContent='WITNESS A / FOUR POETS: Homer (7/N), Horace [8/O], Ovid (9/F), Lucan [10/Ne] are assigned in story order.'}
+else if(x<320){seen.add('castle');status.textContent='WITNESS B / NOBLE CASTLE: [ (7)[8]\\(9)[10] ] encloses the poet quartet; Neon at 10 is a cipher endpoint, not a chemical synthesis.'}
+else{seen.add('departure');status.textContent='WITNESS C / FELLOWSHIP: Virgil [2] is recognized, Dante (1) welcomed as sixth poet, while elemental identities remain unchanged.'}
 if(seen.size===3)status.textContent+=' THREE OBSERVATIONS COMPLETE. NEXT: MINOS / INFERNO V.'}
-function reset(){p={x:47,y:208,vy:0,ground:false};seen.clear();crossed=false;status.textContent='STAGE 006 reset: [2] Virgil native, (1) Dante visitor. Seven gates are not atomic assignments.'}
+function reset(){p={x:47,y:208,vy:0,ground:false};seen.clear();crossed=false;status.textContent='STAGE 006 reset: noble castle quartet (7) N, [8] O, (9) F, [10] Ne. No chemical reaction.'}
 function draw(){
 frame++;rect(0,0,480,270,'#0d0f2b');
 for(let i=0;i<90;i++){let x=(i*73+17)%480,y=(i*59+11)%195;rect(x,y,i%13===0?3:1,i%13===0?3:1,i%4?'#7466a2':'#f3d696')}
@@ -90,7 +84,7 @@ rect(201,102,80,65,'#1d2835');rect(215,113,52,54,'#71917f');
 for(let k=0;k<7;k++){const gx=198+k*13;rect(gx,122,5,45,'#ae99a2');rect(gx+1,126,3,41,'#252b42')}
 for(let k=0;k<22;k++){let xx=(k*29)%480,yy=171+(k%4)*13;rect(xx,yy,6,4,'#486c5c');rect(xx+3,yy+3,6,3,'#6f916e')}
 for(let k=0;k<4;k++){let x=118+k*23,y=168+Math.sin(frame*.01+k)*2;rect(x,y,9,8,'#d8b89e');rect(x-3,y+8,15,17,['#8f83b2','#c19b80','#7ea6ad','#b8a18e'][k]);rect(x+1,y+25,4,9,'#837a92');rect(x+8,y+25,4,9,'#837a92')}
-label('FOUR POETS',120,155,'#e5dbb1',8);
+label('N   O   F   Ne',119,155,'#e5dbb1',8);
 
 rect(203,76,80,95,'#5d4b76');rect(209,82,68,89,'#1d172e');
 rect(206,74,73,7,'#ebc77e');rect(206,74,5,98,'#c79a72');rect(275,74,5,98,'#c79a72');
@@ -100,8 +94,8 @@ for(let m=0;m<6;m++){rect(217+m*9,114+(m%2)*8,4,3,'#896ea9')}
 rect(27,65,68,50,'#322b4b');rect(32,71,58,4,'#d1ac77');rect(32,106,58,4,'#d1ac77');label('006',48,95,'#ffe4a1',15);
 // Paired Li / Be glyph: bound in cipher only; the identity of 3 is held open.
 rect(190,30,105,31,'#3a294e');rect(194,34,97,23,'#20192f');
-label('VIRGIL / HOME',197,48,'#f6d3a2',10);
-label('7, 8 RESERVED',202,72,'#e1c5ee',8);
+label('CASTLE / Ne',203,48,'#f6d3a2',10);
+label('(7)[8](9)[10]',201,72,'#e1c5ee',9);
 label('LIVING / DEAD',199,122,'#d6bedc',8);
 for(let k=0;k<12;k++){const y=80+k*7;rect(242+Math.sin(k*.7+frame*.021)*8,y,2,3,'#d8bfe9')}
 
