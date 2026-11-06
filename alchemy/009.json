@@ -1,0 +1,50 @@
+{
+  "protocol": "archon/alchemical-living-thread/v2",
+  "stage": 9,
+  "identity": "{{i}}",
+  "scene": "Inferno VI — Cerberus, rain and Ciacco",
+  "parent": "alchemy/008.json",
+  "parentBlobSha": "41cce9d0d36193a7688e029a964c1451e45ddba5",
+  "story": [
+    "Dante regains consciousness in the third circle under cold, foul, continuous rain mixed with hail and snow",
+    "Cerberus, the three-headed guardian, attacks and blocks the path",
+    "Virgil casts handfuls of earth into Cerberus's open mouths, diverting the guardian",
+    "Dante and Virgil proceed across the muddy ground",
+    "Ciacco recognizes Dante and speaks about division and the future of Florence",
+    "Ciacco returns to the mud; Dante and Virgil continue toward Plutus"
+  ],
+  "cipher": {
+    "alphaOmega": "[ (1), [2] ]",
+    "rule": "odd atomic number => toroid (); even atomic number => box []",
+    "operator": "SATIATE_AND_PASS",
+    "inbound": "rain + mud as continually replenished environment",
+    "guardian": "Cerberus: three mouths / three channels; no atomic number assigned",
+    "guidance": "[2] Virgil uses earth as a diversion, not elemental synthesis",
+    "encounter": "Ciacco changes Dante's understanding of Florence, not his atomic identity",
+    "notation": "RAIN -> MUD ; EARTH -> CERBERUS(3 mouths) -> PASS ; CIACCO -> INFORMATION",
+    "product": "none",
+    "actualChemistry": "not claimed",
+    "unresolved": "Cerberus, Ciacco, and the rain have no automatic elemental assignment"
+  },
+  "witnesses": [
+    {
+      "id": "A",
+      "observation": "Third-circle cold rain, hail and foul mud"
+    },
+    {
+      "id": "B",
+      "observation": "Virgil diverts Cerberus with earth and the pair passes"
+    },
+    {
+      "id": "C",
+      "observation": "Ciacco recognizes Dante and gives a prophecy concerning Florence"
+    }
+  ],
+  "carried": [
+    "(11) Na symbolic reset at Minos",
+    "[6] carbon-life fellowship",
+    "[ (7)[8]\\\\(9)[10] ] Noble Castle quartet"
+  ],
+  "next": "Inferno VII: Plutus and the fourth circle; weighing hoarding against wasting",
+  "policy": "Do not rewrite prior ledger records; story first; observe before assigning numbers"
+}
