@@ -1,0 +1,98 @@
+{
+  "protocol": "archon/alchemical-living-thread/v2",
+  "stage": 27,
+  "identity": "{{i}}",
+  "parent": "alchemy/026.json",
+  "parentBlobSha": "d00d3a7f38e5b6f757f17be2af7cf55a0dd35009",
+  "scene": "Inferno XX — the diviners walking forward while their heads face behind",
+  "source": "Dante, Inferno XX",
+  "story": [
+    "Dante and Virgil reach the fourth bolgia where diviners, astrologers and sorcerers advance slowly along the ditch.",
+    "Their heads are twisted backward upon their bodies; they must walk onward while looking behind themselves.",
+    "Tears fall from the eyes down their backs and across their bodies, a physical detail that makes Dante weep in sympathy.",
+    "Virgil rebukes Dante's pity in this scene and identifies figures including Amphiaraus, Tiresias, Aruns and Manto.",
+    "Virgil recounts the story of Manto and the founding of Mantua, distinguishing this account in the poem from other traditions.",
+    "The procession continues; the travelers turn onward toward the fifth bolgia, which belongs to the next stage."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Fourth bolgia / procession",
+      "semantic": "Punitive displacement of gaze relative to motion",
+      "somatic": {
+        "verb": "ROUTE_FORWARD",
+        "gesture": "the line of souls continues forward through the ditch",
+        "observable": "movement proceeds despite backward orientation of the head"
+      }
+    },
+    {
+      "actor": "Diviners",
+      "semantic": "Those who sought foresight lose ordinary forward-facing vision",
+      "somatic": {
+        "verb": "TURN_HEAD_WALK_WEEP",
+        "gesture": "heads face backward while legs walk forward; tears run down backs",
+        "observable": "gaze and locomotion oppose each other"
+      }
+    },
+    {
+      "actor": "Dante (1)",
+      "semantic": "Direct perception evokes sorrow and questions the relation between seeing and judgment",
+      "somatic": {
+        "verb": "LOOK_AND_WEEP",
+        "gesture": "sees the figures' reversed heads and weeps",
+        "observable": "his response is visible and distinct from the punished souls' tears"
+      }
+    },
+    {
+      "actor": "Virgil [2]",
+      "semantic": "Interpret observed punishment and identify individual histories",
+      "somatic": {
+        "verb": "REBUKE_NAME_EXPLAIN",
+        "gesture": "rebukes Dante's pity and names several diviners, telling Manto's story",
+        "observable": "identifications are heard; identity is not inferred from head orientation alone"
+      }
+    }
+  ],
+  "cipher": {
+    "alphaOmega": "[ (1), [2] ]",
+    "operator": "SEEK_FORESIGHT -> REVERSE_GAZE -> WALK -> WEEP -> INTERPRET",
+    "notation": "DIVINER{head:BACKWARD,steps:FORWARD}; TEARS:BACK ; (1):WEEP ; [2]:NAME+EXPLAIN",
+    "invariants": [
+      "Direction of gaze is not direction of travel",
+      "Reversing orientation does not change the identity of the witness, continuing Stage 026",
+      "Tears from the punished souls and Dante's tears have distinct causes and should not be merged",
+      "Virgil's rebuke is a character's judgment within the poem, not an instruction to dismiss real-world suffering",
+      "The punishment's anatomical reversal is poetic supernatural imagery, not a claim about feasible physiology"
+    ],
+    "newAtomicAssignments": [],
+    "chemicalReaction": "none",
+    "product": "none",
+    "preserve": [
+      "(1) H Dante and [2] He Virgil",
+      "[6] C life/six-poet fellowship",
+      "Noble Castle [ (7)[8]\\\\(9)[10] ]",
+      "(11) Na reset analogy"
+    ]
+  },
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "reversed gaze",
+      "somatic": "DIVINERS TURN their heads backward while WALKING forward",
+      "observable": "the head-body directions differ"
+    },
+    {
+      "id": "B",
+      "semantic": "separate responses",
+      "somatic": "DIVINERS WEEP; DANTE WEEPS on seeing them",
+      "observable": "tears have distinct subjects"
+    },
+    {
+      "id": "C",
+      "semantic": "historical interpretation",
+      "somatic": "VIRGIL REBUKES, NAMES and EXPLAINS",
+      "observable": "Manto's and others' stories are narrated"
+    }
+  ],
+  "next": "Inferno XXI — fifth bolgia: boiling pitch, barrators submerged and Malebranche demons guarding the tar",
+  "appendOnly": true
+}
