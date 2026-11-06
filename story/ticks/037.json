@@ -1,0 +1,11 @@
+{
+  "protocol": "archon/story-ticks/v1",
+  "index": 36,
+  "identity": "{{i}}",
+  "scene": "Saturn",
+  "realm": "PARADISO",
+  "choice": 1,
+  "line": "Be still and observe",
+  "parent": "374969c412e3f4d40b157369b2b9a8fab27afe33fb9755fb990aeb6701cb5713",
+  "sha256": "3bc12507251c448a5188b38a446e380a8c3f7be0eae903a052845df7a26a1de2"
+}
