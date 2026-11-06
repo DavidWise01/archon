@@ -1,0 +1,11 @@
+{
+  "protocol": "archon/story-ticks/v1",
+  "index": 40,
+  "identity": "{{i}}",
+  "scene": "Love That Moves the Stars",
+  "realm": "EMPYREAN",
+  "choice": 1,
+  "line": "Seal the story",
+  "parent": "2c89a2f63ae2d30ff84df1649f322223a79b0d84bbe5b7326dbf9eef6acf20ae",
+  "sha256": "1d8cb77fe3cb50d2a08f9e375bd04a18f9daacb39fe1561c7b3f53f5e79d2630"
+}
