@@ -1,0 +1,98 @@
+{
+  "protocol": "archon/alchemical-living-thread/v2",
+  "stage": 15,
+  "identity": "{{i}}",
+  "parent": "alchemy/014.json",
+  "parentBlobSha": "8b0ec7cc65b2a0fe04da0f752dde92b69437341a",
+  "scene": "Inferno X — burning tombs, Farinata and Cavalcante",
+  "source": "Dante Inferno Canto X",
+  "story": [
+    "Dante and Virgil proceed among open, burning tombs in the sixth circle of Hell.",
+    "Virgil explains these sepulchers contain heretics and their lids will be closed after the Last Judgment.",
+    "Farinata degli Uberti rises upright from an open tomb and recognizes Dante's Tuscan speech.",
+    "Farinata questions Dante about his ancestors and they dispute Florentine political history.",
+    "Cavalcante, sharing the tomb, rises and asks after his son Guido; Dante's phrasing leads Cavalcante to fear Guido is dead, and he sinks back.",
+    "Farinata explains the spirits can imperfectly foresee distant events but are ignorant of the current living present unless someone reports it.",
+    "Farinata foresees Dante's exile; Dante continues with Virgil."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Open sepulcher",
+      "semantic": "Containment without release; current lid open, eventual closure foretold",
+      "somatic": {
+        "verb": "EXPOSE",
+        "gesture": "lid remains raised while occupant stays within",
+        "result": "speech and sight pass through the opening, not the occupant's freedom"
+      }
+    },
+    {
+      "actor": "Farinata",
+      "semantic": "identity and political memory persist under confinement",
+      "somatic": {
+        "verb": "RISE_AND_SPEAK",
+        "gesture": "stands upright from the fiery sepulcher and addresses Dante",
+        "result": "ancestry, Florence and future exile become subjects of testimony"
+      }
+    },
+    {
+      "actor": "Cavalcante",
+      "semantic": "absence of present knowledge can cause a mistaken inference",
+      "somatic": {
+        "verb": "ASK_AND_SINK",
+        "gesture": "rises, asks whether his son Guido lives, then sinks back in distress",
+        "result": "incomplete evidence is mistaken for a death report"
+      }
+    },
+    {
+      "actor": "Dante and Virgil",
+      "semantic": "witness the difference between knowledge of future and ignorance of present",
+      "somatic": {
+        "verb": "LISTEN_AND_CLARIFY",
+        "gesture": "listen, question Farinata, and continue past tombs",
+        "result": "temporal knowledge constraint is learned"
+      }
+    }
+  ],
+  "cipher": {
+    "alphaOmega": "[ (1), [2] ]",
+    "parity": "odd elements toroid (); even elements box []",
+    "notation": "TOMB[OPEN](Farinata) -> RISE -> SPEAK ; Cavalcante -> ASK -> INFER -> SINK ; FUTURE(partial) != PRESENT(unknown)",
+    "operator": "OPEN_CONTAINER_BOUND_OCCUPANT_AND_TEMPORAL_LIMIT",
+    "invariants": [
+      "Open lid is not escape",
+      "Saying something in the past tense does not independently prove the son has died",
+      "This temporal limitation applies to souls in the canto, not as a claim about physics",
+      "Witness statements record uncertainty, not erase it"
+    ],
+    "newElements": "none",
+    "chemicalReaction": "none",
+    "preserved": [
+      "(1) H Dante and [2] He Virgil",
+      "[6] carbon-life fellowship",
+      "[ (7)[8]\\\\(9)[10] ] noble castle / neon",
+      "(11) Na reset analogy"
+    ]
+  },
+  "witnesses": [
+    {
+      "id": "A",
+      "meaning": "open but containing",
+      "action": "EXPOSE",
+      "evidence": "tomb lids raised while occupants are held within"
+    },
+    {
+      "id": "B",
+      "meaning": "identity and history",
+      "action": "RISE_AND_SPEAK",
+      "evidence": "Farinata stands and addresses Dante"
+    },
+    {
+      "id": "C",
+      "meaning": "knowledge gap",
+      "action": "ASK_AND_SINK",
+      "evidence": "Cavalcante mistakes uncertain present information for news of his son"
+    }
+  ],
+  "next": "Inferno XI: the tomb of Anastasius, the foul smell and Virgil's organization of lower Hell",
+  "appendOnly": true
+}
