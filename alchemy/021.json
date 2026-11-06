@@ -1,0 +1,100 @@
+{
+  "protocol": "archon/alchemical-living-thread/v2",
+  "stage": 21,
+  "identity": "{{i}}",
+  "parent": "alchemy/020.json",
+  "parentBlobSha": "bc301e7453322924173618346382f93d6edd6399",
+  "scene": "Inferno XIV — Old Man of Crete, cracked statue and infernal rivers",
+  "source": "Dante, Inferno XIV, Virgil's explanation of the Old Man of Crete",
+  "story": [
+    "Virgil tells Dante about an ancient statue hidden within Mount Ida on Crete, turned toward Rome.",
+    "The Old Man's head is gold, arms and breast silver, then brass, with iron below, except the right foot is baked clay.",
+    "All parts except the golden head are split by a fissure, and tears drip from the cracks.",
+    "The tears collect below and become infernal watercourses, described in connection with Acheron, Styx, Phlegethon and finally Cocytus.",
+    "Dante asks why the water is seen here though its source lies elsewhere, and Virgil distinguishes the full geography of Hell from the route Dante has taken.",
+    "Virgil also distinguishes Lethe, which Dante will encounter outside Hell; do not merge Lethe into this statue's four-river topology.",
+    "The travelers remain at the stream, ready to continue beyond this explanatory encounter."
+  ],
+  "semanticSomatic": [
+    {
+      "role": "Old Man of Crete",
+      "semantic": "A layered allegorical body bears fractures of successive ages and conditions",
+      "somatic": {
+        "verb": "FRACTURE_AND_WEEP",
+        "gesture": "cracks run through non-golden portions of the statue and tears emerge",
+        "result": "a common source of infernal waters is described"
+      }
+    },
+    {
+      "role": "Tears and underground channel",
+      "semantic": "Multiple downstream destinations can share one alleged source without becoming identical",
+      "somatic": {
+        "verb": "DRIP_COLLECT_FLOW",
+        "gesture": "tears descend through fissures and gather beneath the mountain",
+        "result": "linked infernal river names in Virgil's explanation"
+      }
+    },
+    {
+      "role": "Virgil [2]",
+      "semantic": "Guide connects an upstream origin story to downstream observations",
+      "somatic": {
+        "verb": "EXPLAIN_AND_DISTINGUISH",
+        "gesture": "describes statue parts and river geography, answers Dante's question, distinguishes Lethe",
+        "result": "Dante has a verbal model of the river system"
+      }
+    },
+    {
+      "role": "Dante (1)",
+      "semantic": "Observer tests a claimed source against what has been seen on the journey",
+      "somatic": {
+        "verb": "ASK_AND_COMPARE",
+        "gesture": "asks why the water appears here and listens to the account",
+        "result": "source and observation are kept as separate evidence types"
+      }
+    }
+  ],
+  "cipher": {
+    "alphaOmega": "[ (1), [2] ]",
+    "parity": "odd atomic positions () even []",
+    "operator": "FRACTURE -> WEEP -> COLLECT -> FLOW -> CONNECT",
+    "notation": "OLD_MAN[gold|silver|brass|iron|clay] -> cracks -> tears -> {Acheron,Styx,Phlegethon,Cocytus} ; Lethe=separate",
+    "rootWitness": "Virgil's verbal report about the statue, not a direct observation of the statue by Dante",
+    "invariants": [
+      "Provenance is not established merely because downstream outputs share a name or metaphor",
+      "A source can have multiple downstream manifestations without making those manifestations identical",
+      "A narrated source is not directly witnessed by Dante in this scene",
+      "Do not mistake five metals/materials for new atomic character assignments",
+      "Lethe is distinguished from the four named infernal waters"
+    ],
+    "newAtomicAssignments": [],
+    "chemistry": "Gold, silver, brass, iron and clay are actual materials named in a poetic allegory; no chemical transmutation is claimed",
+    "carryForward": [
+      "(1) H Dante / [2] He Virgil",
+      "[6] C life / six poets",
+      "Noble Castle [ (7)[8]\\\\(9)[10] ]",
+      "(11) sodium/reset analogy"
+    ]
+  },
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "layered statue and fissures",
+      "somatic": "FRACTURE and WEEP",
+      "basis": "Virgil describes a statue; not directly viewed"
+    },
+    {
+      "id": "B",
+      "semantic": "downstream shared provenance",
+      "somatic": "TEARS DRIP, COLLECT and FLOW",
+      "basis": "four infernal rivers explained"
+    },
+    {
+      "id": "C",
+      "semantic": "knowledge boundaries",
+      "somatic": "DANTE ASKS; VIRGIL DISTINGUISHES",
+      "basis": "Lethe separate; reported source not witnessed"
+    }
+  ],
+  "next": "Inferno XV: Dante and Virgil walk along the raised stream bank and encounter Brunetto Latini",
+  "appendOnly": true
+}
