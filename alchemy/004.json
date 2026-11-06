@@ -1,0 +1,46 @@
+{
+  "protocol": "archon/alchemical-living-thread/v2",
+  "stage": 4,
+  "identity": "{{i}}",
+  "scene": "Inferno III — the banner of the uncommitted",
+  "parentStage": "alchemy/003.json",
+  "alphaOmega": "[ (1), [2] ]",
+  "parity": "odd => toroids (); even => boxes []",
+  "story": [
+    "After the gate Dante hears many voices crying",
+    "Virgil explains they are souls who refused to take a side, with neutral angels",
+    "The souls race after a banner that never rests",
+    "Wasps and flies sting them; tears and blood fall toward worms",
+    "Virgil urges Dante to look and pass on",
+    "The travelers approach the Acheron shore"
+  ],
+  "cipher": {
+    "operator": "FOLLOW",
+    "meaning": "motion without a chosen destination",
+    "notation": "[ (1), [2] ] observe ( BANNER ↻ ; SOULS pursue )",
+    "contrast": "Dante chooses to follow Virgil; the uncommitted follow a perpetually moving banner",
+    "product": "none",
+    "reaction": "none"
+  },
+  "positions": [
+    {
+      "number": 7,
+      "symbol": "N",
+      "shape": "()",
+      "assignment": "RESERVED — do not equate a collective with one atomic identity yet"
+    },
+    {
+      "number": 8,
+      "symbol": "O",
+      "shape": "[]",
+      "assignment": "RESERVED — no character or chemical reaction established"
+    }
+  ],
+  "witnesses": [
+    "banner never comes to rest",
+    "souls follow and suffer",
+    "Virgil explains and the travelers move on"
+  ],
+  "next": "Acheron shore: Charon confronts Dante as a living traveler; inspect that distinct boundary next",
+  "notes": "This is a literary/metaphorical cipher, not an assertion that neutrals are nitrogen or that the souls undergo actual chemistry."
+}
