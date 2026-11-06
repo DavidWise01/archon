@@ -23,25 +23,30 @@ a{color:#f6d28a}.foot{margin:22px 0;color:var(--mute);font-size:12px}.ledger{dis
 <div class="grid"><section class="panel"><canvas id="game" width="480" height="270" tabindex="0" aria-label="Playable pixel-art alchemical vessel"></canvas><div class="pad">
 <div class="eyebrow">Lucia and Mary · [ (5) | [6] ]</div>
 <div class="controls"><button id="left">◀ MOVE</button><button id="right">MOVE ▶</button><button id="jump">↑ JUMP</button><button id="observe">E · OBSERVE</button><button id="reset">↺ RESET</button></div>
-<div class="status" id="status" aria-live="polite">Inferno II: Virgil reveals that Beatrice (4 / Be) sent him to guide Dante (1 / H). The cipher now holds [3|4] together, with 3 / Li unresolved. Observe all stations; no element is synthesized.</div>
-<p style="font-size:12px;margin:12px 0 0">Keyboard: ← → or A / D · Space to jump · E to observe. Human direction is required before Stage 001.</p>
+<div class="status" id="status" aria-live="polite">Inferno II: Mary [6] sends Lucia (5), Lucia calls Beatrice [4], Beatrice calls Virgil [2], and Virgil guides Dante (1). No physical synthesis.</div>
+<p style="font-size:12px;margin:12px 0 0">Keyboard: ← → or A / D · Space to jump · E to observe. Stage 003 will follow the gate in Canto III.</p>
 </div></section>
 <aside class="panel"><div class="pad"><div class="eyebrow">Vessel inventory</div><h2>The next pair enters: odd toroids, even boxes.</h2>
 <div class="tokens"><div class="token"><strong>H</strong><span>(1) Dante · traveler</span></div><div class="token"><strong>He</strong><span>[2] Virgil · guide</span></div><div class="token"><strong>Li</strong><span>(3) Li · identity unresolved</span></div><div class="token"><strong>Be</strong><span>[4] Beatrice · intercessor</span></div></div>
-<div class="ledger"><span class="pip"></span> <strong>Stage 002: The Chain of Intercession</strong></div>
-<pre>            {{i}}
-              |
-       α [ (1), (2) ]
-         Dante / Virgil
-              ^
-         summon / guide
-              |
-            [3|4]
-         Li ? | Beatrice
-              |
-       product = NONE</pre>
+<div class="tokens" style="margin-top:10px"><div class="token"><strong>B</strong><span>(5) Lucia · toroid</span></div><div class="token"><strong>C</strong><span>[6] Mary · box</span></div></div><div class="ledger"><span class="pip"></span> <strong>Stage 002: The Chain of Intercession</strong></div>
+<pre>α = ω = [ (1), [2] ]
+
+  [6] Mary / C
+       |
+  (5) Lucia / B
+       |
+  [4] Beatrice / Be
+       |
+  [2] Virgil / He
+       |
+  (1) Dante / H
+
+  [ (3) | [4] ]  # Li unresolved
+  [ (5) | [6] ]  # Lucia and Mary
+  operation: intercession
+  product: NONE</pre>
 <p><b>Notation:</b> <code>[]</code> containment · <code>()</code> fluidity · <code>}{</code> opening the transformation boundary. These are narrative operators, not evidence of physical transmutation.</p>
-<p><b>Rule:</b> The story determines the cipher. Beatrice (4) is revealed as Virgil's commissioner; [3|4] stays associated, with 3 reserved until a story intersection identifies it. This is symbolic, not chemical fusion.</p>
+<p><b>Rule:</b> Odd = toroid <code>()</code>, even = box <code>[]</code>. The pair <code>[ (5) | [6] ]</code> records Lucia and Mary, alongside <code>[ (3) | [4] ]</code>. Narrative association, not a physical reaction.</p>
 <p><a href="../story.html">Read the sealed first journey</a></p>
 </div></aside></div>
 <footer class="foot">ARCHON / Alchemical Living Thread · 42 indexed stages (000–041) planned · genesis only committed · no automatic alchemical recipes or invented reactions.</footer>
@@ -51,10 +56,10 @@ a{color:#f6d28a}.foot{margin:22px 0;color:var(--mute);font-size:12px}.ledger{dis
 let p={x:47,y:208,vy:0,ground:false},keys=new Set(),frame=0,seen=new Set();
 const rect=(x,y,w,h,color)=>{g.fillStyle=color;g.fillRect(Math.round(x),Math.round(y),Math.round(w),Math.round(h))};
 const label=(s,x,y,color='#f8e7b6',size=10)=>{g.fillStyle=color;g.font='bold '+size+'px monospace';g.fillText(s,x,y)};
-function observe(){const x=p.x;if(x<175){seen.add('H');status.textContent='WITNESS A / DANTE (H,1). His hesitation becomes courage when he learns why Virgil has come.'}
-else if(x>310){seen.add('He');status.textContent='WITNESS B / VIRGIL (He,2). He reports that Beatrice asked him to guide Dante.'}
-else{seen.add('V');status.textContent='WITNESS C / [3|4]. Beatrice is Be (4); the lithium slot (3) remains paired but its narrative identity is unknown.'}}
-function reset(){p={x:47,y:208,vy:0,ground:false};seen.clear();status.textContent='STAGE 001 reset: [ (1), (2) ] with [3|4] associated. No product or physical reaction.'}
+function observe(){const x=p.x;if(x<175){seen.add('H');status.textContent='WITNESS A / [6] MARY (C). Mary initiates the intercession in Inferno II.'}
+else if(x>310){seen.add('He');status.textContent='WITNESS B / (5) LUCIA (B). Lucia carries the request to Beatrice.'}
+else{seen.add('V');status.textContent='WITNESS C / [4] BEATRICE (Be). She commissions Virgil; the narrative role for (3) Li remains unresolved.'}}
+function reset(){p={x:47,y:208,vy:0,ground:false};seen.clear();status.textContent='STAGE 002 reset: alpha [ (1), [2] ]; pairs [ (3) | [4] ] and [ (5) | [6] ]; no chemical reaction.'}
 function draw(){
 frame++;rect(0,0,480,270,'#0d0f2b');
 for(let i=0;i<90;i++){let x=(i*73+17)%480,y=(i*59+11)%195;rect(x,y,i%13===0?3:1,i%13===0?3:1,i%4?'#7466a2':'#f3d696')}
@@ -69,7 +74,7 @@ for(let k=0;k<8;k++){let a=k*Math.PI/4+frame*.009;rect(x+Math.cos(a)*22,162+Math
 label(chem,x-(chem==='He'?11:5),167,'#fff4d3',15);label(chem==='H'?'DANTE':'VIRGIL',x-22,200,'#ffe6bf',9);
 }
 rect(221,190,44,8,'#d2ae78');rect(217,198,52,32,'#564363');rect(226,202,35,18,'#1c1a35');rect(239,207,8,8,'#d3b7ee');
-label('}{',237,224,'#f5d5a6',9);label('REVELATION',207,183,'#eec88b',8);
+label('}{',237,224,'#f5d5a6',9);label('INTERCESSION',205,183,'#eec88b',7);
 rect(27,65,68,50,'#322b4b');rect(32,71,58,4,'#d1ac77');rect(32,106,58,4,'#d1ac77');label('002',48,95,'#ffe4a1',15);
 // Paired Li / Be glyph: bound in cipher only; the identity of 3 is held open.
 rect(190,30,105,31,'#3a294e');rect(194,34,97,23,'#20192f');
