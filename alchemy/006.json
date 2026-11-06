@@ -1,0 +1,89 @@
+{
+  "protocol": "archon/alchemical-living-thread/v2",
+  "stage": 6,
+  "identity": "{{i}}",
+  "scene": "Inferno IV — Limbo: Virgil among his own",
+  "parentStage": "alchemy/005.json",
+  "source": "Dante, Inferno IV, lines 1–151",
+  "narrative": [
+    "Dante wakes with a thunderclap at the first circle after the unobserved Acheron crossing",
+    "Virgil appears pale from compassion for the spirits, not from fear",
+    "The souls in Limbo possess virtue or wisdom but lack the hope of blessedness in Dante's theology",
+    "Virgil belongs to this realm, yet guides the living Dante through it",
+    "Homer, Horace, Ovid and Lucan greet Virgil, then welcome Dante as sixth among the poets",
+    "Together they pass through seven gates of the noble castle into a green meadow",
+    "Dante and Virgil leave the company and continue toward the next circle"
+  ],
+  "cipher": {
+    "alphaOmega": "[ (1), [2] ]",
+    "parity": "odd n => toroid (n); even n => box [n]",
+    "existingRoles": [
+      {
+        "n": 1,
+        "element": "H",
+        "character": "Dante",
+        "geometry": "toroid",
+        "realmStatus": "visitor"
+      },
+      {
+        "n": 2,
+        "element": "He",
+        "character": "Virgil",
+        "geometry": "box",
+        "realmStatus": "inhabitant and guide"
+      }
+    ],
+    "operation": "RECOGNITION_AND_ENVIRONMENT",
+    "notation": "[ LIMBO : (1) visitor | [2] native ] => welcome among poets => [ (1), [2] ] continue",
+    "meaning": "Virgil's environment and peers recognize him; Dante is temporarily admitted into a literary fellowship",
+    "invariant": "same atomic numbers, geometry, identity, and alpha/omega vessel",
+    "meaningfulChange": "social and interpretive status of Dante, not composition",
+    "noChemicalReaction": true,
+    "noPhysicalTransmutation": true,
+    "caveat": "Helium chemical inertness is a metaphor for stability; Limbo is not a physical atomic shell."
+  },
+  "spatialEvidence": {
+    "nobleCastle": {
+      "walls": 7,
+      "gates": 7,
+      "stream": true
+    },
+    "interpretation": "Seven gates/walls are observed story structures, not atomic numbers 7 or 8."
+  },
+  "reserved": [
+    {
+      "n": 3,
+      "element": "Li",
+      "geometry": "()",
+      "character": null
+    },
+    {
+      "n": 7,
+      "element": "N",
+      "geometry": "()",
+      "character": null
+    },
+    {
+      "n": 8,
+      "element": "O",
+      "geometry": "[]",
+      "character": null
+    }
+  ],
+  "witnesses": [
+    {
+      "id": "a",
+      "observation": "Virgil's pallor expresses pity, and he identifies Limbo as the realm of those who cannot hope"
+    },
+    {
+      "id": "b",
+      "observation": "The four poets recognize Virgil and welcome Dante into their company"
+    },
+    {
+      "id": "c",
+      "observation": "The castle's seven walls and gates are encountered; Dante and Virgil depart together"
+    }
+  ],
+  "next": "Inferno V — Minos judges souls and Dante encounters Paolo and Francesca",
+  "canon": "Append-only new stage; does not modify sealed original Dante story or previous alchemical stages."
+}
