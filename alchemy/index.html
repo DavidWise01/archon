@@ -62,8 +62,8 @@ Noble Castle 7-10 preserved</pre>
 let p={x:47,y:208,vy:0,ground:false},keys=new Set(),frame=0,seen=new Set(),crossed=false;
 const rect=(x,y,w,h,color)=>{g.fillStyle=color;g.fillRect(Math.round(x),Math.round(y),Math.round(w),Math.round(h))};
 const label=(s,x,y,color='#f8e7b6',size=10)=>{g.fillStyle=color;g.font='bold '+size+'px monospace';g.fillText(s,x,y)};
-function observe(){const x=p.x;if(x<175){seen.add('rage');status.textContent='WITNESS A: Minotaur RAGES after Virgil invokes Theseus. RESULT: Dante and Virgil descend.'}else if(x<320){seen.add('chiron');status.textContent='WITNESS B: Chiron NOTICES living Dante and ASSIGNS Nessus. RESULT: escort appointed.'}else{seen.add('nessus');status.textContent='WITNESS C: Nessus CARRIES Dante across boiling blood. RESULT: crossing explicitly observed.'}if(seen.size===3)status.textContent+=' THREE WITNESSES PRESERVED. NEXT: SPEAKING TREE.'}
-function reset(){p={x:47,y:208,vy:0,ground:false};seen.clear();crossed=false;status.textContent='STAGE 017 reset: Minotaur RAGE; Chiron ASSIGN; Nessus CARRY. Transit observed.'}
+function observe(){const x=p.x;if(x<175){seen.add('hear');status.textContent='WITNESS A / HEAR: Dante hears human lament but cannot locate a visible speaker among the trees.'}else if(x<320){seen.add('break');status.textContent='WITNESS B / BREAK: Dante snaps a twig. Dark blood and words emerge together. Recognition came at a cost.'}else{seen.add('pier');status.textContent='WITNESS C / SPEAK: Pier recounts his identity and fate; Virgil apologizes. The wound is not undone.'}if(seen.size===3)status.textContent+=' THREE WITNESSES PRESERVED. NEXT: THE PURSUIT IN THE WOOD.'}
+function reset(){p={x:47,y:208,vy:0,ground:false};seen.clear();crossed=false;status.textContent='STAGE 018 reset: HEAR -> BREAK -> BLEED + SPEAK; recognition does not heal the wound.'}
 function draw(){
 frame++;rect(0,0,480,270,'#0d0f2b');
 for(let i=0;i<90;i++){let x=(i*73+17)%480,y=(i*59+11)%195;rect(x,y,i%13===0?3:1,i%13===0?3:1,i%4?'#7466a2':'#f3d696')}
@@ -109,15 +109,15 @@ label('NESSUS',nx-5,152,'#e9c8a5',9);
 
 rect(203,76,80,95,'#5d4b76');rect(209,82,68,89,'#1d172e');
 rect(206,74,73,7,'#ebc77e');rect(206,74,5,98,'#c79a72');rect(275,74,5,98,'#c79a72');
-label('RAGE',222,91,'#f9dfb2',8);label('DESCEND',212,107,'#d8b9f0',8);
+label('BREAK',220,91,'#f9dfb2',8);label('SPEAK',217,107,'#d8b9f0',8);
 for(let m=0;m<6;m++){rect(217+m*9,114+(m%2)*8,4,3,'#896ea9')}
 
 rect(27,65,68,50,'#322b4b');rect(32,71,58,4,'#d1ac77');rect(32,106,58,4,'#d1ac77');label('018',48,95,'#ffe4a1',15);
 // Paired Li / Be glyph: bound in cipher only; the identity of 3 is held open.
 rect(190,30,105,31,'#3a294e');rect(194,34,97,23,'#20192f');
-label('MINOTAUR / XII',198,48,'#f6d3a2',10);label('NESSUS / CARRY',198,59,'#f2dbad',8);
-label('RAGE -> PASS',204,72,'#e1c5ee',9);
-label('CROSSING',214,122,'#d6bedc',8);
+label('PIER / TREE XIII',198,48,'#f6d3a2',10);label('BLEED / SPEAK',199,59,'#f2dbad',8);
+label('HEAR -> RECOGNIZE',195,72,'#e1c5ee',8);
+label('WITNESS COST',203,122,'#d6bedc',8);
 for(let k=0;k<12;k++){const y=80+k*7;rect(242+Math.sin(k*.7+frame*.021)*8,y,2,3,'#d8bfe9')}
 
 const dx=(keys.has('ArrowRight')||keys.has('KeyD')?1:0)-(keys.has('ArrowLeft')||keys.has('KeyA')?1:0);
