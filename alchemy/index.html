@@ -19,7 +19,7 @@ a{color:#f6d28a}.foot{margin:22px 0;color:var(--mute);font-size:12px}.ledger{dis
 @media(max-width:850px){.grid{grid-template-columns:1fr}main{padding:12px}}
 </style></head>
 <body><main>
-<header class="top"><div><div class="eyebrow">The Living Thread / Second Traversal</div><h1>DANTE <span style="color:var(--gold)">·</span> THE ALCHEMICAL VESSEL</h1><p>Stage 000 of 041 · Open genesis · a different journey, with the original 41 ticks sealed.</p></div><span class="chip">GENESIS 000 / {{i}}</span></header>
+<header class="top"><div><div class="eyebrow">The Living Thread / Second Traversal</div><h1>DANTE <span style="color:var(--gold)">·</span> THE ALCHEMICAL VESSEL</h1><p>Stage 000 of 041 · Dante meets Virgil in the dark wood · the original 41 ticks remain sealed.</p></div><span class="chip">GENESIS 000 / {{i}}</span></header>
 <div class="grid"><section class="panel"><canvas id="game" width="480" height="270" tabindex="0" aria-label="Playable pixel-art alchemical vessel"></canvas><div class="pad">
 <div class="eyebrow">Explore the unopened vessel</div>
 <div class="controls"><button id="left">◀ MOVE</button><button id="right">MOVE ▶</button><button id="jump">↑ JUMP</button><button id="observe">E · OBSERVE</button><button id="reset">↺ RESET</button></div>
@@ -27,19 +27,19 @@ a{color:#f6d28a}.foot{margin:22px 0;color:var(--mute);font-size:12px}.ledger{dis
 <p style="font-size:12px;margin:12px 0 0">Keyboard: ← → or A / D · Space to jump · E to observe. Human direction is required before Stage 001.</p>
 </div></section>
 <aside class="panel"><div class="pad"><div class="eyebrow">Vessel inventory</div><h2>Zero is a beginning, not a product.</h2>
-<div class="tokens"><div class="token"><strong>H</strong><span>Hydrogen · symbolic seed</span></div><div class="token"><strong>He</strong><span>Helium · symbolic seed</span></div></div>
-<div class="ledger"><span class="pip"></span> <strong>Stage 000: Initialized</strong></div>
+<div class="tokens"><div class="token"><strong>H</strong><span>Dante · traveler / student</span></div><div class="token"><strong>He</strong><span>Virgil · poet / guide</span></div></div>
+<div class="ledger"><span class="pip"></span> <strong>Stage 000: The Meeting</strong></div>
 <pre>              {{i}}
                |
        [ THE VESSEL ]
           /      \
-       ( H )    ( He )
+       (1)     (2)
           \      /
-            }{  ?
+          meet / guide
                |
-         output: UNSET</pre>
+       new element: NONE</pre>
 <p><b>Notation:</b> <code>[]</code> containment · <code>()</code> fluidity · <code>}{</code> opening the transformation boundary. These are narrative operators, not evidence of physical transmutation.</p>
-<p><b>Rule:</b> Observe first. Only the next user-directed operation can define Stage 001.</p>
+<p><b>Rule:</b> The story determines the cipher. Dante (1) meets Virgil (2). Their guidance relationship changes; the atoms do not. Stage 001 remains human-directed.</p>
 <p><a href="../story.html">Read the sealed first journey</a></p>
 </div></aside></div>
 <footer class="foot">ARCHON / Alchemical Living Thread · 42 indexed stages (000–041) planned · genesis only committed · no automatic alchemical recipes or invented reactions.</footer>
@@ -49,10 +49,10 @@ a{color:#f6d28a}.foot{margin:22px 0;color:var(--mute);font-size:12px}.ledger{dis
 let p={x:47,y:208,vy:0,ground:false},keys=new Set(),frame=0,seen=new Set();
 const rect=(x,y,w,h,color)=>{g.fillStyle=color;g.fillRect(Math.round(x),Math.round(y),Math.round(w),Math.round(h))};
 const label=(s,x,y,color='#f8e7b6',size=10)=>{g.fillStyle=color;g.font='bold '+size+'px monospace';g.fillText(s,x,y)};
-function observe(){const x=p.x;if(x<175){seen.add('H');status.textContent='WITNESS A / HYDROGEN. Symbolic seed H is observed; no reaction follows from observation alone.'}
-else if(x>310){seen.add('He');status.textContent='WITNESS B / HELIUM. Symbolic seed He is observed. Distinct from H; no conversion has occurred.'}
-else{seen.add('V');status.textContent='WITNESS C / VESSEL. The vessel is sealed and empty of product. The transformation operator }{ remains unassigned until human direction.'}}
-function reset(){p={x:47,y:208,vy:0,ground:false};seen.clear();status.textContent='GENESIS 000 restored. Two symbolic seeds, one unopened vessel, no synthesized element.'}
+function observe(){const x=p.x;if(x<175){seen.add('H');status.textContent='WITNESS A / DANTE (H). The lost traveler recognizes Virgil as a poet and teacher. No physical reaction.'}
+else if(x>310){seen.add('He');status.textContent='WITNESS B / VIRGIL (He). The guide offers another route past the beasts. Helium remains distinct from hydrogen.'}
+else{seen.add('V');status.textContent='WITNESS C / RELATIONSHIP. Dante accepts guidance. The story changes their relationship, not their elemental identities.'}}
+function reset(){p={x:47,y:208,vy:0,ground:false};seen.clear();status.textContent='GENESIS 000 restored: [ (1), (2) ]. Dante H meets Virgil He. No new element.'}
 function draw(){
 frame++;rect(0,0,480,270,'#0d0f2b');
 for(let i=0;i<90;i++){let x=(i*73+17)%480,y=(i*59+11)%195;rect(x,y,i%13===0?3:1,i%13===0?3:1,i%4?'#7466a2':'#f3d696')}
@@ -64,10 +64,10 @@ for(const [x,col,chem] of [[115,'#f5b681','H'],[373,'#91d5df','He']]){
 rect(x-36,213,72,20,'#625175');rect(x-29,205,58,8,'#d8b87f');
 g.strokeStyle=col;g.lineWidth=2;g.beginPath();g.arc(x,162,25,0,Math.PI*2);g.stroke();
 for(let k=0;k<8;k++){let a=k*Math.PI/4+frame*.009;rect(x+Math.cos(a)*22,162+Math.sin(a)*22,3,3,col)}
-label(chem,x-(chem==='He'?11:5),167,'#fff4d3',15);
+label(chem,x-(chem==='He'?11:5),167,'#fff4d3',15);label(chem==='H'?'DANTE':'VIRGIL',x-22,200,'#ffe6bf',9);
 }
 rect(221,190,44,8,'#d2ae78');rect(217,198,52,32,'#564363');rect(226,202,35,18,'#1c1a35');rect(239,207,8,8,'#d3b7ee');
-label('}{',237,224,'#f5d5a6',9);label('UNBOUND',215,183,'#eec88b',8);
+label('}{',237,224,'#f5d5a6',9);label('MEETING',215,183,'#eec88b',8);
 rect(27,65,68,50,'#322b4b');rect(32,71,58,4,'#d1ac77');rect(32,106,58,4,'#d1ac77');label('000',48,95,'#ffe4a1',15);
 const dx=(keys.has('ArrowRight')||keys.has('KeyD')?1:0)-(keys.has('ArrowLeft')||keys.has('KeyA')?1:0);
 p.x=Math.max(4,Math.min(469,p.x+dx*2.2));if((keys.has('Space')||keys.has('ArrowUp'))&&p.ground){p.vy=-7.5;p.ground=false}
