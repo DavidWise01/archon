@@ -96,18 +96,21 @@ label('}{',237,224,'#f5d5a6',9);label('GERYON / DESCENT',193,183,'#eec88b',8);
 
 
 
- // Inferno XVI: three Florentines rotate; torrent falls beside cord signal.
-rect(0,137,480,96,'#7a5549');
-for(let k=0;k<45;k++){const x=(k*47+frame*(k%3+1))%480,y=(k*31)%193;rect(x,y,2,5,'#db9065')}
-rect(0,184,305,12,'#ba9f89');rect(0,196,305,36,'#4e7780');
-rect(305,172,22,16,'#d1b3a0');rect(315,188,12,44,'#5a8195');
-for(let k=0;k<13;k++){const y=(k*19+frame*1.5)%74;rect(316+(k%3)*5,172+y,5,10,'#a3d2dc')}
-const theta=frame*.024;
-for(let k=0;k<3;k++){const t=theta+k*2*Math.PI/3,x=127+Math.cos(t)*40,y=165+Math.sin(t)*16;rect(x-4,y-8,9,9,'#d6b29d');rect(x-7,y+1,15,18,k%2?'#906779':'#ad7d7d')}
-label('THREE IN A CIRCLE',62,119,'#f3dfbc',8);
-rect(282,139,11,12,'#d4b6a2');rect(279,151,17,21,'#7e9caf');
-for(let k=0;k<10;k++){const x=294+k*4,y=158+k*5;rect(x,y,3,3,'#edd09b')}
-label('CORD SIGNAL',257,126,'#ebd6bc',8);
+
+ // Inferno XVII: Geryon has a human-looking face, serpentine body and venomous tail.
+rect(0,137,480,96,'#29273d');
+for(let k=0;k<10;k++){let x=k*53;rect(x,178+(k%2)*18,32,9,'#706077')}
+rect(0,223,480,10,'#5b526d');
+const gy=154+Math.sin(frame*.024)*25;
+rect(186,gy,107,23,'#90758c');rect(274,gy+4,33,14,'#847392');
+for(let k=0;k<8;k++){const xx=195+k*12;rect(xx,gy+(k%2)*5,8,5,k%2?'#e0a985':'#b8a4aa')}
+rect(173,gy-7,18,18,'#d6b49b');rect(169,gy+4,8,4,'#d2b39f');
+for(let k=0;k<6;k++){const x=304+k*10,y=gy+10+k*6;rect(x,y,13,7,'#a17d8a')}
+rect(360,gy+44,7,17,'#c06c75');rect(353,gy+57,15,5,'#e7b17f');
+rect(219,gy-22,10,11,'#d8b49e');rect(216,gy-11,16,12,'#b46d7c');
+rect(248,gy-24,10,11,'#d9bea6');rect(245,gy-13,16,14,'#829eaf');
+label('GERYON',159,100,'#eed4b3',10);
+label('SCORPION TAIL',347,112,'#efc4ac',8);
 
 rect(203,76,80,95,'#5d4b76');rect(209,82,68,89,'#1d172e');
 rect(206,74,73,7,'#ebc77e');rect(206,74,5,98,'#c79a72');rect(275,74,5,98,'#c79a72');
