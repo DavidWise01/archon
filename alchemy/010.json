@@ -1,0 +1,55 @@
+{
+  "protocol": "archon/alchemical-living-thread/v2",
+  "stage": 10,
+  "identity": "{{i}}",
+  "scene": "Inferno VII — Plutus and the fourth circle: avarice versus prodigality",
+  "parent": "alchemy/009.json",
+  "parentBlobSha": "2940b8bf2ab6ae29f0cec48b9c45861da73a3669",
+  "source": "Dante, Inferno Canto VII, opening and fourth-circle collision",
+  "story": [
+    "Plutus confronts the travelers at the descent; Virgil rebukes him and he collapses",
+    "Hoarders and squanderers push great weights from opposite directions",
+    "The groups collide, exchange accusations, turn about and repeat their circuits",
+    "Virgil explains their common failure to use Fortune's gifts with moderation",
+    "Virgil describes Fortune's role in redistributing worldly goods",
+    "The canto continues toward the Styx, but that next environment is reserved for the following stage"
+  ],
+  "cipher": {
+    "alphaOmega": "[ (1), [2] ]",
+    "parity": "odd positions are toroids (); even positions are boxes []",
+    "guardian": "Plutus / passage obstacle, atomic number unassigned",
+    "pairedForces": {
+      "A": "AVARICE — hold too tightly",
+      "B": "PRODIGALITY — release too freely"
+    },
+    "operator": "OPPOSE_COLLIDE_REVERSE_REPEAT",
+    "notation": "A --weight--> X <--weight-- B ; collision X ; reverse ; repeat",
+    "distinction": "Both sides remain trapped in a cyclic punishment rather than a productive exchange or chemical equilibrium",
+    "conservedInNarrative": "repeating opposition, recognizable categories and burdens; not a scientific claim of conserved energy or mass",
+    "elementProduction": "none",
+    "reaction": "none",
+    "reserved": "Do not assign Plutus, hoarders or squanderers an atomic number merely from this scene"
+  },
+  "witnesses": [
+    {
+      "id": "A",
+      "observation": "Virgil silences Plutus at the entrance"
+    },
+    {
+      "id": "B",
+      "observation": "Opposed groups collide with weights and reverse direction repeatedly"
+    },
+    {
+      "id": "C",
+      "observation": "Virgil explains Fortune and the failure of moderation on both sides"
+    }
+  ],
+  "carried": [
+    "Dante (1) H; Virgil [2] He",
+    "[6] carbon-life six-poet fellowship",
+    "[ (7)[8]\\\\(9)[10] ] Noble Castle",
+    "(11) Na symbolic reset analogy at Minos"
+  ],
+  "next": "Inferno VII: the Styx, where anger erupts above the marsh while sullenness remains submerged",
+  "interpretationLimit": "The alchemical cipher is literary symbolism; the fourth circle is not evidence of an actual chemical reaction or conservation law."
+}
