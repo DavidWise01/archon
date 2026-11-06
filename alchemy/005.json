@@ -1,0 +1,63 @@
+{
+  "protocol": "archon/alchemical-living-thread/v2",
+  "stage": 5,
+  "identity": "{{i}}",
+  "scene": "Inferno III–IV — Charon at the Acheron",
+  "parentStage": "alchemy/004.json",
+  "source": "Inferno III, river Acheron; Inferno IV, Dante awakens on opposite bank",
+  "story": [
+    "Charon ferries the dead and rejects Dante because he is living",
+    "Virgil invokes the higher authority of the journey",
+    "Charon ceases his objection",
+    "Earthquake, red light and Dante's loss of consciousness",
+    "Dante wakes across Acheron; transport itself is not directly narrated from his view"
+  ],
+  "cipher": {
+    "alphaOmega": "[ (1), [2] ]",
+    "parity": "odd toroid (), even box []",
+    "operator": "ADMISSION_AND_TRANSPORT",
+    "boundary": "ACHERON",
+    "classification": "living versus dead",
+    "roleCharon": "ferryman and gatekeeper; element NOT ASSIGNED",
+    "status": [
+      "request",
+      "refusal",
+      "exception accepted",
+      "unobserved crossing",
+      "arrival observed"
+    ],
+    "symbolicExpression": "(1) Dante + [2] Virgil --[Charon / permission]--> Acheron crossing (mechanism unknown)",
+    "reaction": "none",
+    "product": "none"
+  },
+  "reserved": [
+    {
+      "n": 7,
+      "symbol": "N",
+      "shape": "()",
+      "character": null
+    },
+    {
+      "n": 8,
+      "symbol": "O",
+      "shape": "[]",
+      "character": null
+    }
+  ],
+  "witnesses": [
+    {
+      "id": "A",
+      "claim": "Charon rejects the living Dante"
+    },
+    {
+      "id": "B",
+      "claim": "Virgil invokes the authority of their mission; Charon stops protesting"
+    },
+    {
+      "id": "C",
+      "claim": "After quake and unconsciousness, Dante wakes beyond the river; exact transit is not witnessed"
+    }
+  ],
+  "next": "Inferno IV — Limbo: Virgil's place among the virtuous pagans and the first circle",
+  "status": "CANONICAL_INTERSECTION_NO_ELEMENT_SYNTHESIS"
+}
