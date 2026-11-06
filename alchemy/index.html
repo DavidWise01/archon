@@ -94,15 +94,17 @@ label('}{',237,224,'#f5d5a6',9);label('SAND / FIRE',210,183,'#eec88b',8);
 
 
 
- // Canto XIII: the fleeing squanderers and hounds damage an innocent bush.
-rect(0,137,480,96,'#293439');
-for(let k=0;k<9;k++){const x=22+k*52;rect(x,105+(k%3)*8,11,116,'#594653');rect(x-13,106+(k%3)*8,35,7,'#594653');rect(x+13,93+(k%3)*9,6,30,'#594653')}
-const runner=38+(frame*1.5)%165;
-for(let k=0;k<2;k++){const xx=runner+k*54,yy=185+Math.sin(frame*.15+k)*2;rect(xx,yy,12,11,'#bb9c92');rect(xx-2,yy+11,17,19,'#826279');rect(xx+2,yy+28,4,9,'#99858f');rect(xx+11,yy+27,4,9,'#99858f')}
-for(let k=0;k<4;k++){const xx=155+((frame*2.7+k*23)%170),yy=198+(k%2)*9;rect(xx,yy,21,10,'#37313f');rect(xx+15,yy-4,8,6,'#57485d');rect(xx+4,yy+10,4,5,'#3d3449')}
-rect(369,176,12,45,'#70535f');rect(355,169,42,9,'#70535f');
-for(let k=0;k<8;k++){const x=340+(k*9)%72,y=214+(k%3)*5;rect(x,y,7,3,'#bd8c70')}
-label('HOUNDS',246,175,'#e6c1a1',8);label('GATHER LEAVES',337,154,'#edd0b4',8);
+
+ // Inferno XIV: raining fire, hot sand, defiant Capaneus and traversable stream.
+rect(0,137,480,96,'#80604e');
+for(let k=0;k<80;k++){const x=(k*61)%480,y=(k*31+frame*(1+k%3))%224;rect(x,y,2,6,k%4?'#e99754':'#f1c46f')}
+for(let k=0;k<26;k++){const x=(k*31)%480;rect(x,214+(k%3)*4,20,3,'#b7835d')}
+rect(138,181,52,13,'#a47770');rect(151,172,15,11,'#d2a393');
+rect(130,186,21,6,'#bf9488');rect(178,186,18,6,'#bf9488');
+label('CAPANEUS',122,157,'#f4d5aa',9);
+rect(326,193,154,29,'#4f7c88');rect(326,188,154,5,'#e0c7a2');
+for(let k=0;k<13;k++){const x=328+(k*17)%151;rect(x,204+(k%2)*8,14,3,'#8ec0c9')}
+label('STREAM / BANK',335,176,'#c3e2de',8);
 
 rect(203,76,80,95,'#5d4b76');rect(209,82,68,89,'#1d172e');
 rect(206,74,73,7,'#ebc77e');rect(206,74,5,98,'#c79a72');rect(275,74,5,98,'#c79a72');
