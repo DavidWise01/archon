@@ -19,40 +19,42 @@ a{color:#f6d28a}.foot{margin:22px 0;color:var(--mute);font-size:12px}.ledger{dis
 @media(max-width:850px){.grid{grid-template-columns:1fr}main{padding:12px}}
 </style></head>
 <body><main>
-<header class="top"><div><div class="eyebrow">The Living Thread / Second Traversal</div><h1>DANTE <span style="color:var(--gold)">·</span> THE ALCHEMICAL VESSEL</h1><p>Stage 012 of 041 · Inferno VIII: the tower signals and Phlegyas responds.</p></div><span class="chip">STAGE 012 / {{i}}</span></header>
+<header class="top"><div><div class="eyebrow">The Living Thread / Second Traversal</div><h1>DANTE <span style="color:var(--gold)">·</span> THE ALCHEMICAL VESSEL</h1><p>Stage 013 of 041 · Inferno VIII: Argenti and the closed gates of Dis.</p></div><span class="chip">STAGE 013 / {{i}}</span></header>
 <div class="grid"><section class="panel"><canvas id="game" width="480" height="270" tabindex="0" aria-label="Playable pixel-art alchemical vessel"></canvas><div class="pad">
-<div class="eyebrow">Two flames · an answer · Phlegyas rows</div>
+<div class="eyebrow">Argenti · repel an intrusion; Dis · refuse admission</div>
 <div class="controls"><button id="left">◀ MOVE</button><button id="right">MOVE ▶</button><button id="jump">↑ JUMP</button><button id="observe">E · OBSERVE</button><button id="reset">↺ RESET</button></div>
-<div class="status" id="status" aria-live="polite">Inferno VIII: two tower flames signal, another flame answers, Phlegyas rows in, and Dante boards after Virgil. The living passenger makes the boat ride lower.</div>
-<p style="font-size:12px;margin:12px 0 0">Keyboard: ← → or A / D · Space to jump · E to observe. Next: Filippo Argenti confronts Dante on the Styx.</p>
+<div class="status" id="status" aria-live="polite">Inferno VIII: Filippo Argenti rises from Styx toward the boat. Virgil repels him. Ahead, the fallen angels shut the gates of Dis. Observe REACH, REPEL, and SHUT.</div>
+<p style="font-size:12px;margin:12px 0 0">Keyboard: ← → or A / D · Space to jump · E to observe. Next: Inferno IX: the Furies and Medusa, then a messenger opens Dis.</p>
 </div></section>
 <aside class="panel"><div class="pad"><div class="eyebrow">Vessel inventory</div><h2>Minos routes souls; the [6] carbon-life fellowship remains preserved.</h2>
 <div class="tokens"><div class="token"><strong>H</strong><span>(1) Dante · traveler</span></div><div class="token"><strong>He</strong><span>[2] Virgil · guide</span></div><div class="token"><strong>Li</strong><span>(3) Li · identity unresolved</span></div><div class="token"><strong>Be</strong><span>[4] Beatrice · intercessor</span></div></div>
-<div class="tokens" style="margin-top:10px"><div class="token"><strong>B</strong><span>(5) Lucia · toroid</span></div><div class="token"><strong>C</strong><span>[6] Mary · box</span></div></div><div class="ledger"><span class="pip"></span> <strong>Stage 012: Signal, Response and Ferry</strong></div>
-<pre>ALPHA = OMEGA = [ (1), [2] ]
+<div class="tokens" style="margin-top:10px"><div class="token"><strong>B</strong><span>(5) Lucia · toroid</span></div><div class="token"><strong>C</strong><span>[6] Mary · box</span></div></div><div class="ledger"><span class="pip"></span> <strong>Stage 013: Argenti and the Closed Gate</strong></div>
+<pre>α = ω = [ (1), [2] ]
 
-CANTO VIII / TOWER
-two flames DISPLAY
-        |
-distant flame ANSWERS
-        |
-Phlegyas ROWS toward shore
-        |
-[2] Virgil BOARDS
-(1) Dante BOARDS
-        |
-boat sits lower in Styx
+STYX / ARGENTI
+  SEMANTIC: intrusion
+  SOMATIC: REACH toward boat
+            |
+  VIRGIL [2] REPELS
+            |
+  boundary held / boat moves
 
-Semantic = meaning
-Somatic = action + effect
-Carbon/life, Neon/castle,
-Sodium/reset preserved.
-New element: NONE</pre>
+CITY OF DIS
+  fallen angels REFUSE
+            |
+  GATE SHUT / entry denied
+            |
+  Dante (1) waits outside
+
+Three witnesses, no synthesis
+Carbon/life and castle preserved
+(11) Na reset analogy preserved
+NEXT: CANTO IX</pre>
 <p><b>Notation:</b> <code>[]</code> containment · <code>()</code> fluidity · <code>}{</code> opening the transformation boundary. These are narrative operators, not evidence of physical transmutation.</p>
-<p><b>Rule:</b> Pair meaning with an observable action: the tower <b>DISPLAYS</b>, the distant fire <b>ANSWERS</b>, Phlegyas <b>ROWS</b>, and Dante <b>BOARDS</b>. The lower-riding ferry is an observed consequence. No new chemical element is assigned.</p>
+<p><b>Rule:</b> Each role has a <b>semantic meaning</b> and <b>somatic action</b>. Argenti's intrusion is <b>REACH</b>; Virgil's protection is <b>REPEL</b>; the devils' refusal is <b>SHUT</b>. These actions produce different outcomes; the gate of Dis is still closed.</p>
 <p><a href="../story.html">Read the sealed first journey</a></p>
 </div></aside></div>
-<footer class="foot">ARCHON / Alchemical Living Thread · 000–012 recorded, 013–041 reserved · story-first symbolic elemental cipher.</footer>
+<footer class="foot">ARCHON / Alchemical Living Thread · 000–013 recorded, 014–041 reserved · story-first symbolic elemental cipher.</footer>
 </main>
 <script>
 (()=>{const c=document.getElementById('game'),g=c.getContext('2d'),status=document.getElementById('status');
@@ -75,7 +77,7 @@ for(let k=0;k<8;k++){let a=k*Math.PI/4+frame*.009;rect(x+Math.cos(a)*22,162+Math
 label(chem,x-(chem==='He'?11:5),167,'#fff4d3',15);label(chem==='H'?'DANTE':'VIRGIL',x-22,200,'#ffe6bf',9);
 }
 rect(221,190,44,8,'#d2ae78');rect(217,198,52,32,'#564363');rect(226,202,35,18,'#1c1a35');rect(239,207,8,8,'#d3b7ee');
-label('}{',237,224,'#f5d5a6',9);label('PHLEGYAS / FERRY',201,183,'#eec88b',8);
+label('}{',237,224,'#f5d5a6',9);label('STYX / DIS',210,183,'#eec88b',8);
 
 
 
@@ -98,7 +100,7 @@ rect(206,74,73,7,'#ebc77e');rect(206,74,5,98,'#c79a72');rect(275,74,5,98,'#c79a7
 label('SIGNAL',216,91,'#f9dfb2',8);label('ANSWER',212,107,'#d8b9f0',8);
 for(let m=0;m<6;m++){rect(217+m*9,114+(m%2)*8,4,3,'#896ea9')}
 
-rect(27,65,68,50,'#322b4b');rect(32,71,58,4,'#d1ac77');rect(32,106,58,4,'#d1ac77');label('012',48,95,'#ffe4a1',15);
+rect(27,65,68,50,'#322b4b');rect(32,71,58,4,'#d1ac77');rect(32,106,58,4,'#d1ac77');label('013',48,95,'#ffe4a1',15);
 // Paired Li / Be glyph: bound in cipher only; the identity of 3 is held open.
 rect(190,30,105,31,'#3a294e');rect(194,34,97,23,'#20192f');
 label('PHLEGYAS / BOAT',192,48,'#f6d3a2',10);label('FLASH + ROW',207,59,'#f2dbad',8);
@@ -110,7 +112,7 @@ const dx=(keys.has('ArrowRight')||keys.has('KeyD')?1:0)-(keys.has('ArrowLeft')||
 p.x=Math.max(4,Math.min(469,p.x+dx*2.2));if((keys.has('Space')||keys.has('ArrowUp'))&&p.ground){p.vy=-7.5;p.ground=false}
 p.vy+=.42;p.y+=p.vy;if(p.y>=210){p.y=210;p.vy=0;p.ground=true}
 rect(p.x+2,p.y,8,4,'#3a253f');rect(p.x+2,p.y+4,8,5,'#eec5a6');rect(p.x,p.y+9,12,10,'#c96067');rect(p.x+2,p.y+19,3,4,'#3b3455');rect(p.x+8,p.y+19,3,4,'#3b3455');
-rect(0,0,480,24,'#0b1024');label('ARCHON / ALCHEMY 012',8,15,'#ebcd8f',10);label('WITNESSES '+seen.size+'/3',350,15,'#b7dfd7',9);
+rect(0,0,480,24,'#0b1024');label('ARCHON / ALCHEMY 013',8,15,'#ebcd8f',10);label('WITNESSES '+seen.size+'/3',350,15,'#b7dfd7',9);
 requestAnimationFrame(draw)}
 window.addEventListener('keydown',e=>{if(['ArrowLeft','ArrowRight','ArrowUp','Space','KeyA','KeyD','KeyE'].includes(e.code)){keys.add(e.code);if(document.activeElement===c)e.preventDefault();if(e.code==='KeyE'&&!e.repeat)observe()}});
 window.addEventListener('keyup',e=>keys.delete(e.code));window.addEventListener('blur',()=>keys.clear());
