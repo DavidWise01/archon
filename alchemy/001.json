@@ -39,7 +39,7 @@
     {
       "atomicNumber": 3,
       "symbol": "Li",
-      "status": "not introduced by story; keep unassigned"
+      "status": "unassigned character, position is RESERVED within [3|4]"
     }
   ],
   "events": [
@@ -71,8 +71,9 @@
     "stateChange": "Dante's resolve, not atomic species",
     "chemicalReaction": "none",
     "elementProduction": "none",
-    "notation": "[ (1), (2) ] ; (4) --commission--> (2) --guidance--> (1)",
-    "caution": "The element assignments are literary metaphor; Be as beryllium is not chemically created by H and He."
+    "notation": "[ (1), (2) ] ; [3|4] ; Beatrice (4) commissions Virgil (2), who guides Dante (1)",
+    "caution": "The element assignments are literary metaphor; Be as beryllium is not chemically created by H and He.",
+    "guardrail": "[3|4] is a user-defined alchemical cipher unit. It does not assert Li-Be chemical bonding or element synthesis."
   },
   "witnesses": {
     "a": "Beatrice's commission as relayed by Virgil",
@@ -80,5 +81,43 @@
     "c": "Dante's decision to resume the path"
   },
   "nextStory": "Inferno Canto III — inscription at the gate and entry into the vestibule",
-  "pendingHumanInterpretation": "Which operation is implied when a commission crosses the boundary and changes the traveler?"
+  "pendingHumanInterpretation": "At the next story intersection, resolve which narrative role corresponds to position 3 in [3|4]; do not assign in advance.",
+  "cipher": "[ (1), (2) ] ; [3|4]",
+  "cipherPairs": [
+    {
+      "notation": "[ (1), (2) ]",
+      "role": "starting alpha/omega vessel",
+      "entries": [
+        {
+          "position": 1,
+          "element": "H",
+          "character": "Dante"
+        },
+        {
+          "position": 2,
+          "element": "He",
+          "character": "Virgil"
+        }
+      ]
+    },
+    {
+      "notation": "[3|4]",
+      "role": "linked second pair, first revealed during Virgil's account",
+      "entries": [
+        {
+          "position": 3,
+          "element": "Li",
+          "character": null,
+          "status": "narrative identity not yet resolved; held in pair with Beatrice"
+        },
+        {
+          "position": 4,
+          "element": "Be",
+          "character": "Beatrice",
+          "status": "intercessor; summons Virgil"
+        }
+      ],
+      "relation": "| marks a structural association, not demonstrated chemical bonding"
+    }
+  ]
 }
