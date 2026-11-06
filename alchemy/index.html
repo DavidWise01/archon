@@ -85,15 +85,22 @@ label('}{',237,224,'#f5d5a6',9);label('STYX / DIS',210,183,'#eec88b',8);
 
 
 
- // Beacon and boat scene
-rect(0,137,480,95,'#244358');
-rect(70,65,28,113,'#655771');
-for(let k=0;k<2;k++){rect(75+k*12,51,5,11,'#efb36c');rect(72+k*12,46+Math.sin(frame*.12+k)*2,10,5,'#ffe3a5')}
-rect(387,103,22,74,'#63576e');rect(392,96,8,8,'#eebc6c');
-const ferryX=227+Math.sin(frame*.014)*48;
-rect(ferryX-40,188,80,7,'#bb9a76');rect(ferryX-29,194,58,5,'#81626b');
-rect(ferryX-6,159,14,14,'#c3a293');rect(ferryX-10,173,20,17,'#81677a');rect(ferryX+10,169,3,38,'#c7b18a');
-label('PHLEGYAS',ferryX-26,153,'#e7c29d',8);
+
+ // Canto VIII: Argenti rises by ferry; red Dis towers and a sealed gate.
+rect(0,137,480,96,'#263b49');
+for(let k=0;k<28;k++){let xx=(k*47+frame*.27)%480;rect(xx,196+(k%4)*8,16,2,'#6b8894')}
+rect(360,76,25,109,'#81434f');rect(391,60,25,125,'#894a4c');
+rect(372,108,29,77,'#562c40');rect(368,104,37,7,'#d17660');
+rect(378,137,16,48,'#1b172b');rect(378,139,16,8,'#c65e61');
+for(let k=0;k<4;k++){rect(365+k*13,87+(k%2)*7,5,12,'#ed7956')}
+label('DIS / CLOSED',357,49,'#efc8a7',9);
+const bx=216+Math.sin(frame*.011)*13;
+rect(bx-43,190,86,7,'#bc9877');rect(bx-27,197,54,5,'#876c68');
+rect(bx-6,164,12,14,'#cfaf9c');rect(bx-11,178,22,13,'#86637e');
+const argY=185+Math.sin(frame*.041)*6;
+rect(135,argY,11,12,'#b39b8e');rect(131,argY+11,20,15,'#5a6471');
+rect(145,argY+14,16,4,'#b8a293');
+label('ARGENTI',117,169,'#ead3be',9);
 
 rect(203,76,80,95,'#5d4b76');rect(209,82,68,89,'#1d172e');
 rect(206,74,73,7,'#ebc77e');rect(206,74,5,98,'#c79a72');rect(275,74,5,98,'#c79a72');
