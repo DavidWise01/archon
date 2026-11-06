@@ -1,0 +1,108 @@
+{
+  "protocol": "archon/alchemical-living-thread/v2",
+  "stage": 26,
+  "identity": "{{i}}",
+  "parent": "alchemy/025.json",
+  "parentBlobSha": "35eb371b6b679e49dedd0dc667254b7a068791b0",
+  "scene": "Inferno XIX — the third bolgia, inverted simoniacs and Nicholas III",
+  "source": "Dante, Inferno XIX",
+  "story": [
+    "Dante and Virgil look down into the third bolgia, a rocky floor pierced by round holes.",
+    "The simoniacs are thrust head-first into these holes; their exposed feet and legs writhe under flickering flames.",
+    "One pair of feet kicks harder than the rest; Virgil carries Dante down the slope to investigate.",
+    "Dante speaks to the inverted soul, who mistakes him for Boniface VIII, whom he expects to arrive later.",
+    "The speaker is Pope Nicholas III. His mistaken expectation reveals a prediction and his own temporal viewpoint, not the visitor's identity.",
+    "Dante condemns the sale of sacred offices. Virgil approves his words and carries him back up toward the next crossing.",
+    "The soul remains inverted: interrogation reveals identity without reorienting or releasing him."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Stone holes / third bolgia",
+      "semantic": "Containment reversed along a body's vertical axis",
+      "somatic": {
+        "verb": "INVERT_AND_CONTAIN",
+        "gesture": "hold punished souls head-down in the holes",
+        "observable": "only kicking legs and soles emerge above the rock"
+      }
+    },
+    {
+      "actor": "Burning flames",
+      "semantic": "Visible penalty marks exposed extremities",
+      "somatic": {
+        "verb": "FLICKER_AND_BURN",
+        "gesture": "play over the soles of exposed feet",
+        "observable": "the legs writhe and kick"
+      }
+    },
+    {
+      "actor": "Nicholas III",
+      "semantic": "The hidden occupant mistakes the present visitor for an expected successor",
+      "somatic": {
+        "verb": "KICK_MISIDENTIFY_SPEAK",
+        "gesture": "kicks his feet and speaks from the hole, initially addressing Dante as Boniface VIII",
+        "observable": "Dante's questions clarify the speaker's own identity"
+      }
+    },
+    {
+      "actor": "Dante (1)",
+      "semantic": "Question an inverted witness without assuming that orientation determines identity",
+      "somatic": {
+        "verb": "QUESTION_AND_REBUKE",
+        "gesture": "speaks to the protruding feet and condemns simony",
+        "observable": "the identity and the mistaken expectation are distinguished"
+      }
+    },
+    {
+      "actor": "Virgil [2]",
+      "semantic": "Facilitate access without disturbing containment",
+      "somatic": {
+        "verb": "CARRY_AND_LIFT",
+        "gesture": "carries Dante down for the conversation and then back upward",
+        "observable": "Dante can speak, depart, and leave Nicholas inverted"
+      }
+    }
+  ],
+  "cipher": {
+    "alphaOmega": "[ (1), [2] ]",
+    "operator": "INVERT -> EXPOSE -> BURN -> QUESTION -> RECOGNIZE -> DEPART",
+    "notation": "HOLE[NICHOLAS_III] -> INVERT ; FEET:EXPOSE+BURN ; (1):QUESTION ; NICHOLAS:MISIDENTIFY(BONIFACE_VIII) ; [2]:CARRY",
+    "invariants": [
+      "Reversing orientation does not change the occupant's personal identity",
+      "Only part of an occupant can be visible while speech identifies the whole",
+      "A predicted future arrival is not evidence that Boniface VIII is present",
+      "Questioning is not the same as releasing or reversing the inverted body",
+      "No chemical transmutation or new element is inferred"
+    ],
+    "newAtomicAssignments": [],
+    "chemicalReaction": "none",
+    "product": "none",
+    "preserve": [
+      "(1) H Dante and [2] He Virgil",
+      "[6] C life/six-poet fellowship",
+      "Noble Castle [ (7)[8]\\\\(9)[10] ]",
+      "(11) sodium-reset analogy"
+    ]
+  },
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "inversion and partial exposure",
+      "somatic": "STONE HOLES INVERT; feet KICK under fire",
+      "observable": "heads remain invisible"
+    },
+    {
+      "id": "B",
+      "semantic": "misidentified observer and corrected testimony",
+      "somatic": "NICHOLAS SPEAKS; DANTE QUESTIONS",
+      "observable": "visitor is Dante, not the expected Boniface"
+    },
+    {
+      "id": "C",
+      "semantic": "bounded contact and departure",
+      "somatic": "VIRGIL CARRIES Dante down and lifts him away",
+      "observable": "conversation ends, the inverted soul remains contained"
+    }
+  ],
+  "next": "Inferno XX — fourth bolgia, diviners with heads twisted backward and tears running down their backs",
+  "appendOnly": true
+}
