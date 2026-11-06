@@ -1,0 +1,104 @@
+{
+  "protocol": "archon/alchemical-living-thread/v2",
+  "stage": 2,
+  "totalStages": 42,
+  "identity": "{{i}}",
+  "scene": "Inferno II — origin of the chain of intercession",
+  "source": "Inferno II 94–114: Mary summons Lucia; Lucia summons Beatrice; Beatrice summons Virgil",
+  "storySequence": [
+    "Dante questions his worthiness",
+    "Virgil relates Beatrice's arrival",
+    "Beatrice reveals that Mary first called Lucia",
+    "Lucia went to Beatrice, who went to Virgil",
+    "Dante, reassured, follows Virgil"
+  ],
+  "cipherRule": {
+    "parity": "odd positions MUST use toroid (), even positions MUST use box []",
+    "binding": "| expresses narrative structural relationship, not a chemical bond",
+    "revisedHistoricalForms": {
+      "alphaOmega": "[ (1), [2] ]",
+      "pair3and4": "[ (3) | [4] ]",
+      "pair5and6": "[ (5) | [6] ]"
+    },
+    "historicalRecordPolicy": "Stage 000 and 001 remain as written; this stage carries a parity correction overlay without rewriting earlier files."
+  },
+  "pairs": [
+    {
+      "expression": "[ (1), [2] ]",
+      "roles": [
+        {
+          "n": 1,
+          "element": "H",
+          "character": "Dante",
+          "shape": "toroid"
+        },
+        {
+          "n": 2,
+          "element": "He",
+          "character": "Virgil",
+          "shape": "box"
+        }
+      ]
+    },
+    {
+      "expression": "[ (3) | [4] ]",
+      "roles": [
+        {
+          "n": 3,
+          "element": "Li",
+          "character": null,
+          "shape": "toroid",
+          "status": "unassigned"
+        },
+        {
+          "n": 4,
+          "element": "Be",
+          "character": "Beatrice",
+          "shape": "box"
+        }
+      ]
+    },
+    {
+      "expression": "[ (5) | [6] ]",
+      "roles": [
+        {
+          "n": 5,
+          "element": "B",
+          "character": "Lucia",
+          "shape": "toroid",
+          "status": "provisional narrative analogy"
+        },
+        {
+          "n": 6,
+          "element": "C",
+          "character": "Mary",
+          "shape": "box",
+          "status": "provisional narrative analogy"
+        }
+      ]
+    }
+  ],
+  "relation": "[6] Mary initiates -> (5) Lucia relays -> [4] Beatrice descends -> [2] Virgil guides -> (1) Dante proceeds",
+  "alphaOmega": "[ (1), [2] ]",
+  "output": "Dante's renewed resolve / no new physical element",
+  "chemistry": "Symbolic element-number assignments only. Boron and carbon do not chemically generate beryllium, and this chain is not a nuclear reaction.",
+  "witnesses": [
+    {
+      "id": "a",
+      "source": "Mary",
+      "observation": "initiates compassionate intercession"
+    },
+    {
+      "id": "b",
+      "source": "Lucia",
+      "observation": "passes the request to Beatrice"
+    },
+    {
+      "id": "c",
+      "source": "Beatrice",
+      "observation": "relays the request to Virgil, whose guidance reaches Dante"
+    }
+  ],
+  "nextStory": "Inferno III: Dante and Virgil approach the gate and read its inscription; derive next positions only at actual narrative intersection.",
+  "parentStage": "alchemy/001.json"
+}
