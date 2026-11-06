@@ -1,0 +1,59 @@
+{
+  "protocol": "archon/alchemical-living-thread/v2",
+  "stage": 7,
+  "identity": "{{i}}",
+  "scene": "Inferno V — Minos at the threshold of the second circle",
+  "source": "Dante Inferno V lines 1–24; subsequent Paolo and Francesca encounter reserved for a later intersection",
+  "parentRecord": "alchemy/006-carbon-life.json",
+  "parentBlobSha": "4ba37fb76d24ab384f06aedec994e4c770265b10",
+  "originalStory": "The second circle is narrower and more painful than the first. Minos hears each incoming soul confess, judges and signals its assigned depth by coils of his tail. He interrupts his work on noticing living Dante, warns him, and Virgil invokes the authority of their journey. They pass to the whirlwind.",
+  "alchemicalCipher": {
+    "alphaOmega": "[ (1), [2] ]",
+    "parity": "odd toroid (); even box []",
+    "preserved": [
+      "(1) Dante / H",
+      "[2] Virgil / He",
+      "(3) Li open",
+      "[4] Beatrice / Be",
+      "(5) Lucia / B",
+      "[6] Mary / C and six-poet carbon-life correspondence",
+      "Noble Castle [ (7)[8]\\\\(9)[10] ] / Homer Horace Ovid Lucan"
+    ],
+    "newOperator": "MINOS / classify-and-dispatch",
+    "sequence": [
+      "confession (input)",
+      "judgment (classification)",
+      "tail coils (encoded destination)",
+      "dispatch (routing)"
+    ],
+    "notation": "SOUL -> HEAR -> CLASSIFY -> COIL(k) -> ROUTE(k)",
+    "symbolicMeaning": "The soul is assigned to a destination; its identity is not changed by the act of routing.",
+    "characters": [
+      {
+        "name": "Minos",
+        "element": null,
+        "role": "judge and router",
+        "assignment": "not assigned a new atomic number"
+      }
+    ],
+    "product": "none",
+    "chemicalReaction": "none",
+    "unresolved": "Whether a later encounter warrants new elemental positions is open; no automatic allocation."
+  },
+  "witnesses": [
+    {
+      "id": "A",
+      "event": "Minos hears and judges each confession"
+    },
+    {
+      "id": "B",
+      "event": "Tail coils encode destination and the soul is dispatched"
+    },
+    {
+      "id": "C",
+      "event": "Minos challenges Dante; Virgil invokes authority and the journey continues"
+    }
+  ],
+  "nextStory": "Within the second circle the whirlwind carries the lovers; Dante notices Paolo and Francesca and asks to hear their story.",
+  "notes": "Interpretive literary cipher, not chemistry or a physical claim about judgment."
+}
