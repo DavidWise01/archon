@@ -61,8 +61,8 @@ No new element or product</pre>
 let p={x:47,y:208,vy:0,ground:false},keys=new Set(),frame=0,seen=new Set(),crossed=false;
 const rect=(x,y,w,h,color)=>{g.fillStyle=color;g.fillRect(Math.round(x),Math.round(y),Math.round(w),Math.round(h))};
 const label=(s,x,y,color='#f8e7b6',size=10)=>{g.fillStyle=color;g.font='bold '+size+'px monospace';g.fillText(s,x,y)};
-function observe(){const x=p.x;if(x<175){seen.add('circle');status.textContent='WITNESS A: three Florentines CIRCLE and SPEAK while keeping their faces turned to Dante.'}else if(x<320){seen.add('fall');status.textContent='WITNESS B: the stream plunges over a ledge and ROARS. Dante and Virgil approach the edge.'}else{seen.add('signal');status.textContent='WITNESS C: Dante UNBINDS his cord; Virgil CASTS it below. A figure begins to rise, origin still unseen.'}if(seen.size===3)status.textContent+=' THREE WITNESSES PRESERVED. NEXT: GERYON.'}
-function reset(){p={x:47,y:208,vy:0,ground:false};seen.clear();crossed=false;status.textContent='STAGE 023 reset: CIRCLE, SPEAK, APPROACH, SIGNAL. Figure not yet identified.'}
+function observe(){const x=p.x;if(x<175){seen.add('face');status.textContent='WITNESS A: Geryon DISPLAYS a reassuring human face, but its serpentine body and scorpion tail remain dangerous.'}else if(x<320){seen.add('board');status.textContent='WITNESS B: Dante INSPECTS the usurers and BOARDS Geryon; Virgil GUARDS the traveler from its tail.'}else{seen.add('land');status.textContent='WITNESS C: Geryon CIRCLES, DESCENDS and LANDS in Malebolge. The journey is completed.'}if(seen.size===3)status.textContent+=' THREE WITNESSES PRESERVED. NEXT: MALEBOLGE.'}
+function reset(){p={x:47,y:208,vy:0,ground:false};seen.clear();crossed=false;status.textContent='STAGE 024 reset: INSPECT, BOARD, DESCEND, LAND. Face does not establish safety.'}
 function draw(){
 frame++;rect(0,0,480,270,'#0d0f2b');
 for(let i=0;i<90;i++){let x=(i*73+17)%480,y=(i*59+11)%195;rect(x,y,i%13===0?3:1,i%13===0?3:1,i%4?'#7466a2':'#f3d696')}
@@ -111,15 +111,15 @@ label('CORD SIGNAL',257,126,'#ebd6bc',8);
 
 rect(203,76,80,95,'#5d4b76');rect(209,82,68,89,'#1d172e');
 rect(206,74,73,7,'#ebc77e');rect(206,74,5,98,'#c79a72');rect(275,74,5,98,'#c79a72');
-label('CIRCLE',216,91,'#f9dfb2',8);label('CAST',221,107,'#d8b9f0',8);
+label('MASK',221,91,'#f9dfb2',8);label('TAIL',221,107,'#d8b9f0',8);
 for(let m=0;m<6;m++){rect(217+m*9,114+(m%2)*8,4,3,'#896ea9')}
 
 rect(27,65,68,50,'#322b4b');rect(32,71,58,4,'#d1ac77');rect(32,106,58,4,'#d1ac77');label('024',48,95,'#ffe4a1',15);
 // Paired Li / Be glyph: bound in cipher only; the identity of 3 is held open.
 rect(190,30,105,31,'#3a294e');rect(194,34,97,23,'#20192f');
-label('THREE / XVI',209,48,'#f6d3a2',10);label('CIRCLE / CORD',202,59,'#f2dbad',8);
-label('UNBIND -> SIGNAL',199,72,'#e1c5ee',8);
-label('RESPONSE BELOW',195,122,'#d6bedc',8);
+label('GERYON / XVII',195,48,'#f6d3a2',10);label('BOARD / DESCEND',192,59,'#f2dbad',8);
+label('FACE != SAFETY',200,72,'#e1c5ee',8);
+label('LAND AT MALEBOLGE',190,122,'#d6bedc',8);
 for(let k=0;k<12;k++){const y=80+k*7;rect(242+Math.sin(k*.7+frame*.021)*8,y,2,3,'#d8bfe9')}
 
 const dx=(keys.has('ArrowRight')||keys.has('KeyD')?1:0)-(keys.has('ArrowLeft')||keys.has('KeyA')?1:0);
