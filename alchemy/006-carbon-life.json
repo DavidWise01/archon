@@ -1,0 +1,33 @@
+{
+  "protocol": "archon/alchemical-living-thread/v2/addendum",
+  "stage": 6,
+  "kind": "CARBON_AS_LIFE_SIXTH_POET",
+  "parentAddendum": "alchemy/006-noble-castle.json",
+  "parentBlobSha": "fc5fbbe6cb0a6a0838ff9ba1cbb060a7df4ebba9",
+  "source": "Inferno IV: Homer, Horace, Ovid, Lucan, Virgil and Dante form the company of six poets",
+  "humanInterpretation": "carbon is life",
+  "observedStructure": {
+    "fourPoets": "[ (7)[8]\\(9)[10] ]",
+    "guide": "[2] Virgil / He",
+    "traveler": "(1) Dante / H",
+    "fellowshipCount": 6,
+    "elementPosition": "[6]",
+    "element": "C",
+    "meaning": "carbon/life as a correspondence of the assembled six-poet fellowship"
+  },
+  "invariants": [
+    "Dante is still hydrogen (1)",
+    "Virgil is still helium [2]",
+    "The fellowship contains six poets; it is not a carbon atom",
+    "Previous position [6] = Mary / carbon remains the earlier interpretation, and no prior stage is overwritten",
+    "Even element 6 uses box [6]",
+    "No physical chemistry or element synthesis asserted"
+  ],
+  "scientificAnalogy": "Carbon is foundational to known biological molecules due to versatile stable covalent bonding; this does not mean all life is carbon itself.",
+  "witnesses": {
+    "a": "Four classical poets greet Virgil",
+    "b": "Dante is admitted as the sixth poet",
+    "c": "The six-member literary structure has a new social identity while its individual members remain unchanged"
+  },
+  "next": "Inferno V: Minos judges and dispatches souls, then Paolo and Francesca"
+}
