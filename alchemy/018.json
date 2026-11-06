@@ -1,0 +1,96 @@
+{
+  "protocol": "archon/alchemical-living-thread/v2",
+  "stage": 18,
+  "identity": "{{i}}",
+  "parent": "alchemy/017.json",
+  "parentBlobSha": "bbfcdff554c5ffbd138c5888a7f628d94b88cdd8",
+  "scene": "Inferno XIII — Pier della Vigna, wounded branch and speaking wood",
+  "source": "Dante Inferno XIII verses 1–108; Princeton Dante Project and University of Leeds Canto XIII summaries",
+  "story": [
+    "After Nessus departs, Dante and Virgil enter a pathless wood with dark leaves, twisted boughs, thorns and nesting Harpies.",
+    "Dante hears lamentations without seeing human speakers and initially cannot identify their source.",
+    "Virgil tells Dante to break a twig to establish what produces the voices; Dante breaks a small branch from a thornbush.",
+    "The wounded wood bleeds dark blood and protests aloud. Dante drops the twig in alarm.",
+    "Virgil apologizes, saying Dante would not otherwise have believed that the voices come from these transformed souls.",
+    "The speaker recounts his service to Emperor Frederick II and loss of favor, revealing his identity as Pier della Vigna.",
+    "Pier explains the souls' transformation into trees and the Harpies' wounding of them; their fate at the final judgment remains part of the testimony.",
+    "The later pursuit of spendthrifts and the unnamed Florentine belongs to the next stage."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Dante (1)",
+      "semantic": "Confusion between unseen source and visible object; contact produces evidence but inflicts harm",
+      "somatic": {
+        "verb": "HEAR_BREAK_DROP",
+        "gesture": "hears lament, snaps a twig as directed, then drops it",
+        "result": "branch is wounded; blood and protest become evident"
+      }
+    },
+    {
+      "actor": "Pier della Vigna",
+      "semantic": "A person remains capable of testimony in an externally unfamiliar, confined form",
+      "somatic": {
+        "verb": "BLEED_SPEAK",
+        "gesture": "wounded trunk emits dark blood and audible complaint",
+        "result": "previously mislocated voice becomes identifiable as the tree itself"
+      }
+    },
+    {
+      "actor": "Virgil [2]",
+      "semantic": "Correct a false assumption and acknowledge the cost of obtaining evidence",
+      "somatic": {
+        "verb": "DIRECT_APOLOGIZE",
+        "gesture": "asks Dante to test the twig then apologizes to the wounded speaker",
+        "result": "the observer gains understanding but the inflicted injury is not erased"
+      }
+    },
+    {
+      "actor": "Harpies",
+      "semantic": "Ongoing disturbance of the bound inhabitants",
+      "somatic": {
+        "verb": "NEST_FEED",
+        "gesture": "settle among the thorn trees and tear their foliage",
+        "result": "the suffering of the tree-spirits continues"
+      }
+    }
+  ],
+  "cipher": {
+    "alphaOmega": "[ (1), [2] ]",
+    "operator": "HEAR -> MISLOCATE -> BREAK -> BLEED+SPEAK -> RECOGNIZE -> APOLOGIZE",
+    "notation": "VOICE? -> (1) BREAK(TWIG) -> TREE{BLEED || SPEAK} -> PIER_IDENTITY -> [2] APOLOGIZE",
+    "keyInvariant": "A familiar exterior does not determine whether an entity is capable of speech or experiencing harm. Recognition does not undo the inflicted damage.",
+    "costOfObservation": "The test changes and wounds its subject; this is not passive or non-destructive observation.",
+    "roleClarification": "Pier is already a speaking person in the poem's supernatural world; this is a literary transformation, not an actual plant becoming a human through chemistry.",
+    "newAtomicAssignments": [],
+    "chemicalReaction": "none",
+    "product": "none",
+    "preserve": [
+      "(1) H Dante and [2] He Virgil",
+      "[6] C life/six-poet fellowship",
+      "Noble Castle [ (7)[8]\\\\(9)[10] ]",
+      "(11) Na reset analogy"
+    ]
+  },
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "unseen voice misattributed",
+      "somatic": "HEAR and SEARCH",
+      "result": "no visible person found"
+    },
+    {
+      "id": "B",
+      "semantic": "injurious recognition",
+      "somatic": "BREAK; branch BLEEDS and SPEAKS",
+      "result": "Dante drops twig"
+    },
+    {
+      "id": "C",
+      "semantic": "testimony and accountability",
+      "somatic": "PIER RECOUNTS; VIRGIL APOLOGIZES",
+      "result": "identity and consequences remain recorded"
+    }
+  ],
+  "next": "Inferno XIII later: spendthrifts flee pursuing hounds and an unnamed Florentine tree asks for the scattered leaves",
+  "appendOnly": true
+}
