@@ -1,0 +1,54 @@
+{
+  "protocol": "archon/alchemical-living-thread/v2",
+  "stage": 3,
+  "identity": "{{i}}",
+  "scene": "Inferno Canto III: inscription at the gate",
+  "parentStage": "alchemy/002.json",
+  "alphaOmega": "[ (1), [2] ]",
+  "parity": "odd toroids (), even boxes []",
+  "characters": [
+    {
+      "n": 1,
+      "element": "H",
+      "character": "Dante",
+      "shape": "()"
+    },
+    {
+      "n": 2,
+      "element": "He",
+      "character": "Virgil",
+      "shape": "[]"
+    }
+  ],
+  "reserved": [
+    {
+      "n": 7,
+      "element": "N",
+      "character": null
+    },
+    {
+      "n": 8,
+      "element": "O",
+      "character": null
+    }
+  ],
+  "story": [
+    "Dante reads the gate inscription",
+    "Dante finds its meaning difficult",
+    "Virgil counsels courage",
+    "Virgil takes Dante's hand",
+    "They cross into the vestibule"
+  ],
+  "cipher": {
+    "notation": "[ OUT: (1), [2] ] -> G -> [ IN: (1), [2] ]",
+    "G": "threshold operator, not an element",
+    "product": "none",
+    "relationship": "guide and traveler cross together, identities retained"
+  },
+  "witnesses": [
+    "inscription",
+    "guidance",
+    "crossing"
+  ],
+  "next": "vestibule of uncommitted spirits, then Acheron and Charon"
+}
