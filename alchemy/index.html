@@ -86,21 +86,21 @@ label('}{',237,224,'#f5d5a6',9);label('DIS / OPEN',216,183,'#eec88b',8);
 
 
 
- // Canto VIII: Argenti rises by ferry; red Dis towers and a sealed gate.
-rect(0,137,480,96,'#263b49');
-for(let k=0;k<28;k++){let xx=(k*47+frame*.27)%480;rect(xx,196+(k%4)*8,16,2,'#6b8894')}
-rect(360,76,25,109,'#81434f');rect(391,60,25,125,'#894a4c');
-rect(372,108,29,77,'#562c40');rect(368,104,37,7,'#d17660');
-rect(378,137,16,48,'#1b172b');rect(378,139,16,8,'#c65e61');
-for(let k=0;k<4;k++){rect(365+k*13,87+(k%2)*7,5,12,'#ed7956')}
-label('DIS / CLOSED',357,49,'#efc8a7',9);
-const bx=216+Math.sin(frame*.011)*13;
-rect(bx-43,190,86,7,'#bc9877');rect(bx-27,197,54,5,'#876c68');
-rect(bx-6,164,12,14,'#cfaf9c');rect(bx-11,178,22,13,'#86637e');
-const argY=185+Math.sin(frame*.041)*6;
-rect(135,argY,11,12,'#b39b8e');rect(131,argY+11,20,15,'#5a6471');
-rect(145,argY+14,16,4,'#b8a293');
-label('ARGENTI',117,169,'#ead3be',9);
+
+ // Inferno IX: Furies threaten, Virgil shields sight, messenger opens the gate.
+rect(0,137,480,96,'#30293d');
+rect(355,75,27,115,'#863d51');rect(397,75,27,115,'#863d51');
+rect(368,111,43,79,'#5e3347');
+for(let k=0;k<3;k++){let xx=356+k*24;rect(xx,68,11,12,'#b68e93');rect(xx-3,80,17,13,'#813d63');rect(xx-1,60,4,8,'#cdb38a')}
+const gateGap=24*(.5+.5*Math.sin(frame*.01));
+rect(375,130,(32-gateGap)/2,58,'#211e2e');rect(407-(32-gateGap)/2,130,(32-gateGap)/2,58,'#211e2e');
+rect(185,171,11,11,'#d1b3a3');rect(181,182,18,24,'#b35f6b');
+rect(215,169,11,12,'#cbb09e');rect(211,181,19,26,'#8aa2ad');
+rect(197,177,17,5,'#d9bb98');
+for(let k=0;k<7;k++){const x=290+k*4;rect(x,159-(k%2)*3,3,3,'#e9c991')}
+rect(310,169,10,12,'#ddc5af');rect(306,181,18,24,'#ebd1ab');
+label('FURIES',355,52,'#efbca6',9);label('MESSENGER',278,151,'#eee3b9',8);
+label('EYES COVERED',154,152,'#d6d0eb',8);
 
 rect(203,76,80,95,'#5d4b76');rect(209,82,68,89,'#1d172e');
 rect(206,74,73,7,'#ebc77e');rect(206,74,5,98,'#c79a72');rect(275,74,5,98,'#c79a72');
