@@ -1,0 +1,39 @@
+{
+  "protocol": "archon/alchemical-living-thread/v2",
+  "stage": 0,
+  "totalStages": 42,
+  "identity": "{{i}}",
+  "origin": "Dante / the alchemical vessel",
+  "parentThread": {
+    "finalTick": 41,
+    "finalHash": "1d8cb77fe3cb50d2a08f9e375bd04a18f9daacb39fe1561c7b3f53f5e79d2630",
+    "relationship": "reference-only; canonical prior thread remains sealed"
+  },
+  "state": "OPEN_FOR_HUMAN_DIRECTION",
+  "substance": {
+    "left": {
+      "symbol": "H",
+      "label": "hydrogen",
+      "role": "symbolic seed"
+    },
+    "right": {
+      "symbol": "He",
+      "label": "helium",
+      "role": "symbolic seed"
+    }
+  },
+  "notation": {
+    "box": "[] / contained or frozen",
+    "toroid": "() / fluid",
+    "transformation": "}{ / boundary opened",
+    "core": "{{i}} / observer"
+  },
+  "firstTransformation": "UNSPECIFIED",
+  "mode": "alchemical fiction; not physical element synthesis",
+  "rules": [
+    "Do not modify sealed Dante tick 001–041 files",
+    "One human-directed stage at a time",
+    "Every new stage records inputs, operator, output, and three independent witnesses",
+    "Unknown products remain unknown; no invented chemical reactions"
+  ]
+}
