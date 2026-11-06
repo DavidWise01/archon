@@ -1,0 +1,11 @@
+{
+  "protocol": "archon/story-ticks/v1",
+  "index": 31,
+  "identity": "{{i}}",
+  "scene": "Mercury",
+  "realm": "PARADISO",
+  "choice": 1,
+  "line": "Ask about intention",
+  "parent": "d299a5cff1bbb2dadb822075b7a89e5d593bc9031bb312513649dd7f1ff8beb1",
+  "sha256": "3e7e1278a3910b602dd30fe5f92bd58cc11b024b09aef6d1d580fb6199ed7306"
+}
