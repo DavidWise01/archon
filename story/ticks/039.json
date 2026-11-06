@@ -1,0 +1,11 @@
+{
+  "protocol": "archon/story-ticks/v1",
+  "index": 38,
+  "identity": "{{i}}",
+  "scene": "Primum Mobile",
+  "realm": "PARADISO",
+  "choice": 0,
+  "line": "Trace the circles",
+  "parent": "d01086b3e913e95f1e10ccb66775a81023d6c4ad7ff05bc07272cdd4c9bba5ae",
+  "sha256": "601feb55b820217dd938f9695cb163ac35946ea9d3bcf6db866c4172989d712f"
+}
