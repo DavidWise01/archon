@@ -1,0 +1,107 @@
+{
+  "protocol": "archon/alchemical-living-thread/v2",
+  "stage": 25,
+  "identity": "{{i}}",
+  "parent": "alchemy/024.json",
+  "parentBlobSha": "bc4bf4124ed7f1f6f681da646b90257f4cd33813",
+  "scene": "Inferno XVIII — Malebolge, opposed lines and the second ditch of flatterers",
+  "source": "Dante, Inferno XVIII",
+  "story": [
+    "Geryon's descent has deposited Dante and Virgil in Malebolge, a vast ring-shaped region with ten concentric ditches, separated by embankments and crossed by bridges.",
+    "In the first bolgia two groups of panderers and seducers move in opposite directions while horned demons whip them forward.",
+    "Dante recognizes Venedico Caccianemico among the panderers, and Virgil points out Jason among the seducers; the two streams share a ditch but retain distinct directions.",
+    "The travelers cross a bridge into the second bolgia, where flatterers are immersed in foul human excrement.",
+    "Dante recognizes Alessio Interminei; Virgil also identifies the courtesan Thaïs, who is shown scratching herself.",
+    "Dante and Virgil continue along the bridge. The encounter with simoniacs in the third bolgia begins the next stage."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Malebolge / embankments and bridges",
+      "semantic": "A shared enclosing system holds distinct channels without merging their inhabitants",
+      "somatic": {
+        "verb": "DIVIDE_AND_CONNECT",
+        "gesture": "ten concentric ditches are separated by walls and linked by stone bridges",
+        "observable": "the travelers can look across and traverse discrete bolgias"
+      }
+    },
+    {
+      "actor": "Panderers and seducers / first bolgia",
+      "semantic": "Opposed directional streams operate in the same ditch",
+      "somatic": {
+        "verb": "MARCH_OPPOSITE",
+        "gesture": "two lines walk in contrary directions under whips",
+        "observable": "opposed traffic and sustained motion"
+      }
+    },
+    {
+      "actor": "Horned demons",
+      "semantic": "Violent enforcement of the punitive route",
+      "somatic": {
+        "verb": "WHIP",
+        "gesture": "strike passing souls",
+        "observable": "punished people are driven onward"
+      }
+    },
+    {
+      "actor": "Flatterers / second bolgia",
+      "semantic": "Speech that once debased others is represented through immersion in filth",
+      "somatic": {
+        "verb": "WALLOW_SCRATCH",
+        "gesture": "struggle in excrement; Thaïs scratches her face",
+        "observable": "the punishment differs from the first ditch"
+      }
+    },
+    {
+      "actor": "Dante (1) and Virgil [2]",
+      "semantic": "Compare separate channels while preserving each category's context",
+      "somatic": {
+        "verb": "CROSS_LOOK_NAME",
+        "gesture": "walk the bridge, notice Venedico, Jason, Alessio and Thaïs",
+        "observable": "the first and second bolgias are witnessed separately"
+      }
+    }
+  ],
+  "cipher": {
+    "alphaOmega": "[ (1), [2] ]",
+    "operator": "ENTER -> DIVIDE -> ROUTE -> EXPOSE -> COMPARE",
+    "notation": "MALEBOLGE{B1:PANDERERS<->SEDUCERS, B2:FLATTERERS} ; BRIDGE:CONNECT ; [2]+(1):OBSERVE",
+    "invariants": [
+      "Shared enclosure does not imply identical streams, movements, or consequences",
+      "The first bolgia has opposite-moving lines driven by demons",
+      "Second bolgia is distinguished by filth, not whipping",
+      "A bridge connects separated zones without erasing the boundary between them",
+      "Ten bolgias are described architecturally; only the first two are witnessed in this stage"
+    ],
+    "newAtomicAssignments": [],
+    "chemicalReaction": "none",
+    "product": "none",
+    "preserve": [
+      "(1) H Dante and [2] He Virgil",
+      "[6] C life / six-poet fellowship",
+      "Noble Castle [ (7)[8]\\\\(9)[10] ]",
+      "(11) Na reset analogy"
+    ]
+  },
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "architecture and partition",
+      "somatic": "WALLS DIVIDE; BRIDGES CONNECT",
+      "observable": "ten-bolgia layout described"
+    },
+    {
+      "id": "B",
+      "semantic": "distinct opposed streams",
+      "somatic": "GROUPS MARCH opposite directions and DEMONS WHIP",
+      "observable": "first bolgia punished traffic"
+    },
+    {
+      "id": "C",
+      "semantic": "separate punitive channel",
+      "somatic": "FLATTERERS WALLOW in filth while observers CROSS",
+      "observable": "second bolgia recognized, not merged with first"
+    }
+  ],
+  "next": "Inferno XIX — third bolgia: simoniacs inverted in rock holes, flames burn their feet and Dante addresses Pope Nicholas III",
+  "appendOnly": true
+}
