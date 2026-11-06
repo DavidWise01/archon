@@ -90,15 +90,22 @@ label('}{',237,224,'#f5d5a6',9);label('PHLEGETHON',211,183,'#eec88b',8);
 
 
 
- // Inferno XI: sheltering tomb, rising odor and broken descent.
-rect(0,137,480,96,'#332c3b');
-for(let k=0;k<12;k++){const xx=295+k*15,yy=157+k*6;rect(xx,yy,20,10,k%2?'#66586c':'#80707a')}
-rect(67,159,100,57,'#655967');rect(60,151,115,10,'#bb9780');rect(75,174,84,28,'#362c3b');
-label('ANASTASIUS',75,189,'#e4c6a9',9);
-for(let k=0;k<20;k++){let xx=201+(k*23)%115,yy=207-(frame*.45+k*19)%82;rect(xx,yy,4,9,k%2?'#8e907b':'#a2a189')}
-for(let k=0;k<3;k++){let x=235+k*24;rect(x,146,13,13,'#cbb2a2');rect(x-4,159,21,26,k%2?'#886d8d':'#ac6b76')}
-label('ODOR RISES',201,133,'#d1c7ac',9);
-label('DESCENT BELOW',344,136,'#e4cbaa',8);
+
+ // Seventh circle: rocks, enraged Minotaur, Chiron and escort across Phlegethon.
+rect(0,138,480,95,'#492b35');
+for(let k=0;k<17;k++){const x=k*19,y=150+k*3;rect(x,y,29,11,k%2?'#8b6c72':'#675462')}
+rect(0,207,480,26,'#a4433f');
+for(let k=0;k<24;k++){const x=(k*41+frame*.36)%480;rect(x,211+(k%3)*6,16,3,k%2?'#db7951':'#ed9b66')}
+rect(90,132,22,22,'#be9f8b');rect(84,154,34,33,'#795c65');
+rect(89,128,6,9,'#d6bd88');rect(108,128,6,9,'#d6bd88');
+rect(100+Math.sin(frame*.14)*8,170,8,6,'#cf9c89');label('MINOTAUR',72,117,'#f5d0a1',8);
+rect(266,148,25,22,'#8c7377');rect(262,163,32,26,'#967e86');
+rect(267,138,14,12,'#d2b29f');rect(280,156,3,32,'#d9b686');
+label('CHIRON',260,129,'#f6daac',9);
+const nx=348+Math.sin(frame*.014)*25;
+rect(nx,178,28,17,'#9c817c');rect(nx+4,163,12,16,'#d5b6a1');
+for(let k=0;k<4;k++)rect(nx+2+k*7,192,4,13,'#90767a');
+label('NESSUS',nx-5,152,'#e9c8a5',9);
 
 rect(203,76,80,95,'#5d4b76');rect(209,82,68,89,'#1d172e');
 rect(206,74,73,7,'#ebc77e');rect(206,74,5,98,'#c79a72');rect(275,74,5,98,'#c79a72');
