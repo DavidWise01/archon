@@ -88,13 +88,16 @@ label('}{',237,224,'#f5d5a6',9);label('DESCENT / PAUSE',202,183,'#eec88b',8);
 
 
 
- // Inferno X: exposed, burning sepulchers and the two speakers.
-rect(0,137,480,96,'#382c3f');
-for(let k=0;k<5;k++){let x=34+k*90;rect(x,178,58,38,'#6e596d');rect(x-3,172,64,8,'#b98d79');rect(x+8,183,42,24,'#252031');for(let m=0;m<5;m++){rect(x+m*10,169+Math.sin(frame*.11+m+k)*3,5,6,'#e78758')}}
-rect(214,139,15,16,'#cfaa9d');rect(208,155,28,40,'#8a6880');rect(209,146,7,3,'#e8b794');
-rect(301,169,12,12,'#d5b5a4');rect(296,181,20,15,'#79677e');
-label('FARINATA',197,126,'#f4d1af',9);
-label('CAVALCANTE',282,163,'#d6c9c6',8);
+
+ // Inferno XI: sheltering tomb, rising odor and broken descent.
+rect(0,137,480,96,'#332c3b');
+for(let k=0;k<12;k++){const xx=295+k*15,yy=157+k*6;rect(xx,yy,20,10,k%2?'#66586c':'#80707a')}
+rect(67,159,100,57,'#655967');rect(60,151,115,10,'#bb9780');rect(75,174,84,28,'#362c3b');
+label('ANASTASIUS',75,189,'#e4c6a9',9);
+for(let k=0;k<20;k++){let xx=201+(k*23)%115,yy=207-(frame*.45+k*19)%82;rect(xx,yy,4,9,k%2?'#8e907b':'#a2a189')}
+for(let k=0;k<3;k++){let x=235+k*24;rect(x,146,13,13,'#cbb2a2');rect(x-4,159,21,26,k%2?'#886d8d':'#ac6b76')}
+label('ODOR RISES',201,133,'#d1c7ac',9);
+label('DESCENT BELOW',344,136,'#e4cbaa',8);
 
 rect(203,76,80,95,'#5d4b76');rect(209,82,68,89,'#1d172e');
 rect(206,74,73,7,'#ebc77e');rect(206,74,5,98,'#c79a72');rect(275,74,5,98,'#c79a72');
