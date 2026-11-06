@@ -3,7 +3,7 @@
   "stage": 0,
   "totalStages": 42,
   "identity": "{{i}}",
-  "origin": "Dante / the alchemical vessel",
+  "origin": "Inferno Canto I: Dante meets Virgil in the dark wood",
   "parentThread": {
     "finalTick": 41,
     "finalHash": "1d8cb77fe3cb50d2a08f9e375bd04a18f9daacb39fe1561c7b3f53f5e79d2630",
@@ -28,12 +28,56 @@
     "transformation": "}{ / boundary opened",
     "core": "{{i}} / observer"
   },
-  "firstTransformation": "UNSPECIFIED",
+  "firstTransformation": "UNSPECIFIED; Stage 001 must follow the next story event and human direction",
   "mode": "alchemical fiction; not physical element synthesis",
   "rules": [
     "Do not modify sealed Dante tick 001–041 files",
     "One human-directed stage at a time",
     "Every new stage records inputs, operator, output, and three independent witnesses",
     "Unknown products remain unknown; no invented chemical reactions"
-  ]
+  ],
+  "container": {
+    "alpha": "[ (1), (2) ]",
+    "omega": "[ (1), (2) ]",
+    "returnInvariant": "same container form, distinct accumulated witnesses"
+  },
+  "characters": [
+    {
+      "token": "(1)",
+      "character": "Dante",
+      "element": "H",
+      "atomicNumber": 1,
+      "storyRole": "lost traveler; recognizes Virgil as his master and accepts guidance",
+      "cipherRole": "seeking/reactive potential"
+    },
+    {
+      "token": "(2)",
+      "character": "Virgil",
+      "element": "He",
+      "atomicNumber": 2,
+      "storyRole": "Roman poet; warns of blocked ascent and offers an alternate route",
+      "cipherRole": "stability; guidance; first-shell completion"
+    }
+  ],
+  "storyMethod": "Read canonical scene first; extract the characters' relationship, then derive the alchemical cipher; only after that choose any stage transition.",
+  "encounter": {
+    "canonicalSource": "Inferno Canto I (Virgil appears and offers guidance)",
+    "storyEvents": [
+      "Dante lost in dark wood",
+      "Three beasts impede direct ascent",
+      "Virgil appears and identifies himself",
+      "Dante recognizes the poet as master",
+      "Virgil proposes another route; Dante agrees"
+    ],
+    "relationship": "traveler ↔ guide; student ↔ master",
+    "symbolicOperation": "recognition and voluntary guidance",
+    "physicalReaction": "none",
+    "product": "none",
+    "witnesses": {
+      "a": "Dante recognizes Virgil and seeks help",
+      "b": "Virgil offers guidance but cannot complete the journey for Dante",
+      "c": "The pair sets out by a different route, identities distinct"
+    },
+    "interpretiveLimit": "Hydrogen and helium character roles are metaphorical; no chemical bond or nuclear transmutation follows from their meeting."
+  }
 }
