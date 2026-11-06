@@ -1,0 +1,22 @@
+{
+  "protocol": "archon/alchemical-living-thread/v2/addendum",
+  "stage": 7,
+  "kind": "SODIUM_CORRECTION",
+  "parent": "alchemy/007.json",
+  "parentBlobSha": "55cac18058d1727ad7aee63a66c1a0806ab2fffe",
+  "element": {
+    "atomicNumber": 11,
+    "symbol": "Na",
+    "name": "Sodium",
+    "geometry": "(11)",
+    "oddToroid": true
+  },
+  "role": "symbolic working-state reset or routing analogy at Minos, not a claim that Minos is sodium",
+  "invariants": [
+    "No witness erased",
+    "No change to Dante H (1) or Virgil He [2]",
+    "No actual chemical reaction",
+    "Chlorine is 17, not 11"
+  ],
+  "next": "Inferno V whirlwind and Paolo/Francesca"
+}
