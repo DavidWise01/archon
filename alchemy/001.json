@@ -1,0 +1,84 @@
+{
+  "protocol": "archon/alchemical-living-thread/v2",
+  "stage": 1,
+  "totalStages": 42,
+  "identity": "{{i}}",
+  "scene": "Inferno Canto II — Dante learns of Beatrice's intervention",
+  "source": "The Divine Comedy, Inferno II, lines 43-142",
+  "parentStage": "alchemy/000.json",
+  "parentBlobSha": "0875f694a848e19c93ea900507db7b14320f0386",
+  "lockedHistory": "Original Dante 41-tick journey remains sealed",
+  "container": "[ (1), (2) ]",
+  "characters": [
+    {
+      "id": 1,
+      "character": "Dante",
+      "symbol": "H",
+      "atomicNumber": 1,
+      "presence": "inside vessel",
+      "role": "traveler; hesitation becomes renewed resolve"
+    },
+    {
+      "id": 2,
+      "character": "Virgil",
+      "symbol": "He",
+      "atomicNumber": 2,
+      "presence": "inside vessel",
+      "role": "guide; relays Beatrice's summons"
+    },
+    {
+      "id": 4,
+      "character": "Beatrice",
+      "symbol": "Be",
+      "atomicNumber": 4,
+      "presence": "external to traveling pair, seen in Virgil's recollection",
+      "role": "intercessor; compassionate source of Virgil's commission"
+    }
+  ],
+  "unassignedElements": [
+    {
+      "atomicNumber": 3,
+      "symbol": "Li",
+      "status": "not introduced by story; keep unassigned"
+    }
+  ],
+  "events": [
+    "Dante hesitates at the prospect of the journey",
+    "Virgil tells of Beatrice's visit to him in Limbo",
+    "Beatrice had been prompted by Lucia, who was moved by Mary",
+    "Beatrice asked Virgil to rescue and guide Dante",
+    "Dante's courage is restored and he resumes the journey with Virgil"
+  ],
+  "relationshipGraph": [
+    [
+      "Beatrice",
+      "summons",
+      "Virgil"
+    ],
+    [
+      "Virgil",
+      "guides",
+      "Dante"
+    ],
+    [
+      "Dante",
+      "regains",
+      "resolve"
+    ]
+  ],
+  "interpretation": {
+    "operation": "revelation of intercession; transfer of instruction and courage",
+    "stateChange": "Dante's resolve, not atomic species",
+    "chemicalReaction": "none",
+    "elementProduction": "none",
+    "notation": "[ (1), (2) ] ; (4) --commission--> (2) --guidance--> (1)",
+    "caution": "The element assignments are literary metaphor; Be as beryllium is not chemically created by H and He."
+  },
+  "witnesses": {
+    "a": "Beatrice's commission as relayed by Virgil",
+    "b": "Virgil's report of why he arrived",
+    "c": "Dante's decision to resume the path"
+  },
+  "nextStory": "Inferno Canto III — inscription at the gate and entry into the vestibule",
+  "pendingHumanInterpretation": "Which operation is implied when a commission crosses the boundary and changes the traveler?"
+}
