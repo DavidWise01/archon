@@ -1,0 +1,11 @@
+{
+  "protocol": "archon/story-ticks/v1",
+  "index": 33,
+  "identity": "{{i}}",
+  "scene": "The Sun",
+  "realm": "PARADISO",
+  "choice": 1,
+  "line": "Ask what wisdom serves",
+  "parent": "2b4ce5b39072ca40e691627cfb5b4ca511a4e66270603fa7a85b41179e1bc3a7",
+  "sha256": "b784346d7e639d3719019881f40778d759f1d6ba04c333c8ebf1c118c50f6e73"
+}
