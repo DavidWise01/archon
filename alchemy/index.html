@@ -19,47 +19,49 @@ a{color:#f6d28a}.foot{margin:22px 0;color:var(--mute);font-size:12px}.ledger{dis
 @media(max-width:850px){.grid{grid-template-columns:1fr}main{padding:12px}}
 </style></head>
 <body><main>
-<header class="top"><div><div class="eyebrow">The Living Thread / Second Traversal</div><h1>DANTE <span style="color:var(--gold)">·</span> THE ALCHEMICAL VESSEL</h1><p>Stage 009 of 041 · Inferno VI: Cerberus, cold rain and Ciacco.</p></div><span class="chip">STAGE 009 / {{i}}</span></header>
+<header class="top"><div><div class="eyebrow">The Living Thread / Second Traversal</div><h1>DANTE <span style="color:var(--gold)">·</span> THE ALCHEMICAL VESSEL</h1><p>Stage 010 of 041 · Inferno VII: Plutus and the opposing weights.</p></div><span class="chip">STAGE 010 / {{i}}</span></header>
 <div class="grid"><section class="panel"><canvas id="game" width="480" height="270" tabindex="0" aria-label="Playable pixel-art alchemical vessel"></canvas><div class="pad">
-<div class="eyebrow">Cerberus · rain, three mouths and Ciacco</div>
+<div class="eyebrow">Plutus · collide, reverse and repeat</div>
 <div class="controls"><button id="left">◀ MOVE</button><button id="right">MOVE ▶</button><button id="jump">↑ JUMP</button><button id="observe">E · OBSERVE</button><button id="reset">↺ RESET</button></div>
-<div class="status" id="status" aria-live="polite">Inferno VI: Dante wakes in cold rain. Virgil diverts three-headed Cerberus with earth, and Ciacco speaks about Florence. Observe rain, Cerberus and Ciacco.</div>
-<p style="font-size:12px;margin:12px 0 0">Keyboard: ← → or A / D · Space to jump · E to observe. Next: Inferno VII, Plutus and the fourth circle.</p>
+<div class="status" id="status" aria-live="polite">Inferno VII: Virgil silences Plutus. The hoarders and squanderers push heavy weights into one another, reverse, and repeat. Observe the guardian, collision and Fortune.</div>
+<p style="font-size:12px;margin:12px 0 0">Keyboard: ← → or A / D · Space to jump · E to observe. Next: the Styx, where anger and sullenness are encountered.</p>
 </div></section>
 <aside class="panel"><div class="pad"><div class="eyebrow">Vessel inventory</div><h2>Minos routes souls; the [6] carbon-life fellowship remains preserved.</h2>
 <div class="tokens"><div class="token"><strong>H</strong><span>(1) Dante · traveler</span></div><div class="token"><strong>He</strong><span>[2] Virgil · guide</span></div><div class="token"><strong>Li</strong><span>(3) Li · identity unresolved</span></div><div class="token"><strong>Be</strong><span>[4] Beatrice · intercessor</span></div></div>
-<div class="tokens" style="margin-top:10px"><div class="token"><strong>B</strong><span>(5) Lucia · toroid</span></div><div class="token"><strong>C</strong><span>[6] Mary · box</span></div></div><div class="ledger"><span class="pip"></span> <strong>Stage 009: Cerberus and Ciacco</strong></div>
+<div class="tokens" style="margin-top:10px"><div class="token"><strong>B</strong><span>(5) Lucia · toroid</span></div><div class="token"><strong>C</strong><span>[6] Mary · box</span></div></div><div class="ledger"><span class="pip"></span> <strong>Stage 010: Plutus and the Opposing Weights</strong></div>
 <pre>α = ω = [ (1), [2] ]
 
-THIRD CIRCLE / RAIN
- cold rain / hail / mud
-         |
- CERBERUS / 3 MOUTHS
-         |
- [2] Virgil throws earth
-         |
-     DIVERT / PASS
-         |
- CIACCO -> FLORENCE
- knowledge is transmitted
+FOURTH CIRCLE / PLUTUS
 
-(1) H and [2] He preserved
-(11) Na / [6] C preserved
-Noble Castle 7–10 preserved
-product: NONE</pre>
+HOARDERS                 WASTERS
+ HOLD                      SPEND
+   |                         |
+ WEIGHT --> COLLISION <-- WEIGHT
+                |
+             REVERSE
+                |
+              REPEAT
+
+ Virgil [2]: Fortune explained
+ Dante (1): observes
+
+ [6] C = LIFE preserved
+ Castle (7) to [10] preserved
+ (11) Na preserved
+ product: NONE</pre>
 <p><b>Notation:</b> <code>[]</code> containment · <code>()</code> fluidity · <code>}{</code> opening the transformation boundary. These are narrative operators, not evidence of physical transmutation.</p>
-<p><b>Rule:</b> Odd positions are toroids <code>()</code>, even positions boxes <code>[]</code>. Cerberus's three mouths are a narrative structure. Virgil redirects his attention using earth; Ciacco communicates information. Neither event synthesizes an element.</p>
+<p><b>Rule:</b> Odd positions use toroids <code>()</code>; even positions use boxes <code>[]</code>. The fourth circle shows <b>opposed behavior</b> (hoarding and squandering), collision, reversal and repetition. This does not establish a chemical reaction or scientific conservation law.</p>
 <p><a href="../story.html">Read the sealed first journey</a></p>
 </div></aside></div>
-<footer class="foot">ARCHON / Alchemical Living Thread · 000–009 recorded, 010–041 reserved · story-first symbolic elemental cipher.</footer>
+<footer class="foot">ARCHON / Alchemical Living Thread · 000–010 recorded, 011–041 reserved · story-first symbolic elemental cipher.</footer>
 </main>
 <script>
 (()=>{const c=document.getElementById('game'),g=c.getContext('2d'),status=document.getElementById('status');
 let p={x:47,y:208,vy:0,ground:false},keys=new Set(),frame=0,seen=new Set(),crossed=false;
 const rect=(x,y,w,h,color)=>{g.fillStyle=color;g.fillRect(Math.round(x),Math.round(y),Math.round(w),Math.round(h))};
 const label=(s,x,y,color='#f8e7b6',size=10)=>{g.fillStyle=color;g.font='bold '+size+'px monospace';g.fillText(s,x,y)};
-function observe(){const x=p.x;if(x<175){seen.add('rain');status.textContent='WITNESS A: cold rain, hail and foul mud define the third circle.'}else if(x<320){seen.add('cerberus');status.textContent='WITNESS B: Virgil throws earth into the three mouths of Cerberus, diverting him.'}else{seen.add('ciacco');status.textContent='WITNESS C: Ciacco tells Dante of Florence and its troubles.'}if(seen.size===3)status.textContent+=' THREE WITNESSES PRESERVED. NEXT: PLUTUS.'}
-function reset(){p={x:47,y:208,vy:0,ground:false};seen.clear();crossed=false;status.textContent='STAGE 009 reset: Cerberus, Ciacco and three observations; no elemental synthesis.'}
+function observe(){const x=p.x;if(x<175){seen.add('plutus');status.textContent='WITNESS A / PLUTUS: Virgil rebukes the guardian, who collapses and permits passage.'}else if(x<320){seen.add('collision');status.textContent='WITNESS B / COLLISION: hoarders and squanderers push heavy weights in opposite directions, meet and reverse.'}else{seen.add('fortune');status.textContent='WITNESS C / FORTUNE: Virgil explains the distribution of worldly goods and the failure of moderation.'}if(seen.size===3)status.textContent+=' ALL THREE WITNESSES PRESERVED. NEXT: STYX.'}
+function reset(){p={x:47,y:208,vy:0,ground:false};seen.clear();crossed=false;status.textContent='STAGE 010 reset: hoarders and squanderers meet, reverse and repeat. No new element.'}
 function draw(){
 frame++;rect(0,0,480,270,'#0d0f2b');
 for(let i=0;i<90;i++){let x=(i*73+17)%480,y=(i*59+11)%195;rect(x,y,i%13===0?3:1,i%13===0?3:1,i%4?'#7466a2':'#f3d696')}
@@ -74,38 +76,46 @@ for(let k=0;k<8;k++){let a=k*Math.PI/4+frame*.009;rect(x+Math.cos(a)*22,162+Math
 label(chem,x-(chem==='He'?11:5),167,'#fff4d3',15);label(chem==='H'?'DANTE':'VIRGIL',x-22,200,'#ffe6bf',9);
 }
 rect(221,190,44,8,'#d2ae78');rect(217,198,52,32,'#564363');rect(226,202,35,18,'#1c1a35');rect(239,207,8,8,'#d3b7ee');
-label('}{',237,224,'#f5d5a6',9);label('THIRD CIRCLE',208,183,'#eec88b',8);
+label('}{',237,224,'#f5d5a6',9);label('FOURTH CIRCLE',205,183,'#eec88b',8);
 
 
 
 
- // Third-circle rain, Cerberus and Ciacco: original pixel scene.
-rect(0,137,480,96,'#33394b');
-for(let k=0;k<90;k++){const xx=(k*61+frame*(1+k%3))%480,yy=(k*43+frame*(2+k%4))%225;rect(xx,yy,2,8,k%5===0?'#c7dbeb':'#7195bc')}
-for(let k=0;k<25;k++){const xx=(k*57)%480,yy=209+(k%3)*6;rect(xx,yy,24,5,k%2?'#62666a':'#565b63')}
-rect(228,156,42,32,'#584c75');rect(223,184,52,24,'#695576');
-for(let k=0;k<3;k++){const xx=222+k*18,yy=142+(k%2)*5;rect(xx,yy,18,18,'#847393');rect(xx+4,yy+6,3,3,'#f1a48b');rect(xx+12,yy+6,3,3,'#f1a48b')}
-label('CERBERUS',217,130,'#e6d1b9',9);
-rect(376,184,12,12,'#c3aa9d');rect(373,196,18,21,'#866e91');label('CIACCO',367,178,'#e3c1b9',8);
+
+ // Fourth-circle collision animation: two weights approach, meet, turn and return.
+rect(0,137,480,96,'#31283d');
+for(let k=0;k<20;k++){const xx=k*26;rect(xx,213,19,5,k%2?'#705d70':'#534860')}
+const phase=(frame%240)/240;
+const excursion=phase<.5?phase*2:2-phase*2;
+const leftX=80+117*excursion,rightX=399-117*excursion;
+for(const [x,col,dir] of [[leftX,'#d7a56c',1],[rightX,'#92b9d2',-1]]){
+rect(x-13,190,26,20,'#786479');rect(x-7,183,14,11,'#c7a79d');
+rect(x+dir*18,199,7,9,col);
+}
+g.fillStyle='#978d9e';g.beginPath();g.arc(leftX+32,203,17,0,Math.PI*2);g.fill();
+g.fillStyle='#aaa0af';g.beginPath();g.arc(rightX-32,203,17,0,Math.PI*2);g.fill();
+label('HOARD',69,165,'#f5c6a1',9);label('SQUANDER',351,165,'#bad9f1',9);
+rect(243,119,16,23,'#bba6a6');rect(235,140,32,25,'#65485d');
+label('PLUTUS',235,113,'#f4d69d',9);
 
 rect(203,76,80,95,'#5d4b76');rect(209,82,68,89,'#1d172e');
 rect(206,74,73,7,'#ebc77e');rect(206,74,5,98,'#c79a72');rect(275,74,5,98,'#c79a72');
-label('THREE MOUTHS',205,91,'#f9dfb2',8);label('EARTH',224,107,'#d8b9f0',8);
+label('COLLISION',207,91,'#f9dfb2',8);label('REVERSE',217,107,'#d8b9f0',8);
 for(let m=0;m<6;m++){rect(217+m*9,114+(m%2)*8,4,3,'#896ea9')}
 
-rect(27,65,68,50,'#322b4b');rect(32,71,58,4,'#d1ac77');rect(32,106,58,4,'#d1ac77');label('009',48,95,'#ffe4a1',15);
+rect(27,65,68,50,'#322b4b');rect(32,71,58,4,'#d1ac77');rect(32,106,58,4,'#d1ac77');label('010',48,95,'#ffe4a1',15);
 // Paired Li / Be glyph: bound in cipher only; the identity of 3 is held open.
 rect(190,30,105,31,'#3a294e');rect(194,34,97,23,'#20192f');
-label('CERBERUS / RAIN',194,48,'#f6d3a2',10);label('CIACCO',218,59,'#f2dbad',8);
+label('PLUTUS / WEIGHTS',192,48,'#f6d3a2',10);label('FORTUNE',219,59,'#f2dbad',8);
 label('(7)[8](9)[10]',201,72,'#e1c5ee',9);
-label('DIVERT / PASS',199,122,'#d6bedc',8);
+label('COLLIDE / TURN',199,122,'#d6bedc',8);
 for(let k=0;k<12;k++){const y=80+k*7;rect(242+Math.sin(k*.7+frame*.021)*8,y,2,3,'#d8bfe9')}
 
 const dx=(keys.has('ArrowRight')||keys.has('KeyD')?1:0)-(keys.has('ArrowLeft')||keys.has('KeyA')?1:0);
 p.x=Math.max(4,Math.min(469,p.x+dx*2.2));if((keys.has('Space')||keys.has('ArrowUp'))&&p.ground){p.vy=-7.5;p.ground=false}
 p.vy+=.42;p.y+=p.vy;if(p.y>=210){p.y=210;p.vy=0;p.ground=true}
 rect(p.x+2,p.y,8,4,'#3a253f');rect(p.x+2,p.y+4,8,5,'#eec5a6');rect(p.x,p.y+9,12,10,'#c96067');rect(p.x+2,p.y+19,3,4,'#3b3455');rect(p.x+8,p.y+19,3,4,'#3b3455');
-rect(0,0,480,24,'#0b1024');label('ARCHON / ALCHEMY 009',8,15,'#ebcd8f',10);label('WITNESSES '+seen.size+'/3',350,15,'#b7dfd7',9);
+rect(0,0,480,24,'#0b1024');label('ARCHON / ALCHEMY 010',8,15,'#ebcd8f',10);label('WITNESSES '+seen.size+'/3',350,15,'#b7dfd7',9);
 requestAnimationFrame(draw)}
 window.addEventListener('keydown',e=>{if(['ArrowLeft','ArrowRight','ArrowUp','Space','KeyA','KeyD','KeyE'].includes(e.code)){keys.add(e.code);if(document.activeElement===c)e.preventDefault();if(e.code==='KeyE'&&!e.repeat)observe()}});
 window.addEventListener('keyup',e=>keys.delete(e.code));window.addEventListener('blur',()=>keys.clear());
