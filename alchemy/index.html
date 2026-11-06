@@ -82,15 +82,16 @@ label('}{',237,224,'#f5d5a6',9);label('PHLEGYAS / FERRY',201,183,'#eec88b',8);
 
 
 
- // Marsh of Styx: somatic action above the surface, bubbles from below.
-rect(0,138,480,95,'#223f45');
-for(let k=0;k<40;k++){const xx=(k*57+frame*.22)%480,yy=169+(k*13)%59;rect(xx,yy,17,2,k%3?'#64868b':'#8d9c93')}
-for(let k=0;k<4;k++){const xx=74+k*26+Math.sin(frame*.027+k)*7,yy=144+Math.cos(frame*.027+k)*4;
-rect(xx,yy,9,9,'#ba999c');rect(xx-3,yy+9,15,13,'#805e71');rect(xx+(k%2?9:-5),yy+11,8,3,'#c4a2a5')}
-for(let k=0;k<22;k++){const xx=209+(k*39)%120,offset=(frame*(.42+(k%3)*.25)+k*29)%83,yy=217-offset;
-if(yy>142){g.strokeStyle=k%2?'#b2c8cf':'#829ba9';g.lineWidth=1;g.beginPath();g.arc(xx,yy,2+k%3,0,Math.PI*2);g.stroke()}}
-for(let k=0;k<14;k++){const xx=82+(k*25)%108,yy=159+(k%4)*2;rect(xx,yy,5,2,'#bfd1bf')}
-label('STRIKE',98,135,'#e5aba2',9);label('EXHALE',245,230,'#b2d9df',9);
+
+ // Beacon and boat scene
+rect(0,137,480,95,'#244358');
+rect(70,65,28,113,'#655771');
+for(let k=0;k<2;k++){rect(75+k*12,51,5,11,'#efb36c');rect(72+k*12,46+Math.sin(frame*.12+k)*2,10,5,'#ffe3a5')}
+rect(387,103,22,74,'#63576e');rect(392,96,8,8,'#eebc6c');
+const ferryX=227+Math.sin(frame*.014)*48;
+rect(ferryX-40,188,80,7,'#bb9a76');rect(ferryX-29,194,58,5,'#81626b');
+rect(ferryX-6,159,14,14,'#c3a293');rect(ferryX-10,173,20,17,'#81677a');rect(ferryX+10,169,3,38,'#c7b18a');
+label('PHLEGYAS',ferryX-26,153,'#e7c29d',8);
 
 rect(203,76,80,95,'#5d4b76');rect(209,82,68,89,'#1d172e');
 rect(206,74,73,7,'#ebc77e');rect(206,74,5,98,'#c79a72');rect(275,74,5,98,'#c79a72');
