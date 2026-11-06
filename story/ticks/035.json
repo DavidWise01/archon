@@ -1,0 +1,11 @@
+{
+  "protocol": "archon/story-ticks/v1",
+  "index": 34,
+  "identity": "{{i}}",
+  "scene": "Mars",
+  "realm": "PARADISO",
+  "choice": 1,
+  "line": "Accept uncertainty",
+  "parent": "b784346d7e639d3719019881f40778d759f1d6ba04c333c8ebf1c118c50f6e73",
+  "sha256": "9e87ea776d38f2317b1fe3f79d5cd0eadd81a828f47c772a6996d75225cb5fff"
+}
