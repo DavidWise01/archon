@@ -1,0 +1,104 @@
+{
+  "protocol": "archon/alchemical-living-thread/v2",
+  "stage": 19,
+  "identity": "{{i}}",
+  "parent": "alchemy/018.json",
+  "parentBlobSha": "ec90a2a68fd66389c5916b83204f675006e3c4ab",
+  "scene": "Inferno XIII — fleeing squanderers, black hounds and a collateral witness",
+  "source": "Dante Inferno XIII closing episode",
+  "story": [
+    "A violent sound of pursuit interrupts the conversation in the wood: two naked spirits run through the thorny trees.",
+    "The first fleeing spirit is Lano da Siena, identified by the second's cry; the second is Jacopo da Sant'Andrea.",
+    "Black hounds pursue; Lano passes by, while Jacopo tries to conceal himself within a bush.",
+    "The hounds seize Jacopo and tear him, damaging the bush where he hid.",
+    "The wounded bush laments and asks that its scattered leaves be gathered around its roots.",
+    "The voice identifies itself as a Florentine who made his home a place of his death; the poem does not unambiguously name the speaker.",
+    "Dante and Virgil listen, with the consequences of another's flight inscribed on an unwilling third party."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Lano da Siena",
+      "semantic": "flight from pursuit",
+      "somatic": {
+        "verb": "FLEE",
+        "gesture": "runs through the thorny wood",
+        "observable": "the pursuit passes the travelers"
+      }
+    },
+    {
+      "actor": "Jacopo da Sant'Andrea",
+      "semantic": "evade pursuit by hiding in another occupant's space",
+      "somatic": {
+        "verb": "HIDE",
+        "gesture": "rushes into a bush as black hounds approach",
+        "observable": "hounds seize him at the bush"
+      }
+    },
+    {
+      "actor": "Black hounds",
+      "semantic": "relentless punishment of the squanderers",
+      "somatic": {
+        "verb": "PURSUE_AND_TEAR",
+        "gesture": "race after and tear Jacopo and damage the bush",
+        "observable": "violent pursuit injures both the pursued and the shelter"
+      }
+    },
+    {
+      "actor": "Unnamed Florentine spirit / bush",
+      "semantic": "an uninvolved witness experiences collateral injury and requests repair",
+      "somatic": {
+        "verb": "LAMENT_AND_REQUEST",
+        "gesture": "cries from damaged limbs and asks for fallen leaves to be gathered",
+        "observable": "harm is voiced; requested restoration is distinguishable from its completion"
+      }
+    },
+    {
+      "actor": "Dante (1) and Virgil [2]",
+      "semantic": "witness harm and hear an appeal for care without inferring unseen restitution",
+      "somatic": {
+        "verb": "LISTEN",
+        "gesture": "attend to the wounded tree's account",
+        "observable": "the identity remains unnamed, the request remains recorded"
+      }
+    }
+  ],
+  "cipher": {
+    "alphaOmega": "[ (1), [2] ]",
+    "operator": "FLEE -> PURSUE -> HIDE -> TEAR -> COLLATERAL_WOUND -> TESTIFY -> REQUEST_REPAIR",
+    "notation": "LANO:FLEE ; JACOPO:HIDE(BUSH) ; HOUNDS:TEAR(JACOPO,BUSH) ; BUSH:LAMENT+REQUEST(LEAVES)",
+    "invariant": "Harm can propagate through an interaction to a third party who neither initiated nor chose the pursuit.",
+    "contrastToStage018": "Stage 018 direct observation breaks a branch; Stage 019 collateral injury occurs during pursuit. The injured subject's testimony must not be overwritten by the pursuer's story.",
+    "boundary": "Requested repair is not equivalent to verified restoration; the Florentine's name remains unresolved",
+    "newAtomicAssignments": [],
+    "chemicalReaction": "none",
+    "product": "none",
+    "previous": [
+      "(1) H Dante; [2] He Virgil",
+      "[6] C life/six poets",
+      "Noble Castle [ (7)[8]\\\\(9)[10] ]",
+      "(11) sodium reset metaphor"
+    ]
+  },
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "pursuit",
+      "somatic": "Lano FLEES and hounds PURSUE",
+      "observable": "running and pursuit heard and seen"
+    },
+    {
+      "id": "B",
+      "semantic": "collateral damage",
+      "somatic": "Jacopo HIDES; hounds TEAR him and the bush",
+      "observable": "the cover is damaged by their struggle"
+    },
+    {
+      "id": "C",
+      "semantic": "appeal for restoration",
+      "somatic": "bush SPEAKS and REQUESTS leaves",
+      "observable": "need is attested but completed repair not yet observed"
+    }
+  ],
+  "next": "Inferno XIV — burning sand, raining fire, Capaneus and the stream; two different conditions share one destructive environment",
+  "appendOnly": true
+}
