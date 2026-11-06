@@ -1,0 +1,11 @@
+{
+  "protocol": "archon/story-ticks/v1",
+  "index": 32,
+  "identity": "{{i}}",
+  "scene": "Venus",
+  "realm": "PARADISO",
+  "choice": 1,
+  "line": "Let love change shape",
+  "parent": "3e7e1278a3910b602dd30fe5f92bd58cc11b024b09aef6d1d580fb6199ed7306",
+  "sha256": "2b4ce5b39072ca40e691627cfb5b4ca511a4e66270603fa7a85b41179e1bc3a7"
+}
