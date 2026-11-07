@@ -1,0 +1,108 @@
+{
+  "protocol": "archon/alchemical-living-thread/v2",
+  "stage": 32,
+  "identity": "{{i}}",
+  "parent": "alchemy/031.json",
+  "parentBlobSha": "48d0f863ca5abd5a799ca13529b23fd4840e1429",
+  "scene": "Inferno XXV — serpent-human fusion, exchange and identity tracking",
+  "source": "Dante, Inferno XXV",
+  "story": [
+    "Vanni Fucci makes an obscene gesture toward heaven and flees while serpents pursue; a serpent coils around his neck.",
+    "The centaur Cacus appears, bearing snakes and a fire-breathing dragon, and races after the blaspheming thief.",
+    "Dante watches Agnello Brunelleschi embraced by a six-footed serpent identified with Cianfa Donati; their shapes fuse into a single indistinct composite.",
+    "A second serpent attacks Buoso Donati. Smoke accompanies a reciprocal transformation: the man takes reptilian form while the serpent becomes human.",
+    "Francesco Cavalcanti, called Guercio, is associated with that second serpent; the transformations make tracking the participants harder, not optional.",
+    "Puccio Sciancato remains in human shape as a contrast to those transformed.",
+    "Dante and Virgil proceed, maintaining the order of observed transformations and distinguishing Cianfa, Agnello, Buoso, Francesco and Puccio."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Vanni Fucci and Cacus",
+      "semantic": "Defiance and pursuit preserve a separate narrative thread from subsequent identity exchanges",
+      "somatic": {
+        "verb": "DEFY_FLEE_PURSUE",
+        "gesture": "Vanni flees after blasphemy; Cacus pursues with serpents",
+        "observable": "the pursuit precedes the later fusion and exchange"
+      }
+    },
+    {
+      "actor": "Cianfa serpent and Agnello",
+      "semantic": "Two forms combine into a hybrid while original participants remain separately attributable in narrative",
+      "somatic": {
+        "verb": "BIND_FUSE",
+        "gesture": "six-footed serpent clutches Agnello; limbs and features merge",
+        "observable": "one composite body emerges"
+      }
+    },
+    {
+      "actor": "Buoso and Francesco serpent",
+      "semantic": "Reciprocal changes exchange human and serpentine forms without requiring identities to be guessed from shape",
+      "somatic": {
+        "verb": "BITE_SMOKE_EXCHANGE",
+        "gesture": "serpent bites Buoso; smoke rises and their shapes exchange",
+        "observable": "the man becomes serpentine and the serpent human"
+      }
+    },
+    {
+      "actor": "Puccio Sciancato",
+      "semantic": "An unchanged participant provides a comparison within a changing group",
+      "somatic": {
+        "verb": "REMAIN_WALK",
+        "gesture": "remains in human form and continues onward",
+        "observable": "he is distinct from the two metamorphosis episodes"
+      }
+    },
+    {
+      "actor": "Dante (1) and Virgil [2]",
+      "semantic": "Preserve event order and name-to-form mappings under transformations",
+      "somatic": {
+        "verb": "WATCH_DISTINGUISH_CONTINUE",
+        "gesture": "watch fusion, reciprocal change and the unchanged companion, then depart",
+        "observable": "the record keeps identities separate from appearances"
+      }
+    }
+  ],
+  "cipher": {
+    "alphaOmega": "[ (1), [2] ]",
+    "operator": "BIND -> FUSE -> BITE -> EXCHANGE -> DISTINGUISH",
+    "notation": "CIANFA(snake)+AGNELLO(human)->FUSED ; BUOSO(human)+FRANCESCO(snake)->BUOSO(snake)+FRANCESCO(human) ; PUCCIO(human)->PUCCIO(human)",
+    "invariants": [
+      "Identity and current visible form must be represented as separate fields",
+      "Fusion is distinct from reciprocal exchange; these episodes must not be collapsed",
+      "An unchanged comparison witness is not proof that the others were never transformed",
+      "The narrator's identifications are literary testimony; appearance alone does not establish identity",
+      "No material chemistry, real biological transmutation or new atomic assignment is claimed"
+    ],
+    "newAtomicAssignments": [],
+    "chemicalReaction": "none",
+    "product": "none",
+    "preserve": [
+      "(1) H Dante and [2] He Virgil",
+      "[6] C life / six-poet fellowship",
+      "Noble Castle [ (7)[8]\\\\(9)[10] ]",
+      "(11) Na reset analogy"
+    ]
+  },
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "fusion",
+      "somatic": "CIANFA BINDS to AGNELLO and they FUSE",
+      "observable": "one composite follows two separately named participants"
+    },
+    {
+      "id": "B",
+      "semantic": "reciprocal exchange",
+      "somatic": "FRANCESCO SERPENT BITES BUOSO; forms EXCHANGE",
+      "observable": "identity remains traceable while shapes swap"
+    },
+    {
+      "id": "C",
+      "semantic": "stable comparison",
+      "somatic": "PUCCIO REMAINS human; DANTE DISTINGUISHES",
+      "observable": "unchanged witness does not erase changes elsewhere"
+    }
+  ],
+  "next": "Inferno XXVI — the eighth bolgia, counsel of fraud, Ulysses and Diomedes within a shared flame",
+  "appendOnly": true
+}
