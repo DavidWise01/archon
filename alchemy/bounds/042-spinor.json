@@ -1,0 +1,105 @@
+{
+  "protocol": "archon/post-seal-bound/v1",
+  "bound": "042-spinor",
+  "identity": "{{i}}",
+  "parent": "alchemy/041.json",
+  "parentBlobSha": "034ecc7aeded8b6732abe05c61f1890d06f1155b",
+  "stage041Sealed": true,
+  "appendOnly": true,
+  "title": "Spinor lift of the center-turn frame; 4π closure",
+  "scope": "Mathematical extension to Inferno XXXIV; not a claim that Dante describes a physical spin-1/2 state.",
+  "distinction": "A radial inversion or 180-degree turn alone is not spinorial. To obtain spinorial double cover, track an oriented rotation through Spin(2) or SU(2) and its sign.",
+  "construction": {
+    "physicalRotation": "v(theta)=(cos(theta),sin(theta))",
+    "spinorLift": "psi(theta)=(cos(theta/2),sin(theta/2))",
+    "periods": {
+      "vectorDegrees": 360,
+      "spinorDegrees": 720
+    },
+    "signRule": "psi(theta+360deg)=-psi(theta); psi(theta+720deg)=psi(theta)",
+    "centralGate": "r=0 marks reversal of a chosen radial coordinate along the path, but radial orientation is undefined at r=0 and is not itself evidence of a spinor.",
+    "operator": "DESCEND -> CENTER -> FRAME_TURN -> CONTINUE -> 2PI:-PSI -> 4PI:+PSI"
+  },
+  "samples": [
+    {
+      "degrees": 0,
+      "vector": [
+        1,
+        0
+      ],
+      "spinor": [
+        1,
+        0
+      ]
+    },
+    {
+      "degrees": 180,
+      "vector": [
+        -1,
+        1.2246467991473532e-16
+      ],
+      "spinor": [
+        6.123233995736766e-17,
+        1
+      ]
+    },
+    {
+      "degrees": 360,
+      "vector": [
+        1,
+        -2.4492935982947064e-16
+      ],
+      "spinor": [
+        -1,
+        1.2246467991473532e-16
+      ]
+    },
+    {
+      "degrees": 540,
+      "vector": [
+        -1,
+        3.6739403974420594e-16
+      ],
+      "spinor": [
+        -1.8369701987210297e-16,
+        -1
+      ]
+    },
+    {
+      "degrees": 720,
+      "vector": [
+        1,
+        -4.898587196589413e-16
+      ],
+      "spinor": [
+        1,
+        -2.4492935982947064e-16
+      ]
+    }
+  ],
+  "tests": {
+    "spatial360Returns": true,
+    "spinor360Negative": true,
+    "spinor720Returns": true,
+    "normPreserved": true,
+    "zeroNotRadialOrientation": "The exact center has no unique radial direction; orientation-frame choice is additional structure."
+  },
+  "witnesses": [
+    {
+      "id": "A",
+      "observable": "At 360deg, the spatial arrow returns to its initial direction.",
+      "test": "v(2π)=v(0)"
+    },
+    {
+      "id": "B",
+      "observable": "At 360deg, the spinor lift changes sign, not its norm.",
+      "test": "ψ(2π)=-ψ(0)"
+    },
+    {
+      "id": "C",
+      "observable": "At 720deg, the spinor lift returns to its initial representative.",
+      "test": "ψ(4π)=ψ(0)"
+    }
+  ],
+  "next": "043 — transport the local frame along a closed loop and test lift/path dependence without conflating a radial crossing with a spinor rotation."
+}
