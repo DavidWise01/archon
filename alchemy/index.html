@@ -19,43 +19,39 @@ a{color:#f6d28a}.foot{margin:22px 0;color:var(--mute);font-size:12px}.ledger{dis
 @media(max-width:850px){.grid{grid-template-columns:1fr}main{padding:12px}}
 </style></head>
 <body><main>
-<header class="top"><div><div class="eyebrow">The Living Thread / Second Traversal</div><h1>DANTE <span style="color:var(--gold)">·</span> THE ALCHEMICAL VESSEL</h1><p>Stage 032 of 041 · Inferno XXV: human-serpent fusion and exchange.</p></div><span class="chip">STAGE 032 / {{i}}</span></header>
+<header class="top"><div><div class="eyebrow">The Living Thread / Second Traversal</div><h1>DANTE <span style="color:var(--gold)">·</span> THE ALCHEMICAL VESSEL</h1><p>Stage 033 of 041 · Inferno XXVI: Ulysses and Diomedes in one divided flame.</p></div><span class="chip">STAGE 033 / {{i}}</span></header>
 <div class="grid"><section class="panel"><canvas id="game" width="480" height="270" tabindex="0" aria-label="Playable pixel-art alchemical vessel"></canvas><div class="pad">
-<div class="eyebrow">Thieves · bind, fuse, exchange, distinguish</div>
+<div class="eyebrow">Two occupants · one divided flame, one speaking voice</div>
 <div class="controls"><button id="left">◀ MOVE</button><button id="right">MOVE ▶</button><button id="jump">↑ JUMP</button><button id="observe">E · OBSERVE</button><button id="reset">↺ RESET</button></div>
-<div class="status" id="status" aria-live="polite">Inferno XXV: Cianfa and Agnello FUSE; Buoso and Francesco EXCHANGE human and serpent forms. Puccio remains unchanged. Observe FUSION, EXCHANGE and DISTINGUISH.</div>
-<p style="font-size:12px;margin:12px 0 0">Keyboard: ← → or A / D · Space to jump · E to observe. Next: Inferno XXVI, Ulysses and Diomedes hidden in a divided flame.</p>
+<div class="status" id="status" aria-live="polite">Inferno XXVI: A double-tipped flame CONTAINS Ulysses and Diomedes. Virgil ASKS; Ulysses SPEAKS and narrates his last voyage and shipwreck. Diomedes is not separately heard. Observe PAIR, SPEAK and RECOUNT.</div>
+<p style="font-size:12px;margin:12px 0 0">Keyboard: ← → or A / D · Space to jump · E to observe. Next: Inferno XXVII, Guido da Montefeltro and the promise of absolution.</p>
 </div></section>
 <aside class="panel"><div class="pad"><div class="eyebrow">Vessel inventory</div><h2>Minos routes souls; the [6] carbon-life fellowship remains preserved.</h2>
 <div class="tokens"><div class="token"><strong>H</strong><span>(1) Dante · traveler</span></div><div class="token"><strong>He</strong><span>[2] Virgil · guide</span></div><div class="token"><strong>Li</strong><span>(3) Li · identity unresolved</span></div><div class="token"><strong>Be</strong><span>[4] Beatrice · intercessor</span></div></div>
-<div class="tokens" style="margin-top:10px"><div class="token"><strong>B</strong><span>(5) Lucia · toroid</span></div><div class="token"><strong>C</strong><span>[6] Mary · box</span></div></div><div class="ledger"><span class="pip"></span> <strong>Stage 032: Human–Serpent Fusion and Exchange</strong></div>
+<div class="tokens" style="margin-top:10px"><div class="token"><strong>B</strong><span>(5) Lucia · toroid</span></div><div class="token"><strong>C</strong><span>[6] Mary · box</span></div></div><div class="ledger"><span class="pip"></span> <strong>Stage 033: One Flame, Two Occupants, One Voice</strong></div>
 <pre>alpha = omega = [ (1), [2] ]
 
-INFERNO XXV / THIEVES
+INFERNO XXVI / EIGHTH BOLGIA
 
-CIANFA (SERPENT)
-       + AGNELLO (HUMAN)
-               |
-           BIND + FUSE
-               |
-         COMPOSITE BODY
+       SHARED FLAME
+        /        \
+  GREATER TIP   LESSER TIP
+  ULYSSES       DIOMEDES
+     |             |
+   SPEAK         SILENT
+     |
+  LAST VOYAGE / SHIPWRECK
+     |
+  NARRATED, NOT WITNESSED
 
-FRANCESCO (SERPENT)
-       + BUOSO (HUMAN)
-               |
-         BITE + EXCHANGE
-               |
-BUOSO (SERPENT) / FRANCESCO (HUMAN)
-
-PUCCIO = UNCHANGED
-IDENTITY != CURRENT SHAPE
-FUSION != EXCHANGE
+SAME CONTAINER != SAME VOICE
+TWO OCCUPANTS != ONE IDENTITY
 No new element or product</pre>
 <p><b>Notation:</b> <code>[]</code> containment · <code>()</code> fluidity · <code>}{</code> opening the transformation boundary. These are narrative operators, not evidence of physical transmutation.</p>
-<p><b>Rule:</b> Cianfa <b>BINDS</b> Agnello and they <b>FUSE</b>; Francesco's serpentine form <b>BITES</b> Buoso and their shapes <b>EXCHANGE</b>; Puccio <b>REMAINS</b> human. Keep each participant's identity distinct from visible shape. These are poetic transformations, not chemical reactions.</p>
+<p><b>Rule:</b> The flame <b>ENCLOSES</b> Ulysses and Diomedes; its tips <b>DIVIDE</b>. Virgil <b>IDENTIFIES and ASKS</b>; Ulysses <b>SPEAKS</b> through the greater tip and Dante <b>LISTENS</b>. A shared vessel does not imply a shared identity or jointly spoken testimony. The voyage is reported, not witnessed directly.</p>
 <p><a href="../story.html">Read the sealed first journey</a></p>
 </div></aside></div>
-<footer class="foot">ARCHON / Alchemical Living Thread · 000–032 recorded, 033–041 reserved · story-first symbolic elemental cipher.</footer>
+<footer class="foot">ARCHON / Alchemical Living Thread · 000–033 recorded, 034–041 reserved · story-first symbolic elemental cipher.</footer>
 </main>
 <script>
 (()=>{const c=document.getElementById('game'),g=c.getContext('2d'),status=document.getElementById('status');
@@ -78,7 +74,7 @@ for(let k=0;k<8;k++){let a=k*Math.PI/4+frame*.009;rect(x+Math.cos(a)*22,162+Math
 label(chem,x-(chem==='He'?11:5),167,'#fff4d3',15);label(chem==='H'?'DANTE':'VIRGIL',x-22,200,'#ffe6bf',9);
 }
 rect(221,190,44,8,'#d2ae78');rect(217,198,52,32,'#564363');rect(226,202,35,18,'#1c1a35');rect(239,207,8,8,'#d3b7ee');
-label('}{',237,224,'#f5d5a6',9);label('FUSE / EXCHANGE',200,183,'#eec88b',8);
+label('}{',237,224,'#f5d5a6',9);label('ONE FLAME / TWO',198,183,'#eec88b',8);
 
 
 
@@ -125,7 +121,7 @@ rect(206,74,73,7,'#ebc77e');rect(206,74,5,98,'#c79a72');rect(275,74,5,98,'#c79a7
 label('FUSE',220,91,'#f9dfb2',8);label('SWAP',220,107,'#d8b9f0',8);
 for(let m=0;m<6;m++){rect(217+m*9,114+(m%2)*8,4,3,'#896ea9')}
 
-rect(27,65,68,50,'#322b4b');rect(32,71,58,4,'#d1ac77');rect(32,106,58,4,'#d1ac77');label('032',48,95,'#ffe4a1',15);
+rect(27,65,68,50,'#322b4b');rect(32,71,58,4,'#d1ac77');rect(32,106,58,4,'#d1ac77');label('033',48,95,'#ffe4a1',15);
 // Paired Li / Be glyph: bound in cipher only; the identity of 3 is held open.
 rect(190,30,105,31,'#3a294e');rect(194,34,97,23,'#20192f');
 label('SERPENTS / XXV',195,48,'#f6d3a2',10);label('FUSE / EXCHANGE',191,59,'#f2dbad',8);
@@ -137,7 +133,7 @@ const dx=(keys.has('ArrowRight')||keys.has('KeyD')?1:0)-(keys.has('ArrowLeft')||
 p.x=Math.max(4,Math.min(469,p.x+dx*2.2));if((keys.has('Space')||keys.has('ArrowUp'))&&p.ground){p.vy=-7.5;p.ground=false}
 p.vy+=.42;p.y+=p.vy;if(p.y>=210){p.y=210;p.vy=0;p.ground=true}
 rect(p.x+2,p.y,8,4,'#3a253f');rect(p.x+2,p.y+4,8,5,'#eec5a6');rect(p.x,p.y+9,12,10,'#c96067');rect(p.x+2,p.y+19,3,4,'#3b3455');rect(p.x+8,p.y+19,3,4,'#3b3455');
-rect(0,0,480,24,'#0b1024');label('ARCHON / ALCHEMY 032',8,15,'#ebcd8f',10);label('WITNESSES '+seen.size+'/3',350,15,'#b7dfd7',9);
+rect(0,0,480,24,'#0b1024');label('ARCHON / ALCHEMY 033',8,15,'#ebcd8f',10);label('WITNESSES '+seen.size+'/3',350,15,'#b7dfd7',9);
 requestAnimationFrame(draw)}
 window.addEventListener('keydown',e=>{if(['ArrowLeft','ArrowRight','ArrowUp','Space','KeyA','KeyD','KeyE'].includes(e.code)){keys.add(e.code);if(document.activeElement===c)e.preventDefault();if(e.code==='KeyE'&&!e.repeat)observe()}});
 window.addEventListener('keyup',e=>keys.delete(e.code));window.addEventListener('blur',()=>keys.clear());
