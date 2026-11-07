@@ -1,20 +1,22 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ARCHON — The Ascent · Purgatorio XI</title><style>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ARCHON — The Ascent · Purgatorio XII</title><style>
 :root{color-scheme:dark}*{box-sizing:border-box}body{background:linear-gradient(#11142d,#262542);color:#f3e6d4;font:15px/1.5 system-ui,Segoe UI,sans-serif;margin:0}main{max-width:1120px;padding:20px;margin:auto}h1{font-size:clamp(26px,5vw,46px);margin:5px 0}h2{font-size:18px;margin:0 0 8px}.eyebrow{font:700 11px monospace;letter-spacing:.15em;color:#f0c38d}.grid{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(260px,1fr);gap:15px;margin-top:17px}.panel{border:1px solid #776786;background:#201e36;border-radius:13px;padding:16px;min-width:0}canvas{display:block;width:100%;aspect-ratio:16/9;image-rendering:pixelated;background:#191d38;border-radius:9px;border:1px solid #927e9a}.controls{display:flex;gap:9px;flex-wrap:wrap;margin:12px 0}button{background:#4d3d5a;border:1px solid #aa8291;color:#fff;border-radius:8px;padding:10px 14px;font-weight:700;cursor:pointer}button:hover{background:#65506b}button:focus-visible{outline:2px solid #f9d49b}p{color:#dbcede}.status{background:#302943;border-radius:8px;min-height:80px;padding:12px}pre{white-space:pre-wrap;background:#17182d;border-radius:9px;padding:14px;color:#eacba5;font-size:12px;line-height:1.7}a{color:#b8dfe4}.counter{color:#a8dccb;font:700 12px monospace}footer{color:#b1a7bb;font-size:12px;margin-top:20px} @media(max-width:740px){.grid{grid-template-columns:1fr}}
-</style></head><body><main><header><div class="eyebrow">ARCHON / THE LIVING THREAD / THE ASCENT</div><h1>Purgatorio XI <span style="color:#ffd09a">· The Fading of Glory</span></h1><p>The proud pray beneath their stones; Omberto, Oderisi, and Provenzan reveal three kinds of humility.</p></header>
-<div class="grid"><section class="panel"><canvas id="game" width="640" height="360" tabindex="0" aria-label="Playable pixel art: Omberto and Oderisi under stones and Provenzan's public humility"></canvas><div class="controls"><button id="left">◀ WALK</button><button id="right">WALK ▶</button><button id="observe">E · OBSERVE</button><button id="reset">↺ RESET</button></div><div class="counter" id="counter">WITNESSES 0 / 3</div><p class="status" id="status" aria-live="polite">Hear the shared prayer and Omberto's confession, Oderisi's reflection on fame, and Provenzan's remembered act.</p><p>Keyboard: A / D or ← / → to walk; E to observe. Observe the prayer and confession, fame's decline, and Provenzan's reported public plea. Seven marks remain.</p></section>
-<aside class="panel"><h2>Today's encounter</h2><p>The proud pray under heavy stones. Omberto Aldobrandeschi confesses his family arrogance. Oderisi da Gubbio speaks of Franco Bolognese and the brief life of worldly fame. He recounts Provenzan Salvani begging publicly to ransom a friend.</p><pre>PURGATORIO / XI
+</style></head><body><main><header><div class="eyebrow">ARCHON / THE LIVING THREAD / THE ASCENT</div><h1>Purgatorio XII <span style="color:#ffd09a">· The First Mark Falls</span></h1><p>Images of fallen pride lie underfoot; an angel removes Dante's first P and the stairs grow lighter.</p></header>
+<div class="grid"><section class="panel"><canvas id="game" width="640" height="360" tabindex="0" aria-label="Playable pixel art: fallen pride carved into pavement, white angel and Dante with six marks"></canvas><div class="controls"><button id="left">◀ WALK</button><button id="right">WALK ▶</button><button id="observe">E · OBSERVE</button><button id="reset">↺ RESET</button></div><div class="counter" id="counter">WITNESSES 0 / 3</div><p class="status" id="status" aria-live="polite">Read the fallen pride carved in pavement, meet the angel, and climb with one fewer mark.</p><p>Keyboard: A / D or ← / → to walk; E to observe. Observe the stone exemplars, the angel's first cleansing, and the lighter staircase. Six marks remain.</p></section>
+<aside class="panel"><h2>Today's encounter</h2><p>Dante looks down at carved examples of pride brought low, from Lucifer's fall to ruined Troy. An angel in white directs the poets upward and erases one P from Dante's brow. A beatitude rings out; the stairs seem easier. Dante checks his forehead: six marks remain.</p><pre>PURGATORIO / XII
        |
-PROUD: CARRY / PRAY
+PAVEMENT: FALLEN PRIDE
        |
-OMBERTO: CONFESS
+LUCIFER / TROY
        |
-ODERISI: YIELD FAME
+ANGEL: TOUCH / ERASE
        |
-PROVENZAN: BEG FOR FRIEND
+FIRST P REMOVED: 7 -> 6
        |
-DANTE: LISTEN / CONTINUE
+BEATITUDE / HUMILITY
        |
-7 P MARKS STILL PRESENT</pre><p>Recognition fades; the acts and their witnesses remain. No P is erased until the next passage.</p><p><a href="./">The sealed Inferno</a> · <a href="https://github.com/DavidWise01/archon/blob/main/alchemy/ascent/011.json">Canonical ascent record</a></p></aside></div><footer>Original sealed 41-tick journey preserved · Inferno's sealed Stage 041 preserved · This ascent is a new append-only branch.</footer></main><script>
+STAIRS: CLIMB LIGHTER
+       |
+6 P MARKS REMAIN</pre><p>The first cleansing is now witnessed. One P is gone; six must still be carried.</p><p><a href="./">The sealed Inferno</a> · <a href="https://github.com/DavidWise01/archon/blob/main/alchemy/ascent/012.json">Canonical ascent record</a></p></aside></div><footer>Original sealed 41-tick journey preserved · Inferno's sealed Stage 041 preserved · This ascent is a new append-only branch.</footer></main><script>
 'use strict';
 const c=document.getElementById('game'),ctx=c.getContext('2d'),status=document.getElementById('status'),counter=document.getElementById('counter');
 let player=46,frame=0;const held=new Set(),seen=new Set();
@@ -30,27 +32,29 @@ const label=(str,x,y,color='#f9e4c3',size=11)=>{ctx.fillStyle=color;ctx.font='bo
 
 
 
-function witness(){const zone=player<210?'omberto':player<410?'oderisi':'provenzan';seen.add(zone);
+
+function witness(){const zone=player<210?'pavement':player<410?'angel':'stairs';seen.add(zone);
 const words={
-omberto:'WITNESS A: the souls PRAY beneath stones. Omberto CONFESSES inherited arrogance and contempt.',
-oderisi:'WITNESS B: Oderisi YIELDS the claim to highest renown and NAMES Franco Bolognese; fame passes.',
-provenzan:'WITNESS C: Oderisi RECOUNTS Provenzan Salvani BEGGING in the public square to ransom a friend.'
-};status.textContent=words[zone]+(seen.size===3?' THREE WITNESSES COMPLETE. SEVEN MARKS REMAIN.':'');counter.textContent='WITNESSES '+seen.size+' / 3'}
-function reset(){player=46;seen.clear();status.textContent='Hear the shared prayer and Omberto\'s confession, Oderisi\'s reflection on fame, and Provenzan\'s remembered act.';counter.textContent='WITNESSES 0 / 3'}
+pavement:'WITNESS A: Dante READS the pavement carvings of fallen pride, including Lucifer and Troy. These are images, not new falls.',
+angel:'WITNESS B: the angel TOUCHES Dante\'s forehead with a wing and ERASES the FIRST P: seven become six.',
+stairs:'WITNESS C: a beatitude sounds. Dante CLIMBS, feels LIGHTER and CONFIRMS the six remaining marks.'
+};status.textContent=words[zone]+(seen.size===3?' THREE WITNESSES COMPLETE. SIX MARKS REMAIN.':'');counter.textContent='WITNESSES '+seen.size+' / 3'}
+function reset(){player=46;seen.clear();status.textContent='Read the fallen pride carved in pavement, meet the angel, and climb with one fewer mark.';counter.textContent='WITNESSES 0 / 3'}
 function draw(){frame++;
-rect(0,0,640,360,'#424963');rect(0,0,640,135,'#9294a7');rect(0,135,640,143,'#777388');rect(0,278,640,82,'#a5968f');
-for(let i=0;i<12;i++){const x=(i*67)%640;rect(x,266+(i%3)*10,50,5,i%2?'#8d828a':'#b9a99e')}
-for(let k=0;k<2;k++){const x=62+k*123,y=238+(k%2)*11;rect(x-13,y-74,93,56,k?'#716b7a':'#857985');rect(x,y-14,49,12,'#cfab9c');rect(x+11,y-2,34,37,'#8d8396');rect(x+12,y+32,40,5,'#594d64')}
-label('OMBERTO / CONFESS',14,136,'#fff0d8',12);label('ODERISI / FAME',206,137,'#fff0d8',12);
-rect(405,176,197,112,'#887b89');rect(415,181,178,9,'#c0a99c');
-for(let k=0;k<4;k++){const x=422+k*44;rect(x,206,22,69,k%2?'#958498':'#a195a7')}
-rect(490,221,18,18,'#d7b19e');rect(485,240,28,43,'#987788');rect(509,245,28,6,'#d6b49f');
-rect(546,225,18,17,'#d0ad9b');rect(542,242,30,42,'#7c7f9a');
-rect(522,252,13,6,'#ebc58f');
-label('PROVENZAN / BEG',424,159,'#fff0d8',12);
-for(let k=0;k<7;k++)label('P',500+k*18,67,'#f6c8a7',16);
-label('SEVEN MARKS',501,89,'#fff0d8',11);
-label('PURGATORIO XI',17,24,'#fff1d1',15);
+rect(0,0,640,360,'#46506c');rect(0,0,640,146,'#a0a5b0');rect(0,146,640,121,'#7e798a');rect(0,267,640,93,'#c0afa3');
+for(let k=0;k<4;k++){const x=16+k*47;rect(x,260,42,69,'#dbccbe');rect(x+4,265,34,56,'#ad9d9d')}
+rect(31,274,23,8,'#76677b');rect(36,280,8,23,'#806f82');rect(61,288,21,9,'#887487');rect(97,284,25,4,'#7e657b');
+label('PRIDE / FALLS',16,226,'#fff1d8',12);
+rect(253,167,18,18,'#f7ddc7');rect(246,185,32,60,'#f4ebda');
+const wing=Math.sin(frame*.06)*7;
+rect(214-wing,194,32+wing,14,'#f0e8d8');rect(278,194,34+wing,14,'#efe4d3');rect(271,214,36,5,'#f3e5c6');
+label('ANGEL / ERASE',224,130,'#fff1d8',12);
+rect(418,290,181,12,'#dfc9b3');rect(441,273,158,12,'#e7d3bd');rect(461,256,138,12,'#ddc6b1');rect(480,239,119,12,'#ead7c3');rect(500,222,99,12,'#e0cab4');rect(519,205,80,12,'#f2ddc6');
+rect(528,165,19,19,'#e4c1a8');rect(523,184,29,35,'#bc7b83');
+label('LIGHTER CLIMB',459,155,'#fff1d8',12);
+for(let k=0;k<6;k++)label('P',505+k*19,66,'#f7cba9',16);
+label('SIX MARKS',512,89,'#fff0d7',12);
+label('PURGATORIO XII',17,24,'#fff1d1',15);
 rect(player,269,17,17,'#e7c0a3');rect(player-3,287,23,32,'#ba6a77');rect(player,316,5,7,'#333653');rect(player+12,316,5,7,'#333653');
 if(held.has('ArrowLeft')||held.has('KeyA'))player=Math.max(7,player-2.4);
 if(held.has('ArrowRight')||held.has('KeyD'))player=Math.min(613,player+2.4);
