@@ -1,0 +1,70 @@
+{
+  "protocol": "archon/alchemical-living-thread/ascent-v1",
+  "chapter": "Purgatorio VI",
+  "ascent": 6,
+  "identity": "{{i}}",
+  "parent": "alchemy/ascent/005.json",
+  "parentBlobSha": "8e1f30cc23f85726284431806428c6d2f1bf2cb3",
+  "appendOnly": true,
+  "previousTraversal": "Inferno 041 sealed",
+  "scene": "Petitions of the dead; Virgil and Sordello recognize a shared homeland; Dante laments divided Italy",
+  "story": [
+    "A crowd of souls presses around Dante, each asking him to remember them among the living. Virgil guides Dante onward while allowing their appeals to be heard.",
+    "Dante asks how prayers can help those awaiting ascent, recalling Virgil's earlier words about the apparent immutability of divine judgment. Virgil distinguishes the situations and tells him Beatrice will illuminate the matter further.",
+    "The travelers find a solitary soul looking on with dignity. Virgil asks for directions, and the soul first asks their country of origin.",
+    "When Virgil names Mantua, the soul reveals himself as Sordello, also Mantuan. The two embrace immediately, united by their shared home.",
+    "Dante contrasts the warmth between these two compatriots with the conflict among Italian cities. His poem turns to an extended lament over faction, poor leadership and the suffering of Italy.",
+    "The embrace does not erase civic division; it exposes how different the world could be. The travelers remain on the mountain, with Sordello to guide them in the next canto."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Petitioning souls",
+      "semantic": "Many requests can reach one witness without becoming one undifferentiated claim",
+      "somatic": "APPROACH_ASK_NAME"
+    },
+    {
+      "actor": "Dante",
+      "semantic": "Memory and prayer invite questions about justice, time and the living's responsibility",
+      "somatic": "LISTEN_QUESTION_REFLECT_LAMENT"
+    },
+    {
+      "actor": "Virgil",
+      "semantic": "A guide can state the limit of an explanation and direct the traveler toward deeper understanding",
+      "somatic": "LEAD_EXPLAIN_IDENTIFY"
+    },
+    {
+      "actor": "Sordello",
+      "semantic": "Recognition of shared origin creates a moment of fellowship",
+      "somatic": "ASK_RECOGNIZE_EMBRACE"
+    },
+    {
+      "actor": "Italy / civic discord",
+      "semantic": "Individual solidarity can reveal a contrast with collective division",
+      "somatic": "DIVIDE_CONFLICT_LAMENT"
+    }
+  ],
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "petitions and prayer",
+      "action": "HEAR multiple souls ASK for remembrance; QUESTION the effect of prayer",
+      "observable": "multiple distinct petitions and Virgil's explanation are spoken"
+    },
+    {
+      "id": "B",
+      "semantic": "shared origin",
+      "action": "HEAR Mantua named; SEE Virgil and Sordello RECOGNIZE and EMBRACE",
+      "observable": "shared provenance triggers a witnessed embrace"
+    },
+    {
+      "id": "C",
+      "semantic": "civic lament",
+      "action": "HEAR Dante LAMENT Italian conflict and failed stewardship",
+      "observable": "political criticism is a poetic reflection, not a new event witnessed on the mountain"
+    }
+  ],
+  "alchemicalReading": "Names are kept separate until recognition brings two companions together; fellowship in one encounter exposes fragmentation elsewhere.",
+  "invariant": "Shared origin can occasion recognition and solidarity without proving broader social unity; a local embrace does not repair a divided nation.",
+  "next": "Purgatorio VII — Sordello guides the travelers to the valley of the negligent rulers before nightfall",
+  "sealInfernoUntouched": true
+}
