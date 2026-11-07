@@ -1,0 +1,109 @@
+{
+  "protocol": "archon/alchemical-living-thread/v2",
+  "stage": 39,
+  "identity": "{{i}}",
+  "parent": "alchemy/038.json",
+  "parentBlobSha": "31474c6583881e57a4eccc4735b47c3158aa6cd5",
+  "scene": "Inferno XXXII — frozen Cocytus, Caina, Antenora, constrained bodies and contested identities",
+  "source": "Dante, Inferno XXXII",
+  "story": [
+    "Dante and Virgil walk upon the frozen lake of Cocytus at the bottom of the ninth circle, where the souls of traitors are fixed in the ice.",
+    "In Caina, betrayers of family protrude from the lake; the brothers Alessandro and Napoleone degli Alberti are trapped close together. Their tears freeze and their heads strike one another. Camicione de' Pazzi identifies them.",
+    "In Antenora, traitors of homeland or party are frozen further in, with only parts of their faces exposed. Dante strikes a trapped soul with his foot and demands his name.",
+    "Bocca degli Abati refuses to identify himself. Dante pulls his hair, and another soul names Bocca; the identity is revealed through another speaker, not initially confirmed by Bocca's own testimony.",
+    "Bocca in turn names other traitors. His accusations and the other soul's disclosure must remain attributed to their speakers.",
+    "At the close Dante observes two souls together in one hollow, one gnawing the head of the other. Their story and identities as Ugolino and Ruggieri are developed in Canto XXXIII.",
+    "No trapped figure is released; physical immobilization and identity attribution remain separate issues."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Cocytus / ice",
+      "semantic": "Containment constrains movement without erasing separate persons",
+      "somatic": {
+        "verb": "FREEZE_CONTAIN",
+        "gesture": "holds traitors partly embedded in frozen water",
+        "observable": "heads and faces remain visible although bodies cannot walk away"
+      }
+    },
+    {
+      "actor": "Caina / Alberti brothers",
+      "semantic": "Shared proximity and frozen tears do not merge individual identities",
+      "somatic": {
+        "verb": "TREMBLE_WEEP_FREEZE_STRIKE",
+        "gesture": "two brothers remain face-to-face, tears freezing as their heads collide",
+        "observable": "Camicione's identification remains attributed testimony"
+      }
+    },
+    {
+      "actor": "Bocca degli Abati",
+      "semantic": "Refusal to self-identify does not imply the absence of a name, but third-party identification is distinct evidence",
+      "somatic": {
+        "verb": "REFUSE_RESIST_NAME_OTHERS",
+        "gesture": "rejects Dante's question while immobilized; after being named, denounces others",
+        "observable": "Bocca does not originally disclose his own name"
+      }
+    },
+    {
+      "actor": "Dante (1)",
+      "semantic": "A witness must distinguish visible presence from attributed identity and from coerced disclosure",
+      "somatic": {
+        "verb": "WALK_QUESTION_GRASP_OBSERVE",
+        "gesture": "walks on ice, strikes Bocca with his foot, questions him and pulls his hair",
+        "observable": "Dante's aggressive intervention is an event, not an independent identity proof"
+      }
+    },
+    {
+      "actor": "Virgil [2]",
+      "semantic": "Continue navigation into deeper zones without claiming knowledge of the final pair's story yet",
+      "somatic": {
+        "verb": "GUIDE_ADVANCE",
+        "gesture": "accompanies Dante across Caina and Antenora",
+        "observable": "the two figures in one hollow appear at the end; their story is reserved"
+      }
+    }
+  ],
+  "cipher": {
+    "alphaOmega": "[ (1), [2] ]",
+    "operator": "FREEZE -> CONTAIN -> OBSERVE -> QUESTION -> RESIST -> ATTRIBUTE",
+    "notation": "BODY{mobility:fixed}; FACE{visibility:partial}; NAME{speaker_attribution:required}; BOCCA{self_identification:refused,third_party_naming:reported}; TWO_IN_ONE_HOLLOW{story:next_canto}",
+    "invariants": [
+      "Physical immobility does not erase a person's distinct narrative identity",
+      "Partial visibility does not establish a person's identity without additional attribution",
+      "Refusing to self-identify is distinct from being unnamed by another speaker",
+      "An observer's coercive action is not independent proof of the claim it tries to obtain",
+      "Two figures sharing one hollow need not share identity, intent or testimony",
+      "The end-of-canto pair is observed but not yet explained; do not import their full account early"
+    ],
+    "newAtomicAssignments": [],
+    "chemicalReaction": "none",
+    "product": "none",
+    "preserve": [
+      "(1) H Dante and [2] He Virgil",
+      "[6] C life / six-poet fellowship",
+      "Noble Castle [ (7)[8]\\\\(9)[10] ]",
+      "(11) Na reset analogy"
+    ]
+  },
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "frozen containment",
+      "somatic": "ICE FREEZES; ALBERTI BROTHERS TREMBLE and STRIKE heads",
+      "observable": "fixed bodies and visible heads retain separate identities"
+    },
+    {
+      "id": "B",
+      "semantic": "refusal and attribution",
+      "somatic": "BOCCA REFUSES to name himself; DANTE QUESTIONS and PULLS hair; another soul NAMES Bocca",
+      "observable": "third-party identification not mistaken for self-attestation"
+    },
+    {
+      "id": "C",
+      "semantic": "unresolved shared hollow",
+      "somatic": "DANTE OBSERVES two figures in one hollow, one GNAWING the other",
+      "observable": "pair observed; narrative explanation reserved for Canto XXXIII"
+    }
+  ],
+  "next": "Inferno XXXIII — Ugolino tells of imprisonment and hunger; Alberigo and Branca d'Oria challenge the assumption that visible bodily life reveals the soul's condition",
+  "appendOnly": true
+}
