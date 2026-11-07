@@ -1,0 +1,112 @@
+{
+  "protocol": "archon/alchemical-living-thread/v2",
+  "stage": 41,
+  "identity": "{{i}}",
+  "parent": "alchemy/040.json",
+  "parentBlobSha": "33289cef31e490c95e5b5f16beb1d54f5ac319d7",
+  "scene": "Inferno XXXIV — Lucifer bound in Cocytus; cross the center of Earth and ascend toward the stars",
+  "source": "Dante, Inferno XXXIV",
+  "story": [
+    "Dante and Virgil enter Judecca, the deepest region of Cocytus, where traitors are wholly enclosed in ice.",
+    "Lucifer stands immobilized in the frozen lake, with three faces and six wings. Their beating chills the air and sustains the ice around him.",
+    "Within his three mouths Lucifer chews Judas Iscariot, Brutus and Cassius; Dante and Virgil observe their separate identities and punishments.",
+    "Virgil tells Dante to hold fast, climbs down Lucifer's shaggy body, and turns when they cross the Earth's center of gravity; Dante is initially bewildered because what was descending now leads upward.",
+    "Virgil explains the reversal of their local orientation after passing the center. Lucifer has not turned: the travelers' reference direction changed across the central passage.",
+    "They move through the natural passage by a subterranean stream and climb until they emerge under the stars of the other hemisphere.",
+    "The Inferno traversal reaches an exit and an observed sky. This seals the second-traversal Stage 041 without altering the separately sealed first journey."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Lucifer",
+      "semantic": "Enormous apparent movement of wings is distinct from freedom of locomotion",
+      "somatic": {
+        "verb": "BEAT_WINGS_REMAIN_BOUND",
+        "gesture": "his wings fan the ice while his body remains lodged in Cocytus",
+        "observable": "no escape from the frozen center"
+      }
+    },
+    {
+      "actor": "Three mouths and prisoners",
+      "semantic": "Multiple separately named occupants do not become identical inside a single three-faced figure",
+      "somatic": {
+        "verb": "CHEW_CONTAIN",
+        "gesture": "Judas, Brutus and Cassius remain held in three separate mouths",
+        "observable": "three attributed identities and distinct positions"
+      }
+    },
+    {
+      "actor": "Virgil [2]",
+      "semantic": "A direction sign depends on the local reference frame rather than on an intrinsic identity",
+      "somatic": {
+        "verb": "GRASP_DESCEND_TURN_CLIMB_GUIDE",
+        "gesture": "climbs Lucifer, pivots after Earth's center and guides upward through the passage",
+        "observable": "a continuous journey across an orientation reversal"
+      }
+    },
+    {
+      "actor": "Dante (1)",
+      "semantic": "A surprising inversion is reconciled by a change of viewpoint, not by rewriting prior travel",
+      "somatic": {
+        "verb": "CLING_QUESTION_ASCEND_EMERGE",
+        "gesture": "holds to Virgil, questions the apparent reversal, climbs and sees stars",
+        "observable": "same traveler arrives at a new exterior sky"
+      }
+    },
+    {
+      "actor": "Center / passage",
+      "semantic": "Crossing a geometrical center can reverse the sign of a locally defined radial direction without breaking path continuity",
+      "somatic": {
+        "verb": "CROSS_INVERT_ROUTE",
+        "gesture": "descent toward center becomes ascent away from center",
+        "observable": "center crossing separates inward and outward radial travel"
+      }
+    }
+  ],
+  "cipher": {
+    "alphaOmega": "[ (1), [2] ]",
+    "operator": "DESCEND -> GRASP -> CROSS_CENTER -> INVERT_REFERENCE -> ASCEND -> EMERGE -> SEE_STARS",
+    "notation": "r>=0; inward radial leg dr<0; at center orientation undefined; outward leg dr>0; traveler ID unchanged; poetic Earth-center model",
+    "invariants": [
+      "Crossing the center reverses the inward/outward radial direction convention without changing traveler identity",
+      "At the mathematical center a unique radial outward direction is undefined; it must not be assigned as a physical orientation there",
+      "The climbers' turning and Lucifer's fixed posture are separate observations",
+      "Arrival at the stars is an observed exit, not merely a promised path",
+      "Judas, Brutus and Cassius remain distinct occupants of the three mouths",
+      "A literary cosmology is not experimental evidence of planetary interior geometry",
+      "The separate original first journey remains sealed and immutable"
+    ],
+    "newAtomicAssignments": [],
+    "chemicalReaction": "none",
+    "product": "none",
+    "preserve": [
+      "(1) H Dante and [2] He Virgil",
+      "[6] C life / six-poet fellowship",
+      "Noble Castle [ (7)[8]\\\\(9)[10] ]",
+      "(11) Na reset analogy"
+    ],
+    "finalStage": true,
+    "sealSecondTraversal": true
+  },
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "bound center with distinct occupants",
+      "somatic": "LUCIFER BEATS wings yet REMAINS bound; three mouths HOLD Judas, Brutus and Cassius",
+      "observable": "flapping is not escape; three names remain separate"
+    },
+    {
+      "id": "B",
+      "semantic": "center transition",
+      "somatic": "VIRGIL GRASPS, DESCENDS, TURNS and CLIMBS as DANTE CLINGS",
+      "observable": "continuous route through the reference-direction reversal"
+    },
+    {
+      "id": "C",
+      "semantic": "observed emergence",
+      "somatic": "DANTE and VIRGIL ASCEND, EMERGE and SEE STARS",
+      "observable": "exit confirmed; no invented further canto"
+    }
+  ],
+  "next": "Inferno completed; next optional journey is Purgatorio I, outside the sealed 041-stage traversal",
+  "appendOnly": true
+}
