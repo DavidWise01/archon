@@ -1,22 +1,22 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ARCHON — The Ascent · Purgatorio VI</title><style>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ARCHON — The Ascent · Purgatorio VII</title><style>
 :root{color-scheme:dark}*{box-sizing:border-box}body{background:linear-gradient(#11142d,#262542);color:#f3e6d4;font:15px/1.5 system-ui,Segoe UI,sans-serif;margin:0}main{max-width:1120px;padding:20px;margin:auto}h1{font-size:clamp(26px,5vw,46px);margin:5px 0}h2{font-size:18px;margin:0 0 8px}.eyebrow{font:700 11px monospace;letter-spacing:.15em;color:#f0c38d}.grid{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(260px,1fr);gap:15px;margin-top:17px}.panel{border:1px solid #776786;background:#201e36;border-radius:13px;padding:16px;min-width:0}canvas{display:block;width:100%;aspect-ratio:16/9;image-rendering:pixelated;background:#191d38;border-radius:9px;border:1px solid #927e9a}.controls{display:flex;gap:9px;flex-wrap:wrap;margin:12px 0}button{background:#4d3d5a;border:1px solid #aa8291;color:#fff;border-radius:8px;padding:10px 14px;font-weight:700;cursor:pointer}button:hover{background:#65506b}button:focus-visible{outline:2px solid #f9d49b}p{color:#dbcede}.status{background:#302943;border-radius:8px;min-height:80px;padding:12px}pre{white-space:pre-wrap;background:#17182d;border-radius:9px;padding:14px;color:#eacba5;font-size:12px;line-height:1.7}a{color:#b8dfe4}.counter{color:#a8dccb;font:700 12px monospace}footer{color:#b1a7bb;font-size:12px;margin-top:20px} @media(max-width:740px){.grid{grid-template-columns:1fr}}
-</style></head><body><main><header><div class="eyebrow">ARCHON / THE LIVING THREAD / THE ASCENT</div><h1>Purgatorio VI <span style="color:#ffd09a">· The Embrace of Mantua</span></h1><p>Souls petition Dante, Sordello embraces Virgil, and divided Italy enters the poem.</p></header>
-<div class="grid"><section class="panel"><canvas id="game" width="640" height="360" tabindex="0" aria-label="Playable pixel art: petitioning souls, Virgil and Sordello embracing, and a divided city"></canvas><div class="controls"><button id="left">◀ WALK</button><button id="right">WALK ▶</button><button id="observe">E · OBSERVE</button><button id="reset">↺ RESET</button></div><div class="counter" id="counter">WITNESSES 0 / 3</div><p class="status" id="status" aria-live="polite">Hear the souls asking for remembrance, witness the Mantuan embrace, then reflect on divided Italy.</p><p>Keyboard: A / D or ← / → to walk; E to observe. Observe the petitions, the embrace, and the lament in their three zones.</p></section>
-<aside class="panel"><h2>Today's encounter</h2><p>The souls crowd around Dante with requests for remembrance. He asks Virgil how prayer can help. Then Sordello hears the name Mantua and embraces his fellow Mantuan Virgil. Dante contrasts the tenderness of this greeting with Italy's bitter divisions.</p><pre>PURGATORIO / VI
-      |
-SOULS: ASK / REMEMBER
-      |
-DANTE: QUESTION PRAYER
-      |
-VIRGIL: EXPLAIN / GUIDE
-      |
-SORDELLO: RECOGNIZE
-      |
-MANTUA: SHARED ORIGIN
-      |
-EMBRACE / FELLOWSHIP
-      |
-ITALY: DIVISION / LAMENT</pre><p>A single embrace cannot mend a nation, but it reveals what divided neighbors have forgotten.</p><p><a href="./">The sealed Inferno</a> · <a href="https://github.com/DavidWise01/archon/blob/main/alchemy/ascent/006.json">Canonical ascent record</a></p></aside></div><footer>Original sealed 41-tick journey preserved · Inferno's sealed Stage 041 preserved · This ascent is a new append-only branch.</footer></main><script>
+</style></head><body><main><header><div class="eyebrow">ARCHON / THE LIVING THREAD / THE ASCENT</div><h1>Purgatorio VII <span style="color:#ffd09a">· The Valley at Sunset</span></h1><p>Sordello leads the travelers to a flowered valley where rulers await the light of morning.</p></header>
+<div class="grid"><section class="panel"><canvas id="game" width="640" height="360" tabindex="0" aria-label="Playable pixel art: sunset, Sordello guiding Virgil and Dante, the flowered valley and waiting rulers"></canvas><div class="controls"><button id="left">◀ WALK</button><button id="right">WALK ▶</button><button id="observe">E · OBSERVE</button><button id="reset">↺ RESET</button></div><div class="counter" id="counter">WITNESSES 0 / 3</div><p class="status" id="status" aria-live="polite">Follow Sordello, observe the setting sun, and meet the rulers waiting in a flowered valley.</p><p>Keyboard: A / D or ← / → to walk; E to observe. Observe Sordello's guidance, the night boundary, and the valley of rulers.</p></section>
+<aside class="panel"><h2>Today's encounter</h2><p>Sordello honors Virgil the poet and offers to guide the travelers. Yet after sunset no one can climb higher. He brings them to a flowered valley where the souls of rulers sing and wait; the night will hold their ascent until morning.</p><pre>PURGATORIO / VII
+       |
+SORDELLO: GUIDE
+       |
+SUNSET: CLOSE ASCENT
+       |
+FOLLOW THE CONTOUR
+       |
+FLOWERED VALLEY
+       |
+RULERS: SING / WAIT
+       |
+NIGHT: HOLD POSITION
+       |
+MORNING: RESUME</pre><p>Night interrupts upward movement; it does not reverse the travelers' progress.</p><p><a href="./">The sealed Inferno</a> · <a href="https://github.com/DavidWise01/archon/blob/main/alchemy/ascent/007.json">Canonical ascent record</a></p></aside></div><footer>Original sealed 41-tick journey preserved · Inferno's sealed Stage 041 preserved · This ascent is a new append-only branch.</footer></main><script>
 'use strict';
 const c=document.getElementById('game'),ctx=c.getContext('2d'),status=document.getElementById('status'),counter=document.getElementById('counter');
 let player=46,frame=0;const held=new Set(),seen=new Set();
@@ -27,28 +27,31 @@ const label=(str,x,y,color='#f9e4c3',size=11)=>{ctx.fillStyle=color;ctx.font='bo
 
 
 
-function witness(){const zone=player<210?'petition':player<410?'embrace':'lament';seen.add(zone);
+
+function witness(){const zone=player<210?'guide':player<410?'sunset':'valley';seen.add(zone);
 const words={
-petition:'WITNESS A: the souls ASK Dante to remember them; Dante QUESTIONS how prayers may help, and Virgil responds.',
-embrace:'WITNESS B: Sordello hears MANTUA, RECOGNIZES Virgil as a compatriot and EMBRACES him.',
-lament:'WITNESS C: Dante LAMENTS the political divisions of Italy. The poetic judgment is distinguished from the mountain encounter.'
-};status.textContent=words[zone]+(seen.size===3?' THREE WITNESSES COMPLETE. THE ASCENT CONTINUES.':'');counter.textContent='WITNESSES '+seen.size+' / 3'}
-function reset(){player=46;seen.clear();status.textContent='Hear the souls asking for remembrance, witness the Mantuan embrace, then reflect on divided Italy.';counter.textContent='WITNESSES 0 / 3'}
+guide:'WITNESS A: Sordello honors Virgil the poet and GUIDES Dante and Virgil along the mountain.',
+sunset:'WITNESS B: the sun SETS. Upward progress is SUSPENDED until morning, without undoing the path already climbed.',
+valley:'WITNESS C: the flowered valley holds RULERS who SING and WAIT. Sordello identifies them for the travelers.'
+};status.textContent=words[zone]+(seen.size===3?' THREE WITNESSES COMPLETE. NIGHT HOLDS THE MOUNTAIN.':'');counter.textContent='WITNESSES '+seen.size+' / 3'}
+function reset(){player=46;seen.clear();status.textContent='Follow Sordello, observe the setting sun, and meet the rulers waiting in a flowered valley.';counter.textContent='WITNESSES 0 / 3'}
 function draw(){frame++;
-rect(0,0,640,360,'#344360');rect(0,0,640,152,'#8d86a0');rect(0,153,640,125,'#77778e');rect(0,276,640,84,'#a28f8b');
-for(let k=0;k<13;k++){const x=(k*59)%640,y=278+(k%4)*12;rect(x,y,43,5,k%2?'#b6a199':'#887b81')}
-for(let k=0;k<5;k++){const x=20+k*29;rect(x,217+(k%2)*10,15,16,'#d6b8a7');rect(x-4,232+(k%2)*10,23,43,k%2?'#9783a2':'#a27c8f')}
-label('PETITIONS / PRAYER',12,183,'#fff2d8',12);
-const breathing=Math.sin(frame*.035)*2;
-rect(272,232,21,21,'#d8b7a6');rect(268,253,29,47,'#9591aa');rect(321,232,21,21,'#d1ac9b');rect(316,253,30,47,'#a27d8e');
-rect(295,262+breathing,28,7,'#d9b7a5');rect(286,268-breathing,39,7,'#cba89e');
-label('VIRGIL + SORDELLO',225,209,'#fff2d8',12);
-for(let k=0;k<7;k++){const x=450+k*24,y=195+(k%2)*13;rect(x,y,22,61,k%2?'#686581':'#8f7586');rect(x+4,y-12,15,13,'#b69b96')}
-for(let k=0;k<4;k++){const x=468+k*37;rect(x,242,24,36,'#61596d')}
-rect(539,188,5,89,'#d9bea1');rect(544,190,30,5,'#c57a82');
-label('ITALY / DIVIDED',462,160,'#fff2d8',12);
+rect(0,0,640,360,'#282c4f');rect(0,0,640,147,'#514b70');rect(0,147,640,116,'#a16e7d');
+rect(0,263,640,97,'#54686f');
+rect(303,84,47,47,'#efb77e');rect(308,89,37,37,'#f5cd92');
+for(let k=0;k<12;k++){const x=175+(k%4)*45,y=154+Math.floor(k/4)*37;rect(x,y,41,33,k%2?'#847586':'#6b647d')}
+rect(17,225,36,35,'#6e647c');rect(55,219,38,41,'#756982');
+rect(87,235,18,17,'#d6b09b');rect(82,253,28,49,'#a58a9e');
+rect(119,230,17,17,'#d5b49e');rect(114,247,27,52,'#7f95ae');
+rect(147,233,18,18,'#d7b19e');rect(142,251,28,48,'#b77b8a');
+label('SORDELLO / GUIDE',18,187,'#fff0d6',12);
+label('SUNSET / HOLD',254,67,'#fff0d6',12);
+rect(404,235,224,66,'#637d70');rect(417,219,197,17,'#768e72');
+for(let k=0;k<25;k++){const x=407+(k*47)%211,y=254+(k*13)%43;rect(x,y,4,4,k%3===0?'#f0c798':k%3===1?'#bd97be':'#f2d7ad')}
+for(let k=0;k<7;k++){const x=420+k*27;rect(x,242+(k%2)*6,12,12,'#dfbba3');rect(x-4,255+(k%2)*6,20,35,k%2?'#a18ca4':'#9b7e93')}
+label('VALLEY / RULERS',455,202,'#fff0d6',12);
+label('PURGATORIO VII',17,25,'#fff1d1',15);
 rect(player,269,17,17,'#e7c0a3');rect(player-3,287,23,32,'#ba6a77');rect(player,316,5,7,'#333653');rect(player+12,316,5,7,'#333653');
-label('PURGATORIO VI',17,24,'#fff1d1',15);
 if(held.has('ArrowLeft')||held.has('KeyA'))player=Math.max(7,player-2.4);
 if(held.has('ArrowRight')||held.has('KeyD'))player=Math.min(613,player+2.4);
 requestAnimationFrame(draw)}
