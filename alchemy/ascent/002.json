@@ -1,0 +1,67 @@
+{
+  "protocol": "archon/alchemical-living-thread/ascent-v1",
+  "chapter": "Purgatorio II",
+  "ascent": 2,
+  "identity": "{{i}}",
+  "parent": "alchemy/ascent/001.json",
+  "parentBlobSha": "f33b6aaeb9c85c8ce3eeb123325c3dcc2b797928",
+  "appendOnly": true,
+  "previousTraversal": "Inferno 041 sealed",
+  "scene": "Angelic ferry, the arrival of souls, Casella's song and Cato's summons",
+  "story": [
+    "The sun rises over the shore. Dante and Virgil see an approaching light that resolves into an angel steering a swift vessel of souls, without sails or human oars.",
+    "The passengers sing the psalm of Israel's departure from Egypt. The angel blesses them and departs, leaving the newcomers to ask the way up the mountain.",
+    "Dante recognizes his musician friend Casella. Dante tries three times to embrace him but finds that the shade has no substantial body.",
+    "Casella explains why his passage was delayed, then sings the beginning of Dante's canzone 'Amor che ne la mente mi ragiona'. Dante, Virgil and the others pause, absorbed by the music.",
+    "Cato arrives and rebukes the gathered souls for lingering. They scatter toward the mountain, and the travelers resume the ascent."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Angel / vessel",
+      "semantic": "Conveyance arrives and disembarks travelers",
+      "somatic": "APPROACH_CARRY_RELEASE_DEPART"
+    },
+    {
+      "actor": "Arriving souls",
+      "semantic": "Singing and seeking the path are distinct from actually climbing",
+      "somatic": "SING_LAND_ASK"
+    },
+    {
+      "actor": "Casella",
+      "semantic": "Familiar voice and identity persist without a graspable body",
+      "somatic": "RECOGNIZE_SPEAK_SING"
+    },
+    {
+      "actor": "Dante",
+      "semantic": "Affection and attention can interrupt a journey",
+      "somatic": "REACH_FAIL_LISTEN_RESUME"
+    },
+    {
+      "actor": "Cato",
+      "semantic": "Reminder that preparation and music do not replace the climb",
+      "somatic": "REBUKE_DISPERSE_DIRECT"
+    }
+  ],
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "arrival",
+      "action": "WATCH the angelic vessel arrive and souls disembark",
+      "observable": "passage completed; passengers stand on shore"
+    },
+    {
+      "id": "B",
+      "semantic": "meeting and song",
+      "action": "REACH toward Casella and LISTEN to his song",
+      "observable": "embrace fails; music holds the group still"
+    },
+    {
+      "id": "C",
+      "semantic": "renewed motion",
+      "action": "HEAR Cato; SCATTER and BEGIN the climb",
+      "observable": "crowd resumes movement toward the mountain"
+    }
+  ],
+  "next": "Purgatorio III — the mountain's shadow, Virgil's uncertainty, excommunicated souls and Manfred",
+  "sealInfernoUntouched": true
+}
