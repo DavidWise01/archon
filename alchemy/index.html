@@ -102,19 +102,19 @@ label('}{',237,224,'#f5d5a6',9);label('ONE FLAME / TWO',198,183,'#eec88b',8);
 
 
 
- // Inferno XXV: distinct serpent-human fusion, reciprocal exchange, unchanged Puccio.
-rect(0,137,480,96,'#3a354b');rect(0,218,480,15,'#665b6d');
-const fusion=(Math.sin(frame*.025)+1)/2;
-rect(73,173,20,30,'#a77d8b');rect(76,160,15,15,'#d0aa95');
-for(let k=0;k<6;k++){const x=42+k*11+fusion*8,y=204+Math.sin(frame*.065+k)*6;rect(x,y,16,6,k%2?'#7d9d85':'#9bbb9c')}
-rect(84,173,15+fusion*14,15,'#83a18b');
-const change=(Math.sin(frame*.019)+1)/2;
-rect(245,173,19*(1-change)+5,33,'#a77986');rect(246,161,12,13,'#d3b49e');
-for(let k=0;k<6;k++){const x=265+k*9-change*20,y=198+Math.sin(frame*.05+k)*6;rect(x,y,14,6,'#8dad95')}
-rect(388,170,17,14,'#cdae9a');rect(385,184,22,29,'#7c728f');rect(389,212,5,9,'#aa9596');rect(401,212,5,9,'#aa9596');
-label('CIANFA + AGNELLO',26,133,'#ecd2b9',8);
-label('FRANCESCO / BUOSO',217,137,'#e4d2c2',8);
-label('PUCCIO',379,154,'#e4d2c2',9);
+
+ // Inferno XXVI: one vessel with two distinct flame tongues, only greater horn speaking.
+rect(0,137,480,96,'#352d43');rect(0,220,480,13,'#6b5669');
+for(let k=0;k<24;k++){const x=14+(k*59)%450,y=168+Math.sin(frame*.018+k)*29;rect(x,y,4,10,k%2?'#cb7959':'#e3a466')}
+const tipA=94+Math.sin(frame*.05)*13,tipB=123+Math.sin(frame*.024)*7;
+rect(160,170,160,49,'#a65552');rect(168,152,144,38,'#e08b54');
+rect(182,132,52,54,'#edab5a');rect(183,tipA,32,59,'#ffd083');
+rect(257,142,41,44,'#edab5a');rect(268,tipB,22,37,'#f4c16e');
+rect(217,175,47,39,'#d16d4d');
+for(let k=0;k<6;k++){const x=179+k*24,y=172+Math.sin(frame*.06+k)*9;rect(x,y,5,18,'#f7ca7b')}
+label('ULYSSES / SPEAKS',105,109,'#f5d7ab',8);
+label('DIOMEDES / SILENT',288,114,'#f5d7ab',8);
+label('ONE FLAME',218,145,'#30263a',9);
 
 rect(203,76,80,95,'#5d4b76');rect(209,82,68,89,'#1d172e');
 rect(206,74,73,7,'#ebc77e');rect(206,74,5,98,'#c79a72');rect(275,74,5,98,'#c79a72');
