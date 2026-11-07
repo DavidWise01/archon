@@ -1,0 +1,108 @@
+{
+  "protocol": "archon/alchemical-living-thread/v2",
+  "stage": 35,
+  "identity": "{{i}}",
+  "parent": "alchemy/034.json",
+  "parentBlobSha": "a021e31c69d4ec7d2cebf69b1e341aa7144b1d3a",
+  "scene": "Inferno XXVIII — ninth bolgia, sowers of discord, wounds that close before the sword returns",
+  "source": "Dante, Inferno XXVIII",
+  "story": [
+    "Dante and Virgil look down into the ninth bolgia, a circuit of souls punished for sowing religious, civic and familial division.",
+    "A sword-bearing demon opens wounds as souls pass; by the time they return around the circuit their wounds have closed, only to be inflicted again.",
+    "Dante encounters Muhammad, depicted in the poem as divided, and Ali, depicted with a split face; this is Dante's hostile medieval religious portrayal, not an objective account of Islam or its figures.",
+    "Pier da Medicina speaks of coming treachery and points to Curio, whose tongue has been severed; Mosca dei Lamberti also appears with his hands mutilated.",
+    "Bertran de Born holds his severed head like a lantern and describes his punishment for dividing father and son.",
+    "The cycle of healing followed by renewed wounding continues; the healed interval is not a release from the bolgia.",
+    "Dante and Virgil continue toward the tenth bolgia, which belongs to the next stage."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Ninth bolgia circuit",
+      "semantic": "A repeated process has distinct phases and persists despite apparent interim restoration",
+      "somatic": {
+        "verb": "CIRCLE_RETURN",
+        "gesture": "souls complete the route and return to the sword-bearing demon",
+        "observable": "one recurring path rather than escape"
+      }
+    },
+    {
+      "actor": "Sword-bearing demon",
+      "semantic": "The causal trigger for renewed punishment recurs after healing",
+      "somatic": {
+        "verb": "STRIKE_DIVIDE",
+        "gesture": "wounds the returning souls with a sword",
+        "observable": "wounding follows restoration when souls recross the point"
+      }
+    },
+    {
+      "actor": "Sowers of discord",
+      "semantic": "Bodily division is the poem's symbolic punishment for social or religious division",
+      "somatic": {
+        "verb": "WALK_HEAL_RETURN",
+        "gesture": "proceed along the circuit as injuries close, then return for another blow",
+        "observable": "healing occurs but does not remove the recurring condition"
+      }
+    },
+    {
+      "actor": "Bertran de Born",
+      "semantic": "The poem externalizes the severing of father and son into a distinct carried head",
+      "somatic": {
+        "verb": "CARRY_SPEAK",
+        "gesture": "holds his head as a lantern and speaks about dividing a family",
+        "observable": "his distinctive scene is kept separate from other figures"
+      }
+    },
+    {
+      "actor": "Dante (1) and Virgil [2]",
+      "semantic": "Witness repeated injury, identify speakers and preserve the temporal order of each cycle",
+      "somatic": {
+        "verb": "LOOK_LISTEN_DISTINGUISH",
+        "gesture": "look down into the ditch and hear individual testimonies",
+        "observable": "healed appearance is not mistaken for completed release"
+      }
+    }
+  ],
+  "cipher": {
+    "alphaOmega": "[ (1), [2] ]",
+    "operator": "DIVIDE -> WOUND -> CIRCLE -> HEAL -> RETURN -> WOUND_AGAIN",
+    "notation": "SOUL{injured -> healing -> healed -> return -> injured}; RELEASE:NOT_OBSERVED ; CYCLE:CONTINUES",
+    "invariants": [
+      "Visible healing of a wound does not entail departure from a recurring damaging process",
+      "A new injury follows return to the demon, not continuous unbroken injury",
+      "Each named figure and their distinct testimony must remain separately attributable",
+      "Dante's portrayal of Muhammad and Ali reflects the medieval poem's polemical outlook and is not a factual religious judgment",
+      "This is literary imagery, not medical regeneration or a biological experiment"
+    ],
+    "newAtomicAssignments": [],
+    "chemicalReaction": "none",
+    "product": "none",
+    "preserve": [
+      "(1) H Dante and [2] He Virgil",
+      "[6] C life / six-poet fellowship",
+      "Noble Castle [ (7)[8]\\\\(9)[10] ]",
+      "(11) Na reset analogy"
+    ]
+  },
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "division and action",
+      "somatic": "DEMON STRIKES and wounds souls entering the next circuit",
+      "observable": "punishment tied to a specific renewed encounter"
+    },
+    {
+      "id": "B",
+      "semantic": "restoration without release",
+      "somatic": "SOULS CIRCLE and HEAL, then RETURN",
+      "observable": "the repaired form remains within the loop"
+    },
+    {
+      "id": "C",
+      "semantic": "attributed testimony",
+      "somatic": "BERTRAN CARRIES his head and SPEAKS; DANTE LISTENS",
+      "observable": "distinct speaker and sustained confinement"
+    }
+  ],
+  "next": "Inferno XXIX — Dante lingers over Geri del Bello, then reaches the tenth bolgia of falsifiers afflicted by disease",
+  "appendOnly": true
+}
