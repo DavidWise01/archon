@@ -1,0 +1,107 @@
+{
+  "protocol": "archon/alchemical-living-thread/v2",
+  "stage": 30,
+  "identity": "{{i}}",
+  "parent": "alchemy/029.json",
+  "parentBlobSha": "04c66de984e67ba11a30926c0d5045d14d3fc806",
+  "scene": "Inferno XXIII — gilded lead cloaks, hypocrites and Malacoda's false route",
+  "source": "Dante, Inferno XXIII",
+  "story": [
+    "After the Malebranche quarrel, Dante fears pursuit and warns Virgil. Virgil gathers Dante in his arms and slides down the steep bank into the sixth bolgia, escaping the demons who cannot leave their assigned ditch.",
+    "The hypocrites proceed slowly under cloaks that appear golden outside but are lined with heavy lead.",
+    "Dante and Virgil speak with Catalano and Loderingo, the two Jovial Friars from Bologna.",
+    "The travelers see Caiaphas fixed to the ground and crucified, bearing the weight of those who pass over him; the hypocrites identify his role in condemning Jesus.",
+    "They learn that the bridge Malacoda claimed they could use is broken, exposing the demon's directions as false.",
+    "Virgil departs with Dante toward the next accessible climb. The correction of the route is observed but completion of the next crossing is reserved."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Hypocrites / gilded cloaks",
+      "semantic": "A bright exterior hides a burdensome interior",
+      "somatic": {
+        "verb": "SHINE_WEIGH_TRUDGE",
+        "gesture": "wear golden-looking cloaks lined with lead and walk slowly beneath their weight",
+        "observable": "external gilding contrasts with slow, burdened movement"
+      }
+    },
+    {
+      "actor": "Virgil [2]",
+      "semantic": "Protect a traveler and revise decisions on new evidence",
+      "somatic": {
+        "verb": "LIFT_SLIDE_CHECK_REDIRECT",
+        "gesture": "carries Dante down from demon pursuit, hears that the bridge is broken and changes direction",
+        "observable": "escape from Malebranche and correction of the route"
+      }
+    },
+    {
+      "actor": "Dante (1)",
+      "semantic": "Attend to visual appearance, weight and reliability of a guide's claims",
+      "somatic": {
+        "verb": "WARN_OBSERVE_QUESTION",
+        "gesture": "warns Virgil, observes the cloaks, questions the hypocrites and listens to the bridge report",
+        "observable": "hidden burden and false directions separately recorded"
+      }
+    },
+    {
+      "actor": "Catalano and Loderingo",
+      "semantic": "Witnesses disclose their identity and the route's obstruction",
+      "somatic": {
+        "verb": "WALK_SPEAK_REPORT",
+        "gesture": "move slowly in heavy cloaks, identify themselves and describe the broken bridge",
+        "observable": "a previously promised crossing is contradicted"
+      }
+    },
+    {
+      "actor": "Caiaphas",
+      "semantic": "A second bodily image of hypocrisy and responsibility for others' burden",
+      "somatic": {
+        "verb": "LIE_FIXED_BEAR",
+        "gesture": "lies crucified across the path while the procession steps over him",
+        "observable": "his different punishment is not conflated with the gilded cloaks"
+      }
+    }
+  ],
+  "cipher": {
+    "alphaOmega": "[ (1), [2] ]",
+    "operator": "APPEAR -> CARRY_WEIGHT -> QUESTION -> VERIFY -> REVISE_ROUTE",
+    "notation": "CLOAK{outer:GOLDEN,inner:LEAD} -> SLOW_WALK ; MALACODA:CLAIM(BRIDGE) ; BRIDGE:BROKEN ; [2]:REDIRECT",
+    "invariants": [
+      "External brightness does not determine hidden load",
+      "An attractive surface must not be treated as evidence of light weight",
+      "Witnessed broken bridge falsifies the earlier promise of a usable crossing",
+      "Corrected route planning does not imply that the next crossing is already completed",
+      "Preserve Caiaphas's distinct punishment and Catalano and Loderingo's reports as different observations"
+    ],
+    "newAtomicAssignments": [],
+    "chemicalReaction": "none",
+    "product": "none",
+    "preserve": [
+      "(1) H Dante and [2] He Virgil",
+      "[6] C life / six-poet fellowship",
+      "Noble Castle [ (7)[8]\\\\(9)[10] ]",
+      "(11) Na reset analogy"
+    ]
+  },
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "visible gilding and hidden mass",
+      "somatic": "HYPOCRITES TRUDGE beneath GOLDEN-LOOKING LEAD CLOAKS",
+      "observable": "the burden makes the movement slow"
+    },
+    {
+      "id": "B",
+      "semantic": "safe withdrawal and distinct punishment",
+      "somatic": "VIRGIL CARRIES DANTE; CAIAPHAS LIES fixed beneath the procession",
+      "observable": "escape and second form of punishment witnessed"
+    },
+    {
+      "id": "C",
+      "semantic": "false route corrected",
+      "somatic": "FRIARS REPORT broken bridge; VIRGIL REDIRECTS",
+      "observable": "promised bridge is broken; no completed crossing asserted"
+    }
+  ],
+  "next": "Inferno XXIV — Virgil helps Dante climb the broken rocks; thieves and serpents of the seventh bolgia",
+  "appendOnly": true
+}
