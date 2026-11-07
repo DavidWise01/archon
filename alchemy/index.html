@@ -99,18 +99,21 @@ label('}{',237,224,'#f5d5a6',9);label('FIFTH BOLGIA',203,183,'#eec88b',8);
 
 
 
- // Inferno XX: forward-walking figures with heads facing behind.
-rect(0,137,480,96,'#353143');
-rect(0,219,480,14,'#665b6d');
-for(let k=0;k<6;k++){const x=41+((frame*.24+k*79)%460),y=164+(k%2)*13;
-rect(x,y+19,18,30,k%2?'#7f6e8f':'#a17783');
-rect(x+1,y+48,5,11,'#99839b');rect(x+13,y+48,5,11,'#99839b');
-rect(x-2,y+2,15,17,'#cba994');
-rect(x-4,y+8,5,3,'#edd4b7');
-rect(x-3,y+20+Math.sin(frame*.04+k)*5,3,7,'#86b8cb');
-}
-label('HEADS FACE BACK',37,131,'#e9cdb6',8);
-label('FEET MOVE AHEAD',309,145,'#d9c4da',8);
+
+ // Inferno XXI: opaque boiling pitch, hidden barrators and hooked demons.
+rect(0,137,480,96,'#625360');
+rect(10,169,460,60,'#292a35');
+rect(18,177,444,44,'#1a1c29');
+for(let k=0;k<23;k++){const x=30+(k*43)%423,y=187+(k*13+frame*.52)%28;rect(x,y,8,3,k%3?'#4f5360':'#75727a')}
+const surfY=178+Math.sin(frame*.04)*11;
+rect(152,surfY,13,12,'#c7a68f');rect(148,surfY+12,21,7,'#7d6b74');
+const demonX=257+Math.sin(frame*.016)*24;
+rect(demonX,151,20,22,'#aa5e65');rect(demonX+4,142,12,12,'#a46a6d');
+rect(demonX-4,140,5,10,'#bd9a83');rect(demonX+19,140,5,10,'#bd9a83');
+rect(demonX+25,139,3,56,'#c2a58b');rect(demonX+24,192,12,3,'#c2a58b');
+rect(338,149,18,17,'#824f64');rect(342,138,11,12,'#c3917d');
+label('PITCH / HIDDEN',41,145,'#e5d1bd',8);
+label('MALEBRANCHE',260,128,'#ebc9b2',8);
 
 rect(203,76,80,95,'#5d4b76');rect(209,82,68,89,'#1d172e');
 rect(206,74,73,7,'#ebc77e');rect(206,74,5,98,'#c79a72');rect(275,74,5,98,'#c79a72');
