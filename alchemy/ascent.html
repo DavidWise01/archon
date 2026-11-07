@@ -1,40 +1,58 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ARCHON — The Ascent · Purgatorio I</title><style>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ARCHON — The Ascent · Purgatorio II</title><style>
 :root{color-scheme:dark}*{box-sizing:border-box}body{background:linear-gradient(#11142d,#262542);color:#f3e6d4;font:15px/1.5 system-ui,Segoe UI,sans-serif;margin:0}main{max-width:1120px;padding:20px;margin:auto}h1{font-size:clamp(26px,5vw,46px);margin:5px 0}h2{font-size:18px;margin:0 0 8px}.eyebrow{font:700 11px monospace;letter-spacing:.15em;color:#f0c38d}.grid{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(260px,1fr);gap:15px;margin-top:17px}.panel{border:1px solid #776786;background:#201e36;border-radius:13px;padding:16px;min-width:0}canvas{display:block;width:100%;aspect-ratio:16/9;image-rendering:pixelated;background:#191d38;border-radius:9px;border:1px solid #927e9a}.controls{display:flex;gap:9px;flex-wrap:wrap;margin:12px 0}button{background:#4d3d5a;border:1px solid #aa8291;color:#fff;border-radius:8px;padding:10px 14px;font-weight:700;cursor:pointer}button:hover{background:#65506b}button:focus-visible{outline:2px solid #f9d49b}p{color:#dbcede}.status{background:#302943;border-radius:8px;min-height:80px;padding:12px}pre{white-space:pre-wrap;background:#17182d;border-radius:9px;padding:14px;color:#eacba5;font-size:12px;line-height:1.7}a{color:#b8dfe4}.counter{color:#a8dccb;font:700 12px monospace}footer{color:#b1a7bb;font-size:12px;margin-top:20px} @media(max-width:740px){.grid{grid-template-columns:1fr}}
-</style></head><body><main><header><div class="eyebrow">ARCHON / THE LIVING THREAD / THE ASCENT</div><h1>Purgatorio I <span style="color:#ffd09a">· The Shore at Dawn</span></h1><p>Hell is behind them. Now the mountain rises. A guardian, a washing, and a reed.</p></header>
-<div class="grid"><section class="panel"><canvas id="game" width="640" height="360" tabindex="0" aria-label="Playable pixel art: dawn shore of Mount Purgatory with Cato and Virgil"></canvas><div class="controls"><button id="left">◀ WALK</button><button id="right">WALK ▶</button><button id="observe">E · OBSERVE</button><button id="reset">↺ RESET</button></div><div class="counter" id="counter">WITNESSES 0 / 3</div><p class="status" id="status" aria-live="polite">The first dawn outside Hell. Walk across the shore and observe the stars, Cato, and the washing with dew and rush.</p><p>Keyboard: A / D or ← / → to walk; E to observe. Observe in all three zones to complete the preparation.</p></section>
-<aside class="panel"><h2>The next scene</h2><p>Under an open sky, Dante sees four stars. Cato asks why he has come from Hell. Virgil explains. Cato allows passage, on the condition that Virgil wash Dante's face and gird him with a humble rush.</p><pre>INFERNO / 041
-   |
-   |  EMERGE
-   v
-PURGATORIO / I
-   |
-DAWN + FOUR STARS
-   |
-CATO: QUESTION
-   |
-VIRGIL: EXPLAIN
-   |
-WASH FACE / BIND RUSH
-   |
-BEGIN ASCENT</pre><p>One action follows the next. No new descent and no spinor detour.</p><p><a href="./">The sealed Inferno</a> · <a href="https://github.com/DavidWise01/archon/blob/main/alchemy/ascent/001.json">Canonical ascent record</a></p></aside></div><footer>Original sealed 41-tick journey preserved · Inferno's sealed Stage 041 preserved · This ascent is a new append-only branch.</footer></main><script>
+</style></head><body><main><header><div class="eyebrow">ARCHON / THE LIVING THREAD / THE ASCENT</div><h1>Purgatorio II <span style="color:#ffd09a">· The Boat and the Song</span></h1><p>A brilliant boat reaches the shore. Casella sings. Cato sends the souls onward.</p></header>
+<div class="grid"><section class="panel"><canvas id="game" width="640" height="360" tabindex="0" aria-label="Playable pixel art: the angelic boat arrives, Casella sings and Cato calls the souls toward Mount Purgatory"></canvas><div class="controls"><button id="left">◀ WALK</button><button id="right">WALK ▶</button><button id="observe">E · OBSERVE</button><button id="reset">↺ RESET</button></div><div class="counter" id="counter">WITNESSES 0 / 3</div><p class="status" id="status" aria-live="polite">The angel brings new souls to shore. Meet Casella, listen to his song, then answer Cato's call to climb.</p><p>Keyboard: A / D or ← / → to walk; E to observe. Observe the landing, Casella's song, and the summons to resume the climb.</p></section>
+<aside class="panel"><h2>Today's encounter</h2><p>The angelic helmsman sets a boat of souls upon the shore. Their psalm fades as Dante recognizes Casella. His attempted embrace meets only air. Casella sings, and the crowd becomes still; Cato rebukes their delay and points them toward the mountain.</p><pre>PURGATORIO / II
+      |
+ANGEL: APPROACH + LAND
+      |
+SOULS: SING + DISEMBARK
+      |
+DANTE: RECOGNIZE CASELLA
+      |
+REACH / EMBRACE FAILS
+      |
+CASELLA: SING
+      |
+CATO: REBUKE
+      |
+RESUME ASCENT</pre><p>The music can hold them still. The mountain still waits.</p><p><a href="./">The sealed Inferno</a> · <a href="https://github.com/DavidWise01/archon/blob/main/alchemy/ascent/002.json">Canonical ascent record</a></p></aside></div><footer>Original sealed 41-tick journey preserved · Inferno's sealed Stage 041 preserved · This ascent is a new append-only branch.</footer></main><script>
 'use strict';
 const c=document.getElementById('game'),ctx=c.getContext('2d'),status=document.getElementById('status'),counter=document.getElementById('counter');
 let player=46,frame=0;const held=new Set(),seen=new Set();
 const rect=(x,y,w,h,color)=>{ctx.fillStyle=color;ctx.fillRect(x,y,w,h)};
 const label=(str,x,y,color='#f9e4c3',size=11)=>{ctx.fillStyle=color;ctx.font='bold '+size+'px monospace';ctx.fillText(str,x,y)};
-function witness(){let zone=player<210?'stars':player<410?'cato':'wash';seen.add(zone);const words={stars:'WITNESS A: Dante looks up. Four stars shine in a sky that was hidden throughout the descent.',cato:'WITNESS B: Cato questions the travelers; Virgil explains, and the guardian directs them to prepare.',wash:'WITNESS C: Virgil washes Dante with dew and binds a flexible rush around him. The ascent can begin.'};status.textContent=words[zone]+(seen.size===3?' THREE WITNESSES COMPLETE. THE MOUNTAIN AWAITS.':'');counter.textContent='WITNESSES '+seen.size+' / 3'}
-function reset(){player=46;seen.clear();status.textContent='The first dawn outside Hell. Walk across the shore and observe the stars, Cato, and the washing with dew and rush.';counter.textContent='WITNESSES 0 / 3'}
-function draw(){frame++;rect(0,0,640,360,'#293452');rect(0,0,640,125,'#2c304f');rect(0,125,640,135,'#c88f88');rect(0,224,640,85,'#6589a6');rect(0,301,640,59,'#a58d86');
-rect(0,176,640,14,'#e9b99e');rect(0,204,640,3,'#f6d6b5');
-for(let i=0;i<4;i++){const x=58+(i%2)*45,y=65+Math.floor(i/2)*29;rect(x-2,y-2,5,5,'#fff2c9');rect(x-6,y,13,1,'#fff2c9');rect(x,y-6,1,13,'#fff2c9')}
-for(let i=0;i<17;i++){let x=(i*71)%640,y=237+(i*13)%50;rect(x,y,17,2,i%2?'#a6c0c7':'#cee0da')}
-rect(260,202,20,20,'#d7b29d');rect(254,222,33,67,'#a5a8ad');rect(254,230,4,50,'#c8c2b8');rect(274,234,7,48,'#d6c8b3');label('CATO',250,190,'#fff0d2',12);
-rect(490,246,17,17,'#c9a693');rect(485,264,28,37,'#849db4');rect(513,256,17,17,'#d6b7a0');rect(509,273,26,29,'#b96d7a');rect(520,284,7,14,'#95c7a2');for(let i=0;i<9;i++){let x=540+i*7;rect(x,290+(i%3)*4,2,17,'#a8c393')}
-label('DEW + RUSH',471,213,'#fff0d2',11);
+
+function witness(){const zone=player<210?'arrival':player<410?'casella':'call';seen.add(zone);
+const words={
+arrival:'WITNESS A: the angel steers the bright boat to shore. The souls sing, disembark and ask their way.',
+casella:'WITNESS B: Dante tries to embrace Casella, but the shade has no solid body. Casella sings while the travelers listen.',
+call:'WITNESS C: Cato interrupts the song and calls the souls to their work. They scatter toward the mountain.'
+};
+status.textContent=words[zone]+(seen.size===3?' THREE WITNESSES COMPLETE. THE ASCENT RESUMES.':'');counter.textContent='WITNESSES '+seen.size+' / 3'}
+function reset(){player=46;seen.clear();status.textContent='The angel brings new souls to shore. Meet Casella, listen to his song, then answer Cato\'s call to climb.';counter.textContent='WITNESSES 0 / 3'}
+function draw(){frame++;
+rect(0,0,640,360,'#293451');rect(0,0,640,124,'#38415f');rect(0,124,640,107,'#d3978a');
+rect(0,231,640,78,'#658dad');rect(0,301,640,59,'#b39783');
+rect(0,185,640,6,'#f0c29a');for(let i=0;i<20;i++){const x=(i*71)%640,y=252+(i*13)%45;rect(x,y,23,2,i%2?'#b5dbe2':'#d8ebed')}
+const boatShift=18+Math.sin(frame*.018)*5;
+rect(24+boatShift,217,170,12,'#e9d9c5');rect(45+boatShift,229,127,13,'#8a6876');
+rect(108+boatShift,125,5,92,'#e9d9c5');
+rect(112+boatShift,137,72,51,'#f6e6cc');rect(112+boatShift,137,72,8,'#f0d4a4');
+for(let i=0;i<7;i++){let x=48+boatShift+i*19;rect(x,199+(i%2)*6,10,10,'#dbbcad');rect(x-3,208+(i%2)*6,16,15,i%2?'#9884a5':'#b48b91')}
+rect(120+boatShift,110,14,17,'#f2dbc0');rect(116+boatShift,127,23,29,'#f3e1c4');rect(107+boatShift,138,41,4,'#f6e4cf');
+label('ANGEL / ARRIVAL',32,87,'#fff0d7',12);
+rect(305,248,18,18,'#dab49f');rect(300,266,28,36,'#927b9b');
+rect(339,250,18,18,'#dcb9a7');rect(334,268,27,35,'#b77782');
+const reach=9+Math.sin(frame*.06)*5;rect(323,278,reach,5,'#d5b0a5');
+label('CASELLA / SONG',270,227,'#fff0d7',12);
+for(let k=0;k<3;k++){const x=372+k*10,y=246+Math.sin(frame*.044+k)*8;label('♪',x,y,'#f0dfb0',14)}
+rect(513,232,22,21,'#d8b6a1');rect(506,253,38,57,'#999aa7');rect(503,270,7,32,'#d2bda6');
+label('CATO / ASCEND',482,207,'#fff0d7',12);
 rect(player,269,17,17,'#e7c0a3');rect(player-3,287,23,32,'#ba6a77');rect(player,316,5,7,'#333653');rect(player+12,316,5,7,'#333653');
-label('DAWN / FOUR STARS',24,34,'#fff1d1',13);label('SHORE OF PURGATORY',385,34,'#fff1d1',13);
-rect(0,0,640,5,'#16152b');
-if(held.has('ArrowLeft')||held.has('KeyA'))player=Math.max(7,player-2.4);if(held.has('ArrowRight')||held.has('KeyD'))player=Math.min(613,player+2.4);
+label('PURGATORIO II',17,28,'#fff1d1',15);label('BOAT / SONG / SUMMONS',377,28,'#fff1d1',13);
+if(held.has('ArrowLeft')||held.has('KeyA'))player=Math.max(7,player-2.4);
+if(held.has('ArrowRight')||held.has('KeyD'))player=Math.min(613,player+2.4);
 requestAnimationFrame(draw)}
 window.addEventListener('keydown',e=>{if(['ArrowLeft','ArrowRight','KeyA','KeyD','KeyE'].includes(e.code)){held.add(e.code);if(e.code==='KeyE')witness();e.preventDefault()}});window.addEventListener('keyup',e=>held.delete(e.code));document.getElementById('left').onclick=()=>{player=Math.max(7,player-40)};document.getElementById('right').onclick=()=>{player=Math.min(613,player+40)};document.getElementById('observe').onclick=witness;document.getElementById('reset').onclick=reset;requestAnimationFrame(draw);
 </script></body></html>
