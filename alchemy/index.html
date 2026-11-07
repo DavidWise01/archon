@@ -104,22 +104,21 @@ label('}{',237,224,'#f5d5a6',9);label('ASH / REFORM',206,183,'#eec88b',8);
 
 
 
- // Inferno XXIII: lead-lined gilded cloaks; ruined bridge at far end.
-rect(0,137,480,96,'#403747');
-rect(0,217,480,16,'#77677b');
-for(let k=0;k<5;k++){const x=37+k*56+Math.sin(frame*.015+k)*3;
-rect(x+5,152,15,14,'#c1a58d');
-rect(x,165,25,48,'#7b7481');
-rect(x,164,25,7,'#e1c17d');
-rect(x+2,171,21,5,'#c7a76a');
-rect(x+3,180,19,31,'#9b835c');
-rect(x+11,211,5,8,'#5c5266')}
-rect(313,161,42,10,'#a59489');rect(366,174,36,10,'#a59489');rect(330,155,13,60,'#8c7b7d');rect(392,171,12,50,'#8c7b7d');
-rect(358,175,7,12,'#272638');
-rect(325,197,31,7,'#b9a19b');rect(330,184,14,13,'#c8a98f');
-label('GOLD OUTSIDE',25,139,'#f4d7a0',8);
-label('LEAD INSIDE',24,151,'#c5bed3',8);
-label('BROKEN BRIDGE',349,138,'#f2ccad',8);
+
+ // Inferno XXIV: jagged rocky ascent, serpent and ash-reforming Vanni Fucci.
+rect(0,137,480,96,'#40384b');
+for(let k=0;k<12;k++){const x=k*23,y=213-k*6;rect(x,y,40,19,k%2?'#887784':'#706577')}
+rect(0,223,480,10,'#62596c');
+rect(97,141,13,12,'#d8b79f');rect(94,153,18,23,'#8b9fb6');
+rect(125,151,12,12,'#d1a98e');rect(122,163,19,20,'#b56d79');
+const phase=frame%210;
+const burn=phase>=75&&phase<125,ash=phase>=125&&phase<158;
+if(!ash){rect(353,161,15,15,'#cfae9b');rect(349,176,23,33,burn?'#d2875c':'#8c6a80');rect(353,209,5,10,'#bfa193');rect(365,209,5,10,'#bfa193')}
+if(burn){for(let k=0;k<10;k++){const x=342+k*4,y=157+(k*13+frame*.5)%49;rect(x,y,4,9,k%2?'#ffcb70':'#e78a4f')}}
+if(ash){for(let k=0;k<20;k++){const x=341+(k*17)%42,y=173+(k*11+frame*.23)%47;rect(x,y,3,3,'#b8a6a8')}}
+for(let k=0;k<7;k++){const x=304+k*13,y=202+Math.sin(frame*.043+k)*8;rect(x,y,17,5,k%2?'#668c75':'#8caa80')}
+label('ROCKY ASCENT',27,122,'#e8d2ba',8);
+label('BITE / ASH / REFORM',325,133,'#f0cbb1',8);
 
 rect(203,76,80,95,'#5d4b76');rect(209,82,68,89,'#1d172e');
 rect(206,74,73,7,'#ebc77e');rect(206,74,5,98,'#c79a72');rect(275,74,5,98,'#c79a72');
