@@ -19,45 +19,45 @@ a{color:#f6d28a}.foot{margin:22px 0;color:var(--mute);font-size:12px}.ledger{dis
 @media(max-width:850px){.grid{grid-template-columns:1fr}main{padding:12px}}
 </style></head>
 <body><main>
-<header class="top"><div><div class="eyebrow">The Living Thread / Second Traversal</div><h1>DANTE <span style="color:var(--gold)">·</span> THE ALCHEMICAL VESSEL</h1><p>Stage 035 of 041 · Inferno XXVIII: the repeated wounds of discord.</p></div><span class="chip">STAGE 035 / {{i}}</span></header>
+<header class="top"><div><div class="eyebrow">The Living Thread / Second Traversal</div><h1>DANTE <span style="color:var(--gold)">·</span> THE ALCHEMICAL VESSEL</h1><p>Stage 036 of 041 · Inferno XXIX: Geri del Bello and falsifiers of metals.</p></div><span class="chip">STAGE 036 / {{i}}</span></header>
 <div class="grid"><section class="panel"><canvas id="game" width="480" height="270" tabindex="0" aria-label="Playable pixel-art alchemical vessel"></canvas><div class="pad">
-<div class="eyebrow">Discord · wound, circle, heal, return</div>
+<div class="eyebrow">Geri's memory · afflicted alchemists and imitation</div>
 <div class="controls"><button id="left">◀ MOVE</button><button id="right">MOVE ▶</button><button id="jump">↑ JUMP</button><button id="observe">E · OBSERVE</button><button id="reset">↺ RESET</button></div>
-<div class="status" id="status" aria-live="polite">Inferno XXVIII: In the ninth bolgia a demon WOUNDS souls, who CIRCLE until healed and RETURN to be wounded again. Bertran de Born CARRIES his head and SPEAKS. Observe STRIKE, HEAL and RETURN.</div>
-<p style="font-size:12px;margin:12px 0 0">Keyboard: ← → or A / D · Space to jump · E to observe. Next: Inferno XXIX, Geri del Bello and the diseased falsifiers of the tenth bolgia.</p>
+<div class="status" id="status" aria-live="polite">Inferno XXIX: Virgil REPORTS Geri del Bello's passing; Dante DESCENDS to the tenth bolgia. Griffolino and Capocchio SCRATCH diseased skin and SPEAK of falsifying metals. Observe REPORT, AFFLICTION and IDENTIFY.</div>
+<p style="font-size:12px;margin:12px 0 0">Keyboard: ← → or A / D · Space to jump · E to observe. Next: Inferno XXX, further falsifiers and the dispute between Master Adam and Sinon.</p>
 </div></section>
 <aside class="panel"><div class="pad"><div class="eyebrow">Vessel inventory</div><h2>Minos routes souls; the [6] carbon-life fellowship remains preserved.</h2>
 <div class="tokens"><div class="token"><strong>H</strong><span>(1) Dante · traveler</span></div><div class="token"><strong>He</strong><span>[2] Virgil · guide</span></div><div class="token"><strong>Li</strong><span>(3) Li · identity unresolved</span></div><div class="token"><strong>Be</strong><span>[4] Beatrice · intercessor</span></div></div>
-<div class="tokens" style="margin-top:10px"><div class="token"><strong>B</strong><span>(5) Lucia · toroid</span></div><div class="token"><strong>C</strong><span>[6] Mary · box</span></div></div><div class="ledger"><span class="pip"></span> <strong>Stage 035: Discord — Healing Without Release</strong></div>
+<div class="tokens" style="margin-top:10px"><div class="token"><strong>B</strong><span>(5) Lucia · toroid</span></div><div class="token"><strong>C</strong><span>[6] Mary · box</span></div></div><div class="ledger"><span class="pip"></span> <strong>Stage 036: Remembered Geri and the Falsifiers</strong></div>
 <pre>alpha = omega = [ (1), [2] ]
 
-INFERNO XXVIII / NINTH BOLGIA
+INFERNO XXIX / TENTH BOLGIA
 
-      DISCORD
-         |
-      DIVISION
-         |
-    DEMON: STRIKE
-         |
-    SOULS: WOUNDED
-         |
-    CIRCLE + HEAL
-         |
-    RETURN TO DEMON
-         |
-     STRIKE AGAIN
+DANTE: LOOK FOR GERI
+        |
+VIRGIL: REPORT / REDIRECT
+        |
+DESCEND TO FALSIFIERS
+        |
+GRIFFOLINO + CAPOCCHIO
+        |
+SIT / SCRATCH / SPEAK
+        |
+IMITATION OF METALS
+        |
+GENUINE COMPOSITION?
+        |
+NOT VERIFIED BY APPEARANCE
 
-BERTRAN: CARRY + SPEAK
-DANTE (1): LISTEN
-
-HEALING != RELEASE
-ONE CIRCUIT != EXIT
+REPORTED != DIRECT SIGHT
+IMITATED != AUTHENTIC
+AFFLICTION != IDENTITY
 No new element or product</pre>
 <p><b>Notation:</b> <code>[]</code> containment · <code>()</code> fluidity · <code>}{</code> opening the transformation boundary. These are narrative operators, not evidence of physical transmutation.</p>
-<p><b>Rule:</b> The demon <b>STRIKES</b> when a soul returns, while the souls <b>WALK, HEAL and RETURN</b> on the same circuit. Bertran de Born <b>CARRIES and SPEAKS</b>, and Dante <b>LOOKS and LISTENS</b>. Visible repair does not establish escape from recurrence. The poem's depictions are literary imagery, not biological evidence.</p>
+<p><b>Rule:</b> Dante <b>LOOKS</b> for Geri, Virgil <b>REPORTS and REDIRECTS</b>, and afflicted falsifiers <b>SIT, SCRATCH and SPEAK</b>. Griffolino and Capocchio identify themselves and describe deceit or metal imitation. A claimed imitation does not verify the substance, and Virgil's report is not Dante's own sighting.</p>
 <p><a href="../story.html">Read the sealed first journey</a></p>
 </div></aside></div>
-<footer class="foot">ARCHON / Alchemical Living Thread · 000–035 recorded, 036–041 reserved · story-first symbolic elemental cipher.</footer>
+<footer class="foot">ARCHON / Alchemical Living Thread · 000–036 recorded, 037–041 reserved · story-first symbolic elemental cipher.</footer>
 </main>
 <script>
 (()=>{const c=document.getElementById('game'),g=c.getContext('2d'),status=document.getElementById('status');
@@ -80,7 +80,7 @@ for(let k=0;k<8;k++){let a=k*Math.PI/4+frame*.009;rect(x+Math.cos(a)*22,162+Math
 label(chem,x-(chem==='He'?11:5),167,'#fff4d3',15);label(chem==='H'?'DANTE':'VIRGIL',x-22,200,'#ffe6bf',9);
 }
 rect(221,190,44,8,'#d2ae78');rect(217,198,52,32,'#564363');rect(226,202,35,18,'#1c1a35');rect(239,207,8,8,'#d3b7ee');
-label('}{',237,224,'#f5d5a6',9);label('WOUND / RETURN',200,183,'#eec88b',8);
+label('}{',237,224,'#f5d5a6',9);label('IMITATION / DECAY',194,183,'#eec88b',8);
 
 
 
@@ -132,7 +132,7 @@ rect(206,74,73,7,'#ebc77e');rect(206,74,5,98,'#c79a72');rect(275,74,5,98,'#c79a7
 label('HEAL',220,91,'#f9dfb2',8);label('LOOP',219,107,'#d8b9f0',8);
 for(let m=0;m<6;m++){rect(217+m*9,114+(m%2)*8,4,3,'#896ea9')}
 
-rect(27,65,68,50,'#322b4b');rect(32,71,58,4,'#d1ac77');rect(32,106,58,4,'#d1ac77');label('035',48,95,'#ffe4a1',15);
+rect(27,65,68,50,'#322b4b');rect(32,71,58,4,'#d1ac77');rect(32,106,58,4,'#d1ac77');label('036',48,95,'#ffe4a1',15);
 // Paired Li / Be glyph: bound in cipher only; the identity of 3 is held open.
 rect(190,30,105,31,'#3a294e');rect(194,34,97,23,'#20192f');
 label('DISCORD / XXVIII',190,48,'#f6d3a2',10);label('STRIKE / RETURN',191,59,'#f2dbad',8);
@@ -144,7 +144,7 @@ const dx=(keys.has('ArrowRight')||keys.has('KeyD')?1:0)-(keys.has('ArrowLeft')||
 p.x=Math.max(4,Math.min(469,p.x+dx*2.2));if((keys.has('Space')||keys.has('ArrowUp'))&&p.ground){p.vy=-7.5;p.ground=false}
 p.vy+=.42;p.y+=p.vy;if(p.y>=210){p.y=210;p.vy=0;p.ground=true}
 rect(p.x+2,p.y,8,4,'#3a253f');rect(p.x+2,p.y+4,8,5,'#eec5a6');rect(p.x,p.y+9,12,10,'#c96067');rect(p.x+2,p.y+19,3,4,'#3b3455');rect(p.x+8,p.y+19,3,4,'#3b3455');
-rect(0,0,480,24,'#0b1024');label('ARCHON / ALCHEMY 035',8,15,'#ebcd8f',10);label('WITNESSES '+seen.size+'/3',350,15,'#b7dfd7',9);
+rect(0,0,480,24,'#0b1024');label('ARCHON / ALCHEMY 036',8,15,'#ebcd8f',10);label('WITNESSES '+seen.size+'/3',350,15,'#b7dfd7',9);
 requestAnimationFrame(draw)}
 window.addEventListener('keydown',e=>{if(['ArrowLeft','ArrowRight','ArrowUp','Space','KeyA','KeyD','KeyE'].includes(e.code)){keys.add(e.code);if(document.activeElement===c)e.preventDefault();if(e.code==='KeyE'&&!e.repeat)observe()}});
 window.addEventListener('keyup',e=>keys.delete(e.code));window.addEventListener('blur',()=>keys.clear());
