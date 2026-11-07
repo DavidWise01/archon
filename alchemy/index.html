@@ -19,53 +19,52 @@ a{color:#f6d28a}.foot{margin:22px 0;color:var(--mute);font-size:12px}.ledger{dis
 @media(max-width:850px){.grid{grid-template-columns:1fr}main{padding:12px}}
 </style></head>
 <body><main>
-<header class="top"><div><div class="eyebrow">The Living Thread / Second Traversal</div><h1>DANTE <span style="color:var(--gold)">·</span> THE ALCHEMICAL VESSEL</h1><p>Stage 039 of 041 · Inferno XXXII: frozen Caina and Antenora.</p></div><span class="chip">STAGE 039 / {{i}}</span></header>
+<header class="top"><div><div class="eyebrow">The Living Thread / Second Traversal</div><h1>DANTE <span style="color:var(--gold)">·</span> THE ALCHEMICAL VESSEL</h1><p>Stage 040 of 041 · Inferno XXXIII: Ugolino's testimony and Ptolomea.</p></div><span class="chip">STAGE 040 / {{i}}</span></header>
 <div class="grid"><section class="panel"><canvas id="game" width="480" height="270" tabindex="0" aria-label="Playable pixel-art alchemical vessel"></canvas><div class="pad">
-<div class="eyebrow">Cocytus · frozen bodies, visible faces, attributed names</div>
+<div class="eyebrow">Ugolino · remembered hunger, frozen tears and contested claims</div>
 <div class="controls"><button id="left">◀ MOVE</button><button id="right">MOVE ▶</button><button id="jump">↑ JUMP</button><button id="observe">E · OBSERVE</button><button id="reset">↺ RESET</button></div>
-<div class="status" id="status" aria-live="polite">Inferno XXXII: Cocytus FREEZES traitors in Caina and Antenora. Bocca RESISTS identification while Dante QUESTIONS him; another soul NAMES Bocca. Two figures share a hollow at the canto's close. Observe ICE, NAME and PAIR.</div>
-<p style="font-size:12px;margin:12px 0 0">Keyboard: ← → or A / D · Space to jump · E to observe. Next: Inferno XXXIII, Ugolino's account and the souls of Ptolomea.</p>
+<div class="status" id="status" aria-live="polite">Inferno XXXIII: Ugolino GNAWS and RECOUNTS his imprisonment. In Ptolomea, Alberigo CLAIMS souls can descend while bodies continue acting on Earth. Dante does not clear Alberigo's frozen eyes. Observe RECOUNT, CLAIM and REFUSE.</div>
+<p style="font-size:12px;margin:12px 0 0">Keyboard: ← → or A / D · Space to jump · E to observe. Next: Inferno XXXIV, Lucifer, the central inversion and the climb to the stars.</p>
 </div></section>
 <aside class="panel"><div class="pad"><div class="eyebrow">Vessel inventory</div><h2>Minos routes souls; the [6] carbon-life fellowship remains preserved.</h2>
 <div class="tokens"><div class="token"><strong>H</strong><span>(1) Dante · traveler</span></div><div class="token"><strong>He</strong><span>[2] Virgil · guide</span></div><div class="token"><strong>Li</strong><span>(3) Li · identity unresolved</span></div><div class="token"><strong>Be</strong><span>[4] Beatrice · intercessor</span></div></div>
-<div class="tokens" style="margin-top:10px"><div class="token"><strong>B</strong><span>(5) Lucia · toroid</span></div><div class="token"><strong>C</strong><span>[6] Mary · box</span></div></div><div class="ledger"><span class="pip"></span> <strong>Stage 039: Ice, Visibility and Identity</strong></div>
+<div class="tokens" style="margin-top:10px"><div class="token"><strong>B</strong><span>(5) Lucia · toroid</span></div><div class="token"><strong>C</strong><span>[6] Mary · box</span></div></div><div class="ledger"><span class="pip"></span> <strong>Stage 040: Ugolino's Account and the Unverified Claim</strong></div>
 <pre>alpha = omega = [ (1), [2] ]
 
-INFERNO XXXII / COCYTUS
+INFERNO XXXIII / COCYTUS
 
-COCYTUS: FREEZE + CONTAIN
-          |
-CAINA: BROTHERS / FROZEN TEARS
-          |
-ANTENORA: HEADS EXPOSED
-          |
-DANTE: QUESTION / INTERVENE
-          |
-BOCCA: REFUSE TO NAME SELF
-          |
-OTHER SOUL: NAME BOCCA
-          |
-TWO IN ONE HOLLOW / OBSERVED
-          |
-FULL ACCOUNT: NEXT CANTO
+UGOLINO: GNAW / SPEAK
+        |
+TOWER: RECOUNTED PAST
+        |
+PTOLOMEA: FROZEN TEARS
+        |
+ALBERIGO: REQUEST RELIEF
+        |
+CLAIM: SOUL DESCENDS
+       BODY STILL ACTIVE
+        |
+DANTE: QUESTION / REFUSE
+        |
+ICE: NOT REMOVED
 
-BODY FIXED != IDENTITY LOST
-VISIBLE FACE != VERIFIED NAME
-THIRD-PARTY NAME != SELF-REPORT
+SEEN ACTION != REPORTED PAST
+ACTIVE BODY != PROOF OF SOUL
+PROMISE != COMPLETED ACTION
 No new element or product</pre>
 <p><b>Notation:</b> <code>[]</code> containment · <code>()</code> fluidity · <code>}{</code> opening the transformation boundary. These are narrative operators, not evidence of physical transmutation.</p>
-<p><b>Rule:</b> Ice <b>FREEZES</b> traitors but does not erase individual identity. The Alberti brothers <b>TREMBLE</b> and their tears freeze. Bocca <b>REFUSES</b> his name; Dante <b>QUESTIONS and PULLS</b> his hair, and another soul <b>NAMES</b> him. A visible face and an attributed name are different kinds of evidence.</p>
+<p><b>Rule:</b> Ugolino <b>GNAWS and RECOUNTS</b> imprisonment: the present act is observed; the past is his account. In Ptolomea tears <b>FREEZE</b>, Alberigo <b>ASKS and CLAIMS</b>, and Dante <b>QUESTIONS and REFUSES</b> to remove the ice. The soul-body separation is supernatural testimony within the poem, not empirical evidence of consciousness.</p>
 <p><a href="../story.html">Read the sealed first journey</a></p>
 </div></aside></div>
-<footer class="foot">ARCHON / Alchemical Living Thread · 000–039 recorded, 040–041 reserved · story-first symbolic elemental cipher.</footer>
+<footer class="foot">ARCHON / Alchemical Living Thread · 000–040 recorded, 041 reserved · story-first symbolic elemental cipher.</footer>
 </main>
 <script>
 (()=>{const c=document.getElementById('game'),g=c.getContext('2d'),status=document.getElementById('status');
 let p={x:47,y:208,vy:0,ground:false},keys=new Set(),frame=0,seen=new Set(),crossed=false;
 const rect=(x,y,w,h,color)=>{g.fillStyle=color;g.fillRect(Math.round(x),Math.round(y),Math.round(w),Math.round(h))};
 const label=(s,x,y,color='#f8e7b6',size=10)=>{g.fillStyle=color;g.font='bold '+size+'px monospace';g.fillText(s,x,y)};
-function observe(){const x=p.x;if(x<175){seen.add('ice');status.textContent='WITNESS A: ice CONTAINS the Alberti brothers in Caina. Their faces and frozen tears remain visible, but their bodies cannot leave.'}else if(x<320){seen.add('name');status.textContent='WITNESS B: Bocca REFUSES to name himself. Dante QUESTIONS and pulls hair; another soul NAMES Bocca. Keep attribution distinct.'}else{seen.add('pair');status.textContent='WITNESS C: Dante OBSERVES two figures in one hollow, one gnawing the other. Their full story belongs to the next canto.'}if(seen.size===3)status.textContent+=' THREE WITNESSES PRESERVED. NEXT: UGOLINO.'}
-function reset(){p={x:47,y:208,vy:0,ground:false};seen.clear();crossed=false;status.textContent='STAGE 039 reset: FREEZE, OBSERVE, QUESTION, ATTRIBUTE. Identity not inferred from face alone.'}
+function observe(){const x=p.x;if(x<175){seen.add('recount');status.textContent='WITNESS A: Ugolino GNAWS Ruggieri and RECOUNTS the Tower of Hunger. Present gnawing is observed; imprisonment is reported.'}else if(x<320){seen.add('claim');status.textContent='WITNESS B: tears FREEZE over eyes. Alberigo CLAIMS souls depart before bodies stop acting. Supernatural claim is not verified.'}else{seen.add('refuse');status.textContent='WITNESS C: Dante QUESTIONS and does NOT clear Alberigo\'s eyes despite his offer. The promised action remains undone.'}if(seen.size===3)status.textContent+=' THREE WITNESSES PRESERVED. NEXT: LUCIFER AND THE INVERSION.'}
+function reset(){p={x:47,y:208,vy:0,ground:false};seen.clear();crossed=false;status.textContent='STAGE 040 reset: RECOUNT, CLAIM, REFUSE. Report is not witnessed history.'}
 function draw(){
 frame++;rect(0,0,480,270,'#0d0f2b');
 for(let i=0;i<90;i++){let x=(i*73+17)%480,y=(i*59+11)%195;rect(x,y,i%13===0?3:1,i%13===0?3:1,i%4?'#7466a2':'#f3d696')}
@@ -80,7 +79,7 @@ for(let k=0;k<8;k++){let a=k*Math.PI/4+frame*.009;rect(x+Math.cos(a)*22,162+Math
 label(chem,x-(chem==='He'?11:5),167,'#fff4d3',15);label(chem==='H'?'DANTE':'VIRGIL',x-22,200,'#ffe6bf',9);
 }
 rect(221,190,44,8,'#d2ae78');rect(217,198,52,32,'#564363');rect(226,202,35,18,'#1c1a35');rect(239,207,8,8,'#d3b7ee');
-label('}{',237,224,'#f5d5a6',9);label('FREEZE / ATTRIBUTE',189,183,'#eec88b',8);
+label('}{',237,224,'#f5d5a6',9);label('REPORT / QUESTION',190,183,'#eec88b',8);
 
 
 
@@ -115,41 +114,41 @@ label('}{',237,224,'#f5d5a6',9);label('FREEZE / ATTRIBUTE',189,183,'#eec88b',8);
 
 
 
- // Inferno XXXII: frozen lake, Caina and Antenora, faces above the ice.
-rect(0,137,480,96,'#31455c');rect(0,170,480,63,'#79abc3');
-for(let k=0;k<31;k++){const x=(k*47)%480,y=179+(k*19)%46;rect(x,y,18,2,k%2?'#a6d6e4':'#c3e3ea')}
-for(let k=0;k<6;k++){const x=35+k*73,y=181+(k%2)*14;
-rect(x,y-17,16,15,'#cba99c');rect(x-4,y-2,24,21,'#7695aa');
-rect(x+4,y-12,3,3,'#382e3e');rect(x+13,y-12,3,3,'#382e3e');
-if(k<2)rect(x+8,y-1,5,5,'#d9eff3')}
-rect(278,160,19,17,'#ca9c97');rect(276,178,23,24,'#7e8ca9');
-rect(319,166,18,16,'#caa396');rect(315,181,25,20,'#7d7291');
-rect(316,171,8,4,'#a26e6b');
-rect(374,168,19,17,'#cfa696');rect(407,173,18,16,'#caa18e');
-rect(377,181,44,13,'#897a96');
-rect(391,181,12,5,'#a9696b');
-label('CAINA / ICE',26,135,'#d6eef2',8);
-label('BOCCA / ANTENORA',264,140,'#deecf1',8);
-label('PAIR / UNRESOLVED',367,157,'#deecf1',8);
+
+ // Inferno XXXIII: Ugolino and Ruggieri; frozen tear-sealed eyes of Ptolomea.
+rect(0,137,480,96,'#2d435c');rect(0,170,480,63,'#6b9bb5');
+for(let k=0;k<27;k++){const x=(k*53)%475,y=179+(k*11)%43;rect(x,y,17,2,k%2?'#a8d8e7':'#c1e2ec')}
+rect(62,171,31,33,'#6e7196');
+rect(68,152,19,19,'#c9a79a');
+rect(99,183,23,25,'#7d718a');rect(101,164,19,18,'#d1a999');
+rect(83,172,22,5,'#a77675');
+rect(285,180,26,26,'#798eaa');rect(290,160,17,19,'#cda99b');
+rect(290,171,17,3,'#d9eef4');rect(290,175,17,3,'#a0d7e5');
+rect(350,182,27,26,'#798eaa');rect(355,162,17,19,'#cba69a');
+rect(355,174,17,4,'#d9eef4');
+for(let k=0;k<5;k++){const x=281+k*19,y=200+(k%2)*5;rect(x,y,12,3,'#c2e4eb')}
+label('UGOLINO / RUGGIERI',29,137,'#edf0ed',8);
+label('PTOLOMEA / FROZEN TEARS',270,140,'#edf0ed',8);
+label('CLAIM IS NOT VERIFICATION',267,153,'#dce7f0',8);
 
 rect(203,76,80,95,'#5d4b76');rect(209,82,68,89,'#1d172e');
 rect(206,74,73,7,'#ebc77e');rect(206,74,5,98,'#c79a72');rect(275,74,5,98,'#c79a72');
-label('ICE',222,91,'#f9dfb2',8);label('NAME',221,107,'#d8b9f0',8);
+label('ASK',222,91,'#f9dfb2',8);label('CLAIM',215,107,'#d8b9f0',8);
 for(let m=0;m<6;m++){rect(217+m*9,114+(m%2)*8,4,3,'#896ea9')}
 
-rect(27,65,68,50,'#322b4b');rect(32,71,58,4,'#d1ac77');rect(32,106,58,4,'#d1ac77');label('039',48,95,'#ffe4a1',15);
+rect(27,65,68,50,'#322b4b');rect(32,71,58,4,'#d1ac77');rect(32,106,58,4,'#d1ac77');label('040',48,95,'#ffe4a1',15);
 // Paired Li / Be glyph: bound in cipher only; the identity of 3 is held open.
 rect(190,30,105,31,'#3a294e');rect(194,34,97,23,'#20192f');
-label('COCYTUS / XXXII',191,48,'#f6d3a2',10);label('FROZEN / ATTRIBUTED',184,59,'#f2dbad',8);
-label('FACE != NAME',206,72,'#e1c5ee',8);
-label('ICE != ANONYMITY',195,122,'#d6bedc',8);
+label('PTOLOMEA / XXXIII',189,48,'#f6d3a2',10);label('TESTIMONY / EYES',187,59,'#f2dbad',8);
+label('CLAIM != SIGHT',201,72,'#e1c5ee',8);
+label('PROMISE != ACTION',192,122,'#d6bedc',8);
 for(let k=0;k<12;k++){const y=80+k*7;rect(242+Math.sin(k*.7+frame*.021)*8,y,2,3,'#d8bfe9')}
 
 const dx=(keys.has('ArrowRight')||keys.has('KeyD')?1:0)-(keys.has('ArrowLeft')||keys.has('KeyA')?1:0);
 p.x=Math.max(4,Math.min(469,p.x+dx*2.2));if((keys.has('Space')||keys.has('ArrowUp'))&&p.ground){p.vy=-7.5;p.ground=false}
 p.vy+=.42;p.y+=p.vy;if(p.y>=210){p.y=210;p.vy=0;p.ground=true}
 rect(p.x+2,p.y,8,4,'#3a253f');rect(p.x+2,p.y+4,8,5,'#eec5a6');rect(p.x,p.y+9,12,10,'#c96067');rect(p.x+2,p.y+19,3,4,'#3b3455');rect(p.x+8,p.y+19,3,4,'#3b3455');
-rect(0,0,480,24,'#0b1024');label('ARCHON / ALCHEMY 039',8,15,'#ebcd8f',10);label('WITNESSES '+seen.size+'/3',350,15,'#b7dfd7',9);
+rect(0,0,480,24,'#0b1024');label('ARCHON / ALCHEMY 040',8,15,'#ebcd8f',10);label('WITNESSES '+seen.size+'/3',350,15,'#b7dfd7',9);
 requestAnimationFrame(draw)}
 window.addEventListener('keydown',e=>{if(['ArrowLeft','ArrowRight','ArrowUp','Space','KeyA','KeyD','KeyE'].includes(e.code)){keys.add(e.code);if(document.activeElement===c)e.preventDefault();if(e.code==='KeyE'&&!e.repeat)observe()}});
 window.addEventListener('keyup',e=>keys.delete(e.code));window.addEventListener('blur',()=>keys.clear());
