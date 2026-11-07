@@ -1,0 +1,63 @@
+{
+  "protocol": "archon/alchemical-living-thread/ascent-v1",
+  "chapter": "Purgatorio I",
+  "ascent": 1,
+  "identity": "{{i}}",
+  "parent": "alchemy/041.json",
+  "parentBlobSha": "034ecc7aeded8b6732abe05c61f1890d06f1155b",
+  "appendOnly": true,
+  "previousTraversal": "Inferno 041 sealed",
+  "scene": "Dawn below Mount Purgatory — the four stars, Cato, washing the face and binding a rush",
+  "story": [
+    "Dante and Virgil emerge from the underground passage onto the shore of the island of Mount Purgatory. The sky opens above them at the first light of dawn.",
+    "Dante sees four bright stars in the southern sky and feels the change from Hell's enclosed darkness to open air.",
+    "Cato of Utica, guardian of the mountain, confronts the travelers and asks how they have escaped the eternal prison.",
+    "Virgil explains that Dante is living and has been guided here at the request of a woman from Heaven. Cato permits them to continue and orders Virgil to wash Hell's grime from Dante's face and gird him with a humble rush.",
+    "Virgil leads Dante to the shore, washes his face with dew, and picks a flexible rush to bind him. In the poem the rush springs back where it was plucked.",
+    "With the first ascent preparation completed, Dante and Virgil turn toward the mountain; the arriving angelic boat and new souls belong to Purgatorio II."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Dante",
+      "semantic": "From enclosed darkness to new visible horizon",
+      "somatic": "EMERGE_LOOK_UP_BREATHE"
+    },
+    {
+      "actor": "Cato",
+      "semantic": "Guardian grants passage with conditions",
+      "somatic": "QUESTION_PERMIT_DIRECT"
+    },
+    {
+      "actor": "Virgil",
+      "semantic": "Prepare the traveler for the ascent",
+      "somatic": "WASH_GIRD_GUIDE"
+    },
+    {
+      "actor": "Shore rush",
+      "semantic": "Humility is embodied in a bendable plant",
+      "somatic": "BEND_BIND_REGROW"
+    }
+  ],
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "emergence",
+      "action": "LOOK at dawn and four stars",
+      "observable": "open sky and coastal horizon"
+    },
+    {
+      "id": "B",
+      "semantic": "permission",
+      "action": "LISTEN to Cato",
+      "observable": "guardian's instructions"
+    },
+    {
+      "id": "C",
+      "semantic": "preparation",
+      "action": "WASH Dante and BIND the rush",
+      "observable": "clean face and rush girdle"
+    }
+  ],
+  "next": "Purgatorio II — angel's boat carries arriving souls; Casella sings; Cato calls them onward",
+  "sealInfernoUntouched": true
+}
