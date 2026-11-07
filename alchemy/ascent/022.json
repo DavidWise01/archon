@@ -1,0 +1,68 @@
+{
+  "protocol": "archon/alchemical-living-thread/ascent-v1",
+  "chapter": "Purgatorio XXII",
+  "ascent": 22,
+  "identity": "{{i}}",
+  "parent": "alchemy/ascent/021.json",
+  "parentBlobSha": "54b883fb9aeef7d1b81add240bfbd1a3395a9c63",
+  "appendOnly": true,
+  "previousTraversal": "Inferno 041 sealed",
+  "scene": "Fifth P erased in retrospect; Statius reveals his prodigality and secret faith; three poets reach the first tree of temperance",
+  "story": [
+    "The angel of the fifth terrace has already brushed Dante's forehead and removed the fifth P when the canto opens. A shortened beatitude blesses those who thirst for justice, and the three poets climb more lightly. Only two P marks remain.",
+    "Virgil asks Statius why he was on the terrace of avarice. Statius corrects the assumption: his fault was prodigality, reckless expenditure, which is corrected on the same terrace as its opposite, hoarding.",
+    "Statius says Virgil's poetry had two formative effects: the Aeneid taught him the art of poetry, while the fourth Eclogue helped draw him toward Christian faith. He concealed his conversion out of fear and spent a long time on the terrace of sloth.",
+    "Virgil and Statius converse affectionately about Greek and Roman poets and figures dwelling in Limbo, while Dante listens with admiration.",
+    "At the sixth terrace, they find a strange tree shaped like an inverted fir, fragrant with fruit and watered by a clear stream falling from the cliff. A disembodied voice forbids eating and proclaims examples of temperance, including Mary at Cana, Daniel, and John the Baptist.",
+    "The poets continue beside the tree. The gluttony's discipline has begun, but no sixth P is removed in this canto."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Dante",
+      "semantic": "An angelic cleansing already witnessed in narrative retrospect reduces marks to two, enabling lighter climbing",
+      "somatic": "RECEIVE_PRIOR_TOUCH_CLIMB_LISTEN_LOOK_REFRAIN"
+    },
+    {
+      "actor": "Statius",
+      "semantic": "Opposite forms of imbalance can require correction on the same terrace; an inherited text can guide without controlling a reader",
+      "somatic": "EXPLAIN_CONFESS_RECOGNIZE"
+    },
+    {
+      "actor": "Virgil",
+      "semantic": "The poet receives evidence of the influence of his work while continuing as a companion and guide",
+      "somatic": "ASK_LISTEN_DISCUSS_GUIDE"
+    },
+    {
+      "actor": "Tree and unseen voice",
+      "semantic": "The fruit's attraction and the spoken prohibition introduce temperance, not a meal",
+      "somatic": "BEAR_FRUIT_WATER_CALL_REFRAIN"
+    }
+  ],
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "fifth mark removed",
+      "action": "RECALL the angel's recent touch and HEAR the beatitude while CLIMBING",
+      "observable": "Dante's fifth P is stated erased at the canto opening; count changes three to two"
+    },
+    {
+      "id": "B",
+      "semantic": "Statius's two debts to poetry",
+      "action": "HEAR Statius CLARIFY prodigality and RECOUNT Virgil's influence on poetry and belief",
+      "observable": "Statius's account is his testimony, not independent proof of another person's intention"
+    },
+    {
+      "id": "C",
+      "semantic": "tree of temperance",
+      "action": "SEE the inverted tree and stream, HEAR the unseen voice, and REFRAIN from its fruit",
+      "observable": "the tree, water and injunction are encountered; gluttony remains to be cleansed"
+    }
+  ],
+  "alchemicalReading": "Possessiveness and wastefulness are opposite distortions of attachment. The fifth cleansing frees a measure of the burden while an inherited poem becomes a noncoercive source of guidance; the tree introduces disciplined desire.",
+  "invariant": "The opening retrospectively establishes an angelic erasure from three to two P marks. Statius's correction concerns prodigality, not avarice; the tree does not remove another mark.",
+  "previousP": 3,
+  "remainingP": 2,
+  "marksRemovedThisChapter": 1,
+  "next": "Purgatorio XXIII — the emaciated gluttons and Dante's encounter with Forese Donati",
+  "sealInfernoUntouched": true
+}
