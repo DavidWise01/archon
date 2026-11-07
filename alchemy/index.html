@@ -102,20 +102,20 @@ label('}{',237,224,'#f5d5a6',9);label('ESCAPE / PITCH',195,183,'#eec88b',8);
 
 
 
- // Inferno XXI: opaque boiling pitch, hidden barrators and hooked demons.
-rect(0,137,480,96,'#625360');
-rect(10,169,460,60,'#292a35');
-rect(18,177,444,44,'#1a1c29');
-for(let k=0;k<23;k++){const x=30+(k*43)%423,y=187+(k*13+frame*.52)%28;rect(x,y,8,3,k%3?'#4f5360':'#75727a')}
-const surfY=178+Math.sin(frame*.04)*11;
-rect(152,surfY,13,12,'#c7a68f');rect(148,surfY+12,21,7,'#7d6b74');
-const demonX=257+Math.sin(frame*.016)*24;
-rect(demonX,151,20,22,'#aa5e65');rect(demonX+4,142,12,12,'#a46a6d');
-rect(demonX-4,140,5,10,'#bd9a83');rect(demonX+19,140,5,10,'#bd9a83');
-rect(demonX+25,139,3,56,'#c2a58b');rect(demonX+24,192,12,3,'#c2a58b');
-rect(338,149,18,17,'#824f64');rect(342,138,11,12,'#c3917d');
-label('PITCH / HIDDEN',41,145,'#e5d1bd',8);
-label('MALEBRANCHE',260,128,'#ebc9b2',8);
+
+ // Inferno XXII: Ciampolo dives; Alichino and Calcabrina collide in pitch.
+rect(0,137,480,96,'#625361');
+rect(10,170,460,59,'#302d3b');rect(18,178,445,44,'#191c2a');
+for(let k=0;k<26;k++){const x=27+(k*37)%428,y=184+(k*17+frame*.5)%29;rect(x,y,8,3,k%2?'#77727e':'#555364')}
+const dive=170+Math.min(39,(frame%135)*.65);
+rect(105,dive,13,12,'#caaa94');rect(102,dive+12,18,10,'#857080');
+const ax=250+Math.sin(frame*.09)*24,ay=167+Math.cos(frame*.08)*12;
+rect(ax,ay,21,21,'#a46872');rect(ax+4,ay-11,13,13,'#c18b83');rect(ax-3,ay-15,6,9,'#caa08f');
+const cx=295-Math.sin(frame*.09)*24,cy=173-Math.cos(frame*.08)*12;
+rect(cx,cy,21,21,'#8b5165');rect(cx+4,cy-11,13,13,'#b47d7d');rect(cx+19,cy-15,5,9,'#c5a28b');
+for(let q=0;q<4;q++)rect(255+q*19,205+Math.sin(frame*.1+q)*5,13,4,'#9995a0');
+label('CIAMPOLO ESCAPES',39,147,'#f0d7bc',8);
+label('ALICHINO + CALCABRINA',232,129,'#ecd2b6',8);
 
 rect(203,76,80,95,'#5d4b76');rect(209,82,68,89,'#1d172e');
 rect(206,74,73,7,'#ebc77e');rect(206,74,5,98,'#c79a72');rect(275,74,5,98,'#c79a72');
