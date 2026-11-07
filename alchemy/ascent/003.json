@@ -1,0 +1,68 @@
+{
+  "protocol": "archon/alchemical-living-thread/ascent-v1",
+  "chapter": "Purgatorio III",
+  "ascent": 3,
+  "identity": "{{i}}",
+  "parent": "alchemy/ascent/002.json",
+  "parentBlobSha": "5740df46455d628189b2cceeb1542ea3b821b8ab",
+  "appendOnly": true,
+  "previousTraversal": "Inferno 041 sealed",
+  "scene": "Dante's shadow, Virgil's shadowless shade, a steep cliff and Manfred's appeal",
+  "story": [
+    "After Cato's rebuke Dante stays close to Virgil and begins moving toward the mountain. The sunlight casts Dante's shadow ahead of him, but Virgil's shade casts none; for a moment Dante fears his guide has left.",
+    "Virgil reassures him and explains that after death a soul may appear in a body-like form without an ordinary physical body; he cautions against presuming that reason can fully grasp mysteries.",
+    "The travelers reach a sheer slope that they cannot climb directly. They encounter a company of souls moving slowly toward them, hesitant and compared to sheep.",
+    "The souls are surprised by Dante's shadow, proof within the story that he is living. Dante and Virgil ask them for a passable route.",
+    "Manfred, the former king of Sicily, steps forward with a wounded brow and chest and identifies himself. He tells Dante that despite his excommunication he turned to divine mercy at death.",
+    "Manfred asks Dante to tell his daughter Constance what he has learned, for the prayers of the living can help shorten the wait imposed on these late arrivals. The travelers prepare to continue upward."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Dante",
+      "semantic": "Living embodiment makes a visible shadow",
+      "somatic": "WALK_CAST_SHADOW_QUESTION"
+    },
+    {
+      "actor": "Virgil",
+      "semantic": "Guide remains present though his shade blocks no sunlight",
+      "somatic": "REASSURE_EXPLAIN_GUIDE"
+    },
+    {
+      "actor": "Waiting souls",
+      "semantic": "Movement toward purification is slowed, not prohibited",
+      "somatic": "APPROACH_PAUSE_SHOW_PATH"
+    },
+    {
+      "actor": "Manfred",
+      "semantic": "Final repentance and mercy are distinguished from worldly condemnation within the poem",
+      "somatic": "STEP_FORWARD_IDENTIFY_REQUEST"
+    },
+    {
+      "actor": "Steep mountain",
+      "semantic": "A desired direction does not guarantee a traversable route",
+      "somatic": "BLOCK_ROUTE_REDIRECT"
+    }
+  ],
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "shadow contrast",
+      "action": "WALK into sunlight, CAST a shadow and NOTICE Virgil casts none",
+      "observable": "Dante's shadow visible; Virgil still present"
+    },
+    {
+      "id": "B",
+      "semantic": "finding a passage",
+      "action": "APPROACH the cliff and ASK waiting souls for a way",
+      "observable": "steep face requires a new route"
+    },
+    {
+      "id": "C",
+      "semantic": "Manfred's testimony",
+      "action": "HEAR Manfred IDENTIFY himself and REQUEST remembrance",
+      "observable": "speaker identified; his account of mercy is reported"
+    }
+  ],
+  "next": "Purgatorio IV — the narrow climb, the sun's strange position and Belacqua's waiting",
+  "sealInfernoUntouched": true
+}
