@@ -1,0 +1,73 @@
+{
+  "protocol": "archon/alchemical-living-thread/ascent-v1",
+  "chapter": "Purgatorio XVII",
+  "ascent": 17,
+  "identity": "{{i}}",
+  "parent": "alchemy/ascent/016.json",
+  "parentBlobSha": "17b5068188169fc98f8e1173cf6bda5a1f14471c",
+  "appendOnly": true,
+  "previousTraversal": "Inferno 041 sealed",
+  "scene": "Smoke clears; visions expose wrath; the third P is erased; Virgil explains the seven terraces as disorders of love",
+  "story": [
+    "Emerging from the blinding smoke, Dante sees the late sunlight returning. Then his mind is seized by visionary examples of anger's devastation.",
+    "He sees Procne's vengeance upon her child, Haman punished upon the gallows, and Queen Amata's despairing death. These are visions, not events occurring anew before the pilgrims.",
+    "An angel greets Dante and Virgil with peace, brushes Dante's forehead and removes the third P. The ascent out of anger begins; four marks remain.",
+    "They reach the fourth terrace as evening closes and they must pause. Dante asks Virgil how the mountain's terraces relate to one another.",
+    "Virgil explains that love moves every moral action. Its direction and measure can become disordered: love bent toward another's harm produces pride, envy and wrath; insufficient love of the good produces sloth; excessive attachment to lesser goods underlies avarice, gluttony and lust.",
+    "Dante listens in the gathering night. The map of the mountain has become a map of love, but the next terrace's running penitents and further analysis wait until the following canto."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Dante",
+      "semantic": "Visionary consequences of rage precede a witnessed reduction in the moral burden",
+      "somatic": "EMERGE_SEE_VISIONS_RECEIVE_CLIMB_ASK"
+    },
+    {
+      "actor": "Angel of peace",
+      "semantic": "The completed terrace of anger receives a discrete cleansing event",
+      "somatic": "BID_PEACE_TOUCH_ERASE"
+    },
+    {
+      "actor": "Virgil",
+      "semantic": "The seven terraces classify misdirected, deficient or excessive love",
+      "somatic": "GUIDE_EXPLAIN_MAP"
+    },
+    {
+      "actor": "Visions of Procne, Haman and Amata",
+      "semantic": "Examples of wrath's consequences are represented scenes, not new direct testimony",
+      "somatic": "APPEAR_WARN_FADE"
+    },
+    {
+      "actor": "Evening",
+      "semantic": "The night boundary pauses further ascent without reversing achieved purification",
+      "somatic": "DARKEN_HOLD"
+    }
+  ],
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "wrath's examples",
+      "action": "SEE the visionary examples of Procne, Haman and Amata",
+      "observable": "three visions are distinguished from physical events on the terrace"
+    },
+    {
+      "id": "B",
+      "semantic": "third cleansing",
+      "action": "HEAR the angel's peace and RECEIVE the touch that ERASES one P",
+      "observable": "forehead count changes from five to four"
+    },
+    {
+      "id": "C",
+      "semantic": "map of love",
+      "action": "ASK Virgil and HEAR his classification of pride, envy, wrath, sloth, avarice, gluttony and lust",
+      "observable": "an explanation is received while evening halts ascent; four P marks remain"
+    }
+  ],
+  "alchemicalReading": "After witnessing rage as destructive motion, the traveler receives another exact release. Virgil reveals the underlying principle: not the absence of love, but its direction and proportion, determines the mountain's corrective operations.",
+  "invariant": "Only the angel's witnessed erasure changes marks, 5 → 4. Visionary examples do not constitute new historical events; the nighttime pause does not undo cleansing.",
+  "previousP": 5,
+  "remainingP": 4,
+  "marksRemovedThisChapter": 1,
+  "next": "Purgatorio XVIII — Virgil continues explaining love and free choice; the slothful run in haste, and Dante sleeps",
+  "sealInfernoUntouched": true
+}
