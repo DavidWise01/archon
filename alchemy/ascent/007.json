@@ -1,0 +1,69 @@
+{
+  "protocol": "archon/alchemical-living-thread/ascent-v1",
+  "chapter": "Purgatorio VII",
+  "ascent": 7,
+  "identity": "{{i}}",
+  "parent": "alchemy/ascent/006.json",
+  "parentBlobSha": "fe0b6a680e225cec9d7e1d364c25a6b6f5d9bf10",
+  "appendOnly": true,
+  "previousTraversal": "Inferno 041 sealed",
+  "scene": "Sordello guides the poets at sunset to the flowered valley of negligent rulers",
+  "story": [
+    "Sordello learns that Virgil is the celebrated poet from Mantua and honors him with reverence. Virgil explains his state: he lacks the hope of Paradise despite his virtue, and Sordello listens.",
+    "Sordello offers to guide Dante and Virgil as far as he can, but warns that after sunset one cannot climb Mount Purgatory. Darkness suspends upward movement rather than sending them back.",
+    "He leads them along an easier contour to a ledge overlooking a small valley, brilliant with grass, flowers and perfume. From below rises a hymn sung by souls who once held worldly power.",
+    "Sordello identifies rulers who delayed repentance amid affairs of state, including Rudolf of Habsburg, Ottokar of Bohemia, Philip III of France, Henry I of Navarre, Peter III of Aragon and Charles I of Anjou. Their standing and relationships belong to his guided account, not new claims made by Dante.",
+    "The travelers settle where they can observe the valley as night approaches. The mountain's time boundary sets the next action: wait until morning before attempting further ascent."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Sordello",
+      "semantic": "Recognition of the poet becomes respectful guidance within a time boundary",
+      "somatic": "RECOGNIZE_BOW_GUIDE_IDENTIFY"
+    },
+    {
+      "actor": "Virgil",
+      "semantic": "A knowledgeable guide can still have a limit to his destination",
+      "somatic": "EXPLAIN_LISTEN_FOLLOW"
+    },
+    {
+      "actor": "Sunset",
+      "semantic": "A rising path is not always accessible: nighttime halts climbing in the poem",
+      "somatic": "SET_DARKEN_HALT"
+    },
+    {
+      "actor": "Rulers in the valley",
+      "semantic": "Royal power on Earth cannot bypass delay on this mountain",
+      "somatic": "WAIT_SING"
+    },
+    {
+      "actor": "Dante",
+      "semantic": "An observer can pause without retreating and retain attributed identities",
+      "somatic": "LOOK_DESCEND_TO_LEDGE_LISTEN_WAIT"
+    }
+  ],
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "recognition and guidance",
+      "action": "HEAR Virgil identify himself; WATCH Sordello honor him and offer guidance",
+      "observable": "Sordello responds to the identity and leads the pair onward"
+    },
+    {
+      "id": "B",
+      "semantic": "sunset limit",
+      "action": "WATCH daylight fade; HEAR that the mountain cannot be climbed at night",
+      "observable": "upward progress is deferred, not reversed"
+    },
+    {
+      "id": "C",
+      "semantic": "flowered valley and rulers",
+      "action": "LOOK into the flowered valley and LISTEN to rulers sing while Sordello identifies them",
+      "observable": "the waiting rulers are visible; personal identifications are attributed to Sordello"
+    }
+  ],
+  "alchemicalReading": "The furnace changes from motion to holding: the path remains open in principle while the clock closes it for the night.",
+  "invariant": "A temporal gate can suspend ascent without canceling previous progress, destroying identity or converting waiting into retreat.",
+  "next": "Purgatorio VIII — evening prayer, two guarding angels, the serpent and Nino Visconti",
+  "sealInfernoUntouched": true
+}
