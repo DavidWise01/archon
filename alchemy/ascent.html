@@ -1,56 +1,54 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ARCHON — The Ascent · Purgatorio II</title><style>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ARCHON — The Ascent · Purgatorio III</title><style>
 :root{color-scheme:dark}*{box-sizing:border-box}body{background:linear-gradient(#11142d,#262542);color:#f3e6d4;font:15px/1.5 system-ui,Segoe UI,sans-serif;margin:0}main{max-width:1120px;padding:20px;margin:auto}h1{font-size:clamp(26px,5vw,46px);margin:5px 0}h2{font-size:18px;margin:0 0 8px}.eyebrow{font:700 11px monospace;letter-spacing:.15em;color:#f0c38d}.grid{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(260px,1fr);gap:15px;margin-top:17px}.panel{border:1px solid #776786;background:#201e36;border-radius:13px;padding:16px;min-width:0}canvas{display:block;width:100%;aspect-ratio:16/9;image-rendering:pixelated;background:#191d38;border-radius:9px;border:1px solid #927e9a}.controls{display:flex;gap:9px;flex-wrap:wrap;margin:12px 0}button{background:#4d3d5a;border:1px solid #aa8291;color:#fff;border-radius:8px;padding:10px 14px;font-weight:700;cursor:pointer}button:hover{background:#65506b}button:focus-visible{outline:2px solid #f9d49b}p{color:#dbcede}.status{background:#302943;border-radius:8px;min-height:80px;padding:12px}pre{white-space:pre-wrap;background:#17182d;border-radius:9px;padding:14px;color:#eacba5;font-size:12px;line-height:1.7}a{color:#b8dfe4}.counter{color:#a8dccb;font:700 12px monospace}footer{color:#b1a7bb;font-size:12px;margin-top:20px} @media(max-width:740px){.grid{grid-template-columns:1fr}}
-</style></head><body><main><header><div class="eyebrow">ARCHON / THE LIVING THREAD / THE ASCENT</div><h1>Purgatorio II <span style="color:#ffd09a">· The Boat and the Song</span></h1><p>A brilliant boat reaches the shore. Casella sings. Cato sends the souls onward.</p></header>
-<div class="grid"><section class="panel"><canvas id="game" width="640" height="360" tabindex="0" aria-label="Playable pixel art: the angelic boat arrives, Casella sings and Cato calls the souls toward Mount Purgatory"></canvas><div class="controls"><button id="left">◀ WALK</button><button id="right">WALK ▶</button><button id="observe">E · OBSERVE</button><button id="reset">↺ RESET</button></div><div class="counter" id="counter">WITNESSES 0 / 3</div><p class="status" id="status" aria-live="polite">The angel brings new souls to shore. Meet Casella, listen to his song, then answer Cato's call to climb.</p><p>Keyboard: A / D or ← / → to walk; E to observe. Observe the landing, Casella's song, and the summons to resume the climb.</p></section>
-<aside class="panel"><h2>Today's encounter</h2><p>The angelic helmsman sets a boat of souls upon the shore. Their psalm fades as Dante recognizes Casella. His attempted embrace meets only air. Casella sings, and the crowd becomes still; Cato rebukes their delay and points them toward the mountain.</p><pre>PURGATORIO / II
+</style></head><body><main><header><div class="eyebrow">ARCHON / THE LIVING THREAD / THE ASCENT</div><h1>Purgatorio III <span style="color:#ffd09a">· The Shadow and Manfred</span></h1><p>The mountain rises steeply. Dante casts a shadow; Virgil does not. Manfred asks to be remembered.</p></header>
+<div class="grid"><section class="panel"><canvas id="game" width="640" height="360" tabindex="0" aria-label="Playable pixel art: Dante's shadow, the steep mountain, Virgil and Manfred"></canvas><div class="controls"><button id="left">◀ WALK</button><button id="right">WALK ▶</button><button id="observe">E · OBSERVE</button><button id="reset">↺ RESET</button></div><div class="counter" id="counter">WITNESSES 0 / 3</div><p class="status" id="status" aria-live="polite">Dante sees his shadow but none from Virgil. Find a route up the steep mountain and hear Manfred's request.</p><p>Keyboard: A / D or ← / → to walk; E to observe. Observe the shadow, the blocked slope, and Manfred's testimony.</p></section>
+<aside class="panel"><h2>Today's encounter</h2><p>Dante fears Virgil has disappeared when only Dante casts a shadow. Virgil reassures him. The mountain face is too steep for a direct climb; waiting souls show the way. Manfred identifies himself and asks Dante to tell Constance that divine mercy met him at death.</p><pre>PURGATORIO / III
       |
-ANGEL: APPROACH + LAND
+DANTE: CAST SHADOW
+VIRGIL: NO SHADOW
       |
-SOULS: SING + DISEMBARK
+CLIFF: BLOCK ROUTE
       |
-DANTE: RECOGNIZE CASELLA
+SOULS: SHOW PASSAGE
       |
-REACH / EMBRACE FAILS
+MANFRED: IDENTIFY
       |
-CASELLA: SING
+MERCY / REMEMBRANCE
       |
-CATO: REBUKE
-      |
-RESUME ASCENT</pre><p>The music can hold them still. The mountain still waits.</p><p><a href="./">The sealed Inferno</a> · <a href="https://github.com/DavidWise01/archon/blob/main/alchemy/ascent/002.json">Canonical ascent record</a></p></aside></div><footer>Original sealed 41-tick journey preserved · Inferno's sealed Stage 041 preserved · This ascent is a new append-only branch.</footer></main><script>
+CONTINUE ASCENT</pre><p>A shadow proves the traveler has a living body in the poem; a steep face calls for another route.</p><p><a href="./">The sealed Inferno</a> · <a href="https://github.com/DavidWise01/archon/blob/main/alchemy/ascent/003.json">Canonical ascent record</a></p></aside></div><footer>Original sealed 41-tick journey preserved · Inferno's sealed Stage 041 preserved · This ascent is a new append-only branch.</footer></main><script>
 'use strict';
 const c=document.getElementById('game'),ctx=c.getContext('2d'),status=document.getElementById('status'),counter=document.getElementById('counter');
 let player=46,frame=0;const held=new Set(),seen=new Set();
 const rect=(x,y,w,h,color)=>{ctx.fillStyle=color;ctx.fillRect(x,y,w,h)};
 const label=(str,x,y,color='#f9e4c3',size=11)=>{ctx.fillStyle=color;ctx.font='bold '+size+'px monospace';ctx.fillText(str,x,y)};
 
-function witness(){const zone=player<210?'arrival':player<410?'casella':'call';seen.add(zone);
+
+function witness(){const zone=player<210?'shadow':player<410?'cliff':'manfred';seen.add(zone);
 const words={
-arrival:'WITNESS A: the angel steers the bright boat to shore. The souls sing, disembark and ask their way.',
-casella:'WITNESS B: Dante tries to embrace Casella, but the shade has no solid body. Casella sings while the travelers listen.',
-call:'WITNESS C: Cato interrupts the song and calls the souls to their work. They scatter toward the mountain.'
+shadow:'WITNESS A: Dante casts a long shadow. Virgil casts none, though he is still present and speaking.',
+cliff:'WITNESS B: the cliff blocks a direct climb. The slow-moving souls reveal a path around the wall.',
+manfred:'WITNESS C: Manfred shows his wounds and asks Dante to carry word of his repentance and hope to Constance.'
 };
-status.textContent=words[zone]+(seen.size===3?' THREE WITNESSES COMPLETE. THE ASCENT RESUMES.':'');counter.textContent='WITNESSES '+seen.size+' / 3'}
-function reset(){player=46;seen.clear();status.textContent='The angel brings new souls to shore. Meet Casella, listen to his song, then answer Cato\'s call to climb.';counter.textContent='WITNESSES 0 / 3'}
+status.textContent=words[zone]+(seen.size===3?' THREE WITNESSES COMPLETE. THE CLIMB CONTINUES.':'');counter.textContent='WITNESSES '+seen.size+' / 3'}
+function reset(){player=46;seen.clear();status.textContent='Dante sees his shadow but none from Virgil. Find a route up the steep mountain and hear Manfred\'s request.';counter.textContent='WITNESSES 0 / 3'}
 function draw(){frame++;
-rect(0,0,640,360,'#293451');rect(0,0,640,124,'#38415f');rect(0,124,640,107,'#d3978a');
-rect(0,231,640,78,'#658dad');rect(0,301,640,59,'#b39783');
-rect(0,185,640,6,'#f0c29a');for(let i=0;i<20;i++){const x=(i*71)%640,y=252+(i*13)%45;rect(x,y,23,2,i%2?'#b5dbe2':'#d8ebed')}
-const boatShift=18+Math.sin(frame*.018)*5;
-rect(24+boatShift,217,170,12,'#e9d9c5');rect(45+boatShift,229,127,13,'#8a6876');
-rect(108+boatShift,125,5,92,'#e9d9c5');
-rect(112+boatShift,137,72,51,'#f6e6cc');rect(112+boatShift,137,72,8,'#f0d4a4');
-for(let i=0;i<7;i++){let x=48+boatShift+i*19;rect(x,199+(i%2)*6,10,10,'#dbbcad');rect(x-3,208+(i%2)*6,16,15,i%2?'#9884a5':'#b48b91')}
-rect(120+boatShift,110,14,17,'#f2dbc0');rect(116+boatShift,127,23,29,'#f3e1c4');rect(107+boatShift,138,41,4,'#f6e4cf');
-label('ANGEL / ARRIVAL',32,87,'#fff0d7',12);
-rect(305,248,18,18,'#dab49f');rect(300,266,28,36,'#927b9b');
-rect(339,250,18,18,'#dcb9a7');rect(334,268,27,35,'#b77782');
-const reach=9+Math.sin(frame*.06)*5;rect(323,278,reach,5,'#d5b0a5');
-label('CASELLA / SONG',270,227,'#fff0d7',12);
-for(let k=0;k<3;k++){const x=372+k*10,y=246+Math.sin(frame*.044+k)*8;label('♪',x,y,'#f0dfb0',14)}
-rect(513,232,22,21,'#d8b6a1');rect(506,253,38,57,'#999aa7');rect(503,270,7,32,'#d2bda6');
-label('CATO / ASCEND',482,207,'#fff0d7',12);
+rect(0,0,640,360,'#43516b');rect(0,0,640,158,'#d7a09a');rect(0,265,640,95,'#b7a08d');
+rect(0,155,640,8,'#f2c49f');rect(0,237,640,42,'#687a77');
+for(let k=0;k<15;k++){const x=195+(k%5)*43,y=93+Math.floor(k/5)*49;rect(x,y,39,43,k%2?'#877787':'#736879')}
+for(let k=0;k<12;k++){const x=187+(k%4)*46,y=237+(k%3)*12;rect(x,y,38,7,'#a49390')}
+rect(120,207,16,17,'#dec1ad');rect(115,224,26,42,'#8f92ae');
+rect(113,247,4,27,'#b8b7b2');
+rect(49,280,17,17,'#e7c0a3');rect(44,297,25,33,'#ba6a77');
+rect(63,327,69,10,'#63586f');rect(71,336,47,4,'#63586f');
+label('SHADOW / NO SHADOW',17,38,'#fff1da',13);
+label('CLIFF / FIND PASSAGE',185,76,'#fff1da',12);
+rect(502,260,19,19,'#cda898');rect(498,279,28,42,'#8f768b');
+rect(507,267,9,4,'#a96b68');rect(514,286,10,4,'#c36e70');
+for(let k=0;k<4;k++){const x=428+k*26;rect(x,286+(k%2)*7,13,13,'#c9a493');rect(x-3,299+(k%2)*7,19,28,'#98869b')}
+label('MANFRED',488,225,'#fff1da',13);
+label('WAY UP',318,179,'#ffe6c0',12);
 rect(player,269,17,17,'#e7c0a3');rect(player-3,287,23,32,'#ba6a77');rect(player,316,5,7,'#333653');rect(player+12,316,5,7,'#333653');
-label('PURGATORIO II',17,28,'#fff1d1',15);label('BOAT / SONG / SUMMONS',377,28,'#fff1d1',13);
+label('PURGATORIO III',17,21,'#fff1d1',15);
 if(held.has('ArrowLeft')||held.has('KeyA'))player=Math.max(7,player-2.4);
 if(held.has('ArrowRight')||held.has('KeyD'))player=Math.min(613,player+2.4);
 requestAnimationFrame(draw)}
