@@ -1,0 +1,76 @@
+{
+  "protocol": "archon/alchemical-living-thread/ascent-v1",
+  "chapter": "Purgatorio X",
+  "ascent": 10,
+  "identity": "{{i}}",
+  "parent": "alchemy/ascent/009.json",
+  "parentBlobSha": "820427963e2f06fe77d744c82f98bd9c7691b209",
+  "appendOnly": true,
+  "previousTraversal": "Inferno 041 sealed",
+  "scene": "First terrace of pride: living marble exemplars of humility and penitent souls bent by stones",
+  "story": [
+    "Dante and Virgil pass through the narrow gate and climb the winding passage until they reach the first terrace, a broad ledge against a sheer bank of white marble.",
+    "The marble displays astonishingly vivid images of humility. First the angel Gabriel announces to Mary that she will bear Christ, and Mary accepts her task.",
+    "Next Dante sees King David dancing humbly before the Ark of the Covenant, while Michal watches with disapproval.",
+    "The third carving shows the emperor Trajan stopping to grant justice to a widow whose son has been killed. Her repeated appeal interrupts the ruler's march until he acts.",
+    "Only after these exemplars come the souls bent beneath enormous stones. Their backs are bowed and their faces drawn toward the ground as they slowly make their way around the terrace.",
+    "Dante compares their suffering to supporting figures carved into buildings; Virgil directs him to attend carefully and keep moving. The encounters and names of individual proud souls await Canto XI."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Dante",
+      "semantic": "Humility is offered first as witnessed exemplars and then as a difficult bodily discipline",
+      "somatic": "CLIMB_LOOK_STUDY_BEND"
+    },
+    {
+      "actor": "Virgil",
+      "semantic": "The guide directs attention from images to living penitents and maintains progress",
+      "somatic": "LEAD_POINT_GUIDE"
+    },
+    {
+      "actor": "Mary in the relief",
+      "semantic": "Acceptance of a call illustrates receptive humility",
+      "somatic": "LISTEN_ACCEPT"
+    },
+    {
+      "actor": "David in the relief",
+      "semantic": "Joyful movement can disregard royal prestige",
+      "somatic": "DANCE_HUMBLE"
+    },
+    {
+      "actor": "Trajan in the relief",
+      "semantic": "Public power can interrupt itself to hear a petition for justice",
+      "somatic": "STOP_HEAR_GRANT"
+    },
+    {
+      "actor": "Proud souls",
+      "semantic": "Bodily burden is the poem's corrective condition for habitual pride",
+      "somatic": "BOW_CARRY_ADVANCE"
+    }
+  ],
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "marble exemplars",
+      "action": "STUDY the Annunciation, David dancing and Trajan listening to the widow",
+      "observable": "three sculpted acts of humility, not present-day deeds"
+    },
+    {
+      "id": "B",
+      "semantic": "burden of pride",
+      "action": "WATCH the proud BEND beneath heavy stones and ADVANCE",
+      "observable": "visible burdens and slow movement"
+    },
+    {
+      "id": "C",
+      "semantic": "continuing the terrace",
+      "action": "HEAR Virgil GUIDE Dante along the ledge",
+      "observable": "the first terrace is entered; seven forehead marks have not yet been erased"
+    }
+  ],
+  "alchemicalReading": "The three reliefs supply models before the burden supplies practice: what was upright in pride must learn to bend without losing its identity.",
+  "invariant": "An exemplar engraved in stone and a soul carrying stone are distinct kinds of witness; entry to the first terrace is not yet the removal of any of Dante's seven P marks.",
+  "remainingP": 7,
+  "next": "Purgatorio XI — the Lord's Prayer of the proud; Omberto, Oderisi and Provenzan Salvani",
+  "sealInfernoUntouched": true
+}
