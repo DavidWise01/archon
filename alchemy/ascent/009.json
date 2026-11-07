@@ -1,0 +1,70 @@
+{
+  "protocol": "archon/alchemical-living-thread/ascent-v1",
+  "chapter": "Purgatorio IX",
+  "ascent": 9,
+  "identity": "{{i}}",
+  "parent": "alchemy/ascent/008.json",
+  "parentBlobSha": "65dec5df6e428a6e89e5d2574e1f1d46d1e6b629",
+  "appendOnly": true,
+  "previousTraversal": "Inferno 041 sealed",
+  "scene": "Eagle dream, Lucia's lifting, three threshold steps and seven P marks",
+  "story": [
+    "As dawn approaches Dante sleeps upon the mountain and dreams that an eagle seizes him and carries him high into a region of fire. He wakes startled, unable at first to reconcile the dream with his new location.",
+    "Virgil explains that Lucia came while Dante slept, lifted him from the flowered valley and carried him near the gate of Purgatory, while Virgil followed. The dream and the reported transport remain distinct kinds of evidence.",
+    "At the gate they see three steps: the first is polished white marble reflecting Dante's face, the second dark and cracked stone, and the third red as blood. Upon the upper step sits an angelic gatekeeper with a sword and two keys.",
+    "Dante approaches humbly and strikes his breast. With the sword's point the angel inscribes seven P marks on Dante's forehead, ordering him to cleanse these wounds as he ascends.",
+    "The angel uses the keys given by Saint Peter to open the gate. He warns the travelers not to look back after entering, lest they return outside.",
+    "The gate opens with a heavy sound; the travelers hear a Te Deum as they pass inside. They have crossed from Ante-Purgatory into Purgatory proper, but the first terrace is reserved for the next canto."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Dante",
+      "semantic": "A dream, an awakening and a marked threshold are sequential but distinct experiences",
+      "somatic": "DREAM_WAKE_KNEEL_RECEIVE_ENTER"
+    },
+    {
+      "actor": "Lucia",
+      "semantic": "Help may carry a sleeping traveler beyond a boundary without erasing the traveler's continuity",
+      "somatic": "LIFT_CARRY_PLACE"
+    },
+    {
+      "actor": "Virgil",
+      "semantic": "The guide attributes the unseen transfer to its actor and escorts Dante to the threshold",
+      "somatic": "EXPLAIN_FOLLOW_GUIDE"
+    },
+    {
+      "actor": "Gatekeeper angel",
+      "semantic": "Entry has a witnessed admission process and a future obligation to cleanse seven marks",
+      "somatic": "INSCRIBE_UNLOCK_WARN"
+    },
+    {
+      "actor": "Three steps and gate",
+      "semantic": "Reflection, fracture and red dedication are poetic stages preceding admission",
+      "somatic": "REFLECT_SUPPORT_OPEN"
+    }
+  ],
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "dream versus transfer",
+      "action": "DREAM of an eagle; WAKE and HEAR Virgil attribute transport to Lucia",
+      "observable": "dream directly experienced; Lucia's carrying reported by Virgil"
+    },
+    {
+      "id": "B",
+      "semantic": "threshold and seven marks",
+      "action": "STEP across white, dark and red stones; KNEEL and RECEIVE seven P marks",
+      "observable": "three steps and the inscribed P marks belong to the gate scene"
+    },
+    {
+      "id": "C",
+      "semantic": "admission and warning",
+      "action": "WATCH the angel UNLOCK the gate; ENTER without looking back",
+      "observable": "entry occurs; future removal of seven marks not yet completed"
+    }
+  ],
+  "alchemicalReading": "The sleeping traveler is carried toward the portal; reflection and fracture precede a red threshold, where seven visible obligations become a path of purification rather than an instantaneous transformation.",
+  "invariant": "Admission across a threshold and completion of the work beyond it are separate states; seven assigned marks are not seven already-cleansed marks.",
+  "next": "Purgatorio X — first terrace of pride: carved examples of humility and the souls bent under stones",
+  "sealInfernoUntouched": true
+}
