@@ -62,8 +62,8 @@ No new element or product</pre>
 let p={x:47,y:208,vy:0,ground:false},keys=new Set(),frame=0,seen=new Set(),crossed=false;
 const rect=(x,y,w,h,color)=>{g.fillStyle=color;g.fillRect(Math.round(x),Math.round(y),Math.round(w),Math.round(h))};
 const label=(s,x,y,color='#f8e7b6',size=10)=>{g.fillStyle=color;g.font='bold '+size+'px monospace';g.fillText(s,x,y)};
-function observe(){const x=p.x;if(x<175){seen.add('climb');status.textContent='WITNESS A: Virgil SUPPORTS Dante as he CLIMBS shattered stone; the false bridge is not repaired.'}else if(x<320){seen.add('reform');status.textContent='WITNESS B: a serpent BITES Vanni Fucci; he BURNS into ash, then REFORMS with his identity intact.'}else{seen.add('speak');status.textContent='WITNESS C: Vanni Fucci SPEAKS and predicts political reversals. His shape returns but his confinement persists.'}if(seen.size===3)status.textContent+=' THREE WITNESSES PRESERVED. NEXT: MORE SERPENT TRANSFORMATIONS.'}
-function reset(){p={x:47,y:208,vy:0,ground:false};seen.clear();crossed=false;status.textContent='STAGE 031 reset: CLIMB, BITE, BURN, ASH, REFORM. No release.'}
+function observe(){const x=p.x;if(x<175){seen.add('fuse');status.textContent='WITNESS A: Cianfa the SERPENT BINDS Agnello and the two FUSE into a hybrid. Their names remain individually recorded.'}else if(x<320){seen.add('exchange');status.textContent='WITNESS B: Francesco in serpent form BITES Buoso; the two EXCHANGE human and serpent shapes.'}else{seen.add('unchanged');status.textContent='WITNESS C: Puccio REMAINS human while Dante DISTINGUISHES unchanged, fused and exchanged forms.'}if(seen.size===3)status.textContent+=' THREE WITNESSES PRESERVED. NEXT: SHARED FLAME.'}
+function reset(){p={x:47,y:208,vy:0,ground:false};seen.clear();crossed=false;status.textContent='STAGE 032 reset: BIND, FUSE, BITE, EXCHANGE. Identity kept separate from shape.'}
 function draw(){
 frame++;rect(0,0,480,270,'#0d0f2b');
 for(let i=0;i<90;i++){let x=(i*73+17)%480,y=(i*59+11)%195;rect(x,y,i%13===0?3:1,i%13===0?3:1,i%4?'#7466a2':'#f3d696')}
@@ -122,15 +122,15 @@ label('BITE / ASH / REFORM',325,133,'#f0cbb1',8);
 
 rect(203,76,80,95,'#5d4b76');rect(209,82,68,89,'#1d172e');
 rect(206,74,73,7,'#ebc77e');rect(206,74,5,98,'#c79a72');rect(275,74,5,98,'#c79a72');
-label('BITE',219,91,'#f9dfb2',8);label('ASH',223,107,'#d8b9f0',8);
+label('FUSE',220,91,'#f9dfb2',8);label('SWAP',220,107,'#d8b9f0',8);
 for(let m=0;m<6;m++){rect(217+m*9,114+(m%2)*8,4,3,'#896ea9')}
 
 rect(27,65,68,50,'#322b4b');rect(32,71,58,4,'#d1ac77');rect(32,106,58,4,'#d1ac77');label('032',48,95,'#ffe4a1',15);
 // Paired Li / Be glyph: bound in cipher only; the identity of 3 is held open.
 rect(190,30,105,31,'#3a294e');rect(194,34,97,23,'#20192f');
-label('VANNI FUCCI XXIV',188,48,'#f6d3a2',10);label('BURN / REFORM',199,59,'#f2dbad',8);
-label('FORM != FREEDOM',198,72,'#e1c5ee',8);
-label('IDENTITY PERSISTS',195,122,'#d6bedc',8);
+label('SERPENTS / XXV',195,48,'#f6d3a2',10);label('FUSE / EXCHANGE',191,59,'#f2dbad',8);
+label('IDENTITY != SHAPE',194,72,'#e1c5ee',8);
+label('FUSION != EXCHANGE',189,122,'#d6bedc',8);
 for(let k=0;k<12;k++){const y=80+k*7;rect(242+Math.sin(k*.7+frame*.021)*8,y,2,3,'#d8bfe9')}
 
 const dx=(keys.has('ArrowRight')||keys.has('KeyD')?1:0)-(keys.has('ArrowLeft')||keys.has('KeyA')?1:0);
