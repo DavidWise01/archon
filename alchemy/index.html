@@ -19,53 +19,50 @@ a{color:#f6d28a}.foot{margin:22px 0;color:var(--mute);font-size:12px}.ledger{dis
 @media(max-width:850px){.grid{grid-template-columns:1fr}main{padding:12px}}
 </style></head>
 <body><main>
-<header class="top"><div><div class="eyebrow">The Living Thread / Second Traversal</div><h1>DANTE <span style="color:var(--gold)">·</span> THE ALCHEMICAL VESSEL</h1><p>Stage 036 of 041 · Inferno XXIX: Geri del Bello and falsifiers of metals.</p></div><span class="chip">STAGE 036 / {{i}}</span></header>
+<header class="top"><div><div class="eyebrow">The Living Thread / Second Traversal</div><h1>DANTE <span style="color:var(--gold)">·</span> THE ALCHEMICAL VESSEL</h1><p>Stage 037 of 041 · Inferno XXX: impersonators, counterfeit coins and disputes.</p></div><span class="chip">STAGE 037 / {{i}}</span></header>
 <div class="grid"><section class="panel"><canvas id="game" width="480" height="270" tabindex="0" aria-label="Playable pixel-art alchemical vessel"></canvas><div class="pad">
-<div class="eyebrow">Geri's memory · afflicted alchemists and imitation</div>
+<div class="eyebrow">Falsifiers · identity, money and testimony</div>
 <div class="controls"><button id="left">◀ MOVE</button><button id="right">MOVE ▶</button><button id="jump">↑ JUMP</button><button id="observe">E · OBSERVE</button><button id="reset">↺ RESET</button></div>
-<div class="status" id="status" aria-live="polite">Inferno XXIX: Virgil REPORTS Geri del Bello's passing; Dante DESCENDS to the tenth bolgia. Griffolino and Capocchio SCRATCH diseased skin and SPEAK of falsifying metals. Observe REPORT, AFFLICTION and IDENTIFY.</div>
-<p style="font-size:12px;margin:12px 0 0">Keyboard: ← → or A / D · Space to jump · E to observe. Next: Inferno XXX, further falsifiers and the dispute between Master Adam and Sinon.</p>
+<div class="status" id="status" aria-live="polite">Inferno XXX: Schicchi and Myrrha IMPERSONATE; Master Adam COUNTERFEITS florins; Sinon and Adam DISPUTE. Dante listens until Virgil REBUKES him. Observe IDENTITY, COIN and TESTIMONY.</div>
+<p style="font-size:12px;margin:12px 0 0">Keyboard: ← → or A / D · Space to jump · E to observe. Next: Inferno XXXI, giants at the edge of the ninth circle.</p>
 </div></section>
 <aside class="panel"><div class="pad"><div class="eyebrow">Vessel inventory</div><h2>Minos routes souls; the [6] carbon-life fellowship remains preserved.</h2>
 <div class="tokens"><div class="token"><strong>H</strong><span>(1) Dante · traveler</span></div><div class="token"><strong>He</strong><span>[2] Virgil · guide</span></div><div class="token"><strong>Li</strong><span>(3) Li · identity unresolved</span></div><div class="token"><strong>Be</strong><span>[4] Beatrice · intercessor</span></div></div>
-<div class="tokens" style="margin-top:10px"><div class="token"><strong>B</strong><span>(5) Lucia · toroid</span></div><div class="token"><strong>C</strong><span>[6] Mary · box</span></div></div><div class="ledger"><span class="pip"></span> <strong>Stage 036: Remembered Geri and the Falsifiers</strong></div>
+<div class="tokens" style="margin-top:10px"><div class="token"><strong>B</strong><span>(5) Lucia · toroid</span></div><div class="token"><strong>C</strong><span>[6] Mary · box</span></div></div><div class="ledger"><span class="pip"></span> <strong>Stage 037: Three Forms of Falsification</strong></div>
 <pre>alpha = omega = [ (1), [2] ]
 
-INFERNO XXIX / TENTH BOLGIA
+INFERNO XXX / TENTH BOLGIA
 
-DANTE: LOOK FOR GERI
-        |
-VIRGIL: REPORT / REDIRECT
-        |
-DESCEND TO FALSIFIERS
-        |
-GRIFFOLINO + CAPOCCHIO
-        |
-SIT / SCRATCH / SPEAK
-        |
-IMITATION OF METALS
-        |
-GENUINE COMPOSITION?
-        |
-NOT VERIFIED BY APPEARANCE
+SCHICCHI / MYRRHA
+  IMPERSONATE PERSONS
+          |
+MASTER ADAM
+  COUNTERFEITS FLORINS
+          |
+SINON / MASTER ADAM
+  ACCUSE + DISPUTE
+          |
+DANTE: WATCH / LINGER
+          |
+VIRGIL: REBUKE / GUIDE
 
-REPORTED != DIRECT SIGHT
-IMITATED != AUTHENTIC
-AFFLICTION != IDENTITY
+CLAIMED ID != ACTOR ID
+COIN APPEARANCE != AUTHENTIC
+ACCUSATION != VERIFICATION
 No new element or product</pre>
 <p><b>Notation:</b> <code>[]</code> containment · <code>()</code> fluidity · <code>}{</code> opening the transformation boundary. These are narrative operators, not evidence of physical transmutation.</p>
-<p><b>Rule:</b> Dante <b>LOOKS</b> for Geri, Virgil <b>REPORTS and REDIRECTS</b>, and afflicted falsifiers <b>SIT, SCRATCH and SPEAK</b>. Griffolino and Capocchio identify themselves and describe deceit or metal imitation. A claimed imitation does not verify the substance, and Virgil's report is not Dante's own sighting.</p>
+<p><b>Rule:</b> Schicchi and Myrrha <b>IMPERSONATE</b>; Master Adam <b>COUNTERFEITS</b> florins; Sinon and Adam <b>ACCUSE and DISPUTE</b>. Dante <b>WATCHES</b> until Virgil <b>REBUKES</b> his fascination. A claimed identity, coin or assertion must not be accepted merely because it resembles the genuine article.</p>
 <p><a href="../story.html">Read the sealed first journey</a></p>
 </div></aside></div>
-<footer class="foot">ARCHON / Alchemical Living Thread · 000–036 recorded, 037–041 reserved · story-first symbolic elemental cipher.</footer>
+<footer class="foot">ARCHON / Alchemical Living Thread · 000–037 recorded, 038–041 reserved · story-first symbolic elemental cipher.</footer>
 </main>
 <script>
 (()=>{const c=document.getElementById('game'),g=c.getContext('2d'),status=document.getElementById('status');
 let p={x:47,y:208,vy:0,ground:false},keys=new Set(),frame=0,seen=new Set(),crossed=false;
 const rect=(x,y,w,h,color)=>{g.fillStyle=color;g.fillRect(Math.round(x),Math.round(y),Math.round(w),Math.round(h))};
 const label=(s,x,y,color='#f8e7b6',size=10)=>{g.fillStyle=color;g.font='bold '+size+'px monospace';g.fillText(s,x,y)};
-function observe(){const x=p.x;if(x<175){seen.add('report');status.textContent='WITNESS A: Dante LOOKS for Geri del Bello; Virgil REPORTS seeing him pass and REDIRECTS Dante. Dante did not see him here.'}else if(x<320){seen.add('affliction');status.textContent='WITNESS B: in the tenth bolgia afflicted falsifiers SIT, SCRATCH and LAMENT. A visible affliction is not a metal assay.'}else{seen.add('identify');status.textContent='WITNESS C: Griffolino and Capocchio SPEAK and IDENTIFY themselves. Their metal imitation is testimony, not verified chemical composition.'}if(seen.size===3)status.textContent+=' THREE WITNESSES PRESERVED. NEXT: FURTHER FALSIFIERS.'}
-function reset(){p={x:47,y:208,vy:0,ground:false};seen.clear();crossed=false;status.textContent='STAGE 036 reset: REPORT, DESCEND, SCRATCH, IDENTIFY. No inferred composition.'}
+function observe(){const x=p.x;if(x<175){seen.add('identity');status.textContent='WITNESS A: Gianni Schicchi and Myrrha IMPERSONATE other people. The claimed identity is not the actual actor.'}else if(x<320){seen.add('coin');status.textContent='WITNESS B: Master Adam COUNTERFEITS florins and suffers thirst. A coin\'s appearance does not authenticate it.'}else{seen.add('testimony');status.textContent='WITNESS C: Sinon and Adam ARGUE and ACCUSE; Dante LISTENS until Virgil REBUKES him. Disputed claims remain unverified.'}if(seen.size===3)status.textContent+=' THREE WITNESSES PRESERVED. NEXT: GIANTS.'}
+function reset(){p={x:47,y:208,vy:0,ground:false};seen.clear();crossed=false;status.textContent='STAGE 037 reset: IMPERSONATE, COUNTERFEIT, DISPUTE, DISCERN.'}
 function draw(){
 frame++;rect(0,0,480,270,'#0d0f2b');
 for(let i=0;i<90;i++){let x=(i*73+17)%480,y=(i*59+11)%195;rect(x,y,i%13===0?3:1,i%13===0?3:1,i%4?'#7466a2':'#f3d696')}
@@ -80,7 +77,7 @@ for(let k=0;k<8;k++){let a=k*Math.PI/4+frame*.009;rect(x+Math.cos(a)*22,162+Math
 label(chem,x-(chem==='He'?11:5),167,'#fff4d3',15);label(chem==='H'?'DANTE':'VIRGIL',x-22,200,'#ffe6bf',9);
 }
 rect(221,190,44,8,'#d2ae78');rect(217,198,52,32,'#564363');rect(226,202,35,18,'#1c1a35');rect(239,207,8,8,'#d3b7ee');
-label('}{',237,224,'#f5d5a6',9);label('IMITATION / DECAY',194,183,'#eec88b',8);
+label('}{',237,224,'#f5d5a6',9);label('FALSE / DISCERN',198,183,'#eec88b',8);
 
 
 
@@ -112,38 +109,42 @@ label('}{',237,224,'#f5d5a6',9);label('IMITATION / DECAY',194,183,'#eec88b',8);
 
 
 
- // Inferno XXIX: tenth bolgia, Griffolino and Capocchio beneath ruined stone.
-rect(0,137,480,96,'#41394b');rect(0,217,480,16,'#665665');
-for(let k=0;k<23;k++){const x=(k*47)%475,y=170+(k*19)%47;rect(x,y,18,5,k%2?'#675b66':'#867380')}
-rect(74,166,15,15,'#caaa97');rect(69,181,24,24,'#967785');
-rect(81,193,8,6,'#dcb99e');rect(61,195,13,4,'#b08f94');
-rect(116,172,16,15,'#cba991');rect(111,187,25,24,'#826d80');
-rect(124,195,10,5,'#c6aaa2');rect(102,193,13,4,'#bd9b9b');
-for(let k=0;k<12;k++){const x=65+(k*17)%72,y=184+(k*11)%26;rect(x,y,3,3,k%2?'#c8a5a1':'#b9a78b')}
-rect(333,167,15,14,'#d0b39f');rect(328,181,24,29,'#b26d77');
-rect(367,163,15,14,'#d8bba2');rect(364,178,24,29,'#7e9bb1');
-label('GRIFFOLINO / CAPOCCHIO',28,137,'#eed3b5',8);
-label('DANTE / VIRGIL',311,146,'#eed3b5',8);
-label('SCRATCH / SPEAK',57,217,'#e8d2bf',8);
+
+ // Inferno XXX: masks, counterfeit florins and the mutually accusing pair.
+rect(0,137,480,96,'#423a4b');rect(0,219,480,14,'#716074');
+for(let k=0;k<13;k++){const x=9+(k*43)%460,y=201+(k*7)%22;rect(x,y,22,4,k%2?'#776575':'#96818b')}
+rect(65,166,17,16,'#d0aa98');rect(62,182,23,31,'#a47584');
+rect(76,168,10,12,'#f0d5bf');rect(77,172,3,3,'#34293a');
+rect(117,166,17,16,'#d2ad99');rect(113,182,24,31,'#7b778e');
+rect(124,170,11,12,'#e2c6a8');rect(125,174,3,3,'#33273a');
+for(let k=0;k<4;k++){const x=212+k*14,y=190+(k%2)*8;rect(x,y,12,12,'#dcb66b');rect(x+2,y+2,8,8,'#b68a53')}
+rect(235,161,19,16,'#ccaa96');rect(228,177,32,35,'#987788');
+rect(345,164,16,16,'#cfa999');rect(340,180,24,31,'#a0767a');
+rect(381,162,16,16,'#d1ab95');rect(376,178,24,32,'#796c8d');
+const quarrel=Math.sin(frame*.12)*5;
+rect(362+quarrel,187,19,4,'#c6a796');rect(373-quarrel,192,19,4,'#b69a94');
+label('IMPERSONATE',26,144,'#efd5ba',8);
+label('FALSE FLORINS',203,144,'#edcf9e',8);
+label('ADAM / SINON',338,144,'#efd3be',8);
 
 rect(203,76,80,95,'#5d4b76');rect(209,82,68,89,'#1d172e');
 rect(206,74,73,7,'#ebc77e');rect(206,74,5,98,'#c79a72');rect(275,74,5,98,'#c79a72');
-label('IMITATE',211,91,'#f9dfb2',8);label('VERIFY',214,107,'#d8b9f0',8);
+label('CLAIM',217,91,'#f9dfb2',8);label('CHECK',218,107,'#d8b9f0',8);
 for(let m=0;m<6;m++){rect(217+m*9,114+(m%2)*8,4,3,'#896ea9')}
 
-rect(27,65,68,50,'#322b4b');rect(32,71,58,4,'#d1ac77');rect(32,106,58,4,'#d1ac77');label('036',48,95,'#ffe4a1',15);
+rect(27,65,68,50,'#322b4b');rect(32,71,58,4,'#d1ac77');rect(32,106,58,4,'#d1ac77');label('037',48,95,'#ffe4a1',15);
 // Paired Li / Be glyph: bound in cipher only; the identity of 3 is held open.
 rect(190,30,105,31,'#3a294e');rect(194,34,97,23,'#20192f');
-label('FALSIFIERS / XXIX',186,48,'#f6d3a2',10);label('DECAY / IMITATION',190,59,'#f2dbad',8);
-label('CLAIM != COMPOSITION',184,72,'#e1c5ee',8);
-label('REPORT != SIGHT',200,122,'#d6bedc',8);
+label('FALSIFIERS / XXX',189,48,'#f6d3a2',10);label('DISPUTE / DISCERN',189,59,'#f2dbad',8);
+label('CLAIM != PROOF',203,72,'#e1c5ee',8);
+label('FORGERY != TRUTH',195,122,'#d6bedc',8);
 for(let k=0;k<12;k++){const y=80+k*7;rect(242+Math.sin(k*.7+frame*.021)*8,y,2,3,'#d8bfe9')}
 
 const dx=(keys.has('ArrowRight')||keys.has('KeyD')?1:0)-(keys.has('ArrowLeft')||keys.has('KeyA')?1:0);
 p.x=Math.max(4,Math.min(469,p.x+dx*2.2));if((keys.has('Space')||keys.has('ArrowUp'))&&p.ground){p.vy=-7.5;p.ground=false}
 p.vy+=.42;p.y+=p.vy;if(p.y>=210){p.y=210;p.vy=0;p.ground=true}
 rect(p.x+2,p.y,8,4,'#3a253f');rect(p.x+2,p.y+4,8,5,'#eec5a6');rect(p.x,p.y+9,12,10,'#c96067');rect(p.x+2,p.y+19,3,4,'#3b3455');rect(p.x+8,p.y+19,3,4,'#3b3455');
-rect(0,0,480,24,'#0b1024');label('ARCHON / ALCHEMY 036',8,15,'#ebcd8f',10);label('WITNESSES '+seen.size+'/3',350,15,'#b7dfd7',9);
+rect(0,0,480,24,'#0b1024');label('ARCHON / ALCHEMY 037',8,15,'#ebcd8f',10);label('WITNESSES '+seen.size+'/3',350,15,'#b7dfd7',9);
 requestAnimationFrame(draw)}
 window.addEventListener('keydown',e=>{if(['ArrowLeft','ArrowRight','ArrowUp','Space','KeyA','KeyD','KeyE'].includes(e.code)){keys.add(e.code);if(document.activeElement===c)e.preventDefault();if(e.code==='KeyE'&&!e.repeat)observe()}});
 window.addEventListener('keyup',e=>keys.delete(e.code));window.addEventListener('blur',()=>keys.clear());
