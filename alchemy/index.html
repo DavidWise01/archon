@@ -19,44 +19,43 @@ a{color:#f6d28a}.foot{margin:22px 0;color:var(--mute);font-size:12px}.ledger{dis
 @media(max-width:850px){.grid{grid-template-columns:1fr}main{padding:12px}}
 </style></head>
 <body><main>
-<header class="top"><div><div class="eyebrow">The Living Thread / Second Traversal</div><h1>DANTE <span style="color:var(--gold)">·</span> THE ALCHEMICAL VESSEL</h1><p>Stage 030 of 041 · Inferno XXIII: gilded lead cloaks and the false bridge.</p></div><span class="chip">STAGE 030 / {{i}}</span></header>
+<header class="top"><div><div class="eyebrow">The Living Thread / Second Traversal</div><h1>DANTE <span style="color:var(--gold)">·</span> THE ALCHEMICAL VESSEL</h1><p>Stage 031 of 041 · Inferno XXIV: rocky climb and Vanni Fucci's re-formation.</p></div><span class="chip">STAGE 031 / {{i}}</span></header>
 <div class="grid"><section class="panel"><canvas id="game" width="480" height="270" tabindex="0" aria-label="Playable pixel-art alchemical vessel"></canvas><div class="pad">
-<div class="eyebrow">Hypocrites · gilded cloaks, lead weight, broken bridge</div>
+<div class="eyebrow">Vanni Fucci · serpent bite, ashes, return</div>
 <div class="controls"><button id="left">◀ MOVE</button><button id="right">MOVE ▶</button><button id="jump">↑ JUMP</button><button id="observe">E · OBSERVE</button><button id="reset">↺ RESET</button></div>
-<div class="status" id="status" aria-live="polite">Inferno XXIII: Virgil CARRIES Dante away from the demons. Hypocrites TRUDGE beneath gilded lead cloaks; Caiaphas lies fixed on the path. The friars reveal a BROKEN bridge, exposing Malacoda's false directions. Observe WEIGH, BEAR and VERIFY.</div>
-<p style="font-size:12px;margin:12px 0 0">Keyboard: ← → or A / D · Space to jump · E to observe. Next: Inferno XXIV, the rocky ascent and thieves among serpents.</p>
+<div class="status" id="status" aria-live="polite">Inferno XXIV: Virgil helps Dante CLIMB the broken rocks. In the thieves' bolgia a serpent BITES Vanni Fucci, who BURNS to ashes and REFORMS. His identity persists; his punishment does not end. Observe CLIMB, REFORM and SPEAK.</div>
+<p style="font-size:12px;margin:12px 0 0">Keyboard: ← → or A / D · Space to jump · E to observe. Next: Inferno XXV, Cacus and further serpent-human transformations.</p>
 </div></section>
 <aside class="panel"><div class="pad"><div class="eyebrow">Vessel inventory</div><h2>Minos routes souls; the [6] carbon-life fellowship remains preserved.</h2>
 <div class="tokens"><div class="token"><strong>H</strong><span>(1) Dante · traveler</span></div><div class="token"><strong>He</strong><span>[2] Virgil · guide</span></div><div class="token"><strong>Li</strong><span>(3) Li · identity unresolved</span></div><div class="token"><strong>Be</strong><span>[4] Beatrice · intercessor</span></div></div>
-<div class="tokens" style="margin-top:10px"><div class="token"><strong>B</strong><span>(5) Lucia · toroid</span></div><div class="token"><strong>C</strong><span>[6] Mary · box</span></div></div><div class="ledger"><span class="pip"></span> <strong>Stage 030: Golden Appearance, Lead Burden</strong></div>
+<div class="tokens" style="margin-top:10px"><div class="token"><strong>B</strong><span>(5) Lucia · toroid</span></div><div class="token"><strong>C</strong><span>[6] Mary · box</span></div></div><div class="ledger"><span class="pip"></span> <strong>Stage 031: Vanni Fucci — Ashes and Re-formation</strong></div>
 <pre>alpha = omega = [ (1), [2] ]
 
-INFERNO XXIII / HYPOCRITES
+INFERNO XXIV / SEVENTH BOLGIA
 
-DEMONS PURSUE
+BROKEN ROCKS
       |
-VIRGIL [2]: CARRY (1)
+VIRGIL [2]: SUPPORT
+DANTE (1): CLIMB
       |
-CLOAK: GOLDEN OUTSIDE
+SERPENT: BITE
       |
-CLOAK: HEAVY LEAD INSIDE
+VANNI FUCCI: BURN
       |
-HYPOCRITES: TRUDGE
+      ASH
       |
-CAIAPHAS: LIE FIXED
+   REFORM
       |
-FRIARS: REPORT BROKEN BRIDGE
-      |
-[2]: REVISE ROUTE
+VANNI: SPEAK / PROPHESY
 
-APPEARANCE != WEIGHT
-PROMISE != VERIFIED PATH
+SHAPE RESTORED != FREEDOM
+SAME IDENTITY, SAME DITCH
 No new element or product</pre>
 <p><b>Notation:</b> <code>[]</code> containment · <code>()</code> fluidity · <code>}{</code> opening the transformation boundary. These are narrative operators, not evidence of physical transmutation.</p>
-<p><b>Rule:</b> The gilded cloaks <b>SHINE but WEIGH</b> heavily; hypocrites <b>TRUDGE</b>, Virgil <b>CARRIES and REDIRECTS</b>, and the friars <b>REPORT</b> a broken bridge. The reported bridge obstruction contradicts the earlier promised route. Replanning does not mean the crossing is completed.</p>
+<p><b>Rule:</b> Each meaning has an action: Virgil <b>SUPPORTS</b>, Dante <b>CLIMBS</b>, a serpent <b>BITES</b>, and Vanni Fucci <b>BURNS, REFORMS and SPEAKS</b>. The return of his outward shape is witnessed, but release is not. The phoenix comparison is poetry, not a claim of physical transmutation.</p>
 <p><a href="../story.html">Read the sealed first journey</a></p>
 </div></aside></div>
-<footer class="foot">ARCHON / Alchemical Living Thread · 000–030 recorded, 031–041 reserved · story-first symbolic elemental cipher.</footer>
+<footer class="foot">ARCHON / Alchemical Living Thread · 000–031 recorded, 032–041 reserved · story-first symbolic elemental cipher.</footer>
 </main>
 <script>
 (()=>{const c=document.getElementById('game'),g=c.getContext('2d'),status=document.getElementById('status');
@@ -79,7 +78,7 @@ for(let k=0;k<8;k++){let a=k*Math.PI/4+frame*.009;rect(x+Math.cos(a)*22,162+Math
 label(chem,x-(chem==='He'?11:5),167,'#fff4d3',15);label(chem==='H'?'DANTE':'VIRGIL',x-22,200,'#ffe6bf',9);
 }
 rect(221,190,44,8,'#d2ae78');rect(217,198,52,32,'#564363');rect(226,202,35,18,'#1c1a35');rect(239,207,8,8,'#d3b7ee');
-label('}{',237,224,'#f5d5a6',9);label('CLOAK / BRIDGE',197,183,'#eec88b',8);
+label('}{',237,224,'#f5d5a6',9);label('ASH / REFORM',206,183,'#eec88b',8);
 
 
 
@@ -127,7 +126,7 @@ rect(206,74,73,7,'#ebc77e');rect(206,74,5,98,'#c79a72');rect(275,74,5,98,'#c79a7
 label('GOLD',219,91,'#f9dfb2',8);label('LEAD',219,107,'#d8b9f0',8);
 for(let m=0;m<6;m++){rect(217+m*9,114+(m%2)*8,4,3,'#896ea9')}
 
-rect(27,65,68,50,'#322b4b');rect(32,71,58,4,'#d1ac77');rect(32,106,58,4,'#d1ac77');label('030',48,95,'#ffe4a1',15);
+rect(27,65,68,50,'#322b4b');rect(32,71,58,4,'#d1ac77');rect(32,106,58,4,'#d1ac77');label('031',48,95,'#ffe4a1',15);
 // Paired Li / Be glyph: bound in cipher only; the identity of 3 is held open.
 rect(190,30,105,31,'#3a294e');rect(194,34,97,23,'#20192f');
 label('HYPOCRITES XXIII',186,48,'#f6d3a2',10);label('WEIGH / VERIFY',197,59,'#f2dbad',8);
@@ -139,7 +138,7 @@ const dx=(keys.has('ArrowRight')||keys.has('KeyD')?1:0)-(keys.has('ArrowLeft')||
 p.x=Math.max(4,Math.min(469,p.x+dx*2.2));if((keys.has('Space')||keys.has('ArrowUp'))&&p.ground){p.vy=-7.5;p.ground=false}
 p.vy+=.42;p.y+=p.vy;if(p.y>=210){p.y=210;p.vy=0;p.ground=true}
 rect(p.x+2,p.y,8,4,'#3a253f');rect(p.x+2,p.y+4,8,5,'#eec5a6');rect(p.x,p.y+9,12,10,'#c96067');rect(p.x+2,p.y+19,3,4,'#3b3455');rect(p.x+8,p.y+19,3,4,'#3b3455');
-rect(0,0,480,24,'#0b1024');label('ARCHON / ALCHEMY 030',8,15,'#ebcd8f',10);label('WITNESSES '+seen.size+'/3',350,15,'#b7dfd7',9);
+rect(0,0,480,24,'#0b1024');label('ARCHON / ALCHEMY 031',8,15,'#ebcd8f',10);label('WITNESSES '+seen.size+'/3',350,15,'#b7dfd7',9);
 requestAnimationFrame(draw)}
 window.addEventListener('keydown',e=>{if(['ArrowLeft','ArrowRight','ArrowUp','Space','KeyA','KeyD','KeyE'].includes(e.code)){keys.add(e.code);if(document.activeElement===c)e.preventDefault();if(e.code==='KeyE'&&!e.repeat)observe()}});
 window.addEventListener('keyup',e=>keys.delete(e.code));window.addEventListener('blur',()=>keys.clear());
