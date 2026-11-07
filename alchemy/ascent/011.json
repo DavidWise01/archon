@@ -1,0 +1,71 @@
+{
+  "protocol": "archon/alchemical-living-thread/ascent-v1",
+  "chapter": "Purgatorio XI",
+  "ascent": 11,
+  "identity": "{{i}}",
+  "parent": "alchemy/ascent/010.json",
+  "parentBlobSha": "55358086636fa4915558af8556a02634b8c279d2",
+  "appendOnly": true,
+  "previousTraversal": "Inferno 041 sealed",
+  "scene": "The proud recite the Lord's Prayer; Omberto confesses family arrogance, Oderisi reflects on fading fame, and Provenzan's humility is remembered",
+  "story": [
+    "On the first terrace the proud carry heavy stones and recite a paraphrase of the Lord's Prayer. They pray not only for themselves but for those still living.",
+    "Virgil asks the penitents for the quickest upward route. Omberto Aldobrandeschi speaks from beneath his stone, admitting that inherited nobility and arrogant contempt helped bring about his death.",
+    "Dante recognizes Oderisi da Gubbio, the illuminator. Oderisi says another artist, Franco Bolognese, has surpassed him; the reputations of Cimabue and Giotto also illustrate how worldly acclaim passes.",
+    "Oderisi tells of Provenzan Salvani, who once held great power in Siena but humbled himself in the public square to beg money to ransom a friend.",
+    "The accounts show contrasting disciplines of humility: Omberto confesses pride, Oderisi yields artistic precedence, Provenzan chooses public vulnerability for another's sake.",
+    "Dante continues beside the penitents. No angel has erased a P mark yet; the first cleansing belongs at the exit from this terrace later."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Penitent souls",
+      "semantic": "Burden and communal prayer aim attention beyond private self-importance",
+      "somatic": "BEND_CARRY_PRAY"
+    },
+    {
+      "actor": "Omberto Aldobrandeschi",
+      "semantic": "Inherited status cannot excuse arrogance",
+      "somatic": "CONFESS_CARRY"
+    },
+    {
+      "actor": "Oderisi da Gubbio",
+      "semantic": "Worldly renown is a temporary attribution, not permanent possession",
+      "somatic": "ACKNOWLEDGE_YIELD_RECOUNT"
+    },
+    {
+      "actor": "Provenzan Salvani (as recounted)",
+      "semantic": "A powerful figure can act humbly for a friend's sake",
+      "somatic": "BEG_IN_PUBLIC_FOR_FRIEND"
+    },
+    {
+      "actor": "Dante and Virgil",
+      "semantic": "Witness each confession, distinguish observed penitents from the recounted deed, continue along terrace",
+      "somatic": "LISTEN_QUESTION_GUIDE_CONTINUE"
+    }
+  ],
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "prayer and confession",
+      "action": "HEAR the prayer and Omberto CONFESS pride beneath his stone",
+      "observable": "stone-carrying is observed; Omberto's personal history is testimony"
+    },
+    {
+      "id": "B",
+      "semantic": "fading renown",
+      "action": "LISTEN as Oderisi ACKNOWLEDGES Franco Bolognese and reflects on the passing of fame",
+      "observable": "his acknowledgment is a present statement about changing reputations"
+    },
+    {
+      "id": "C",
+      "semantic": "humility for another",
+      "action": "HEAR Oderisi RECOUNT Provenzan begging to ransom a friend",
+      "observable": "the public petition is attributed history, not an event Dante observes now"
+    }
+  ],
+  "alchemicalReading": "Pride's hard weight bends the body, while relinquishing superiority softens the inner claim to permanence. Three witnesses separate confession, renown and charity.",
+  "invariant": "Recognition fades while acts remain attributable; confession, relinquishment of precedence and humble service are distinct operations, and none yet removes Dante's first P.",
+  "remainingP": 7,
+  "next": "Purgatorio XII — examples of pride's downfall carved underfoot; the angel of humility erases the first P",
+  "sealInfernoUntouched": true
+}
