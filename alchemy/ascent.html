@@ -1,21 +1,22 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ARCHON — The Ascent · Purgatorio XV</title><style>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ARCHON — The Ascent · Purgatorio XVI</title><style>
 :root{color-scheme:dark}*{box-sizing:border-box}body{background:linear-gradient(#11142d,#262542);color:#f3e6d4;font:15px/1.5 system-ui,Segoe UI,sans-serif;margin:0}main{max-width:1120px;padding:20px;margin:auto}h1{font-size:clamp(26px,5vw,46px);margin:5px 0}h2{font-size:18px;margin:0 0 8px}.eyebrow{font:700 11px monospace;letter-spacing:.15em;color:#f0c38d}.grid{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(260px,1fr);gap:15px;margin-top:17px}.panel{border:1px solid #776786;background:#201e36;border-radius:13px;padding:16px;min-width:0}canvas{display:block;width:100%;aspect-ratio:16/9;image-rendering:pixelated;background:#191d38;border-radius:9px;border:1px solid #927e9a}.controls{display:flex;gap:9px;flex-wrap:wrap;margin:12px 0}button{background:#4d3d5a;border:1px solid #aa8291;color:#fff;border-radius:8px;padding:10px 14px;font-weight:700;cursor:pointer}button:hover{background:#65506b}button:focus-visible{outline:2px solid #f9d49b}p{color:#dbcede}.status{background:#302943;border-radius:8px;min-height:80px;padding:12px}pre{white-space:pre-wrap;background:#17182d;border-radius:9px;padding:14px;color:#eacba5;font-size:12px;line-height:1.7}a{color:#b8dfe4}.counter{color:#a8dccb;font:700 12px monospace}footer{color:#b1a7bb;font-size:12px;margin-top:20px} @media(max-width:740px){.grid{grid-template-columns:1fr}}
-</style></head><body><main><header><div class="eyebrow">ARCHON / THE LIVING THREAD / THE ASCENT</div><h1>Purgatorio XV <span style="color:#ffd09a">· The Gift That Grows</span></h1><p>An angel removes envy's mark; Virgil explains shared love; Dante sees visions of gentleness.</p></header>
-<div class="grid"><section class="panel"><canvas id="game" width="640" height="360" tabindex="0" aria-label="Playable pixel art: shining angel removing a P, shared love and three visions of meekness"></canvas><div class="controls"><button id="left">◀ WALK</button><button id="right">WALK ▶</button><button id="observe">E · OBSERVE</button><button id="reset">↺ RESET</button></div><div class="counter" id="counter">WITNESSES 0 / 3</div><p class="status" id="status" aria-live="polite">Approach the bright angel, learn why love grows when shared, and witness the visions of gentleness.</p><p>Keyboard: A / D or ← / → to walk; E to observe. Observe the second erasure, Virgil's lesson and three visions. Five marks remain.</p></section>
-<aside class="panel"><h2>Today's encounter</h2><p>An angel shines at the exit from envy and removes Dante's second P. Virgil explains that love grows when more souls share it. Dante sees visions of Mary, Pisistratus and Stephen answering distress or violence with gentleness. Evening smoke announces the terrace of anger ahead.</p><pre>PURGATORIO / XV
+</style></head><body><main><header><div class="eyebrow">ARCHON / THE LIVING THREAD / THE ASCENT</div><h1>Purgatorio XVI <span style="color:#ffd09a">· The Smoke and Free Will</span></h1><p>Dante loses sight in the smoke of anger; Marco Lombardo speaks of choice and responsibility.</p></header>
+<div class="grid"><section class="panel"><canvas id="game" width="640" height="360" tabindex="0" aria-label="Playable pixel art: dense smoke of anger, Dante following Virgil's voice and Marco Lombardo speaking in the darkness"></canvas><div class="controls"><button id="left">◀ WALK</button><button id="right">WALK ▶</button><button id="observe">E · OBSERVE</button><button id="reset">↺ RESET</button></div><div class="counter" id="counter">WITNESSES 0 / 3</div><p class="status" id="status" aria-live="polite">Enter the smoke, follow Virgil's voice, and hear Marco Lombardo explain human choice.</p><p>Keyboard: A / D or ← / → to walk; E to observe. Observe the sightless path, Marco's explanation, and the thinning smoke. Five marks remain.</p></section>
+<aside class="panel"><h2>Today's encounter</h2><p>Dark smoke blinds Dante on the third terrace. Guided by Virgil's voice, he hears the penitents praying for peace. Marco Lombardo argues that human freedom survives celestial influence and that corrupt leadership cannot excuse personal choices. As the smoke thins, Marco remains behind.</p><pre>PURGATORIO / XVI
        |
-ANGEL: TOUCH / ERASE
+ANGER / BLACK SMOKE
        |
-SECOND P: 6 -> 5
+DANTE: REACH / FOLLOW
        |
-VIRGIL: SHARED LOVE
+AGNUS DEI: PRAY
        |
-MARY / PISISTRATUS
-STEPHEN: GENTLENESS
+MARCO: FREE WILL
        |
-SMOKE: APPROACH
+INFLUENCE != CHOICE
        |
-5 P MARKS REMAIN</pre><p>Love can increase through sharing in Virgil's account; the second witnessed erasure leaves exactly five P marks.</p><p><a href="./">The sealed Inferno</a> · <a href="https://github.com/DavidWise01/archon/blob/main/alchemy/ascent/015.json">Canonical ascent record</a></p></aside></div><footer>Original sealed 41-tick journey preserved · Inferno's sealed Stage 041 preserved · This ascent is a new append-only branch.</footer></main><script>
+SMOKE: THINS
+       |
+5 P MARKS REMAIN</pre><p>Blindness does not erase agency. The smoke remains a test, not another completed cleansing: five P marks remain.</p><p><a href="./">The sealed Inferno</a> · <a href="https://github.com/DavidWise01/archon/blob/main/alchemy/ascent/016.json">Canonical ascent record</a></p></aside></div><footer>Original sealed 41-tick journey preserved · Inferno's sealed Stage 041 preserved · This ascent is a new append-only branch.</footer></main><script>
 'use strict';
 const c=document.getElementById('game'),ctx=c.getContext('2d'),status=document.getElementById('status'),counter=document.getElementById('counter');
 let player=46,frame=0;const held=new Set(),seen=new Set();
@@ -35,29 +36,28 @@ const label=(str,x,y,color='#f9e4c3',size=11)=>{ctx.fillStyle=color;ctx.font='bo
 
 
 
-function witness(){const zone=player<210?'angel':player<410?'love':'visions';seen.add(zone);
+
+function witness(){const zone=player<210?'smoke':player<410?'marco':'exit';seen.add(zone);
 const words={
-angel:'WITNESS A: the angel shines and BRUSHES Dante\'s brow. Envy\'s P is REMOVED: six become five.',
-love:'WITNESS B: Virgil EXPLAINS that unlike scarce material goods, spiritual love grows when shared.',
-visions:'WITNESS C: Dante SEES visions of Mary, Pisistratus and Stephen acting gently; dark smoke approaches.'
+smoke:'WITNESS A: the smoke BLINDS Dante. Virgil GUIDES by voice; penitents SING Agnus Dei.',
+marco:'WITNESS B: Marco EXPLAINS that influence is not compulsion and humans can CHOOSE; his argument is attributed.',
+exit:'WITNESS C: Marco CRITICIZES broken leadership and WITHDRAWS as light returns. Five marks remain.'
 };status.textContent=words[zone]+(seen.size===3?' THREE WITNESSES COMPLETE. FIVE MARKS REMAIN.':'');counter.textContent='WITNESSES '+seen.size+' / 3'}
-function reset(){player=46;seen.clear();status.textContent='Approach the bright angel, learn why love grows when shared, and witness the visions of gentleness.';counter.textContent='WITNESSES 0 / 3'}
+function reset(){player=46;seen.clear();status.textContent='Enter the smoke, follow Virgil\'s voice, and hear Marco Lombardo explain human choice.';counter.textContent='WITNESSES 0 / 3'}
 function draw(){frame++;
-rect(0,0,640,360,'#404b6b');rect(0,0,640,149,'#a69bae');rect(0,149,640,128,'#878297');rect(0,277,640,83,'#aa9b98');
-const glow=Math.sin(frame*.04)*4;
-rect(61-glow,138-glow,80+glow*2,80+glow*2,'#d6b59e');rect(84,158,22,22,'#f4d9bd');
-rect(78,180,34,62,'#efe6d2');rect(53,191,27,13,'#f5e9db');rect(110,191,31,13,'#f5e9db');rect(109,208,32,5,'#eed7ad');
-label('ANGEL / ERASE',20,112,'#fff0d8',12);
-rect(249,193,21,21,'#d7b8a4');rect(245,214,30,60,'#8c9bb5');
-rect(292,202,18,18,'#dfb8a2');rect(286,220,30,54,'#b27c89');rect(276,233,12,5,'#e9bea7');
-for(let i=0;i<3;i++){const x=263+i*27,y=140+(i%2)*11;label('+',x,y,'#ffebc2',23)}
-label('LOVE / SHARE',231,112,'#fff0d8',12);
-for(let k=0;k<3;k++){const x=421+k*66;rect(x,174,60,85,'#c5b4b0');rect(x+4,179,52,75,'#988a9c');rect(x+22,193,15,15,'#e4c7ae');rect(x+17,209,24,30,k===0?'#b27d86':k===1?'#817fa4':'#b9a4a5')}
-label('MARY / PISISTRATUS / STEPHEN',403,143,'#fff0d8',10);
-for(let i=0;i<11;i++){const x=418+i*19,y=264+(i%3)*8;rect(x,y,32,12,'#626379')}
-for(let i=0;i<5;i++)label('P',519+i*19,65,'#f6cba8',16);
-label('FIVE MARKS',513,89,'#fff0d8',11);
-label('PURGATORIO XV',17,24,'#fff1d1',15);
+rect(0,0,640,360,'#1d2336');rect(0,0,640,155,'#343b50');rect(0,155,640,130,'#414656');rect(0,285,640,75,'#686773');
+for(let k=0;k<33;k++){const x=((k*73+Math.sin(frame*.018+k)*32)%690)-30,y=45+(k*31)%252;rect(x,y,95+(k%3)*30,20+(k%4)*9,k%2?'#3b4050':'#4a4e5c')}
+rect(99,235,19,19,'#dab5a0');rect(94,254,29,47,'#8b95aa');rect(138,244,17,17,'#d7b1a0');rect(133,261,28,44,'#ae7985');rect(120,266,14,5,'#d9b3a2');
+label('VIRGIL / FOLLOW',19,207,'#efe1ce',12);
+for(let k=0;k<5;k++){const x=224+k*32;rect(x,236+(k%2)*10,14,14,'#c3a6a0');rect(x-4,251+(k%2)*10,24,41,'#797f91')}
+for(let i=0;i<8;i++){const x=210+i*25,y=173+(i%3)*8;label('~',x,y+Math.sin(frame*.045+i)*4,'#bfc7d2',17)}
+label('AGNUS DEI / PEACE',202,134,'#f7e3d0',12);
+rect(498,227,19,19,'#d0aa9a');rect(492,247,32,48,'#7e8699');rect(529,236,17,17,'#dcb59f');rect(524,254,27,42,'#a67884');
+label('MARCO / FREE WILL',433,196,'#f7e3d0',12);
+rect(593,151,37,103,'#9194a0');rect(600,151,31,103,'#b0a99d');
+for(let i=0;i<5;i++)label('P',507+i*19,68,'#efd0ae',16);
+label('FIVE MARKS',507,93,'#f8e9d5',11);
+label('PURGATORIO XVI',17,24,'#fff1d1',15);
 rect(player,269,17,17,'#e7c0a3');rect(player-3,287,23,32,'#ba6a77');rect(player,316,5,7,'#333653');rect(player+12,316,5,7,'#333653');
 if(held.has('ArrowLeft')||held.has('KeyA'))player=Math.max(7,player-2.4);
 if(held.has('ArrowRight')||held.has('KeyD'))player=Math.min(613,player+2.4);
