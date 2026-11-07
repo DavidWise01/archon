@@ -1,20 +1,20 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ARCHON — The Ascent · Purgatorio X</title><style>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ARCHON — The Ascent · Purgatorio XI</title><style>
 :root{color-scheme:dark}*{box-sizing:border-box}body{background:linear-gradient(#11142d,#262542);color:#f3e6d4;font:15px/1.5 system-ui,Segoe UI,sans-serif;margin:0}main{max-width:1120px;padding:20px;margin:auto}h1{font-size:clamp(26px,5vw,46px);margin:5px 0}h2{font-size:18px;margin:0 0 8px}.eyebrow{font:700 11px monospace;letter-spacing:.15em;color:#f0c38d}.grid{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(260px,1fr);gap:15px;margin-top:17px}.panel{border:1px solid #776786;background:#201e36;border-radius:13px;padding:16px;min-width:0}canvas{display:block;width:100%;aspect-ratio:16/9;image-rendering:pixelated;background:#191d38;border-radius:9px;border:1px solid #927e9a}.controls{display:flex;gap:9px;flex-wrap:wrap;margin:12px 0}button{background:#4d3d5a;border:1px solid #aa8291;color:#fff;border-radius:8px;padding:10px 14px;font-weight:700;cursor:pointer}button:hover{background:#65506b}button:focus-visible{outline:2px solid #f9d49b}p{color:#dbcede}.status{background:#302943;border-radius:8px;min-height:80px;padding:12px}pre{white-space:pre-wrap;background:#17182d;border-radius:9px;padding:14px;color:#eacba5;font-size:12px;line-height:1.7}a{color:#b8dfe4}.counter{color:#a8dccb;font:700 12px monospace}footer{color:#b1a7bb;font-size:12px;margin-top:20px} @media(max-width:740px){.grid{grid-template-columns:1fr}}
-</style></head><body><main><header><div class="eyebrow">ARCHON / THE LIVING THREAD / THE ASCENT</div><h1>Purgatorio X <span style="color:#ffd09a">· The Weight of Pride</span></h1><p>The first terrace: three scenes of humility carved in marble, and the proud bearing stones.</p></header>
-<div class="grid"><section class="panel"><canvas id="game" width="640" height="360" tabindex="0" aria-label="Playable pixel art: sculpted humility, the first terrace of pride, and penitents bent under stones"></canvas><div class="controls"><button id="left">◀ WALK</button><button id="right">WALK ▶</button><button id="observe">E · OBSERVE</button><button id="reset">↺ RESET</button></div><div class="counter" id="counter">WITNESSES 0 / 3</div><p class="status" id="status" aria-live="polite">Read the marble reliefs of Mary, David and Trajan, then witness the proud carrying their stones.</p><p>Keyboard: A / D or ← / → to walk; E to observe. Observe the carvings, the burdens and Virgil's direction. Seven forehead marks remain.</p></section>
-<aside class="panel"><h2>Today's encounter</h2><p>On the first terrace Dante studies marble carvings: Mary receiving Gabriel's announcement, David dancing before the Ark and Trajan pausing to grant a widow justice. The proud approach, bent beneath enormous stones. Virgil urges Dante to study and continue.</p><pre>PURGATORIO / X
+</style></head><body><main><header><div class="eyebrow">ARCHON / THE LIVING THREAD / THE ASCENT</div><h1>Purgatorio XI <span style="color:#ffd09a">· The Fading of Glory</span></h1><p>The proud pray beneath their stones; Omberto, Oderisi, and Provenzan reveal three kinds of humility.</p></header>
+<div class="grid"><section class="panel"><canvas id="game" width="640" height="360" tabindex="0" aria-label="Playable pixel art: Omberto and Oderisi under stones and Provenzan's public humility"></canvas><div class="controls"><button id="left">◀ WALK</button><button id="right">WALK ▶</button><button id="observe">E · OBSERVE</button><button id="reset">↺ RESET</button></div><div class="counter" id="counter">WITNESSES 0 / 3</div><p class="status" id="status" aria-live="polite">Hear the shared prayer and Omberto's confession, Oderisi's reflection on fame, and Provenzan's remembered act.</p><p>Keyboard: A / D or ← / → to walk; E to observe. Observe the prayer and confession, fame's decline, and Provenzan's reported public plea. Seven marks remain.</p></section>
+<aside class="panel"><h2>Today's encounter</h2><p>The proud pray under heavy stones. Omberto Aldobrandeschi confesses his family arrogance. Oderisi da Gubbio speaks of Franco Bolognese and the brief life of worldly fame. He recounts Provenzan Salvani begging publicly to ransom a friend.</p><pre>PURGATORIO / XI
        |
-FIRST TERRACE / PRIDE
+PROUD: CARRY / PRAY
        |
-MARY: RECEIVE
-DAVID: DANCE
-TRAJAN: HEAR / ACT
+OMBERTO: CONFESS
        |
-PROUD: BEND / CARRY
+ODERISI: YIELD FAME
        |
-VIRGIL: GUIDE / CONTINUE
+PROVENZAN: BEG FOR FRIEND
        |
-7 P MARKS STILL PRESENT</pre><p>The examples show humility before the burden is encountered. The first P has not yet been erased.</p><p><a href="./">The sealed Inferno</a> · <a href="https://github.com/DavidWise01/archon/blob/main/alchemy/ascent/010.json">Canonical ascent record</a></p></aside></div><footer>Original sealed 41-tick journey preserved · Inferno's sealed Stage 041 preserved · This ascent is a new append-only branch.</footer></main><script>
+DANTE: LISTEN / CONTINUE
+       |
+7 P MARKS STILL PRESENT</pre><p>Recognition fades; the acts and their witnesses remain. No P is erased until the next passage.</p><p><a href="./">The sealed Inferno</a> · <a href="https://github.com/DavidWise01/archon/blob/main/alchemy/ascent/011.json">Canonical ascent record</a></p></aside></div><footer>Original sealed 41-tick journey preserved · Inferno's sealed Stage 041 preserved · This ascent is a new append-only branch.</footer></main><script>
 'use strict';
 const c=document.getElementById('game'),ctx=c.getContext('2d'),status=document.getElementById('status'),counter=document.getElementById('counter');
 let player=46,frame=0;const held=new Set(),seen=new Set();
@@ -29,28 +29,28 @@ const label=(str,x,y,color='#f9e4c3',size=11)=>{ctx.fillStyle=color;ctx.font='bo
 
 
 
-function witness(){const zone=player<210?'reliefs':player<410?'burdens':'guide';seen.add(zone);
+
+function witness(){const zone=player<210?'omberto':player<410?'oderisi':'provenzan';seen.add(zone);
 const words={
-reliefs:'WITNESS A: three MARBLE RELIEFS show Mary accepting, David dancing, and Trajan hearing the widow. These are sculpted exemplars.',
-burdens:'WITNESS B: proud souls BEND and CARRY huge stones, advancing slowly across the terrace.',
-guide:'WITNESS C: Virgil GUIDES Dante onward. Entry is complete, but all seven P marks are still present.'
-};status.textContent=words[zone]+(seen.size===3?' THREE WITNESSES COMPLETE. FIRST TERRACE CONTINUES.':'');counter.textContent='WITNESSES '+seen.size+' / 3'}
-function reset(){player=46;seen.clear();status.textContent='Read the marble reliefs of Mary, David and Trajan, then witness the proud carrying their stones.';counter.textContent='WITNESSES 0 / 3'}
+omberto:'WITNESS A: the souls PRAY beneath stones. Omberto CONFESSES inherited arrogance and contempt.',
+oderisi:'WITNESS B: Oderisi YIELDS the claim to highest renown and NAMES Franco Bolognese; fame passes.',
+provenzan:'WITNESS C: Oderisi RECOUNTS Provenzan Salvani BEGGING in the public square to ransom a friend.'
+};status.textContent=words[zone]+(seen.size===3?' THREE WITNESSES COMPLETE. SEVEN MARKS REMAIN.':'');counter.textContent='WITNESSES '+seen.size+' / 3'}
+function reset(){player=46;seen.clear();status.textContent='Hear the shared prayer and Omberto\'s confession, Oderisi\'s reflection on fame, and Provenzan\'s remembered act.';counter.textContent='WITNESSES 0 / 3'}
 function draw(){frame++;
-rect(0,0,640,360,'#48516b');rect(0,0,640,135,'#8d94a5');rect(0,135,640,140,'#76758b');rect(0,275,640,85,'#9f9190');
-rect(11,122,209,138,'#d5c9bf');rect(18,129,195,124,'#ede0d1');
-for(let i=0;i<3;i++){const x=23+i*63;rect(x,146,56,92,'#c6b7b0');rect(x+3,149,50,86,'#e4d5c8')}
-rect(31,168,9,10,'#927f86');rect(28,178,15,30,'#9d9198');rect(49,174,9,10,'#927f86');rect(45,184,15,23,'#a88d8f');
-rect(92,172,11,10,'#a08b86');rect(90,182,16,28,'#bc9b8e');rect(85,180,7,5,'#ad948e');
-rect(153,171,10,11,'#9c8589');rect(149,183,18,28,'#a18d92');rect(173,180,9,11,'#947e85');rect(170,191,15,24,'#b1a0a1');
-label('MARY  DAVID  TRAJAN',21,113,'#fff1d8',11);
-for(let k=0;k<3;k++){const x=257+k*66,y=248+(k%2)*8;rect(x-4,y-46,48,38,k%2?'#6a6478':'#867c86');rect(x,y-9,27,12,'#c8aa99');rect(x+7,y+1,19,24,'#8c7c90');rect(x+9,y+24,25,5,'#5b546c')}
-label('PRIDE / CARRY',266,171,'#fff1d8',12);
-rect(532,203,22,22,'#d4b7a2');rect(527,225,32,56,'#8993ac');rect(566,206,22,22,'#d4ae9f');rect(562,228,32,52,'#ae7b88');
-label('VIRGIL / DANTE',495,175,'#fff1d8',11);
-for(let k=0;k<7;k++){label('P',520+k*15,62,'#f9d0aa',15)}
-label('SEVEN MARKS',509,90,'#fff1d8',11);
-label('PURGATORIO X',17,24,'#fff1d1',15);
+rect(0,0,640,360,'#424963');rect(0,0,640,135,'#9294a7');rect(0,135,640,143,'#777388');rect(0,278,640,82,'#a5968f');
+for(let i=0;i<12;i++){const x=(i*67)%640;rect(x,266+(i%3)*10,50,5,i%2?'#8d828a':'#b9a99e')}
+for(let k=0;k<2;k++){const x=62+k*123,y=238+(k%2)*11;rect(x-13,y-74,93,56,k?'#716b7a':'#857985');rect(x,y-14,49,12,'#cfab9c');rect(x+11,y-2,34,37,'#8d8396');rect(x+12,y+32,40,5,'#594d64')}
+label('OMBERTO / CONFESS',14,136,'#fff0d8',12);label('ODERISI / FAME',206,137,'#fff0d8',12);
+rect(405,176,197,112,'#887b89');rect(415,181,178,9,'#c0a99c');
+for(let k=0;k<4;k++){const x=422+k*44;rect(x,206,22,69,k%2?'#958498':'#a195a7')}
+rect(490,221,18,18,'#d7b19e');rect(485,240,28,43,'#987788');rect(509,245,28,6,'#d6b49f');
+rect(546,225,18,17,'#d0ad9b');rect(542,242,30,42,'#7c7f9a');
+rect(522,252,13,6,'#ebc58f');
+label('PROVENZAN / BEG',424,159,'#fff0d8',12);
+for(let k=0;k<7;k++)label('P',500+k*18,67,'#f6c8a7',16);
+label('SEVEN MARKS',501,89,'#fff0d8',11);
+label('PURGATORIO XI',17,24,'#fff1d1',15);
 rect(player,269,17,17,'#e7c0a3');rect(player-3,287,23,32,'#ba6a77');rect(player,316,5,7,'#333653');rect(player+12,316,5,7,'#333653');
 if(held.has('ArrowLeft')||held.has('KeyA'))player=Math.max(7,player-2.4);
 if(held.has('ArrowRight')||held.has('KeyD'))player=Math.min(613,player+2.4);
