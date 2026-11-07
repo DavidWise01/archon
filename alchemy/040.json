@@ -1,0 +1,108 @@
+{
+  "protocol": "archon/alchemical-living-thread/v2",
+  "stage": 40,
+  "identity": "{{i}}",
+  "parent": "alchemy/039.json",
+  "parentBlobSha": "030681bdcc67d9721872b4b9ec71a06d2914fcc9",
+  "scene": "Inferno XXXIII — Ugolino's imprisoned family and Ptolomea's claim of bodies still active after souls descend",
+  "source": "Dante, Inferno XXXIII",
+  "story": [
+    "The pair seen in the previous canto is identified as Count Ugolino gnawing Archbishop Ruggieri, whom he blames for betraying and imprisoning him.",
+    "Ugolino lifts his mouth from Ruggieri and recounts his confinement in the Tower of Hunger with younger companions, the door being nailed shut, their suffering, and their deaths. His final words leave the exact circumstances of his own death open to interpretation.",
+    "Dante and Virgil move to Ptolomea, where traitors to guests lie face-up in the ice, their tears freezing across their eyes.",
+    "Friar Alberigo asks Dante to remove the frozen tears and explains a supernatural rule of the poem: some souls descend here at the moment of betrayal while demons continue to animate their living bodies on Earth.",
+    "Alberigo names Branca d'Oria as another example. Dante doubts the account because Branca appears alive in the world; the claim is presented as Alberigo's testimony within the fiction, not an observed fact about real consciousness.",
+    "Dante declines to clear Alberigo's eyes despite an earlier conditional promise, and the travelers continue toward the deepest region. Lucifer and the exit are reserved for Canto XXXIV."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Count Ugolino",
+      "semantic": "A speaker's account of prior imprisonment and deprivation is testimony distinct from the present scene",
+      "somatic": {
+        "verb": "GNAW_PAUSE_RECOUNT",
+        "gesture": "lifts his mouth from Ruggieri and recounts the sealed tower and hunger",
+        "observable": "the gnawing is seen; the tower events are heard through his account"
+      }
+    },
+    {
+      "actor": "Ruggieri",
+      "semantic": "One victim in a shared hollow remains a distinct identified figure",
+      "somatic": {
+        "verb": "REMAIN_HELD",
+        "gesture": "remains fixed beneath Ugolino in the ice",
+        "observable": "attribution arises through Ugolino's words"
+      }
+    },
+    {
+      "actor": "Ptolomea / frozen tears",
+      "semantic": "Sensory visibility may be obscured by a self-reinforcing layer of ice",
+      "somatic": {
+        "verb": "FREEZE_SEAL",
+        "gesture": "the traitors' upward-facing tears freeze over their eyes",
+        "observable": "faces are present but tear ice obstructs their vision"
+      }
+    },
+    {
+      "actor": "Friar Alberigo",
+      "semantic": "A supernatural assertion about separation of soul and living body must retain its speaker and epistemic status",
+      "somatic": {
+        "verb": "ASK_CLAIM_NAME",
+        "gesture": "asks Dante to clear his eyes and claims demons animate bodies after souls are damned; names Branca d'Oria",
+        "observable": "Alberigo's claim is heard, not independently verified"
+      }
+    },
+    {
+      "actor": "Dante (1) and Virgil [2]",
+      "semantic": "Distinguish observable action, recollection, and asserted metaphysics; preserve an unfulfilled promise",
+      "somatic": {
+        "verb": "LISTEN_QUESTION_REFUSE_CONTINUE",
+        "gesture": "listen to Ugolino, question Alberigo's account and leave his eyes covered",
+        "observable": "Dante does not remove the ice and the travelers proceed"
+      }
+    }
+  ],
+  "cipher": {
+    "alphaOmega": "[ (1), [2] ]",
+    "operator": "OBSERVE -> RECOUNT -> QUESTION -> ATTRIBUTE -> WITHHOLD -> CONTINUE",
+    "notation": "UGOLINO{seen:gnawing,reported:tower}; ALBERIGO{claim:soul_descends_body_acts,verified:false}; BRANCA{named_by:Alberigo}; DANTE{promise:made,eye_ice_cleared:false}",
+    "invariants": [
+      "Observed gnawing and recounted imprisonment are different evidentiary classes",
+      "Ugolino's final statement need not be treated as a confirmed confession of cannibalism",
+      "A body appearing active in the world would not, by itself, test the poem's supernatural claim about its soul",
+      "Alberigo's assertion about demon-animated bodies is character testimony, not an empirical finding about consciousness or possession",
+      "Dante's failure to clear the eye ice is preserved even if he previously offered to do so",
+      "Stage 040 observes Ptolomea and stops before the Lucifer episode of Canto XXXIV"
+    ],
+    "newAtomicAssignments": [],
+    "chemicalReaction": "none",
+    "product": "none",
+    "preserve": [
+      "(1) H Dante and [2] He Virgil",
+      "[6] C life / six-poet fellowship",
+      "Noble Castle [ (7)[8]\\\\(9)[10] ]",
+      "(11) Na reset analogy"
+    ]
+  },
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "visible act versus narrated past",
+      "somatic": "UGOLINO GNAWS, PAUSES and RECOUNTS the Tower of Hunger",
+      "observable": "the gnawing is seen; the starvation narrative is attributed to Ugolino"
+    },
+    {
+      "id": "B",
+      "semantic": "obstructed perception and supernatural claim",
+      "somatic": "TEARS FREEZE; ALBERIGO ASKS and CLAIMS the soul-body separation",
+      "observable": "ice is seen; the claim about living bodies is not independently verified"
+    },
+    {
+      "id": "C",
+      "semantic": "promise and action ledger",
+      "somatic": "DANTE QUESTIONS, REFUSES to clear the eyes, then CONTINUES",
+      "observable": "requested relief is not delivered; the promise and outcome stay distinct"
+    }
+  ],
+  "next": "Inferno XXXIV — Lucifer frozen in Cocytus, three mouths, the central inversion and the climb toward the stars",
+  "appendOnly": true
+}
