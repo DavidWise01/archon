@@ -1,0 +1,40 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ARCHON — The Ascent · Purgatorio I</title><style>
+:root{color-scheme:dark}*{box-sizing:border-box}body{background:linear-gradient(#11142d,#262542);color:#f3e6d4;font:15px/1.5 system-ui,Segoe UI,sans-serif;margin:0}main{max-width:1120px;padding:20px;margin:auto}h1{font-size:clamp(26px,5vw,46px);margin:5px 0}h2{font-size:18px;margin:0 0 8px}.eyebrow{font:700 11px monospace;letter-spacing:.15em;color:#f0c38d}.grid{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(260px,1fr);gap:15px;margin-top:17px}.panel{border:1px solid #776786;background:#201e36;border-radius:13px;padding:16px;min-width:0}canvas{display:block;width:100%;aspect-ratio:16/9;image-rendering:pixelated;background:#191d38;border-radius:9px;border:1px solid #927e9a}.controls{display:flex;gap:9px;flex-wrap:wrap;margin:12px 0}button{background:#4d3d5a;border:1px solid #aa8291;color:#fff;border-radius:8px;padding:10px 14px;font-weight:700;cursor:pointer}button:hover{background:#65506b}button:focus-visible{outline:2px solid #f9d49b}p{color:#dbcede}.status{background:#302943;border-radius:8px;min-height:80px;padding:12px}pre{white-space:pre-wrap;background:#17182d;border-radius:9px;padding:14px;color:#eacba5;font-size:12px;line-height:1.7}a{color:#b8dfe4}.counter{color:#a8dccb;font:700 12px monospace}footer{color:#b1a7bb;font-size:12px;margin-top:20px} @media(max-width:740px){.grid{grid-template-columns:1fr}}
+</style></head><body><main><header><div class="eyebrow">ARCHON / THE LIVING THREAD / THE ASCENT</div><h1>Purgatorio I <span style="color:#ffd09a">· The Shore at Dawn</span></h1><p>Hell is behind them. Now the mountain rises. A guardian, a washing, and a reed.</p></header>
+<div class="grid"><section class="panel"><canvas id="game" width="640" height="360" tabindex="0" aria-label="Playable pixel art: dawn shore of Mount Purgatory with Cato and Virgil"></canvas><div class="controls"><button id="left">◀ WALK</button><button id="right">WALK ▶</button><button id="observe">E · OBSERVE</button><button id="reset">↺ RESET</button></div><div class="counter" id="counter">WITNESSES 0 / 3</div><p class="status" id="status" aria-live="polite">The first dawn outside Hell. Walk across the shore and observe the stars, Cato, and the washing with dew and rush.</p><p>Keyboard: A / D or ← / → to walk; E to observe. Observe in all three zones to complete the preparation.</p></section>
+<aside class="panel"><h2>The next scene</h2><p>Under an open sky, Dante sees four stars. Cato asks why he has come from Hell. Virgil explains. Cato allows passage, on the condition that Virgil wash Dante's face and gird him with a humble rush.</p><pre>INFERNO / 041
+   |
+   |  EMERGE
+   v
+PURGATORIO / I
+   |
+DAWN + FOUR STARS
+   |
+CATO: QUESTION
+   |
+VIRGIL: EXPLAIN
+   |
+WASH FACE / BIND RUSH
+   |
+BEGIN ASCENT</pre><p>One action follows the next. No new descent and no spinor detour.</p><p><a href="./">The sealed Inferno</a> · <a href="https://github.com/DavidWise01/archon/blob/main/alchemy/ascent/001.json">Canonical ascent record</a></p></aside></div><footer>Original sealed 41-tick journey preserved · Inferno's sealed Stage 041 preserved · This ascent is a new append-only branch.</footer></main><script>
+'use strict';
+const c=document.getElementById('game'),ctx=c.getContext('2d'),status=document.getElementById('status'),counter=document.getElementById('counter');
+let player=46,frame=0;const held=new Set(),seen=new Set();
+const rect=(x,y,w,h,color)=>{ctx.fillStyle=color;ctx.fillRect(x,y,w,h)};
+const label=(str,x,y,color='#f9e4c3',size=11)=>{ctx.fillStyle=color;ctx.font='bold '+size+'px monospace';ctx.fillText(str,x,y)};
+function witness(){let zone=player<210?'stars':player<410?'cato':'wash';seen.add(zone);const words={stars:'WITNESS A: Dante looks up. Four stars shine in a sky that was hidden throughout the descent.',cato:'WITNESS B: Cato questions the travelers; Virgil explains, and the guardian directs them to prepare.',wash:'WITNESS C: Virgil washes Dante with dew and binds a flexible rush around him. The ascent can begin.'};status.textContent=words[zone]+(seen.size===3?' THREE WITNESSES COMPLETE. THE MOUNTAIN AWAITS.':'');counter.textContent='WITNESSES '+seen.size+' / 3'}
+function reset(){player=46;seen.clear();status.textContent='The first dawn outside Hell. Walk across the shore and observe the stars, Cato, and the washing with dew and rush.';counter.textContent='WITNESSES 0 / 3'}
+function draw(){frame++;rect(0,0,640,360,'#293452');rect(0,0,640,125,'#2c304f');rect(0,125,640,135,'#c88f88');rect(0,224,640,85,'#6589a6');rect(0,301,640,59,'#a58d86');
+rect(0,176,640,14,'#e9b99e');rect(0,204,640,3,'#f6d6b5');
+for(let i=0;i<4;i++){const x=58+(i%2)*45,y=65+Math.floor(i/2)*29;rect(x-2,y-2,5,5,'#fff2c9');rect(x-6,y,13,1,'#fff2c9');rect(x,y-6,1,13,'#fff2c9')}
+for(let i=0;i<17;i++){let x=(i*71)%640,y=237+(i*13)%50;rect(x,y,17,2,i%2?'#a6c0c7':'#cee0da')}
+rect(260,202,20,20,'#d7b29d');rect(254,222,33,67,'#a5a8ad');rect(254,230,4,50,'#c8c2b8');rect(274,234,7,48,'#d6c8b3');label('CATO',250,190,'#fff0d2',12);
+rect(490,246,17,17,'#c9a693');rect(485,264,28,37,'#849db4');rect(513,256,17,17,'#d6b7a0');rect(509,273,26,29,'#b96d7a');rect(520,284,7,14,'#95c7a2');for(let i=0;i<9;i++){let x=540+i*7;rect(x,290+(i%3)*4,2,17,'#a8c393')}
+label('DEW + RUSH',471,213,'#fff0d2',11);
+rect(player,269,17,17,'#e7c0a3');rect(player-3,287,23,32,'#ba6a77');rect(player,316,5,7,'#333653');rect(player+12,316,5,7,'#333653');
+label('DAWN / FOUR STARS',24,34,'#fff1d1',13);label('SHORE OF PURGATORY',385,34,'#fff1d1',13);
+rect(0,0,640,5,'#16152b');
+if(held.has('ArrowLeft')||held.has('KeyA'))player=Math.max(7,player-2.4);if(held.has('ArrowRight')||held.has('KeyD'))player=Math.min(613,player+2.4);
+requestAnimationFrame(draw)}
+window.addEventListener('keydown',e=>{if(['ArrowLeft','ArrowRight','KeyA','KeyD','KeyE'].includes(e.code)){held.add(e.code);if(e.code==='KeyE')witness();e.preventDefault()}});window.addEventListener('keyup',e=>held.delete(e.code));document.getElementById('left').onclick=()=>{player=Math.max(7,player-40)};document.getElementById('right').onclick=()=>{player=Math.min(613,player+40)};document.getElementById('observe').onclick=witness;document.getElementById('reset').onclick=reset;requestAnimationFrame(draw);
+</script></body></html>
