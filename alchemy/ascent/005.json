@@ -1,0 +1,70 @@
+{
+  "protocol": "archon/alchemical-living-thread/ascent-v1",
+  "chapter": "Purgatorio V",
+  "ascent": 5,
+  "identity": "{{i}}",
+  "parent": "alchemy/ascent/004.json",
+  "parentBlobSha": "b0aaea79571906ce971697484cc50165f3548859",
+  "appendOnly": true,
+  "previousTraversal": "Inferno 041 sealed",
+  "scene": "Violent deaths, last-minute repentance and the memory of Jacopo, Buonconte and Pia",
+  "story": [
+    "Dante's living body blocks the light and casts a shadow. Passing souls notice, call out, and turn toward the travelers. Virgil tells Dante not to stop merely because others are talking about him.",
+    "A company of souls who died violently approaches, singing the Miserere. They beg Dante, who is alive, to carry their names to the living so that prayers may help them.",
+    "Jacopo del Cassero recalls fleeing assassins near Oriago and bleeding to death in the marsh. He asks Dante to arrange prayers in Fano.",
+    "Buonconte da Montefeltro recounts his death after the battle of Campaldino. At his last breath, he invokes Mary, and an angel takes his soul, while a demon raises a storm that sweeps his body away. This is Buonconte's account within the poem.",
+    "Pia de' Tolomei speaks briefly: Siena made her, Maremma undid her. She asks to be remembered, alluding to her husband and the ring of marriage without spelling out every circumstance of her death.",
+    "The travelers continue up the mountain carrying the names and petitions of those who cannot themselves return to the living."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Dante",
+      "semantic": "A living witness can carry testimony across the boundary between the dead and living",
+      "somatic": "CAST_SHADOW_LISTEN_REMEMBER_CONTINUE"
+    },
+    {
+      "actor": "Jacopo del Cassero",
+      "semantic": "A dying person's account asks for public remembrance and prayer",
+      "somatic": "FLEE_BLEED_RECOUNT_REQUEST"
+    },
+    {
+      "actor": "Buonconte da Montefeltro",
+      "semantic": "A last prayer and a lost body are separated within the narrative",
+      "somatic": "FALL_INVOKE_RECOUNT"
+    },
+    {
+      "actor": "Pia de' Tolomei",
+      "semantic": "Sparse testimony still deserves precise attribution without invented details",
+      "somatic": "NAME_ALLUDE_REQUEST"
+    },
+    {
+      "actor": "Virgil",
+      "semantic": "Attend to the encounter without losing the direction of ascent",
+      "somatic": "GUIDE_CORRECT_CONTINUE"
+    }
+  ],
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "Jacopo's death and request",
+      "action": "HEAR Jacopo recount his flight, wounds and request for prayers in Fano",
+      "observable": "Jacopo speaks; the events of his death are attributed testimony"
+    },
+    {
+      "id": "B",
+      "semantic": "Buonconte's final appeal",
+      "action": "HEAR Buonconte's account of invocation, angel and storm",
+      "observable": "the last prayer and unlocated body are reported, not directly witnessed by Dante"
+    },
+    {
+      "id": "C",
+      "semantic": "Pia's remembrance",
+      "action": "HEAR Pia briefly name Siena and Maremma and ask to be remembered",
+      "observable": "Pia's words are brief; the unspoken details stay unfilled"
+    }
+  ],
+  "alchemicalReading": "Three forms of last-moment conversion: remembrance carries the account; prayer gives it a destination; brevity preserves what is unknown.",
+  "invariant": "A testimony can be carried faithfully without converting reported events into first-hand observation or filling gaps with conjecture.",
+  "next": "Purgatorio VI — the crowd's petitions, Sordello's embrace and Dante's lament over divided Italy",
+  "sealInfernoUntouched": true
+}
