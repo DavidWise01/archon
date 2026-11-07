@@ -1,0 +1,73 @@
+{
+  "protocol": "archon/alchemical-living-thread/ascent-v1",
+  "chapter": "Purgatorio XVIII",
+  "ascent": 18,
+  "identity": "{{i}}",
+  "parent": "alchemy/ascent/017.json",
+  "parentBlobSha": "e1984c1415b32c3da6b100329ffa258ceec9ce37",
+  "appendOnly": true,
+  "previousTraversal": "Inferno 041 sealed",
+  "scene": "Virgil's account of love and judgment; slothful penitents run through night, crying zeal and warning against delay; Dante falls asleep",
+  "story": [
+    "On the fourth terrace, in the darkness after sunset, Dante asks Virgil to explain how love arises and how it can be judged. Virgil describes the mind responding to what appears desirable and the freedom to consent, restrain, or direct that response.",
+    "Virgil distinguishes the natural turning toward what seems good from the deliberate choice that can govern action. He acknowledges that fuller understanding will come through Beatrice, and Dante continues to listen.",
+    "A multitude of penitents suddenly rushes along the terrace. They run without pause, correcting their former slowness in pursuing the good. The abbott of San Zeno speaks briefly as the group passes.",
+    "The runners cry examples of eager action: Mary hastening to Elizabeth, and Caesar moving swiftly toward military goals. Others warn of those who delayed or refused their appointed tasks, including Israel's wilderness generation and the Trojans who remained behind in Sicily.",
+    "Dante hears the calls fade along the ledge. The pace of the runners contrasts with the travelers' forced nighttime pause; a moral urgency is not the same as permission to climb in darkness.",
+    "As Dante's thoughts grow heavy, sleep overtakes him. His next dream and the transition to the fifth terrace belong to the following canto."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Dante",
+      "semantic": "A traveler learns that attraction and consent are distinct, then witnesses zeal before sleeping",
+      "somatic": "ASK_LISTEN_WATCH_REST_SLEEP"
+    },
+    {
+      "actor": "Virgil",
+      "semantic": "Reason can distinguish inclinations from choices, and still acknowledge the limits of its account",
+      "somatic": "EXPLAIN_GUIDE_PAUSE"
+    },
+    {
+      "actor": "Slothful penitents",
+      "semantic": "Running is the terrace's corrective practice for delayed pursuit of the good",
+      "somatic": "RUN_CALL_CONTINUE"
+    },
+    {
+      "actor": "Abbott of San Zeno",
+      "semantic": "A passing voice identifies a particular life but does not interrupt the running discipline",
+      "somatic": "SPEAK_WHILE_RUNNING"
+    },
+    {
+      "actor": "Night",
+      "semantic": "The time boundary suspends upward travel while active correction continues along the terrace",
+      "somatic": "DARKEN_HOLD_ASCENT"
+    }
+  ],
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "love and freedom",
+      "action": "HEAR Virgil DISTINGUISH attraction from the choice to act or refrain",
+      "observable": "a philosophical explanation is spoken, not an experimentally verified claim about the mind"
+    },
+    {
+      "id": "B",
+      "semantic": "zeal versus sloth",
+      "action": "SEE runners HASTEN along the terrace and HEAR examples of Mary and Caesar",
+      "observable": "running penitents are visible and their exemplars are recited"
+    },
+    {
+      "id": "C",
+      "semantic": "warnings and sleep",
+      "action": "HEAR warnings against delay and NOTICE Dante fall ASLEEP at night",
+      "observable": "warnings remain attributed examples, the upward gate stays closed, four marks remain"
+    }
+  ],
+  "alchemicalReading": "The slothful answer deficient love not with more explanation alone, but with sustained movement. Yet the body's sleep and the mountain's night boundary remain part of an ordered ascent.",
+  "invariant": "A choice to move is not identical to an opportunity to ascend. No angel touches Dante's forehead here: the count remains four.",
+  "previousP": 4,
+  "remainingP": 4,
+  "marksRemovedThisChapter": 0,
+  "next": "Purgatorio XIX — Dante's dream of the siren, the angel removes sloth's P, and Pope Adrian V speaks of avarice",
+  "sealInfernoUntouched": true
+}
