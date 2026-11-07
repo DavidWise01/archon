@@ -1,0 +1,108 @@
+{
+  "protocol": "archon/alchemical-living-thread/v2",
+  "stage": 29,
+  "identity": "{{i}}",
+  "parent": "alchemy/028.json",
+  "parentBlobSha": "6f4d7947dd1572579de789e4821cc829130d5027",
+  "scene": "Inferno XXII — Ciampolo tricks Malebranche; Alichino and Calcabrina fall into pitch",
+  "source": "Dante, Inferno XXII",
+  "story": [
+    "Dante and Virgil travel beside the boiling pitch under the Malebranche escort, hearing the demons' grotesque signals and seeing occasional backs rise briefly above the surface.",
+    "A demon hooks a barrator from Navarre, commonly called Ciampolo, and pulls him out of the tar.",
+    "Under questioning, Ciampolo identifies other barrators and offers to summon more if the demons stand back and hide.",
+    "The demons entertain his proposal; Alichino boasts that he can intercept him if he tries to dive.",
+    "Ciampolo exploits their distraction and leaps back into the pitch, escaping Alichino's grasp.",
+    "Calcabrina attacks Alichino in anger, and the two demons fight, fall into the boiling pitch and become trapped.",
+    "Other demons rush to retrieve them. Dante and Virgil continue toward the next bolgia; trust in the escort is further undermined."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Ciampolo, the Navarrese barrator",
+      "semantic": "A captive can exploit a watcher's expectations and their limited view",
+      "somatic": {
+        "verb": "OFFER_DISTRACT_DIVE_ESCAPE",
+        "gesture": "offers to call companions, gains space, then plunges into the pitch",
+        "observable": "he disappears beneath the surface before the demons can seize him"
+      }
+    },
+    {
+      "actor": "Alichino",
+      "semantic": "Confidence in interception does not guarantee capture",
+      "somatic": {
+        "verb": "BOAST_CHASE_MISS_FALL",
+        "gesture": "promises to catch Ciampolo, pursues him but fails, then fights Calcabrina and falls into the pitch",
+        "observable": "the boast is contradicted by the failed interception"
+      }
+    },
+    {
+      "actor": "Calcabrina",
+      "semantic": "Attention diverted from the original target can create a second failure",
+      "somatic": {
+        "verb": "ATTACK_GRAPPLE_FALL",
+        "gesture": "confronts Alichino; both tumble into the pitch",
+        "observable": "the two watchers become trapped in the medium they were patrolling"
+      }
+    },
+    {
+      "actor": "Malebranche escort",
+      "semantic": "A guard group can lose its ability to maintain surveillance through conflict within the group",
+      "somatic": {
+        "verb": "WATCH_ARGUE_RESCUE",
+        "gesture": "surrounds the captive then rushes to rescue the fallen demons",
+        "observable": "watcher actions shift from barrator to demon retrieval"
+      }
+    },
+    {
+      "actor": "Dante (1) and Virgil [2]",
+      "semantic": "Preserve the difference between a promise, a failed capture and an observed escape",
+      "somatic": {
+        "verb": "OBSERVE_CONTINUE",
+        "gesture": "observe the trick, escape and collision, then keep moving",
+        "observable": "reported intention does not overwrite the outcome"
+      }
+    }
+  ],
+  "cipher": {
+    "alphaOmega": "[ (1), [2] ]",
+    "operator": "CAPTURE -> PROMISE -> DIVERT -> DIVE -> MISS -> GRAPPLE -> FALL",
+    "notation": "CIAMPOLO:OFFER -> DIVE(PITCH); ALICHINO:BOAST+MISS; CALCABRINA:ATTACK; {ALICHINO,CALCABRINA}:FALL(PITCH)",
+    "invariants": [
+      "A promised interception must not be recorded as an accomplished capture",
+      "The observer's response can be manipulated when attention is redirected",
+      "An observed escape into opacity is not proof of physical disappearance or destruction",
+      "Conflict among watchers can disrupt the observation process",
+      "Alichino and Calcabrina fall into pitch; this does not establish that the entire escort is gone"
+    ],
+    "newAtomicAssignments": [],
+    "chemicalReaction": "none",
+    "product": "none",
+    "preserve": [
+      "(1) H Dante and [2] He Virgil",
+      "[6] C life/six-poet fellowship",
+      "Noble Castle [ (7)[8]\\\\(9)[10] ]",
+      "(11) sodium-reset analogy"
+    ]
+  },
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "bait and misdirected observation",
+      "somatic": "CIAMPOLO OFFERS to summon others and DIVERTS the demons",
+      "observable": "a conditional promise draws the guards' attention"
+    },
+    {
+      "id": "B",
+      "semantic": "uncaptured escape",
+      "somatic": "CIAMPOLO DIVES; ALICHINO MISSES",
+      "observable": "escape is observed rather than recorded as capture"
+    },
+    {
+      "id": "C",
+      "semantic": "watchers in the medium",
+      "somatic": "CALCABRINA ATTACKS ALICHINO; both FALL into pitch",
+      "observable": "two demons become temporarily trapped; other demons attempt rescue"
+    }
+  ],
+  "next": "Inferno XXIII — hypocrites under gilded lead cloaks; Virgil discovers the demons' directions were false",
+  "appendOnly": true
+}
