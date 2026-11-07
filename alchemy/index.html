@@ -64,8 +64,8 @@ No new element or product</pre>
 let p={x:47,y:208,vy:0,ground:false},keys=new Set(),frame=0,seen=new Set(),crossed=false;
 const rect=(x,y,w,h,color)=>{g.fillStyle=color;g.fillRect(Math.round(x),Math.round(y),Math.round(w),Math.round(h))};
 const label=(s,x,y,color='#f8e7b6',size=10)=>{g.fillStyle=color;g.font='bold '+size+'px monospace';g.fillText(s,x,y)};
-function observe(){const x=p.x;if(x<175){seen.add('flame');status.textContent='WITNESS A: Guido\'s separate flame APPROACHES and ASKS about Romagna; Dante ANSWERS. The speaker is Guido, not Ulysses.'}else if(x<320){seen.add('promise');status.textContent='WITNESS B: Guido REPORTS Boniface\'s promised advance pardon and his own deceitful COUNSEL. Dante did not witness those acts.'}else{seen.add('judgment');status.textContent='WITNESS C: Guido RECOUNTS the black cherub\'s challenge and judgment. The flame DEPARTS; reported judgment is not direct observation.'}if(seen.size===3)status.textContent+=' THREE WITNESSES PRESERVED. NEXT: DISCORD.'}
-function reset(){p={x:47,y:208,vy:0,ground:false};seen.clear();crossed=false;status.textContent='STAGE 034 reset: SPEAK, PROMISE, ADVISE, JUDGE. Report is not sight.'}
+function observe(){const x=p.x;if(x<175){seen.add('strike');status.textContent='WITNESS A: a demon STRIKES souls when they return to the ninth-bolgia circuit; division is repeated.'}else if(x<320){seen.add('heal');status.textContent='WITNESS B: wounds HEAL as souls CIRCLE, yet they RETURN to the same punishment. Healing is not release.'}else{seen.add('speak');status.textContent='WITNESS C: Bertran de Born CARRIES his head and SPEAKS about discord. Dante LISTENS; this speaker stays distinct.'}if(seen.size===3)status.textContent+=' THREE WITNESSES PRESERVED. NEXT: FALSIFIERS.'}
+function reset(){p={x:47,y:208,vy:0,ground:false};seen.clear();crossed=false;status.textContent='STAGE 035 reset: STRIKE, CIRCLE, HEAL, RETURN. No release.'}
 function draw(){
 frame++;rect(0,0,480,270,'#0d0f2b');
 for(let i=0;i<90;i++){let x=(i*73+17)%480,y=(i*59+11)%195;rect(x,y,i%13===0?3:1,i%13===0?3:1,i%4?'#7466a2':'#f3d696')}
@@ -127,15 +127,15 @@ label('REPORTED EVENTS',297,213,'#d7c4dd',8);
 
 rect(203,76,80,95,'#5d4b76');rect(209,82,68,89,'#1d172e');
 rect(206,74,73,7,'#ebc77e');rect(206,74,5,98,'#c79a72');rect(275,74,5,98,'#c79a72');
-label('ASK',222,91,'#f9dfb2',8);label('JUDGE',217,107,'#d8b9f0',8);
+label('HEAL',220,91,'#f9dfb2',8);label('LOOP',219,107,'#d8b9f0',8);
 for(let m=0;m<6;m++){rect(217+m*9,114+(m%2)*8,4,3,'#896ea9')}
 
 rect(27,65,68,50,'#322b4b');rect(32,71,58,4,'#d1ac77');rect(32,106,58,4,'#d1ac77');label('035',48,95,'#ffe4a1',15);
 // Paired Li / Be glyph: bound in cipher only; the identity of 3 is held open.
 rect(190,30,105,31,'#3a294e');rect(194,34,97,23,'#20192f');
-label('GUIDO / XXVII',199,48,'#f6d3a2',10);label('PROMISE / COUNSEL',188,59,'#f2dbad',8);
-label('PROMISE != PARDON',189,72,'#e1c5ee',8);
-label('REPORT != SIGHT',201,122,'#d6bedc',8);
+label('DISCORD / XXVIII',190,48,'#f6d3a2',10);label('STRIKE / RETURN',191,59,'#f2dbad',8);
+label('HEAL != RELEASE',196,72,'#e1c5ee',8);
+label('RECURRING CIRCUIT',190,122,'#d6bedc',8);
 for(let k=0;k<12;k++){const y=80+k*7;rect(242+Math.sin(k*.7+frame*.021)*8,y,2,3,'#d8bfe9')}
 
 const dx=(keys.has('ArrowRight')||keys.has('KeyD')?1:0)-(keys.has('ArrowLeft')||keys.has('KeyA')?1:0);
