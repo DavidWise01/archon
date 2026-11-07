@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>042 | SPINOR GATE — Archon</title>
+<style>
+:root{color-scheme:dark;--bg:#090d19;--panel:#151d2e;--line:#34435d;--gold:#f2bf81;--teal:#7bd8c7;--violet:#c8a0f8;--muted:#a6b1c5}*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(ellipse at 60% -10%,#273251 0,#090d19 55%);font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:#f4f3f6}
+main{max-width:1120px;margin:auto;padding:26px 16px 44px}
+header{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:20px}
+small,.kicker{color:var(--teal);font-size:11px;letter-spacing:.18em;font-weight:800}
+h1{margin:8px 0;font-size:clamp(28px,5vw,49px);letter-spacing:-.055em}
+p{color:var(--muted);line-height:1.6}.tag{border:1px solid var(--line);padding:9px 12px;border-radius:99px;font-size:12px;color:var(--gold)}
+.grid{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(285px,1fr);gap:14px;margin-top:17px}
+.panel{background:linear-gradient(160deg,#1a2336,#11192a);border:1px solid var(--line);border-radius:15px;padding:17px;min-width:0}
+canvas{width:100%;display:block;aspect-ratio:16/10;border-radius:10px;background:#0b1022;border:1px solid #33415d}
+h2{font-size:16px;margin:0 0 12px}.controls{display:flex;flex-wrap:wrap;align-items:center;gap:9px;margin-top:18px}
+button{background:#2b3952;border:1px solid #50607d;border-radius:8px;color:#fff;padding:10px 13px;font-weight:650;cursor:pointer}button:hover{background:#354766}button.primary{color:#111522;background:var(--gold);border-color:var(--gold)}button:focus-visible,input:focus-visible{outline:2px solid var(--teal);outline-offset:3px}
+input[type=range]{width:100%;accent-color:var(--teal);margin-top:12px}
+.metrics{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}.metric{background:#101728;border:1px solid #33405b;border-radius:10px;padding:13px}.metric b{font-size:20px;color:var(--gold);display:block;font-variant-numeric:tabular-nums}.metric span{color:var(--muted);font-size:11px}
+pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:12px;line-height:1.7;color:#d7e2f4;background:#0d1424;padding:14px;border-radius:10px}
+.tests{display:grid;gap:9px}.test{padding:9px 11px;border:1px solid #40516b;background:#111a2a;border-radius:8px;display:flex;justify-content:space-between;gap:9px;font-size:12px}.pass{color:var(--teal);font-weight:800}
+.note{border-left:3px solid var(--gold);padding:9px 13px;color:#f0d8b7;background:#251f24;border-radius:3px;font-size:13px;line-height:1.55}
+footer{font-size:12px;color:var(--muted);margin-top:20px}a{color:var(--teal)}
+@media(max-width:800px){.grid{grid-template-columns:1fr}}
+</style></head><body><main>
+<header><div><div class="kicker">ARCHON / ALCHEMICAL LIVING THREAD / POST-SEAL BOUND</div><h1>042 <span style="color:var(--gold)">|</span> SPINOR GATE</h1><p>One ordinary revolution returns a spatial arrow. A spinor takes two.</p></div><div class="tag">041 SEALED · 042 APPENDED</div></header>
+<div class="grid"><section class="panel"><h2>Rotation frame and its double cover</h2><canvas id="view" width="960" height="600" aria-label="Animated mathematical demonstration of vector turning once and a spinor requiring two turns"></canvas>
+<label for="angle" style="display:block;margin-top:18px;color:var(--muted);font-size:12px">Rotation angle · <strong style="color:white" id="angleText">0°</strong></label><input id="angle" type="range" min="0" max="720" step="1" value="0">
+<div class="controls"><button class="primary" id="play">▶ Rotate</button><button id="zero">0°</button><button id="once">360°</button><button id="twice">720°</button></div>
+<div class="metrics"><div class="metric"><span>SPACE VECTOR</span><b id="vectorStatus">+v₀</b><span>360° period</span></div><div class="metric"><span>SPINOR REPRESENTATIVE</span><b id="spinorStatus">+ψ₀</b><span>720° period</span></div></div>
+</section><aside class="panel"><h2>Natural invariant</h2><p>A rotating physical direction and the spinor that covers that rotation have different closure lengths. The two spinor representatives +ψ and −ψ describe the same ray but differ by a sign in the lifted state.</p>
+<pre>v(θ) = (cos θ, sin θ)
+ψ(θ) = (cos θ/2, sin θ/2)
+
+v(2π) = +v(0)
+ψ(2π) = −ψ(0)
+ψ(4π) = +ψ(0)
+
+0 → 2π → 4π
++ψ → −ψ → +ψ</pre>
+<div class="tests"><div class="test"><span>Spatial arrow at 360°</span><span class="pass">RETURN</span></div><div class="test"><span>Spinor at 360°</span><span class="pass">SIGN −</span></div><div class="test"><span>Spinor at 720°</span><span class="pass">RETURN</span></div><div class="test"><span>Norm at every step</span><span class="pass">1</span></div></div>
+<p class="note"><strong>Boundary:</strong> The Dante center crossing reverses a chosen radial convention; by itself it is not a spinor. The extra ingredient is a continuously tracked rotating frame and its double-valued lift. At the center, the radial direction itself is undefined.</p></aside></div>
+<footer><a href="./">Return to the sealed Stage 041</a> · <a href="https://github.com/DavidWise01/archon/blob/main/alchemy/bounds/042-spinor.json">Canonical bound 042</a> · Observation-only numerical model, not a physical spinor experiment.</footer>
+</main><script>
+'use strict';
+const c=document.getElementById('view'),ctx=c.getContext('2d'),range=document.getElementById('angle');
+const angleText=document.getElementById('angleText'),vectorStatus=document.getElementById('vectorStatus'),spinorStatus=document.getElementById('spinorStatus'),play=document.getElementById('play');
+let deg=0,running=false,last=0;
+function setAngle(x){deg=Math.max(0,Math.min(720,Math.round(x)));range.value=String(deg);angleText.textContent=deg+'°';const t=deg*Math.PI/180;vectorStatus.textContent=deg===360||deg===720||deg===0?'+v₀':'v(θ)';spinorStatus.textContent=deg===360?'−ψ₀':deg===0||deg===720?'+ψ₀':'ψ(θ)';draw()}
+function line(x1,y1,x2,y2,color,width=3){ctx.strokeStyle=color;ctx.lineWidth=width;ctx.beginPath();ctx.moveTo(x1,y1);ctx.lineTo(x2,y2);ctx.stroke()}
+function label(t,x,y,color='#cbd6e7',size=22,align='center'){ctx.fillStyle=color;ctx.font='600 '+size+'px system-ui';ctx.textAlign=align;ctx.fillText(t,x,y)}
+function circle(x,y,r,color,width=2){ctx.strokeStyle=color;ctx.lineWidth=width;ctx.beginPath();ctx.arc(x,y,r,0,Math.PI*2);ctx.stroke()}
+function arrow(cx,cy,theta,r,color){const x=cx+Math.cos(theta)*r,y=cy-Math.sin(theta)*r;line(cx,cy,x,y,color,8);line(x,y,x-22*Math.cos(theta-.52),y+22*Math.sin(theta-.52),color,7);line(x,y,x-22*Math.cos(theta+.52),y+22*Math.sin(theta+.52),color,7)}
+function draw(){const w=c.width,h=c.height;ctx.fillStyle='#0b1022';ctx.fillRect(0,0,w,h);const a=deg*Math.PI/180;
+for(let x=0;x<w;x+=30)line(x,0,x,h,'#182238',1);for(let y=0;y<h;y+=30)line(0,y,w,y,'#182238',1);
+const left=240,right=720,y=305,r=155;circle(left,y,r,'#61748b',3);circle(right,y,r,'#61748b',3);line(480,65,480,532,'#41516b',2);
+line(left-r-12,y,left+r+12,y,'#31445f',2);line(left,y-r-12,left,y+r+12,'#31445f',2);
+line(right-r-12,y,right+r+12,y,'#31445f',2);line(right,y-r-12,right,y+r+12,'#31445f',2);
+arrow(left,y,a,137,'#7bd8c7');arrow(right,y,a/2,137,'#c8a0f8');
+label('SPACE VECTOR · θ',left,65,'#7bd8c7',23);label('SPINOR LIFT · θ/2',right,65,'#c8a0f8',23);
+label('360° closes',left,518,'#d5e1f0',20);label('720° closes',right,518,'#d5e1f0',20);
+label('v(θ)',left,558,'#7bd8c7',23);label('ψ(θ)',right,558,'#c8a0f8',23);
+ctx.fillStyle='#f2bf81';ctx.beginPath();ctx.arc(left,y,7,0,Math.PI*2);ctx.fill();ctx.beginPath();ctx.arc(right,y,7,0,Math.PI*2);ctx.fill();
+if(deg===360){label('RETURN +',left,110,'#7bd8c7',20);label('SIGN −',right,110,'#e8a3b4',20)}
+if(deg===720){label('RETURN +',left,110,'#7bd8c7',20);label('RETURN +',right,110,'#7bd8c7',20)}
+}
+range.addEventListener('input',()=>{running=false;play.textContent='▶ Rotate';setAngle(+range.value)});
+document.getElementById('zero').onclick=()=>{running=false;play.textContent='▶ Rotate';setAngle(0)};
+document.getElementById('once').onclick=()=>{running=false;play.textContent='▶ Rotate';setAngle(360)};
+document.getElementById('twice').onclick=()=>{running=false;play.textContent='▶ Rotate';setAngle(720)};
+play.onclick=()=>{if(!running&&deg>=720)setAngle(0);running=!running;play.textContent=running?'Ⅱ Pause':'▶ Rotate';last=0};
+function tick(now){if(running){if(last){const next=deg+(now-last)*.09;if(next>=720){setAngle(720);running=false;play.textContent='▶ Rotate'}else setAngle(next)}last=now}else last=0;requestAnimationFrame(tick)}requestAnimationFrame(tick);setAngle(0);
+</script></body></html>
