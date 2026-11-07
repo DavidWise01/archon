@@ -1,0 +1,73 @@
+{
+  "protocol": "archon/alchemical-living-thread/ascent-v1",
+  "chapter": "Purgatorio XIX",
+  "ascent": 19,
+  "identity": "{{i}}",
+  "parent": "alchemy/ascent/018.json",
+  "parentBlobSha": "fe722bc246b587f10cf0c15968c8b9111816de5d",
+  "appendOnly": true,
+  "previousTraversal": "Inferno 041 sealed",
+  "scene": "Dream-siren exposed, angel removes sloth's fourth P, avaricious souls lie face-down and Adrian V speaks",
+  "story": [
+    "Near dawn Dante dreams of a woman who at first appears stammering, distorted and pale. As he looks, she grows beautiful and sings as a seductive siren, claiming the power to hold travelers from their path.",
+    "A holy woman calls to Virgil to expose the deception. Virgil tears open the siren's garments, revealing her foul belly and breaking the charm. Dante awakens as the dream vanishes.",
+    "Virgil urges Dante to keep his gaze directed toward the higher path. At the departure from the terrace of sloth, a radiant angel directs the ascent and removes another P from Dante's forehead; the count falls from four to three.",
+    "The travelers enter the fifth terrace, where souls lie face-down against the earth, weeping and reciting that their souls cleave to the dust. Their former attachment to earthly wealth is corrected through contact with the ground.",
+    "Dante addresses a penitent who identifies himself as Adrian V. Adrian says that becoming pope showed him the vanity of worldly station and that his earthly tenure was brief. He asks Dante to request prayers from his niece Alagia.",
+    "When Dante kneels in deference to the pope, Adrian discourages it, saying they are fellow servants before God. Dante and Virgil continue; the fifth terrace has begun but its mark remains."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Dante",
+      "semantic": "A seductive appearance can mislead; waking and redirected attention restore the path",
+      "somatic": "DREAM_GAZE_WAKE_CLIMB_LISTEN"
+    },
+    {
+      "actor": "Holy woman and Virgil in dream",
+      "semantic": "The revealed underside contradicts the siren's persuasive surface",
+      "somatic": "CALL_EXPOSE_BREAK_SPELL"
+    },
+    {
+      "actor": "Angel",
+      "semantic": "The completed correction of sloth requires a witnessed erasure, not the dream alone",
+      "somatic": "DIRECT_TOUCH_ERASE"
+    },
+    {
+      "actor": "Avaricious penitents",
+      "semantic": "Face-down penance reverses earthly fixation",
+      "somatic": "LIE_PROSTRATE_WEEP_PRAY"
+    },
+    {
+      "actor": "Adrian V",
+      "semantic": "Rank does not justify worship; brief power and wealth cannot confer lasting worth",
+      "somatic": "IDENTIFY_CONFESS_REQUEST_CORRECT_KNEELING"
+    }
+  ],
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "siren and exposure",
+      "action": "DREAM the siren's apparent beauty and WATCH Virgil EXPOSE the deception",
+      "observable": "vision is a dream, not a present encounter with a real siren"
+    },
+    {
+      "id": "B",
+      "semantic": "fourth mark removed",
+      "action": "AWAKEN, FOLLOW Virgil, and RECEIVE the angel's cleansing",
+      "observable": "forehead P count changes from four to three"
+    },
+    {
+      "id": "C",
+      "semantic": "avarice and Adrian",
+      "action": "SEE the face-down penitents and HEAR Adrian V's confession and request for Alagia's prayers",
+      "observable": "penance visible; Adrian's previous life is his testimony; three marks remain"
+    }
+  ],
+  "alchemicalReading": "Desire's alluring image is tested against its concealed nature. A witnessed transition releases sloth's mark; the next terrace turns attachment to earthly goods face-down.",
+  "invariant": "Dream images do not establish events outside the dream. Only the angel's observed cleansing changes 4 P to 3 P; the terrace of avarice is not yet cleansed.",
+  "previousP": 4,
+  "remainingP": 3,
+  "marksRemovedThisChapter": 1,
+  "next": "Purgatorio XX — Hugh Capet on the avarice terrace; greed's history and an earthquake shake the mountain",
+  "sealInfernoUntouched": true
+}
