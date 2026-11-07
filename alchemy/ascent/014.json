@@ -1,0 +1,73 @@
+{
+  "protocol": "archon/alchemical-living-thread/ascent-v1",
+  "chapter": "Purgatorio XIV",
+  "ascent": 14,
+  "identity": "{{i}}",
+  "parent": "alchemy/ascent/013.json",
+  "parentBlobSha": "e457a6908c4f4b71a67ef1339f615e8df3c3fe94",
+  "appendOnly": true,
+  "previousTraversal": "Inferno 041 sealed",
+  "scene": "Guido del Duca and Rinieri da Calboli on the terrace of envy: the Arno, civic corruption and passing virtue",
+  "story": [
+    "Two penitents, whose eyes are sewn shut, hear Dante moving along the terrace and question the living traveler about his home. Dante answers indirectly, naming the river Arno rather than his city.",
+    "Guido del Duca launches into a fierce lament about the valley of the Arno. He describes its inhabitants through the biting images of pigs, curs, wolves and foxes, condemning corruption from the mountains to the river's mouth.",
+    "Guido predicts violence by Fulcieri da Calboli, nephew of his companion Rinieri. His prophecy remains attributed to Guido within the poem rather than treated as an observed event.",
+    "Guido confesses his own consuming envy: another person's happiness once made him turn pale. He and Rinieri recall the noble families and courteous customs of Romagna, mourning how much has faded.",
+    "As Dante and Virgil depart, unseen voices thunder examples of envy punished: Cain's fear of vengeance and Aglauros transformed to stone. Dante is startled, then reflects on the warning.",
+    "Virgil rebukes the temptation to cling to earthly bait and urges Dante to lift his sight toward higher things. The second terrace continues, and six marks remain."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Dante",
+      "semantic": "The traveler hears social criticism and warnings without turning predictions into direct observations",
+      "somatic": "ANSWER_LISTEN_STARTLE_REFLECT"
+    },
+    {
+      "actor": "Guido del Duca",
+      "semantic": "Confession of envy reveals the speaker's own responsibility alongside his critique of others",
+      "somatic": "QUESTION_LAMENT_CONFESS_PREDICT"
+    },
+    {
+      "actor": "Rinieri da Calboli",
+      "semantic": "A named companion anchors the conversation and its inherited social concerns",
+      "somatic": "LISTEN_REMAIN"
+    },
+    {
+      "actor": "Unseen voices",
+      "semantic": "Terrifying auditory examples warn against envy through remembered consequences",
+      "somatic": "CRY_OUT_PASS_OVERHEAD"
+    },
+    {
+      "actor": "Virgil",
+      "semantic": "The guide redirects Dante from earthly fascination toward the ascent",
+      "somatic": "REBUKE_DIRECT_GUIDE"
+    }
+  ],
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "river and civic lament",
+      "action": "HEAR Dante NAME the Arno and Guido DENOUNCE its corrupted towns through animal images",
+      "observable": "speech is witnessed; judgments are Guido's"
+    },
+    {
+      "id": "B",
+      "semantic": "envy confessed and prophecy bounded",
+      "action": "HEAR Guido CONFESS his envy and FORETELL Fulcieri's violence",
+      "observable": "confession and prophecy are attributed; no future event is directly observed"
+    },
+    {
+      "id": "C",
+      "semantic": "warnings and redirection",
+      "action": "HEAR the unseen examples of Cain and Aglauros, then FOLLOW Virgil's guidance",
+      "observable": "warnings are audible, the guide's redirection is witnessed, six P marks remain"
+    }
+  ],
+  "alchemicalReading": "Envy becomes legible in one man's confession and a whole river valley's factional grievance; the antidote begins by distinguishing one's own envy from accusations against others.",
+  "invariant": "Prophecy is not observation, civic criticism is not confession, and the terrace's continuing work does not erase a P: six remain.",
+  "previousP": 6,
+  "remainingP": 6,
+  "marksRemovedThisChapter": 0,
+  "next": "Purgatorio XV — Virgil explains shared spiritual goods; the angel removes the mark of envy and Dante sees visions of gentleness",
+  "sealInfernoUntouched": true
+}
