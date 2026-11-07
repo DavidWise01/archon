@@ -1,0 +1,73 @@
+{
+  "protocol": "archon/alchemical-living-thread/ascent-v1",
+  "chapter": "Purgatorio XIII",
+  "ascent": 13,
+  "identity": "{{i}}",
+  "parent": "alchemy/ascent/012.json",
+  "parentBlobSha": "d65ffc0df4e525afa6e35ffb134a8985e7254516",
+  "appendOnly": true,
+  "previousTraversal": "Inferno 041 sealed",
+  "scene": "Second terrace of envy: voices proclaim generosity, penitents' eyes are sewn shut, and Sapia recalls bitter joy at Siena's defeat",
+  "story": [
+    "Dante and Virgil enter the second terrace, a bare sweep of stone with no figures carved into it. The sun guides Virgil's choice of direction along the mountainside.",
+    "Voices rush overhead, unseen. They invoke Mary's concern at Cana—'They have no wine'—the friendship of Orestes and Pylades, and the call to love one's enemies. These are audible examples of generosity opposed to envy.",
+    "Farther along the terrace Dante sees souls dressed in coarse gray cloaks, supporting each other as they lean against the rock. Their eyelids are sewn shut with iron wire, like falcons hooded for training, and they call upon Mary and the saints.",
+    "Dante speaks with Sapia of Siena. Her name suggests wisdom, yet she tells him she was not wise: she delighted in the defeat of fellow Sienese at Colle, thanking God for their misfortune.",
+    "Sapia attributes help in her repentance to the prayers of Pier Pettina and asks Dante, a living traveler, to remember her among the living.",
+    "Dante reflects that he may owe more penance for pride than for envy. The second terrace continues; no angel removes another P mark yet."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Dante",
+      "semantic": "The observer encounters generosity by hearing before he encounters envy by sight",
+      "somatic": "WALK_LISTEN_LOOK_ASK_REMEMBER"
+    },
+    {
+      "actor": "Unseen voices",
+      "semantic": "Audible exemplars commend concern for others rather than resentment",
+      "somatic": "CALL_OVERHEAD_MOVE_AWAY"
+    },
+    {
+      "actor": "Envious penitents",
+      "semantic": "Envy's gaze is interrupted while mutual support and prayer become available",
+      "somatic": "LEAN_SUPPORT_PRAY"
+    },
+    {
+      "actor": "Sapia of Siena",
+      "semantic": "A confession can name the shameful joy taken in another's misfortune without excusing it",
+      "somatic": "CONFESS_RECALL_REQUEST"
+    },
+    {
+      "actor": "Virgil",
+      "semantic": "An empty terrace still has an oriented path forward",
+      "somatic": "TURN_BY_SUN_GUIDE"
+    }
+  ],
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "generosity heard",
+      "action": "HEAR the unseen voices proclaim generosity, friendship and love of enemies",
+      "observable": "sounds heard; speakers not visually identified"
+    },
+    {
+      "id": "B",
+      "semantic": "envious penitents",
+      "action": "SEE gray-cloaked penitents with sewn eyes LEAN on one another and PRAY",
+      "observable": "their bodily restraint and mutual support are visible"
+    },
+    {
+      "id": "C",
+      "semantic": "Sapia's confession",
+      "action": "LISTEN as Sapia RECOUNTS joy at the defeat of Siena and REQUESTS remembrance",
+      "observable": "Sapia's prior conduct is attributed testimony; Dante hears her request"
+    }
+  ],
+  "alchemicalReading": "The terrace substitutes compassionate hearing and mutual support for the injurious gaze. Its work has begun, but another cleansing has not yet taken place.",
+  "invariant": "Entering the second terrace, hearing the examples, and meeting Sapia do not erase a mark. Count remains six until the next angelic removal.",
+  "previousP": 6,
+  "remainingP": 6,
+  "marksRemovedThisChapter": 0,
+  "next": "Purgatorio XIV — Guido del Duca and Rinieri da Calboli lament envy and corruption along the Arno",
+  "sealInfernoUntouched": true
+}
