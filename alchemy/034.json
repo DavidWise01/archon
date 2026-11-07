@@ -1,0 +1,108 @@
+{
+  "protocol": "archon/alchemical-living-thread/v2",
+  "stage": 34,
+  "identity": "{{i}}",
+  "parent": "alchemy/033.json",
+  "parentBlobSha": "c4e192afb5657c7750d1584a7417336719337c4c",
+  "scene": "Inferno XXVII — Guido da Montefeltro and the impossible advance pardon",
+  "source": "Dante, Inferno XXVII",
+  "story": [
+    "After Ulysses' flame departs, a separate flame comes forward, enclosing Guido da Montefeltro, who asks for news of Romagna.",
+    "Virgil directs Dante to answer, and Dante describes the region's political conflicts. Guido recounts his earlier career as a cunning military leader and his subsequent turn to religious life.",
+    "Pope Boniface VIII sought Guido's strategic advice on defeating enemies at Palestrina and promised him absolution before he gave it.",
+    "Guido advised Boniface to promise much and keep little, a calculated act of deceit presented within the poem as fraudulent counsel.",
+    "Guido reports that after his death Saint Francis came for him but a black cherub claimed him, arguing that he could not both intend the sin and already repent it.",
+    "Minos judged Guido, and he was confined in a speaking flame in the eighth bolgia. The outcome is Guido's narrated account, not a judgment directly witnessed by Dante.",
+    "The flame leaves. Dante and Virgil continue toward the ninth bolgia, leaving its encounter to the next stage."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Guido da Montefeltro",
+      "semantic": "A speaker's intention and subsequent advice must be traced rather than erased by an advance promise",
+      "somatic": {
+        "verb": "ASK_RECOUNT_ADVISE",
+        "gesture": "asks for news of Romagna and recounts advising Boniface to promise much and fulfill little",
+        "observable": "one distinct flame delivers Guido's story"
+      }
+    },
+    {
+      "actor": "Boniface VIII",
+      "semantic": "A pledge of advance absolution is not an independently verified consequence",
+      "somatic": {
+        "verb": "REQUEST_PROMISE",
+        "gesture": "seeks fraudulent counsel and promises pardon beforehand, in Guido's account",
+        "observable": "promise is reported by Guido, not witnessed by Dante"
+      }
+    },
+    {
+      "actor": "Black cherub and Saint Francis",
+      "semantic": "The narrative stages conflicting claims of entitlement to the soul",
+      "somatic": {
+        "verb": "DISPUTE_CLAIM",
+        "gesture": "Francis comes for Guido; the black cherub argues that repentance cannot accompany a continuing intention to sin",
+        "observable": "afterlife dispute is narrated within Guido's testimony"
+      }
+    },
+    {
+      "actor": "Dante (1) and Virgil [2]",
+      "semantic": "Differentiate present speech from described past acts and judgments",
+      "somatic": {
+        "verb": "ANSWER_LISTEN_CONTINUE",
+        "gesture": "Dante answers about Romagna, listens to Guido and follows Virgil onward",
+        "observable": "Guido's flame is observed; past counsel and judgment are reported"
+      }
+    },
+    {
+      "actor": "Guido's flame",
+      "semantic": "A single enclosure permits attributed speech without revealing the occupant's outward body",
+      "somatic": {
+        "verb": "ENCLOSE_SPEAK_DEPART",
+        "gesture": "flame moves and speaks, then recedes",
+        "observable": "distinct from the double flame of Ulysses and Diomedes"
+      }
+    }
+  ],
+  "cipher": {
+    "alphaOmega": "[ (1), [2] ]",
+    "operator": "REQUEST -> PROMISE -> ADVISE -> ACT -> CLAIM -> JUDGE",
+    "notation": "BONIFACE:PROMISE(PARDON_BEFORE_COUNSEL); GUIDO:ADVISE(DECEIT); CHERUB:CHALLENGE(REPENTANCE+INTENT_TO_SIN); GUIDO:REPORT(JUDGMENT)",
+    "invariants": [
+      "A promised future pardon does not by itself verify that forgiveness has occurred",
+      "Continuing intention to commit an act is distinct from repentance for that act in the poem's moral argument",
+      "Statements about historical counsel and the soul's judgment are Guido's narrated testimony rather than Dante's direct visual observation",
+      "Do not merge Guido's single flame with the preceding shared flame containing Ulysses and Diomedes",
+      "No new atomic assignment or chemical transformation is implied"
+    ],
+    "newAtomicAssignments": [],
+    "chemicalReaction": "none",
+    "product": "none",
+    "preserve": [
+      "(1) H Dante and [2] He Virgil",
+      "[6] C life / six-poet fellowship",
+      "Noble Castle [ (7)[8]\\\\(9)[10] ]",
+      "(11) Na reset analogy"
+    ]
+  },
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "one distinct speaking vessel",
+      "somatic": "GUIDO'S FLAME APPROACHES and ASKS about Romagna; DANTE ANSWERS",
+      "observable": "one new speaker in a separate flame"
+    },
+    {
+      "id": "B",
+      "semantic": "advance promise and actual counsel",
+      "somatic": "BONIFACE PROMISES pardon; GUIDO ADVISES deceit",
+      "observable": "both acts are Guido's reported testimony, not independently witnessed"
+    },
+    {
+      "id": "C",
+      "semantic": "accountability and judgment",
+      "somatic": "CHERUB CHALLENGES the pardon; GUIDO RECOUNTS judgment; flame DEPARTS",
+      "observable": "judgment remains reported, not directly seen"
+    }
+  ],
+  "next": "Inferno XXVIII — ninth bolgia, sowers of discord divided and wounded by a demon's sword",
+  "appendOnly": true
+}
