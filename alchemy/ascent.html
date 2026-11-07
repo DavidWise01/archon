@@ -1,21 +1,22 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ARCHON — The Ascent · Purgatorio III</title><style>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ARCHON — The Ascent · Purgatorio IV</title><style>
 :root{color-scheme:dark}*{box-sizing:border-box}body{background:linear-gradient(#11142d,#262542);color:#f3e6d4;font:15px/1.5 system-ui,Segoe UI,sans-serif;margin:0}main{max-width:1120px;padding:20px;margin:auto}h1{font-size:clamp(26px,5vw,46px);margin:5px 0}h2{font-size:18px;margin:0 0 8px}.eyebrow{font:700 11px monospace;letter-spacing:.15em;color:#f0c38d}.grid{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(260px,1fr);gap:15px;margin-top:17px}.panel{border:1px solid #776786;background:#201e36;border-radius:13px;padding:16px;min-width:0}canvas{display:block;width:100%;aspect-ratio:16/9;image-rendering:pixelated;background:#191d38;border-radius:9px;border:1px solid #927e9a}.controls{display:flex;gap:9px;flex-wrap:wrap;margin:12px 0}button{background:#4d3d5a;border:1px solid #aa8291;color:#fff;border-radius:8px;padding:10px 14px;font-weight:700;cursor:pointer}button:hover{background:#65506b}button:focus-visible{outline:2px solid #f9d49b}p{color:#dbcede}.status{background:#302943;border-radius:8px;min-height:80px;padding:12px}pre{white-space:pre-wrap;background:#17182d;border-radius:9px;padding:14px;color:#eacba5;font-size:12px;line-height:1.7}a{color:#b8dfe4}.counter{color:#a8dccb;font:700 12px monospace}footer{color:#b1a7bb;font-size:12px;margin-top:20px} @media(max-width:740px){.grid{grid-template-columns:1fr}}
-</style></head><body><main><header><div class="eyebrow">ARCHON / THE LIVING THREAD / THE ASCENT</div><h1>Purgatorio III <span style="color:#ffd09a">· The Shadow and Manfred</span></h1><p>The mountain rises steeply. Dante casts a shadow; Virgil does not. Manfred asks to be remembered.</p></header>
-<div class="grid"><section class="panel"><canvas id="game" width="640" height="360" tabindex="0" aria-label="Playable pixel art: Dante's shadow, the steep mountain, Virgil and Manfred"></canvas><div class="controls"><button id="left">◀ WALK</button><button id="right">WALK ▶</button><button id="observe">E · OBSERVE</button><button id="reset">↺ RESET</button></div><div class="counter" id="counter">WITNESSES 0 / 3</div><p class="status" id="status" aria-live="polite">Dante sees his shadow but none from Virgil. Find a route up the steep mountain and hear Manfred's request.</p><p>Keyboard: A / D or ← / → to walk; E to observe. Observe the shadow, the blocked slope, and Manfred's testimony.</p></section>
-<aside class="panel"><h2>Today's encounter</h2><p>Dante fears Virgil has disappeared when only Dante casts a shadow. Virgil reassures him. The mountain face is too steep for a direct climb; waiting souls show the way. Manfred identifies himself and asks Dante to tell Constance that divine mercy met him at death.</p><pre>PURGATORIO / III
+</style></head><body><main><header><div class="eyebrow">ARCHON / THE LIVING THREAD / THE ASCENT</div><h1>Purgatorio IV <span style="color:#ffd09a">· The Climb and Belacqua</span></h1><p>The passage tightens. The sun appears in a new place. Belacqua waits in the mountain's shade.</p></header>
+<div class="grid"><section class="panel"><canvas id="game" width="640" height="360" tabindex="0" aria-label="Playable pixel art: a narrow ascent, southern sun, and Belacqua sitting in the shade"></canvas><div class="controls"><button id="left">◀ WALK</button><button id="right">WALK ▶</button><button id="observe">E · OBSERVE</button><button id="reset">↺ RESET</button></div><div class="counter" id="counter">WITNESSES 0 / 3</div><p class="status" id="status" aria-live="polite">Climb the narrow passage, look for the sun, and hear Belacqua explain why he waits.</p><p>Keyboard: A / D or ← / → to walk; E to observe. Observe the difficult climb, the changed sky, and Belacqua's waiting.</p></section>
+<aside class="panel"><h2>Today's encounter</h2><p>Dante climbs hand over hand through a narrow passage. At the ledge he notices the sun on an unexpected side; Virgil explains their position in the southern hemisphere. Belacqua sits motionless in the shade, waiting the period assigned to those who delayed repentance.</p><pre>PURGATORIO / IV
       |
-DANTE: CAST SHADOW
-VIRGIL: NO SHADOW
+NARROW PATH: CLIMB
       |
-CLIFF: BLOCK ROUTE
+DANTE: REST ON LEDGE
       |
-SOULS: SHOW PASSAGE
+SUN: UNEXPECTED SIDE
       |
-MANFRED: IDENTIFY
+VIRGIL: EXPLAIN
       |
-MERCY / REMEMBRANCE
+BELACQUA: SIT / WAIT
       |
-CONTINUE ASCENT</pre><p>A shadow proves the traveler has a living body in the poem; a steep face calls for another route.</p><p><a href="./">The sealed Inferno</a> · <a href="https://github.com/DavidWise01/archon/blob/main/alchemy/ascent/003.json">Canonical ascent record</a></p></aside></div><footer>Original sealed 41-tick journey preserved · Inferno's sealed Stage 041 preserved · This ascent is a new append-only branch.</footer></main><script>
+PRAYER MAY SHORTEN WAIT
+      |
+CONTINUE ASCENT</pre><p>The sun's apparent direction depends on where you stand. Belacqua can speak, but must wait before climbing.</p><p><a href="./">The sealed Inferno</a> · <a href="https://github.com/DavidWise01/archon/blob/main/alchemy/ascent/004.json">Canonical ascent record</a></p></aside></div><footer>Original sealed 41-tick journey preserved · Inferno's sealed Stage 041 preserved · This ascent is a new append-only branch.</footer></main><script>
 'use strict';
 const c=document.getElementById('game'),ctx=c.getContext('2d'),status=document.getElementById('status'),counter=document.getElementById('counter');
 let player=46,frame=0;const held=new Set(),seen=new Set();
@@ -23,32 +24,29 @@ const rect=(x,y,w,h,color)=>{ctx.fillStyle=color;ctx.fillRect(x,y,w,h)};
 const label=(str,x,y,color='#f9e4c3',size=11)=>{ctx.fillStyle=color;ctx.font='bold '+size+'px monospace';ctx.fillText(str,x,y)};
 
 
-function witness(){const zone=player<210?'shadow':player<410?'cliff':'manfred';seen.add(zone);
+
+function witness(){const zone=player<210?'climb':player<410?'sun':'belacqua';seen.add(zone);
 const words={
-shadow:'WITNESS A: Dante casts a long shadow. Virgil casts none, though he is still present and speaking.',
-cliff:'WITNESS B: the cliff blocks a direct climb. The slow-moving souls reveal a path around the wall.',
-manfred:'WITNESS C: Manfred shows his wounds and asks Dante to carry word of his repentance and hope to Constance.'
-};
-status.textContent=words[zone]+(seen.size===3?' THREE WITNESSES COMPLETE. THE CLIMB CONTINUES.':'');counter.textContent='WITNESSES '+seen.size+' / 3'}
-function reset(){player=46;seen.clear();status.textContent='Dante sees his shadow but none from Virgil. Find a route up the steep mountain and hear Manfred\'s request.';counter.textContent='WITNESSES 0 / 3'}
+climb:'WITNESS A: Dante CLIMBS the cramped path with hands and feet and RESTS on a high ledge.',
+sun:'WITNESS B: the sun appears on an unfamiliar side. Virgil EXPLAINS the southern hemisphere and the route.',
+belacqua:'WITNESS C: Belacqua SITS in the shade and TELLS of waiting before entrance; Dante and Virgil CONTINUE.'
+};status.textContent=words[zone]+(seen.size===3?' THREE WITNESSES COMPLETE. THE ASCENT CONTINUES.':'');counter.textContent='WITNESSES '+seen.size+' / 3'}
+function reset(){player=46;seen.clear();status.textContent='Climb the narrow passage, look for the sun, and hear Belacqua explain why he waits.';counter.textContent='WITNESSES 0 / 3'}
 function draw(){frame++;
-rect(0,0,640,360,'#43516b');rect(0,0,640,158,'#d7a09a');rect(0,265,640,95,'#b7a08d');
-rect(0,155,640,8,'#f2c49f');rect(0,237,640,42,'#687a77');
-for(let k=0;k<15;k++){const x=195+(k%5)*43,y=93+Math.floor(k/5)*49;rect(x,y,39,43,k%2?'#877787':'#736879')}
-for(let k=0;k<12;k++){const x=187+(k%4)*46,y=237+(k%3)*12;rect(x,y,38,7,'#a49390')}
-rect(120,207,16,17,'#dec1ad');rect(115,224,26,42,'#8f92ae');
-rect(113,247,4,27,'#b8b7b2');
-rect(49,280,17,17,'#e7c0a3');rect(44,297,25,33,'#ba6a77');
-rect(63,327,69,10,'#63586f');rect(71,336,47,4,'#63586f');
-label('SHADOW / NO SHADOW',17,38,'#fff1da',13);
-label('CLIFF / FIND PASSAGE',185,76,'#fff1da',12);
-rect(502,260,19,19,'#cda898');rect(498,279,28,42,'#8f768b');
-rect(507,267,9,4,'#a96b68');rect(514,286,10,4,'#c36e70');
-for(let k=0;k<4;k++){const x=428+k*26;rect(x,286+(k%2)*7,13,13,'#c9a493');rect(x-3,299+(k%2)*7,19,28,'#98869b')}
-label('MANFRED',488,225,'#fff1da',13);
-label('WAY UP',318,179,'#ffe6c0',12);
+rect(0,0,640,360,'#485572');rect(0,0,640,160,'#d7a4a1');rect(0,160,640,125,'#998c9a');rect(0,284,640,76,'#a78e86');
+rect(338,64,38,38,'#f8d8a0');rect(342,68,30,30,'#ffe6b7');
+for(let k=0;k<9;k++){const x=10+(k%3)*52,y=112+Math.floor(k/3)*56;rect(x,y,47,48,k%2?'#6c617b':'#807388')}
+for(let k=0;k<7;k++){const x=166+k*18,y=137+k*16;rect(x,y,24,11,k%2?'#c1a79a':'#9c8b8d')}
+rect(210,139,18,18,'#d7b49b');rect(205,156,26,33,'#bc707a');rect(206,186,8,11,'#5b5268');rect(220,186,8,11,'#5b5268');
+label('NARROW CLIMB',16,74,'#fff2d7',12);label('REST / SUN',280,44,'#fff1d4',13);
+rect(423,204,170,18,'#706477');rect(418,221,181,9,'#82788a');
+rect(500,245,17,17,'#d3b29d');rect(495,261,28,29,'#907f9c');
+rect(484,283,47,9,'#907f9c');rect(480,289,18,11,'#84738f');rect(513,288,19,10,'#84738f');
+rect(535,234,37,11,'#625672');rect(542,226,26,8,'#776681');
+label('BELACQUA / WAIT',457,194,'#f9e4ca',12);
+for(let k=0;k<10;k++){const x=411+k*22;rect(x,294+(k%3)*7,17,4,'#b5a59e')}
 rect(player,269,17,17,'#e7c0a3');rect(player-3,287,23,32,'#ba6a77');rect(player,316,5,7,'#333653');rect(player+12,316,5,7,'#333653');
-label('PURGATORIO III',17,21,'#fff1d1',15);
+label('PURGATORIO IV',17,24,'#fff1d1',15);
 if(held.has('ArrowLeft')||held.has('KeyA'))player=Math.max(7,player-2.4);
 if(held.has('ArrowRight')||held.has('KeyD'))player=Math.min(613,player+2.4);
 requestAnimationFrame(draw)}
