@@ -1,20 +1,22 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ARCHON — The Ascent · Purgatorio XIII</title><style>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ARCHON — The Ascent · Purgatorio XIV</title><style>
 :root{color-scheme:dark}*{box-sizing:border-box}body{background:linear-gradient(#11142d,#262542);color:#f3e6d4;font:15px/1.5 system-ui,Segoe UI,sans-serif;margin:0}main{max-width:1120px;padding:20px;margin:auto}h1{font-size:clamp(26px,5vw,46px);margin:5px 0}h2{font-size:18px;margin:0 0 8px}.eyebrow{font:700 11px monospace;letter-spacing:.15em;color:#f0c38d}.grid{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(260px,1fr);gap:15px;margin-top:17px}.panel{border:1px solid #776786;background:#201e36;border-radius:13px;padding:16px;min-width:0}canvas{display:block;width:100%;aspect-ratio:16/9;image-rendering:pixelated;background:#191d38;border-radius:9px;border:1px solid #927e9a}.controls{display:flex;gap:9px;flex-wrap:wrap;margin:12px 0}button{background:#4d3d5a;border:1px solid #aa8291;color:#fff;border-radius:8px;padding:10px 14px;font-weight:700;cursor:pointer}button:hover{background:#65506b}button:focus-visible{outline:2px solid #f9d49b}p{color:#dbcede}.status{background:#302943;border-radius:8px;min-height:80px;padding:12px}pre{white-space:pre-wrap;background:#17182d;border-radius:9px;padding:14px;color:#eacba5;font-size:12px;line-height:1.7}a{color:#b8dfe4}.counter{color:#a8dccb;font:700 12px monospace}footer{color:#b1a7bb;font-size:12px;margin-top:20px} @media(max-width:740px){.grid{grid-template-columns:1fr}}
-</style></head><body><main><header><div class="eyebrow">ARCHON / THE LIVING THREAD / THE ASCENT</div><h1>Purgatorio XIII <span style="color:#ffd09a">· The Eyes of Envy</span></h1><p>Generosity calls from the air; penitents with sewn eyes lean together, and Sapia confesses envy.</p></header>
-<div class="grid"><section class="panel"><canvas id="game" width="640" height="360" tabindex="0" aria-label="Playable pixel art: voices of generosity, gray cloaked envious penitents with sewn eyes and Sapia"></canvas><div class="controls"><button id="left">◀ WALK</button><button id="right">WALK ▶</button><button id="observe">E · OBSERVE</button><button id="reset">↺ RESET</button></div><div class="counter" id="counter">WITNESSES 0 / 3</div><p class="status" id="status" aria-live="polite">Listen for generosity, observe the gray-cloaked penitents, and hear Sapia's confession.</p><p>Keyboard: A / D or ← / → to walk; E to observe. Observe the unseen voices, the penitents supporting one another, and Sapia. Six marks remain.</p></section>
-<aside class="panel"><h2>Today's encounter</h2><p>The second terrace is plain and bare. Unseen voices proclaim generosity. Dante finds souls in gray cloaks whose eyelids are sewn shut; they lean together and pray. Sapia of Siena admits she rejoiced when her own people were defeated, and asks to be remembered.</p><pre>PURGATORIO / XIII
+</style></head><body><main><header><div class="eyebrow">ARCHON / THE LIVING THREAD / THE ASCENT</div><h1>Purgatorio XIV <span style="color:#ffd09a">· The River of Envy</span></h1><p>Guido and Rinieri speak of the Arno, civic decline, envy, and warnings that cry from the air.</p></header>
+<div class="grid"><section class="panel"><canvas id="game" width="640" height="360" tabindex="0" aria-label="Playable pixel art: Arno river landscape, gray penitents Guido and Rinieri, and warnings of envy"></canvas><div class="controls"><button id="left">◀ WALK</button><button id="right">WALK ▶</button><button id="observe">E · OBSERVE</button><button id="reset">↺ RESET</button></div><div class="counter" id="counter">WITNESSES 0 / 3</div><p class="status" id="status" aria-live="polite">Hear Guido lament the Arno, confess his envy, and listen to the warning voices as Virgil redirects Dante.</p><p>Keyboard: A / D or ← / → to walk; E to observe. Observe Guido's civic lament, confession and prophecy, then the warning voices. Six marks remain.</p></section>
+<aside class="panel"><h2>Today's encounter</h2><p>Two penitents question Dante about his homeland. When Dante names the Arno, Guido del Duca condemns the towns along its banks and confesses his envy. He foretells violence, while he and Rinieri lament vanished civic virtues. Unseen voices recall Cain and Aglauros; Virgil guides Dante higher.</p><pre>PURGATORIO / XIV
        |
-GENEROSITY: VOICES
+ARNO: NAME / LAMENT
        |
-ENVY: EYES SEWN SHUT
+GUIDO: CONFESS ENVY
        |
-PENITENTS: LEAN / PRAY
+RINIERI: WITNESS
        |
-SAPIA: CONFESS
+PROPHECY: ATTRIBUTED
        |
-DANTE: LISTEN / REMEMBER
+CAIN / AGLAUROS: WARN
        |
-6 P MARKS REMAIN</pre><p>The second terrace has begun its work. Hearing and confession are not another erasure: six P marks remain.</p><p><a href="./">The sealed Inferno</a> · <a href="https://github.com/DavidWise01/archon/blob/main/alchemy/ascent/013.json">Canonical ascent record</a></p></aside></div><footer>Original sealed 41-tick journey preserved · Inferno's sealed Stage 041 preserved · This ascent is a new append-only branch.</footer></main><script>
+VIRGIL: REDIRECT
+       |
+6 P MARKS REMAIN</pre><p>Guido's predictions remain testimony, not witnessed future events. Envy's work continues: six P marks remain.</p><p><a href="./">The sealed Inferno</a> · <a href="https://github.com/DavidWise01/archon/blob/main/alchemy/ascent/014.json">Canonical ascent record</a></p></aside></div><footer>Original sealed 41-tick journey preserved · Inferno's sealed Stage 041 preserved · This ascent is a new append-only branch.</footer></main><script>
 'use strict';
 const c=document.getElementById('game'),ctx=c.getContext('2d'),status=document.getElementById('status'),counter=document.getElementById('counter');
 let player=46,frame=0;const held=new Set(),seen=new Set();
@@ -32,25 +34,28 @@ const label=(str,x,y,color='#f9e4c3',size=11)=>{ctx.fillStyle=color;ctx.font='bo
 
 
 
-function witness(){const zone=player<210?'voices':player<410?'penitents':'sapia';seen.add(zone);
+
+function witness(){const zone=player<210?'arno':player<410?'guido':'warning';seen.add(zone);
 const words={
-voices:'WITNESS A: unseen VOICES commend generosity, friendship and love of enemies; Dante HEARS but does not see their speakers.',
-penitents:'WITNESS B: gray-cloaked souls LEAN together, PRAY and endure the sewing shut of their eyes.',
-sapia:'WITNESS C: Sapia CONFESSES delight in the defeat of her own people and REQUESTS remembrance.'
+arno:'WITNESS A: Dante NAMES the Arno; Guido CONDEMNS the towns along its course. The civic judgment is his.',
+guido:'WITNESS B: Guido CONFESSES envy and FORETELLS Fulcieri\'s violence; the prediction is attributed, not directly observed.',
+warning:'WITNESS C: unseen voices CRY Cain and Aglauros. Virgil REDIRECTS Dante toward the higher way.'
 };status.textContent=words[zone]+(seen.size===3?' THREE WITNESSES COMPLETE. SIX MARKS REMAIN.':'');counter.textContent='WITNESSES '+seen.size+' / 3'}
-function reset(){player=46;seen.clear();status.textContent='Listen for generosity, observe the gray-cloaked penitents, and hear Sapia\'s confession.';counter.textContent='WITNESSES 0 / 3'}
+function reset(){player=46;seen.clear();status.textContent='Hear Guido lament the Arno, confess his envy, and listen to the warning voices as Virgil redirects Dante.';counter.textContent='WITNESSES 0 / 3'}
 function draw(){frame++;
-rect(0,0,640,360,'#46516a');rect(0,0,640,146,'#8996aa');rect(0,146,640,132,'#747d8f');rect(0,278,640,82,'#9b9ca2');
-for(let i=0;i<7;i++){const x=15+i*28,y=103+(i%3)*17;label('~',x,y+Math.sin(frame*.045+i)*5,'#efe0c7',22)}
-label('GENEROSITY / HEAR',16,74,'#fff1d8',12);
-rect(217,158,198,122,'#686c81');rect(221,166,191,105,'#868995');
-for(let k=0;k<4;k++){const x=230+k*46,y=230+(k%2)*8;rect(x,y,16,16,'#d3b9ac');rect(x-6,y+17,29,40,'#9b9eaa');rect(x+2,y+5,12,3,'#454653');rect(x-2,y+3,2,7,'#c8a5a1');rect(x+17,y+29,14,5,'#aaa3aa')}
-label('EYES / SEWN SHUT',225,128,'#fff1d8',12);
-rect(493,201,21,21,'#d8b5a4');rect(487,222,34,63,'#989caa');rect(498,211,10,3,'#50515c');rect(490,209,2,9,'#c59d9f');
-rect(532,243,18,19,'#d4ae9f');rect(526,262,29,35,'#b07384');
-label('SAPIA / CONFESS',478,175,'#fff1d8',12);
-for(let i=0;i<6;i++)label('P',506+i*19,65,'#f5cbaa',16);label('SIX MARKS',513,91,'#fff1da',11);
-label('PURGATORIO XIII',17,24,'#fff1d1',15);
+rect(0,0,640,360,'#3d4b69');rect(0,0,640,146,'#8690a5');rect(0,146,640,126,'#69778c');rect(0,272,640,88,'#9c9ba5');
+rect(10,204,190,94,'#738594');rect(21,218,169,48,'#608c9f');
+for(let i=0;i<8;i++){let x=25+i*20;rect(x,233+Math.sin(frame*.04+i)*4,20,3,'#a9c6c4')}
+for(let i=0;i<4;i++){const x=26+i*43;rect(x,207,14,12,'#86788f');rect(x-4,218,23,32,'#9c8e9b')}
+label('ARNO / LAMENT',18,177,'#fff1d8',12);
+rect(258,213,23,23,'#d1b3a4');rect(252,235,34,55,'#9099ab');rect(264,224,14,3,'#555663');rect(292,228,19,18,'#d3b1a2');rect(287,246,29,47,'#8791a6');rect(295,240,11,3,'#555663');
+label('GUIDO / RINIERI',234,182,'#fff1d8',12);
+for(let i=0;i<9;i++){const x=430+i*18,y=149+(i%3)*13;label('!',x,y+Math.sin(frame*.055+i)*5,'#e8cebd',18)}
+rect(468,222,18,18,'#d7b49e');rect(464,240,25,49,'#8796ae');
+label('CAIN / AGLAUROS',438,119,'#fff1d8',11);
+for(let i=0;i<6;i++)label('P',505+i*19,64,'#f5c9a8',16);
+label('SIX MARKS',506,88,'#fff1d8',11);
+label('PURGATORIO XIV',17,24,'#fff1d1',15);
 rect(player,269,17,17,'#e7c0a3');rect(player-3,287,23,32,'#ba6a77');rect(player,316,5,7,'#333653');rect(player+12,316,5,7,'#333653');
 if(held.has('ArrowLeft')||held.has('KeyA'))player=Math.max(7,player-2.4);
 if(held.has('ArrowRight')||held.has('KeyD'))player=Math.min(613,player+2.4);
