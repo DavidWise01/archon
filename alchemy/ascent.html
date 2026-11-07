@@ -1,22 +1,22 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ARCHON — The Ascent · Purgatorio XVIII</title><style>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ARCHON — The Ascent · Purgatorio XIX</title><style>
 :root{color-scheme:dark}*{box-sizing:border-box}body{background:linear-gradient(#11142d,#262542);color:#f3e6d4;font:15px/1.5 system-ui,Segoe UI,sans-serif;margin:0}main{max-width:1120px;padding:20px;margin:auto}h1{font-size:clamp(26px,5vw,46px);margin:5px 0}h2{font-size:18px;margin:0 0 8px}.eyebrow{font:700 11px monospace;letter-spacing:.15em;color:#f0c38d}.grid{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(260px,1fr);gap:15px;margin-top:17px}.panel{border:1px solid #776786;background:#201e36;border-radius:13px;padding:16px;min-width:0}canvas{display:block;width:100%;aspect-ratio:16/9;image-rendering:pixelated;background:#191d38;border-radius:9px;border:1px solid #927e9a}.controls{display:flex;gap:9px;flex-wrap:wrap;margin:12px 0}button{background:#4d3d5a;border:1px solid #aa8291;color:#fff;border-radius:8px;padding:10px 14px;font-weight:700;cursor:pointer}button:hover{background:#65506b}button:focus-visible{outline:2px solid #f9d49b}p{color:#dbcede}.status{background:#302943;border-radius:8px;min-height:80px;padding:12px}pre{white-space:pre-wrap;background:#17182d;border-radius:9px;padding:14px;color:#eacba5;font-size:12px;line-height:1.7}a{color:#b8dfe4}.counter{color:#a8dccb;font:700 12px monospace}footer{color:#b1a7bb;font-size:12px;margin-top:20px} @media(max-width:740px){.grid{grid-template-columns:1fr}}
-</style></head><body><main><header><div class="eyebrow">ARCHON / THE LIVING THREAD / THE ASCENT</div><h1>Purgatorio XVIII <span style="color:#ffd09a">· The Runners of Zeal</span></h1><p>Virgil explains desire and choice; slothful penitents run through the night, and Dante falls asleep.</p></header>
-<div class="grid"><section class="panel"><canvas id="game" width="640" height="360" tabindex="0" aria-label="Playable pixel art: Virgil explaining love, the slothful running in torchlight, and Dante asleep"></canvas><div class="controls"><button id="left">◀ WALK</button><button id="right">WALK ▶</button><button id="observe">E · OBSERVE</button><button id="reset">↺ RESET</button></div><div class="counter" id="counter">WITNESSES 0 / 3</div><p class="status" id="status" aria-live="polite">Hear Virgil explain choice, witness the runners and their cries of zeal, then observe Dante's sleep.</p><p>Keyboard: A / D or ← / → to walk; E to observe. Observe the free choice lesson, the running penitents, and the pause for sleep. Four marks remain.</p></section>
-<aside class="panel"><h2>Today's encounter</h2><p>Dante questions Virgil about desire and choice. A crowd of slothful souls races past, invoking Mary and Caesar as examples of prompt action and warning against delay. One identifies himself as the former abbot of San Zeno. The calls fade, and Dante grows sleepy on the fourth terrace.</p><pre>PURGATORIO / XVIII
+</style></head><body><main><header><div class="eyebrow">ARCHON / THE LIVING THREAD / THE ASCENT</div><h1>Purgatorio XIX <span style="color:#ffd09a">· The Siren and the Ground</span></h1><p>The siren's spell breaks, a fourth P is erased, and the avaricious lie face down on the earth.</p></header>
+<div class="grid"><section class="panel"><canvas id="game" width="640" height="360" tabindex="0" aria-label="Playable pixel art: deceptive siren dream, angel removing the fourth mark, and Adrian V with prostrate souls"></canvas><div class="controls"><button id="left">◀ WALK</button><button id="right">WALK ▶</button><button id="observe">E · OBSERVE</button><button id="reset">↺ RESET</button></div><div class="counter" id="counter">WITNESSES 0 / 3</div><p class="status" id="status" aria-live="polite">See the siren's deception exposed, receive the angel's cleansing, and hear Adrian V on the terrace of avarice.</p><p>Keyboard: A / D or ← / → to walk; E to observe. Observe the dream, the fourth P's removal, and Adrian's testimony. Three marks remain.</p></section>
+<aside class="panel"><h2>Today's encounter</h2><p>Dante dreams that a stammering woman turns into a captivating siren; a holy woman calls Virgil to expose her foul underside. Awakened, Dante follows Virgil to an angel who removes sloth's P. On the fifth terrace, souls lie face down and Adrian V speaks of earthly rank, greed, and his niece Alagia.</p><pre>PURGATORIO / XIX
        |
-VIRGIL: DESIRE + CHOICE
+DREAM: SIREN / DECEPTION
        |
-SLOTHFUL: RUN / CALL
+VIRGIL: REVEAL / WAKE
        |
-MARY / CAESAR: ZEAL
+ANGEL: FOURTH P ERASED
        |
-DELAY: WARNING
+4 P -> 3 P
        |
-NIGHT: NO UPWARD CLIMB
+AVARICE: LIE FACE DOWN
        |
-DANTE: FALL ASLEEP
+ADRIAN V: CONFESS / PRAY
        |
-4 P MARKS REMAIN</pre><p>The runners correct spiritual delay through movement; Dante's need for sleep is not a new cleansing. Four P marks remain.</p><p><a href="./">The sealed Inferno</a> · <a href="https://github.com/DavidWise01/archon/blob/main/alchemy/ascent/018.json">Canonical ascent record</a></p></aside></div><footer>Original sealed 41-tick journey preserved · Inferno's sealed Stage 041 preserved · This ascent is a new append-only branch.</footer></main><script>
+3 P MARKS REMAIN</pre><p>What appears desirable may conceal corruption. The angel's witnessed touch removes one mark; the fifth terrace's work has only begun.</p><p><a href="./">The sealed Inferno</a> · <a href="https://github.com/DavidWise01/archon/blob/main/alchemy/ascent/019.json">Canonical ascent record</a></p></aside></div><footer>Original sealed 41-tick journey preserved · Inferno's sealed Stage 041 preserved · This ascent is a new append-only branch.</footer></main><script>
 'use strict';
 const c=document.getElementById('game'),ctx=c.getContext('2d'),status=document.getElementById('status'),counter=document.getElementById('counter');
 let player=46,frame=0;const held=new Set(),seen=new Set();
@@ -39,25 +39,26 @@ const label=(str,x,y,color='#f9e4c3',size=11)=>{ctx.fillStyle=color;ctx.font='bo
 
 
 
-function witness(){const zone=player<210?'choice':player<410?'run':'sleep';seen.add(zone);
+
+function witness(){const zone=player<210?'dream':player<410?'angel':'adrian';seen.add(zone);
 const words={
-choice:'WITNESS A: Virgil EXPLAINS that desire and the free choice to consent are distinguishable.',
-run:'WITNESS B: slothful souls RUN through the night, CRYING Mary and Caesar as examples of zeal.',
-sleep:'WITNESS C: warnings against delay FADE into the dark; Dante becomes sleepy. Four marks remain.'
-};status.textContent=words[zone]+(seen.size===3?' THREE WITNESSES COMPLETE. FOUR MARKS REMAIN.':'');counter.textContent='WITNESSES '+seen.size+' / 3'}
-function reset(){player=46;seen.clear();status.textContent='Hear Virgil explain choice, witness the runners and their cries of zeal, then observe Dante\'s sleep.';counter.textContent='WITNESSES 0 / 3'}
+dream:'WITNESS A: Dante DREAMS of a siren who becomes beautiful; a holy woman calls Virgil to REVEAL her deception.',
+angel:'WITNESS B: Dante WAKES, ASCENDS and RECEIVES the angel\'s cleansing: four P marks become three.',
+adrian:'WITNESS C: prostrate penitents PRAY; Adrian V RECOUNTS his life and asks for Alagia\'s prayers.'
+};status.textContent=words[zone]+(seen.size===3?' THREE WITNESSES COMPLETE. THREE MARKS REMAIN.':'');counter.textContent='WITNESSES '+seen.size+' / 3'}
+function reset(){player=46;seen.clear();status.textContent='See the siren\'s deception exposed, receive the angel\'s cleansing, and hear Adrian V on the terrace of avarice.';counter.textContent='WITNESSES 0 / 3'}
 function draw(){frame++;
-rect(0,0,640,360,'#171c38');rect(0,0,640,143,'#303552');rect(0,143,640,139,'#464b65');rect(0,282,640,78,'#777283');
-for(let k=0;k<21;k++){const x=(k*83)%640,y=35+(k*41)%125;rect(x,y,2,2,'#f0e0c8')}
-rect(61,210,20,20,'#d6b3a2');rect(55,230,30,64,'#8799b4');rect(102,223,19,19,'#d7b4a4');rect(97,242,29,53,'#bc7e88');
-rect(83,256,17,5,'#d6b9a4');label('LOVE / CHOOSE',16,181,'#fff0d5',12);
-for(let k=0;k<5;k++){const x=220+k*44+Math.sin(frame*.075+k)*10,y=228+(k%2)*10;rect(x,y,14,14,'#dfbaaa');rect(x-5,y+14,24,33,k%2?'#9893ac':'#ab839a');rect(x-17,y+32,19,5,'#d2a798');rect(x+18,y+30,18,5,'#cfaa9a');rect(x-8,y+47,11,5,'#777289');rect(x+15,y+47,12,5,'#777289')}
-for(let i=0;i<7;i++){const x=202+i*29;label('>',x,205+Math.sin(frame*.1+i)*5,'#e3c5ae',14)}
-label('RUN / ZEAL',259,168,'#fff0d5',12);
-rect(514,247,52,16,'#aca0a1');rect(524,232,17,17,'#d7b3a5');rect(527,257,40,18,'#bd7b86');
-label('DANTE / SLEEP',476,193,'#fff0d5',12);
-for(let k=0;k<4;k++)label('P',525+k*21,74,'#efcfaf',16);label('FOUR MARKS',505,100,'#fff0d5',11);
-label('PURGATORIO XVIII',17,24,'#fff1d1',15);
+rect(0,0,640,360,'#3b4967');rect(0,0,640,147,'#ab8da1');rect(0,147,640,143,'#777487');rect(0,290,640,70,'#a59a93');
+const shimmer=Math.sin(frame*.048)*4;
+rect(67,192+shimmer,20,20,'#e1b9a8');rect(57,213+shimmer,40,70,'#a57998');rect(48,234+shimmer,12,37,'#d1a5a4');rect(98,233+shimmer,12,37,'#d1a5a4');
+rect(139,203,16,17,'#f0d7c4');rect(132,220,30,56,'#e3dbc6');rect(119,241,18,6,'#ede1c9');
+label('SIREN / DREAM',20,163,'#fff1da',12);
+const glow=3+Math.sin(frame*.055)*4;rect(253-glow,170-glow,50+glow*2,86+glow*2,'#decab7');rect(270,175,18,20,'#f5dec1');rect(263,195,31,58,'#f1e8d8');rect(244,205,20,11,'#f0e8d8');rect(293,205,23,11,'#f0e8d8');
+label('ANGEL / 4 TO 3',224,145,'#fff1da',12);
+rect(419,237,205,57,'#716a76');for(let k=0;k<4;k++){const x=433+k*45;rect(x,247,18,13,'#dab29f');rect(x+15,247,25,10,'#91859c');rect(x+20,258,24,12,'#91859c')}
+rect(550,233,20,14,'#d6b09e');rect(570,240,26,9,'#8f8299');label('ADRIAN V / AVARICE',431,206,'#fff1da',11);
+for(let k=0;k<3;k++)label('P',531+k*23,67,'#fbd1ae',17);label('THREE MARKS',508,92,'#fff0d6',11);
+label('PURGATORIO XIX',17,24,'#fff1d1',15);
 rect(player,269,17,17,'#e7c0a3');rect(player-3,287,23,32,'#ba6a77');rect(player,316,5,7,'#333653');rect(player+12,316,5,7,'#333653');
 if(held.has('ArrowLeft')||held.has('KeyA'))player=Math.max(7,player-2.4);
 if(held.has('ArrowRight')||held.has('KeyD'))player=Math.min(613,player+2.4);
