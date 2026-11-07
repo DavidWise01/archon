@@ -1,0 +1,108 @@
+{
+  "protocol": "archon/alchemical-living-thread/v2",
+  "stage": 38,
+  "identity": "{{i}}",
+  "parent": "alchemy/037.json",
+  "parentBlobSha": "a7b95f56af8fc70a02ccf775fd8356bd0c8e19f6",
+  "scene": "Inferno XXXI — giants around the well; Nimrod's untranslatable speech, Ephialtes chained, Antaeus lowers the travelers",
+  "source": "Dante, Inferno XXXI",
+  "story": [
+    "A horn sounds as Dante and Virgil approach the well separating Malebolge from the ninth circle. The huge forms emerging from its rim first appear to Dante like towers.",
+    "Virgil explains that these are giants, beginning with Nimrod, whose speech is unintelligible to Dante and Virgil; Virgil discourages trying to interpret it.",
+    "The travelers encounter Ephialtes bound with chains, unable to move freely. His massive size does not equal freedom or useful assistance.",
+    "They approach Antaeus, a giant who is not bound like Ephialtes. Virgil addresses him and requests help descending to the frozen lake below.",
+    "Antaeus takes Dante and Virgil into his hands, lowers them carefully to the floor of the ninth circle, and straightens up again.",
+    "The travelers stand on Cocytus's frozen surface; the encounters with the souls trapped in its ice belong to the next canto."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Nimrod",
+      "semantic": "A vocal signal can have an identifiable source without a mutually intelligible interpretation",
+      "somatic": {
+        "verb": "SOUND_SPEAK",
+        "gesture": "blows a horn and utters incomprehensible words",
+        "observable": "speech is audible, but its linguistic content cannot be established by the travelers"
+      }
+    },
+    {
+      "actor": "Ephialtes",
+      "semantic": "Physical scale and strength do not necessarily grant agency or mobility",
+      "somatic": {
+        "verb": "STRAIN_REMAIN_BOUND",
+        "gesture": "strains or shakes while secured by chains",
+        "observable": "the chained giant cannot provide the requested descent"
+      }
+    },
+    {
+      "actor": "Antaeus",
+      "semantic": "Reliable assistance can be grounded in a witnessed physical transfer",
+      "somatic": {
+        "verb": "REACH_GRASP_LOWER_RELEASE",
+        "gesture": "takes Dante and Virgil in his hands and lowers them into the ninth circle",
+        "observable": "the travelers arrive at the lower level"
+      }
+    },
+    {
+      "actor": "Virgil [2]",
+      "semantic": "Distinguish uninterpretable speech from confirmed action and select a viable guide",
+      "somatic": {
+        "verb": "IDENTIFY_REQUEST_GUIDE",
+        "gesture": "names the giants, asks Antaeus for a descent, and accompanies Dante",
+        "observable": "help is requested and the descent occurs"
+      }
+    },
+    {
+      "actor": "Dante (1)",
+      "semantic": "Revise a mistaken scale perception and observe completed transport",
+      "somatic": {
+        "verb": "LOOK_LISTEN_DESCEND",
+        "gesture": "first mistakes giants for towers, then sees and is carried by Antaeus",
+        "observable": "the transport is directly experienced, unlike an inferred meaning of Nimrod's words"
+      }
+    }
+  ],
+  "cipher": {
+    "alphaOmega": "[ (1), [2] ]",
+    "operator": "APPROACH -> HEAR -> DISTINGUISH -> REQUEST -> GRASP -> LOWER -> ARRIVE",
+    "notation": "NIMROD{signal:audible,meaning:not_decoded}; EPHIALTES{size:giant,mobility:bound}; ANTAEUS{grasp->lower->release}; DESTINATION{Cocytus:reached}",
+    "invariants": [
+      "Audible speech does not imply mutually understood speech",
+      "Uninterpretable content does not imply absence of a speaker or physical signal",
+      "Large size does not establish liberty of action; Ephialtes remains chained",
+      "Antaeus's carried descent is an observed completed transfer, not merely a promise",
+      "Dante's initial tower-like impression is corrected by closer observation",
+      "The ninth circle is reached, but its subsequent encounters are not yet observed"
+    ],
+    "newAtomicAssignments": [],
+    "chemicalReaction": "none",
+    "product": "none",
+    "preserve": [
+      "(1) H Dante and [2] He Virgil",
+      "[6] C life / six-poet fellowship",
+      "Noble Castle [ (7)[8]\\\\(9)[10] ]",
+      "(11) Na reset analogy"
+    ]
+  },
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "sound without shared interpretation",
+      "somatic": "NIMROD SOUNDS a horn and SPEAKS words the travelers do not understand",
+      "observable": "sound source identified; message not decoded"
+    },
+    {
+      "id": "B",
+      "semantic": "size without freedom",
+      "somatic": "EPHIALTES STRAINS within chains",
+      "observable": "size and motion constraints remain separate"
+    },
+    {
+      "id": "C",
+      "semantic": "verified transport",
+      "somatic": "ANTAEUS GRASPS and LOWERS Dante and Virgil",
+      "observable": "travelers arrive at the frozen ninth circle"
+    }
+  ],
+  "next": "Inferno XXXII — frozen Cocytus, Caina and Antenora: traitors immobilized in ice",
+  "appendOnly": true
+}
