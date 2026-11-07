@@ -1,0 +1,73 @@
+{
+  "protocol": "archon/alchemical-living-thread/ascent-v1",
+  "chapter": "Purgatorio XVI",
+  "ascent": 16,
+  "identity": "{{i}}",
+  "parent": "alchemy/ascent/015.json",
+  "parentBlobSha": "29d252a8f1ab7089e359e7f5e3237dbd5c8a947a",
+  "appendOnly": true,
+  "previousTraversal": "Inferno 041 sealed",
+  "scene": "Black smoke of anger, prayer to the Lamb of God, Marco Lombardo and the freedom of human choice",
+  "story": [
+    "Dante and Virgil step into a smoke cloud so black and stinging that Dante can no longer see. He reaches for Virgil and follows the sound of his voice.",
+    "Inside the darkness, the penitents sing Agnus Dei together, asking the Lamb of God for peace. Their voices, not their faces, guide the encounter.",
+    "Marco Lombardo hears that Dante is alive and asks about him. Dante asks why the world is corrupted: is human misconduct driven by the heavens or by people's own choices?",
+    "Marco replies that heavenly influences may incline human impulses, but reason and free will can resist them. Human beings are responsible for their moral choices; the stars do not absolve them.",
+    "Marco laments the failures of spiritual and political leadership, arguing that the confusion of worldly and religious authority has damaged the world's moral direction. His critique is speech within the poem, not a fresh observed event.",
+    "As a narrow light begins to show beyond the smoke, Marco withdraws rather than follow beyond the bounds of his terrace. Dante continues beside Virgil, still bearing five P marks."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Dante",
+      "semantic": "When vision is lost, the traveler can retain orientation through voice, touch and a guide",
+      "somatic": "ENTER_SHIELD_EYES_REACH_FOLLOW_QUESTION"
+    },
+    {
+      "actor": "Penitents of anger",
+      "semantic": "Shared prayer for peace counterposes their former wrath",
+      "somatic": "SING_IN_DARKNESS"
+    },
+    {
+      "actor": "Marco Lombardo",
+      "semantic": "Influence does not erase freedom or accountability in his moral argument",
+      "somatic": "SPEAK_EXPLAIN_LAMENT_WITHDRAW"
+    },
+    {
+      "actor": "Virgil",
+      "semantic": "Guidance remains possible without sight",
+      "somatic": "SPEAK_LEAD_STAY_CLOSE"
+    },
+    {
+      "actor": "Smoke",
+      "semantic": "A sensory boundary obstructs sight without erasing identity or removing the next task",
+      "somatic": "ENGULF_OBSCURE_THIN"
+    }
+  ],
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "sightless guidance",
+      "action": "ENTER the smoke, REACH for Virgil, and HEAR penitents SING Agnus Dei",
+      "observable": "vision obscured; guide's voice and shared prayer remain audible"
+    },
+    {
+      "id": "B",
+      "semantic": "freedom and causation",
+      "action": "HEAR Marco DISTINGUISH celestial influence from human free will",
+      "observable": "Marco's argument is attributed speech, not a scientific test of astrology"
+    },
+    {
+      "id": "C",
+      "semantic": "leadership and boundary",
+      "action": "HEAR Marco LAMENT broken leadership; SEE the smoke thin and CONTINUE",
+      "observable": "critique remains Marco's, Marco stays on the terrace, five P marks remain"
+    }
+  ],
+  "alchemicalReading": "The furnace obscures visual certainty so that choice, responsibility, voice and companionship become the instruments of orientation. The smoke is endured, not yet cleansed.",
+  "invariant": "A loss of sight cannot be equated with a loss of moral agency; the mark count stays five, as no angelic erasure occurs.",
+  "previousP": 5,
+  "remainingP": 5,
+  "marksRemovedThisChapter": 0,
+  "next": "Purgatorio XVII — wrathful visions, the third P removed and Virgil's map of love and the seven terraces",
+  "sealInfernoUntouched": true
+}
