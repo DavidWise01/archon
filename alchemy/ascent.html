@@ -1,22 +1,20 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ARCHON — The Ascent · Purgatorio IV</title><style>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ARCHON — The Ascent · Purgatorio V</title><style>
 :root{color-scheme:dark}*{box-sizing:border-box}body{background:linear-gradient(#11142d,#262542);color:#f3e6d4;font:15px/1.5 system-ui,Segoe UI,sans-serif;margin:0}main{max-width:1120px;padding:20px;margin:auto}h1{font-size:clamp(26px,5vw,46px);margin:5px 0}h2{font-size:18px;margin:0 0 8px}.eyebrow{font:700 11px monospace;letter-spacing:.15em;color:#f0c38d}.grid{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(260px,1fr);gap:15px;margin-top:17px}.panel{border:1px solid #776786;background:#201e36;border-radius:13px;padding:16px;min-width:0}canvas{display:block;width:100%;aspect-ratio:16/9;image-rendering:pixelated;background:#191d38;border-radius:9px;border:1px solid #927e9a}.controls{display:flex;gap:9px;flex-wrap:wrap;margin:12px 0}button{background:#4d3d5a;border:1px solid #aa8291;color:#fff;border-radius:8px;padding:10px 14px;font-weight:700;cursor:pointer}button:hover{background:#65506b}button:focus-visible{outline:2px solid #f9d49b}p{color:#dbcede}.status{background:#302943;border-radius:8px;min-height:80px;padding:12px}pre{white-space:pre-wrap;background:#17182d;border-radius:9px;padding:14px;color:#eacba5;font-size:12px;line-height:1.7}a{color:#b8dfe4}.counter{color:#a8dccb;font:700 12px monospace}footer{color:#b1a7bb;font-size:12px;margin-top:20px} @media(max-width:740px){.grid{grid-template-columns:1fr}}
-</style></head><body><main><header><div class="eyebrow">ARCHON / THE LIVING THREAD / THE ASCENT</div><h1>Purgatorio IV <span style="color:#ffd09a">· The Climb and Belacqua</span></h1><p>The passage tightens. The sun appears in a new place. Belacqua waits in the mountain's shade.</p></header>
-<div class="grid"><section class="panel"><canvas id="game" width="640" height="360" tabindex="0" aria-label="Playable pixel art: a narrow ascent, southern sun, and Belacqua sitting in the shade"></canvas><div class="controls"><button id="left">◀ WALK</button><button id="right">WALK ▶</button><button id="observe">E · OBSERVE</button><button id="reset">↺ RESET</button></div><div class="counter" id="counter">WITNESSES 0 / 3</div><p class="status" id="status" aria-live="polite">Climb the narrow passage, look for the sun, and hear Belacqua explain why he waits.</p><p>Keyboard: A / D or ← / → to walk; E to observe. Observe the difficult climb, the changed sky, and Belacqua's waiting.</p></section>
-<aside class="panel"><h2>Today's encounter</h2><p>Dante climbs hand over hand through a narrow passage. At the ledge he notices the sun on an unexpected side; Virgil explains their position in the southern hemisphere. Belacqua sits motionless in the shade, waiting the period assigned to those who delayed repentance.</p><pre>PURGATORIO / IV
+</style></head><body><main><header><div class="eyebrow">ARCHON / THE LIVING THREAD / THE ASCENT</div><h1>Purgatorio V <span style="color:#ffd09a">· The Last Words</span></h1><p>Jacopo, Buonconte and Pia tell how their lives ended, and ask the living to remember.</p></header>
+<div class="grid"><section class="panel"><canvas id="game" width="640" height="360" tabindex="0" aria-label="Playable pixel art: Jacopo by a marsh, Buonconte beneath a storm and Pia on the mountain"></canvas><div class="controls"><button id="left">◀ WALK</button><button id="right">WALK ▶</button><button id="observe">E · OBSERVE</button><button id="reset">↺ RESET</button></div><div class="counter" id="counter">WITNESSES 0 / 3</div><p class="status" id="status" aria-live="polite">Three souls who died violently tell their stories. Hear Jacopo, Buonconte and Pia, and carry their names onward.</p><p>Keyboard: A / D or ← / → to walk; E to observe. Observe each of three accounts; preserve what was spoken without inventing what is unknown.</p></section>
+<aside class="panel"><h2>Today's encounter</h2><p>Jacopo recalls his fatal flight through the marsh. Buonconte recounts a last prayer and a storm that carried away his body. Pia asks only to be remembered, leaving much unsaid. Dante listens while Virgil keeps the ascent moving.</p><pre>PURGATORIO / V
       |
-NARROW PATH: CLIMB
+JACOPO: FLEE / FALL
       |
-DANTE: REST ON LEDGE
+BUONCONTE: PRAY / STORM
       |
-SUN: UNEXPECTED SIDE
+PIA: NAME / REMEMBER
       |
-VIRGIL: EXPLAIN
+DANTE: LISTEN / RETAIN
       |
-BELACQUA: SIT / WAIT
+VIRGIL: CONTINUE
       |
-PRAYER MAY SHORTEN WAIT
-      |
-CONTINUE ASCENT</pre><p>The sun's apparent direction depends on where you stand. Belacqua can speak, but must wait before climbing.</p><p><a href="./">The sealed Inferno</a> · <a href="https://github.com/DavidWise01/archon/blob/main/alchemy/ascent/004.json">Canonical ascent record</a></p></aside></div><footer>Original sealed 41-tick journey preserved · Inferno's sealed Stage 041 preserved · This ascent is a new append-only branch.</footer></main><script>
+TESTIMONY != DIRECT SIGHT</pre><p>Three accounts are entrusted to Dante. Memory carries the names; it does not transform testimony into direct observation.</p><p><a href="./">The sealed Inferno</a> · <a href="https://github.com/DavidWise01/archon/blob/main/alchemy/ascent/005.json">Canonical ascent record</a></p></aside></div><footer>Original sealed 41-tick journey preserved · Inferno's sealed Stage 041 preserved · This ascent is a new append-only branch.</footer></main><script>
 'use strict';
 const c=document.getElementById('game'),ctx=c.getContext('2d'),status=document.getElementById('status'),counter=document.getElementById('counter');
 let player=46,frame=0;const held=new Set(),seen=new Set();
@@ -25,28 +23,32 @@ const label=(str,x,y,color='#f9e4c3',size=11)=>{ctx.fillStyle=color;ctx.font='bo
 
 
 
-function witness(){const zone=player<210?'climb':player<410?'sun':'belacqua';seen.add(zone);
+
+function witness(){const zone=player<210?'jacopo':player<410?'buonconte':'pia';seen.add(zone);
 const words={
-climb:'WITNESS A: Dante CLIMBS the cramped path with hands and feet and RESTS on a high ledge.',
-sun:'WITNESS B: the sun appears on an unfamiliar side. Virgil EXPLAINS the southern hemisphere and the route.',
-belacqua:'WITNESS C: Belacqua SITS in the shade and TELLS of waiting before entrance; Dante and Virgil CONTINUE.'
-};status.textContent=words[zone]+(seen.size===3?' THREE WITNESSES COMPLETE. THE ASCENT CONTINUES.':'');counter.textContent='WITNESSES '+seen.size+' / 3'}
-function reset(){player=46;seen.clear();status.textContent='Climb the narrow passage, look for the sun, and hear Belacqua explain why he waits.';counter.textContent='WITNESSES 0 / 3'}
+jacopo:'WITNESS A: Jacopo RECOUNTS the marsh near Oriago and asks Dante to seek prayers in Fano.',
+buonconte:'WITNESS B: Buonconte RECOUNTS his last prayer and the storm that carried away his body. This is testimony.',
+pia:'WITNESS C: Pia NAMES Siena and Maremma and asks to be remembered. Her unspoken history remains unfilled.'
+};status.textContent=words[zone]+(seen.size===3?' THREE WITNESSES COMPLETE. THEIR NAMES TRAVEL ON.':'');counter.textContent='WITNESSES '+seen.size+' / 3'}
+function reset(){player=46;seen.clear();status.textContent='Three souls who died violently tell their stories. Hear Jacopo, Buonconte and Pia, and carry their names onward.';counter.textContent='WITNESSES 0 / 3'}
 function draw(){frame++;
-rect(0,0,640,360,'#485572');rect(0,0,640,160,'#d7a4a1');rect(0,160,640,125,'#998c9a');rect(0,284,640,76,'#a78e86');
-rect(338,64,38,38,'#f8d8a0');rect(342,68,30,30,'#ffe6b7');
-for(let k=0;k<9;k++){const x=10+(k%3)*52,y=112+Math.floor(k/3)*56;rect(x,y,47,48,k%2?'#6c617b':'#807388')}
-for(let k=0;k<7;k++){const x=166+k*18,y=137+k*16;rect(x,y,24,11,k%2?'#c1a79a':'#9c8b8d')}
-rect(210,139,18,18,'#d7b49b');rect(205,156,26,33,'#bc707a');rect(206,186,8,11,'#5b5268');rect(220,186,8,11,'#5b5268');
-label('NARROW CLIMB',16,74,'#fff2d7',12);label('REST / SUN',280,44,'#fff1d4',13);
-rect(423,204,170,18,'#706477');rect(418,221,181,9,'#82788a');
-rect(500,245,17,17,'#d3b29d');rect(495,261,28,29,'#907f9c');
-rect(484,283,47,9,'#907f9c');rect(480,289,18,11,'#84738f');rect(513,288,19,10,'#84738f');
-rect(535,234,37,11,'#625672');rect(542,226,26,8,'#776681');
-label('BELACQUA / WAIT',457,194,'#f9e4ca',12);
-for(let k=0;k<10;k++){const x=411+k*22;rect(x,294+(k%3)*7,17,4,'#b5a59e')}
+rect(0,0,640,360,'#354461');rect(0,0,640,162,'#91839a');rect(0,163,640,111,'#67798d');rect(0,274,640,86,'#9e928f');
+for(let i=0;i<12;i++){const x=(i*43)%210;rect(x,270+(i%3)*9,30,3,i%2?'#74949b':'#b1b5aa')}
+for(let i=0;i<9;i++){const x=23+i*19;rect(x,273+(i%4)*9,3,32,'#7e8c66')}
+rect(105,232,18,18,'#d4ae9a');rect(101,250,26,40,'#986a7b');rect(118,268,21,4,'#cfab9b');
+label('JACOPO / MARSH',21,194,'#fff1da',12);
+rect(212,82,204,110,'#48536f');rect(215,127,201,65,'#4c5e7f');
+for(let i=0;i<8;i++){const x=220+i*27;rect(x,112+(i%3)*6,33,13,'#d1c8ca');rect(x+8,123+(i%3)*7,31,12,'#d1c8ca')}
+const lightning=frame%90<12;
+if(lightning){rect(322,130,6,32,'#f7eab6');rect(314,159,14,7,'#f7eab6');rect(310,166,6,29,'#f7eab6')}
+rect(305,235,18,18,'#dab6a2');rect(301,253,27,40,'#80789c');
+label('BUONCONTE / STORM',244,72,'#fff1da',12);
+rect(459,167,159,108,'#786f81');rect(475,185,115,13,'#a98d92');rect(493,208,17,17,'#dbb7a2');rect(488,225,27,51,'#b8838b');
+rect(528,229,4,17,'#f0d5ae');rect(537,239,3,17,'#f0d5ae');
+label('PIA / REMEMBER',467,151,'#fff1da',12);
+for(let i=0;i<7;i++){const x=13+i*92;rect(x,308+(i%2)*8,38,5,'#c5a99b')}
 rect(player,269,17,17,'#e7c0a3');rect(player-3,287,23,32,'#ba6a77');rect(player,316,5,7,'#333653');rect(player+12,316,5,7,'#333653');
-label('PURGATORIO IV',17,24,'#fff1d1',15);
+label('PURGATORIO V',17,24,'#fff1d1',15);
 if(held.has('ArrowLeft')||held.has('KeyA'))player=Math.max(7,player-2.4);
 if(held.has('ArrowRight')||held.has('KeyD'))player=Math.min(613,player+2.4);
 requestAnimationFrame(draw)}
