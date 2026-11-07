@@ -1,0 +1,109 @@
+{
+  "protocol": "archon/alchemical-living-thread/v2",
+  "stage": 37,
+  "identity": "{{i}}",
+  "parent": "alchemy/036.json",
+  "parentBlobSha": "2e5c5f155bb9dc35920be66b9184a9d416e76ee4",
+  "scene": "Inferno XXX — impersonation, counterfeit florins and disputed testimony",
+  "source": "Dante, Inferno XXX",
+  "story": [
+    "Dante and Virgil continue through the tenth bolgia of falsifiers, where Gianni Schicchi and Myrrha are described as impersonators afflicted with madness and frenzy.",
+    "Gianni Schicchi assumed the identity of Buoso Donati to alter a will, while Myrrha disguised herself to deceive her father. Their impersonations concern social identities, not bodily metamorphoses like those of Canto XXV.",
+    "Master Adam, punished for counterfeiting Florentine florins, lies swollen and tormented by thirst. He remembers the clear streams of Casentino but cannot drink.",
+    "The Greek Sinon, notorious in the Trojan Horse deception, and Potiphar's wife are represented among falsifiers of testimony.",
+    "Master Adam and Sinon quarrel, accusing and striking one another; Dante lingers to hear the dispute.",
+    "Virgil sharply rebukes Dante for taking pleasure in the quarrel; Dante feels shame, and Virgil accepts his repentance.",
+    "The travellers continue; the descriptions of false identity, false money and false words remain distinguishable."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Gianni Schicchi and Myrrha",
+      "semantic": "Impersonating another person can falsify a claimed social identity",
+      "somatic": {
+        "verb": "ASSUME_IMPERSONATE_DECEIVE",
+        "gesture": "Schicchi takes Buoso's role to alter a will; Myrrha disguises herself; both are recalled amid frenzied figures",
+        "observable": "a claimed identity is distinct from the actor who assumes it"
+      }
+    },
+    {
+      "actor": "Master Adam",
+      "semantic": "A counterfeit token can imitate a legitimate monetary value without being genuine",
+      "somatic": {
+        "verb": "COUNTERFEIT_THIRST_ACCUSE",
+        "gesture": "lies bloated with thirst, remembers water, and quarrels with Sinon",
+        "observable": "false florins and physical punishment remain separate facts"
+      }
+    },
+    {
+      "actor": "Sinon",
+      "semantic": "A speaker's claim or accusation is not itself verification",
+      "somatic": {
+        "verb": "ACCUSE_STRIKE_DISPUTE",
+        "gesture": "argues and strikes Master Adam",
+        "observable": "mutual accusations are speech acts, not independently verified conclusions"
+      }
+    },
+    {
+      "actor": "Dante (1)",
+      "semantic": "A witness can become distracted by conflict, then correct attention",
+      "somatic": {
+        "verb": "WATCH_LINGER_FEEL_SHAME",
+        "gesture": "listens to the quarrel, receives rebuke, feels ashamed",
+        "observable": "the observer's response is recorded separately from the disputed assertions"
+      }
+    },
+    {
+      "actor": "Virgil [2]",
+      "semantic": "A guide can redirect attention away from spectacle and back to the route",
+      "somatic": {
+        "verb": "REBUKE_ACCEPT_GUIDE",
+        "gesture": "rebukes Dante, then accepts his remorse and guides onward",
+        "observable": "correction does not rewrite the prior observation"
+      }
+    }
+  ],
+  "cipher": {
+    "alphaOmega": "[ (1), [2] ]",
+    "operator": "IMPERSONATE -> COUNTERFEIT -> ACCUSE -> DISPUTE -> DISCERN",
+    "notation": "PERSON{claim:id,actor:actual}; COIN{claimed_value,genuineness:unverified}; SPEECH{claim,corroboration:separate}; OBSERVER{attention,correction}",
+    "invariants": [
+      "Claimed identity does not necessarily equal the impersonator's actual identity",
+      "An imitated coin is not authenticated by appearance alone",
+      "An allegation does not become an independently verified fact simply because it is forcefully voiced",
+      "Impersonation, counterfeit currency, and false testimony remain distinct mechanisms",
+      "Dante's correction of attention does not erase his prior fascination",
+      "No new atomic assignment or real chemical transmutation is claimed"
+    ],
+    "newAtomicAssignments": [],
+    "chemicalReaction": "none",
+    "product": "none",
+    "preserve": [
+      "(1) H Dante and [2] He Virgil",
+      "[6] C life / six-poet fellowship",
+      "Noble Castle [ (7)[8]\\\\(9)[10] ]",
+      "(11) Na reset analogy"
+    ]
+  },
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "identity falsification",
+      "somatic": "SCHICCHI and MYRRHA IMPERSONATE",
+      "observable": "claimed role differs from actual actor"
+    },
+    {
+      "id": "B",
+      "semantic": "currency falsification",
+      "somatic": "MASTER ADAM COUNTERFEITS coins and THIRSTS",
+      "observable": "material appearance does not validate monetary authenticity"
+    },
+    {
+      "id": "C",
+      "semantic": "disputed testimony and witness attention",
+      "somatic": "SINON and ADAM ARGUE; DANTE WATCHES; VIRGIL REBUKES",
+      "observable": "speech claims and witness correction are distinguished"
+    }
+  ],
+  "next": "Inferno XXXI — giants at the well of the ninth circle: Nimrod, Ephialtes and Antaeus",
+  "appendOnly": true
+}
