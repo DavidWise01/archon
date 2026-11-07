@@ -1,0 +1,73 @@
+{
+  "protocol": "archon/alchemical-living-thread/ascent-v1",
+  "chapter": "Purgatorio XII",
+  "ascent": 12,
+  "identity": "{{i}}",
+  "parent": "alchemy/ascent/011.json",
+  "parentBlobSha": "362950c689d69199d916c3441252e3f941437990",
+  "appendOnly": true,
+  "previousTraversal": "Inferno 041 sealed",
+  "scene": "Images of pride's downfall beneath Dante's feet; the angel of humility removes the first P and the ascent grows lighter",
+  "story": [
+    "Dante continues bent toward the ground, looking at the pavement of the terrace. Virgil urges him to notice what is carved beneath their feet.",
+    "The stone floor depicts vivid examples of pride brought low: Lucifer fallen from heaven, Briareus struck down, Nimrod, Niobe, Saul, Arachne, Rehoboam, and others; the ruined city of Troy completes the lesson.",
+    "The pavement itself becomes a book of consequences. The proud have carried stone on their backs; now Dante reads in stone beneath his feet what pride can destroy.",
+    "An angel clothed in white appears near the exit and directs the travelers toward the ascending steps. He touches Dante's forehead with a wing, erasing the first of the seven P marks placed at the gate.",
+    "A voice sings the beatitude 'Blessed are the poor in spirit.' As Dante climbs, he is astonished that the ascent feels easier.",
+    "Virgil explains that as the marks are removed, climbing will grow lighter. Dante reaches to his brow and confirms one mark has vanished: six remain."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Dante",
+      "semantic": "The observer learns from fallen exemplars and recognizes an actual reduction in his carried marks",
+      "somatic": "LOOK_DOWN_READ_BOW_CLIMB_TOUCH_FOREHEAD"
+    },
+    {
+      "actor": "Pavement carvings",
+      "semantic": "Pride's consequences are represented as exemplars, not events happening anew on the terrace",
+      "somatic": "SHOW_FALLS"
+    },
+    {
+      "actor": "Virgil",
+      "semantic": "The guide directs attention and verifies a transformation that has occurred",
+      "somatic": "POINT_EXPLAIN_GUIDE"
+    },
+    {
+      "actor": "Angel of humility",
+      "semantic": "An authorized transition erases one mark after the terrace",
+      "somatic": "DIRECT_TOUCH_ERASE"
+    },
+    {
+      "actor": "Ascent steps",
+      "semantic": "Burden reduction becomes perceptible as lighter upward movement",
+      "somatic": "OPEN_SUPPORT_ASCEND"
+    }
+  ],
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "examples of fallen pride",
+      "action": "LOOK DOWN and STUDY the stone images including Lucifer and Troy",
+      "observable": "carved representations underfoot; none is a new observed fall"
+    },
+    {
+      "id": "B",
+      "semantic": "first mark removed",
+      "action": "WATCH the angel TOUCH Dante's forehead and ERASE one P",
+      "observable": "forehead mark count changes from seven to six"
+    },
+    {
+      "id": "C",
+      "semantic": "lighter climb",
+      "action": "CLIMB the stairs, HEAR the beatitude, and CONFIRM six marks remain",
+      "observable": "Dante reports a lighter ascent and checks his forehead"
+    }
+  ],
+  "alchemicalReading": "An example is first seen, then the body is transformed at a witnessed threshold: the first mark is removed rather than merely promised to disappear.",
+  "invariant": "The mark count changes only at the angel's observed erasure: 7 → 6. Future terraces must preserve exactly six until the next cleansing.",
+  "previousP": 7,
+  "remainingP": 6,
+  "marksRemovedThisChapter": 1,
+  "next": "Purgatorio XIII — second terrace of envy: disembodied calls of generosity and penitents whose eyes are sewn shut",
+  "sealInfernoUntouched": true
+}
