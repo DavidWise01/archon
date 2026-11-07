@@ -105,20 +105,20 @@ label('}{',237,224,'#f5d5a6',9);label('FUSE / EXCHANGE',200,183,'#eec88b',8);
 
 
 
- // Inferno XXIV: jagged rocky ascent, serpent and ash-reforming Vanni Fucci.
-rect(0,137,480,96,'#40384b');
-for(let k=0;k<12;k++){const x=k*23,y=213-k*6;rect(x,y,40,19,k%2?'#887784':'#706577')}
-rect(0,223,480,10,'#62596c');
-rect(97,141,13,12,'#d8b79f');rect(94,153,18,23,'#8b9fb6');
-rect(125,151,12,12,'#d1a98e');rect(122,163,19,20,'#b56d79');
-const phase=frame%210;
-const burn=phase>=75&&phase<125,ash=phase>=125&&phase<158;
-if(!ash){rect(353,161,15,15,'#cfae9b');rect(349,176,23,33,burn?'#d2875c':'#8c6a80');rect(353,209,5,10,'#bfa193');rect(365,209,5,10,'#bfa193')}
-if(burn){for(let k=0;k<10;k++){const x=342+k*4,y=157+(k*13+frame*.5)%49;rect(x,y,4,9,k%2?'#ffcb70':'#e78a4f')}}
-if(ash){for(let k=0;k<20;k++){const x=341+(k*17)%42,y=173+(k*11+frame*.23)%47;rect(x,y,3,3,'#b8a6a8')}}
-for(let k=0;k<7;k++){const x=304+k*13,y=202+Math.sin(frame*.043+k)*8;rect(x,y,17,5,k%2?'#668c75':'#8caa80')}
-label('ROCKY ASCENT',27,122,'#e8d2ba',8);
-label('BITE / ASH / REFORM',325,133,'#f0cbb1',8);
+
+ // Inferno XXV: distinct serpent-human fusion, reciprocal exchange, unchanged Puccio.
+rect(0,137,480,96,'#3a354b');rect(0,218,480,15,'#665b6d');
+const fusion=(Math.sin(frame*.025)+1)/2;
+rect(73,173,20,30,'#a77d8b');rect(76,160,15,15,'#d0aa95');
+for(let k=0;k<6;k++){const x=42+k*11+fusion*8,y=204+Math.sin(frame*.065+k)*6;rect(x,y,16,6,k%2?'#7d9d85':'#9bbb9c')}
+rect(84,173,15+fusion*14,15,'#83a18b');
+const change=(Math.sin(frame*.019)+1)/2;
+rect(245,173,19*(1-change)+5,33,'#a77986');rect(246,161,12,13,'#d3b49e');
+for(let k=0;k<6;k++){const x=265+k*9-change*20,y=198+Math.sin(frame*.05+k)*6;rect(x,y,14,6,'#8dad95')}
+rect(388,170,17,14,'#cdae9a');rect(385,184,22,29,'#7c728f');rect(389,212,5,9,'#aa9596');rect(401,212,5,9,'#aa9596');
+label('CIANFA + AGNELLO',26,133,'#ecd2b9',8);
+label('FRANCESCO / BUOSO',217,137,'#e4d2c2',8);
+label('PUCCIO',379,154,'#e4d2c2',9);
 
 rect(203,76,80,95,'#5d4b76');rect(209,82,68,89,'#1d172e');
 rect(206,74,73,7,'#ebc77e');rect(206,74,5,98,'#c79a72');rect(275,74,5,98,'#c79a72');
