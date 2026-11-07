@@ -1,22 +1,20 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ARCHON — The Ascent · Purgatorio IX</title><style>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ARCHON — The Ascent · Purgatorio X</title><style>
 :root{color-scheme:dark}*{box-sizing:border-box}body{background:linear-gradient(#11142d,#262542);color:#f3e6d4;font:15px/1.5 system-ui,Segoe UI,sans-serif;margin:0}main{max-width:1120px;padding:20px;margin:auto}h1{font-size:clamp(26px,5vw,46px);margin:5px 0}h2{font-size:18px;margin:0 0 8px}.eyebrow{font:700 11px monospace;letter-spacing:.15em;color:#f0c38d}.grid{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(260px,1fr);gap:15px;margin-top:17px}.panel{border:1px solid #776786;background:#201e36;border-radius:13px;padding:16px;min-width:0}canvas{display:block;width:100%;aspect-ratio:16/9;image-rendering:pixelated;background:#191d38;border-radius:9px;border:1px solid #927e9a}.controls{display:flex;gap:9px;flex-wrap:wrap;margin:12px 0}button{background:#4d3d5a;border:1px solid #aa8291;color:#fff;border-radius:8px;padding:10px 14px;font-weight:700;cursor:pointer}button:hover{background:#65506b}button:focus-visible{outline:2px solid #f9d49b}p{color:#dbcede}.status{background:#302943;border-radius:8px;min-height:80px;padding:12px}pre{white-space:pre-wrap;background:#17182d;border-radius:9px;padding:14px;color:#eacba5;font-size:12px;line-height:1.7}a{color:#b8dfe4}.counter{color:#a8dccb;font:700 12px monospace}footer{color:#b1a7bb;font-size:12px;margin-top:20px} @media(max-width:740px){.grid{grid-template-columns:1fr}}
-</style></head><body><main><header><div class="eyebrow">ARCHON / THE LIVING THREAD / THE ASCENT</div><h1>Purgatorio IX <span style="color:#ffd09a">· The Seven Marks</span></h1><p>A dream of an eagle, Lucia's unseen help, and the gate where seven marks begin their journey.</p></header>
-<div class="grid"><section class="panel"><canvas id="game" width="640" height="360" tabindex="0" aria-label="Playable pixel art: eagle dream, Lucia carrying Dante and an angel marking seven Ps at the gate"></canvas><div class="controls"><button id="left">◀ WALK</button><button id="right">WALK ▶</button><button id="observe">E · OBSERVE</button><button id="reset">↺ RESET</button></div><div class="counter" id="counter">WITNESSES 0 / 3</div><p class="status" id="status" aria-live="polite">Dream of the eagle, wake near Purgatory's gate, and receive seven P marks before entering.</p><p>Keyboard: A / D or ← / → to walk; E to observe. Observe the dream and Lucia's reported help, the threshold steps and seven marks, and the gate's opening.</p></section>
-<aside class="panel"><h2>Today's encounter</h2><p>Dante dreams that an eagle lifts him into fire. When he awakens, Virgil explains that Lucia carried him higher while he slept. Before the gate lie three steps: white, dark and cracked, and red. An angel cuts seven P marks upon Dante's brow and opens the gate with two keys. Inside, a hymn rises.</p><pre>PURGATORIO / IX
+</style></head><body><main><header><div class="eyebrow">ARCHON / THE LIVING THREAD / THE ASCENT</div><h1>Purgatorio X <span style="color:#ffd09a">· The Weight of Pride</span></h1><p>The first terrace: three scenes of humility carved in marble, and the proud bearing stones.</p></header>
+<div class="grid"><section class="panel"><canvas id="game" width="640" height="360" tabindex="0" aria-label="Playable pixel art: sculpted humility, the first terrace of pride, and penitents bent under stones"></canvas><div class="controls"><button id="left">◀ WALK</button><button id="right">WALK ▶</button><button id="observe">E · OBSERVE</button><button id="reset">↺ RESET</button></div><div class="counter" id="counter">WITNESSES 0 / 3</div><p class="status" id="status" aria-live="polite">Read the marble reliefs of Mary, David and Trajan, then witness the proud carrying their stones.</p><p>Keyboard: A / D or ← / → to walk; E to observe. Observe the carvings, the burdens and Virgil's direction. Seven forehead marks remain.</p></section>
+<aside class="panel"><h2>Today's encounter</h2><p>On the first terrace Dante studies marble carvings: Mary receiving Gabriel's announcement, David dancing before the Ark and Trajan pausing to grant a widow justice. The proud approach, bent beneath enormous stones. Virgil urges Dante to study and continue.</p><pre>PURGATORIO / X
        |
-DREAM: EAGLE LIFTS
+FIRST TERRACE / PRIDE
        |
-LUCIA: CARRY / PLACE
+MARY: RECEIVE
+DAVID: DANCE
+TRAJAN: HEAR / ACT
        |
-WHITE / CRACKED / RED
+PROUD: BEND / CARRY
        |
-ANGEL: MARK 7 P
+VIRGIL: GUIDE / CONTINUE
        |
-KEYS: UNLOCK
-       |
-ENTER / DO NOT LOOK BACK
-       |
-FIRST TERRACE AWAITS</pre><p>The gate opens, but seven marks remain to be cleansed during the ascent.</p><p><a href="./">The sealed Inferno</a> · <a href="https://github.com/DavidWise01/archon/blob/main/alchemy/ascent/009.json">Canonical ascent record</a></p></aside></div><footer>Original sealed 41-tick journey preserved · Inferno's sealed Stage 041 preserved · This ascent is a new append-only branch.</footer></main><script>
+7 P MARKS STILL PRESENT</pre><p>The examples show humility before the burden is encountered. The first P has not yet been erased.</p><p><a href="./">The sealed Inferno</a> · <a href="https://github.com/DavidWise01/archon/blob/main/alchemy/ascent/010.json">Canonical ascent record</a></p></aside></div><footer>Original sealed 41-tick journey preserved · Inferno's sealed Stage 041 preserved · This ascent is a new append-only branch.</footer></main><script>
 'use strict';
 const c=document.getElementById('game'),ctx=c.getContext('2d'),status=document.getElementById('status'),counter=document.getElementById('counter');
 let player=46,frame=0;const held=new Set(),seen=new Set();
@@ -30,31 +28,29 @@ const label=(str,x,y,color='#f9e4c3',size=11)=>{ctx.fillStyle=color;ctx.font='bo
 
 
 
-function witness(){const zone=player<210?'eagle':player<410?'marks':'gate';seen.add(zone);
+
+function witness(){const zone=player<210?'reliefs':player<410?'burdens':'guide';seen.add(zone);
 const words={
-eagle:'WITNESS A: Dante DREAMS an eagle lifts him. Virgil REPORTS that Lucia CARRIED him here while asleep.',
-marks:'WITNESS B: Dante crosses white, cracked-dark and red steps. The angel INSCRIBES seven P marks to be cleansed above.',
-gate:'WITNESS C: the angel UNLOCKS with two keys and WARNS against looking back. Dante ENTERS; the work remains ahead.'
-};status.textContent=words[zone]+(seen.size===3?' THREE WITNESSES COMPLETE. THE GATE IS OPEN.':'');counter.textContent='WITNESSES '+seen.size+' / 3'}
-function reset(){player=46;seen.clear();status.textContent='Dream of the eagle, wake near Purgatory\'s gate, and receive seven P marks before entering.';counter.textContent='WITNESSES 0 / 3'}
+reliefs:'WITNESS A: three MARBLE RELIEFS show Mary accepting, David dancing, and Trajan hearing the widow. These are sculpted exemplars.',
+burdens:'WITNESS B: proud souls BEND and CARRY huge stones, advancing slowly across the terrace.',
+guide:'WITNESS C: Virgil GUIDES Dante onward. Entry is complete, but all seven P marks are still present.'
+};status.textContent=words[zone]+(seen.size===3?' THREE WITNESSES COMPLETE. FIRST TERRACE CONTINUES.':'');counter.textContent='WITNESSES '+seen.size+' / 3'}
+function reset(){player=46;seen.clear();status.textContent='Read the marble reliefs of Mary, David and Trajan, then witness the proud carrying their stones.';counter.textContent='WITNESSES 0 / 3'}
 function draw(){frame++;
-rect(0,0,640,360,'#3c4868');rect(0,0,640,151,'#928ca2');rect(0,151,640,128,'#77758c');rect(0,279,640,81,'#a48f8b');
-for(let i=0;i<11;i++){const x=(i*71)%640;rect(x,226+(i%3)*19,54,12,i%2?'#8e8893':'#6c6a83')}
-const eagleY=84+Math.sin(frame*.045)*11,wing=Math.sin(frame*.07)*12;
-rect(75,eagleY,39,19,'#8b7290');rect(108,eagleY+5,26,8,'#d4b390');rect(47-wing,eagleY-7,33+wing,12,'#a28ca2');rect(109,eagleY-6,34+wing,12,'#a28ca2');
-rect(88,eagleY+21,15,12,'#d9b39a');rect(84,eagleY+33,23,28,'#be7c85');
-label('DREAM / EAGLE',19,53,'#fff1d6',12);
-rect(245,152,16,17,'#f3daba');rect(239,169,29,42,'#9ca8c2');
-rect(227,173,13,23,'#d5c2ba');rect(268,173,13,23,'#d5c2ba');
-rect(245,215,16,15,'#d9b39f');rect(240,230,24,26,'#b87b84');
-label('LUCIA / CARRY',200,124,'#fff1d6',12);
-rect(403,169,204,92,'#62596d');rect(446,95,120,164,'#8c7288');
-rect(455,105,101,144,'#342f4b');rect(463,112,84,130,'#171b34');
-rect(421,261,169,11,'#eee7df');rect(438,272,148,10,'#4a454e');rect(455,283,126,12,'#b66f72');
-rect(495,123,17,19,'#f0d0ae');rect(490,142,27,44,'#c8baac');rect(500,183,3,31,'#efcb91');
-for(let i=0;i<7;i++){const x=470+(i%4)*15,y=220+Math.floor(i/4)*16;label('P',x,y,'#f6c0a5',13)}
-label('SEVEN P / GATE',432,68,'#fff1d6',12);
-label('PURGATORIO IX',17,24,'#fff1d1',15);
+rect(0,0,640,360,'#48516b');rect(0,0,640,135,'#8d94a5');rect(0,135,640,140,'#76758b');rect(0,275,640,85,'#9f9190');
+rect(11,122,209,138,'#d5c9bf');rect(18,129,195,124,'#ede0d1');
+for(let i=0;i<3;i++){const x=23+i*63;rect(x,146,56,92,'#c6b7b0');rect(x+3,149,50,86,'#e4d5c8')}
+rect(31,168,9,10,'#927f86');rect(28,178,15,30,'#9d9198');rect(49,174,9,10,'#927f86');rect(45,184,15,23,'#a88d8f');
+rect(92,172,11,10,'#a08b86');rect(90,182,16,28,'#bc9b8e');rect(85,180,7,5,'#ad948e');
+rect(153,171,10,11,'#9c8589');rect(149,183,18,28,'#a18d92');rect(173,180,9,11,'#947e85');rect(170,191,15,24,'#b1a0a1');
+label('MARY  DAVID  TRAJAN',21,113,'#fff1d8',11);
+for(let k=0;k<3;k++){const x=257+k*66,y=248+(k%2)*8;rect(x-4,y-46,48,38,k%2?'#6a6478':'#867c86');rect(x,y-9,27,12,'#c8aa99');rect(x+7,y+1,19,24,'#8c7c90');rect(x+9,y+24,25,5,'#5b546c')}
+label('PRIDE / CARRY',266,171,'#fff1d8',12);
+rect(532,203,22,22,'#d4b7a2');rect(527,225,32,56,'#8993ac');rect(566,206,22,22,'#d4ae9f');rect(562,228,32,52,'#ae7b88');
+label('VIRGIL / DANTE',495,175,'#fff1d8',11);
+for(let k=0;k<7;k++){label('P',520+k*15,62,'#f9d0aa',15)}
+label('SEVEN MARKS',509,90,'#fff1d8',11);
+label('PURGATORIO X',17,24,'#fff1d1',15);
 rect(player,269,17,17,'#e7c0a3');rect(player-3,287,23,32,'#ba6a77');rect(player,316,5,7,'#333653');rect(player+12,316,5,7,'#333653');
 if(held.has('ArrowLeft')||held.has('KeyA'))player=Math.max(7,player-2.4);
 if(held.has('ArrowRight')||held.has('KeyD'))player=Math.min(613,player+2.4);
