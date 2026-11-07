@@ -1,0 +1,107 @@
+{
+  "protocol": "archon/alchemical-living-thread/v2",
+  "stage": 28,
+  "identity": "{{i}}",
+  "parent": "alchemy/027.json",
+  "parentBlobSha": "d2b1835921b9ec6b54019d7e13e7c54ecda65b8b",
+  "scene": "Inferno XXI — boiling pitch conceals barrators; Malebranche hook those who surface",
+  "source": "Dante, Inferno XXI",
+  "story": [
+    "Dante and Virgil reach the fifth bolgia, where dark boiling pitch fills a ditch like a shipyard's cauldrons; bubbles rise without revealing all the souls concealed underneath.",
+    "A black demon comes racing over the bridge with a corrupt official from Lucca, throws him into the pitch, and hurries away.",
+    "The Malebranche demons threaten anyone who lifts their back above the pitch; their hooks force emerging souls back under its surface.",
+    "Virgil hides Dante and approaches the demons to negotiate passage, confronting Malacoda, their leader.",
+    "Malacoda promises the travelers a way forward and assigns an escort. The truth of his directions remains unverified here and is tested in later cantos.",
+    "Dante emerges from hiding and follows Virgil, apprehensive of the demons' threatening behavior. Their dangerous escort continues into Canto XXII."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Boiling pitch",
+      "semantic": "Opaque containment blocks continuous direct observation of occupants",
+      "somatic": {
+        "verb": "BUBBLE_CONCEAL",
+        "gesture": "dark pitch churns, hiding bodies below its surface",
+        "observable": "bubbles and brief surfacing do not enumerate all occupants"
+      }
+    },
+    {
+      "actor": "Barrators",
+      "semantic": "Being unseen is different from being absent",
+      "somatic": {
+        "verb": "SUBMERGE_SURFACE",
+        "gesture": "remain submerged, occasionally showing back or face",
+        "observable": "a brief surfacing reveals presence; absence cannot be concluded when nothing appears"
+      }
+    },
+    {
+      "actor": "Malebranche demons",
+      "semantic": "Patrol a boundary and punish exposure",
+      "somatic": {
+        "verb": "DETECT_HOOK_DRIVE_DOWN",
+        "gesture": "watch the pitch, strike surfacing souls with hooks and shove them under",
+        "observable": "the exposed body is detected and pushed back beneath the opaque surface"
+      }
+    },
+    {
+      "actor": "Virgil [2]",
+      "semantic": "Guide under uncertain and potentially deceptive escort",
+      "somatic": {
+        "verb": "HIDE_NEGOTIATE_GUIDE",
+        "gesture": "conceals Dante, speaks with Malacoda and proceeds with promised escort",
+        "observable": "a promise is received, but a safe route has not been confirmed"
+      }
+    },
+    {
+      "actor": "Dante (1)",
+      "semantic": "Preserve distinct states of unseen, detected and verified",
+      "somatic": {
+        "verb": "WATCH_HIDE_EMERGE_FOLLOW",
+        "gesture": "looks into the pitch, hides, then joins Virgil and moves onward",
+        "observable": "the traveler does not infer empty ditch from its dark surface"
+      }
+    }
+  ],
+  "cipher": {
+    "alphaOmega": "[ (1), [2] ]",
+    "operator": "CONCEAL -> BUBBLE -> SURFACE -> DETECT -> HOOK -> SUBMERGE",
+    "notation": "PITCH{opaque}; SOUL{hidden|surfaced}; DEMON:HOOK(surface); [2]:NEGOTIATE; (1):FOLLOW",
+    "invariants": [
+      "NOT_VISIBLE does not imply ABSENT",
+      "Bubbles or disturbances are indirect evidence, not a complete occupancy count",
+      "Surface event reveals an occupant at one time, not uninterrupted visibility",
+      "Threatened exposure and forced re-submergence must retain their causal order",
+      "A demon's promised route is testimony, not verified safety"
+    ],
+    "newAtomicAssignments": [],
+    "chemicalReaction": "none",
+    "product": "none",
+    "preserve": [
+      "(1) H Dante and [2] He Virgil",
+      "[6] C life / six-poet fellowship",
+      "Noble Castle [ (7)[8]\\\\(9)[10] ]",
+      "(11) sodium-reset analogy"
+    ]
+  },
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "opaque containment",
+      "somatic": "PITCH BUBBLES and CONCEALS",
+      "observable": "hidden occupancy cannot be inferred away"
+    },
+    {
+      "id": "B",
+      "semantic": "exposure with intervention",
+      "somatic": "BARRATOR SURFACES; DEMONS DETECT, HOOK and SUBMERGE",
+      "observable": "brief surfacing followed by punitive re-concealment"
+    },
+    {
+      "id": "C",
+      "semantic": "uncertain guided passage",
+      "somatic": "VIRGIL NEGOTIATES; DANTE EMERGES and FOLLOWS",
+      "observable": "escort promised; path not yet independently verified"
+    }
+  ],
+  "next": "Inferno XXII — Malebranche escort, the Navarrese barrator's trick and demons tumbling into pitch",
+  "appendOnly": true
+}
