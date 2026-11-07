@@ -1,0 +1,108 @@
+{
+  "protocol": "archon/alchemical-living-thread/v2",
+  "stage": 31,
+  "identity": "{{i}}",
+  "parent": "alchemy/030.json",
+  "parentBlobSha": "21248da5d7080d6f35bac56c9ec697afd455c91b",
+  "scene": "Inferno XXIV — climb across ruined rock, Vanni Fucci bitten and reconstituted",
+  "source": "Dante, Inferno XXIV",
+  "story": [
+    "Dante and Virgil climb a steep pile of broken stones after discovering the bridge to be ruined; Virgil encourages the exhausted Dante to persist.",
+    "They cross the rocky obstacle and arrive above the seventh bolgia, where thieves are tormented by serpents.",
+    "Dante sees a serpent strike a sinner at the neck, whereupon the body catches fire and crumbles into ashes.",
+    "Like a phoenix in the poem's comparison, the ashes reassemble and the same soul stands again in human form.",
+    "The speaker identifies himself as Vanni Fucci of Pistoia and confesses to theft from a church treasury.",
+    "Vanni Fucci spitefully foretells political reversals intended to grieve Dante. The fuller blasphemy and serpent intervention begin Canto XXV.",
+    "His reappearance restores shape, not freedom: he remains in the seventh bolgia."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Broken rocks and ascent",
+      "semantic": "A false promised crossing yields to a difficult but observed alternative route",
+      "somatic": {
+        "verb": "CLIMB_HELP_CROSS",
+        "gesture": "Virgil encourages and helps Dante up shattered rocks and over the obstacle",
+        "observable": "the travelers reach the seventh bolgia"
+      }
+    },
+    {
+      "actor": "Serpent",
+      "semantic": "A discrete trigger begins a dramatic change in bodily form",
+      "somatic": {
+        "verb": "BITE",
+        "gesture": "strikes Vanni Fucci at the neck",
+        "observable": "the bite is followed by ignition"
+      }
+    },
+    {
+      "actor": "Vanni Fucci",
+      "semantic": "An outward form can recur without removing confinement or consequence",
+      "somatic": {
+        "verb": "BURN_ASH_REFORM_SPEAK",
+        "gesture": "burns to ashes, reforms, confesses theft and gives a spiteful prediction",
+        "observable": "the named soul returns to human shape but remains punished"
+      }
+    },
+    {
+      "actor": "Dante (1)",
+      "semantic": "Distinguish appearance regained from escape accomplished",
+      "somatic": {
+        "verb": "WATCH_QUESTION_LISTEN",
+        "gesture": "observes metamorphosis and questions the reconstituted man",
+        "observable": "his identity is established by testimony"
+      }
+    },
+    {
+      "actor": "Virgil [2]",
+      "semantic": "Assist difficult progress without replacing the traveler's effort",
+      "somatic": {
+        "verb": "ENCOURAGE_SUPPORT_GUIDE",
+        "gesture": "helps Dante ascend and directs him toward the next ditch",
+        "observable": "the repaired route is not claimed; a different passage succeeds"
+      }
+    }
+  ],
+  "cipher": {
+    "alphaOmega": "[ (1), [2] ]",
+    "operator": "CLIMB -> ENTER -> BITE -> BURN -> ASH -> REFORM -> SPEAK",
+    "notation": "ROCKS:CLIMB ; SERPENT:BITE(VANNI_FUCCI) ; BODY:BURN -> ASH -> REFORM ; IDENTITY:PERSISTS ; RELEASE:NONE",
+    "invariants": [
+      "Reconstitution of visible form is not release from punishment",
+      "The initiating serpent bite precedes the burning and reformation",
+      "The rocks are crossed by exertion, not because the previously promised bridge was restored",
+      "A poetic phoenix-like reformation is not physical evidence of regeneration or chemical transmutation",
+      "A prophecy spoken by Vanni Fucci is character testimony, not an observed future event"
+    ],
+    "newAtomicAssignments": [],
+    "chemicalReaction": "none",
+    "product": "none",
+    "preserve": [
+      "(1) H Dante and [2] He Virgil",
+      "[6] C life/six-poet fellowship",
+      "Noble Castle [ (7)[8]\\\\(9)[10] ]",
+      "(11) Na reset analogy"
+    ]
+  },
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "alternate route established",
+      "somatic": "VIRGIL SUPPORTS; DANTE CLIMBS broken stone",
+      "observable": "seventh bolgia reached"
+    },
+    {
+      "id": "B",
+      "semantic": "triggered metamorphosis",
+      "somatic": "SERPENT BITES; VANNI BURNS to ash then REFORMS",
+      "observable": "sequence and identity continuity witnessed"
+    },
+    {
+      "id": "C",
+      "semantic": "persistent condition and testimony",
+      "somatic": "VANNI SPEAKS and foretells; DANTE QUESTIONS",
+      "observable": "identity remains, release not observed"
+    }
+  ],
+  "next": "Inferno XXV — Vanni Fucci's blasphemy, Cacus, and further serpent-human metamorphoses among thieves",
+  "appendOnly": true
+}
