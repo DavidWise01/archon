@@ -1,0 +1,73 @@
+{
+  "protocol": "archon/alchemical-living-thread/ascent-v1",
+  "chapter": "Purgatorio XXIII",
+  "ascent": 23,
+  "identity": "{{i}}",
+  "parent": "alchemy/ascent/022.json",
+  "parentBlobSha": "7480f8e50b065b83b408e12241229b3becccd1e9",
+  "appendOnly": true,
+  "previousTraversal": "Inferno 041 sealed",
+  "scene": "Sixth terrace of gluttony: emaciated penitents, Dante recognizes Forese Donati, and hears of Nella's sustaining prayers",
+  "story": [
+    "Dante studies the strange tree of fruit and water as Virgil urges him onward. He hears penitents weeping and singing the prayer for opened lips while they move among the branches.",
+    "The souls of gluttony appear terribly thin: their faces are hollow, their eyes sunken, their skin stretched taut. The aroma of fruit and the falling water make them hunger and thirst while they learn moderation.",
+    "One penitent calls Dante by name. Though the soul's appearance is nearly unrecognizable, its voice reveals Forese Donati, Dante's friend from Florence.",
+    "Dante asks why Forese has reached so far up Purgatory after dying relatively recently. Forese credits the prayers, tears and devotion of his wife Nella with shortening his waiting.",
+    "Forese contrasts Nella's virtue with what he regards as the immodesty of certain Florentine women and foretells a public rebuke. His condemnation and prediction remain his attributed speech.",
+    "Dante explains that Virgil and Statius are his companions and describes his journey from the dark wood. He continues beside Forese, but the terrace of gluttony has not yet been completed: two P marks remain."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Dante",
+      "semantic": "Recognition survives radical outward change when the traveler attends to a familiar voice",
+      "somatic": "HEAR_LOOK_RECOGNIZE_ASK_CONTINUE"
+    },
+    {
+      "actor": "Forese Donati",
+      "semantic": "Hunger and thirst correct former excess; gratitude credits another person's prayers without claiming ownership",
+      "somatic": "CALL_CONFESS_EXPLAIN_THANK_WALK"
+    },
+    {
+      "actor": "Nella (described by Forese)",
+      "semantic": "Devotion and prayers are represented by Forese as supportive of his progress",
+      "somatic": "PRAY_REMEMBER"
+    },
+    {
+      "actor": "Penitents of gluttony",
+      "semantic": "Longing is endured rather than instantly satisfied by fragrant fruit and water",
+      "somatic": "WALK_HUNGER_THIRST_SING"
+    },
+    {
+      "actor": "Virgil and Statius",
+      "semantic": "The guides accompany Dante and remain identified as distinct travelers",
+      "somatic": "GUIDE_WALK_LISTEN"
+    }
+  ],
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "emaciated penitents",
+      "action": "SEE the hollow faces and HEAR penitents sing while fragrant fruit and water remain out of reach",
+      "observable": "physical appearance, hunger and the tree are narrated observations"
+    },
+    {
+      "id": "B",
+      "semantic": "Forese recognized by voice",
+      "action": "HEAR Forese CALL Dante, then RECOGNIZE his identity despite his changed face",
+      "observable": "recognition follows the voice rather than visible likeness"
+    },
+    {
+      "id": "C",
+      "semantic": "Nella's prayers and friendship",
+      "action": "HEAR Forese CREDIT Nella's prayers and Dante EXPLAIN his companions and journey",
+      "observable": "Forese's account and predictions are attributed speech; two marks remain"
+    }
+  ],
+  "alchemicalReading": "A body's appearance changes through deprivation, yet friendship remains recognizable through voice. Appetite is challenged by fruit that can be sensed but not consumed; compassion and prayer enter as reciprocal support.",
+  "invariant": "Recognition does not require visual resemblance; testimony about another's prayers remains testimony. No angel erases a mark on the sixth terrace in XXIII: two remain.",
+  "previousP": 2,
+  "remainingP": 2,
+  "marksRemovedThisChapter": 0,
+  "next": "Purgatorio XXIV — Forese names Bonagiunta, poetry and the sweet new style; a second tree tests appetite",
+  "sealInfernoUntouched": true
+}
