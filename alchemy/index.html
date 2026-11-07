@@ -111,21 +111,20 @@ label('}{',237,224,'#f5d5a6',9);label('IMITATION / DECAY',194,183,'#eec88b',8);
 
 
 
- // Inferno XXVIII: recurring circuit, healing between returns and a witness speaking.
-rect(0,137,480,96,'#3b3445');rect(0,219,480,14,'#625567');
-for(let k=0;k<19;k++){const x=12+(k*47)%458,y=210-(k%3)*12;rect(x,y,12,4,'#746471')}
-const loop=frame*.022;
-for(let k=0;k<4;k++){const t=loop+k*Math.PI/2,x=151+Math.cos(t)*76,y=179+Math.sin(t)*25;
-rect(x-6,y-20,13,13,'#d1b19f');rect(x-9,y-7,19,27,'#8a697f');
-rect(x-5,y+19,5,9,'#ba9a94');rect(x+4,y+19,5,9,'#ba9a94');
-if(Math.sin(t)<0)rect(x-9,y+2,19,3,'#d88987')}
-rect(265,151,15,15,'#b67e79');rect(261,166,24,31,'#875b70');
-rect(287,161,4,42,'#c5b29c');rect(282,158,13,4,'#c5b29c');
-rect(363,172,20,30,'#8e6f83');rect(365,155,15,15,'#d0aa99');
-rect(392,171,11,11,'#cba48e');rect(386,183,22,5,'#bb938f');
-label('HEAL / RETURN',65,127,'#ebd2bd',8);
-label('DEMON / STRIKE',261,133,'#e9c9bc',8);
-label('BERTRAN SPEAKS',356,141,'#e9c9bc',8);
+
+ // Inferno XXIX: tenth bolgia, Griffolino and Capocchio beneath ruined stone.
+rect(0,137,480,96,'#41394b');rect(0,217,480,16,'#665665');
+for(let k=0;k<23;k++){const x=(k*47)%475,y=170+(k*19)%47;rect(x,y,18,5,k%2?'#675b66':'#867380')}
+rect(74,166,15,15,'#caaa97');rect(69,181,24,24,'#967785');
+rect(81,193,8,6,'#dcb99e');rect(61,195,13,4,'#b08f94');
+rect(116,172,16,15,'#cba991');rect(111,187,25,24,'#826d80');
+rect(124,195,10,5,'#c6aaa2');rect(102,193,13,4,'#bd9b9b');
+for(let k=0;k<12;k++){const x=65+(k*17)%72,y=184+(k*11)%26;rect(x,y,3,3,k%2?'#c8a5a1':'#b9a78b')}
+rect(333,167,15,14,'#d0b39f');rect(328,181,24,29,'#b26d77');
+rect(367,163,15,14,'#d8bba2');rect(364,178,24,29,'#7e9bb1');
+label('GRIFFOLINO / CAPOCCHIO',28,137,'#eed3b5',8);
+label('DANTE / VIRGIL',311,146,'#eed3b5',8);
+label('SCRATCH / SPEAK',57,217,'#e8d2bf',8);
 
 rect(203,76,80,95,'#5d4b76');rect(209,82,68,89,'#1d172e');
 rect(206,74,73,7,'#ebc77e');rect(206,74,5,98,'#c79a72');rect(275,74,5,98,'#c79a72');
