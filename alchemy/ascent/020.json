@@ -1,0 +1,73 @@
+{
+  "protocol": "archon/alchemical-living-thread/ascent-v1",
+  "chapter": "Purgatorio XX",
+  "ascent": 20,
+  "identity": "{{i}}",
+  "parent": "alchemy/ascent/019.json",
+  "parentBlobSha": "ad9f1f93cdfdaf727bf5a4370a972e47434ff074",
+  "appendOnly": true,
+  "previousTraversal": "Inferno 041 sealed",
+  "scene": "The terrace of avarice: examples of holy poverty, Hugh Capet's denunciation of dynastic greed, and the mountain's sudden earthquake",
+  "story": [
+    "Dante and Virgil pass among souls lying face down on the fifth terrace. They hear invocations of Mary's humble poverty and Fabricius, who preferred honesty to riches; the penitents recall acts opposed to avarice.",
+    "A prostrate soul identifies himself as Hugh Capet, ancestral figure of the French royal line within the poem. He denounces the greed and violence of rulers from his house, describing expansion, betrayal and profanation in biting, prophetic language.",
+    "Hugh also recounts examples of greed punished, including Pygmalion, Midas, Achan, Sapphira and Heliodorus. These are moral examples spoken by the penitent, not events happening anew around Dante.",
+    "As Dante and Virgil move away, the mountain suddenly shakes so violently Dante is afraid. The trembling is accompanied by a tremendous cry of 'Gloria in excelsis Deo' from the souls all around.",
+    "The quake is witnessed but not yet explained. Dante wonders why a mountain that seemed governed by fixed boundaries should now move. Virgil continues with him toward an explanation to come in the next canto.",
+    "The fifth terrace is not yet cleansed; Dante retains three P marks."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Dante",
+      "semantic": "A witnessed physical disruption does not authorize an immediate invented explanation of its cause",
+      "somatic": "LISTEN_WALK_FEEL_TREMOR_QUESTION"
+    },
+    {
+      "actor": "Hugh Capet",
+      "semantic": "Confession and dynastic denunciation reveal the consequences of acquisitive power",
+      "somatic": "IDENTIFY_DENOUNCE_RECOUNT"
+    },
+    {
+      "actor": "Penitents",
+      "semantic": "Praise of poverty and cries of glory contrast material fixation with spiritual release",
+      "somatic": "LIE_FACE_DOWN_RECITE_CRY_OUT"
+    },
+    {
+      "actor": "Virgil",
+      "semantic": "The guide maintains continuity without prematurely resolving an unknown cause",
+      "somatic": "LEAD_LISTEN_CONTINUE"
+    },
+    {
+      "actor": "Mountain",
+      "semantic": "The tremor is directly experienced, while its explanation remains pending",
+      "somatic": "TREMBLE_STOP"
+    }
+  ],
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "humble poverty and greed",
+      "action": "HEAR penitents RECALL humility and Hugh Capet DENOUNCE the greed of his descendants",
+      "observable": "voices and testimonies heard; historical and future claims are attributed"
+    },
+    {
+      "id": "B",
+      "semantic": "punished greed",
+      "action": "LISTEN to examples of Pygmalion, Midas and others named by Hugh",
+      "observable": "recounted examples do not occur anew on the fifth terrace"
+    },
+    {
+      "id": "C",
+      "semantic": "unexplained earthquake",
+      "action": "FEEL the mountain SHAKE and HEAR 'Gloria in excelsis Deo' sung",
+      "observable": "tremor and chorus are observed; the cause is left unresolved for the following canto"
+    }
+  ],
+  "alchemicalReading": "Possession's spell is challenged by poverty and service. Then an actual tremor interrupts interpretation: witness the change first and defer its cause until the narrative provides it.",
+  "invariant": "Observed trembling and an accompanying song do not yet establish a cause. No angelic erasure occurs in Canto XX: three P marks remain.",
+  "previousP": 3,
+  "remainingP": 3,
+  "marksRemovedThisChapter": 0,
+  "next": "Purgatorio XXI — Statius explains the mountain's earthquake: a soul is ready to rise",
+  "sealInfernoUntouched": true
+}
