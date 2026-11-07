@@ -1,22 +1,22 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ARCHON — The Ascent · Purgatorio XVII</title><style>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ARCHON — The Ascent · Purgatorio XVIII</title><style>
 :root{color-scheme:dark}*{box-sizing:border-box}body{background:linear-gradient(#11142d,#262542);color:#f3e6d4;font:15px/1.5 system-ui,Segoe UI,sans-serif;margin:0}main{max-width:1120px;padding:20px;margin:auto}h1{font-size:clamp(26px,5vw,46px);margin:5px 0}h2{font-size:18px;margin:0 0 8px}.eyebrow{font:700 11px monospace;letter-spacing:.15em;color:#f0c38d}.grid{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(260px,1fr);gap:15px;margin-top:17px}.panel{border:1px solid #776786;background:#201e36;border-radius:13px;padding:16px;min-width:0}canvas{display:block;width:100%;aspect-ratio:16/9;image-rendering:pixelated;background:#191d38;border-radius:9px;border:1px solid #927e9a}.controls{display:flex;gap:9px;flex-wrap:wrap;margin:12px 0}button{background:#4d3d5a;border:1px solid #aa8291;color:#fff;border-radius:8px;padding:10px 14px;font-weight:700;cursor:pointer}button:hover{background:#65506b}button:focus-visible{outline:2px solid #f9d49b}p{color:#dbcede}.status{background:#302943;border-radius:8px;min-height:80px;padding:12px}pre{white-space:pre-wrap;background:#17182d;border-radius:9px;padding:14px;color:#eacba5;font-size:12px;line-height:1.7}a{color:#b8dfe4}.counter{color:#a8dccb;font:700 12px monospace}footer{color:#b1a7bb;font-size:12px;margin-top:20px} @media(max-width:740px){.grid{grid-template-columns:1fr}}
-</style></head><body><main><header><div class="eyebrow">ARCHON / THE LIVING THREAD / THE ASCENT</div><h1>Purgatorio XVII <span style="color:#ffd09a">· The Measure of Love</span></h1><p>The smoke clears, an angel removes the third mark, and Virgil explains the mountain through love.</p></header>
-<div class="grid"><section class="panel"><canvas id="game" width="640" height="360" tabindex="0" aria-label="Playable pixel art: visions of wrath, angel clearing the third P, and seven-terrace map of love"></canvas><div class="controls"><button id="left">◀ WALK</button><button id="right">WALK ▶</button><button id="observe">E · OBSERVE</button><button id="reset">↺ RESET</button></div><div class="counter" id="counter">WITNESSES 0 / 3</div><p class="status" id="status" aria-live="polite">Witness the consequences of wrath, receive the third cleansing, and learn Virgil's map of love.</p><p>Keyboard: A / D or ← / → to walk; E to observe. Observe visions, the 5-to-4 erasure, and love's sevenfold map. Four marks remain.</p></section>
-<aside class="panel"><h2>Today's encounter</h2><p>Dante emerges from smoke and sees visions of Procne, Haman, and Amata: the destruction caused by wrath. An angel blesses him and removes his third P. At the fourth terrace, night stops the climb. Virgil explains the seven terraces by misdirected, deficient, and excessive love.</p><pre>PURGATORIO / XVII
+</style></head><body><main><header><div class="eyebrow">ARCHON / THE LIVING THREAD / THE ASCENT</div><h1>Purgatorio XVIII <span style="color:#ffd09a">· The Runners of Zeal</span></h1><p>Virgil explains desire and choice; slothful penitents run through the night, and Dante falls asleep.</p></header>
+<div class="grid"><section class="panel"><canvas id="game" width="640" height="360" tabindex="0" aria-label="Playable pixel art: Virgil explaining love, the slothful running in torchlight, and Dante asleep"></canvas><div class="controls"><button id="left">◀ WALK</button><button id="right">WALK ▶</button><button id="observe">E · OBSERVE</button><button id="reset">↺ RESET</button></div><div class="counter" id="counter">WITNESSES 0 / 3</div><p class="status" id="status" aria-live="polite">Hear Virgil explain choice, witness the runners and their cries of zeal, then observe Dante's sleep.</p><p>Keyboard: A / D or ← / → to walk; E to observe. Observe the free choice lesson, the running penitents, and the pause for sleep. Four marks remain.</p></section>
+<aside class="panel"><h2>Today's encounter</h2><p>Dante questions Virgil about desire and choice. A crowd of slothful souls races past, invoking Mary and Caesar as examples of prompt action and warning against delay. One identifies himself as the former abbot of San Zeno. The calls fade, and Dante grows sleepy on the fourth terrace.</p><pre>PURGATORIO / XVIII
        |
-VISIONS: PROCNE / HAMAN / AMATA
+VIRGIL: DESIRE + CHOICE
        |
-ANGEL: THIRD P ERASED
+SLOTHFUL: RUN / CALL
        |
-5 P -> 4 P
+MARY / CAESAR: ZEAL
        |
-VIRGIL: LOVE'S DIRECTION
+DELAY: WARNING
        |
-PRIDE ENVY WRATH / WRONG
-SLOTH / DEFICIENT
-AVARICE GLUTTONY LUST / EXCESS
+NIGHT: NO UPWARD CLIMB
        |
-NIGHT: PAUSE / 4 REMAIN</pre><p>The mark changes only at the angel's touch. Love's direction and measure explain the mountain; four P marks remain.</p><p><a href="./">The sealed Inferno</a> · <a href="https://github.com/DavidWise01/archon/blob/main/alchemy/ascent/017.json">Canonical ascent record</a></p></aside></div><footer>Original sealed 41-tick journey preserved · Inferno's sealed Stage 041 preserved · This ascent is a new append-only branch.</footer></main><script>
+DANTE: FALL ASLEEP
+       |
+4 P MARKS REMAIN</pre><p>The runners correct spiritual delay through movement; Dante's need for sleep is not a new cleansing. Four P marks remain.</p><p><a href="./">The sealed Inferno</a> · <a href="https://github.com/DavidWise01/archon/blob/main/alchemy/ascent/018.json">Canonical ascent record</a></p></aside></div><footer>Original sealed 41-tick journey preserved · Inferno's sealed Stage 041 preserved · This ascent is a new append-only branch.</footer></main><script>
 'use strict';
 const c=document.getElementById('game'),ctx=c.getContext('2d'),status=document.getElementById('status'),counter=document.getElementById('counter');
 let player=46,frame=0;const held=new Set(),seen=new Set();
@@ -38,27 +38,26 @@ const label=(str,x,y,color='#f9e4c3',size=11)=>{ctx.fillStyle=color;ctx.font='bo
 
 
 
-function witness(){const zone=player<210?'visions':player<410?'angel':'love';seen.add(zone);
+
+function witness(){const zone=player<210?'choice':player<410?'run':'sleep';seen.add(zone);
 const words={
-visions:'WITNESS A: Dante SEES visionary examples of wrath in Procne, Haman and Amata. These are images, not new events.',
-angel:'WITNESS B: the angel BIDS PEACE and ERASES the third P, reducing the count from five to four.',
-love:'WITNESS C: Virgil EXPLAINS disordered, deficient, and excessive LOVE. Evening closes the ascent; four marks remain.'
+choice:'WITNESS A: Virgil EXPLAINS that desire and the free choice to consent are distinguishable.',
+run:'WITNESS B: slothful souls RUN through the night, CRYING Mary and Caesar as examples of zeal.',
+sleep:'WITNESS C: warnings against delay FADE into the dark; Dante becomes sleepy. Four marks remain.'
 };status.textContent=words[zone]+(seen.size===3?' THREE WITNESSES COMPLETE. FOUR MARKS REMAIN.':'');counter.textContent='WITNESSES '+seen.size+' / 3'}
-function reset(){player=46;seen.clear();status.textContent='Witness the consequences of wrath, receive the third cleansing, and learn Virgil\'s map of love.';counter.textContent='WITNESSES 0 / 3'}
+function reset(){player=46;seen.clear();status.textContent='Hear Virgil explain choice, witness the runners and their cries of zeal, then observe Dante\'s sleep.';counter.textContent='WITNESSES 0 / 3'}
 function draw(){frame++;
-rect(0,0,640,360,'#34445c');rect(0,0,640,147,'#b79b9d');rect(0,147,640,138,'#898090');rect(0,285,640,75,'#a49b96');
-for(let k=0;k<3;k++){const x=18+k*63;rect(x,169,57,103,'#aa8f9b');rect(x+5,174,47,91,'#6d657d');rect(x+19,184,15,17,'#e2b6a4');rect(x+14,201,24,43,k===0?'#b67b85':k===1?'#7c7d9c':'#9b7c93')}
-label('PROCNE / HAMAN / AMATA',14,143,'#fff0d7',10);
-const glow=5+Math.sin(frame*.065)*4;
-rect(265-glow,163-glow,45+2*glow,81+2*glow,'#d9c7b5');
-rect(280,163,19,19,'#f3d7b5');rect(274,183,29,59,'#eee8d5');
-rect(244,195,29,9,'#f9efdb');rect(303,195,28,9,'#f9efdb');
-label('ANGEL / 5 -> 4',229,132,'#fff0d7',12);
-const labels=['PRIDE','ENVY','WRATH','SLOTH','AVARICE','GLUTTONY','LUST'];
-for(let k=0;k<7;k++){const x=430+(k%2)*88,y=111+Math.floor(k/2)*42;rect(x,y,81,34,k<3?'#886b7e':k===3?'#aa8b7b':'#8e8a9e');label(labels[k],x+4,y+21,'#fff0d7',k===5?8:9)}
-label('LOVE / MEASURE',431,83,'#fff0d7',12);
-for(let i=0;i<4;i++)label('P',530+i*20,42,'#f9d0a6',16);
-label('PURGATORIO XVII',17,24,'#fff1d1',15);
+rect(0,0,640,360,'#171c38');rect(0,0,640,143,'#303552');rect(0,143,640,139,'#464b65');rect(0,282,640,78,'#777283');
+for(let k=0;k<21;k++){const x=(k*83)%640,y=35+(k*41)%125;rect(x,y,2,2,'#f0e0c8')}
+rect(61,210,20,20,'#d6b3a2');rect(55,230,30,64,'#8799b4');rect(102,223,19,19,'#d7b4a4');rect(97,242,29,53,'#bc7e88');
+rect(83,256,17,5,'#d6b9a4');label('LOVE / CHOOSE',16,181,'#fff0d5',12);
+for(let k=0;k<5;k++){const x=220+k*44+Math.sin(frame*.075+k)*10,y=228+(k%2)*10;rect(x,y,14,14,'#dfbaaa');rect(x-5,y+14,24,33,k%2?'#9893ac':'#ab839a');rect(x-17,y+32,19,5,'#d2a798');rect(x+18,y+30,18,5,'#cfaa9a');rect(x-8,y+47,11,5,'#777289');rect(x+15,y+47,12,5,'#777289')}
+for(let i=0;i<7;i++){const x=202+i*29;label('>',x,205+Math.sin(frame*.1+i)*5,'#e3c5ae',14)}
+label('RUN / ZEAL',259,168,'#fff0d5',12);
+rect(514,247,52,16,'#aca0a1');rect(524,232,17,17,'#d7b3a5');rect(527,257,40,18,'#bd7b86');
+label('DANTE / SLEEP',476,193,'#fff0d5',12);
+for(let k=0;k<4;k++)label('P',525+k*21,74,'#efcfaf',16);label('FOUR MARKS',505,100,'#fff0d5',11);
+label('PURGATORIO XVIII',17,24,'#fff1d1',15);
 rect(player,269,17,17,'#e7c0a3');rect(player-3,287,23,32,'#ba6a77');rect(player,316,5,7,'#333653');rect(player+12,316,5,7,'#333653');
 if(held.has('ArrowLeft')||held.has('KeyA'))player=Math.max(7,player-2.4);
 if(held.has('ArrowRight')||held.has('KeyD'))player=Math.min(613,player+2.4);
