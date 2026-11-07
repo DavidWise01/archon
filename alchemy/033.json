@@ -1,0 +1,107 @@
+{
+  "protocol": "archon/alchemical-living-thread/v2",
+  "stage": 33,
+  "identity": "{{i}}",
+  "parent": "alchemy/032.json",
+  "parentBlobSha": "defa405e2209cc97e086abed5970d17dcebfc1f4",
+  "scene": "Inferno XXVI — Ulysses and Diomedes together in one divided flame; Ulysses recounts his final voyage",
+  "source": "Dante, Inferno XXVI",
+  "story": [
+    "Dante and Virgil reach the eighth bolgia, where fraudulent counselors are enclosed within moving flames; Dante compares their multitude to fireflies seen from a hillside.",
+    "A flame with two horns or tongues approaches. Virgil identifies its two occupants as Ulysses and Diomedes, associated with shared stratagems in the Trojan War.",
+    "Dante wishes to hear them; Virgil addresses the flame and asks for an account. The greater tip moves as Ulysses begins speaking; Diomedes does not separately speak in this canto.",
+    "Ulysses recounts how he left the familiar world behind, persuaded his aging companions to seek knowledge and experience beyond the Pillars of Hercules, and sailed for five months into the southern ocean.",
+    "They glimpse a vast mountain in the distance, rejoice briefly, and a whirlwind strikes their vessel, spinning it and sinking it.",
+    "The flame falls silent and departs. The shared enclosure has not made the two named occupants identical, nor their voices interchangeable."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Eighth bolgia flames",
+      "semantic": "Shared enclosure can hold more than one separately named occupant",
+      "somatic": {
+        "verb": "CONCEAL_CONTAIN_FLICKER",
+        "gesture": "individual flames move through the ditch, one dividing into two upper tips",
+        "observable": "one visible flame has two tongues"
+      }
+    },
+    {
+      "actor": "Ulysses",
+      "semantic": "One separately identified occupant provides the testimony from the larger horn",
+      "somatic": {
+        "verb": "SPEAK_RECOUNT",
+        "gesture": "the greater flame tip sways while Ulysses narrates his final voyage and shipwreck",
+        "observable": "the story is spoken by Ulysses, not by both occupants"
+      }
+    },
+    {
+      "actor": "Diomedes",
+      "semantic": "Co-occupancy does not imply the same speech or testimony",
+      "somatic": {
+        "verb": "SHARE_REMAIN_SILENT",
+        "gesture": "remains enclosed in the divided flame as Virgil identifies him",
+        "observable": "separate identity with no independent speech in this canto"
+      }
+    },
+    {
+      "actor": "Virgil [2]",
+      "semantic": "Guide mediates the request and identifies the occupants",
+      "somatic": {
+        "verb": "IDENTIFY_ADDRESS_REQUEST",
+        "gesture": "names the pair and addresses the flame so Ulysses can respond",
+        "observable": "the question precedes Ulysses' story"
+      }
+    },
+    {
+      "actor": "Dante (1)",
+      "semantic": "Preserve speaker attribution and distinguish narrated events from directly witnessed events",
+      "somatic": {
+        "verb": "WATCH_REQUEST_LISTEN",
+        "gesture": "sees the paired flame and listens as the account is relayed",
+        "observable": "Dante sees a flame speaking, not the distant voyage itself"
+      }
+    }
+  ],
+  "cipher": {
+    "alphaOmega": "[ (1), [2] ]",
+    "operator": "ENCLOSE -> IDENTIFY_PAIR -> REQUEST -> SPEAK_ONE -> RECOUNT -> DISTINGUISH",
+    "notation": "FLAME{ULYSSES,DIOMEDES}; TIPS{greater:ULYSSES_speaks,lesser:DIOMEDES_silent}; VOYAGE{narrated:not_directly_seen}",
+    "invariants": [
+      "A single enclosure does not collapse two distinct occupants into one identity",
+      "One moving speaking flame tip is not evidence that both occupants speak",
+      "The final voyage and sinking are Ulysses' narrated testimony, not directly witnessed by Dante",
+      "The destruction of a narrated ship does not imply that the containing flame is destroyed",
+      "Containment is narrative imagery, not evidence of physical combustion or chemistry"
+    ],
+    "newAtomicAssignments": [],
+    "chemicalReaction": "none",
+    "product": "none",
+    "preserve": [
+      "(1) H Dante and [2] He Virgil",
+      "[6] C life / six-poet fellowship",
+      "Noble Castle [ (7)[8]\\\\(9)[10] ]",
+      "(11) Na reset analogy"
+    ]
+  },
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "one vessel two occupants",
+      "somatic": "FLAME DIVIDES into two tips while containing ULYSSES and DIOMEDES",
+      "observable": "two named occupants, one enclosure"
+    },
+    {
+      "id": "B",
+      "semantic": "speaker attribution",
+      "somatic": "VIRGIL ASKS; GREATER TIP MOVES; ULYSSES SPEAKS",
+      "observable": "Ulysses narrates, Diomedes is not separately heard"
+    },
+    {
+      "id": "C",
+      "semantic": "distinguish reported from witnessed",
+      "somatic": "ULYSSES RECOUNTS passage and SHIPWRECK; DANTE LISTENS",
+      "observable": "sea voyage is testimony, not visually witnessed"
+    }
+  ],
+  "next": "Inferno XXVII — Guido da Montefeltro in a separate flame and counsel given under a false promise of absolution",
+  "appendOnly": true
+}
