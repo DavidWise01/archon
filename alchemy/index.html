@@ -110,20 +110,22 @@ label('}{',237,224,'#f5d5a6',9);label('WOUND / RETURN',200,183,'#eec88b',8);
 
 
 
- // Inferno XXVII: Guido's separate speaking flame and reported counsel scene.
-rect(0,137,480,96,'#302c41');rect(0,218,480,15,'#615568');
-for(let k=0;k<22;k++){let x=12+(k*59)%454,y=186+Math.sin(frame*.024+k)*15;rect(x,y,4,10,k%2?'#c87759':'#e9a66c')}
-const flameX=92+Math.sin(frame*.012)*12,flameTip=99+Math.sin(frame*.051)*13;
-rect(flameX,169,78,49,'#a74f52');
-rect(flameX+8,145,62,44,'#df8959');
-rect(flameX+25,flameTip,25,64,'#ffd183');
-rect(flameX+30,154,15,53,'#edac71');
-rect(312,165,25,32,'#8c6c85');rect(316,153,16,14,'#c8a99a');
-rect(356,161,25,36,'#a67c84');rect(361,148,14,15,'#d3b59e');
-rect(335,180,13,3,'#e5c393');
-label('GUIDO / TESTIMONY',45,120,'#f3d3a7',8);
-label('PROMISE / COUNSEL',294,131,'#f0d4b2',8);
-label('REPORTED EVENTS',297,213,'#d7c4dd',8);
+
+ // Inferno XXVIII: recurring circuit, healing between returns and a witness speaking.
+rect(0,137,480,96,'#3b3445');rect(0,219,480,14,'#625567');
+for(let k=0;k<19;k++){const x=12+(k*47)%458,y=210-(k%3)*12;rect(x,y,12,4,'#746471')}
+const loop=frame*.022;
+for(let k=0;k<4;k++){const t=loop+k*Math.PI/2,x=151+Math.cos(t)*76,y=179+Math.sin(t)*25;
+rect(x-6,y-20,13,13,'#d1b19f');rect(x-9,y-7,19,27,'#8a697f');
+rect(x-5,y+19,5,9,'#ba9a94');rect(x+4,y+19,5,9,'#ba9a94');
+if(Math.sin(t)<0)rect(x-9,y+2,19,3,'#d88987')}
+rect(265,151,15,15,'#b67e79');rect(261,166,24,31,'#875b70');
+rect(287,161,4,42,'#c5b29c');rect(282,158,13,4,'#c5b29c');
+rect(363,172,20,30,'#8e6f83');rect(365,155,15,15,'#d0aa99');
+rect(392,171,11,11,'#cba48e');rect(386,183,22,5,'#bb938f');
+label('HEAL / RETURN',65,127,'#ebd2bd',8);
+label('DEMON / STRIKE',261,133,'#e9c9bc',8);
+label('BERTRAN SPEAKS',356,141,'#e9c9bc',8);
 
 rect(203,76,80,95,'#5d4b76');rect(209,82,68,89,'#1d172e');
 rect(206,74,73,7,'#ebc77e');rect(206,74,5,98,'#c79a72');rect(275,74,5,98,'#c79a72');
