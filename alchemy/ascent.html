@@ -1,22 +1,22 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ARCHON — The Ascent · Purgatorio XX</title><style>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ARCHON — The Ascent · Purgatorio XXI</title><style>
 :root{color-scheme:dark}*{box-sizing:border-box}body{background:linear-gradient(#11142d,#262542);color:#f3e6d4;font:15px/1.5 system-ui,Segoe UI,sans-serif;margin:0}main{max-width:1120px;padding:20px;margin:auto}h1{font-size:clamp(26px,5vw,46px);margin:5px 0}h2{font-size:18px;margin:0 0 8px}.eyebrow{font:700 11px monospace;letter-spacing:.15em;color:#f0c38d}.grid{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(260px,1fr);gap:15px;margin-top:17px}.panel{border:1px solid #776786;background:#201e36;border-radius:13px;padding:16px;min-width:0}canvas{display:block;width:100%;aspect-ratio:16/9;image-rendering:pixelated;background:#191d38;border-radius:9px;border:1px solid #927e9a}.controls{display:flex;gap:9px;flex-wrap:wrap;margin:12px 0}button{background:#4d3d5a;border:1px solid #aa8291;color:#fff;border-radius:8px;padding:10px 14px;font-weight:700;cursor:pointer}button:hover{background:#65506b}button:focus-visible{outline:2px solid #f9d49b}p{color:#dbcede}.status{background:#302943;border-radius:8px;min-height:80px;padding:12px}pre{white-space:pre-wrap;background:#17182d;border-radius:9px;padding:14px;color:#eacba5;font-size:12px;line-height:1.7}a{color:#b8dfe4}.counter{color:#a8dccb;font:700 12px monospace}footer{color:#b1a7bb;font-size:12px;margin-top:20px} @media(max-width:740px){.grid{grid-template-columns:1fr}}
-</style></head><body><main><header><div class="eyebrow">ARCHON / THE LIVING THREAD / THE ASCENT</div><h1>Purgatorio XX <span style="color:#ffd09a">· The Mountain Trembles</span></h1><p>Hugh Capet condemns greed; the mountain shakes, and every soul cries Glory.</p></header>
-<div class="grid"><section class="panel"><canvas id="game" width="640" height="360" tabindex="0" aria-label="Playable pixel art: avarice terrace with prostrate souls, Hugh Capet speaking, and a mountain earthquake"></canvas><div class="controls"><button id="left">◀ WALK</button><button id="right">WALK ▶</button><button id="observe">E · OBSERVE</button><button id="reset">↺ RESET</button></div><div class="counter" id="counter">WITNESSES 0 / 3</div><p class="status" id="status" aria-live="polite">Hear examples of poverty, Hugh Capet's condemnation of greed, and the earthquake with its great hymn.</p><p>Keyboard: A / D or ← / → to walk; E to observe. Observe poverty and avarice, Hugh's testimony, and the unexplained tremor. Three marks remain.</p></section>
-<aside class="panel"><h2>Today's encounter</h2><p>On the fifth terrace, the penitents recall Mary and Fabricius, examples of poverty and honesty. Hugh Capet condemns the greed and violence of his royal descendants and recounts greed punished. Then the mountain shakes and a great Gloria rises. Dante hears it but does not yet know why the earth moved.</p><pre>PURGATORIO / XX
+</style></head><body><main><header><div class="eyebrow">ARCHON / THE LIVING THREAD / THE ASCENT</div><h1>Purgatorio XXI <span style="color:#ffd09a">· The Soul Ready to Rise</span></h1><p>Statius reveals why the mountain trembled, then discovers that Virgil stands before him.</p></header>
+<div class="grid"><section class="panel"><canvas id="game" width="640" height="360" tabindex="0" aria-label="Playable pixel art: Statius explaining the mountain's earthquake, a freed soul, and recognition of Virgil"></canvas><div class="controls"><button id="left">◀ WALK</button><button id="right">WALK ▶</button><button id="observe">E · OBSERVE</button><button id="reset">↺ RESET</button></div><div class="counter" id="counter">WITNESSES 0 / 3</div><p class="status" id="status" aria-live="polite">Hear Statius explain the earthquake, witness his freedom to ascend, and discover Virgil's identity.</p><p>Keyboard: A / D or ← / → to walk; E to observe. Observe the explained tremor, Statius's readiness, and the recognition of Virgil. Three marks remain.</p></section>
+<aside class="panel"><h2>Today's encounter</h2><p>Statius approaches and explains the tremor: when a soul has completed purification and freely wishes to ascend, the mountain shakes and all souls sing. Statius himself was that soul. He praises the poetry of Virgil, unaware that Virgil is standing beside him; Dante's smile gives the secret away.</p><pre>PURGATORIO / XXI
        |
-POVERTY / HONESTY: PRAISE
+STATIUS: APPROACH / PEACE
        |
-HUGH CAPET: DENOUNCE GREED
+QUAKE: SOUL READY
        |
-PUNISHED GREED: RECOUNT
+FREED WILL: ASCEND
        |
-MOUNTAIN: EARTHQUAKE
+POET: PRAISE VIRGIL
        |
-SOULS: GLORIA
+DANTE: SMILE
        |
-CAUSE: NOT YET KNOWN
+STATIUS: RECOGNIZE
        |
-3 P MARKS REMAIN</pre><p>The quake and song are witnessed; their cause is still unknown. No mark is erased here: three remain.</p><p><a href="./">The sealed Inferno</a> · <a href="https://github.com/DavidWise01/archon/blob/main/alchemy/ascent/020.json">Canonical ascent record</a></p></aside></div><footer>Original sealed 41-tick journey preserved · Inferno's sealed Stage 041 preserved · This ascent is a new append-only branch.</footer></main><script>
+3 P MARKS REMAIN</pre><p>The quake was witnessed in XX, its meaning explained by Statius in XXI. Readiness to ascend changes no mark on Dante: three remain.</p><p><a href="./">The sealed Inferno</a> · <a href="https://github.com/DavidWise01/archon/blob/main/alchemy/ascent/021.json">Canonical ascent record</a></p></aside></div><footer>Original sealed 41-tick journey preserved · Inferno's sealed Stage 041 preserved · This ascent is a new append-only branch.</footer></main><script>
 'use strict';
 const c=document.getElementById('game'),ctx=c.getContext('2d'),status=document.getElementById('status'),counter=document.getElementById('counter');
 let player=46,frame=0;const held=new Set(),seen=new Set();
@@ -41,29 +41,32 @@ const label=(str,x,y,color='#f9e4c3',size=11)=>{ctx.fillStyle=color;ctx.font='bo
 
 
 
-function witness(){const zone=player<210?'poverty':player<410?'capet':'quake';seen.add(zone);
+
+function witness(){const zone=player<210?'quake':player<410?'freedom':'recognition';seen.add(zone);
 const words={
-poverty:'WITNESS A: the prostrate souls PRAISE Mary\'s poverty and Fabricius\' honesty, opposing the grasp of avarice.',
-capet:'WITNESS B: Hugh Capet DENOUNCES the greed of his descendants and RECOUNTS punished greed. These are attributed claims.',
-quake:'WITNESS C: the mountain TREMBLES and all sing GLORIA. The cause is not yet explained; three marks remain.'
-};status.textContent=words[zone]+(seen.size===3?' THREE WITNESSES COMPLETE. THE CAUSE AWAITS.':'');counter.textContent='WITNESSES '+seen.size+' / 3'}
-function reset(){player=46;seen.clear();status.textContent='Hear examples of poverty, Hugh Capet\'s condemnation of greed, and the earthquake with its great hymn.';counter.textContent='WITNESSES 0 / 3'}
+quake:'WITNESS A: Statius EXPLAINS the previous tremor: the mountain shakes when a purified soul is ready to rise.',
+freedom:'WITNESS B: Statius IDENTIFIES himself as the soul freed to ascend; the chorus marks that release.',
+recognition:'WITNESS C: Statius PRAISES Virgil, Dante SMILES, and Statius RECOGNIZES the poet he reveres.'
+};status.textContent=words[zone]+(seen.size===3?' THREE WITNESSES COMPLETE. THREE MARKS REMAIN.':'');counter.textContent='WITNESSES '+seen.size+' / 3'}
+function reset(){player=46;seen.clear();status.textContent='Hear Statius explain the earthquake, witness his freedom to ascend, and discover Virgil\'s identity.';counter.textContent='WITNESSES 0 / 3'}
 function draw(){frame++;
-const quake=(Math.sin(frame*.19)>0.86)?Math.sin(frame*1.4)*4:0;
-rect(0,0,640,360,'#33425d');rect(0,0,640,147,'#918a9f');rect(0,147,640,142,'#777487');rect(0,289,640,71,'#aea097');
-for(let i=0;i<7;i++){const x=22+i*27;rect(x,240+quake,14,11,'#e0bca9');rect(x+12,245+quake,31,8,'#93869c');rect(x+25,253+quake,23,8,'#93869c')}
-label('POVERTY / PRAYER',13,195,'#fff0da',12);
-rect(267,240+quake,22,15,'#d9b2a0');rect(287,247+quake,47,14,'#867d92');rect(286,262+quake,26,8,'#867d92');
-for(let i=0;i<5;i++){const x=230+i*38,y=180+(i%2)*13;label('~',x,y+Math.sin(frame*.05+i)*3,'#eadac7',17)}
-label('HUGH CAPET / GREED',221,138,'#fff0da',12);
-const mountain=quake;
-for(let k=0;k<9;k++){const x=433+(k%3)*63,y=159+Math.floor(k/3)*46+mountain;rect(x,y,59,41,k%2?'#67667b':'#848093')}
-for(let i=0;i<6;i++){const x=438+i*31;label('!',x,122+Math.sin(frame*.07+i)*7,'#e8d0ad',18)}
-label('QUAKE / GLORIA',449,83,'#fff0d7',12);
-for(let i=0;i<3;i++)label('P',531+i*23,38,'#f7d0ad',17);
-label('THREE MARKS',506,60,'#fff0d7',11);
-label('PURGATORIO XX',17,24,'#fff1d1',15);
-rect(player,269+quake,17,17,'#e7c0a3');rect(player-3+quake,287,23,32,'#ba6a77');rect(player+quake,316,5,7,'#333653');rect(player+12+quake,316,5,7,'#333653');
+rect(0,0,640,360,'#344762');rect(0,0,640,147,'#91a1ad');rect(0,147,640,142,'#8c8896');rect(0,289,640,71,'#b0a69e');
+for(let k=0;k<8;k++){const x=13+k*22,y=220+(k%3)*18;rect(x,y,20,43,k%2?'#787d91':'#9a929a')}
+for(let i=0;i<7;i++){const x=23+i*23;label('~',x,174+Math.sin(frame*.07+i)*5,'#eddab8',16)}
+label('QUAKE / EXPLAIN',16,140,'#fff0d7',12);
+rect(263,209,21,21,'#dabba9');rect(257,230,34,62,'#8795b2');rect(299,224,18,18,'#d6af9c');rect(294,242,30,51,'#9c829c');
+for(let k=0;k<7;k++){const x=232+k*17;label('^',x,165+Math.sin(frame*.05+k)*4,'#f4d9ad',17)}
+label('READY / ASCEND',237,123,'#fff0d7',12);
+rect(449,232,20,20,'#dfbca9');rect(444,253,30,47,'#9097b2');
+rect(500,226,21,20,'#dfbaa5');rect(494,247,34,54,'#b16f85');
+rect(538,218,20,21,'#dfbdab');rect(532,239,33,61,'#8695a9');
+rect(471,264,23,5,'#e1b8a4');rect(525,255,12,5,'#e1b8a4');
+label('VIRGIL / STATIUS',429,173,'#fff0d7',12);
+label('RECOGNITION',455,194,'#ffe6be',11);
+for(let i=0;i<3;i++)label('P',534+i*22,67,'#fbd1ad',17);
+label('THREE MARKS',505,93,'#fff0d7',11);
+label('PURGATORIO XXI',17,24,'#fff1d1',15);
+rect(player,269,17,17,'#e7c0a3');rect(player-3,287,23,32,'#ba6a77');rect(player,316,5,7,'#333653');rect(player+12,316,5,7,'#333653');
 if(held.has('ArrowLeft')||held.has('KeyA'))player=Math.max(7,player-2.4);
 if(held.has('ArrowRight')||held.has('KeyD'))player=Math.min(613,player+2.4);
 requestAnimationFrame(draw)}
