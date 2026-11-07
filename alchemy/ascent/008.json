@@ -1,0 +1,75 @@
+{
+  "protocol": "archon/alchemical-living-thread/ascent-v1",
+  "chapter": "Purgatorio VIII",
+  "ascent": 8,
+  "identity": "{{i}}",
+  "parent": "alchemy/ascent/007.json",
+  "parentBlobSha": "68003e5aa87f131c395efc49f9c2a14fab958da2",
+  "appendOnly": true,
+  "previousTraversal": "Inferno 041 sealed",
+  "scene": "Evening hymn, two angelic guardians, Nino Visconti, serpent repelled and Corrado Malaspina",
+  "story": [
+    "As evening settles over the valley, a soul raises its hands and sings the Compline hymn Te lucis ante terminum. The others join in, attentive to the coming darkness.",
+    "Two angels with green garments and luminous wings descend from above, each bearing a blunt, flame-like sword. Sordello tells Dante they have come to guard the valley from a serpent.",
+    "Dante meets Nino Visconti, a former judge of Gallura, who is surprised to learn Dante is alive and asks that his daughter Giovanna pray for him. Nino speaks bitterly of his widow's remarriage.",
+    "Three brilliant stars shine in the evening sky, replacing the four that Dante saw at dawn. Sordello draws his attention to the change.",
+    "A serpent moves among the grass. The two angels descend swiftly and put it to flight; their defense is directly observed, without claiming to have changed the night itself.",
+    "Dante speaks with Corrado Malaspina, who asks about his family and foretells that Dante will learn their hospitality firsthand. The travelers remain within the night-bound valley, awaiting the next passage."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Evening souls",
+      "semantic": "Nightfall turns activity toward a shared appeal for protection",
+      "somatic": "RAISE_HANDS_SING_LISTEN"
+    },
+    {
+      "actor": "Two angels",
+      "semantic": "Guardians can intercept a threat while travelers remain unable to climb",
+      "somatic": "DESCEND_GUARD_SWEEP_REPEL"
+    },
+    {
+      "actor": "Nino Visconti",
+      "semantic": "Remembered kinship and petitions for prayer survive death within the poem",
+      "somatic": "RECOGNIZE_SPEAK_REQUEST"
+    },
+    {
+      "actor": "Serpent",
+      "semantic": "A threat may approach a resting place without defeating its protection",
+      "somatic": "ENTER_CRAWL_RETREAT"
+    },
+    {
+      "actor": "Sordello and Dante",
+      "semantic": "Observation distinguishes changing sky, approaching danger and effective defense",
+      "somatic": "LOOK_NOTICE_WITNESS"
+    },
+    {
+      "actor": "Corrado Malaspina",
+      "semantic": "A speaker can offer a future claim without converting it into a completed event",
+      "somatic": "ASK_FORETELL"
+    }
+  ],
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "prayer and guarding",
+      "action": "HEAR the evening hymn and SEE two angels descend with swords",
+      "observable": "souls sing and guards take their places"
+    },
+    {
+      "id": "B",
+      "semantic": "threat and response",
+      "action": "WATCH a serpent ENTER the valley and angels REPEL it",
+      "observable": "serpent approaches then retreats; the valley remains under nighttime restriction"
+    },
+    {
+      "id": "C",
+      "semantic": "kinship and prophecy",
+      "action": "HEAR Nino REQUEST prayers and Corrado FORETELL future hospitality",
+      "observable": "names and predictions remain attributed to their speakers, not asserted as completed events"
+    }
+  ],
+  "alchemicalReading": "The vessel remains closed at night but protection is active inside it; the guardian function preserves the boundary until the next ascent.",
+  "invariant": "A protected pause can maintain continuity and respond to threats without opening the still-closed ascent gate.",
+  "next": "Purgatorio IX — Dante's dream of the eagle, Lucia's ascent, and the angel at the gate marking seven P's",
+  "sealInfernoUntouched": true
+}
