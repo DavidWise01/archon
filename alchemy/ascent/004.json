@@ -1,0 +1,68 @@
+{
+  "protocol": "archon/alchemical-living-thread/ascent-v1",
+  "chapter": "Purgatorio IV",
+  "ascent": 4,
+  "identity": "{{i}}",
+  "parent": "alchemy/ascent/003.json",
+  "parentBlobSha": "93f7e9d2cdfffc7992f523d4bf1e56b9cb81f370",
+  "appendOnly": true,
+  "previousTraversal": "Inferno 041 sealed",
+  "scene": "Narrow climb, southern sky and Belacqua waiting in the shade",
+  "story": [
+    "The passage through the mountain narrows so sharply that Dante and Virgil must climb with their hands and feet, clinging to the rocks.",
+    "They emerge onto a ledge, and Dante rests, exhausted. He notices that the sun appears to his left, contrary to the orientation familiar from the northern hemisphere.",
+    "Virgil explains that on the mountain in the southern hemisphere the sun's apparent path looks different; Dante considers the geometry of their new position.",
+    "After continuing around the slope, they encounter souls resting in the shade. One sits with his knees drawn toward his chest, barely inclined to rise.",
+    "Dante recognizes Belacqua, who had delayed repentance while alive. Belacqua remarks on the waiting required before he can reach the gate of Purgatory, unless prayers from a soul in grace shorten that wait.",
+    "Virgil urges Dante onward. The living travelers move; Belacqua remains where he is, awaiting his appointed time."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Dante",
+      "semantic": "Climbing consumes effort and a changed hemisphere changes perceived solar orientation",
+      "somatic": "CLIMB_REST_LOOK_QUESTION"
+    },
+    {
+      "actor": "Virgil",
+      "semantic": "Guide explains orientation and resumes the journey",
+      "somatic": "LEAD_EXPLAIN_URGE"
+    },
+    {
+      "actor": "Belacqua",
+      "semantic": "A delayed beginning produces waiting rather than immediate progress",
+      "somatic": "SIT_SPEAK_WAIT"
+    },
+    {
+      "actor": "Mountain passage",
+      "semantic": "A narrow route requires bodily effort rather than an imagined shortcut",
+      "somatic": "NARROW_REQUIRE_CLIMB"
+    },
+    {
+      "actor": "Southern sky",
+      "semantic": "Apparent direction is dependent on observer location",
+      "somatic": "SHINE_CAST_REORIENT"
+    }
+  ],
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "effortful ascent",
+      "action": "CLIMB the narrow rock and REST on the ledge",
+      "observable": "Dante reaches the higher ledge but is winded"
+    },
+    {
+      "id": "B",
+      "semantic": "reorientation",
+      "action": "LOOK at the sun and QUESTION its position",
+      "observable": "sun appears in an unfamiliar direction; Virgil explains geography"
+    },
+    {
+      "id": "C",
+      "semantic": "waiting",
+      "action": "RECOGNIZE Belacqua and HEAR his account of delayed ascent",
+      "observable": "Belacqua remains seated while Virgil and Dante continue"
+    }
+  ],
+  "next": "Purgatorio V — the penitents who died violently, Jacopo del Cassero, Buonconte da Montefeltro, and Pia de' Tolomei",
+  "sealInfernoUntouched": true
+}
