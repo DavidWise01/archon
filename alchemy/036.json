@@ -1,0 +1,107 @@
+{
+  "protocol": "archon/alchemical-living-thread/v2",
+  "stage": 36,
+  "identity": "{{i}}",
+  "parent": "alchemy/035.json",
+  "parentBlobSha": "63ec65092ba0aede03a584bc4833d9b8766eab23",
+  "scene": "Inferno XXIX — Geri del Bello remembered; tenth bolgia falsifiers of metals afflicted by disease",
+  "source": "Dante, Inferno XXIX",
+  "story": [
+    "While leaving the ninth bolgia, Dante delays, looking for Geri del Bello, a relative who died violently; Virgil says Geri passed by and gestured angrily because the death remains unavenged.",
+    "Virgil redirects Dante toward the tenth bolgia, the final ditch of Malebolge. Lamentations fill the air as they descend toward those punished for falsification.",
+    "The first group of falsifiers Dante sees are alchemists afflicted with a scabrous, leprosy-like disease; they sit together, scratching their damaged skin.",
+    "Two sufferers are identified as Griffolino d'Arezzo and Capocchio. Griffolino recounts deceiving Albero of Siena by claiming he could teach him to fly and suffering execution by fire; his punishment in Hell is attributed to falsifying metals.",
+    "Capocchio speaks as an imitator and falsifier of metals. Both individuals' testimony and visible affliction remain separate from the composition or identity of actual metals.",
+    "Dante and Virgil continue across the tenth bolgia; the encounters with other classes of falsifiers and their disputes belong to Canto XXX."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Dante (1)",
+      "semantic": "Remember an absent relative without inventing a direct sighting",
+      "somatic": {
+        "verb": "LOOK_REMEMBER_LISTEN_DESCEND",
+        "gesture": "lingers for Geri del Bello, hears Virgil's account, and descends to the tenth bolgia",
+        "observable": "Dante does not see Geri directly in this encounter"
+      }
+    },
+    {
+      "actor": "Virgil [2]",
+      "semantic": "Distinguish a guide's account from the traveler's firsthand vision and redirect the journey",
+      "somatic": {
+        "verb": "REPORT_REDIRECT_GUIDE",
+        "gesture": "reports Geri's passing and leads Dante to the next ditch",
+        "observable": "Geri's gesture is Virgil's reported observation"
+      }
+    },
+    {
+      "actor": "Tenth bolgia afflicted falsifiers",
+      "semantic": "Damage to a visible exterior does not determine whether a claimed substance was genuine",
+      "somatic": {
+        "verb": "SIT_SCRATCH_LAMENT",
+        "gesture": "sit amid the afflicted and scratch their diseased skin",
+        "observable": "bodily deterioration and suffering are visible in Dante's story"
+      }
+    },
+    {
+      "actor": "Griffolino d'Arezzo",
+      "semantic": "False claims and falsification have distinct circumstances that should not be conflated",
+      "somatic": {
+        "verb": "SCRATCH_SPEAK_EXPLAIN",
+        "gesture": "scratches his skin and recounts his deception about flying and punishment for falsifying metals",
+        "observable": "testimony distinguishes earthly execution from the poem's stated reason for damnation"
+      }
+    },
+    {
+      "actor": "Capocchio",
+      "semantic": "A mimicked material or appearance is not guaranteed to be genuine",
+      "somatic": {
+        "verb": "SCRATCH_IDENTIFY_CONFESS",
+        "gesture": "sits scratching and identifies himself as an imitator/falsifier of metals",
+        "observable": "the claim of imitating a material is attached to the named speaker"
+      }
+    }
+  ],
+  "cipher": {
+    "alphaOmega": "[ (1), [2] ]",
+    "operator": "REMEMBER -> REDIRECT -> DESCEND -> EXAMINE -> SCRATCH -> IDENTIFY",
+    "notation": "GERI{not_seen_by_Dante,reported_by_Virgil}; BOLGIA_10{GRIFFOLINO,CAPOCCHIO}; CLAIMED_METAL != VERIFIED_METAL; AFFLICTION != IDENTITY",
+    "invariants": [
+      "Reported sighting of Geri is not direct observation by Dante",
+      "Imitation of a material's appearance does not prove matching composition",
+      "The visible disease and the falsification offense must be represented as different properties",
+      "Griffolino's earthly execution for an alleged flying trick is not the same charge as the falsification punished in the poem",
+      "This narrative is neither a medical diagnosis nor evidence of real metallurgical transformation"
+    ],
+    "newAtomicAssignments": [],
+    "chemicalReaction": "none",
+    "product": "none",
+    "preserve": [
+      "(1) H Dante and [2] He Virgil",
+      "[6] C life / six-poet fellowship",
+      "Noble Castle [ (7)[8]\\\\(9)[10] ]",
+      "(11) Na reset analogy"
+    ]
+  },
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "reported memory",
+      "somatic": "DANTE LOOKS; VIRGIL REPORTS Geri's passing and REDIRECTS",
+      "observable": "not seen directly by Dante"
+    },
+    {
+      "id": "B",
+      "semantic": "afflicted tenth bolgia",
+      "somatic": "FALSIFIERS SIT, SCRATCH and LAMENT",
+      "observable": "visible affliction does not establish chemical identity"
+    },
+    {
+      "id": "C",
+      "semantic": "named testimony and imitation",
+      "somatic": "GRIFFOLINO and CAPOCCHIO IDENTIFY themselves and SPEAK of falsification",
+      "observable": "named individuals and distinct histories retained"
+    }
+  ],
+  "next": "Inferno XXX — further falsifiers: Gianni Schicchi, Myrrha, Master Adam, Sinon and the dispute between counterfeiters",
+  "appendOnly": true
+}
