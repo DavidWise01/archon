@@ -105,18 +105,21 @@ label('}{',237,224,'#f5d5a6',9);label('PROMISE / JUDGE',198,183,'#eec88b',8);
 
 
 
- // Inferno XXVI: one vessel with two distinct flame tongues, only greater horn speaking.
-rect(0,137,480,96,'#352d43');rect(0,220,480,13,'#6b5669');
-for(let k=0;k<24;k++){const x=14+(k*59)%450,y=168+Math.sin(frame*.018+k)*29;rect(x,y,4,10,k%2?'#cb7959':'#e3a466')}
-const tipA=94+Math.sin(frame*.05)*13,tipB=123+Math.sin(frame*.024)*7;
-rect(160,170,160,49,'#a65552');rect(168,152,144,38,'#e08b54');
-rect(182,132,52,54,'#edab5a');rect(183,tipA,32,59,'#ffd083');
-rect(257,142,41,44,'#edab5a');rect(268,tipB,22,37,'#f4c16e');
-rect(217,175,47,39,'#d16d4d');
-for(let k=0;k<6;k++){const x=179+k*24,y=172+Math.sin(frame*.06+k)*9;rect(x,y,5,18,'#f7ca7b')}
-label('ULYSSES / SPEAKS',105,109,'#f5d7ab',8);
-label('DIOMEDES / SILENT',288,114,'#f5d7ab',8);
-label('ONE FLAME',218,145,'#30263a',9);
+
+ // Inferno XXVII: Guido's separate speaking flame and reported counsel scene.
+rect(0,137,480,96,'#302c41');rect(0,218,480,15,'#615568');
+for(let k=0;k<22;k++){let x=12+(k*59)%454,y=186+Math.sin(frame*.024+k)*15;rect(x,y,4,10,k%2?'#c87759':'#e9a66c')}
+const flameX=92+Math.sin(frame*.012)*12,flameTip=99+Math.sin(frame*.051)*13;
+rect(flameX,169,78,49,'#a74f52');
+rect(flameX+8,145,62,44,'#df8959');
+rect(flameX+25,flameTip,25,64,'#ffd183');
+rect(flameX+30,154,15,53,'#edac71');
+rect(312,165,25,32,'#8c6c85');rect(316,153,16,14,'#c8a99a');
+rect(356,161,25,36,'#a67c84');rect(361,148,14,15,'#d3b59e');
+rect(335,180,13,3,'#e5c393');
+label('GUIDO / TESTIMONY',45,120,'#f3d3a7',8);
+label('PROMISE / COUNSEL',294,131,'#f0d4b2',8);
+label('REPORTED EVENTS',297,213,'#d7c4dd',8);
 
 rect(203,76,80,95,'#5d4b76');rect(209,82,68,89,'#1d172e');
 rect(206,74,73,7,'#ebc77e');rect(206,74,5,98,'#c79a72');rect(275,74,5,98,'#c79a72');
