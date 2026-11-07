@@ -1,0 +1,68 @@
+{
+  "protocol": "archon/alchemical-living-thread/ascent-v1",
+  "chapter": "Purgatorio XXI",
+  "ascent": 21,
+  "identity": "{{i}}",
+  "parent": "alchemy/ascent/020.json",
+  "parentBlobSha": "7707ee64802d809837d4370e77014f81abfb9928",
+  "appendOnly": true,
+  "previousTraversal": "Inferno 041 sealed",
+  "scene": "Statius explains the earthquake as the sign of a soul's readiness to ascend; a poet recognizes Virgil",
+  "story": [
+    "While Dante and Virgil wonder why the mountain shook, a soul approaches from behind, greeting them with peace. Virgil returns the greeting, and Dante discovers that this new traveler is Statius, the Roman poet.",
+    "Statius explains that the mountain does not tremble because of ordinary weather or geological disturbance. Within Purgatory's order, it shakes when a soul, having completed its purification, freely feels ready and able to rise toward Heaven; all the souls sing in celebration.",
+    "Statius identifies himself as the soul whose readiness caused the earthquake. His desire to depart is now unconstrained, and the mountain's trembling announces this release. The travelers have witnessed the event and now receive an attributed explanation of its cause.",
+    "During their conversation Statius speaks with profound affection for Virgil's poetry. He says Virgil's Aeneid was a source of poetic inspiration and expresses a longing to have lived when Virgil was alive.",
+    "Dante smiles at the irony, for Virgil himself stands beside him. Virgil gestures to Dante to keep silent, but Statius notices his expression and learns the identity of his companion.",
+    "Statius moves to embrace Virgil's feet, then recalls that both are shades. Their recognition changes the fellowship of the ascent; Dante continues bearing three P marks because no angel has cleansed his forehead in this canto."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Dante",
+      "semantic": "The prior unexplained tremor receives testimony; he sees a poet discover his beloved predecessor",
+      "somatic": "LISTEN_SMILE_RECOGNIZE_WALK"
+    },
+    {
+      "actor": "Statius",
+      "semantic": "A completed internal purification manifests as freely chosen ascent within the poem",
+      "somatic": "APPROACH_EXPLAIN_DECLARE_RECOGNIZE_BOW"
+    },
+    {
+      "actor": "Virgil",
+      "semantic": "His earlier guidance is recognized by the poet it helped inspire, without conferring worldly ownership over that poet",
+      "somatic": "GREET_LISTEN_SIGNAL_REVEAL_GUIDE"
+    },
+    {
+      "actor": "Mountain and chorus",
+      "semantic": "Tremor and song are a collective sign tied to a soul's readiness, according to Statius",
+      "somatic": "TREMBLE_CELEBRATE_SETTLE"
+    }
+  ],
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "cause of earthquake",
+      "action": "HEAR Statius EXPLAIN that the mountain trembles when a soul is ready to rise",
+      "observable": "Statius supplies the cause after the previous canto's witnessed quake; it remains an in-story explanation"
+    },
+    {
+      "id": "B",
+      "semantic": "freedom to ascend",
+      "action": "HEAR Statius IDENTIFY himself as the soul now released and ready to depart",
+      "observable": "the soul's declaration is testimony; no extra P is erased from Dante"
+    },
+    {
+      "id": "C",
+      "semantic": "poet recognizes poet",
+      "action": "SEE Dante SMILE, Virgil SIGNAL, and Statius RECOGNIZE Virgil",
+      "observable": "the identity recognition is directly dramatized; the three-mark count stays constant"
+    }
+  ],
+  "alchemicalReading": "The mountain's earlier signal acquires a stated cause: an inner readiness becomes a collective audible and physical announcement. Recognition adds a companion, not an erased mark.",
+  "invariant": "Observation of the quake in XX and Statius's explanation in XXI remain separately attributed; readiness is not forced ascent. No angelic touch occurs: Dante retains three P marks.",
+  "previousP": 3,
+  "remainingP": 3,
+  "marksRemovedThisChapter": 0,
+  "next": "Purgatorio XXII — Virgil and Statius speak of poetry and belief; they approach the terrace of gluttony",
+  "sealInfernoUntouched": true
+}
