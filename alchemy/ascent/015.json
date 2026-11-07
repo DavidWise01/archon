@@ -1,0 +1,73 @@
+{
+  "protocol": "archon/alchemical-living-thread/ascent-v1",
+  "chapter": "Purgatorio XV",
+  "ascent": 15,
+  "identity": "{{i}}",
+  "parent": "alchemy/ascent/014.json",
+  "parentBlobSha": "87f1146a7e186c11e1e30c38ec3ad0e793637bc4",
+  "appendOnly": true,
+  "previousTraversal": "Inferno 041 sealed",
+  "scene": "The angel removes envy’s P; Virgil explains the abundance of shared spiritual love; Dante sees visions of meekness",
+  "story": [
+    "Late afternoon light strikes Dante on the second terrace. The radiance of an approaching angel overpowers his sight and directs the travelers toward the stairs.",
+    "As the angel brushes Dante's forehead, the second P is erased. The travelers hear the beatitude blessing the merciful and ascend from the terrace of envy.",
+    "Dante asks Virgil why the sharing of a good among more people does not leave each with less. Virgil distinguishes divisible earthly possessions from heavenly love, which grows as it is shared.",
+    "On the next terrace Dante falls into visionary scenes of gentleness: Mary finding the young Jesus in the Temple and responding with maternal concern; Pisistratus answering his wife's anger with clemency; and Stephen praying for those who stone him.",
+    "Dante emerges from the visions bewildered. Virgil explains that his inner sight has been shown examples of meekness, the virtue opposing anger.",
+    "As evening descends, dark smoke begins to approach on the third terrace. The encounter with the penitents within that smoke belongs to the next canto."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Angel of mercy",
+      "semantic": "Completing the terrace of envy removes one precisely accounted mark",
+      "somatic": "SHINE_DIRECT_BRUSH_ERASE"
+    },
+    {
+      "actor": "Dante",
+      "semantic": "Ascent is made lighter and the mind learns that shared love need not diminish",
+      "somatic": "SHIELD_EYES_CLIMB_QUESTION_VISION_AWAKEN"
+    },
+    {
+      "actor": "Virgil",
+      "semantic": "Shared spiritual goods differ from divisible material goods",
+      "somatic": "EXPLAIN_GUIDE"
+    },
+    {
+      "actor": "Mary, Pisistratus, Stephen (visions)",
+      "semantic": "Gentleness interrupts indignation, retaliation, and rage",
+      "somatic": "RESPOND_WITH_MEEKNESS"
+    },
+    {
+      "actor": "Smoke",
+      "semantic": "The coming terrace of anger impedes sight, but no encounter has yet been completed",
+      "somatic": "APPROACH_OBSCURE"
+    }
+  ],
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "second mark removed",
+      "action": "SEE the angel's brightness, RECEIVE the touch and ASCEND",
+      "observable": "forehead mark count transitions from six to five"
+    },
+    {
+      "id": "B",
+      "semantic": "abundance in shared love",
+      "action": "HEAR Virgil EXPLAIN how love grows when more souls share it",
+      "observable": "reasoning is presented as Virgil's explanation, not a physical conservation rule"
+    },
+    {
+      "id": "C",
+      "semantic": "visions of gentleness",
+      "action": "EXPERIENCE the examples of Mary, Pisistratus and Stephen and NOTICE approaching smoke",
+      "observable": "three visionary exemplars are not contemporaneous events on the terrace"
+    }
+  ],
+  "alchemicalReading": "Envy's scarcity claim is opposed by the abundance of shared love. An actual erasure reduces the marked burden from six to five; meekness prepares the next conversion of anger.",
+  "invariant": "Only the angel's witnessed touch changes the mark count: 6 → 5. Visionary images teach but do not remove a further mark.",
+  "previousP": 6,
+  "remainingP": 5,
+  "marksRemovedThisChapter": 1,
+  "next": "Purgatorio XVI — the blinding smoke of anger, Marco Lombardo and the freedom of human choice",
+  "sealInfernoUntouched": true
+}
