@@ -1,0 +1,73 @@
+{
+  "protocol": "archon/alchemical-living-thread/paradiso-v1",
+  "chapter": "Paradiso IV",
+  "paradiso": 4,
+  "identity": "{{i}}",
+  "parent": "alchemy/paradiso/003.json",
+  "parentBlobSha": "78aa847c6cf5024aa350742ecc9d4ec9ec726c6e",
+  "appendOnly": true,
+  "previousTraversal": "Purgatorio XXXIII complete; Inferno 041 sealed",
+  "scene": "Dante pauses between two doubts; Beatrice distinguishes the blessed souls' Empyrean dwelling from their pedagogical lunar appearance, then absolute will from conditioned will",
+  "story": [
+    "After Piccarda fades, Dante cannot choose between two urgent questions, as someone held equally by two tempting foods or two opposing fears. Beatrice perceives both doubts without making him decide which to speak first.",
+    "Dante wonders whether souls truly return to particular stars, as a literal reading of Plato's Timaeus might suggest. Beatrice answers this more dangerous doubt first: every blessed soul has its true dwelling in the Empyrean. Appearances in different planetary spheres are accommodations that let Dante perceive differing degrees of blessedness, not separate permanent celestial addresses.",
+    "Beatrice distinguishes metaphor from literal explanation and warns against treating the visible location of a soul as proof of a planetary origin or destiny. Such a mistake might wrongly imply that the stars determine a human being's choices.",
+    "Dante's second doubt concerns Piccarda and Constance: if other people violently forced them to leave their religious life, how could their vows be judged unfulfilled? Beatrice discusses the strength of the will and examples of resistance, while the poem also recognizes fear and pressure.",
+    "She makes a careful distinction. Absolute will, considered independently of circumstances, does not consent to an evil it rejects. Conditioned or relative will can bend when someone fears a greater harm from resisting. Beatrice treats the resulting responsibility within Dante's theological framework; this is not a general modern claim that people coerced under threat deserve blame.",
+    "Dante sees how Piccarda's affirmation of Constance's steadfast inward desire and Beatrice's account of conditional yielding can both be true of different aspects of willing.",
+    "Dante thanks Beatrice but poses a third question: can good works make compensation for a vow left unfulfilled? Beatrice's radiant response overwhelms him. Its resolution belongs to Paradiso V, not this canto."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Dante",
+      "semantic": "Two competing doubts lead to patient inquiry and a third question, rather than premature closure",
+      "somatic": "PAUSE_LISTEN_DISTINGUISH_THANK_ASK"
+    },
+    {
+      "actor": "Beatrice",
+      "semantic": "A sphere shown to a learner is not necessarily a soul's dwelling; absolute intention differs from action under compulsion",
+      "somatic": "SEE_DOUBTS_CORRECT_APPEARANCE_DISTINGUISH_WILLS"
+    },
+    {
+      "actor": "Piccarda and Constance (recalled)",
+      "semantic": "Coercion, inward intention, and conditioned action are related but nonidentical; their histories remain attributed to their speakers",
+      "somatic": "RECALL_COMPARE"
+    },
+    {
+      "actor": "Empyrean and lunar apparitions",
+      "semantic": "Permanent spiritual dwelling and instructional depiction are different referents",
+      "somatic": "DWELL_APPEAR"
+    }
+  ],
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "appearance versus residence",
+      "action": "HEAR Beatrice EXPLAIN that blessed souls truly dwell in the Empyrean and APPEAR in differing spheres for Dante's understanding",
+      "observable": "Moon appearance is pedagogical within the poem; literal star-residence is not established"
+    },
+    {
+      "id": "B",
+      "semantic": "absolute versus conditioned will",
+      "action": "HEAR Beatrice DISTINGUISH inward refusal from yielding under fear or external force",
+      "observable": "absolute and conditioned will are distinct philosophical categories; coercion and intention are not collapsed"
+    },
+    {
+      "id": "C",
+      "semantic": "new question remains open",
+      "action": "HEAR Dante ASK whether other good deeds can compensate for an unfulfilled vow; SEE Beatrice's light intensify",
+      "observable": "a third doubt is posed but not yet answered in Canto IV"
+    }
+  ],
+  "alchemicalReading": "The natural boundary is a two-layer distinction: a represented place is not the underlying location, and inward intention is not the same as behavior under constraint. Preserve both dimensions without making a coerced event equivalent to freely chosen intent. Close the two earlier doubts, leave the new vow-compensation question open.",
+  "invariant": "Do not infer permanent celestial residence from an instructional appearance. Do not equate absolute refusal with conditioned compliance under duress. The vow-compensation problem is posed but unresolved until Canto V. Purgatorio complete, P=0, Lethe and Eunoe performed.",
+  "previousP": 0,
+  "remainingP": 0,
+  "marksRemovedThisChapter": 0,
+  "letheStatus": "performed",
+  "eunoeStatus": "performed",
+  "purgatorioCompleted": true,
+  "next": "Paradiso V — the sanctity of vows, free will as a gift, and whether one vow may be exchanged for another",
+  "sealInfernoUntouched": true,
+  "sealPurgatorioUntouched": true
+}
