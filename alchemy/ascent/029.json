@@ -1,0 +1,73 @@
+{
+  "protocol": "archon/alchemical-living-thread/ascent-v1",
+  "chapter": "Purgatorio XXIX",
+  "ascent": 29,
+  "identity": "{{i}}",
+  "parent": "alchemy/ascent/028.json",
+  "parentBlobSha": "26459ffe889dd2fa4dfda0d6ed55da57a107ba16",
+  "appendOnly": true,
+  "previousTraversal": "Inferno 041 sealed",
+  "scene": "Matelda and Dante follow the stream as the great procession advances: seven candlesticks and rainbow banners, twenty-four elders, four living creatures, a griffin-drawn chariot, virtues and seven concluding figures",
+  "story": [
+    "Matelda continues along the riverbank and Dante follows on the opposite side, while Virgil and Statius accompany him. A brilliance and a melody arise from within the forest.",
+    "Seven great candlesticks appear like moving trees of gold, their flames trailing seven colored bands across the air. Dante watches a pageant of light rather than crossing the water.",
+    "Twenty-four white-robed elders with crowns of lilies proceed behind the lights, singing praise. Their number and place in the procession give them a distinct symbolic role in the poem.",
+    "Four living creatures, each with six wings full of eyes, surround a two-wheeled chariot. A griffin, part eagle and part lion, draws the chariot forward. The figures invite a Christian allegorical reading but are not ordinary animals observed in nature.",
+    "Three dancing women appear by one wheel, dressed red, green and white, while four other women, dressed purple, attend the other. The procession then displays additional figures signifying scriptural witnesses and reaches a ceremonial pause.",
+    "Dante does not yet meet Beatrice in this canto, nor does he drink Lethe or Eunoe. The procession's arrival prepares the next revelation; the seven P marks remain cleared."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Dante",
+      "semantic": "The observer distinguishes objects, movements, counts and symbols before assigning interpretation or anticipating the next arrival",
+      "somatic": "FOLLOW_HEAR_SEE_COUNT_WITNESS_PAUSE"
+    },
+    {
+      "actor": "Matelda",
+      "semantic": "The guide leads along the garden stream without prematurely conducting either memory rite",
+      "somatic": "WALK_SING_LEAD"
+    },
+    {
+      "actor": "Seven lights and elders",
+      "semantic": "Ordered procession gives a visible structure to transmitted wisdom and testimony",
+      "somatic": "SHINE_TRAIL_ADVANCE_SING"
+    },
+    {
+      "actor": "Four living creatures and griffin",
+      "semantic": "A composite allegorical form is presented inside the poem's pageant",
+      "somatic": "ENCIRCLE_DRAW_ADVANCE"
+    },
+    {
+      "actor": "Women and concluding figures",
+      "semantic": "Different groups retain distinct positions and roles around the chariot",
+      "somatic": "DANCE_ACCOMPANY_FOLLOW"
+    }
+  ],
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "seven lights and twenty-four elders",
+      "action": "HEAR music and SEE seven candlesticks advance before twenty-four crowned elders",
+      "observable": "seven lights, their colored trails, and twenty-four elders are counted as represented in the pageant"
+    },
+    {
+      "id": "B",
+      "semantic": "griffin and chariot",
+      "action": "SEE four many-eyed winged creatures and a griffin DRAWING the two-wheeled chariot",
+      "observable": "the composite creature and chariot are witnessed within an allegorical vision"
+    },
+    {
+      "id": "C",
+      "semantic": "virtues and concluding witnesses",
+      "action": "SEE three women at one wheel, four at the other, and the remaining ceremonial company",
+      "observable": "the ceremony pauses; Beatrice's appearance and the waters' actions are not yet experienced"
+    }
+  ],
+  "alchemicalReading": "The garden becomes a structured pageant: a sevenfold light, a twenty-fourfold chorus, four living creatures, a paired chariot and grouped virtues. Observation preserves each visible register without collapsing symbols into physical science.",
+  "invariant": "Count the procession's groups faithfully and attribute their meaning to Dante's allegory; the pageant arrives but Beatrice and the memory-water rites do not occur in Canto XXIX. Seven cleansed P marks remain zero.",
+  "previousP": 0,
+  "remainingP": 0,
+  "marksRemovedThisChapter": 0,
+  "next": "Purgatorio XXX — Beatrice appears upon the chariot and Virgil silently departs",
+  "sealInfernoUntouched": true
+}
