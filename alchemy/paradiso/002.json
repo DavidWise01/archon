@@ -1,0 +1,73 @@
+{
+  "protocol": "archon/alchemical-living-thread/paradiso-v1",
+  "chapter": "Paradiso II",
+  "paradiso": 2,
+  "identity": "{{i}}",
+  "parent": "alchemy/paradiso/001.json",
+  "parentBlobSha": "b25665950879b8ff1fc00579dfe4aa093256052a",
+  "appendOnly": true,
+  "previousTraversal": "Purgatorio XXXIII complete; Inferno 041 sealed",
+  "scene": "Dante and Beatrice enter the sphere of the Moon, question its markings, and examine a three-mirror thought experiment before a theological account of celestial diversity",
+  "story": [
+    "Dante warns readers who lack the preparation for this voyage not to follow his little vessel too far and invites those nourished by wisdom to continue. He compares his unprecedented course to a passage beyond familiar waters.",
+    "Beatrice and Dante enter the sphere of the Moon, apparently without resistance, as light enters clear water. Dante marvels at how one embodied traveler may be received by a heavenly body within this poem's miraculous cosmology.",
+    "Dante asks why the Moon shows dark and light patches, the familiar markings popularly imagined as Cain with his thorn-bundle. He proposes that differing rarity and density of lunar substance cause the variations.",
+    "Beatrice first questions whether differences in rarefaction would explain eclipses and the passage of light through matter, exposing difficulties in Dante's proposed mechanism. She then presents an observational test using three mirrors, two equidistant from the observer and one farther away, reflecting a light set behind him.",
+    "The farther mirror gives a smaller image, yet its reflected light does not become intrinsically dimmer merely because of the greater distance. The proposed explanation based on rarity and density is inadequate for the phenomenon as the poem describes it.",
+    "Beatrice presents an alternative within Dante's medieval theological cosmology: the heavens receive and transmit differing formal powers and virtues, emanating through the ordered spheres under divine intelligence. Variation in visible light manifests these differences.",
+    "This explanation is situated within Dante's poem, not a modern scientific account of lunar maria, which are associated with basaltic plains and impact history. The first encounters with the souls in the lunar sphere occur in Paradiso III, not this canto."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Dante",
+      "semantic": "An observer proposes a physical-looking explanation but allows it to be tested rather than defending it through attachment",
+      "somatic": "ENTER_MOON_LOOK_ASK_HYPOTHESIZE_COMPARE"
+    },
+    {
+      "actor": "Beatrice",
+      "semantic": "Use counterexamples and controlled comparison before advancing the poem's metaphysical explanation",
+      "somatic": "CHALLENGE_TEST_THREE_MIRRORS_EXPLAIN"
+    },
+    {
+      "actor": "Moon",
+      "semantic": "Brightness variation is the observed question; the poem's cause and modern lunar geology must be kept distinct",
+      "somatic": "DISPLAY_LIGHT_DARK_REGIONS"
+    },
+    {
+      "actor": "Three mirrors and lamp",
+      "semantic": "Two mirrors at equal distance and one farther permit a contrast between apparent image size and intrinsic reflected luminosity in the conceptual test",
+      "somatic": "ARRANGE_REFLECT_COMPARE"
+    }
+  ],
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "entry and observed markings",
+      "action": "SEE Dante and Beatrice ENTER the lunar sphere and NOTE its dark and bright patches",
+      "observable": "entry and apparent markings occur within poetic cosmology; no measured physical lunar penetration is claimed"
+    },
+    {
+      "id": "B",
+      "semantic": "mirror experiment",
+      "action": "HEAR Dante's rarity-density hypothesis and Beatrice's three-mirror TEST contrasting image size and brightness",
+      "observable": "the experiment is described within the poem; modern optical predictions require their own quantitative model"
+    },
+    {
+      "id": "C",
+      "semantic": "alternative explanation",
+      "action": "HEAR Beatrice DISTINGUISH formal heavenly virtues from mere material rarity and density",
+      "observable": "her answer is a medieval theological explanation, not empirically established lunar geology"
+    }
+  ],
+  "alchemicalReading": "The next natural vessel is a model under adversarial observation: proposal, contrasting mirrors, rejection of insufficient causes, and clearly attributed alternative explanation. A failed hypothesis is retained as evidence of inquiry instead of erased.",
+  "invariant": "Distinguish observation (lunar light/dark), hypothesis (rarity-density), test (three mirrors), and attributed cosmology (formal celestial virtues). Preserve completed Lethe and Eunoe, zero P marks, and the immutable Purgatorio-to-Paradiso parent chain.",
+  "previousP": 0,
+  "remainingP": 0,
+  "marksRemovedThisChapter": 0,
+  "letheStatus": "performed",
+  "eunoeStatus": "performed",
+  "purgatorioCompleted": true,
+  "next": "Paradiso III — Piccarda Donati and the souls who broke their vows, yet find peace in divine will",
+  "sealInfernoUntouched": true,
+  "sealPurgatorioUntouched": true
+}
