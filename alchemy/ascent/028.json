@@ -1,0 +1,73 @@
+{
+  "protocol": "archon/alchemical-living-thread/ascent-v1",
+  "chapter": "Purgatorio XXVIII",
+  "ascent": 28,
+  "identity": "{{i}}",
+  "parent": "alchemy/ascent/027.json",
+  "parentBlobSha": "10e00cc21b3b96a3a36eb6e7f0b9f20d97a55de3",
+  "appendOnly": true,
+  "previousTraversal": "Inferno 041 sealed",
+  "scene": "The Earthly Paradise: a fragrant living forest, clear stream and Matelda gathering flowers across the water",
+  "story": [
+    "Free of the seven marks, Dante enters the Earthly Paradise on the summit of Purgatory. He walks into a green forest alive with birdsong, shade, and a gentle breeze.",
+    "A clear stream halts his path. On the opposite bank he sees a woman gathering flowers and singing as she moves through the meadow; Dante calls to her.",
+    "The woman, later named Matelda, approaches the water and explains the origin of the mountain's breeze and flowing water within the poem's paradisal order. The air's movement arises from the heavens' rotation, and the water issues from a divinely sustained source rather than ordinary rain.",
+    "She explains that the waters have two distinct workings: Lethe removes the remembrance of sin, while Eunoe restores the memory of virtuous deeds. No immersion or drinking takes place yet in this canto.",
+    "Matelda connects this garden to the golden age imagined by ancient poets. The three poets remain on their side of the stream while she smiles and speaks across it.",
+    "The seven P marks remain fully cleared. Passing the fire has prepared Dante for the garden, but the two waters' actions are still future operations."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Dante",
+      "semantic": "Purification opens a living environment where the traveler must attend before acting upon memory",
+      "somatic": "ENTER_FOREST_WALK_LISTEN_STOP_AT_STREAM_ASK"
+    },
+    {
+      "actor": "Matelda",
+      "semantic": "The garden's waters have separate complementary roles: forgetting sin and renewing good memory",
+      "somatic": "GATHER_FLOWERS_SING_APPROACH_EXPLAIN"
+    },
+    {
+      "actor": "River Lethe",
+      "semantic": "A threshold in the garden whose cleansing of sinful memory is explained, not yet performed",
+      "somatic": "FLOW_DIVIDE_BANKS"
+    },
+    {
+      "actor": "Eunoe (described)",
+      "semantic": "Restoration of virtuous recollection complements forgetting, without occurring during this chapter",
+      "somatic": "AWAIT_FUTURE_DRINK"
+    },
+    {
+      "actor": "Virgil and Statius",
+      "semantic": "The guides accompany Dante to the garden without superseding his newly freed will",
+      "somatic": "ACCOMPANY_OBSERVE"
+    }
+  ],
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "garden encountered",
+      "action": "WALK through forest and HEAR birdsong as a clear stream stops Dante's path",
+      "observable": "trees, breeze, birds and separating water are directly encountered"
+    },
+    {
+      "id": "B",
+      "semantic": "Matelda across water",
+      "action": "SEE the flower-gathering woman and HEAR her explanation of breeze and spring",
+      "observable": "her gestures and speech are directly witnessed; causes are her account within the poem"
+    },
+    {
+      "id": "C",
+      "semantic": "two waters distinguished",
+      "action": "HEAR Matelda DISTINGUISH Lethe from Eunoe and RECALL the ancient golden age",
+      "observable": "functions are explained, but neither water's action has been experienced by Dante yet"
+    }
+  ],
+  "alchemicalReading": "After purification, the new vessel is a garden rather than another furnace. Two different memory operations await: release the recollection of wrongdoing and preserve awareness of good; no operation should be credited before witnessed.",
+  "invariant": "All seven P marks remain cleared (0). An explanation of Lethe and Eunoe is not an enacted washing or drinking; Dante stays on his bank in Canto XXVIII.",
+  "previousP": 0,
+  "remainingP": 0,
+  "marksRemovedThisChapter": 0,
+  "next": "Purgatorio XXIX — Matelda's procession reveals the symbolic pageant of scripture, virtues and the griffin",
+  "sealInfernoUntouched": true
+}
