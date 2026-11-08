@@ -1,22 +1,22 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ARCHON — The Ascent · Purgatorio XXIII</title><style>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ARCHON — The Ascent · Purgatorio XXIV</title><style>
 :root{color-scheme:dark}*{box-sizing:border-box}body{background:linear-gradient(#11142d,#262542);color:#f3e6d4;font:15px/1.5 system-ui,Segoe UI,sans-serif;margin:0}main{max-width:1120px;padding:20px;margin:auto}h1{font-size:clamp(26px,5vw,46px);margin:5px 0}h2{font-size:18px;margin:0 0 8px}.eyebrow{font:700 11px monospace;letter-spacing:.15em;color:#f0c38d}.grid{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(260px,1fr);gap:15px;margin-top:17px}.panel{border:1px solid #776786;background:#201e36;border-radius:13px;padding:16px;min-width:0}canvas{display:block;width:100%;aspect-ratio:16/9;image-rendering:pixelated;background:#191d38;border-radius:9px;border:1px solid #927e9a}.controls{display:flex;gap:9px;flex-wrap:wrap;margin:12px 0}button{background:#4d3d5a;border:1px solid #aa8291;color:#fff;border-radius:8px;padding:10px 14px;font-weight:700;cursor:pointer}button:hover{background:#65506b}button:focus-visible{outline:2px solid #f9d49b}p{color:#dbcede}.status{background:#302943;border-radius:8px;min-height:80px;padding:12px}pre{white-space:pre-wrap;background:#17182d;border-radius:9px;padding:14px;color:#eacba5;font-size:12px;line-height:1.7}a{color:#b8dfe4}.counter{color:#a8dccb;font:700 12px monospace}footer{color:#b1a7bb;font-size:12px;margin-top:20px} @media(max-width:740px){.grid{grid-template-columns:1fr}}
-</style></head><body><main><header><div class="eyebrow">ARCHON / THE LIVING THREAD / THE ASCENT</div><h1>Purgatorio XXIII <span style="color:#ffd09a">· A Friend's Voice</span></h1><p>Emaciated penitents walk beneath fragrant fruit; Dante recognizes his friend Forese Donati by voice.</p></header>
-<div class="grid"><section class="panel"><canvas id="game" width="640" height="360" tabindex="0" aria-label="Playable pixel art: gaunt penitents, forbidden fruit tree and Dante recognizing Forese Donati by voice"></canvas><div class="controls"><button id="left">◀ WALK</button><button id="right">WALK ▶</button><button id="observe">E · OBSERVE</button><button id="reset">↺ RESET</button></div><div class="counter" id="counter">WITNESSES 0 / 3</div><p class="status" id="status" aria-live="polite">Observe the hungry penitents, hear Forese call Dante and learn how Nella's prayers helped him.</p><p>Keyboard: A / D or ← / → to walk; E to observe. Observe the gaunt souls, Forese's recognizable voice, and his testimony about Nella. Two marks remain.</p></section>
-<aside class="panel"><h2>Today's encounter</h2><p>On the sixth terrace, hunger has hollowed the penitents' faces while fragrant fruit and water remain out of reach. Dante hears a familiar voice and recognizes Forese Donati, though his appearance has changed. Forese credits his wife Nella's prayers with hastening his progress and speaks critically of Florence. The friends walk onward.</p><pre>PURGATORIO / XXIII
+</style></head><body><main><header><div class="eyebrow">ARCHON / THE LIVING THREAD / THE ASCENT</div><h1>Purgatorio XXIV <span style="color:#ffd09a">· The Sweet New Style</span></h1><p>Bonagiunta recognizes Dante's poetry; a second tree tests restraint; the sixth P disappears.</p></header>
+<div class="grid"><section class="panel"><canvas id="game" width="640" height="360" tabindex="0" aria-label="Playable pixel art: Bonagiunta and Dante discuss poetry, a second fruit tree and the angel of temperance"></canvas><div class="controls"><button id="left">◀ WALK</button><button id="right">WALK ▶</button><button id="observe">E · OBSERVE</button><button id="reset">↺ RESET</button></div><div class="counter" id="counter">WITNESSES 0 / 3</div><p class="status" id="status" aria-live="polite">Hear Bonagiunta recognize Dante's poetry, pass the second tree, and receive the sixth cleansing.</p><p>Keyboard: A / D or ← / → to walk; E to observe. Observe poetry, the warning tree and the angel of temperance. One mark remains.</p></section>
+<aside class="panel"><h2>Today's encounter</h2><p>Forese speaks of Piccarda and introduces Bonagiunta, who recognizes Dante's sweet new poetic style. Forese predicts Corso Donati's violent end and departs. The three poets pass a second fruit tree warning against excess, then an angel of temperance erases the sixth P. Only lust remains.</p><pre>PURGATORIO / XXIV
        |
-FRUIT / WATER: TEMPTATION
+BONAGIUNTA: NEW POETRY
        |
-HUNGRY SOULS: ENDURE
+FORESE: FAREWELL
        |
-FORESE: CALL DANTE
+SECOND TREE: REFRAIN
        |
-VOICE: RECOGNITION
+ANGEL: SIXTH P ERASED
        |
-NELLA: PRAYERS / GRATITUDE
+2 P -> 1 P
        |
-FRIENDS: WALK TOGETHER
+SEVENTH TERRACE AHEAD
        |
-2 P MARKS REMAIN</pre><p>Forese's voice preserves recognition despite outward change. His testimony is attributed; no mark is removed. Two remain.</p><p><a href="./">The sealed Inferno</a> · <a href="https://github.com/DavidWise01/archon/blob/main/alchemy/ascent/023.json">Canonical ascent record</a></p></aside></div><footer>Original sealed 41-tick journey preserved · Inferno's sealed Stage 041 preserved · This ascent is a new append-only branch.</footer></main><script>
+1 P MARK REMAINS</pre><p>The angel of temperance completes the sixth cleansing: two P marks become one. The tree's prohibition is observed, not disobeyed.</p><p><a href="./">The sealed Inferno</a> · <a href="https://github.com/DavidWise01/archon/blob/main/alchemy/ascent/024.json">Canonical ascent record</a></p></aside></div><footer>Original sealed 41-tick journey preserved · Inferno's sealed Stage 041 preserved · This ascent is a new append-only branch.</footer></main><script>
 'use strict';
 const c=document.getElementById('game'),ctx=c.getContext('2d'),status=document.getElementById('status'),counter=document.getElementById('counter');
 let player=46,frame=0;const held=new Set(),seen=new Set();
@@ -44,28 +44,28 @@ const label=(str,x,y,color='#f9e4c3',size=11)=>{ctx.fillStyle=color;ctx.font='bo
 
 
 
-function witness(){const zone=player<210?'hunger':player<410?'forese':'nella';seen.add(zone);
+
+function witness(){const zone=player<210?'poetry':player<410?'tree':'angel';seen.add(zone);
 const words={
-hunger:'WITNESS A: Dante SEES hollow-faced penitents and HEARS their prayer; fruit and water remain out of reach.',
-forese:'WITNESS B: Forese CALLS Dante by name. Dante RECOGNIZES his friend by voice despite his altered face.',
-nella:'WITNESS C: Forese CREDITS Nella\'s prayers with speeding his journey and walks beside Dante. Two marks remain.'
-};status.textContent=words[zone]+(seen.size===3?' THREE WITNESSES COMPLETE. TWO MARKS REMAIN.':'');counter.textContent='WITNESSES '+seen.size+' / 3'}
-function reset(){player=46;seen.clear();status.textContent='Observe the hungry penitents, hear Forese call Dante and learn how Nella\'s prayers helped him.';counter.textContent='WITNESSES 0 / 3'}
+poetry:'WITNESS A: Bonagiunta ASKS about Dante\'s love lyrics and RECOGNIZES the sweet new style.',
+tree:'WITNESS B: the second TREE displays fruit; an unseen voice RECALLS gluttony punished and COMMANDS restraint.',
+angel:'WITNESS C: the angel of temperance BRUSHES Dante\'s forehead and ERASES the sixth P. One remains.'
+};status.textContent=words[zone]+(seen.size===3?' THREE WITNESSES COMPLETE. ONE MARK REMAINS.':'');counter.textContent='WITNESSES '+seen.size+' / 3'}
+function reset(){player=46;seen.clear();status.textContent='Hear Bonagiunta recognize Dante\'s poetry, pass the second tree, and receive the sixth cleansing.';counter.textContent='WITNESSES 0 / 3'}
 function draw(){frame++;
-rect(0,0,640,360,'#455875');rect(0,0,640,145,'#abb3b4');rect(0,145,640,138,'#7c8796');rect(0,283,640,77,'#b7aa9f');
-rect(60,166,12,112,'#695d64');
-for(let i=0;i<5;i++){const y=172+i*18,w=49+i*9;rect(66-w/2,y,w,10,i%2?'#4c755d':'#588369');for(let j=0;j<3;j++)rect(51-w/3+j*17,y-5,6,8,'#e1b36f')}
-for(let k=0;k<6;k++){const x=116+k*30,y=229+(k%2)*8;rect(x,y,13,20,'#d3b9a7');rect(x+2,y+6,2,6,'#6d5867');rect(x+8,y+6,2,6,'#6d5867');rect(x-4,y+19,22,39,'#9b94a0');rect(x-4,y+58,7,9,'#77718b');rect(x+12,y+58,7,9,'#77718b')}
-label('HUNGER / ENDURE',11,134,'#fff1d9',12);
-rect(300,217,17,23,'#d8b3a0');rect(296,240,27,58,'#a190a0');rect(303,225,2,6,'#6e606c');rect(312,225,2,6,'#6e606c');
-rect(340,213,19,20,'#dfb9a4');rect(335,233,29,62,'#b67482');rect(322,252,14,5,'#e0b9a6');
-for(let k=0;k<5;k++)label('~',298+k*17,191+Math.sin(frame*.052+k)*4,'#efd7ae',17);
-label('FORESE / VOICE',262,160,'#fff1d9',12);
-rect(474,215,19,19,'#ddbaa5');rect(469,234,29,59,'#9189a3');rect(521,223,20,20,'#dfbca6');rect(517,243,29,53,'#8795ac');
-for(let k=0;k<6;k++)label('*',474+k*17,190+Math.sin(frame*.049+k)*5,'#f5d7bd',13);
-label('NELLA / PRAYERS',440,154,'#fff1d9',12);
-for(let k=0;k<2;k++)label('P',548+k*26,60,'#fbd3ad',18);label('TWO MARKS',518,86,'#fff1d9',11);
-label('PURGATORIO XXIII',17,24,'#fff1d9',15);
+rect(0,0,640,360,'#40536d');rect(0,0,640,145,'#b4a7af');rect(0,145,640,140,'#7d8093');rect(0,285,640,75,'#b6a89b');
+rect(63,209,18,20,'#ddbaa6');rect(58,229,28,62,'#a57e99');rect(119,211,19,20,'#dab19e');rect(114,231,29,61,'#ae7388');
+for(let k=0;k<6;k++)label('~',53+k*19,174+Math.sin(frame*.055+k)*4,'#f9e1bd',17);
+label('BONAGIUNTA / POETRY',19,139,'#fff0d7',12);
+rect(312,144,12,141,'#6d606b');
+for(let k=0;k<7;k++){const y=157+k*17,w=39+k*8;rect(318-w/2,y,w,10,k%2?'#4a755d':'#5c8668');for(let j=0;j<3;j++)rect(306-w/3+j*18,y-4,7,8,'#e6b67f')}
+for(let k=0;k<7;k++)label('!',230+k*20,191+Math.sin(frame*.07+k)*4,'#eed0a2',14);
+label('SECOND TREE / REFRAIN',221,122,'#fff0d7',11);
+const glow=4+Math.sin(frame*.06)*3;rect(508-glow,159-glow,64+glow*2,92+glow*2,'#d9c4b5');
+rect(531,169,19,19,'#f4d9c0');rect(525,188,31,61,'#efe9d9');rect(503,206,22,11,'#f6e8d6');rect(556,206,23,11,'#f6e8d6');
+label('ANGEL / 2 TO 1',450,132,'#fff0d7',12);
+label('P',566,57,'#fbd0ac',19);label('ONE MARK',526,84,'#fff0d7',11);
+label('PURGATORIO XXIV',17,24,'#fff1d1',15);
 rect(player,269,17,17,'#e7c0a3');rect(player-3,287,23,32,'#ba6a77');rect(player,316,5,7,'#333653');rect(player+12,316,5,7,'#333653');
 if(held.has('ArrowLeft')||held.has('KeyA'))player=Math.max(7,player-2.4);
 if(held.has('ArrowRight')||held.has('KeyD'))player=Math.min(613,player+2.4);
