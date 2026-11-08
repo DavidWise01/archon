@@ -1,0 +1,73 @@
+{
+  "protocol": "archon/alchemical-living-thread/ascent-v1",
+  "chapter": "Purgatorio XXV",
+  "ascent": 25,
+  "identity": "{{i}}",
+  "parent": "alchemy/ascent/024.json",
+  "parentBlobSha": "5cf27e514cc361bedef90bbcd58a85cbc53d6511",
+  "appendOnly": true,
+  "previousTraversal": "Inferno 041 sealed",
+  "scene": "Statius explains how the soul's formative power produces a shade; the travelers enter the seventh terrace where fire purifies lust",
+  "story": [
+    "As the three poets climb, Dante asks how bodiless souls can become thin through hunger. Virgil invites Statius to explain the question of the soul and its apparent body.",
+    "Statius gives a medieval account of generation: the developing organism first has vegetative life, then sensory life, and finally receives the rational soul. He argues that the fully formed soul retains powers of memory, intelligence and will.",
+    "He explains that after death the separated soul impresses its form upon surrounding air, appearing as a shade capable of speech, tears and the signs of suffering. This is the poem's metaphysical account, not a modern biological mechanism.",
+    "The three reach the seventh terrace, where a wall of fire burns along the cliff face, leaving only a narrow path on the outside edge. The penitents of lust walk within the flames.",
+    "From inside the fire the souls sing 'Summae Deus clementiae' and call out examples of chastity, including Mary's words at the Annunciation and Diana's rejection of Helice. Their penitential movement has begun.",
+    "Dante watches the flames and follows his guides. The final P still marks his brow: the seventh cleansing does not occur in this canto."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Dante",
+      "semantic": "The observer asks how a shade shows bodily hunger and then encounters purifying fire",
+      "somatic": "ASK_LISTEN_CLIMB_SEE_FIRE_CONTINUE"
+    },
+    {
+      "actor": "Statius",
+      "semantic": "The poet presents an internally consistent medieval model of formative powers and the soul's aerial appearance",
+      "somatic": "EXPLAIN_DISTINGUISH_TRACE"
+    },
+    {
+      "actor": "Virgil",
+      "semantic": "The guide gives Statius the place to answer, preserving distinct voices and expertise",
+      "somatic": "INVITE_LISTEN_GUIDE"
+    },
+    {
+      "actor": "Penitents of lust",
+      "semantic": "Fire and prayers discipline desire before any final release",
+      "somatic": "WALK_IN_FLAME_SING_RECALL"
+    },
+    {
+      "actor": "Wall of fire",
+      "semantic": "A vivid boundary is witnessed, not yet passed by Dante",
+      "somatic": "BURN_MARK_PATH"
+    }
+  ],
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "question and explanation",
+      "action": "HEAR Dante ASK about hungry shades and Statius EXPLAIN the formative soul",
+      "observable": "Statius's metaphysical model is attributed to the speaker and the poem"
+    },
+    {
+      "id": "B",
+      "semantic": "fire at the seventh terrace",
+      "action": "SEE the narrow ledge beside the wall of FIRE and souls WALKING in flames",
+      "observable": "the terrace and fire are directly encountered within the journey"
+    },
+    {
+      "id": "C",
+      "semantic": "chastity against lust",
+      "action": "HEAR the penitents SING and INVOKE examples of chastity",
+      "observable": "examples are spoken; no new erasure occurs and one P remains"
+    }
+  ],
+  "alchemicalReading": "The vessel distinguishes material form from the remembered and reasoning self through Statius's medieval imagery. Fire becomes the final threshold for correcting desire; observation of flame is not yet passage through it.",
+  "invariant": "An in-poem account of soul and shadow must not be recast as experimentally established biology. No angel removes the last P during XXV: one remains.",
+  "previousP": 1,
+  "remainingP": 1,
+  "marksRemovedThisChapter": 0,
+  "next": "Purgatorio XXVI — two companies of souls pass through the flames; Dante speaks with Guido Guinizzelli and Arnaut Daniel",
+  "sealInfernoUntouched": true
+}
