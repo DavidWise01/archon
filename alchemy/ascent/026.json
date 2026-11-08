@@ -1,0 +1,73 @@
+{
+  "protocol": "archon/alchemical-living-thread/ascent-v1",
+  "chapter": "Purgatorio XXVI",
+  "ascent": 26,
+  "identity": "{{i}}",
+  "parent": "alchemy/ascent/025.json",
+  "parentBlobSha": "7b26cf25e51e4b3bcc0601f9c45d8a654dbf08be",
+  "appendOnly": true,
+  "previousTraversal": "Inferno 041 sealed",
+  "scene": "Two processions meet in the flames of lust; Dante encounters Guido Guinizzelli and Arnaut Daniel",
+  "story": [
+    "Dante travels along the outer edge of the seventh terrace beside the fire. The penitents within notice his living shadow, which interrupts the light, and ask him how a living body can walk on Purgatory's path.",
+    "A second company of souls approaches through the flames in the opposite direction. The two groups briefly greet one another with a chaste kiss and then separate, crying out examples of forbidden or disordered desire: Sodom and Gomorrah from one group, Pasiphae from the other.",
+    "Dante answers that he is alive and bound upward, then asks who the penitents are. One speaker identifies himself as Guido Guinizzelli, a poet Dante reveres as a predecessor in the language of love.",
+    "Guido discourages excessive praise of himself and points instead to Arnaut Daniel as a greater craftsman in the vernacular. He cautions that reputation and fashionable judgment can obscure true poetic worth.",
+    "Arnaut Daniel speaks in his own Occitan language, acknowledges his folly, expresses hope through repentance, and asks Dante to remember him in prayer. He then disappears back into the purifying flames.",
+    "Dante continues with Virgil and Statius. He has witnessed a meeting, a parting and two poetic recognitions, but has not yet passed through the final fire or lost his last P."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Dante",
+      "semantic": "A living shadow makes the traveler's distinct state observable; he receives the testimony of two poets without treating praise as possession",
+      "somatic": "CAST_SHADOW_ANSWER_ASK_LISTEN_CONTINUE"
+    },
+    {
+      "actor": "Two penitential groups",
+      "semantic": "Confession and restraint make possible a brief greeting without returning to former excess",
+      "somatic": "APPROACH_KISS_SEPARATE_CALL"
+    },
+    {
+      "actor": "Guido Guinizzelli",
+      "semantic": "Poetic lineage can honor a predecessor while admitting the merit of another voice",
+      "somatic": "IDENTIFY_DEFLECT_PRAISE_POINT"
+    },
+    {
+      "actor": "Arnaut Daniel",
+      "semantic": "A soul may confess and speak in his own tongue while remaining within purification",
+      "somatic": "SPEAK_CONFESS_REQUEST_PRAYER_RETURN_TO_FIRE"
+    },
+    {
+      "actor": "Virgil and Statius",
+      "semantic": "Guidance continues along the threshold without crossing the flame prematurely",
+      "somatic": "WALK_ACCOMPANY"
+    }
+  ],
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "meeting of two companies",
+      "action": "SEE two groups MEET, KISS and PART while crying examples of lust",
+      "observable": "two processions and their chants directly encountered on the terrace"
+    },
+    {
+      "id": "B",
+      "semantic": "Guido and poetic lineage",
+      "action": "HEAR Guido Guinizzelli IDENTIFY himself and PRAISE Arnaut above himself",
+      "observable": "the ranking of poets is Guido's judgment, not a permanent objective hierarchy"
+    },
+    {
+      "id": "C",
+      "semantic": "Arnaut's confession",
+      "action": "HEAR Arnaut speak Occitan, REQUEST prayer and RETURN into flame",
+      "observable": "Arnaut's voice is witnessed; no angelic erasure of Dante's last P occurs"
+    }
+  ],
+  "alchemicalReading": "The two processions exchange acknowledgment without possession; literary influence travels through different voices and languages. Flames continue to discipline desire, but Dante's personal final crossing remains ahead.",
+  "invariant": "The kiss is an encounter, not a release; poetic praise is attributed testimony, not proof of an absolute ranking. The last P remains one throughout Canto XXVI.",
+  "previousP": 1,
+  "remainingP": 1,
+  "marksRemovedThisChapter": 0,
+  "next": "Purgatorio XXVII — Dante passes through the wall of fire, dreams of Leah and Rachel, and Virgil announces freedom of will",
+  "sealInfernoUntouched": true
+}
