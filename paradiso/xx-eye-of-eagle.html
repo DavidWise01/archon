@@ -1,0 +1,67 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Paradiso XX — The Eye of the Eagle</title>
+<style>
+:root{color-scheme:dark;font:16px system-ui,Segoe UI,sans-serif;background:#080c16;color:#eef2fc}*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(ellipse at 70% 20%,#25334f 0%,#0b1225 54%,#070a12 100%);min-height:100vh}
+header,footer{padding:18px clamp(18px,4vw,55px);border-bottom:1px solid #ffffff24}footer{border-top:1px solid #ffffff24;border-bottom:0;color:#9baec5;font-size:12px}a{color:#cae6ff}
+main{max-width:1250px;margin:auto;padding:22px 18px 45px}.eyebrow{font-size:11px;letter-spacing:.2em;color:#f2bd78;text-transform:uppercase}
+h1{font-size:clamp(34px,5vw,66px);line-height:1.04;margin:12px 0}h2{font-size:21px;margin:24px 0 8px}p{color:#c6d6eb;line-height:1.68}
+.layout{display:grid;grid-template-columns:1fr 1.45fr;gap:24px}.panel{border:1px solid #698ba557;border-radius:18px;background:#101b2cc0;box-shadow:0 25px 70px #0008;overflow:hidden}
+canvas{width:100%;aspect-ratio:10/7;display:block}.controls{padding:14px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;border-top:1px solid #ffffff24}
+button{cursor:pointer;background:#20354c;border:1px solid #5e7c96;color:#f1f6ff;border-radius:8px;padding:9px 12px}button.active{background:#f5ce86;color:#142232}
+label{font-size:12px;display:inline-flex;align-items:center;gap:7px}input{accent-color:#f4ca80}
+.caption{color:#9cb3c9;font-size:12px;padding:0 16px 14px}
+.witnesses{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.witness{border:1px solid #6d88a74f;background:#18273a;border-radius:11px;padding:12px;text-align:left}
+.witness b{display:block;color:#f1d296}.witness span{display:block;color:#bbcbda;font-size:12px;margin-top:6px}
+blockquote{border-left:3px solid #f1c47d;padding:7px 16px;margin:20px 0;color:#fff0c9;font-size:20px}
+code{color:#e8ca91;background:#1c2b43;padding:4px;border-radius:4px}
+@media(max-width:850px){.layout{grid-template-columns:1fr}.witnesses{grid-template-columns:repeat(2,1fr)}}
+</style></head><body><header><small class="eyebrow">DavidWise01 / archon · Dante's ascent</small> · <a href="xix-speaking-eagle.html">Previous: XIX</a> · <a href="README.md">Ledger</a></header>
+<main><div class="layout"><article><div class="eyebrow">Canto XX · Jupiter · Natural Boundary 020</div><h1>The Eye of the Eagle</h1>
+<p>The eagle speaks again. Within its eye and brow, six luminous souls become visible. Dante discovers that the truth of a life cannot always be determined from its outward record.</p>
+<p><strong>David</strong> shines at the pupil. Across the brow are <strong>Trajan, Hezekiah, Constantine, William II of Sicily, and Ripheus</strong>.</p>
+<blockquote>The eye sees — but the observer must not presume to see everything.</blockquote>
+<h2>The apparent exceptions</h2><p>Trajan and Ripheus seem especially surprising to Dante. The eagle explains their salvation through extraordinary divine grace. It does not invite a human judge to claim access to the unseen judgments of God.</p>
+<h2>The chromatic boundary</h2><p>Our symbolic eightfold core and the twenty-four witnesses stay intact, while six selected lights form a focal structure. The six are not new souls created by the selection: they are six named members of the eagle's company.</p>
+<p><code>[8] + {24} → (6 focal lights) → |1 eye|</code></p>
+<p>In our model, <strong>attention changes; identity does not.</strong> An observation can become more focused without becoming omniscient.</p>
+</article>
+<section class="panel"><canvas id="view" width="1000" height="700" aria-label="Animated eagle eye with six selectable radiant witnesses"></canvas>
+<div class="controls"><button data-mode="0">Eagle</button><button data-mode="1" class="active">Eye</button><button data-mode="2">Six lights</button><button data-mode="3">Chroma core</button><label>Phase <input id="phase" type="range" min="0" max="360" value="20"></label><label>Chroma <input id="chroma" type="range" min="0" max="100" value="88"></label><button id="play">Pause</button></div><div class="caption">Interactive symbolic model · Canvas2D · six focal witnesses, 24 preserved model points, eight chromatic vertices. Not a physical quantum dot model.</div></section></div>
+<h2>The six lights of the eye</h2><div class="witnesses">
+<div class="witness"><b>David · pupil</b><span>Psalmist and king; the central light of the eye.</span></div>
+<div class="witness"><b>Trajan · brow</b><span>Roman emperor; a surprising exemplar of grace in Dante's account.</span></div>
+<div class="witness"><b>Hezekiah · brow</b><span>King of Judah; prayer and the extension of life.</span></div>
+<div class="witness"><b>Constantine · brow</b><span>Emperor whose intentions and historical effects require distinction.</span></div>
+<div class="witness"><b>William II · brow</b><span>King of Sicily, contrasted with less just rulers.</span></div>
+<div class="witness"><b>Ripheus · brow</b><span>A virtuous Trojan whose presence astonishes Dante.</span></div></div>
+<h2>Invariant XX — Focal selection without erasure</h2><p>Selection is not deletion. The observer concentrates on six lights; the remaining witnesses persist. Neither the selection nor its apparent coherence proves the observer's judgment complete.</p>
+<p><strong>Next: Paradiso XXI — Saturn, the Golden Ladder.</strong> Dante enters the contemplative heaven. The singing stops, and ascent becomes a ladder stretching beyond sight.</p></main>
+<footer>DLW · Canto XX · append-only · 2026-11-08 · A literary and symbolic visualization</footer>
+<script>
+const cv=document.getElementById('view'),ctx=cv.getContext('2d');
+let mode=1,phase=.35,chroma=.88,run=true,t=0;
+const controls=[...document.querySelectorAll('[data-mode]')];controls.forEach(b=>b.onclick=()=>{mode=+b.dataset.mode;controls.forEach(c=>c.classList.toggle('active',c===b))});
+document.getElementById('phase').oninput=e=>phase=+e.target.value*Math.PI/180;
+document.getElementById('chroma').oninput=e=>chroma=+e.target.value/100;
+document.getElementById('play').onclick=e=>{run=!run;e.target.textContent=run?'Pause':'Play'};
+const labels=['DAVID','TRAJAN','HEZEKIAH','CONSTANTINE','WILLIAM II','RIPHEUS'];
+const palette=[[247,204,133],[115,188,229],[226,155,197],[137,215,185]];
+function rgb(v){return 'rgb('+v.map(x=>Math.round(x)).join(',')+')'}
+function dot(x,y,r,col,glow=18){ctx.fillStyle=col;ctx.shadowColor=col;ctx.shadowBlur=glow;ctx.beginPath();ctx.arc(x,y,r,0,Math.PI*2);ctx.fill();ctx.shadowBlur=0}
+function draw(){if(run)t+=.012;const w=cv.width,h=cv.height;ctx.clearRect(0,0,w,h);
+const grd=ctx.createRadialGradient(500,325,10,500,325,600);grd.addColorStop(0,'#1e3956');grd.addColorStop(1,'#070c1b');ctx.fillStyle=grd;ctx.fillRect(0,0,w,h);
+const center=[500,327];let positions=[];
+for(let i=0;i<24;i++){let a=i*Math.PI/12 + (mode===0?t*.12:phase*.12),r=215+18*Math.sin(i*1.35);positions.push([500+r*Math.cos(a),327+r*Math.sin(a)*.66]);}
+if(mode===0){ctx.strokeStyle='#e5c27b66';ctx.lineWidth=3;ctx.beginPath();ctx.moveTo(185,260);ctx.quadraticCurveTo(390,70,500,260);ctx.quadraticCurveTo(620,70,820,260);ctx.moveTo(345,360);ctx.lineTo(500,570);ctx.lineTo(655,360);ctx.stroke();}
+if(mode===1||mode===2){ctx.beginPath();ctx.ellipse(500,330,200,102,0,0,Math.PI*2);ctx.fillStyle='#b8b4de18';ctx.fill();ctx.strokeStyle='#b2c5de75';ctx.lineWidth=2;ctx.stroke();}
+positions.forEach(([x,y],i)=>{let p=palette[i%4].map(n=>150*(1-chroma)+n*chroma);dot(x,y,5.2,rgb(p),14)});
+const core=[];
+for(let i=0;i<8;i++){let a=i*Math.PI/4 +phase+t*.15;core.push([500+35*Math.cos(a),327+35*Math.sin(a)*.74]);}
+if(mode===3){ctx.strokeStyle='#b9cfdb99';ctx.lineWidth=2;core.forEach((p,i)=>{let q=core[(i+1)%8];ctx.beginPath();ctx.moveTo(...p);ctx.lineTo(...q);ctx.stroke();});}
+core.forEach((p,i)=>dot(...p,5,rgb(palette[i%4].map(n=>160*(1-chroma)+n*chroma)),12));
+dot(500,327,10,'#fff3c6',38);
+const six=[[500,327],[340,261],[409,222],[500,204],[590,222],[670,261]];
+if(mode===1||mode===2){six.forEach(([x,y],i)=>{dot(x,y,i===0?11:8,i===0?'#fff9d5':'#f3c982',36);if(mode===2){ctx.fillStyle='#e1efff';ctx.font='15px system-ui';ctx.textAlign='center';ctx.fillText(labels[i],x,i===0?y+43:y-22)}});}
+ctx.font='15px system-ui';ctx.fillStyle='#d0deed';ctx.textAlign='left';ctx.fillText(['THE SPEAKING EAGLE','THE EYE · SIX LIGHTS','SIX NAMED SOULS','THE PRESERVED CHROMATIC CORE'][mode],37,50);
+requestAnimationFrame(draw)}draw();
+</script></body></html>
