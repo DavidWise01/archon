@@ -1,0 +1,77 @@
+{
+  "protocol": "archon/alchemical-living-thread/paradiso-v1",
+  "chapter": "Paradiso III",
+  "paradiso": 3,
+  "identity": "{{i}}",
+  "parent": "alchemy/paradiso/002.json",
+  "parentBlobSha": "677171243c452eec7458a81518230314cb81c154",
+  "appendOnly": true,
+  "previousTraversal": "Purgatorio XXXIII complete; Inferno 041 sealed",
+  "scene": "Pale faces appear like reflections in the lunar light; Piccarda Donati explains vows broken through force and the harmony of blessed wills, and identifies Constance",
+  "story": [
+    "In the first sphere of Heaven, Dante sees delicate faces appearing almost as reflections in clear glass or still shallow water. Thinking the images are reflected faces, he turns to look behind him, but sees nothing; Beatrice smiles and tells him they are true spirits.",
+    "Dante addresses one of the souls, who identifies herself as Piccarda Donati, Forese's sister. Her appearance has changed so greatly that Dante first failed to recognize her, though she remembers him.",
+    "Dante asks whether the blessed souls of the Moon desire to rise to a higher sphere and see God more closely. Piccarda answers that charity brings their wills into harmony with divine will: they do not wish for a different station, since peace resides in willing what God wills.",
+    "Piccarda explains that she had entered the religious life, professing vows, but people forced her away from her convent into the world. The imposed departure, and the vows left unfulfilled, are associated with the Moon's degree of blessedness in the vision. The distinction between the violence suffered and the will's consent awaits further examination in Canto IV.",
+    "She points out another shining soul: Constance, wife of Emperor Henry VI and mother of Frederick II. Piccarda associates her too with removal from religious vows, giving her account within the poem rather than a securely established historical report.",
+    "Piccarda fades as she sings Ave Maria. Dante turns toward Beatrice, who shines so brilliantly that he is initially overwhelmed. The canto closes with new questions, not with an angelic cleansing or a change to the completed memory rites."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Dante",
+      "semantic": "An apparent reflection becomes an actual encounter when challenged and approached; recognition must consider a changed appearance",
+      "somatic": "SEE_TURN_VERIFY_ASK_RECOGNIZE_LISTEN"
+    },
+    {
+      "actor": "Beatrice",
+      "semantic": "Corrects an observational mistake without replacing the observer's own inquiry",
+      "somatic": "SMILE_CORRECT_GUIDE"
+    },
+    {
+      "actor": "Piccarda Donati",
+      "semantic": "A coerced breach of vows and a blessed will harmonized with divine love are distinct from mere personal ambition",
+      "somatic": "IDENTIFY_EXPLAIN_ATTEST_SING_FADE"
+    },
+    {
+      "actor": "Constance (as named by Piccarda)",
+      "semantic": "A second example is presented through Piccarda's testimony; the historical claim remains attributed",
+      "somatic": "APPEAR_BE_IDENTIFIED"
+    },
+    {
+      "actor": "Moon's luminous souls",
+      "semantic": "Apparent placement and degrees of disclosure do not establish competitive envy among the blessed",
+      "somatic": "SHINE_APPEAR"
+    }
+  ],
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "reflections corrected",
+      "action": "SEE pale faces like reflections; Dante TURNS and finds no source behind, and Beatrice EXPLAINS these are souls",
+      "observable": "perceptual hypothesis is tested and corrected within the poem"
+    },
+    {
+      "id": "B",
+      "semantic": "Piccarda and freedom",
+      "action": "HEAR Piccarda IDENTIFY herself, DESCRIBE coercion and EXPLAIN the peace of wills in divine harmony",
+      "observable": "coercion is attributed testimony; a will aligned with God does not seek a higher position"
+    },
+    {
+      "id": "C",
+      "semantic": "Constance and fading",
+      "action": "HEAR Piccarda NAME Constance, then SING Ave Maria and FADE into light",
+      "observable": "Constance's past is presented through Piccarda's voice; the Moon scene ends with no new cleansing"
+    }
+  ],
+  "alchemicalReading": "An image mistaken for reflection becomes a recognized speaker. Freedom cannot be reduced to rank or competition: coercion and the soul's own willing must remain distinct. Blessedness is narrated as harmony of will without envy.",
+  "invariant": "Observe → test → correct the reflected-face hypothesis; separate coerced departure from a voluntary vow-breaking decision and attribute Piccarda's historic claims. Seven P marks remain zero; Lethe and Eunoe remain performed.",
+  "previousP": 0,
+  "remainingP": 0,
+  "marksRemovedThisChapter": 0,
+  "letheStatus": "performed",
+  "eunoeStatus": "performed",
+  "purgatorioCompleted": true,
+  "next": "Paradiso IV — Beatrice resolves questions about the Moon's souls, violence and the degrees of willing",
+  "sealInfernoUntouched": true,
+  "sealPurgatorioUntouched": true
+}
