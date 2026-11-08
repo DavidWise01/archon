@@ -1,0 +1,73 @@
+{
+  "protocol": "archon/alchemical-living-thread/paradiso-v1",
+  "chapter": "Paradiso V",
+  "paradiso": 5,
+  "identity": "{{i}}",
+  "parent": "alchemy/paradiso/004.json",
+  "parentBlobSha": "0c98fe0aacdcb32bc4daaa04bf311ef2f9c49fff",
+  "appendOnly": true,
+  "previousTraversal": "Purgatorio XXXIII complete; Inferno 041 sealed",
+  "scene": "Beatrice explains the two elements of a vow, freely offered will and pledged action; she warns against reckless promises, then Dante and Beatrice ascend to Mercury where eager lights approach",
+  "story": [
+    "Dante is overwhelmed by Beatrice's growing brightness. She explains that the light he sees is an expression of love and of the joy she feels as his understanding develops.",
+    "Beatrice answers Dante's question about making up for an unfulfilled vow. Free will is the greatest gift God grants rational beings. A vow freely offers that freedom in a binding commitment, so the gift of willing cannot simply be canceled as though it had never been made.",
+    "She distinguishes two parts of a vow: the agreement or act of consecrating one's will, and the particular thing promised. The first is not casually revoked; under appropriate spiritual authority, the material obligation may sometimes be commuted for something of greater worth.",
+    "Beatrice cautions against impulsive promises, invoking the tragic examples of Jephthah and Agamemnon to show that fulfilling a wrongful or foolish vow can be worse than recognizing the mistake. She urges consultation and discernment rather than self-authorized exchange.",
+    "Beatrice turns toward the next heaven, and Dante recognizes that he has moved into the sphere of Mercury by the increased radiance of his guide and the light around them.",
+    "A multitude of shining souls rushes joyfully toward the visitors like fish approaching a morsel in clear water. One radiant spirit offers to answer Dante's questions. The spirit's identification as Justinian belongs to Canto VI, not here.",
+    "Zero P marks remain, Lethe and Eunoe are already performed, and the completed Purgatorio and sealed Inferno remain unaltered."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Dante",
+      "semantic": "The learner distinguishes a freely undertaken obligation from its negotiable particulars and then enters a new sphere",
+      "somatic": "LISTEN_DISTINGUISH_RECEIVE_WARNING_ASCEND_QUESTION"
+    },
+    {
+      "actor": "Beatrice",
+      "semantic": "Safeguards free will by refusing to collapse binding consent into an interchangeable promised object",
+      "somatic": "EXPLAIN_SEPARATE_WARN_ASCEND"
+    },
+    {
+      "actor": "Mercury's shining souls",
+      "semantic": "New witnesses freely welcome the traveler, but individual identity must await their introduction",
+      "somatic": "GLOW_APPROACH_OFFER_TO_SPEAK"
+    },
+    {
+      "actor": "Jephthah and Agamemnon (examples)",
+      "semantic": "Examples of rash vows are recalled as cautionary narratives, not events that recur here",
+      "somatic": "BE_RECOUNTED"
+    }
+  ],
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "matter and form of vows",
+      "action": "HEAR Beatrice distinguish consecrated consent from the specific promised offering",
+      "observable": "two different elements of a vow are articulated; an exchange is not equivalent to undoing the initial act of will"
+    },
+    {
+      "id": "B",
+      "semantic": "warning against rash vows",
+      "action": "HEAR Beatrice invoke Jephthah and Agamemnon and urge discernment",
+      "observable": "examples are narrated warnings; no new vow is made by Dante"
+    },
+    {
+      "id": "C",
+      "semantic": "Mercury's eager lights",
+      "action": "SEE the rising radiance and shining spirits approach and invite questions",
+      "observable": "Mercury is entered; an approaching speaker is not identified as Justinian until Canto VI"
+    }
+  ],
+  "alchemicalReading": "The next boundary separates an invariant freely given commitment from a variable pledged performance. Discernment and competent authority matter before substituting obligations. The completed vow lesson opens the sphere of Mercury, where identification of the new witness remains deferred.",
+  "invariant": "Never confuse a vow's freely undertaken binding commitment with the material thing promised; a permissible substitution is not arbitrary erasure of consent. No Justinian identification in V. P=0 and both waters complete.",
+  "previousP": 0,
+  "remainingP": 0,
+  "marksRemovedThisChapter": 0,
+  "letheStatus": "performed",
+  "eunoeStatus": "performed",
+  "purgatorioCompleted": true,
+  "next": "Paradiso VI — Justinian identifies himself and recounts the history of the Roman eagle",
+  "sealInfernoUntouched": true,
+  "sealPurgatorioUntouched": true
+}
