@@ -28,6 +28,7 @@ Policy: append-only chapter files; do not replace historical releases.
 | XXIII | Fixed Stars | Triumph of Christ, Mary and Gabriel | Preserve signal and observer capacity separately |
 | XXIV | Fixed Stars | Saint Peter examines Dante's faith | Preserve grounds and provenance when asserting a claim |
 | XXV | Fixed Stars | Saint James examines hope; Saint John arrives | Distinguish anticipated future from observed present |
+| XXVI | Fixed Stars | Saint John examines love; Adam explains changing language | Preserve referents while names change |
 
 ## Repository artifacts
 - [Canto XIX interactive HTML](xix-speaking-eagle.html) — committed 2026-11-08.
@@ -37,12 +38,13 @@ Policy: append-only chapter files; do not replace historical releases.
 - [Canto XXIII interactive HTML](xxiii-triumph-of-light.html) — committed 2026-11-08.
 - [Canto XXIV interactive HTML](xxiv-examination-of-faith.html) — committed 2026-11-08.
 - [Canto XXV interactive HTML](xxv-examination-of-hope.html) — committed 2026-11-08.
+- [Canto XXVI interactive HTML](xxvi-love-and-language.html) — committed 2026-11-08.
 
 ## Provenance and completeness
 
-This ledger summarizes prior chat chapters. Earlier interactive HTML files (IX–XVIII) were generated as conversation artifacts, but **they are not claimed as committed to this repository**. Their original bytes must be recovered and checked before any exact archival claims. Cantos XIX–XXV have been independently committed and verified through the GitHub connector.
+This ledger summarizes prior chat chapters. Earlier interactive HTML files (IX–XVIII) were generated as conversation artifacts, but **they are not claimed as committed to this repository**. Their original bytes must be recovered and checked before any exact archival claims. Cantos XIX–XXVI have been independently committed and verified through the GitHub connector.
 
 Symbolic geometry (8 vertices, 24 witnesses, 1 center) is an interpretive model, not a literal translation of Dante's numerical cosmology or a physical quantum dot simulation.
 
 ## Next
-Paradiso XXVI — The Examination of Love: Saint John tests Dante on charity; Adam discusses language and time.
+Paradiso XXVII — Saint Peter's rebuke and the Primum Mobile: the horizon of celestial motion and time.
