@@ -1,0 +1,77 @@
+{
+  "protocol": "archon/alchemical-living-thread/ascent-v1",
+  "chapter": "Purgatorio XXXIII",
+  "ascent": 33,
+  "identity": "{{i}}",
+  "parent": "alchemy/ascent/032.json",
+  "parentBlobSha": "310a6d88c6f3a1bc48ee267e23f8d162789d1de5",
+  "appendOnly": true,
+  "previousTraversal": "Inferno 041 sealed",
+  "scene": "Beatrice gives Dante a prophetic charge; Matelda brings Dante and Statius to Eunoe, and its restorative water completes Purgatorio",
+  "story": [
+    "The seven women lament the chariot's loss with the opening of Psalm 79, 'Deus, venerunt gentes'. Beatrice responds with the words 'Modicum, et non videbitis me; et iterum, modicum, et vos videbitis me', and leads Dante onward with the women and sages.",
+    "Beatrice foretells that the corrupted chariot and its captor will not remain unchallenged. She invokes a mysterious 'five hundred, ten and five' (DXV) who will defeat the giant and the woman. The cryptic figure is a prophecy within the poem, not an event Dante witnesses.",
+    "Beatrice commands Dante to remember what he has seen and report it faithfully when he returns to the living, even though he does not yet fully understand her allegory. Dante admits his difficulty comprehending her words.",
+    "They reach another clear spring and stream. Beatrice directs Matelda to guide Dante to Eunoe, whose function is to restore the memory of good deeds. Statius accompanies Dante.",
+    "Matelda brings Dante to Eunoe and gives him the restorative water. Having drunk both Lethe and Eunoe, Dante is renewed, like young plants newly clothed with leaves, and ready to rise to the stars.",
+    "The thirty-three cantos of Purgatorio conclude. The seven P marks remain zero; Lethe and Eunoe have both been performed. Paradiso begins next; the completed ascent and earlier Inferno remain sealed as provenance."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Beatrice",
+      "semantic": "A symbolic account can be entrusted to a witness without pretending all its elements are already understood",
+      "somatic": "LAMENT_PROPHESY_CHARGE_GUIDE"
+    },
+    {
+      "actor": "Dante",
+      "semantic": "Faithful witness remembers the message; the second water restores positive memory and readiness for the next journey",
+      "somatic": "LISTEN_QUESTION_REMEMBER_APPROACH_DRINK_RISE"
+    },
+    {
+      "actor": "Matelda",
+      "semantic": "The previously pending water is administered to complete a distinct restorative operation",
+      "somatic": "LEAD_OFFER_EUNOE"
+    },
+    {
+      "actor": "Statius",
+      "semantic": "Accompanies the final memory rite",
+      "somatic": "ACCOMPANY_WITNESS"
+    },
+    {
+      "actor": "Eunoe",
+      "semantic": "Restoration of remembered goodness follows Lethe's completed release of sinful memory",
+      "somatic": "FLOW_RESTORE"
+    }
+  ],
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "prophetic charge",
+      "action": "HEAR Beatrice PROPHESY DXV and CHARGE Dante to remember and report the vision",
+      "observable": "prophecy and commission are her speech, not proof of fulfilled future events"
+    },
+    {
+      "id": "B",
+      "semantic": "Eunoe actually received",
+      "action": "SEE Matelda LEAD Dante to EUNOE with Statius and HEAR that Dante DRINKS its water",
+      "observable": "the second memory operation now occurs rather than remaining promised"
+    },
+    {
+      "id": "C",
+      "semantic": "completion and readiness",
+      "action": "WITNESS Dante's renewal and his stated READINESS to rise to the stars",
+      "observable": "Purgatorio ends, both waters performed, seven P marks remain cleared"
+    }
+  ],
+  "alchemicalReading": "The final vessel does not erase history. Lethe releases remembrance of sin; Eunoe restores the memory of good. After the witnessed second rite, readiness is asserted in the poem and the complete thirty-three-canto ascent can be sealed as a new milestone.",
+  "invariant": "Eunoe is marked performed only after Dante actually drinks it in XXXIII. Lethe remains performed from XXXI; zero P marks remain; Beatrice's DXV prophecy is attributed speech, not independently verified future history.",
+  "previousP": 0,
+  "remainingP": 0,
+  "marksRemovedThisChapter": 0,
+  "letheStatus": "performed",
+  "eunoeStatus": "performed",
+  "purgatorioCompleted": true,
+  "purgatorioCanticles": 33,
+  "next": "Paradiso I — Dante and Beatrice rise beyond the earthly paradise and the heavens unfold",
+  "sealInfernoUntouched": true
+}
