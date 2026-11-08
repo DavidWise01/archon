@@ -1,0 +1,67 @@
+{
+  "protocol": "archon/alchemical-living-thread/paradiso-v1",
+  "chapter": "Paradiso I",
+  "paradiso": 1,
+  "identity": "{{i}}",
+  "parent": "alchemy/ascent/033.json",
+  "parentBlobSha": "493a1cafd69ccb9b564f62b3b5796ca3defe6b90",
+  "appendOnly": true,
+  "previousTraversal": "Purgatorio XXXIII complete; Inferno 041 sealed",
+  "scene": "After invoking Apollo, Dante watches Beatrice gaze into the sun, feels the harmony of the spheres, and learns from her why ascent is natural to a rightly ordered soul",
+  "story": [
+    "The poem opens by declaring that divine glory penetrates and shines throughout the universe, though in differing degrees. Dante invokes Apollo for the strength to speak of what exceeds his ordinary powers of memory and language.",
+    "At the summit of the mountain, around the time of the vernal equinox, Beatrice turns toward the rising sun. Dante follows her gaze and finds he can look longer than his earthly abilities would ordinarily allow. His account marks the experience as transformed rather than a technique for safely looking at the physical Sun.",
+    "Dante feels himself passing beyond ordinary human limitations. He hears the harmony of the great heavenly spheres and sees an extraordinary increase of light, prompting him to wonder what has happened.",
+    "Beatrice explains that he has risen beyond the sphere of fire, and that there is no cause for amazement: all created things tend toward their appointed place according to an ordering that comes from God.",
+    "Dante asks why he should ascend at all. Beatrice answers with the image of a rightly directed flame: a soul purified and no longer impeded naturally rises toward its proper end, whereas misdirected wills can turn aside from that order.",
+    "The canto ends with Beatrice looking upward toward Heaven and Dante contemplating the direction of their ascent. The first named heavenly sphere, the Moon, is entered in Paradiso II, not yet here."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Dante",
+      "semantic": "The speaker acknowledges limits of memory and description while perceiving an ascent beyond ordinary human conditions",
+      "somatic": "INVOKE_GAZE_LISTEN_QUESTION_ASCEND"
+    },
+    {
+      "actor": "Beatrice",
+      "semantic": "Guidance explains motion through the poem's theological order without confusing poetic cosmology with modern physics",
+      "somatic": "LOOK_UP_EXPLAIN_ILLUSTRATE_GUIDE"
+    },
+    {
+      "actor": "Heavenly harmony and light",
+      "semantic": "Audible and luminous signs accompany an ascent that Dante cannot yet fully describe",
+      "somatic": "SOUND_SHINE_SURROUND"
+    }
+  ],
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "invocation and vision",
+      "action": "HEAR Dante INVOKE Apollo and SEE Beatrice TURN toward the sun",
+      "observable": "the invocation and gaze are narrative actions; the episode is not real-world instruction to stare at sunlight"
+    },
+    {
+      "id": "B",
+      "semantic": "ascent and wonder",
+      "action": "WITNESS intense LIGHT and HEAR celestial HARMONY as Dante notices he is rising",
+      "observable": "the transformation is experienced within the poem, without a modern physical velocity claim"
+    },
+    {
+      "id": "C",
+      "semantic": "Beatrice explains order",
+      "action": "HEAR Beatrice EXPLAIN that each creature is drawn toward its ordained end and a purified soul rises like a rightly directed flame",
+      "observable": "the explanation is the poem's philosophical theology; no lunar sphere encounter yet"
+    }
+  ],
+  "alchemicalReading": "With the sevenfold purgation and both memory waters complete, the vessel is not pushed into heaven: it follows an ordering analogous to a flame rising. Transformation of understanding, not quantitative propulsion, is the next boundary.",
+  "invariant": "Purgatorio's 33-canto sequence remains immutable, seven P marks remain zero, Lethe and Eunoe remain performed. Paradiso I is ascent beyond the terrestrial summit, not yet the Moon encounter of Paradiso II.",
+  "previousP": 0,
+  "remainingP": 0,
+  "marksRemovedThisChapter": 0,
+  "letheStatus": "performed",
+  "eunoeStatus": "performed",
+  "purgatorioCompleted": true,
+  "next": "Paradiso II — the sphere of the Moon and Beatrice's explanation of apparent dark spots",
+  "sealInfernoUntouched": true,
+  "sealPurgatorioUntouched": true
+}
