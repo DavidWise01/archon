@@ -1,0 +1,41 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Paradiso XXVI — Love and the First Language</title><style>
+:root{color-scheme:dark;font-family:system-ui,Segoe UI,sans-serif;background:#080d1c;color:#eef3ff}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 66% 12%,#293a51,#090f20 64%,#060913)}header,footer{padding:17px 4vw;border-bottom:1px solid #ffffff26}footer{border-top:1px solid #ffffff26;border-bottom:0;font-size:12px;color:#9caec4}a{color:#bde4ff}main{max-width:1250px;margin:auto;padding:30px 20px 70px}.top{display:grid;grid-template-columns:1fr 1.4fr;gap:24px}.eyebrow{color:#e9c78f;letter-spacing:.18em;font-size:11px;text-transform:uppercase}h1{font-size:clamp(35px,5vw,66px);line-height:1.05;margin:15px 0}h2{font-size:22px;margin:25px 0 10px}p{line-height:1.7;color:#cbd7e9}strong{color:#ffe3b1}.panel{border:1px solid #7599b25e;background:#0f1b30e8;box-shadow:0 24px 60px #0008;border-radius:18px;overflow:hidden}canvas{width:100%;aspect-ratio:10/8;display:block}.controls{padding:15px;display:flex;gap:9px;align-items:center;flex-wrap:wrap;border-top:1px solid #ffffff20}button{cursor:pointer;background:#21374e;border:1px solid #63839c;color:#f3f7fd;border-radius:8px;padding:9px 12px}button.active{background:#f3cb87;color:#142437}label{display:flex;align-items:center;gap:7px;font-size:12px}input{accent-color:#eec17e}.note{color:#9bb1c8;font-size:12px;padding:0 15px 15px}.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.pillars div{border:1px solid #63849e66;border-radius:11px;background:#142338;padding:13px;text-align:center}.pillars small{color:#a8bad0}blockquote{border-left:3px solid #e9bd79;padding:7px 17px;margin:20px 0;font-size:20px;color:#fbe7bf}code{color:#f5d39c;background:#203148;border-radius:4px;padding:3px 5px}@media(max-width:850px){.top{grid-template-columns:1fr}}</style></head><body>
+<header><span class="eyebrow">DavidWise01 / archon · Dante's ascent</span> · <a href="xxv-examination-of-hope.html">Previous XXV</a> · <a href="README.md">Ledger</a></header>
+<main><div class="top"><article><span class="eyebrow">Paradiso XXVI · Fixed Stars · Natural Boundary 026</span><h1>Love and the First Language</h1>
+<p>Dante's sight is clouded by the brilliance of Saint John, but John continues the third examination. What is the true object of love, and why is it worthy of love?</p>
+<p>Dante answers that <strong>God is the supreme good</strong>, and that all other worthy loves take their measure from that source. Scripture, philosophy, and the experience of goodness help him explain why.</p>
+<blockquote>The light can be beyond sight, and love can still orient the will.</blockquote>
+<p>Dante's sight returns. A fourth soul joins Peter, James, and John: <strong>Adam</strong>. Dante asks when Adam was created, how long he lived in Eden, what caused his expulsion, and what language he spoke.</p>
+<p>Adam's answer is startling: <strong>human language changes over time.</strong> The name used for God before Babel was not the same as the later name. Words are human conventions that vary with custom and history.</p>
+<h2>The natural boundary</h2><p>Meaning and its linguistic representation are not identical. Names can change while speakers continue referring to a shared object. Equally, matching labels do not guarantee matching meaning.</p>
+<p><code>[referent] → {name at t₁} → {name at t₂} → |continuity tested|</code></p>
+<p>Adam also explains that the forbidden act was not mere tasting, but the transgression of a boundary. In the poem the fall concerns will and obedience, not simply the fruit as an object.</p></article>
+<section class="panel"><canvas id="sky" width="1000" height="800" aria-label="Animated eightfold chroma core and twenty-four witness dots in the examination of love and language"></canvas>
+<div class="controls"><button data-mode="0">Faith</button><button data-mode="1">Hope</button><button data-mode="2" class="active">Love</button><button data-mode="3">Language</button><label>Phase <input id="phase" type="range" min="0" max="360" value="25"></label><label>Chroma <input id="chroma" type="range" min="0" max="100" value="86"></label><label>Time <input id="time" type="range" min="0" max="100" value="50"></label><button id="pause">Pause</button></div>
+<div class="note" id="status">8 chromatic vertices · 24 witness points · 1 central referent. The labels in Language mode are illustrative, not reconstructed historical pronunciation.</div></section></div>
+<h2>Three examinations, one responsibility</h2><div class="pillars"><div><strong>Faith</strong><p>What do I believe?</p><small>Peter · XXIV</small></div><div><strong>Hope</strong><p>What good do I await?</p><small>James · XXV</small></div><div><strong>Love</strong><p>What is worth choosing?</p><small>John · XXVI</small></div></div>
+<h2>Invariant XXVI — Semantic continuity under renaming</h2><p>The visual model keeps eight chromatic vertices, twenty-four witness positions, and a single center. Language mode shifts a label through time without relocating the central referent. That is a deliberate interpretive model, not a claim about physical quantum dots or a historical reconstruction of Adamic language.</p>
+<p><code>observe → name → transmit → compare referents → revise naming</code></p>
+<h2>Next natural boundary — Paradiso XXVII</h2><p><strong>Peter's fiery rebuke and the Primum Mobile.</strong> The apostle condemns corruption in the Church. Dante and Beatrice ascend beyond the Fixed Stars to the sphere of the first movement, where direction, time, and the turning heavens demand a new frame.</p></main>
+<footer>DLW · Paradiso XXVI · append-only · 2026-11-08 · Literature and symbolic chroma geometry</footer>
+<script>
+const cv=document.querySelector('#sky'),g=cv.getContext('2d'),W=cv.width,H=cv.height;
+let mode=2,phase=25*Math.PI/180,chroma=.86,epoch=.5,paused=false,t=0;
+const palette=[[245,190,120],[119,191,228],[213,148,207],[135,213,177]];
+function col(p){return 'rgb('+p.map(v=>Math.round(v)).join(',')+')'}
+function dot(x,y,r,c,blur=16){g.beginPath();g.fillStyle=c;g.shadowColor=c;g.shadowBlur=blur;g.arc(x,y,r,0,7);g.fill();g.shadowBlur=0}
+document.querySelectorAll('[data-mode]').forEach(b=>b.onclick=()=>{mode=+b.dataset.mode;document.querySelectorAll('[data-mode]').forEach(x=>x.classList.toggle('active',x===b))});
+document.querySelector('#phase').oninput=e=>phase=+e.target.value*Math.PI/180;
+document.querySelector('#chroma').oninput=e=>chroma=+e.target.value/100;
+document.querySelector('#time').oninput=e=>epoch=+e.target.value/100;
+document.querySelector('#pause').onclick=e=>{paused=!paused;e.target.textContent=paused?'Play':'Pause'};
+function draw(){if(!paused)t+=.012;const b=g.createRadialGradient(500,390,0,500,390,630);b.addColorStop(0,'#274158');b.addColorStop(1,'#070b1b');g.fillStyle=b;g.fillRect(0,0,W,H);
+for(let i=0;i<90;i++)dot((i*141.7+52)%W,(i*i*31.8+43)%H,1,'#ccd8e7',1);
+for(let i=0;i<24;i++){let a=i*Math.PI/12+phase*.2+t*(mode===2?.12:.06);let r=mode===3?245:210;dot(500+r*Math.cos(a),395+r*.75*Math.sin(a),5,col(palette[i%4].map(c=>153*(1-chroma)+c*chroma)),14)}
+for(let i=0;i<8;i++){let a=i*Math.PI/4-phase-t*.11;dot(500+48*Math.cos(a),395+44*Math.sin(a),5.5,col(palette[i%4].map(c=>155*(1-chroma)+c*chroma)),14)}
+let core=['FAITH','HOPE','LOVE',epoch<.5?'EARLIER NAME':'LATER NAME'][mode];
+dot(500,395,12,'#fff2ce',36);g.font='bold 25px system-ui';g.textAlign='center';g.fillStyle='#ffe5af';g.fillText(core,500,530);
+if(mode===3){g.strokeStyle='#e6be8677';g.setLineDash([5,6]);g.beginPath();g.moveTo(240,595);g.lineTo(760,595);g.stroke();g.setLineDash([]);let xx=240+520*epoch;dot(xx,595,7,'#fff5d6',20);g.font='16px system-ui';g.fillStyle='#d3e3f1';g.fillText('EARLIER',265,633);g.fillText('LATER',735,633);}
+if(mode===2){g.strokeStyle='#e8bf84';g.lineWidth=2;for(let j=0;j<3;j++){g.beginPath();g.arc(500,395,86+j*28,0,7);g.stroke()}}
+g.fillStyle='#dbe6f5';g.font='17px system-ui';g.textAlign='left';g.fillText(['PETER · BELIEF','JAMES · EXPECTATION','JOHN · CHARITY','ADAM · LANGUAGE CHANGES'][mode],34,45);requestAnimationFrame(draw)}draw();
+</script></body></html>
