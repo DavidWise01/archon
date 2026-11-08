@@ -1,0 +1,73 @@
+{
+  "protocol": "archon/alchemical-living-thread/ascent-v1",
+  "chapter": "Purgatorio XXIV",
+  "ascent": 24,
+  "identity": "{{i}}",
+  "parent": "alchemy/ascent/023.json",
+  "parentBlobSha": "1d84039001996fd0b1c96b78e6df777e9a4ab945",
+  "appendOnly": true,
+  "previousTraversal": "Inferno 041 sealed",
+  "scene": "Bonagiunta recognizes Dante's sweet new style; Forese departs; a second fruit tree warns against gluttony; the angel removes the sixth P",
+  "story": [
+    "As Dante walks with Forese, he asks about Forese's sister Piccarda. Forese says she is already blessed in Heaven and identifies other emaciated penitents on the sixth terrace.",
+    "Among them Bonagiunta da Lucca asks whether Dante is the poet who began the new love lyrics exemplified by 'Donne ch'avete intelletto d'amore'. Dante answers that he writes what Love dictates within him. Bonagiunta recognizes what distinguished the sweet new style from earlier verse.",
+    "Bonagiunta makes a veiled prediction about Gentucca of Lucca. Forese predicts the violent death of his brother Corso Donati. Both forecasts remain attributed speech rather than events witnessed on the terrace.",
+    "Forese hurries away with the company. Dante rejoins Virgil and Statius and comes to a second fruit tree, where famished penitents reach and withdraw. A voice commands them to continue without approaching and recalls punished excess: the drunken centaurs and Gideon's men.",
+    "Near the stairway a bright angel of temperance directs the three travelers onward, brushes Dante's forehead, and erases the sixth P. The beatitude blesses disciplined hunger and thirst.",
+    "The sixth terrace is completed and the poets approach the seventh, where lust must still be purified. Exactly one mark remains."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Dante",
+      "semantic": "Poetic speech follows inwardly discerned love rather than merely copying an established outer style",
+      "somatic": "LISTEN_ANSWER_WALK_REFRAIN_RECEIVE"
+    },
+    {
+      "actor": "Bonagiunta da Lucca",
+      "semantic": "Recognition of a different poetic method does not require erasing an earlier generation's work",
+      "somatic": "ASK_RECOGNIZE_PROPHESY"
+    },
+    {
+      "actor": "Forese Donati",
+      "semantic": "Friendship permits parting without dissolving recognition; his predictions are attributable testimony",
+      "somatic": "SPEAK_PREDICT_DEPART"
+    },
+    {
+      "actor": "Second fruit tree and voice",
+      "semantic": "Desire is tested by proximity to abundance and the requirement to pass without taking",
+      "somatic": "ATTRACT_WARN_REFRAIN"
+    },
+    {
+      "actor": "Angel of temperance",
+      "semantic": "The sixth completed purification is marked by a witnessed change, two to one",
+      "somatic": "GREET_DIRECT_BRUSH_ERASE"
+    }
+  ],
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "sweet new style",
+      "action": "HEAR Bonagiunta ASK and Dante ANSWER how Love guides his writing",
+      "observable": "a directly heard poetic exchange; prophecies about Gentucca and Corso remain attributed speech"
+    },
+    {
+      "id": "B",
+      "semantic": "second tree and restraint",
+      "action": "SEE hungry souls near the fruit and HEAR examples of punished gluttony",
+      "observable": "tree and voice encountered; ancient examples are recounted, not reenacted"
+    },
+    {
+      "id": "C",
+      "semantic": "sixth P erased",
+      "action": "APPROACH the angel of temperance and RECEIVE the sixth cleansing",
+      "observable": "the mark count changes from two to one at the angelic touch"
+    }
+  ],
+  "alchemicalReading": "The poet's receptivity to love and the body's refusal to grasp forbidden fruit are parallel forms of disciplined attention. A sixth witnessed cleansing releases gluttony's mark.",
+  "invariant": "Bonagiunta's recognition is dialogue, Forese's prophecy is testimony, and only the angel's touch changes Dante's count: 2 → 1. Lust remains for the seventh terrace.",
+  "previousP": 2,
+  "remainingP": 1,
+  "marksRemovedThisChapter": 1,
+  "next": "Purgatorio XXV — Statius explains the generation of the body and the soul; the seventh terrace burns with purifying fire",
+  "sealInfernoUntouched": true
+}
