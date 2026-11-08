@@ -1,0 +1,73 @@
+{
+  "protocol": "archon/alchemical-living-thread/ascent-v1",
+  "chapter": "Purgatorio XXX",
+  "ascent": 30,
+  "identity": "{{i}}",
+  "parent": "alchemy/ascent/029.json",
+  "parentBlobSha": "c4cbcf7392d01374f994c444923c04c3b3bd2da2",
+  "appendOnly": true,
+  "previousTraversal": "Inferno 041 sealed",
+  "scene": "Beatrice appears veiled amid flowers upon the griffin's chariot; Virgil vanishes, and Dante hears his first direct rebuke",
+  "story": [
+    "The procession pauses, and the company around the chariot sings in welcome. A shower of flowers falls as Beatrice appears veiled, wearing a white veil, a green mantle, and a flame-red dress.",
+    "Dante feels the overwhelming force of his former love and instinctively turns to Virgil for reassurance. Virgil has departed without a farewell; Dante calls his name three times and weeps.",
+    "Beatrice addresses Dante by name and commands him to face her rather than dissolve into grief. She tells him he has another kind of weeping ahead: he must confront how he strayed after her death.",
+    "Angels express compassion for Dante, but Beatrice explains that her efforts to guide him while alive, and afterward through dreams and other promptings, had failed to keep him on the path. He had pursued lesser attractions and turned away from his highest good.",
+    "The rebuke continues while Dante stands overwhelmed. This chapter begins the confrontation; his explicit confession follows later, not here.",
+    "The seven P marks remain erased. Dante has not yet crossed Lethe, drunk Eunoe, or completed the memory rites. The transition from Virgil's reasoned guidance to Beatrice's spiritual guidance is witnessed, not an erased record of Virgil's care."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Dante",
+      "semantic": "A familiar guide is absent at a critical moment; recognition of a loved authority begins accountability rather than immediate absolution",
+      "somatic": "SEE_TURN_SEARCH_CALL_WEEP_LISTEN"
+    },
+    {
+      "actor": "Beatrice",
+      "semantic": "Arrival and rebuke demand an honest reckoning with the traveler's choices before memory can be transformed",
+      "somatic": "APPEAR_ADDRESS_REBUKE_EXPLAIN"
+    },
+    {
+      "actor": "Virgil",
+      "semantic": "His departure marks a completed role and transfer of guidance; his past acts are preserved",
+      "somatic": "DEPART_UNSEEN"
+    },
+    {
+      "actor": "Angels and procession",
+      "semantic": "A welcoming ritual and sympathetic response coexist with Beatrice's demand for responsibility",
+      "somatic": "SING_SCATTER_FLOWERS_CONSOLE"
+    },
+    {
+      "actor": "Lethe and Eunoe",
+      "semantic": "Their promised functions have not yet been enacted",
+      "somatic": "AWAIT"
+    }
+  ],
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "Beatrice revealed",
+      "action": "SEE flowers fall and Beatrice APPEAR veiled in white, green and red upon the chariot",
+      "observable": "the arrival and garments are directly described within the pageant"
+    },
+    {
+      "id": "B",
+      "semantic": "Virgil departed",
+      "action": "SEE Dante TURN for Virgil, FIND him absent, CALL his name three times and WEEP",
+      "observable": "his absence is witnessed; the moment and means of departure are not shown"
+    },
+    {
+      "id": "C",
+      "semantic": "rebuke begins",
+      "action": "HEAR Beatrice ADDRESS Dante and EXPLAIN how he strayed from the path",
+      "observable": "the accusations are Beatrice's words; no confession, Lethe or Eunoe rite occurs yet"
+    }
+  ],
+  "alchemicalReading": "The seventh-fold cleansing opens a second operation: accountability in the presence of a new guide. The chariot bears revelation, while Virgil's disappearance transfers responsibility without negating his work. Tears come before confession and before memory's water.",
+  "invariant": "Beatrice's arrival, Virgil's observed absence and the rebuke are distinct witnesses. The seven P marks stay at zero; neither Lethe nor Eunoe has yet been used and the later confession is not backdated into XXX.",
+  "previousP": 0,
+  "remainingP": 0,
+  "marksRemovedThisChapter": 0,
+  "next": "Purgatorio XXXI — Dante confesses, collapses, is immersed in Lethe and is led toward Beatrice",
+  "sealInfernoUntouched": true
+}
