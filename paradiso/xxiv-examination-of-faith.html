@@ -1,0 +1,48 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Paradiso XXIV — The Examination of Faith</title><style>
+:root{color-scheme:dark;font:16px system-ui,Segoe UI,sans-serif;background:#080e1c;color:#eef3fd}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 70% 16%,#2b3555,#0a1122 62%,#060a13)}
+header,footer{padding:17px 4vw;border-bottom:1px solid #ffffff26}footer{border-top:1px solid #ffffff26;border-bottom:0;font-size:12px;color:#9daec3}a{color:#c3e6ff}
+main{max-width:1240px;margin:0 auto;padding:30px 18px 60px}.columns{display:grid;grid-template-columns:minmax(280px,1fr) minmax(370px,1.4fr);gap:24px}
+.eyebrow{font-size:11px;letter-spacing:.17em;text-transform:uppercase;color:#eac28a}h1{font-size:clamp(34px,4.9vw,65px);line-height:1.07;margin:15px 0}h2{font-size:21px;margin:25px 0 8px}
+p{line-height:1.7;color:#cad6e7}strong{color:#ffe6b5}.panel{background:#111c31e3;border:1px solid #7696b659;border-radius:17px;box-shadow:0 22px 70px #0008;overflow:hidden}
+canvas{width:100%;aspect-ratio:10/8;display:block}.controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding:14px;border-top:1px solid #ffffff20}
+button{border:1px solid #68849f;background:#223751;color:#eaf3fd;border-radius:8px;padding:9px 12px;cursor:pointer}button.active{background:#f0c77f;color:#18273d}
+label{font-size:12px;display:flex;gap:7px;align-items:center}input{accent-color:#f1c987}.note{color:#a8bdd4;font-size:12px;padding:0 15px 16px}
+blockquote{border-left:3px solid #e2bd7d;padding:7px 16px;margin:20px 0;color:#f9e9c5;font-size:20px}
+.sequence{display:grid;grid-template-columns:repeat(4,1fr);gap:9px}.sequence div{border-radius:11px;background:#16263e;border:1px solid #67839e55;padding:12px;text-align:center;font-size:12px}
+code{color:#f5d7a2;background:#1b2b41;padding:4px;border-radius:4px}@media(max-width:820px){.columns{grid-template-columns:1fr}.sequence{grid-template-columns:repeat(2,1fr)}}
+</style></head><body><header><span class="eyebrow">DavidWise01 / archon · Dante's ascent</span> · <a href="xxiii-triumph-of-light.html">Previous XXIII</a> · <a href="README.md">Canonical ledger</a></header>
+<main><div class="columns"><article><div class="eyebrow">Canto XXIV · Fixed Stars · Natural Boundary 024</div><h1>The Examination of Faith</h1>
+<p>After the Triumph of Christ, Beatrice asks Saint Peter to examine Dante. The apostle circles him as a radiant light, questioning what Dante believes and why.</p>
+<p>Dante answers with the definition of faith from Hebrews: the substance of things hoped for and the evidence of things unseen. Peter asks what Dante means by these terms, and what warrants his conviction.</p>
+<blockquote>Faith must be articulated; conviction must answer questions.</blockquote>
+<h2>Evidence and its limits</h2><p>Dante appeals to Scripture, the apostolic witnesses, and miracles. His argument culminates in a paradoxical observation: if the world turned to Christianity without miracles, that conversion itself would be an even greater marvel. This is <strong>Dante's theological argument</strong>, not an empirical proof established by this visualization.</p>
+<p>Peter approves Dante's profession of belief in one eternal God, and in the Trinity. The apostle's light circles in celebration.</p>
+<h2>Boundary XXIV</h2><p>Our symbolic model keeps the <strong>eight chroma vertices</strong>, <strong>twenty-four witness positions</strong>, and <strong>one shared core</strong>. What changes is the question directed to the observer.</p><p><code>perceive → state claim → cite grounds → test coherence</code></p>
+<p>In this interpretive system, provenance and explanation remain attached to a claim. Faith and scientific evidence are not treated as interchangeable methods.</p></article>
+<section class="panel"><canvas id="sky" width="1000" height="800" aria-label="Animated chromatic crown and Saint Peter's four-stage examination"></canvas><div class="controls"><button data-stage="0">Question</button><button data-stage="1">Grounds</button><button data-stage="2" class="active">Profession</button><button data-stage="3">Witness</button><label>Phase <input id="phase" type="range" min="0" max="360" value="25"></label><label>Chroma <input id="chroma" type="range" min="0" max="100" value="82"></label><label>Focus <input id="focus" type="range" min="0" max="100" value="65"></label><button id="pause">Pause</button></div><div class="note" id="status">The witness field remains preserved across all stages. These are visual metaphors rather than literal structures in Dante's poem.</div></section></div>
+<h2>The examination protocol</h2><div class="sequence"><div><strong>1 · Question</strong><p>What is faith?</p></div><div><strong>2 · Grounds</strong><p>How do you know?</p></div><div><strong>3 · Profession</strong><p>What do you affirm?</p></div><div><strong>4 · Witness</strong><p>Does the testimony remain coherent?</p></div></div>
+<h2>The alchemical intersection</h2><p>Jupiter's eagle gave a collective voice. Saturn taught restraint about what lay beyond observation. The Fixed Stars expanded Dante's capacity to receive light. Here, Saint Peter asks Dante to take responsibility for the claims he makes about that light.</p>
+<p><strong>Natural invariant:</strong> passing from perception to declaration must not erase the provenance of the declaration.</p><p><code>[8] + {24} + |1| → question → testimony → accountable response</code></p>
+<h2>Next natural boundary — Paradiso XXV</h2><p><strong>The Examination of Hope.</strong> Saint James asks Dante about hope: what it is, how strongly he possesses it, and from where it came. The signal will no longer be only a profession of present belief; it will concern confidence directed toward the future.</p></main>
+<footer>DLW · Paradiso XXIV · append-only · 2026-11-08 · Literary interpretation and symbolic visualization</footer>
+<script>
+const cv=document.querySelector('#sky'),g=cv.getContext('2d'),W=cv.width,H=cv.height;let stage=2,phase=.44,chroma=.82,focus=.65,paused=false,t=0;
+const pal=[[246,197,117],[124,191,230],[222,157,213],[137,206,180]];const rgb=a=>'rgb('+a.map(x=>Math.round(x)).join(',')+')';
+document.querySelectorAll('[data-stage]').forEach(b=>b.onclick=()=>{stage=+b.dataset.stage;document.querySelectorAll('[data-stage]').forEach(x=>x.classList.toggle('active',x===b))});
+document.querySelector('#phase').oninput=e=>phase=+e.target.value*Math.PI/180;
+document.querySelector('#chroma').oninput=e=>chroma=+e.target.value/100;
+document.querySelector('#focus').oninput=e=>focus=+e.target.value/100;
+document.querySelector('#pause').onclick=e=>{paused=!paused;e.target.textContent=paused?'Play':'Pause'};
+function dot(x,y,r,c,blur=18){g.fillStyle=c;g.shadowColor=c;g.shadowBlur=blur;g.beginPath();g.arc(x,y,r,0,7);g.fill();g.shadowBlur=0}
+function render(){if(!paused)t+=.012;let bg=g.createRadialGradient(500,390,5,500,390,600);bg.addColorStop(0,'#233d5e');bg.addColorStop(1,'#080d1d');g.fillStyle=bg;g.fillRect(0,0,W,H);
+let c=[500,390],turn=phase+t*.2;
+for(let i=0;i<24;i++){let a=i*Math.PI/12+turn,r=stage===0?260:220;let x=c[0]+r*Math.cos(a),y=c[1]+r*.72*Math.sin(a);dot(x,y,5,rgb(pal[i%4].map(v=>160*(1-chroma)+v*chroma)),16)}
+for(let i=0;i<8;i++){let a=i*Math.PI/4-turn*.5;let x=c[0]+56*Math.cos(a),y=c[1]+45*Math.sin(a);dot(x,y,6,rgb(pal[i%4].map(v=>155*(1-chroma)+v*chroma)),14)}
+if(stage===1){g.strokeStyle='#c8d6ea75';g.lineWidth=2;for(let k=0;k<8;k++){let a=k*Math.PI/4-turn*.5;g.beginPath();g.moveTo(c[0]+56*Math.cos(a),c[1]+45*Math.sin(a));g.lineTo(c[0]+195*Math.cos(a),c[1]+142*Math.sin(a));g.stroke()}}
+if(stage===2){for(let j=0;j<3;j++){g.strokeStyle=['#f2ce90','#9bbedb','#d6a4d5'][j];g.lineWidth=2.5;g.beginPath();g.arc(500,390,84+j*29,0,7);g.stroke()}}
+if(stage===3){for(let j=0;j<12;j++){let a=j*Math.PI/6+t*.3;dot(500+164*Math.cos(a),390+132*Math.sin(a),3.5,'#fff0b9',15)}}
+dot(500,390,9+focus*9,'#fff5d6',24+focus*42);
+g.fillStyle='#e4eef9';g.font='16px system-ui';g.textAlign='left';g.fillText(['WHAT IS FAITH?','WHAT GROUNDS THE CLAIM?','WHAT DO YOU PROFESS?','CAN THE WITNESS ANSWER?'][stage],32,46);
+let labels=['QUESTION','GROUNDS','PROFESSION','WITNESS'];g.font='bold 19px system-ui';g.textAlign='center';g.fillStyle='#f9deaf';g.fillText(labels[stage],500,660);
+requestAnimationFrame(render)}render();
+</script></body></html>
