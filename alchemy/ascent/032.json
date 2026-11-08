@@ -1,0 +1,75 @@
+{
+  "protocol": "archon/alchemical-living-thread/ascent-v1",
+  "chapter": "Purgatorio XXXII",
+  "ascent": 32,
+  "identity": "{{i}}",
+  "parent": "alchemy/ascent/031.json",
+  "parentBlobSha": "6a8d576cd56c0111b19b098bf002989f160f46ca",
+  "appendOnly": true,
+  "previousTraversal": "Inferno 041 sealed",
+  "scene": "The griffin binds the chariot to a barren tree that flowers; Dante sleeps and awakens to a prophetic sequence of attacks and the chariot's grotesque transformation",
+  "story": [
+    "Still absorbed in Beatrice, Dante is directed to turn toward the returning procession. The company moves eastward, with Dante, Matelda and Statius following.",
+    "They reach a great tree, stripped of foliage, whose branches broaden as they rise. The griffin draws its chariot to the tree and fastens the pole to its trunk; the tree suddenly blooms in renewed color amid a hymn.",
+    "A mysterious sleep falls upon Dante. On waking, he finds Matelda beside him and Beatrice seated beneath the restored tree, watching over the chariot. The griffin and much of the procession have withdrawn.",
+    "A great eagle swoops down and strikes the tree and chariot. A fox enters the vehicle but Beatrice drives it away. The eagle returns and sheds feathers over the chariot.",
+    "A dragon rises from the earth and tears away part of the chariot's floor. The vehicle becomes a monstrous form with seven heads and ten horns. A shameless woman appears upon it with a giant beside her; when she looks elsewhere, the giant beats her and drags the altered chariot into the forest.",
+    "Dante watches this symbolic history but receives no explanation yet in this canto. He has already undergone Lethe, but not Eunoe; no P marks reappear."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Dante",
+      "semantic": "Witness sequence and transformation without conflating vision with independent historical proof",
+      "somatic": "LOOK_TURN_FOLLOW_SLEEP_AWAKEN_OBSERVE"
+    },
+    {
+      "actor": "Griffin and tree",
+      "semantic": "A bound chariot and suddenly renewed tree suggest restoration before later corruption",
+      "somatic": "DRAW_BIND_BLOOM"
+    },
+    {
+      "actor": "Beatrice",
+      "semantic": "Keeps watch and repels the fox; interpretation is not yet fully supplied",
+      "somatic": "GUARD_REPEL_REMAIN"
+    },
+    {
+      "actor": "Eagle fox dragon and giant",
+      "semantic": "Separate intrusions and assaults precede the chariot's corruption",
+      "somatic": "STRIKE_ENTER_SHED_TEAR_BEAT_DRAG"
+    },
+    {
+      "actor": "Altered chariot",
+      "semantic": "A single vehicle undergoes multiple ordered changes while its provenance is preserved",
+      "somatic": "RECEIVE_DAMAGE_TRANSFORM_DEPART"
+    }
+  ],
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "tree renewed",
+      "action": "SEE the GRIFFIN FASTEN the chariot to the barren tree and SEE it BLOOM",
+      "observable": "binding, blooming and subsequent sleep occur in the allegorical pageant"
+    },
+    {
+      "id": "B",
+      "semantic": "distinct attacks",
+      "action": "AWAKEN and SEE an EAGLE strike, a FOX enter and be repelled, the eagle shed feathers, and a DRAGON tear the floor",
+      "observable": "the sequence of assaults remains ordered rather than merged into one cause"
+    },
+    {
+      "id": "C",
+      "semantic": "chariot transformed and seized",
+      "action": "SEE a seven-headed, ten-horned MONSTER form; a WOMAN and GIANT appear; the giant BEATS her and DRAGS the chariot away",
+      "observable": "the symbolic violence is represented in the vision; its meaning awaits explanation"
+    }
+  ],
+  "alchemicalReading": "A flourishing tree and a damaged chariot offer contrary transformations. Observe the stages in order: bind and restore, assault and corrupt, transform and remove. A changing vessel must retain traceable provenance, not be mistaken for seven unrelated objects.",
+  "invariant": "The chariot's sequence is append-only evidence within Dante's allegory: tree restoration → eagle/fox/eagle/dragon assaults → monstrous transformation → giant's removal. Dante has completed Lethe but not Eunoe. Seven P marks remain cleared.",
+  "previousP": 0,
+  "remainingP": 0,
+  "marksRemovedThisChapter": 0,
+  "letheStatus": "performed",
+  "eunoeStatus": "pending",
+  "next": "Purgatorio XXXIII — Beatrice explains the vision, and Matelda brings Dante to Eunoe for the final restorative drink",
+  "sealInfernoUntouched": true
+}
