@@ -27,6 +27,7 @@ Policy: append-only chapter files; do not replace historical releases.
 | XXII | Saturn to Fixed Stars | Benedict and the backward glance | Observer scale changes; Earth identity persists |
 | XXIII | Fixed Stars | Triumph of Christ, Mary and Gabriel | Preserve signal and observer capacity separately |
 | XXIV | Fixed Stars | Saint Peter examines Dante's faith | Preserve grounds and provenance when asserting a claim |
+| XXV | Fixed Stars | Saint James examines hope; Saint John arrives | Distinguish anticipated future from observed present |
 
 ## Repository artifacts
 - [Canto XIX interactive HTML](xix-speaking-eagle.html) — committed 2026-11-08.
@@ -35,12 +36,13 @@ Policy: append-only chapter files; do not replace historical releases.
 - [Canto XXII interactive HTML](xxii-backward-glance.html) — committed 2026-11-08.
 - [Canto XXIII interactive HTML](xxiii-triumph-of-light.html) — committed 2026-11-08.
 - [Canto XXIV interactive HTML](xxiv-examination-of-faith.html) — committed 2026-11-08.
+- [Canto XXV interactive HTML](xxv-examination-of-hope.html) — committed 2026-11-08.
 
 ## Provenance and completeness
 
-This ledger summarizes prior chat chapters. Earlier interactive HTML files (IX–XVIII) were generated as conversation artifacts, but **they are not claimed as committed to this repository**. Their original bytes must be recovered and checked before any exact archival claims. Cantos XIX–XXIV have been independently committed and verified through the GitHub connector.
+This ledger summarizes prior chat chapters. Earlier interactive HTML files (IX–XVIII) were generated as conversation artifacts, but **they are not claimed as committed to this repository**. Their original bytes must be recovered and checked before any exact archival claims. Cantos XIX–XXV have been independently committed and verified through the GitHub connector.
 
 Symbolic geometry (8 vertices, 24 witnesses, 1 center) is an interpretive model, not a literal translation of Dante's numerical cosmology or a physical quantum dot simulation.
 
 ## Next
-Paradiso XXV — The Examination of Hope: Saint James questions Dante about hope, its grounds and its future orientation.
+Paradiso XXVI — The Examination of Love: Saint John tests Dante on charity; Adam discusses language and time.
