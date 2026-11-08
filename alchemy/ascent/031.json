@@ -1,0 +1,76 @@
+{
+  "protocol": "archon/alchemical-living-thread/ascent-v1",
+  "chapter": "Purgatorio XXXI",
+  "ascent": 31,
+  "identity": "{{i}}",
+  "parent": "alchemy/ascent/030.json",
+  "parentBlobSha": "57d403229161c6dfd3807ddb653a2fa41ea6865d",
+  "appendOnly": true,
+  "previousTraversal": "Inferno 041 sealed",
+  "scene": "Dante confesses before Beatrice, collapses in remorse, is drawn into Lethe by Matelda, drinks its water and looks toward the griffin reflected in Beatrice's eyes",
+  "story": [
+    "Beatrice addresses Dante directly and demands that he acknowledge the truth of his wandering. He answers with a faint 'Yes', then the weight of confession overtakes him and his tears flow.",
+    "Beatrice presses him to understand why he followed transient pleasures after losing her. Dante admits that the false delight of present things turned his steps aside once her face was no longer before him.",
+    "Overwhelmed by shame, Dante lowers his head and then faints. His honest confession precedes the memory rite; it is not replaced by it.",
+    "When Dante regains awareness, Matelda is guiding him through the river Lethe. She draws him under its waters and he drinks, completing the promised forgetting of sin within the poem's sacred order.",
+    "On the farther bank the four dancing women welcome Dante and lead him to Beatrice. They tell him to look into her eyes, where the griffin appears in changing reflections, displaying the mystery of its two natures.",
+    "The three other women appeal to Beatrice to unveil her smile. Dante beholds her renewed beauty. Eunoe, the restoration of good remembrance, has not yet been experienced.",
+    "The seven P marks remain at zero. The Lethe rite is complete and Eunoe remains pending; the departed Virgil's record stays unchanged."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Dante",
+      "semantic": "Owning past misdirection allows the first memory transformation; the memory of wrongdoing is released only after confession",
+      "somatic": "ANSWER_CONFESS_WEEP_FAINT_AWAKEN_IMMERSE_DRINK_LOOK"
+    },
+    {
+      "actor": "Beatrice",
+      "semantic": "Accountability must precede the cleansing of sinful remembrance",
+      "somatic": "QUESTION_REPROVE_INVITE_VISION"
+    },
+    {
+      "actor": "Matelda",
+      "semantic": "Guided contact with Lethe enacts what was previously explained",
+      "somatic": "LEAD_IMMERSE_SUPPORT"
+    },
+    {
+      "actor": "Four women and three women",
+      "semantic": "Different virtues welcome Dante and mediate the restored vision of Beatrice",
+      "somatic": "RECEIVE_GUIDE_INVITE"
+    },
+    {
+      "actor": "Griffin reflected in Beatrice's eyes",
+      "semantic": "The symbol has a changing appearance in reflection while retaining one referent within the allegory",
+      "somatic": "REFLECT_CHANGE"
+    }
+  ],
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "confession before cleansing",
+      "action": "HEAR Dante ADMIT that false pleasures led him astray, WEEP and FAINT",
+      "observable": "Dante's confession and collapse precede any water rite"
+    },
+    {
+      "id": "B",
+      "semantic": "Lethe performed",
+      "action": "SEE Matelda GUIDE Dante into Lethe, IMMERSE him and bring him to DRINK",
+      "observable": "Lethe's forgetting operation is now enacted; Eunoe is not"
+    },
+    {
+      "id": "C",
+      "semantic": "vision through Beatrice's eyes",
+      "action": "SEE four virtues GUIDE Dante to Beatrice, and the GRIFFIN reflected in her eyes before she reveals her smile",
+      "observable": "reflections are allegorical appearances; seven marks remain cleared"
+    }
+  ],
+  "alchemicalReading": "Admission first, then immersion: Lethe enacts release of remembered sin, while the vision of the griffin in Beatrice's eyes displays a stable subject with shifting manifestations. Eunoe's restorative action remains future.",
+  "invariant": "The sequence is confession → collapse → Matelda's Lethe immersion and drinking → vision. Lethe is performed in XXXI, Eunoe is not; P remains 0 and no sealed earlier stage is changed.",
+  "previousP": 0,
+  "remainingP": 0,
+  "marksRemovedThisChapter": 0,
+  "letheStatus": "performed",
+  "eunoeStatus": "pending",
+  "next": "Purgatorio XXXII — Dante watches the chariot and the tree while a sequence of violent allegorical transformations unfolds",
+  "sealInfernoUntouched": true
+}
