@@ -1,22 +1,20 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ARCHON — The Ascent · Purgatorio XXV</title><style>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ARCHON — The Ascent · Purgatorio XXVI</title><style>
 :root{color-scheme:dark}*{box-sizing:border-box}body{background:linear-gradient(#11142d,#262542);color:#f3e6d4;font:15px/1.5 system-ui,Segoe UI,sans-serif;margin:0}main{max-width:1120px;padding:20px;margin:auto}h1{font-size:clamp(26px,5vw,46px);margin:5px 0}h2{font-size:18px;margin:0 0 8px}.eyebrow{font:700 11px monospace;letter-spacing:.15em;color:#f0c38d}.grid{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(260px,1fr);gap:15px;margin-top:17px}.panel{border:1px solid #776786;background:#201e36;border-radius:13px;padding:16px;min-width:0}canvas{display:block;width:100%;aspect-ratio:16/9;image-rendering:pixelated;background:#191d38;border-radius:9px;border:1px solid #927e9a}.controls{display:flex;gap:9px;flex-wrap:wrap;margin:12px 0}button{background:#4d3d5a;border:1px solid #aa8291;color:#fff;border-radius:8px;padding:10px 14px;font-weight:700;cursor:pointer}button:hover{background:#65506b}button:focus-visible{outline:2px solid #f9d49b}p{color:#dbcede}.status{background:#302943;border-radius:8px;min-height:80px;padding:12px}pre{white-space:pre-wrap;background:#17182d;border-radius:9px;padding:14px;color:#eacba5;font-size:12px;line-height:1.7}a{color:#b8dfe4}.counter{color:#a8dccb;font:700 12px monospace}footer{color:#b1a7bb;font-size:12px;margin-top:20px} @media(max-width:740px){.grid{grid-template-columns:1fr}}
-</style></head><body><main><header><div class="eyebrow">ARCHON / THE LIVING THREAD / THE ASCENT</div><h1>Purgatorio XXV <span style="color:#ffd09a">· The Soul and the Flame</span></h1><p>Statius explains how a soul may appear as a shade; the seventh terrace burns with purifying fire.</p></header>
-<div class="grid"><section class="panel"><canvas id="game" width="640" height="360" tabindex="0" aria-label="Playable pixel art: Statius explaining the soul, airy shades and the burning seventh terrace of lust"></canvas><div class="controls"><button id="left">◀ WALK</button><button id="right">WALK ▶</button><button id="observe">E · OBSERVE</button><button id="reset">↺ RESET</button></div><div class="counter" id="counter">WITNESSES 0 / 3</div><p class="status" id="status" aria-live="polite">Hear Statius explain the soul and shade, approach the fiery ledge, and listen to the penitents' song.</p><p>Keyboard: A / D or ← / → to walk; E to observe. Observe the explanation, the wall of flames, and the voices of chastity. One mark remains.</p></section>
-<aside class="panel"><h2>Today's encounter</h2><p>Dante asks how shades can suffer hunger. Statius explains, in the poem's medieval account, how a soul forms and shapes its appearance in air after death. They enter the seventh terrace: a wall of fire burns beside a narrow path. Souls within sing and remember examples of chastity. The final P remains.</p><pre>PURGATORIO / XXV
+</style></head><body><main><header><div class="eyebrow">ARCHON / THE LIVING THREAD / THE ASCENT</div><h1>Purgatorio XXVI <span style="color:#ffd09a">· Two Voices in the Fire</span></h1><p>Two penitential groups greet within the flames; Guido Guinizzelli and Arnaut Daniel speak to Dante.</p></header>
+<div class="grid"><section class="panel"><canvas id="game" width="640" height="360" tabindex="0" aria-label="Playable pixel art: two opposing companies meeting in the fire, Guido Guinizzelli and Arnaut Daniel speaking"></canvas><div class="controls"><button id="left">◀ WALK</button><button id="right">WALK ▶</button><button id="observe">E · OBSERVE</button><button id="reset">↺ RESET</button></div><div class="counter" id="counter">WITNESSES 0 / 3</div><p class="status" id="status" aria-live="polite">Observe two processions meeting in flames, hear Guido Guinizzelli, and listen to Arnaut Daniel.</p><p>Keyboard: A / D or ← / → to walk; E to observe. Observe the meeting, poetic lineage, and Arnaut's confession. One mark remains.</p></section>
+<aside class="panel"><h2>Today's encounter</h2><p>Two companies of penitents meet inside the fire and greet one another briefly before parting and naming examples of lust. Dante's living shadow draws questions. He meets Guido Guinizzelli, who praises Arnaut Daniel's poetic skill. Arnaut speaks in Occitan, asks for remembrance, and returns to the flames. One P remains.</p><pre>PURGATORIO / XXVI
        |
-DANTE: QUESTION HUNGRY SHADES
+TWO GROUPS: MEET / KISS
        |
-STATIUS: SOUL / FORM
+CALLS: SODOM / PASIPHAE
        |
-SHADE: AIR / APPEARANCE
+GUIDO: POETIC LINEAGE
        |
-SEVENTH TERRACE / LUST
+ARNAUT: OCCITAN / PRAYER
        |
-FIRE: PURIFY / SING
+FIRE: RETURN / CONTINUE
        |
-CHASTITY: REMEMBER
-       |
-1 P MARK REMAINS</pre><p>The soul-and-shade account is Statius's medieval explanation, not established biology. The flame is encountered but not crossed: one mark remains.</p><p><a href="./">The sealed Inferno</a> · <a href="https://github.com/DavidWise01/archon/blob/main/alchemy/ascent/025.json">Canonical ascent record</a></p></aside></div><footer>Original sealed 41-tick journey preserved · Inferno's sealed Stage 041 preserved · This ascent is a new append-only branch.</footer></main><script>
+1 P MARK REMAINS</pre><p>The two groups acknowledge and part without completing Dante's last trial. Poetic judgments remain attributed speech; one mark remains.</p><p><a href="./">The sealed Inferno</a> · <a href="https://github.com/DavidWise01/archon/blob/main/alchemy/ascent/026.json">Canonical ascent record</a></p></aside></div><footer>Original sealed 41-tick journey preserved · Inferno's sealed Stage 041 preserved · This ascent is a new append-only branch.</footer></main><script>
 'use strict';
 const c=document.getElementById('game'),ctx=c.getContext('2d'),status=document.getElementById('status'),counter=document.getElementById('counter');
 let player=46,frame=0;const held=new Set(),seen=new Set();
@@ -46,28 +44,28 @@ const label=(str,x,y,color='#f9e4c3',size=11)=>{ctx.fillStyle=color;ctx.font='bo
 
 
 
-function witness(){const zone=player<210?'soul':player<410?'fire':'voices';seen.add(zone);
+
+function witness(){const zone=player<210?'groups':player<410?'guido':'arnaut';seen.add(zone);
 const words={
-soul:'WITNESS A: Dante ASKS why shades hunger. Statius EXPLAINS the medieval account of soul and aerial form.',
-fire:'WITNESS B: the seventh terrace is lined with FIRE and a narrow ledge. Dante OBSERVES the threshold.',
-voices:'WITNESS C: penitents WALK within flame, SING, and INVOKE chastity. The last P remains.'
+groups:'WITNESS A: two groups MEET and KISS briefly in flame, then PART while calling examples of disordered desire.',
+guido:'WITNESS B: Guido Guinizzelli RECOGNIZES Dante and PRAISES Arnaut Daniel as a poetic craftsman.',
+arnaut:'WITNESS C: Arnaut SPEAKS in Occitan, REQUESTS remembrance, then RETURNS into the fire. One P remains.'
 };status.textContent=words[zone]+(seen.size===3?' THREE WITNESSES COMPLETE. ONE MARK REMAINS.':'');counter.textContent='WITNESSES '+seen.size+' / 3'}
-function reset(){player=46;seen.clear();status.textContent='Hear Statius explain the soul and shade, approach the fiery ledge, and listen to the penitents\' song.';counter.textContent='WITNESSES 0 / 3'}
+function reset(){player=46;seen.clear();status.textContent='Observe two processions meeting in flames, hear Guido Guinizzelli, and listen to Arnaut Daniel.';counter.textContent='WITNESSES 0 / 3'}
 function draw(){frame++;
-rect(0,0,640,360,'#222a49');rect(0,0,640,143,'#77758d');rect(0,143,640,139,'#66667c');rect(0,282,640,78,'#a99893');
-rect(40,218,19,20,'#d8b9a8');rect(34,238,30,56,'#8594ae');
-rect(97,209,19,20,'#d9baa9');rect(92,229,29,64,'#a37d99');
-for(let k=0;k<7;k++){const x=63+k*16;label('~',x,168+Math.sin(frame*.045+k)*5,'#d9d1db',18)}
-label('SOUL / SHADE',17,139,'#fff1d5',12);
-rect(243,158,24,130,'#858090');
-for(let k=0;k<10;k++){const x=258+k*17,y=197+Math.sin(frame*.07+k)*24;rect(x,y,16,94,k%2?'#ec8b57':'#e9b06e');rect(x-3,y+10,11,31,'#ed6a53')}
-for(let k=0;k<9;k++){const x=270+k*17;label('^',x,178+Math.sin(frame*.10+k)*13,'#ffd09b',20)}
-label('FIRE / SEVENTH',249,136,'#fff1d5',12);
-for(let k=0;k<4;k++){const x=476+k*33,y=233+k%2*10;rect(x,y,16,19,'#ddbba8');rect(x-5,y+18,27,40,k%2?'#9b7e90':'#948ba3')}
-for(let k=0;k<7;k++)label('~',474+k*18,194+Math.sin(frame*.07+k)*6,'#ffd8b0',16);
-label('CHASTITY / SING',463,154,'#fff1d5',12);
-label('P',559,58,'#ffcfaa',20);label('ONE MARK',519,84,'#fff1d5',11);
-label('PURGATORIO XXV',17,24,'#fff1d1',15);
+rect(0,0,640,360,'#262b49');rect(0,0,640,147,'#786b83');rect(0,147,640,138,'#6a667b');rect(0,285,640,75,'#a49894');
+for(let k=0;k<15;k++){const x=14+k*13,y=167+Math.sin(frame*.08+k)*22;rect(x,y,12,98,k%2?'#e99861':'#e5b172');rect(x+2,y+13,8,34,'#ef6e53')}
+for(let k=0;k<6;k++){const x=28+k*25,y=224+k%2*7;rect(x,y,14,17,'#dfb8a4');rect(x-4,y+17,23,39,k%2?'#9e8097':'#8d8ba0')}
+for(let k=0;k<6;k++)label(k<3?'>':'<',30+k*24,191+Math.sin(frame*.05+k)*4,'#ffe0b0',15);
+label('TWO GROUPS / MEET',11,134,'#fff0d8',12);
+rect(276,207,18,20,'#dab8a6');rect(270,227,30,65,'#8c97af');rect(318,217,17,19,'#dcb8a5');rect(313,236,29,55,'#ac8095');
+for(let k=0;k<6;k++)label('~',270+k*18,183+Math.sin(frame*.055+k)*5,'#f7c39d',16);
+label('GUIDO / POETRY',252,145,'#fff0d8',12);
+for(let k=0;k<9;k++){const x=436+k*21,y=161+Math.sin(frame*.06+k)*14;rect(x,y,16,107,k%2?'#ec9a61':'#e8bb7a');rect(x+2,y+22,10,34,'#f16d50')}
+rect(519,225,18,18,'#ddb7a3');rect(514,243,29,47,'#9d7e98');
+label('ARNAUT / OCCITAN',438,133,'#fff0d8',12);
+label('P',566,57,'#ffcfaa',20);label('ONE MARK',524,84,'#fff1d5',11);
+label('PURGATORIO XXVI',17,24,'#fff1d1',15);
 rect(player,269,17,17,'#e7c0a3');rect(player-3,287,23,32,'#ba6a77');rect(player,316,5,7,'#333653');rect(player+12,316,5,7,'#333653');
 if(held.has('ArrowLeft')||held.has('KeyA'))player=Math.max(7,player-2.4);
 if(held.has('ArrowRight')||held.has('KeyD'))player=Math.min(613,player+2.4);
