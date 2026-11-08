@@ -1,0 +1,74 @@
+{
+  "protocol": "archon/alchemical-living-thread/ascent-v1",
+  "chapter": "Purgatorio XXVII",
+  "ascent": 27,
+  "identity": "{{i}}",
+  "parent": "alchemy/ascent/026.json",
+  "parentBlobSha": "b3e32df9ad4c1c8ce483edb3dd49183b3f525a04",
+  "appendOnly": true,
+  "previousTraversal": "Inferno 041 sealed",
+  "scene": "Dante passes the final wall of fire, dreams of Leah and Rachel, and hears Virgil crown him master of his free will",
+  "story": [
+    "At sunset an angel sings the blessing of the pure in heart and commands the three poets to pass through the wall of flame. Dante freezes, afraid to enter.",
+    "Virgil reassures him that the fire will purify, not destroy. The name of Beatrice, waiting beyond the flames, persuades Dante to move. Virgil enters first, Dante follows, and Statius comes behind.",
+    "The heat is nearly unbearable; the travelers follow another angelic voice toward the far side of the fire. Their crossing completes the seventh terrace's purification. Unlike the earlier six marks, Dante's final P is not explicitly wiped away in a narrated wing-stroke; its removal is implied by the passage through fire and completed purification.",
+    "The sun sets as they ascend the final stairway. The rule against climbing during darkness holds, so Dante sleeps on a step with Virgil and Statius guarding nearby.",
+    "Before dawn Dante dreams of Leah gathering flowers and weaving a garland while Rachel sits absorbed in contemplation of her reflection. The two sisters figure active and contemplative lives in his vision.",
+    "At morning Dante reaches the upper steps. Virgil declares that his guidance by reason and art has reached its limit: Dante's will is now free, upright and whole. Virgil symbolically crowns and mitres Dante over himself. The earthly paradise lies ahead."
+  ],
+  "semanticSomatic": [
+    {
+      "actor": "Dante",
+      "semantic": "Passing through feared fire requires action on freely accepted guidance; the final purification is completed by traversal, not observation alone",
+      "somatic": "HESITATE_HEAR_ENTER_ENDURE_CROSS_SLEEP_DREAM_ASCEND"
+    },
+    {
+      "actor": "Virgil",
+      "semantic": "Guidance culminates in the learner's ability to govern his own will",
+      "somatic": "ENCOURAGE_LEAD_GUARD_DECLARATION"
+    },
+    {
+      "actor": "Statius",
+      "semantic": "Companionship endures during the passage",
+      "somatic": "FOLLOW_GUARD"
+    },
+    {
+      "actor": "Angel at fire",
+      "semantic": "The final threshold has a spoken command and blessing; the text does not explicitly portray a wing erasing the last P",
+      "somatic": "SING_COMMAND_GUIDE"
+    },
+    {
+      "actor": "Leah and Rachel in dream",
+      "semantic": "Active and contemplative lives provide complementary images of fulfillment",
+      "somatic": "GATHER_WEAVE_CONTEMPLATE"
+    }
+  ],
+  "witnesses": [
+    {
+      "id": "A",
+      "semantic": "voluntary passage through fire",
+      "action": "HEAR the angel COMMAND the crossing and Virgil SPEAK of Beatrice; ENTER and CROSS the flame",
+      "observable": "Dante visibly crosses the final purifying fire; no direct final wing-stroke is described"
+    },
+    {
+      "id": "B",
+      "semantic": "dream of active and contemplative lives",
+      "action": "SLEEP and DREAM Leah gathering flowers and Rachel contemplating",
+      "observable": "dream sequence is interior and distinguished from external events"
+    },
+    {
+      "id": "C",
+      "semantic": "Virgil cedes authority",
+      "action": "HEAR Virgil DECLARE Dante's will free and symbolically CROWN and MITRE him",
+      "observable": "a direct final speech of guidance and self-governance confirms the transition"
+    }
+  ],
+  "alchemicalReading": "The final operation replaces observation at the threshold with chosen passage. The vessel is purified through flame; afterward reason honors the will it helped educate rather than perpetually commanding it.",
+  "invariant": "The canonical count advances from 1 to 0 only after Dante crosses the fire. Unlike the first six marks, the seventh is not explicitly erased by an angel's wing in Canto XXVII; completion is inferred from the final passage and Virgil's declaration. Dream is dream; guidance ends without erasing prior witnesses.",
+  "previousP": 1,
+  "remainingP": 0,
+  "marksRemovedThisChapter": 1,
+  "markRemovalMode": "implicit-through-final-fire-crossing—not-explicitly-depicted-wing-stroke",
+  "next": "Purgatorio XXVIII — the earthly paradise: a living forest, the river Lethe and Matelda",
+  "sealInfernoUntouched": true
+}
