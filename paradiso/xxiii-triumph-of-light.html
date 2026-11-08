@@ -1,0 +1,56 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Paradiso XXIII — The Triumph of Light</title>
+<style>
+:root{color-scheme:dark;font:16px system-ui,Segoe UI,sans-serif;background:#090c18;color:#f1f5fc}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 65% 10%,#29314d 0%,#0e1627 55%,#080b14 100%)}
+header,footer{padding:18px 4vw;border-bottom:1px solid #ffffff27}footer{border:0;border-top:1px solid #ffffff24;color:#9bb0c5;font-size:12px}a{color:#cce6fc}
+main{max-width:1250px;margin:auto;padding:30px 18px 60px}.layout{display:grid;grid-template-columns:minmax(260px,1fr) minmax(400px,1.45fr);gap:26px}
+.eyebrow{color:#eec997;font-size:11px;letter-spacing:.18em;text-transform:uppercase}h1{font-size:clamp(36px,4.6vw,62px);line-height:1.05;margin:13px 0}
+h2{font-size:21px;margin:25px 0 9px}p{line-height:1.68;color:#cad7e8}strong{color:#ffedc4}
+.panel{background:#111e31db;border:1px solid #7392b45a;border-radius:17px;box-shadow:0 22px 80px #0008;overflow:hidden}canvas{display:block;width:100%;aspect-ratio:10/8}
+.controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center;padding:14px;border-top:1px solid #ffffff1e}
+button{border:1px solid #6687a4;border-radius:8px;background:#20354d;color:#edf5ff;padding:9px 12px;cursor:pointer}button.active{background:#f1ce91;color:#142238}
+label{font-size:12px;display:flex;align-items:center;gap:8px}input{accent-color:#f3cd86}
+.note{font-size:12px;color:#9ab0c7;padding:0 15px 15px}
+blockquote{border-left:3px solid #e9c88c;padding:8px 17px;margin:20px 0;font-size:20px;color:#ffebbf}
+.sequence{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin:16px 0}.sequence>div{border:1px solid #5e7d9766;border-radius:12px;padding:13px;background:#15253a;font-size:12px;text-align:center}
+code{background:#1b2c42;color:#f4d69f;padding:3px 5px;border-radius:4px}
+@media(max-width:850px){.layout{grid-template-columns:1fr}.sequence{grid-template-columns:repeat(2,1fr)}}
+</style></head><body>
+<header><span class="eyebrow">DavidWise01 / archon · Dante's ascent</span> · <a href="xxii-backward-glance.html">Previous: XXII</a> · <a href="README.md">Chapter ledger</a></header>
+<main><div class="layout"><article><div class="eyebrow">Canto XXIII · Fixed Stars · Natural Boundary 023</div><h1>The Triumph of Light</h1>
+<p>Beatrice watches the heights like a bird awaiting dawn. Then Dante sees light brighter than any he has yet endured: <strong>Christ appearing in triumph</strong> amid the blessed.</p>
+<p>The vision overwhelms him. His sight must be strengthened before he can bear more. A brilliance too great for the observer does not imply a defect in the light.</p>
+<blockquote>Capacity is not identity. A threshold is not an ending.</blockquote>
+<p>After that glory withdraws, Dante beholds <strong>Mary</strong>, radiant among the blessed. The angel Gabriel circles her in praise. An immense song of rejoicing fills the heavens as the company honors the Queen of Heaven.</p>
+<h2>The natural boundary</h2><p>The symbolic eight-vertex chroma core and twenty-four witness points remain intact. What changes is the intensity reaching the observer and the observer's capacity to receive it.</p>
+<p><code>[8 chroma] + {24 witnesses} → radiance → perception gate</code></p>
+<p><strong>Never confuse an unrendered signal with an absent signal.</strong> But never infer inaccessible content simply because a signal overwhelms the sensor.</p>
+</article><section class="panel"><canvas id="sky" width="1000" height="800" aria-label="Animated celestial radiance with eight chromatic vertices, twenty-four witnesses, and an adjustable perception threshold"></canvas>
+<div class="controls"><button data-mode="0">Stars</button><button class="active" data-mode="1">Triumph</button><button data-mode="2">Threshold</button><button data-mode="3">Procession</button><label>Radiance <input id="radiance" type="range" min="0" max="100" value="78"></label><label>Capacity <input id="capacity" type="range" min="0" max="100" value="58"></label><label>Chroma <input id="chroma" type="range" min="0" max="100" value="85"></label><button id="pause">Pause</button></div>
+<div class="note" id="readout">Observation gate: radiance exceeds capacity; image is deliberately saturated.</div></section></div>
+<h2>The four stages</h2><div class="sequence"><div><strong>1 · Stars</strong><p>Look upward</p></div><div><strong>2 · Triumph</strong><p>Encounter the greater light</p></div><div><strong>3 · Threshold</strong><p>Respect the observer's limit</p></div><div><strong>4 · Procession</strong><p>Witness Mary and Gabriel</p></div></div>
+<h2>Invariant XXIII — Preserve source and sensor separately</h2><p>In the experiment, <code>signal intensity</code> and <code>observer capacity</code> are independent controls. An overexposed observer cannot recover missing detail by pretending the light is dimmer than it is. The geometry remains visible at every stage as provenance, while the surrounding glow demonstrates saturation.</p>
+<p>In Dante's story, this is a theological and poetic transformation, not an engineering description or a quantum physics experiment.</p>
+<h2>Next natural boundary — Paradiso XXIV</h2><p><strong>The Examination of Faith.</strong> Saint Peter questions Dante: what is faith, and how does he know what he professes? Light now gives way to accountable understanding.</p></main>
+<footer>DLW · Paradiso XXIII · append-only · 2026-11-08 · Literary interpretation and symbolic chroma visualization</footer>
+<script>
+const cv=document.querySelector('#sky'),g=cv.getContext('2d'),W=cv.width,H=cv.height;
+let mode=1,rad=.78,cap=.58,chrom=.85,paused=false,t=0;const colors=[[247,203,122],[132,198,236],[221,152,198],[150,221,189]];
+const rgb=a=>'rgb('+a.map(x=>Math.round(x)).join(',')+')';
+function dot(x,y,r,color,blur=14){g.beginPath();g.fillStyle=color;g.shadowColor=color;g.shadowBlur=blur;g.arc(x,y,r,0,7);g.fill();g.shadowBlur=0}
+function bind(id,key){document.getElementById(id).oninput=e=>{if(key==='rad')rad=+e.target.value/100;if(key==='cap')cap=+e.target.value/100;if(key==='chrom')chrom=+e.target.value/100}}
+bind('radiance','rad');bind('capacity','cap');bind('chroma','chrom');
+document.querySelectorAll('[data-mode]').forEach(b=>b.onclick=()=>{mode=+b.dataset.mode;document.querySelectorAll('[data-mode]').forEach(x=>x.classList.toggle('active',x===b))});
+document.querySelector('#pause').onclick=e=>{paused=!paused;e.target.textContent=paused?'Play':'Pause'};
+function render(){if(!paused)t+=.011;let b=g.createRadialGradient(500,360,0,500,380,690);b.addColorStop(0,'#213754');b.addColorStop(1,'#060a15');g.fillStyle=b;g.fillRect(0,0,W,H);
+for(let i=0;i<100;i++){let x=(i*173.6+28)%W,y=(i*i*47.91+43)%H;dot(x,y,i%9===0?2:1,'#dae3ef',2)}
+const over=Math.max(0,rad-cap),sourceY=mode===3?255:348,sourceX=500;
+if(mode!==0){let r=55+180*rad;let glow=g.createRadialGradient(sourceX,sourceY,0,sourceX,sourceY,r);glow.addColorStop(0,'rgba(255,247,201,'+Math.min(.92,.27+rad*.65)+')');glow.addColorStop(.45,'rgba(250,204,125,'+(.25+rad*.3)+')');glow.addColorStop(1,'rgba(250,204,125,0)');g.fillStyle=glow;g.beginPath();g.arc(sourceX,sourceY,r,0,7);g.fill();}
+for(let i=0;i<24;i++){let a=i*Math.PI/12+t*(mode===3?-.18:.1),r=mode===3?190:235,x=500+r*Math.cos(a),y=400+r*Math.sin(a)*.68;let col=rgb(colors[i%4].map(v=>155*(1-chrom)+v*chrom));dot(x,y,5,col,12)}
+for(let i=0;i<8;i++){let a=i*Math.PI/4+t*.15;let x=500+43*Math.cos(a),y=510+40*Math.sin(a)*.7;dot(x,y,5,rgb(colors[i%4].map(v=>150*(1-chrom)+v*chrom)),12)}
+dot(500,510,8,'#fff1c6',28);
+if(mode===3){g.strokeStyle='#f8d6a6';g.lineWidth=2;g.beginPath();g.arc(500,255,105,0,7);g.stroke();dot(605,255,9,'#fff2cc',24);}
+if(mode===2 || mode===1){g.fillStyle='rgba(255,247,221,'+Math.min(.65,over*.85)+')';g.beginPath();g.arc(500,sourceY,150+over*210,0,7);g.fill();}
+g.fillStyle='#dfebf6';g.font='17px system-ui';g.textAlign='left';g.fillText(['FIXED STARS · PREPARATION','TRIUMPH · GREATER LIGHT','THRESHOLD · FINITE PERCEPTION','MARY · CELESTIAL PROCESSION'][mode],32,46);
+document.getElementById('readout').textContent=over>0?'Observation gate: radiance exceeds capacity by '+Math.round(over*100)+' points; the image saturates.':'Observation gate: signal within selected capacity. The model does not claim exhaustive perception.';
+requestAnimationFrame(render)}render();
+</script></body></html>
