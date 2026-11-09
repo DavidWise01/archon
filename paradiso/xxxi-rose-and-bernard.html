@@ -1,0 +1,41 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Paradiso XXXI — The White Rose and Bernard</title>
+<style>
+:root{color-scheme:dark;font:16px system-ui,Segoe UI,sans-serif;background:#090c1a;color:#eef4ff}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 65% 12%,#352946,#0c1123 62%,#080b14)}header,footer{padding:17px 4vw;border-bottom:1px solid #ffffff26}footer{border:0;border-top:1px solid #ffffff26;font-size:12px;color:#a4b5c9}a{color:#c1e5ff}main{max-width:1250px;margin:auto;padding:28px 18px 60px}.layout{display:grid;grid-template-columns:1fr 1.4fr;gap:24px}.eyebrow{text-transform:uppercase;letter-spacing:.17em;font-size:11px;color:#efc89b}h1{font-size:clamp(34px,5vw,64px);line-height:1.07;margin:14px 0}h2{font-size:21px;margin:25px 0 9px}p{color:#cedaec;line-height:1.7}strong{color:#ffe6c5}blockquote{border-left:3px solid #edca95;padding:9px 17px;color:#ffeacc;margin:20px 0;font-size:20px}.panel{border:1px solid #8897b65c;background:#12192ce8;border-radius:18px;box-shadow:0 24px 70px #0009;overflow:hidden}canvas{display:block;width:100%;aspect-ratio:10/8}.controls{display:flex;align-items:center;flex-wrap:wrap;gap:9px;padding:14px;border-top:1px solid #ffffff25}button{background:#263750;border:1px solid #6b8ba3;border-radius:8px;color:#f1f5ff;padding:9px 12px;cursor:pointer}button.active{background:#f5d6aa;color:#1d273b}label{font-size:12px;display:flex;align-items:center;gap:7px}input{accent-color:#f0cd98}.note{font-size:12px;color:#adbed1;padding:0 15px 16px}.states{display:grid;grid-template-columns:repeat(4,1fr);gap:9px}.states div{background:#18263b;border:1px solid #7188a65b;border-radius:11px;padding:12px;text-align:center;font-size:12px}code{background:#223044;color:#f8d9a8;padding:3px 5px;border-radius:4px}@media(max-width:850px){.layout{grid-template-columns:1fr}.states{grid-template-columns:repeat(2,1fr)}}</style></head>
+<body><header><span class="eyebrow">DavidWise01 / archon · Dante's ascent</span> · <a href="xxx-river-and-rose.html">Previous XXX</a> · <a href="README.md">Chapter ledger</a></header>
+<main><div class="layout"><article><div class="eyebrow">Paradiso XXXI · Empyrean · Natural Boundary 031</div><h1>The White Rose and Bernard</h1>
+<p>In the Empyrean, Dante beholds the blessed seated in the vast white rose. Angels pass between the flower and the divine light like bees carrying gifts between blossoms and a hive.</p>
+<p>He turns toward Beatrice to ask a question—but she is no longer beside him. In her place stands <strong>Saint Bernard of Clairvaux</strong>, an elderly contemplative whose devotion to Mary prepares the final approach.</p>
+<blockquote>The guide moves from beside the pilgrim to within the pilgrim's gratitude.</blockquote>
+<p>Bernard points to Beatrice, who now occupies her place in the rose. Dante addresses her from afar, thanking her for freeing him from bondage and guiding him through the journey. She smiles upon him, then turns toward the eternal source.</p>
+<p>Bernard encourages Dante to look upward to the Queen of Heaven. The final stages of sight require prayer, contemplation and a guide willing to release the traveler rather than possess him.</p>
+<h2>Boundary XXXI</h2><p>Our symbolic eight chromatic vertices, twenty-four witnesses and common center remain. Only the <strong>guide assignment</strong> changes. Beatrice is not deleted; she is represented at her place in the rose. Bernard becomes the active guide.</p>
+<p><code>guide beside → gratitude → guide seated → Bernard leads</code></p>
+<p>Identity persists through a transfer of function. A transfer is complete when the new guide can continue without overwriting the record of the previous guide.</p></article>
+<section class="panel"><canvas id="sky" width="1000" height="800" aria-label="Interactive celestial rose with Beatrice returning to her seat and Bernard guiding Dante"></canvas>
+<div class="controls"><button data-mode="0">Rose</button><button data-mode="1">Beatrice</button><button data-mode="2" class="active">Bernard</button><button data-mode="3">Gratitude</button><label>Transfer <input id="transfer" type="range" min="0" max="100" value="75"></label><label>Chroma <input id="chroma" type="range" min="0" max="100" value="85"></label><label>Phase <input id="phase" type="range" min="0" max="360" value="0"></label><button id="pause">Pause</button></div>
+<div class="note">A symbolic scene with persistent identifiers: eight chromatic core vertices, twenty-four rose witnesses, one shared center, and two distinct guides. Not a quantum-dot model or a literal cosmological map.</div></section></div>
+<h2>Four movements</h2><div class="states"><div><strong>1 · Rose</strong><p>See the whole assembly</p></div><div><strong>2 · Beatrice</strong><p>Recognize the former guide</p></div><div><strong>3 · Bernard</strong><p>Accept the next guide</p></div><div><strong>4 · Gratitude</strong><p>Preserve the relationship</p></div></div>
+<h2>Invariant XXXI — Delegation without erasure</h2><p>Keep a record of what each guide did, when responsibility changed, and which functions remain with the traveler. The transfer of responsibility does not transfer ownership of the traveler's identity.</p><p><code>observe → acknowledge → transfer role → preserve provenance</code></p>
+<h2>Next natural boundary — Paradiso XXXII</h2><p><strong>The Order of the Rose.</strong> Bernard identifies the blessed in their heavenly seats, including Mary, Eve, Rachel, Beatrice, and the great figures of biblical history. The rose reveals an ordered community rather than an undifferentiated light.</p></main><footer>DLW · Paradiso XXXI · append-only chapter · 2026-11-08 · Literary and symbolic geometry</footer>
+<script>
+const cv=document.querySelector('#sky'),g=cv.getContext('2d');let mode=2,transfer=.75,chroma=.85,phase=0,paused=false,t=0;
+const pal=[[247,203,152],[166,198,240],[234,170,213],[161,224,195]],rgb=a=>'rgb('+a.map(x=>Math.round(x)).join(',')+')';
+function dot(x,y,r,c,blur=14){g.beginPath();g.fillStyle=c;g.shadowColor=c;g.shadowBlur=blur;g.arc(x,y,r,0,Math.PI*2);g.fill();g.shadowBlur=0}
+const controls=[...document.querySelectorAll('[data-mode]')];controls.forEach(b=>b.onclick=()=>{mode=+b.dataset.mode;controls.forEach(x=>x.classList.toggle('active',x===b));transfer=[0,.35,.75,1][mode];document.querySelector('#transfer').value=transfer*100});
+document.querySelector('#transfer').oninput=e=>transfer=+e.target.value/100;
+document.querySelector('#chroma').oninput=e=>chroma=+e.target.value/100;
+document.querySelector('#phase').oninput=e=>phase=+e.target.value*Math.PI/180;
+document.querySelector('#pause').onclick=e=>{paused=!paused;e.target.textContent=paused?'Play':'Pause'};
+function render(){if(!paused)t+=.009;const bg=g.createRadialGradient(500,370,2,500,390,660);bg.addColorStop(0,'#3e345a');bg.addColorStop(1,'#080d1c');g.fillStyle=bg;g.fillRect(0,0,1000,800);
+for(let k=0;k<6;k++){let r=58+k*49;g.beginPath();g.ellipse(500,367,r,r*.74,0,0,Math.PI*2);g.strokeStyle=k%2?'#f2d6c18a':'#f4d2de7a';g.lineWidth=1.6;g.stroke();}
+for(let i=0;i<24;i++){const a=i*Math.PI/12+phase+t*.045,r=i<12?195:305;dot(500+r*Math.cos(a),367+r*.74*Math.sin(a),5,rgb(pal[i%4].map(v=>150*(1-chroma)+v*chroma)),14)}
+for(let i=0;i<8;i++){let a=i*Math.PI/4+phase*.4+t*.15;dot(500+40*Math.cos(a),367+34*Math.sin(a),5,rgb(pal[i%4].map(v=>158*(1-chroma)+v*chroma)),12)}
+dot(500,367,11,'#fff7e2',34);
+let d=[500,700],seat=[600,205],start=[565,667],bx=start[0]*(1-transfer)+seat[0]*transfer,by=start[1]*(1-transfer)+seat[1]*transfer;
+dot(...d,8,'#bdd6f5',20);dot(bx,by,9,'#ffdfc6',28);
+let bern=[610,670];if(transfer>.3)dot(...bern,8,'#f3e7c0',24);
+g.textAlign='center';g.font='15px system-ui';g.fillStyle='#e9e6f0';g.fillText('DANTE',500,730);g.fillText('BEATRICE',bx,by-22);if(transfer>.3)g.fillText('BERNARD',610,708);
+if(mode===3){g.setLineDash([6,8]);g.strokeStyle='#f8dcae';g.beginPath();g.moveTo(500,695);g.lineTo(600,207);g.stroke();g.setLineDash([])}
+g.fillStyle='#f1e3f4';g.textAlign='left';g.font='17px system-ui';g.fillText(['WHITE ROSE · THE ASSEMBLY','BEATRICE · HER PLACE','BERNARD · FINAL GUIDE','GRATITUDE · RELATIONSHIP PRESERVED'][mode],30,46);
+requestAnimationFrame(render)}render();
+</script></body></html>
