@@ -29,6 +29,7 @@ Policy: append-only chapter files; do not replace historical releases.
 | XXIV | Fixed Stars | Saint Peter examines Dante's faith | Preserve grounds and provenance when asserting a claim |
 | XXV | Fixed Stars | Saint James examines hope; Saint John arrives | Distinguish anticipated future from observed present |
 | XXVI | Fixed Stars | Saint John examines love; Adam explains changing language | Preserve referents while names change |
+| XXVII | Fixed Stars to Primum Mobile | Peter's rebuke, last backward glance, and first motion | Preserve identity, frame and time when comparing phase |
 
 ## Repository artifacts
 - [Canto XIX interactive HTML](xix-speaking-eagle.html) — committed 2026-11-08.
@@ -39,12 +40,13 @@ Policy: append-only chapter files; do not replace historical releases.
 - [Canto XXIV interactive HTML](xxiv-examination-of-faith.html) — committed 2026-11-08.
 - [Canto XXV interactive HTML](xxv-examination-of-hope.html) — committed 2026-11-08.
 - [Canto XXVI interactive HTML](xxvi-love-and-language.html) — committed 2026-11-08.
+- [Canto XXVII interactive HTML](xxvii-first-motion.html) — committed 2026-11-08.
 
 ## Provenance and completeness
 
-This ledger summarizes prior chat chapters. Earlier interactive HTML files (IX–XVIII) were generated as conversation artifacts, but **they are not claimed as committed to this repository**. Their original bytes must be recovered and checked before any exact archival claims. Cantos XIX–XXVI have been independently committed and verified through the GitHub connector.
+This ledger summarizes prior chat chapters. Earlier interactive HTML files (IX–XVIII) were generated as conversation artifacts, but **they are not claimed as committed to this repository**. Their original bytes must be recovered and checked before any exact archival claims. Cantos XIX–XXVII have been independently committed and verified through the GitHub connector.
 
 Symbolic geometry (8 vertices, 24 witnesses, 1 center) is an interpretive model, not a literal translation of Dante's numerical cosmology or a physical quantum dot simulation.
 
 ## Next
-Paradiso XXVII — Saint Peter's rebuke and the Primum Mobile: the horizon of celestial motion and time.
+Paradiso XXVIII — The Point and Nine Angelic Circles: nine orders move around an intensely bright point; spiritual proximity transforms the measure of motion.
