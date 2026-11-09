@@ -32,6 +32,7 @@ Policy: append-only chapter files; do not replace historical releases.
 | XXVII | Fixed Stars to Primum Mobile | Peter's rebuke, last backward glance, and first motion | Preserve identity, frame and time when comparing phase |
 | XXVIII | Primum Mobile | Radiant point and nine angelic circles | Do not confuse geometric radius with a spiritual metric |
 | XXIX | Primum Mobile | Angelic creation, freedom, and warnings against invented preaching | Preserve evidence, interpretation and attribution separately |
+| XXX | Empyrean | River of light resolves into the celestial rose | Preserve provenance across changes in representation |
 
 ## Repository artifacts
 - [Canto XIX interactive HTML](xix-speaking-eagle.html) — committed 2026-11-08.
@@ -45,12 +46,13 @@ Policy: append-only chapter files; do not replace historical releases.
 - [Canto XXVII interactive HTML](xxvii-first-motion.html) — committed 2026-11-08.
 - [Canto XXVIII interactive HTML](xxviii-nine-angelic-circles.html) — committed 2026-11-08.
 - [Canto XXIX interactive HTML](xxix-creation-and-angels.html) — committed 2026-11-08.
+- [Canto XXX interactive HTML](xxx-river-and-rose.html) — committed 2026-11-08.
 
 ## Provenance and completeness
 
-This ledger summarizes prior chat chapters. Earlier interactive HTML files (IX–XVIII) were generated as conversation artifacts, but **they are not claimed as committed to this repository**. Their original bytes must be recovered and checked before any exact archival claims. Cantos XIX–XXIX have been independently committed and verified through the GitHub connector.
+This ledger summarizes prior chat chapters. Earlier interactive HTML files (IX–XVIII) were generated as conversation artifacts, but **they are not claimed as committed to this repository**. Their original bytes must be recovered and checked before any exact archival claims. Cantos XIX–XXX have been independently committed and verified through the GitHub connector.
 
 Symbolic geometry (8 vertices, 24 witnesses, 1 center) is an interpretive model, not a literal translation of Dante's numerical cosmology or a physical quantum dot simulation.
 
 ## Next
-Paradiso XXX — The River of Light and the Celestial Rose: from moving heavens to the Empyrean; sight transforms with understanding.
+Paradiso XXXI — The White Rose and Saint Bernard: Beatrice takes her seat in the rose; Bernard guides Dante toward the final vision.
