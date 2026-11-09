@@ -62,3 +62,9 @@ Symbolic geometry (8 vertices, 24 witnesses, 1 center) is an interpretive model,
 
 ## Completion
 Paradiso XXXIII completes Dante's ascent through the Divine Comedy. The individual chapter artifacts for XIX–XXXIII were committed to this repository; earlier chapters remain a separate archival recovery task. Next natural project boundary: verify the complete corpus, recover missing chapters, and build a navigable append-only index. No further canonical Paradiso cantos follow XXXIII.
+
+## Cross-canticle alchemical synthesis — 2026-11-08
+
+- [Final alchemical sweep: Inferno → Purgatorio → Paradiso](../alchemy/divine-comedy-final-sweep.html)
+- [Interpretive audit and source ledger](../alchemy/README.md)
+- The synthesis distinguishes Dante's theological text from nigredo/albedo/rubedo interpretive overlay and from the project's chromatic/elemental cipher.
